@@ -3,14 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using System;
 public class QuestManager : MonoBehaviour, IDataPersistence
 {
     public static QuestManager instance;
     //public List<Quest> quests;
 
+    // Events
+    public static Action UpdateDPValueUI;
+
     public GameObject questPrefab;
+    public GameObject questNumberGoalPrefab;
     private GameObject questAlertBox;
+    private GameObject plainAlertBox;
+
+    Coroutine questAlertCoroutine;
+    Coroutine plainAlertCoroutine;
 
     public PlayerData playerData;
 
@@ -32,6 +40,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         SceneManager.sceneLoaded += OnHouseSceneLoaded;
         SceneManager.sceneLoaded += OnOutsideSceneLoaded;
         SceneManager.sceneLoaded += OnSchoolSceneLoaded;
+        SceneManager.sceneLoaded += OnMuseumSceneLoaded;
         //SceneManager.sceneLoaded += OnSceneWithQuestManagerSceneLoaded;
     }
 
@@ -40,6 +49,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         SceneManager.sceneLoaded -= OnHouseSceneLoaded;
         SceneManager.sceneLoaded -= OnOutsideSceneLoaded;
         SceneManager.sceneLoaded -= OnSchoolSceneLoaded;
+        SceneManager.sceneLoaded -= OnMuseumSceneLoaded;
         //SceneManager.sceneLoaded -= OnSceneWithQuestManagerSceneLoaded;
     }
 
@@ -67,6 +77,16 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    void OnMuseumSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Museum"))
+        {
+            this.GetAllNecessaryGameObjects();
+            this.GetListOfQuests();
+            this.SetupScriptsForDeliveryQuestToNPCs();
+        }
+    }
+
     void OnSchoolSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School"))
@@ -81,6 +101,25 @@ public class QuestManager : MonoBehaviour, IDataPersistence
      current open region. */
     public void GetListOfQuests()
     {
+        // This is the first quest for Day 1.
+        if (this.playerData.isAllNPCMet == false)
+        {
+            foreach (Quest quest in this.playerData.quests)
+            {
+                if (quest.region.ToUpper() == "PRE-QUEST".ToUpper())
+                {
+                    // Check if the current 'quest' is not yet in the 'currentQuest' list.
+                    Quest foundQuest = this.playerData.currentQuests.Find(questToFind => questToFind.questID == quest.questID);
+
+                    if (foundQuest == null)
+                    {
+                        this.playerData.currentQuests.Add(quest);
+                    }
+                }
+            }
+            return;
+        }
+
         // Get the current open region.
         string currentRegion = this.GetCurrentOpenRegion();
 
@@ -117,65 +156,78 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
     public void GetAllNecessaryGameObjects()
     {
-        Transform questPanel = GameObject.Find("Quest Panel").transform;
-        Button closeQuestPanel = questPanel.GetChild(3).GetComponent<Button>();
-
-        RectTransform questContentScrollView = GameObject.Find("Quest Content Scroll View").GetComponent<RectTransform>();
-
-        CanvasGroup canvasGroup = GameObject.Find("House Canvas Group").GetComponent<CanvasGroup>();
-        Button openQuestPanel = GameObject.Find("Quest Button").GetComponent<Button>();
-        Button pendingBtn = GameObject.Find("Pending").GetComponent<Button>();
-        Button completedBtn = GameObject.Find("Completed").GetComponent<Button>();
-
-        this.questAlertBox = GameObject.Find("Alert Box");
-
-        // Add event to pending btn.
-        pendingBtn.onClick.AddListener(() =>
+        try
         {
-            SoundManager.instance?.PlaySound("Button Click 2");
-            this.RemoveAllQuest(questContentScrollView); // reset
-            this.GetAllCurrentQuests(questContentScrollView);
 
-            this.ChangeButtonColor(pendingBtn, completedBtn);
-        });
+            GameObject inventoryPanel = GameObject.Find("Inventory Panel");
+            GameObject fixedJoystick = GameObject.Find("Fixed Joystick");
 
-        completedBtn.onClick.AddListener(() =>
-        {
-            SoundManager.instance?.PlaySound("Button Click 2");
-            this.RemoveAllQuest(questContentScrollView);
-            this.GetAllCompletedQuest(questContentScrollView);
+            RectTransform questContentScrollView = GameObject.Find("Quest Content Scroll View").GetComponent<RectTransform>();
 
-            this.ChangeButtonColor(completedBtn, pendingBtn);
-        });
+            Transform questPanel = GameObject.Find("Quest Panel").transform;
 
-        closeQuestPanel.onClick.AddListener(() =>
-        {
-            SoundManager.instance?.PlaySound("Button Click 1");
-            LeanTween.scale(questPanel.gameObject, Vector2.zero, .2f)
-            .setEaseSpring()
-            .setOnComplete(() =>
+            CanvasGroup houseCanvasGroup = GameObject.Find("House Canvas Group").GetComponent<CanvasGroup>();
+            Button openQuestPanel = GameObject.Find("Quest Button").GetComponent<Button>();
+            Button pendingBtn = GameObject.Find("Pending").GetComponent<Button>();
+            Button completedBtn = GameObject.Find("Completed").GetComponent<Button>();
+            Button closeQuestPanel = questPanel.GetChild(3).GetComponent<Button>();
+
+            this.questAlertBox = GameObject.Find("Alert Box");
+            this.plainAlertBox = GameObject.Find("Plain Alert Box");
+
+            // Add event to pending btn.
+            pendingBtn.onClick.AddListener(() =>
             {
-                this.RemoveAllQuest(questContentScrollView);
-                canvasGroup.interactable = true;
-                canvasGroup.blocksRaycasts = true;
+                SoundManager.instance?.PlaySound("Button Click 2");
+                this.RemoveAllQuest(questContentScrollView); // reset
+                this.GetAllCurrentQuests(questContentScrollView);
+
+                this.ChangeButtonColor(pendingBtn, completedBtn);
             });
+
+            completedBtn.onClick.AddListener(() =>
+            {
+                SoundManager.instance?.PlaySound("Button Click 2");
+                this.RemoveAllQuest(questContentScrollView);
+                this.GetAllCompletedQuest(questContentScrollView);
+
+                this.ChangeButtonColor(completedBtn, pendingBtn);
+            });
+
+            closeQuestPanel.onClick.AddListener(() =>
+            {
+                SoundManager.instance?.PlaySound("Button Click 1");
+                LeanTween.scale(questPanel.gameObject, Vector2.zero, .2f)
+                .setEaseSpring()
+                .setOnComplete(() =>
+                {
+                    this.RemoveAllQuest(questContentScrollView);
+                    inventoryPanel.SetActive(true);
+                    fixedJoystick.SetActive(true);
+                    houseCanvasGroup.interactable = true;
+                    houseCanvasGroup.blocksRaycasts = true;
+                });
+                this.ChangeButtonColor(pendingBtn, completedBtn);
+            });
+
+            openQuestPanel.onClick.AddListener(() =>
+            {
+                SoundManager.instance?.PlaySound("Button Click 1");
+                this.GetAllCurrentQuests(questContentScrollView);
+                LeanTween.scale(questPanel.gameObject, new Vector2(296.8722f, 296.8722f), .2f)
+                    .setEaseSpring();
+                inventoryPanel.SetActive(false);
+                fixedJoystick.SetActive(false);
+                houseCanvasGroup.interactable = false;
+                houseCanvasGroup.blocksRaycasts = false;
+            });
+
             this.ChangeButtonColor(pendingBtn, completedBtn);
-        });
-
-        openQuestPanel.onClick.AddListener(() =>
-        {
-            SoundManager.instance?.PlaySound("Button Click 1");
-            this.GetAllCurrentQuests(questContentScrollView);
-            LeanTween.scale(questPanel.gameObject, new Vector2(296.8722f, 296.8722f), .2f)
-                .setEaseSpring();
-            canvasGroup.interactable = false;
-            canvasGroup.blocksRaycasts = false;
-        });
-
-        this.ChangeButtonColor(pendingBtn, completedBtn);
-        this.questAlertBox.SetActive(false);
-        questPanel.transform.localScale = Vector2.zero;
-
+            this.questAlertBox.transform.localScale = Vector2.zero;
+            this.plainAlertBox.transform.localScale = Vector2.zero;
+            questPanel.transform.localScale = Vector2.zero;
+        }
+        catch (System.Exception e) { Debug.Log(e.Message); }
     }
 
     /** This function is responsible for changing the color
@@ -198,39 +250,58 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     {
         foreach (Quest quest in this.playerData.currentQuests)
         {
-            GameObject questSlot = Instantiate(questPrefab, content.transform);
+            GameObject questSlot;
 
-            // Title of Quest
-            questSlot.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>()
-                .text = quest.title;
-            // Description of Quest
-            questSlot.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
-                .text = quest.description;
-
-            if (quest.deliveryGoal != null)
+            if (quest.questType == Quest.QUEST_TYPE.NUMBER)
             {
-                if (quest.deliveryGoal.itemReceivedFromGiver)
+                questSlot = Instantiate(questNumberGoalPrefab, content.transform);
+
+                questSlot.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>()
+                    .text = quest.title;
+                questSlot.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
+                    .text = quest.description;
+                questSlot.transform.GetChild(2).GetComponent<TMPro.TextMeshProUGUI>()
+                    .text = quest.numberGoal.currentNumber + "/" + quest.numberGoal.targetNumber;
+                questSlot.transform.GetChild(3).GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
+                    .text = quest.dunongPointsRewards.ToString();
+            }
+            else
+            {
+                questSlot = Instantiate(questPrefab, content.transform);
+
+                // Title of Quest
+                questSlot.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>()
+                    .text = quest.title;
+                // Description of Quest
+                questSlot.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
+                    .text = quest.description;
+
+                if (quest.deliveryGoal != null)
                 {
-                    questSlot.transform.GetChild(2).transform.GetChild(0)
-                        .GetComponent<TMPro.TextMeshProUGUI>()
-                        .text = "Received";
+                    if (quest.deliveryGoal.itemReceivedFromGiver)
+                    {
+                        questSlot.transform.GetChild(2).transform.GetChild(0)
+                            .GetComponent<TMPro.TextMeshProUGUI>()
+                            .text = "Received";
+                    }
+                    else
+                    {
+                        questSlot.transform.GetChild(2).transform.GetChild(0)
+                            .GetComponent<TMPro.TextMeshProUGUI>()
+                            .text = "Pending";
+                    }
                 }
                 else
                 {
                     questSlot.transform.GetChild(2).transform.GetChild(0)
-                        .GetComponent<TMPro.TextMeshProUGUI>()
-                        .text = "Pending";
+                            .GetComponent<TMPro.TextMeshProUGUI>()
+                            .text = "Pending";
                 }
-            }
-            else
-            {
-                questSlot.transform.GetChild(2).transform.GetChild(0)
-                        .GetComponent<TMPro.TextMeshProUGUI>()
-                        .text = "Pending";
+
+                questSlot.transform.GetChild(3).transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
+                    .text = quest.dunongPointsRewards.ToString();
             }
             
-            questSlot.transform.GetChild(3).transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
-                .text = quest.dunongPointsRewards.ToString();
         }
     }
 
@@ -342,24 +413,36 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         {
             if (quest.questID == deliveryQuestID)
             {
-                this.questAlertBox.SetActive(true);
+
+                this.OpenAlertBox();
+
+                DataPersistenceManager.instance.playerData.dunongPoints += quest.dunongPointsRewards;
+
+                UpdateDPValueUI?.Invoke(); // Update UI.
+
                 SoundManager.instance?.PlaySound("Quest Notification");
 
                 // Find and Copy the Delivery Quest
                 // Copy the instance so that we don't directly modify the object.
                 Quest questFound = this.playerData.quests.Find((questToFind) => questToFind.questID == quest.questID).CopyQuestDeliveryGoal();
-                print(questFound.description + " " + questFound.deliveryGoal.item.quantity);
-                questFound.isCompleted = true;
-                this.playerData.completedQuests.Add(questFound);
 
+                questFound.isCompleted = true;
+
+                if (this.CheckIfPreQuestsDone())
+                    this.playerData.completedQuests.Add(questFound);
+                    
                 this.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
                 this.playerData.quests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
 
+                if (this.CheckIfPreQuestsDone() == true)
+                {
+                    DataPersistenceManager.instance.playerData.isAllNPCMet = true;
+                    this.GetListOfQuests();
+                    this.SetupScriptsForDeliveryQuestToNPCs();
+                }
                 this.GetListOfQuests();
 
                 DataPersistenceManager.instance?.SaveGame();
-
-                StartCoroutine(HideQuestAlertBox());
 
                 return;
             }
@@ -376,7 +459,13 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 && quest.talkGoal.GetNPCName().ToUpper() == npcName.ToUpper())
             {
                 quest.isCompleted = true;
-                this.questAlertBox.SetActive(true);
+
+                this.OpenAlertBox();
+
+                DataPersistenceManager.instance.playerData.dunongPoints += quest.dunongPointsRewards;
+
+                UpdateDPValueUI?.Invoke(); // Update UI.
+
                 SoundManager.instance?.PlaySound("Quest Notification");
 
                 Quest questFoundInCurrentQuest = this.playerData.currentQuests.Find(questToFind => questToFind.questID == quest.questID).CopyTalkQuestGoal();
@@ -392,13 +481,23 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
                 DataPersistenceManager.instance.SaveGame();
 
-                StartCoroutine(HideQuestAlertBox());
-
                 return;
             }
         }
     }
 
+    public bool CheckIfPreQuestsDone()
+    {
+        foreach (Quest quest in DataPersistenceManager.instance.playerData.quests)
+        {
+            if (quest.region.ToUpper() == "PRE-QUEST".ToUpper())
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
     /// <summary>
     /// @called at MainGame class.
     /// </summary>
@@ -428,11 +527,45 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         this.playerData.completedQuests.RemoveAll(questToRemove => questToRemove.region.ToUpper() == regionName.ToUpper());
     }
 
-    IEnumerator HideQuestAlertBox()
+    public void OpenAlertBox()
+    {
+        if (this.questAlertCoroutine != null)
+        {
+            this.questAlertBox.transform.localScale = Vector2.zero;
+            StopCoroutine(this.questAlertCoroutine);
+        }
+
+        LeanTween.scale(this.questAlertBox.gameObject, Vector2.one, .2f)
+        .setEaseSpring()
+        .setOnComplete(() =>
+        {
+            this.questAlertCoroutine = StartCoroutine(HideQuestAlertBox(this.questAlertBox));
+        });
+    }
+
+    public void OpenPlainAlertBox()
+    {
+        if (this.plainAlertCoroutine != null)
+        {
+            this.plainAlertBox.transform.localScale = Vector2.zero;
+            StopCoroutine(this.plainAlertCoroutine);
+        }
+
+        LeanTween.scale(this.plainAlertBox.gameObject, Vector2.one, .2f)
+            .setEaseSpring()
+            .setOnComplete(() =>
+            {
+                this.plainAlertCoroutine = StartCoroutine(HideQuestAlertBox(this.plainAlertBox));
+            });
+    }
+
+    // Hides Alert Box.
+    IEnumerator HideQuestAlertBox(GameObject alertBox)
     {
         yield return new WaitForSeconds(1f);
 
-        this.questAlertBox.SetActive(false);
+        LeanTween.scale(alertBox, Vector2.zero, .2f)
+            .setEaseSpring();
     }
 
     public void LoadPlayerData(PlayerData playerData)

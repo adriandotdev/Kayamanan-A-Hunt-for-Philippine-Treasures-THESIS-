@@ -24,8 +24,6 @@ public class DeliveryGoalReceiver : MonoBehaviour
                 //// Loop through each item at inventory
                 foreach (Item item in DataPersistenceManager.instance.playerData.inventory.items)
                 {
-                    print(this.quest.questID == quest.questID);
-
                     // If the quest item is equal to the 'current item' pointer
                     if (item.itemName.ToUpper() == this.quest.deliveryGoal.item.itemName.ToUpper() && 
                         quest.deliveryGoal.deliverGoalId == this.quest.deliveryGoal.deliverGoalId && quest.questType == Quest.QUEST_TYPE.DELIVERY
@@ -65,6 +63,8 @@ public class DeliveryGoalReceiver : MonoBehaviour
             && this.quest.deliveryGoal.itemReceivedFromGiver 
             && !this.quest.isCompleted)
         {
+            this.giveBtn.transform.GetChild(0).GetComponent<Image>().sprite 
+                = Resources.Load<Sprite>("Collectibles/Items/" + this.quest.deliveryGoal.item.itemName);
             this.giveBtn.gameObject.SetActive(true);
         }
     }

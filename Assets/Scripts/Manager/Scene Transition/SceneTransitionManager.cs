@@ -34,6 +34,7 @@ public class SceneTransitionManager : MonoBehaviour
         SceneManager.sceneLoaded += OnOutsideSceneLoaded;
         SceneManager.sceneLoaded += OnPlayerHouseLoaded;
         SceneManager.sceneLoaded += OnSchoolSceneLoaded;
+        SceneManager.sceneLoaded += OnMuseumSceneLoaded;
     }
 
     private void OnDisable()
@@ -41,6 +42,7 @@ public class SceneTransitionManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnOutsideSceneLoaded;
         SceneManager.sceneLoaded -= OnPlayerHouseLoaded;
         SceneManager.sceneLoaded -= OnSchoolSceneLoaded;
+        SceneManager.sceneLoaded -= OnMuseumSceneLoaded;
     }
 
     public void OnPlayerHouseLoaded(Scene scene, LoadSceneMode mode)
@@ -77,6 +79,13 @@ public class SceneTransitionManager : MonoBehaviour
             }
             else
             {
+                if (DataPersistenceManager.instance.playerData.isFromSleeping)
+                {
+                    DataPersistenceManager.instance.playerData.isFromSleeping = false;
+                    position = GameObject.Find("Bed Spawnpoint").transform.position;
+                    this.SpawnPlayerCharacter(position);
+                    return; 
+                }
                 if (fromEnter)
                 {
                     fromEnter = false;
@@ -130,6 +139,36 @@ public class SceneTransitionManager : MonoBehaviour
     public void OnSchoolSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "School")
+        {
+            Vector2 position;
+
+            /**
+             * <summary>
+             *  Since ang default scene pag nag create ng new profile is ang 'House' scene,
+             *  direct na natin ichecheck if ang outside scene ay nag load kung from entrance 
+             *  ba sa loob o labas galing si player.
+             *  
+             *  Also the player's position sa 'Outside' scene is nasasaved din if ever na hindi
+             *  siya galing sa loob ng bahay.
+             * </summary>
+             */
+            if (fromEnter)
+            {
+                fromEnter = false;
+                position = GameObject.Find(this.nameOfExit).transform.GetChild(0).position;
+            }
+            else
+            {
+                position = new Vector2(DataPersistenceManager.instance.playerData.xPos, DataPersistenceManager.instance.playerData.yPos);
+            }
+
+            this.SpawnPlayerCharacter(position);
+        }
+    }
+
+    public void OnMuseumSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Museum")
         {
             Vector2 position;
 

@@ -10,6 +10,9 @@ public class PlayerData
     public bool isNewlyCreated;
     public bool isTutorialDone;
     public bool isIntroductionDone;
+    public bool isAllNPCMet;
+    public bool isNPCIntroductionPanelDone;
+    public bool isFromSleeping;
     public string name;
     public string gender;
     public int dunongPoints;
@@ -27,6 +30,7 @@ public class PlayerData
     public List<Quest> quests;
     public List<Quest> currentQuests;
     public List<Quest> completedQuests;
+    public List<NPC_INFO> npcInfos;
     public Inventory inventory;
     public PlayerTime playerTime;
 
@@ -62,13 +66,15 @@ public class PlayerData
     public PlayerData()
     {
         this.isNewlyCreated = true;
-        this.isTutorialDone = false;
-        this.isIntroductionDone = false;
+        this.isTutorialDone = false; // This is to track if the tutorial for UI is done.
+        this.isIntroductionDone = false; // This is to track if the introduction of the game is already viewed or done.
+        this.isAllNPCMet = false;
+        this.isNPCIntroductionPanelDone = false;
         this.id = null;
         this.name = null;
         this.gender = "male";
         this.dunongPoints = 0;
-        this.requiredDunongPointsToPlay = 40;
+        this.requiredDunongPointsToPlay = 65;
         this.remainingTime = 18000;
         this.sceneToLoad = "House";
         this.xPos = 0;
@@ -78,12 +84,17 @@ public class PlayerData
         this.quests = new List<Quest>();
         this.currentQuests = new List<Quest>();
         this.completedQuests = new List<Quest>();
+        this.npcInfos = new List<NPC_INFO>();
         this.inventory = new Inventory();
         this.playerTime = new PlayerTime();
 
         this.AddRegionsForLuzon();
         this.AddRegionsForVisayas();
         this.AddRegionsForMindanao();
+
+        this.quests.Add(new Quest("Greet All", "Talk to all vilagers.", "PRE-QUEST", new NumberGoal(2, NumberGoal.CORRESPONDING_OBJECT_TO_COUNT.TALK_NPC)));
+        this.quests.Add(new Quest("A Simple Thanks", "Give this Mango to Aling Nena", "PRE-QUEST", 
+            new DeliveryGoal("Mang Esterlito", "Aling Nena", "Give this mango to Aling Nena", new Item("Mango", 1, "", true))));
 
         // Quest for Luzon
         this.quests.Add(new Quest("Ilocos Region Quest!", "Get the Mango from Aling Marites and give it to Mang Esterlito", 25, ILOCOS_REGION, 1,
@@ -104,18 +115,19 @@ public class PlayerData
             new DeliveryGoal("Aling Julia", "Aling Marites", "Hey! Would you mind if you give this to Aling Marites?",
             new Item("Mango", 1, "", false))));
 
-        this.quests.Add(new Quest("CALABARZON Quest!", "Talk to Aling Julia", 35, CALABARZON, 5, new TalkGoal("Aling Julia")));
-
-        this.quests.Add(new Quest("MIMAROPA Quest!", "Talk to Aling Marites", 15, MIMAROPA, 6, new TalkGoal("Aling Marites")));
-
-        this.quests.Add(new Quest("Bicol Region Quest!", "Help Aling Julia to give Aling Marites a Banana", 5, BICOL_REGION, 7,
-            new DeliveryGoal("Aling Julia", "Aling Marites", "Hey! Would you mind if you give this to Aling Marites?",
-            new Item("Banana", 2, "", false))));
-
-        this.quests.Add(new Quest("NCR Quest!", "Help Mang Esterlito to give Aling Marites a Mango", 5, NCR, 8,
+        this.quests.Add(new Quest("NCR Quest!", "Help Mang Esterlito to give Aling Marites a Mango", 5, NCR, 5,
             new DeliveryGoal("Mang Esterlito", "Aling Marites", "Hey! Would you mind if you give this to Aling Marites?",
             new Item("Mango", 3, "", false))));
 
+        this.quests.Add(new Quest("CALABARZON Quest!", "Talk to Aling Julia", 35, CALABARZON, 6, new TalkGoal("Aling Julia")));
+
+        this.quests.Add(new Quest("MIMAROPA Quest!", "Talk to Aling Marites", 15, MIMAROPA, 7, new TalkGoal("Aling Marites")));
+
+        this.quests.Add(new Quest("Bicol Region Quest!", "Help Aling Julia to give Aling Marites a Banana", 5, BICOL_REGION, 8,
+            new DeliveryGoal("Aling Julia", "Aling Marites", "Hey! Would you mind if you give this to Aling Marites?",
+            new Item("Banana", 2, "", false))));
+
+        
         // Quest for Visayas.
         this.quests.Add(new Quest("Western Visayas Quest!", "Talk to Aling Julia", 35, WESTERN_VISAYAS, 9, new TalkGoal("Aling Julia")));
         this.quests.Add(new Quest("Central Visayas Quest!", "Talk to Aling Marites", 25, WESTERN_VISAYAS, 10, new TalkGoal("Aling Marites")));
@@ -128,6 +140,8 @@ public class PlayerData
         this.quests.Add(new Quest("SOCCSKSARGEN Quest!", "Talk to Mang Esterlito", 15, SOCCSKSARGEN, 15, new TalkGoal("Mang Esterlito")));
         this.quests.Add(new Quest("Caraga Region Quest!", "Talk to Aling Marites", 45, CARAGA_REGION, 16, new TalkGoal("Aling Marites")));
         this.quests.Add(new Quest("BARMM Quest!", "Talk to Aling Julia", 325, BARMM, 17, new TalkGoal("Aling Julia")));
+
+        this.AddNPCsInfo();
     }
 
     /// <summary>
@@ -218,6 +232,17 @@ public class PlayerData
         this.regionsData.Add(new RegionData(16, false, CARAGA_REGION, "Central Visayas is the first region of Visayas major island.", new Category[] { new Category(HEROES) }));
         this.regionsData.Add(new RegionData(17, false, BARMM, "Eastern Visayas is the first region of Visayas major island.", new Category[] { new Category(HEROES) }));
     }
+
+    void AddNPCsInfo()
+    {
+        this.npcInfos.Add(new NPC_INFO("Mang Esterlito", ""));
+        this.npcInfos.Add(new NPC_INFO("Aling Marites", ""));
+        this.npcInfos.Add(new NPC_INFO("Aling Julia", ""));
+        this.npcInfos.Add(new NPC_INFO("Ramon Villegas", ""));
+        this.npcInfos.Add(new NPC_INFO("Gregorio Zaide", ""));
+        this.npcInfos.Add(new NPC_INFO("Mikaela Fudolig", ""));
+        this.npcInfos.Add(new NPC_INFO("Ivan Henares", ""));
+    }
 }
 
 [System.Serializable]
@@ -263,6 +288,7 @@ public class Notebook
 
         // Collectibles for LUZON
         this.collectibles.Add(new Collectible("Jose Rizal", "Collectibles/Rizal", HEROES, LUZON, REGION_1));
+        this.collectibles.Add(new Collectible("Diego Silang", "Collectibles/Diego Silang", HEROES, LUZON, REGION_1));
         this.collectibles.Add(new Collectible("Anahaw", "Collectibles/Anahaw", FESTIVALS, LUZON, REGION_2));
         this.collectibles.Add(new Collectible("Andres Bonifacio", "Collectibles/Bonifacio", TOURIST_ATTRACTIONS, LUZON, CAR));
         this.collectibles.Add(new Collectible("Kalabaw", "Collectibles/Kalabaw", HEROES, LUZON, REGION_3));
@@ -428,5 +454,38 @@ public class PlayerTime
         this.m_GameTimeHour = 0f;
         this.m_GameTimeMinute = 0f;
         this.m_GameTimeSeconds = 0f;
+    }
+}
+
+[System.Serializable]
+public class NPC_INFO
+{
+    public string name;
+    public string info;
+    public bool isMet;
+    public float xPos;
+    public float yPos;
+
+    public NPC_INFO(string name, string info)
+    {
+        this.name = name;
+        this.info = info;
+        this.isMet = false;
+    }
+
+    public NPC_INFO(string name, string info, bool isMet)
+    {
+        this.name = name;
+        this.info = info;
+        this.isMet = isMet;
+    }
+
+    public NPC_INFO Copy( )
+    {
+        NPC_INFO copy = new NPC_INFO(this.name, this.info, this.isMet);
+        copy.xPos = this.xPos;
+        copy.yPos = this.yPos;
+
+        return copy;
     }
 }

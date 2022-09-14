@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3472801485711738242}
   - component: {fileID: 3472801485711738241}
   - component: {fileID: 93713793}
+  - component: {fileID: 1001981234}
   m_Layer: 0
   m_Name: flag pole
   m_TagString: PH Flag
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3472801485711738239}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -20.76, y: 10.53, z: 63.22177}
-  m_LocalScale: {x: 5.0756083, y: 5.0756083, z: 5.0756083}
+  m_LocalScale: {x: 6.5286975, y: 6.5286975, z: 6.5286975}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6372687326121651700}
@@ -126,6 +127,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortingType: 0
+--- !u!114 &1001981234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472801485711738239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &2679612728469210627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -171,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9034133783352749047, guid: 3042eec4df0ce304c914e21630819d52, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.950719
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9034133783352749047, guid: 3042eec4df0ce304c914e21630819d52, type: 3}
       propertyPath: m_LocalRotation.w

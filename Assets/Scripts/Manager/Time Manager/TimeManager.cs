@@ -11,6 +11,7 @@ public class TimeManager : MonoBehaviour, IDataPersistence
     public static TimeManager instance;
     public static Action OnMinuteChanged;
     public static Action OnHourChanged;
+    public static Action OnTimeToSleep;
     public static Action<bool> OpenLights;
 
     public static int ActualHourInRealLife { get; private set; }
@@ -91,7 +92,7 @@ public class TimeManager : MonoBehaviour, IDataPersistence
         if (this.m_IsPaused) return;
 
         // For each frame, deduct the seconds.
-        playerData.playerTime.m_NoOfSecondsPerMinute -= (1f - Time.deltaTime); // it must be 0.15f * Time.deltaTime
+        playerData.playerTime.m_NoOfSecondsPerMinute -= (0.15f * Time.deltaTime); // it must be 0.15f * Time.deltaTime
 
         if (playerData.playerTime.m_NoOfSecondsPerMinute <= 0)
         {
@@ -110,6 +111,11 @@ public class TimeManager : MonoBehaviour, IDataPersistence
             if (this.playerData.playerTime.m_ActualHourInRealLife >= 25)
             {
                 this.playerData.playerTime.m_ActualHourInRealLife = 1;
+            }
+
+            if (this.playerData.playerTime.m_ActualHourInRealLife >= 20)
+            {
+                OnTimeToSleep?.Invoke();
             }
 
             this.playerData.playerTime.m_ActualMinuteInRealLife = 0;

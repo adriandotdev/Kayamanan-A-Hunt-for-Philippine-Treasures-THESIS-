@@ -126,7 +126,6 @@ public class MainGame : MonoBehaviour
 
         if (regionNumber < this.playerData.regionsData.Count)
         {
-            //print("TEST : REGION IS OPEN: " + (regionNumber + 1));
             this.playerData.regionsData[regionNumber].isOpen = true;
             this.SetNewRequiredDunongPoints();
         }
@@ -206,18 +205,22 @@ public class MainGame : MonoBehaviour
         return true;
     }
     
-    public void CollectAllRewards()
+    public bool IsRegionCollectiblesCanBeCollected()
     {
         foreach (RegionData rd in this.playerData.regionsData)
         {
             if (rd.regionName.ToUpper() == this.regionName.ToUpper())
             {
-                if (rd.noOfStars != 3) return;
+                if (rd.noOfStars != 3) return false;
             }
         }
+        return true;
+    }
 
-        if (!CheckIfRegionCollectiblesIsCollected())
-            SoundManager.instance?.PlaySound("Unlock Item");
+    public void CollectAllRewards()
+    {
+        if (IsRegionCollectiblesCanBeCollected() == false)
+            return;
 
         foreach (Collectible collectible in playerData.notebook.collectibles)
         {
@@ -230,7 +233,7 @@ public class MainGame : MonoBehaviour
             }
         }
         DataPersistenceManager.instance?.SaveGame();
-        SceneManager.LoadSceneAsync("Collectibles", LoadSceneMode.Additive);
+        //SceneManager.LoadSceneAsync("Collectibles", LoadSceneMode.Additive);
     }
 
     //public void CollectAllRewards()

@@ -13,6 +13,9 @@ TagManager:
   - PH Flag
   - Item
   - Tutorial Popup
+  - Go Home Entrance
+  - SpawnPoint
+  - Rooms
   layers:
   - Default
   - TransparentFX

@@ -913,7 +913,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -296.99994, y: -356}
+  m_AnchoredPosition: {x: -297, y: -356}
   m_SizeDelta: {x: 876, y: 475}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &167270987
@@ -2992,6 +2992,9 @@ MonoBehaviour:
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
+    isAllNPCMet: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
     name: 
     gender: male
     dunongPoints: 0
@@ -3331,6 +3334,7 @@ MonoBehaviour:
       description: Talk to Mang Esterlito
       dunongPointsRewards: 5
       region: Ilocos Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Mang Esterlito
@@ -3346,6 +3350,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: fbd51b13-2a33-4681-bab8-f8b2fa416f11
       isCompleted: 0
       isClaimed: 0
@@ -3353,6 +3362,7 @@ MonoBehaviour:
       description: Talk to Aling Nena
       dunongPointsRewards: 5
       region: Cagayan Valley
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Nena
@@ -3368,6 +3378,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 471bc730-640c-43eb-8998-5de17bc7add8
       isCompleted: 0
       isClaimed: 0
@@ -3375,6 +3390,7 @@ MonoBehaviour:
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
       dunongPointsRewards: 5
       region: Cordillera Administrative Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -3390,6 +3406,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: fb5cbdeb-6d43-4a30-b80f-41ae85590d60
       isCompleted: 0
       isClaimed: 0
@@ -3397,6 +3418,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 5
       region: Central Luzon
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -3412,6 +3434,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: a7c402de-6723-4f9e-98dd-5e2a59ff695e
       isCompleted: 0
       isClaimed: 0
@@ -3419,6 +3446,7 @@ MonoBehaviour:
       description: Talk to Aling Julia
       dunongPointsRewards: 5
       region: CALABARZON
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Julia
@@ -3434,6 +3462,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 8dd1b8f8-e417-4a5b-be2b-0e7c27a4d773
       isCompleted: 0
       isClaimed: 0
@@ -3441,6 +3474,7 @@ MonoBehaviour:
       description: Talk to Aling Marites
       dunongPointsRewards: 5
       region: MIMAROPA
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Marites
@@ -3456,6 +3490,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: d3ce00a3-6f60-461d-94eb-63d273265764
       isCompleted: 0
       isClaimed: 0
@@ -3463,6 +3502,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 5
       region: Bicol Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -3478,6 +3518,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: c0ec0ff7-2304-4556-820f-7414a0ff6be7
       isCompleted: 0
       isClaimed: 0
@@ -3485,6 +3530,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 5
       region: National Capital Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -3500,8 +3546,29 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     currentQuests: []
     completedQuests: []
+    npcInfos:
+    - name: Mang Esterlito
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Marites
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Julia
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
     inventory:
       items: []
     playerTime:
@@ -3987,7 +4054,7 @@ RectTransform:
   - {fileID: 1372690075}
   - {fileID: 442090429}
   m_Father: {fileID: 1085849837}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4122,6 +4189,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537654176}
+  m_CullTransparentMesh: 1
+--- !u!1 &544234173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 544234174}
+  - component: {fileID: 544234176}
+  - component: {fileID: 544234175}
+  m_Layer: 5
+  m_Name: DP Logo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &544234174
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544234173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.44585416, y: 0.44585416, z: 0.44585416}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1717658869}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 577, y: 310}
+  m_SizeDelta: {x: 180, y: 219}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &544234175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544234173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 32f92f2c9ad4e71428a7f6773cf74d2e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &544234176
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544234173}
   m_CullTransparentMesh: 1
 --- !u!1 &567342713
 GameObject:
@@ -29372,11 +29515,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questPrefab: {fileID: 4842949073925795106, guid: f4ba6b95c96f1b24582fbc90b485fb3a, type: 3}
+  questNumberGoalPrefab: {fileID: 0}
   playerData:
     id: 
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
+    isAllNPCMet: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
     name: 
     gender: male
     dunongPoints: 25
@@ -29456,6 +29603,7 @@ MonoBehaviour:
       description: Talk to Mang Esterlito
       dunongPointsRewards: 25
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Mang Esterlito
@@ -29471,6 +29619,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 6452e374-0c00-4c1b-ac2c-6f1578ce4080
       isCompleted: 0
       isClaimed: 0
@@ -29478,6 +29631,7 @@ MonoBehaviour:
       description: Talk to Aling Nena
       dunongPointsRewards: 30
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Nena
@@ -29493,6 +29647,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 56f66f59-d06b-45a3-b9ff-fc5dec0af61c
       isCompleted: 0
       isClaimed: 0
@@ -29500,6 +29659,7 @@ MonoBehaviour:
       description: Talk to Aling Missy
       dunongPointsRewards: 30
       region: Region 2
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Nena
@@ -29515,6 +29675,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 18d96acf-6622-440c-b7bf-534b1e8e2a44
       isCompleted: 0
       isClaimed: 0
@@ -29522,6 +29687,7 @@ MonoBehaviour:
       description: This is gather goal
       dunongPointsRewards: 45
       region: Region 2
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -29537,8 +29703,29 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     currentQuests: []
     completedQuests: []
+    npcInfos:
+    - name: Mang Esterlito
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Marites
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Julia
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
     inventory:
       items: []
     playerTime:
@@ -30259,7 +30446,7 @@ RectTransform:
   - {fileID: 1988345216}
   - {fileID: 220564386}
   m_Father: {fileID: 1085849837}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -31232,13 +31419,15 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1946856132}
+  - {fileID: 994415237}
+  - {fileID: 1717658869}
   - {fileID: 1843665991}
   - {fileID: 534473958}
-  - {fileID: 994415237}
   - {fileID: 1211828712}
   - {fileID: 1096961839}
   - {fileID: 1305586763}
   - {fileID: 1777169232}
+  - {fileID: 1108649625}
   m_Father: {fileID: 1464171927}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31297,7 +31486,7 @@ RectTransform:
   - {fileID: 946644855}
   - {fileID: 639543312}
   m_Father: {fileID: 1085849837}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -31451,6 +31640,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101547475}
   m_CullTransparentMesh: 1
+--- !u!1 &1108649624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1108649625}
+  - component: {fileID: 1108649627}
+  - component: {fileID: 1108649626}
+  m_Layer: 5
+  m_Name: Plain Alert Box
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1108649625
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108649624}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5147.4243}
+  m_LocalScale: {x: 0.9999711, y: 0.9999711, z: 0.9999711}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2025903506}
+  m_Father: {fileID: 1085849837}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.0000009536743, y: -144}
+  m_SizeDelta: {x: 755.53, y: 199.57}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1108649626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108649624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b4c50de98c3f5a741978f1281f4ff7bf, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1108649627
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108649624}
+  m_CullTransparentMesh: 1
 --- !u!1 &1131860689
 GameObject:
   m_ObjectHideFlags: 0
@@ -31599,6 +31865,8 @@ MonoBehaviour:
   - {fileID: 753218135}
   - {fileID: 1011945508}
   - {fileID: 1495307995}
+  npcName: 
+  isTalking: 0
 --- !u!4 &1181921425
 Transform:
   m_ObjectHideFlags: 0
@@ -31861,7 +32129,7 @@ RectTransform:
   - {fileID: 498083415}
   - {fileID: 874437740}
   m_Father: {fileID: 1085849837}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -32545,6 +32813,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267111062}
   m_CullTransparentMesh: 1
+--- !u!1 &1272148954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1272148955}
+  - component: {fileID: 1272148957}
+  - component: {fileID: 1272148956}
+  m_Layer: 5
+  m_Name: DP Value
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1272148955
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272148954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1717658869}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 759, y: 369}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1272148956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272148954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 12
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
+  m_sharedMaterial: {fileID: -5432314662704744868, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279440179
+  m_fontColor: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 42.47
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 42.47
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 31.841515, w: -35.815105}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1272148957
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272148954}
+  m_CullTransparentMesh: 1
 --- !u!1 &1275369217
 GameObject:
   m_ObjectHideFlags: 0
@@ -32673,7 +33076,7 @@ RectTransform:
   - {fileID: 1265486851}
   - {fileID: 1258270190}
   m_Father: {fileID: 1085849837}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -33560,11 +33963,15 @@ MonoBehaviour:
   menuSceneCanvasGroup: {fileID: 0}
   homeCanvasGroup: {fileID: 0}
   characterCreationGroup: {fileID: 0}
+  dunongPointsValue: {fileID: 0}
   playerData:
     id: 
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
+    isAllNPCMet: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
     name: 
     gender: male
     dunongPoints: 0
@@ -33904,6 +34311,7 @@ MonoBehaviour:
       description: Talk to Mang Esterlito
       dunongPointsRewards: 5
       region: Ilocos Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Mang Esterlito
@@ -33919,6 +34327,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 8a391ba1-f290-4b20-923f-3e9e88ff9192
       isCompleted: 0
       isClaimed: 0
@@ -33926,6 +34339,7 @@ MonoBehaviour:
       description: Talk to Aling Nena
       dunongPointsRewards: 5
       region: Cagayan Valley
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Nena
@@ -33941,6 +34355,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: d040b02a-6d5c-476e-904f-d3e91b2a617a
       isCompleted: 0
       isClaimed: 0
@@ -33948,6 +34367,7 @@ MonoBehaviour:
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
       dunongPointsRewards: 5
       region: Cordillera Administrative Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -33963,6 +34383,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 23bc2ee3-5368-4bed-9703-3904131de662
       isCompleted: 0
       isClaimed: 0
@@ -33970,6 +34395,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 5
       region: Central Luzon
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -33985,6 +34411,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 0d0b6637-97ce-4579-a863-aa8610ed41fb
       isCompleted: 0
       isClaimed: 0
@@ -33992,6 +34423,7 @@ MonoBehaviour:
       description: Talk to Aling Julia
       dunongPointsRewards: 5
       region: CALABARZON
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Julia
@@ -34007,6 +34439,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 7a7ad1bc-28dd-43ac-b1c5-2829516dc1a7
       isCompleted: 0
       isClaimed: 0
@@ -34014,6 +34451,7 @@ MonoBehaviour:
       description: Talk to Aling Marites
       dunongPointsRewards: 5
       region: MIMAROPA
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Marites
@@ -34029,6 +34467,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 71b47677-a563-4d6b-964a-c9b658841f2d
       isCompleted: 0
       isClaimed: 0
@@ -34036,6 +34479,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 5
       region: Bicol Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -34051,6 +34495,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: a2fb5af7-a777-4e7c-94da-2a7cd5d637c6
       isCompleted: 0
       isClaimed: 0
@@ -34058,6 +34507,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 5
       region: National Capital Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -34073,8 +34523,29 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     currentQuests: []
     completedQuests: []
+    npcInfos:
+    - name: Mang Esterlito
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Marites
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Julia
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
     inventory:
       items: []
     playerTime:
@@ -37462,6 +37933,44 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!1 &1717658868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1717658869}
+  m_Layer: 5
+  m_Name: Dunong Points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1717658869
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717658868}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90.625}
+  m_LocalScale: {x: 1.8220143, y: 1.8220143, z: 1.8220143}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 544234174}
+  - {fileID: 1272148955}
+  m_Father: {fileID: 1085849837}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 29, y: -587}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 6.34, y: 3.59}
 --- !u!1 &1723153972
 GameObject:
   m_ObjectHideFlags: 0
@@ -37903,7 +38412,7 @@ RectTransform:
   - {fileID: 1533200466}
   - {fileID: 1390397659}
   m_Father: {fileID: 1085849837}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -38311,7 +38820,7 @@ RectTransform:
   - {fileID: 153538428}
   - {fileID: 1059402640}
   m_Father: {fileID: 1085849837}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -39190,6 +39699,9 @@ MonoBehaviour:
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
+    isAllNPCMet: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
     name: 
     gender: male
     dunongPoints: 0
@@ -39376,6 +39888,7 @@ MonoBehaviour:
       description: Talk to Mang Esterlito
       dunongPointsRewards: 5
       region: Ilocos Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Mang Esterlito
@@ -39391,6 +39904,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: c966bd23-08a4-4d5a-b39b-8862bd01e45c
       isCompleted: 0
       isClaimed: 0
@@ -39398,6 +39916,7 @@ MonoBehaviour:
       description: Talk to Aling Nena
       dunongPointsRewards: 5
       region: Cagayan Valley
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Nena
@@ -39413,6 +39932,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: f6af8b02-0fb6-4f5e-b42d-52916397ec7c
       isCompleted: 0
       isClaimed: 0
@@ -39420,6 +39944,7 @@ MonoBehaviour:
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
       dunongPointsRewards: 5
       region: Cordillera Administrative Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -39435,6 +39960,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: a6befd39-9c97-44e8-aafe-351d316085e6
       isCompleted: 0
       isClaimed: 0
@@ -39442,6 +39972,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 5
       region: Central Luzon
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -39457,6 +39988,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 52f6a865-ae0b-4ead-82e0-907669131a4e
       isCompleted: 0
       isClaimed: 0
@@ -39464,6 +40000,7 @@ MonoBehaviour:
       description: Talk to Aling Julia
       dunongPointsRewards: 5
       region: CALABARZON
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Julia
@@ -39479,6 +40016,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: a4daf909-d99a-4933-b701-0fbff8579e3b
       isCompleted: 0
       isClaimed: 0
@@ -39486,6 +40028,7 @@ MonoBehaviour:
       description: Talk to Aling Marites
       dunongPointsRewards: 5
       region: MIMAROPA
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Marites
@@ -39501,6 +40044,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 8eb4a168-4936-4afd-9772-ff2f57deee74
       isCompleted: 0
       isClaimed: 0
@@ -39508,6 +40056,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 5
       region: Bicol Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -39523,6 +40072,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 54c785c9-a207-407d-9e32-af11b532fcb1
       isCompleted: 0
       isClaimed: 0
@@ -39530,6 +40084,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 5
       region: National Capital Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -39545,8 +40100,29 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     currentQuests: []
     completedQuests: []
+    npcInfos:
+    - name: Mang Esterlito
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Marites
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Julia
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
     inventory:
       items: []
     playerTime:
@@ -40471,6 +41047,141 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2025903505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2025903506}
+  - component: {fileID: 2025903508}
+  - component: {fileID: 2025903507}
+  m_Layer: 5
+  m_Name: Message
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2025903506
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025903505}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1108649625}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -6, y: -3}
+  m_SizeDelta: {x: 678.44, y: 158.91}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2025903507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025903505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: You meet new villager!
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7394abb855ac6bf40805ecdaf2506f0f, type: 2}
+  m_sharedMaterial: {fileID: -5557912328034547050, guid: 7394abb855ac6bf40805ecdaf2506f0f, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279440179
+  m_fontColor: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 51.7
+  m_fontSizeBase: 51.7
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 4.8854523, y: 0, z: -0.13876343, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2025903508
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025903505}
+  m_CullTransparentMesh: 1
 --- !u!1 &2040239304
 GameObject:
   m_ObjectHideFlags: 0

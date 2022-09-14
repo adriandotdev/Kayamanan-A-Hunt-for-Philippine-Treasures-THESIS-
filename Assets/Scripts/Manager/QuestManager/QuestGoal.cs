@@ -74,6 +74,21 @@ public class DeliveryGoal : QuestGoal
 }
 
 [System.Serializable]
+public class NumberGoal
+{
+    public int targetNumber;
+    public int currentNumber;
+    public enum CORRESPONDING_OBJECT_TO_COUNT { TALK_NPC, FEEDING_CHICKEN }
+    public CORRESPONDING_OBJECT_TO_COUNT correspondingCount;
+     
+    public NumberGoal( int targetNumber, CORRESPONDING_OBJECT_TO_COUNT count)
+    {
+        this.targetNumber = targetNumber;
+        this.correspondingCount = count;
+    }
+}
+
+[System.Serializable]
 public class Item
 {
     public string itemName;

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Ramon Villegas
+  m_Controller: {fileID: 9100000, guid: 4c532afcd2ceb5249a3f0a171f5010ea, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 20e4195ccacecfd4eb308f1aa1be93ce, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: faaafced871730c47bdfa8533e2894b3, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6404cc1d3a38a5144a42ceaba933a108, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: beead6009403a604f9ab2c9c578ff8f9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 91abe63034abc0e4a95e7afd1422e8a6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9d334c07780439647914dac226079eb7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 23646cad496836d468863ec6533a0f2b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d90f2fd6dbfcfeb46a62f88472388091, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 5b0ecb14eef46c946869bbc3d44ada73, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1620608935c3ff34e928492b364ecd66, type: 2}

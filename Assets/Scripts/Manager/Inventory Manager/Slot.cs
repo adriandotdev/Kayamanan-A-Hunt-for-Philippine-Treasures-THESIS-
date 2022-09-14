@@ -9,12 +9,12 @@ public class Slot : MonoBehaviour, IDropHandler
     {
         if (eventData.pointerDrag != null)
         {
+            if (eventData.pointerDrag.GetComponent<SlotItem>() == null) return; 
             /** If this game object index is >= to the number of items in the List then we set the 
              SlotItem property 'isCorrectlyDropped' to false and terminate execution of program flow. */
             if (gameObject.transform.GetSiblingIndex() >= 
                 DataPersistenceManager.instance.playerData.inventory.items.Count)
             {
-                print("SLOT ITEM IS NULL: " + eventData.pointerDrag.GetComponent<SlotItem>() is null);
                 eventData.pointerDrag.GetComponent<SlotItem>().isCorrectlyDropped = false;
                 return;
             }

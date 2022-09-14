@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public CanvasGroup homeCanvasGroup;
     public CanvasGroup characterCreationGroup;
 
+    public TMPro.TextMeshProUGUI dunongPointsValue;
+
     [Header("Player Data")]
     public PlayerData playerData;
 
@@ -52,9 +54,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
         SceneManager.sceneLoaded += OnHouseSceneLoaded;
         SceneManager.sceneLoaded += OnOutsideSceneLoaded;
         SceneManager.sceneLoaded += OnSchoolSceneLoaded;
+        SceneManager.sceneLoaded += OnMuseumSceneLoaded;
         SceneManager.sceneLoaded += OnPhilippineMapSceneLoaded;
         SceneManager.sceneLoaded += OnAssessmentAndWordGamesSceneLoaded;
         SceneManager.sceneLoaded += OnMajorIslandsSceneLoaded;
+        SceneManager.sceneLoaded += OnSleepCutsceneLoaded;
     }
 
     private void OnDisable()
@@ -64,9 +68,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
         SceneManager.sceneLoaded -= OnHouseSceneLoaded;
         SceneManager.sceneLoaded -= OnOutsideSceneLoaded;
         SceneManager.sceneLoaded -= OnSchoolSceneLoaded;
+        SceneManager.sceneLoaded -= OnMuseumSceneLoaded;
         SceneManager.sceneLoaded -= OnPhilippineMapSceneLoaded;
         SceneManager.sceneLoaded -= OnAssessmentAndWordGamesSceneLoaded;
         SceneManager.sceneLoaded -= OnMajorIslandsSceneLoaded;
+        SceneManager.sceneLoaded -= OnSleepCutsceneLoaded;
     }
 
     // For Menu Scene
@@ -143,7 +149,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
         {
             this.sceneToLoadFromPhilippineMap = "House";
             this.playerData.sceneToLoad = "House";
-            this.playerData.isIntroductionDone = true;
+
+            // For testing purposes only
+            //this.playerData.isIntroductionDone = true;
+            // For testing purposes only.
+
             this.SetUpHouseOrOutsideSceneButtons();
         }
     }
@@ -157,6 +167,18 @@ public class GameManager : MonoBehaviour, IDataPersistence
             //DataPersistenceManager.instance.playerData.isTutorialDone = true;
             this.sceneToLoadFromPhilippineMap = "Outside";
             this.playerData.sceneToLoad = "Outside";
+            this.SetUpHouseOrOutsideSceneButtons();
+        }
+    }
+
+    public void OnMuseumSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Museum"))
+        {
+            // fOR tESTING PURPOSES
+            //DataPersistenceManager.instance.playerData.isTutorialDone = true;
+            this.sceneToLoadFromPhilippineMap = "Museum";
+            this.playerData.sceneToLoad = "Museum";
             this.SetUpHouseOrOutsideSceneButtons();
         }
     }
@@ -252,6 +274,23 @@ public class GameManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    public void OnSleepCutsceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Sleep Cutscene"))
+        {
+            if (this.playerData.gender.ToUpper() == "MALE")
+            {
+                GameObject.Find("Timeline for Player Female").SetActive(false);
+                GameObject.Find("Female").SetActive(false);
+            }
+            else
+            {
+                GameObject.Find("Timeline for Player Male").SetActive(false);
+                GameObject.Find("Male").SetActive(false);
+            }
+        }
+    }
+
     /**
      * <summary>
      *  Ang function na ito ay isesetup ang common UI
@@ -262,58 +301,66 @@ public class GameManager : MonoBehaviour, IDataPersistence
      */
     public void SetUpHouseOrOutsideSceneButtons()
     {
-        if (!this.playerData.isTutorialDone)
+        //if (!this.playerData.isTutorialDone)
+        //{
+        //    return;
+        //}
+
+        try
         {
-            return;
+            // GET ALL THE NECESSARY COMPONENTS.
+            GameObject.Find("Character Name").GetComponent<TMPro.TextMeshProUGUI>().text = DataPersistenceManager.instance.playerData.name;
+            this.homeCanvasGroup = GameObject.Find("House Canvas Group").GetComponent<CanvasGroup>();
+            this.optionsPanel = GameObject.Find("Options Panel").GetComponent<RectTransform>();
+            this.soundButton = GameObject.Find("Sounds").GetComponent<Button>();
+            this.quitButton = GameObject.Find("Quit").GetComponent<Button>();
+            this.volumePanel = GameObject.Find("Volume Panel").GetComponent<RectTransform>();
+
+            this.dunongPointsValue = GameObject.Find("Dunong Points").transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>();
+            this.dunongPointsValue.text = DataPersistenceManager.instance.playerData.dunongPoints.ToString();
+
+            Button closeButton = GameObject.Find("Close Button").GetComponent<Button>();
+
+            this.soundButton.onClick.AddListener(() =>
+            {
+                SoundManager.instance?.PlaySound("Button Click 2");
+                this.ShowVolumeUI();
+            });
+
+            closeButton.onClick.AddListener(() =>
+            {
+                SoundManager.instance?.PlaySound("Button Click 1");
+                this.CloseOptionPanel();
+            });
+
+            this.quitButton.onClick.AddListener(() =>
+            {
+                SoundManager.instance?.PlaySound("Button Click 2");
+                this.LoadScene("Menu");
+            });
+
+            Button showMapButton = GameObject.Find("Show Map").GetComponent<Button>();
+            showMapButton.onClick.AddListener(() =>
+            {
+                SoundManager.instance?.PlaySound("Button Click 1");
+                this.LoadScene("Philippine Map");
+            });
+
+            Button optionsButton = GameObject.Find("Options Button").GetComponent<Button>();
+            optionsButton.onClick.AddListener(() =>
+            {
+                SoundManager.instance?.PlaySound("Button Click 1");
+                this.ShowOptionsPanel();
+
+                if (TimeManager.instance != null)
+                    TimeManager.instance.m_IsPaused = true;
+            });
+
+            // Hide the optionsPanel at first render
+            this.optionsPanel.gameObject.SetActive(false);
+            this.volumePanel.gameObject.SetActive(false);
         }
-
-        // GET ALL THE NECESSARY COMPONENTS.
-        GameObject.Find("Character Name").GetComponent<TMPro.TextMeshProUGUI>().text = DataPersistenceManager.instance.playerData.name;
-        this.homeCanvasGroup = GameObject.Find("House Canvas Group").GetComponent<CanvasGroup>();
-        this.optionsPanel = GameObject.Find("Options Panel").GetComponent<RectTransform>();
-        this.soundButton = GameObject.Find("Sounds").GetComponent<Button>();
-        this.quitButton = GameObject.Find("Quit").GetComponent<Button>();
-        this.volumePanel = GameObject.Find("Volume Panel").GetComponent<RectTransform>();
-        Button closeButton = GameObject.Find("Close Button").GetComponent<Button>();
-
-        this.soundButton.onClick.AddListener(() => 
-        {
-            SoundManager.instance?.PlaySound("Button Click 2");
-            this.ShowVolumeUI(); 
-        });
-
-        closeButton.onClick.AddListener(() =>
-        {
-            SoundManager.instance?.PlaySound("Button Click 1");
-            this.CloseOptionPanel();
-        });
-
-        this.quitButton.onClick.AddListener(() =>
-        {
-            SoundManager.instance?.PlaySound("Button Click 2");
-            this.LoadScene("Menu");
-        });
-
-        Button showMapButton = GameObject.Find("Show Map").GetComponent<Button>();
-        showMapButton.onClick.AddListener(() =>
-        {
-            SoundManager.instance?.PlaySound("Button Click 1");
-            this.LoadScene("Philippine Map");
-        });
-
-        Button optionsButton = GameObject.Find("Options Button").GetComponent<Button>();
-        optionsButton.onClick.AddListener(() =>
-        {
-            SoundManager.instance?.PlaySound("Button Click 1");
-            this.ShowOptionsPanel();
-
-            if (TimeManager.instance != null)
-                TimeManager.instance.m_IsPaused = true;
-        });
-
-        // Hide the optionsPanel at first render
-        this.optionsPanel.gameObject.SetActive(false);
-        this.volumePanel.gameObject.SetActive(false);
+        catch (System.Exception e) { print("ERROR IN GAME MANAGER"); }
     }
 
     public void LoadScene(string sceneName)

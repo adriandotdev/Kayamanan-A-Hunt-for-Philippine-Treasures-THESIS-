@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Player Scenes/School.unity
     guid: 6046b98c2b95fda489acddf0063d9d79
   - enabled: 1
+    path: Assets/Scenes/Player Scenes/Museum.unity
+    guid: f35950c5b8a4d35459c7de5328700350
+  - enabled: 1
     path: Assets/Scenes/Major Islands/Luzon.unity
     guid: cf1b3a6c1b9819649bbdf5ecb8d997e7
   - enabled: 1
@@ -53,6 +56,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Memory Game/Memory Game UI.unity
     guid: b2a0f134c0eb3a643b9b07521f5576d8
+  - enabled: 1
+    path: Assets/Scenes/Topic Info Scene.unity
+    guid: 538c4d47de76a6d4a9556fffc2216fc6
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Sleep Cutscene.unity
+    guid: 5f5e0b3602122634fb2efcd6d3444be3
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: f0628571f14175944b23ff9df709e903, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 410bec17ad676394fb4cc867ee09055b, type: 2}

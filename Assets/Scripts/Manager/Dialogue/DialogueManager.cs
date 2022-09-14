@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager _instance;
 
     [Header("UI Elements")]
+    // Panel or the dialogue box.
     [SerializeField] private RectTransform panel;
     [SerializeField] public TMPro.TextMeshProUGUI actorField;
     [SerializeField] private TMPro.TextMeshProUGUI dialogueField;
@@ -29,6 +30,12 @@ public class DialogueManager : MonoBehaviour
     private float typingSpeed = 0.02f;
 
     public Coroutine coroutine;
+
+    // the name of the current talking npc.
+    public string npcName;
+    /** Check if the npc is talking */
+    public bool isTalking;
+
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnHouseSceneLoaded;
@@ -43,6 +50,8 @@ public class DialogueManager : MonoBehaviour
     {
         if (_instance == null)
             _instance = this;
+
+        this.isTalking = false;
     }
 
     // Run this function when house scene is loaded.
@@ -57,6 +66,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(TextAsset ink)
     {
+        isTalking = true;
+
         currentStory = new Story(ink.text);
         panel.gameObject.SetActive(true);
         this.joystick.gameObject.SetActive(false);
@@ -74,6 +85,7 @@ public class DialogueManager : MonoBehaviour
             { 
                 panel.gameObject.SetActive(false);
                 OnDialogueRunning?.Invoke(false);
+                isTalking = false;
                 return;
             }
 
@@ -122,6 +134,7 @@ public class DialogueManager : MonoBehaviour
                 this.houseGroup.blocksRaycasts = true;
                 this.joystick.gameObject.SetActive(true);
                 this.inventoryPanel.gameObject.SetActive(true);
+                isTalking = false;
                 return;
             }
 
@@ -141,6 +154,7 @@ public class DialogueManager : MonoBehaviour
         this.joystick.gameObject.SetActive(true);
         this.inventoryPanel.gameObject.SetActive(true);
         dialogueField.text = "";
+        isTalking = false;
     }
 
     public void ShowChoices()

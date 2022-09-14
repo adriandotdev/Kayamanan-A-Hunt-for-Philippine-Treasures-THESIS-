@@ -148,6 +148,7 @@ public class DeliveryGoalGiver : MonoBehaviour
 
         // Only show the help button if the quest item is not yet given.
         if (collision.gameObject.CompareTag("Player") 
+             && this.quest != null
              && !this.quest.deliveryGoal.itemReceivedFromGiver)
         {
             this.deliveryReqButton.gameObject.SetActive(true);

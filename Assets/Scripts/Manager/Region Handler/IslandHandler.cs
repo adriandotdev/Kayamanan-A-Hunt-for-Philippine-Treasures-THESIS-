@@ -57,14 +57,14 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
             this.m_RegionInformationPanelContent = this.m_RegionInformationPanel.GetChild(2).GetChild(0).GetChild(0).GetComponent<RectTransform>();
 
             // COLLECTIBLES VALUE
-            GameObject.Find("Heroes Value").GetComponent<TMPro.TextMeshProUGUI>().text = GetNumberHeroesCollectiblesCollected(scene.name, "National Heroes").ToString() 
-                + "/" + GetTotalOfHeroesCollectibles(scene.name, "National Heroes");
-            GameObject.Find("Festivals Value").GetComponent<TMPro.TextMeshProUGUI>().text = GetNumberHeroesCollectiblesCollected(scene.name, "National Festivals").ToString()
-                + "/" + GetTotalOfHeroesCollectibles(scene.name, "National Festivals");
-            GameObject.Find("Tourist Attractions Value").GetComponent<TMPro.TextMeshProUGUI>().text = GetNumberHeroesCollectiblesCollected(scene.name, "Tourist Attractions").ToString()
-                + "/" + GetTotalOfHeroesCollectibles(scene.name, "Tourist Attractions");
-            GameObject.Find("General Knowledge Value").GetComponent<TMPro.TextMeshProUGUI>().text = GetNumberHeroesCollectiblesCollected(scene.name, "General Knowledge").ToString()
-                + "/" + GetTotalOfHeroesCollectibles(scene.name, "General Knowledge");
+            GameObject.Find("Heroes Value").GetComponent<TMPro.TextMeshProUGUI>().text = GetNumberOfCollectiblesCollected(scene.name, "National Heroes").ToString() 
+                + "/" + GetTotalOfCollectiblesCollected(scene.name, "National Heroes");
+            GameObject.Find("Festivals Value").GetComponent<TMPro.TextMeshProUGUI>().text = GetNumberOfCollectiblesCollected(scene.name, "National Festivals").ToString()
+                + "/" + GetTotalOfCollectiblesCollected(scene.name, "National Festivals");
+            GameObject.Find("Tourist Attractions Value").GetComponent<TMPro.TextMeshProUGUI>().text = GetNumberOfCollectiblesCollected(scene.name, "Tourist Attractions").ToString()
+                + "/" + GetTotalOfCollectiblesCollected(scene.name, "Tourist Attractions");
+            GameObject.Find("General Knowledge Value").GetComponent<TMPro.TextMeshProUGUI>().text = GetNumberOfCollectiblesCollected(scene.name, "General Knowledge").ToString()
+                + "/" + GetTotalOfCollectiblesCollected(scene.name, "General Knowledge");
 
             majorIslandInformationBTN = GameObject.Find("Information BTN").GetComponent<Button>();
             closeRegionInformationPanelBTN = this.m_RegionInformationPanel.gameObject.transform.GetChild(0).GetComponent<Button>();
@@ -74,12 +74,14 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
 
             majorIslandInformationBTN.onClick.AddListener(() =>
             {
+
                 LeanTween.scale(this.m_IslandInformationPanel.gameObject, Vector2.one, .2f)
                 .setEaseSpring();
             });
 
             closeRegionInformationPanelBTN.onClick.AddListener(() =>
             {
+
                 LeanTween.scale(this.m_RegionInformationPanel.gameObject, Vector2.zero, .2f)
                 .setEaseSpring();
             });
@@ -101,7 +103,7 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
         }
     }
 
-    int GetNumberHeroesCollectiblesCollected(string sceneName, string categoryName)
+    int GetNumberOfCollectiblesCollected(string sceneName, string categoryName)
     {
         Notebook nb = DataPersistenceManager.instance.playerData.notebook;
         int count = 0; 
@@ -117,7 +119,7 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
         return count;
     }
 
-    int GetTotalOfHeroesCollectibles(string sceneName, string categoryName)
+    int GetTotalOfCollectiblesCollected(string sceneName, string categoryName)
     {
 
         Notebook nb = DataPersistenceManager.instance.playerData.notebook;
@@ -161,7 +163,7 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
                     LeanTween.scale(this.m_RegionInformationPanel.gameObject, Vector2.one, .2f)
                     .setEaseSpring();
 
-                    // Set the regionName attributes for AssessmentManager and WordManager
+                    // Set the regionName and regionNum properties for AssessmentManager and WordManager
                     AssessmentManager.instance.regionName = button.name;
                     WordManager.instance.regionName = button.name;
                     AssessmentManager.instance.regionNum = foundRegionData.regionNumber;
@@ -207,12 +209,18 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
 
                 });
             }
+
             // Change the color of the region image if the found RegionData is open.
             Color greenColor;
             ColorUtility.TryParseHtmlString("#B0FF96", out greenColor);
 
-            if (foundRegionData != null && foundRegionData.isOpen)
-            { 
+            if (foundRegionData != null && foundRegionData.isOpen && foundRegionData.noOfStars == 3)
+            {
+                button.gameObject.SetActive(false);
+                this.m_Images[button.name].color = this.m_Images[button.name].color;
+            }
+            else if (foundRegionData != null && foundRegionData.isOpen)
+            {
                 button.gameObject.SetActive(true);
                 this.m_Images[button.name].color = this.m_Images[button.name].color;
             }

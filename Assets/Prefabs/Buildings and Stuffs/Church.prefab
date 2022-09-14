@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 9163808706182587010}
   - component: {fileID: 8727692867742225027}
   - component: {fileID: 7886599337990135843}
+  - component: {fileID: 1125684632}
   m_Layer: 0
   m_Name: Church
   m_TagString: Untagged
@@ -33,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 1712693618111675095}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.9840298, y: 0.037525177, z: -544.68097}
-  m_LocalScale: {x: 7.2145452, y: 7.2145452, z: 7.2145452}
+  m_LocalScale: {x: 5.950688, y: 5.950688, z: 5.950688}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -286,3 +287,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.0254166, y: 0.26784325}
   m_EdgeRadius: 0
+--- !u!114 &1125684632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712693618111675095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

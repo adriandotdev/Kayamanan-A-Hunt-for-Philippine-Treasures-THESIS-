@@ -3048,6 +3048,7 @@ MonoBehaviour:
       description: Talk to Mang Esterlito
       dunongPointsRewards: 5
       region: Ilocos Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Mang Esterlito
@@ -3063,6 +3064,7 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      questType: 0
     - questID: 23d5c8d2-e505-461d-93b3-23f7fd005d7d
       isCompleted: 0
       isClaimed: 0
@@ -3070,6 +3072,7 @@ MonoBehaviour:
       description: Talk to Aling Nena
       dunongPointsRewards: 5
       region: Cagayan Valley
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Nena
@@ -3085,6 +3088,7 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      questType: 0
     - questID: 4c3cf582-5ac4-40f9-a0f2-7f3734054f66
       isCompleted: 0
       isClaimed: 0
@@ -3092,6 +3096,7 @@ MonoBehaviour:
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
       dunongPointsRewards: 5
       region: Cordillera Administrative Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -3107,6 +3112,7 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      questType: 0
     - questID: 49622c2e-0296-46b9-a951-3cd87b0cf200
       isCompleted: 0
       isClaimed: 0
@@ -3114,6 +3120,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 5
       region: Central Luzon
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -3129,6 +3136,7 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      questType: 0
     - questID: ca9f1cf7-0a2d-45cf-805a-4391a4ed46bd
       isCompleted: 0
       isClaimed: 0
@@ -3136,6 +3144,7 @@ MonoBehaviour:
       description: Talk to Aling Julia
       dunongPointsRewards: 5
       region: CALABARZON
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Julia
@@ -3151,6 +3160,7 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      questType: 0
     - questID: b3aaaad2-931b-400b-8902-0f3d94fb0387
       isCompleted: 0
       isClaimed: 0
@@ -3158,6 +3168,7 @@ MonoBehaviour:
       description: Talk to Aling Marites
       dunongPointsRewards: 5
       region: MIMAROPA
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Marites
@@ -3173,6 +3184,7 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      questType: 0
     - questID: 5f942b26-da71-4e51-9470-7a6298a5e6f1
       isCompleted: 0
       isClaimed: 0
@@ -3180,6 +3192,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 5
       region: Bicol Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -3195,6 +3208,7 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      questType: 0
     - questID: 5172e7ed-8af8-4017-92f5-0c01f73ecba4
       isCompleted: 0
       isClaimed: 0
@@ -3202,6 +3216,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 5
       region: National Capital Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -3217,6 +3232,7 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      questType: 0
     currentQuests: []
     completedQuests: []
     inventory:
@@ -3233,6 +3249,7 @@ MonoBehaviour:
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
   regionName: 
+  regionNum: 0
   previousSceneToLoad: 
   categoryName: 
   correctAnswers: 

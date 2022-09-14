@@ -94,6 +94,15 @@ public class TweeningManager : MonoBehaviour
         }
     }
 
+    public void ShowTopicInfoMainTitle(GameObject bubbleEffectImage, GameObject bubbleTitle)
+    {
+        LeanTween.scale(bubbleEffectImage, new Vector2(5.4283f, 5.4283f), .2f)
+            .setEaseSpring().setOnComplete(() => {
+
+                LeanTween.scale(bubbleTitle, Vector2.one, .2f);
+            }).setDelay(1f);
+    }
+
     public void ShowOutOfTimePanel()
     {
         LeanTween.scale(this.outOfTimePanel.gameObject, Vector2.one, .2f)
@@ -154,7 +163,11 @@ public class TweeningManager : MonoBehaviour
                     .setOnComplete(() =>
                     {
                         if (noOfStars >= 1)
-                        starEmpty[0].gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Fill Star");
+                        {
+                            SoundManager.instance?.PlaySound("Star Sound");
+                            starEmpty[0].gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Fill Star");
+                        }
+                        
                         LeanTween.scale(starEmpty[0].gameObject, new Vector2(0.0341844f, 0.0341844f), .3f);
                     });
 
@@ -164,7 +177,11 @@ public class TweeningManager : MonoBehaviour
                     .setOnComplete(() =>
                     {
                         if (noOfStars >= 2)
-                        starEmpty[1].gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Fill Star");
+                        {
+                            SoundManager.instance?.PlaySound("Star Sound");
+                            starEmpty[1].gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Fill Star");
+                        }
+                        
                         LeanTween.scale(starEmpty[1].gameObject, new Vector2(0.0341844f, 0.0341844f), .3f);
                     });
                 
@@ -174,7 +191,11 @@ public class TweeningManager : MonoBehaviour
                     .setOnComplete(() =>
                     {
                         if (noOfStars >= 3)
-                        starEmpty[2].gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Fill Star");
+                        {
+                            SoundManager.instance?.PlaySound("Star Sound");
+                            starEmpty[2].gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Fill Star");
+                        }
+                        
                         LeanTween.scale(starEmpty[2].gameObject, new Vector2(0.0341844f, 0.0341844f), .3f)
                         .setOnComplete(() =>
                         {

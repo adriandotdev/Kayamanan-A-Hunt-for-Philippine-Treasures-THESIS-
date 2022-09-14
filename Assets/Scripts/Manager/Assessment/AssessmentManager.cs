@@ -73,10 +73,7 @@ public class AssessmentManager : MainGame, IDataPersistence
                 this.SetChoices();
                 this.AddEvents();
             }
-            catch (System.Exception e)
-            {
-                print(e.StackTrace);
-            }
+            catch (System.Exception e) {}
         }
     }
 
@@ -182,9 +179,14 @@ public class AssessmentManager : MainGame, IDataPersistence
 
     public void ShowScorePanel(int noOfCorrectAnswers)
     {
+        this.CollectAllRewards();
+
         TweeningManager.instance.OpenScorePanel(noOfCorrectAnswers, () =>
         {
-            this.CollectAllRewards();
+            //this.CollectAllRewards();
+            if (IsRegionCollectiblesCanBeCollected() == false) return;
+
+            SceneManager.LoadSceneAsync("Collectibles", LoadSceneMode.Additive);
         });
     }
 

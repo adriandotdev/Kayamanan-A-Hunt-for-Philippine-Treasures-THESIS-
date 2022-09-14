@@ -73,6 +73,7 @@ public class InventoryManager : MonoBehaviour
             slot.GetChild(0).GetComponent<Image>().sprite = null;
             slot.GetChild(0).GetComponent<SlotItem>().itemName = "";
             slot.GetChild(0).GetComponent<SlotItem>().isCorrectlyDropped = false;
+            slot.GetChild(0).GetComponent<SlotItem>().parentOfSlot = null;
             slot.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = "0";
         }
     }

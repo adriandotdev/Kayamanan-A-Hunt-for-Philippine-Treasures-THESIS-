@@ -17,8 +17,10 @@ public class Quest
     public int regionNum;
     public TalkGoal talkGoal;
     public DeliveryGoal deliveryGoal;
+    public NumberGoal numberGoal;
 
-    public enum QUEST_TYPE { TALK, DELIVERY }
+
+    public enum QUEST_TYPE { TALK, DELIVERY, NUMBER }
 
     public QUEST_TYPE questType;
 
@@ -45,6 +47,26 @@ public class Quest
         this.talkGoal = null;
         this.region = region;
         this.regionNum = regionNum;
+        this.questType = QUEST_TYPE.DELIVERY;
+    }
+
+    public Quest(string title, string description, string region, NumberGoal goal)
+    {
+        this.questID = Guid.NewGuid().ToString();
+        this.title = title;
+        this.description = description;
+        this.region = region;
+        this.numberGoal = goal;
+        this.questType = QUEST_TYPE.NUMBER;
+    }
+
+    public Quest(string title, string description, string region, DeliveryGoal goal)
+    {
+        this.questID = Guid.NewGuid().ToString();
+        this.title = title;
+        this.description = description;
+        this.region = region;
+        this.deliveryGoal = goal;
         this.questType = QUEST_TYPE.DELIVERY;
     }
 

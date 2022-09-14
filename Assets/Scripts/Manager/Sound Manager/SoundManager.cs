@@ -33,7 +33,7 @@ public class SoundManager : MonoBehaviour
 
     private void Start()
     {
-        PlaySound("Main BG");
+        this.PlaySound("Main BG");
     }
 
     public void PlaySound(string name)
@@ -42,6 +42,11 @@ public class SoundManager : MonoBehaviour
 
         if (!sound.src.isPlaying)
             sound.src.Play();
+        else
+        {
+            sound.src.Stop();
+            sound.src.Play();
+        }
     }
 }
 
