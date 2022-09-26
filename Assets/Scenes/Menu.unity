@@ -1708,396 +1708,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739458285}
   m_CullTransparentMesh: 1
---- !u!1 &792420623
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 792420625}
-  - component: {fileID: 792420624}
-  m_Layer: 0
-  m_Name: Data Persistence Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &792420624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792420623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49c5d0bb1b77b254dadaba3788c72cc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerData:
-    id: 
-    isNewlyCreated: 1
-    isTutorialDone: 0
-    isIntroductionDone: 0
-    isAllNPCMet: 0
-    isNPCIntroductionPanelDone: 0
-    isFromSleeping: 0
-    name: 
-    gender: 
-    dunongPoints: 25
-    requiredDunongPointsToPlay: 10
-    remainingTime: 18000
-    sceneToLoad: House
-    xPos: 0
-    yPos: 0
-    notebook:
-      collectibles:
-      - name: Jose Rizal
-        imagePath: Collectibles/C1
-        isCollected: 0
-        categoryName: National Heroes
-        regionName: Region 1
-        majorIsland: 
-      - name: Anahaw
-        imagePath: Collectibles/C2
-        isCollected: 0
-        categoryName: National Symbols
-        regionName: Region 1
-        majorIsland: 
-      - name: Andres Bonifacio
-        imagePath: Collectibles/C3
-        isCollected: 0
-        categoryName: National Symbols
-        regionName: Region 2
-        majorIsland: 
-      - name: Kalabaw
-        imagePath: Collectibles/C4
-        isCollected: 0
-        categoryName: National Symbols
-        regionName: Region 3
-        majorIsland: 
-    regionsData:
-    - regionNumber: 0
-      isOpen: 1
-      regionName: REGION 1
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 2
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 3
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 4
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 5
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 6
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 7
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 8
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 9
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 10
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 11
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 12
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 13
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 14
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 15
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 16
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    - regionNumber: 0
-      isOpen: 0
-      regionName: REGION 17
-      information: 
-      currentScore: 0
-      highestScore: 0
-      noOfStars: 0
-      categories: []
-    quests:
-    - questID: 4f3295a4-d1a4-40aa-aa4c-3314254f0656
-      isCompleted: 0
-      isClaimed: 0
-      title: Known All Heroes
-      description: Talk to Mang Esterlito
-      dunongPointsRewards: 15
-      region: Region 1
-      regionNum: 0
-      talkGoal:
-        isFinished: 0
-        npcName: Mang Esterlito
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      questType: 0
-    - questID: 3dc58456-1ff2-4ba2-9282-44471e443214
-      isCompleted: 0
-      isClaimed: 0
-      title: Talk to your MILF
-      description: Talk to Aling Nena
-      dunongPointsRewards: 10
-      region: Region 1
-      regionNum: 0
-      talkGoal:
-        isFinished: 0
-        npcName: Aling Nena
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      questType: 0
-    - questID: 454d9ddc-95c3-4277-8750-dfc6044b0712
-      isCompleted: 0
-      isClaimed: 0
-      title: Best Friends
-      description: Talk to Aling Missy
-      dunongPointsRewards: 5
-      region: Region 2
-      regionNum: 0
-      talkGoal:
-        isFinished: 0
-        npcName: Aling Nena
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      questType: 0
-    - questID: b0aec0aa-ccda-4a25-a07a-58e7ca7ac7e2
-      isCompleted: 0
-      isClaimed: 0
-      title: Buko Pie
-      description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
-      dunongPointsRewards: 10
-      region: Region 1
-      regionNum: 0
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: Aling Marites
-        receiverName: Mang Esterlito
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      questType: 0
-    currentQuests: []
-    completedQuests: []
-    npcInfos:
-    - name: Mang Esterlito
-      info: 
-      isMet: 0
-      xPos: 0
-      yPos: 0
-    - name: Aling Marites
-      info: 
-      isMet: 0
-      xPos: 0
-      yPos: 0
-    - name: Aling Julia
-      info: 
-      isMet: 0
-      xPos: 0
-      yPos: 0
-    - name: Ramon Villegas
-      info: 
-      isMet: 0
-      xPos: 0
-      yPos: 0
-    - name: Gregorio Zaide
-      info: 
-      isMet: 0
-      xPos: 0
-      yPos: 0
-    - name: Mikaela Fudolig
-      info: 
-      isMet: 0
-      xPos: 0
-      yPos: 0
-    - name: Ivan Henares
-      info: 
-      isMet: 0
-      xPos: 0
-      yPos: 0
-    inventory:
-      items: []
-    playerTime:
-      m_ActualHourInRealLife: 8
-      m_ActualMinuteInRealLife: 0
-      m_IsDaytime: 1
-      m_IsAllEstablishmentsOpen: 1
-      m_DayEvent: 1
-      m_NoOfSecondsPerTwoAndHalfMinutes: 1
-      m_NoOfSecondsPerMinute: 0.15
-      m_GameTimeHour: 0
-      m_GameTimeMinute: 0
-      m_GameTimeSeconds: 0
-  slots:
-    ids: []
-  confirmButton: {fileID: 0}
---- !u!4 &792420625
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792420623}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3738445, y: -1.1318097, z: 575.1661}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &862180998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2232,7 +1842,7 @@ MonoBehaviour:
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
-    isAllNPCMet: 0
+    isPreQuestIntroductionDone: 0
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
     name: 
@@ -3404,6 +3014,1038 @@ MonoBehaviour:
   ConformX: 1
   ConformY: 1
   Logging: 0
+--- !u!1 &1230072266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1230072267}
+  - component: {fileID: 1230072268}
+  m_Layer: 0
+  m_Name: Data Persistence Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1230072267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230072266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.3738445, y: -1.1318097, z: 575.1661}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1230072268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230072266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c5d0bb1b77b254dadaba3788c72cc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData:
+    id: 
+    isNewlyCreated: 1
+    isTutorialDone: 0
+    isIntroductionDone: 0
+    isPreQuestIntroductionDone: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
+    name: 
+    gender: male
+    dunongPoints: 0
+    requiredDunongPointsToPlay: 65
+    remainingTime: 18000
+    sceneToLoad: House
+    xPos: 0
+    yPos: 0
+    notebook:
+      collectibles:
+      - name: Jose Rizal
+        imagePath: Collectibles/Rizal
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Ilocos Region
+        majorIsland: Luzon
+      - name: Diego Silang
+        imagePath: Collectibles/Diego Silang
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Ilocos Region
+        majorIsland: Luzon
+      - name: Anahaw
+        imagePath: Collectibles/Anahaw
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: Cagayan Valley
+        majorIsland: Luzon
+      - name: Andres Bonifacio
+        imagePath: Collectibles/Bonifacio
+        isCollected: 0
+        categoryName: Tourist Attractions
+        regionName: Cordillera Administrative Region
+        majorIsland: Luzon
+      - name: Kalabaw
+        imagePath: Collectibles/Kalabaw
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Central Luzon
+        majorIsland: Luzon
+      - name: Kalabaw
+        imagePath: Collectibles/Kalabaw
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: CALABARZON
+        majorIsland: Luzon
+      - name: Jose Rizal
+        imagePath: Collectibles/Rizal
+        isCollected: 0
+        categoryName: Tourist Attractions
+        regionName: MIMAROPA
+        majorIsland: Luzon
+      - name: Anahaw
+        imagePath: Collectibles/Anahaw
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Bicol Region
+        majorIsland: Luzon
+      - name: Andres Bonifacio
+        imagePath: Collectibles/Bonifacio
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: National Capital Region
+        majorIsland: Luzon
+      - name: Jose Rizal
+        imagePath: Collectibles/Rizal
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Western Visayas
+        majorIsland: VISAYAS
+      - name: Jose Rizal
+        imagePath: Collectibles/Rizal
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: Central Visayas
+        majorIsland: VISAYAS
+      - name: Jose Rizal
+        imagePath: Collectibles/Rizal
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: Eastern Visayas
+        majorIsland: VISAYAS
+      - name: Andres Bonifacio
+        imagePath: Collectibles/Bonifacio
+        isCollected: 0
+        categoryName: Tourist Attractions
+        regionName: Zamboanga Peninsula
+        majorIsland: MINDANAO
+      - name: Kalabaw
+        imagePath: Collectibles/Kalabaw
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Northern Mindanao
+        majorIsland: MINDANAO
+      - name: Kalabaw
+        imagePath: Collectibles/Kalabaw
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: Davao Region
+        majorIsland: MINDANAO
+      - name: Jose Rizal
+        imagePath: Collectibles/Rizal
+        isCollected: 0
+        categoryName: Tourist Attractions
+        regionName: SOCCSKSARGEN
+        majorIsland: MINDANAO
+      - name: Anahaw
+        imagePath: Collectibles/Anahaw
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Caraga Region
+        majorIsland: MINDANAO
+      - name: Andres Bonifacio
+        imagePath: Collectibles/Bonifacio
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: BARMM
+        majorIsland: MINDANAO
+    regionsData:
+    - regionNumber: 1
+      isOpen: 1
+      regionName: Ilocos Region
+      information: "Ilocos is a region in the Philippines, encompassing the northwestern
+        coast of Luzon island. It\u2019s known for its historic sites, beaches and
+        the well-preserved Spanish colonial city of Vigan. Dating from the 16th century,
+        Vigan\u2019s Mestizo district is characterized by cobblestone streets and
+        mansions with wrought-iron balconies. Farther north, Laoag City is a jumping-off
+        point for the huge La Paz Sand Dunes."
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: National Festivals
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 2
+      isOpen: 0
+      regionName: Cagayan Valley
+      information: 'Cagayan Valley, designated as Region II, is an administrative
+        region in the Philippines, located in the northeastern section of Luzon Island.
+        It is composed of five Philippine provinces: Batanes, Cagayan, Isabela, Nueva
+        Vizcaya, and Quirino.'
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: Tourist Attractions
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 3
+      isOpen: 0
+      regionName: Cordillera Administrative Region
+      information: The Cordillera Administrative Region, also known as the Cordillera
+        Region, or simply, Cordillera, is an administrative region in the Philippines,
+        situated within the island of Luzon.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: National Festivals
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: General Knowledge
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 4
+      isOpen: 0
+      regionName: Central Luzon
+      information: 
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Festivals
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: General Knowledge
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 5
+      isOpen: 0
+      regionName: National Capital Region
+      information: 
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: National Festivals
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 6
+      isOpen: 0
+      regionName: CALABARZON
+      information: 
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: National Festivals
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 7
+      isOpen: 0
+      regionName: MIMAROPA
+      information: 
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Festivals
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: Tourist Attractions
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 8
+      isOpen: 0
+      regionName: Bicol Region
+      information: 
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 9
+      isOpen: 0
+      regionName: Western Visayas
+      information: Western Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 10
+      isOpen: 0
+      regionName: Eastern Visayas
+      information: Eastern Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 11
+      isOpen: 0
+      regionName: Central Visayas
+      information: Central Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 12
+      isOpen: 0
+      regionName: Zamboanga Peninsula
+      information: Western Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 13
+      isOpen: 0
+      regionName: Northern Mindanao
+      information: Central Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 14
+      isOpen: 0
+      regionName: Davao Region
+      information: Eastern Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 15
+      isOpen: 0
+      regionName: SOCCSKSARGEN
+      information: Western Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 16
+      isOpen: 0
+      regionName: Caraga Region
+      information: Central Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 17
+      isOpen: 0
+      regionName: BARMM
+      information: Eastern Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    quests:
+    - questID: 33168f99-d2fe-43be-ae8b-9abdf7e1e2c6
+      isCompleted: 0
+      isClaimed: 0
+      title: A Day with Friendliness
+      description: Meet all the villagers.
+      dunongPointsRewards: 0
+      region: PRE-QUEST
+      regionNum: 0
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 2
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 2
+    - questID: 3bc277cf-bbcb-411c-94c0-321aebe4d193
+      isCompleted: 0
+      isClaimed: 0
+      title: A Simple Thanks
+      description: Give this Mango to Aling Nena
+      dunongPointsRewards: 0
+      region: PRE-QUEST
+      regionNum: 0
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 0cefabe4-d029-46b8-8368-e2422472495c
+        deliveryMessage: Get the Mango from Mang Esterlito and give it to Aling Nena.
+        giverName: Mang Esterlito
+        receiverName: Aling Nena
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 1
+          stackable: 1
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 1
+    - questID: e341ce44-5b9a-4310-8dd0-37879c3af919
+      isCompleted: 0
+      isClaimed: 0
+      title: Ilocos Region Quest!
+      description: Get the Mango from Aling Marites and give it to Mang Esterlito
+      dunongPointsRewards: 25
+      region: Ilocos Region
+      regionNum: 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 8bd1f024-3e09-43d7-88d4-9e14827ff9fd
+        deliveryMessage: Can you give this Mango to Mang Esterlito?
+        giverName: Aling Marites
+        receiverName: Mang Esterlito
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 1
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 1
+    - questID: bc5db217-afe6-4446-a073-a6e10e5e3326
+      isCompleted: 0
+      isClaimed: 0
+      title: Ilocos Region Quest!
+      description: Get the Mango from Aling Julia and give it to Aling Marites
+      dunongPointsRewards: 25
+      region: Ilocos Region
+      regionNum: 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 70dc351e-6949-4879-bbe4-ae87204c06b0
+        deliveryMessage: Can you give this Mango to Aling Marites?
+        giverName: Aling Julia
+        receiverName: Aling Marites
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 2
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 1
+    - questID: cd6ffcf9-e757-4c58-a285-71ad81363ed2
+      isCompleted: 0
+      isClaimed: 0
+      title: Ilocos Region Quest!
+      description: Talk to Mang Esterlito
+      dunongPointsRewards: 15
+      region: Ilocos Region
+      regionNum: 1
+      talkGoal:
+        isFinished: 0
+        npcName: Mang Esterlito
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
+    - questID: 9501c383-620a-4306-b91b-caca80d103f2
+      isCompleted: 0
+      isClaimed: 0
+      title: Cagayan Valley Quest!
+      description: Talk to Aling Nena
+      dunongPointsRewards: 10
+      region: Cagayan Valley
+      regionNum: 2
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Nena
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
+    - questID: f898fe58-fab9-45b8-a318-5d1eb8db7991
+      isCompleted: 0
+      isClaimed: 0
+      title: CAR Quest!
+      description: Get the Mango from Aling Marites and give it to Mang Esterlito
+      dunongPointsRewards: 25
+      region: Cordillera Administrative Region
+      regionNum: 3
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: c2b4ab01-a663-4e42-9b1b-c1079689bfb8
+        deliveryMessage: Can you give this Mango to Mang Esterlito?
+        giverName: Aling Marites
+        receiverName: Mang Esterlito
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 1
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 1
+    - questID: a25046ae-9fdc-4ba7-9b96-f44669111552
+      isCompleted: 0
+      isClaimed: 0
+      title: Central Luzon Quest!
+      description: Help Aling Julia to give Aling Marites a Mango
+      dunongPointsRewards: 15
+      region: Central Luzon
+      regionNum: 4
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: c4108081-d795-46f9-9f56-13f2acdf8eb9
+        deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
+        giverName: Aling Julia
+        receiverName: Aling Marites
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 1
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 1
+    - questID: 03a870cf-bdb7-428b-aea5-8d8d2ea0f67a
+      isCompleted: 0
+      isClaimed: 0
+      title: NCR Quest!
+      description: Help Mang Esterlito to give Aling Marites a Mango
+      dunongPointsRewards: 5
+      region: National Capital Region
+      regionNum: 5
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 888a9c12-7c5e-45f4-93a5-df7ad0aea1a8
+        deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
+        giverName: Mang Esterlito
+        receiverName: Aling Marites
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 3
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 1
+    - questID: fac14ec7-b806-4def-9cab-d8a31709241d
+      isCompleted: 0
+      isClaimed: 0
+      title: CALABARZON Quest!
+      description: Talk to Aling Julia
+      dunongPointsRewards: 35
+      region: CALABARZON
+      regionNum: 6
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Julia
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
+    - questID: c7cbc498-c793-43aa-adae-746a77ecca54
+      isCompleted: 0
+      isClaimed: 0
+      title: MIMAROPA Quest!
+      description: Talk to Aling Marites
+      dunongPointsRewards: 15
+      region: MIMAROPA
+      regionNum: 7
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Marites
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
+    - questID: 47d08b01-7fac-48de-af50-77f9616a6e0d
+      isCompleted: 0
+      isClaimed: 0
+      title: Bicol Region Quest!
+      description: Help Aling Julia to give Aling Marites a Banana
+      dunongPointsRewards: 5
+      region: Bicol Region
+      regionNum: 8
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 80a601f1-1cb1-43d9-8c73-b00a9e9b85f8
+        deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
+        giverName: Aling Julia
+        receiverName: Aling Marites
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Banana
+          information: 
+          quantity: 2
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 1
+    - questID: 2ae0e4e7-fa84-473d-b27a-6ccb2bba897c
+      isCompleted: 0
+      isClaimed: 0
+      title: Western Visayas Quest!
+      description: Talk to Aling Julia
+      dunongPointsRewards: 35
+      region: Western Visayas
+      regionNum: 9
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Julia
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
+    - questID: d9dee006-ebe7-425f-b5cf-b48e6d585c6c
+      isCompleted: 0
+      isClaimed: 0
+      title: Central Visayas Quest!
+      description: Talk to Aling Marites
+      dunongPointsRewards: 25
+      region: Western Visayas
+      regionNum: 10
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Marites
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
+    - questID: a3c50762-e87d-4b74-9511-a4c61d480b61
+      isCompleted: 0
+      isClaimed: 0
+      title: Eastern Visayas Quest!
+      description: Talk to Aling Marites
+      dunongPointsRewards: 75
+      region: Western Visayas
+      regionNum: 11
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Marites
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
+    - questID: ae33e7c7-5678-496f-b6b6-9e8b26c480bf
+      isCompleted: 0
+      isClaimed: 0
+      title: Zamboanga Peninsula Quest!
+      description: Talk to Aling Julia
+      dunongPointsRewards: 35
+      region: Zamboanga Peninsula
+      regionNum: 12
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Julia
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
+    - questID: 4e5ff7e1-a1cd-4f2e-8def-6d549cc9ddd0
+      isCompleted: 0
+      isClaimed: 0
+      title: Northern Mindanao Quest!
+      description: Talk to Aling Marites
+      dunongPointsRewards: 10
+      region: Northern Mindanao
+      regionNum: 13
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Marites
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
+    - questID: 0e9dd1a7-1ae7-4b96-86a6-c46e67002af6
+      isCompleted: 0
+      isClaimed: 0
+      title: Davao Region Quest!
+      description: Talk to Aling Nena
+      dunongPointsRewards: 35
+      region: Davao Region
+      regionNum: 14
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Nena
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
+    - questID: 9f69d18b-72e7-4a0d-ba0d-ae6c659e2f47
+      isCompleted: 0
+      isClaimed: 0
+      title: SOCCSKSARGEN Quest!
+      description: Talk to Mang Esterlito
+      dunongPointsRewards: 15
+      region: SOCCSKSARGEN
+      regionNum: 15
+      talkGoal:
+        isFinished: 0
+        npcName: Mang Esterlito
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
+    - questID: 2ae3838d-2259-4800-9b68-4f8c38462c26
+      isCompleted: 0
+      isClaimed: 0
+      title: Caraga Region Quest!
+      description: Talk to Aling Marites
+      dunongPointsRewards: 45
+      region: Caraga Region
+      regionNum: 16
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Marites
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
+    - questID: 030de6bd-85e2-4cc1-8ce0-b5d3cd9a19e5
+      isCompleted: 0
+      isClaimed: 0
+      title: BARMM Quest!
+      description: Talk to Aling Julia
+      dunongPointsRewards: 325
+      region: BARMM
+      regionNum: 17
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Julia
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
+    currentQuests: []
+    completedQuests: []
+    npcInfos:
+    - name: Mang Esterlito
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Marites
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Julia
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ramon Villegas
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Gregorio Zaide
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Mikaela Fudolig
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ivan Henares
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    inventory:
+      items: []
+    playerTime:
+      m_ActualHourInRealLife: 8
+      m_ActualMinuteInRealLife: 0
+      m_IsDaytime: 1
+      m_IsAllEstablishmentsOpen: 1
+      m_DayEvent: 1
+      m_NoOfSecondsPerTwoAndHalfMinutes: 1
+      m_NoOfSecondsPerMinute: 0.15
+      m_GameTimeHour: 0
+      m_GameTimeMinute: 0
+      m_GameTimeSeconds: 0
+  slots:
+    ids: []
+  confirmButton: {fileID: 0}
 --- !u!1 &1342412131
 GameObject:
   m_ObjectHideFlags: 0

@@ -79,7 +79,7 @@ public class TweeningManager : MonoBehaviour
     {
         if (scene.name == "Memory Game")
         {
-            this.outOfTimePanel = GameObject.Find("Out of Time Panel").GetComponent<RectTransform>();
+            this.outOfTimePanel = GameObject.Find("Out of Time").GetComponent<RectTransform>();
             this.outOfTimePanel.localScale = Vector2.zero;
         }
     }
@@ -94,13 +94,23 @@ public class TweeningManager : MonoBehaviour
         }
     }
 
-    public void ShowTopicInfoMainTitle(GameObject bubbleEffectImage, GameObject bubbleTitle)
+    public void RotateStarInPanelOne(GameObject gameObject)
     {
-        LeanTween.scale(bubbleEffectImage, new Vector2(5.4283f, 5.4283f), .2f)
-            .setEaseSpring().setOnComplete(() => {
+        LeanTween.rotateZ(gameObject, 45f, .5f)
+            .setLoopPingPong();
+    }
 
-                LeanTween.scale(bubbleTitle, Vector2.one, .2f);
-            }).setDelay(1f);
+    public void RotateInLoop(GameObject gameObject)
+    {
+        LeanTween.rotateZ(gameObject, 36f, .5f)
+            .setLoopPingPong();
+    }
+
+    public void ScaleTitleElementsInPanelOne(GameObject gameObject) 
+    { 
+        float defaultScale = gameObject.transform.localScale.x;
+        LeanTween.scale(gameObject, new Vector2(defaultScale + .1f, defaultScale + .1f), .3f)
+            .setLoopPingPong();
     }
 
     public void ShowOutOfTimePanel()
@@ -108,6 +118,7 @@ public class TweeningManager : MonoBehaviour
         LeanTween.scale(this.outOfTimePanel.gameObject, Vector2.one, .2f)
             .setEaseSpring();
     }
+
     public void OpenScorePanel(int noOfStars, Action ShowRewardsScene)
     {
         /** 

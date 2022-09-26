@@ -9,11 +9,10 @@ using TMPro;
 public class MemoryGameManager : MonoBehaviour
 {
     public static MemoryGameManager instance;
-    public RectTransform puzzleContainer;
-    public GameObject puzzleButton;
-    public Sprite notFlippedImage;
-    public Sprite[] buttonImages;
-    public int noOfGuess = 0;
+    public RectTransform puzzleContainer; // Container of the tile
+    public GameObject puzzleButton; // Puzzle Prefab
+    public Sprite notFlippedImage; // Image of the button when it is not clicked.
+    public Sprite[] buttonImages; // Images that is going to be used for memory game.
 
     public bool firstGuess;
     public bool secondGuess;
@@ -90,7 +89,7 @@ public class MemoryGameManager : MonoBehaviour
     /// </summary>
     private void UpdateTime()
     {
-        /**- Check if the cards is not showing, which it means it is the actual memory game.
+        /**- Check if the cards is not showing, which means it is the actual memory game.
          * - Check if the 'puzzleContainer' is not equal to null to avoid any errors. */
         if (isShowingAllCards == false && this.puzzleContainer != null)
         {
@@ -110,7 +109,7 @@ public class MemoryGameManager : MonoBehaviour
                 return;
             }
         }
-        // This will run if the cards is still showing to memorize by the player.
+        // This will run if the cards is still showing to be memorize by the player.
         else
         {
             if (this.puzzleContainer != null)
@@ -183,7 +182,7 @@ public class MemoryGameManager : MonoBehaviour
          * </summary> 
          */
         GameObject memoryGameBTN = null;
-        for (int i = 0; i < (buttonImages.Length * 2); i++)
+        for (int i = 0; i < (4 * 2); i++)
         {
             memoryGameBTN = Instantiate(this.puzzleButton, this.puzzleContainer, false);
             memoryGameBTN.GetComponent<Image>().sprite = this.notFlippedImage;
@@ -218,19 +217,22 @@ public class MemoryGameManager : MonoBehaviour
             h++;
         }
 
-        this.ShowImageForPeriodOfTime(this.maxTimeForShowingCards);
+        this.ShowAllMemoryGameImages(this.maxTimeForShowingCards);
     }
 
-    void ShowImageForPeriodOfTime(float time)
+    /**<summary>
+     *  Show All Images for Memorization.
+     * </summary> */
+    void ShowAllMemoryGameImages(float time)
     {
         foreach (Transform transform in this.puzzleContainer)
         {
             transform.GetComponent<Image>().sprite = this.buttonImages[int.Parse(transform.name)];
         }
-        StartCoroutine(HideImage(time));
+        StartCoroutine(HideAllImages(time));
     }
 
-    IEnumerator HideImage(float time)
+    IEnumerator HideAllImages(float time)
     {
         yield return new WaitForSeconds(time);
 
@@ -308,6 +310,7 @@ public class MemoryGameManager : MonoBehaviour
 
                     this.transform2 = transform;
 
+                    /** Check if it the card is the same. */
                     if (this.firstGuessName.ToUpper() == this.secondGuessName.ToUpper())
                     {
                         transform1.GetComponent<FlippedScript>().IsFlipped = true;
@@ -331,8 +334,6 @@ public class MemoryGameManager : MonoBehaviour
                         StopAllCoroutines();
                         this.flipTwoCardsCoroutine = StartCoroutine(FlippedTwoCards());
                     }
-
-                    this.noOfGuess++;
                 });
             });
         }

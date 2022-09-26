@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 284914d86fbbffa45a7353cd62ca64c8
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Comic Ink
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 85c088a7ca0c3f7449a6e6d25656ff72, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

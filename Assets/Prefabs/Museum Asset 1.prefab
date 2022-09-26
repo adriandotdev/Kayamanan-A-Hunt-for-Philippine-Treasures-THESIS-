@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5785031963343729125}
   - component: {fileID: 5785031963343729124}
   - component: {fileID: 5785031963343729126}
+  - component: {fileID: -3599985183771892691}
   m_Layer: 0
   m_Name: Museum Asset 1
   m_TagString: Untagged
@@ -141,10 +142,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topicImage: {fileID: 21300000, guid: d4e1e96c60202a549a366f111b24316b, type: 3}
   topic: Jose Rizal
-  info: "Jos\xE9 Protasio Rizal Mercado y Alonso Realonda was a Filipino nationalist,
-    writer and polymath active at the end of the Spanish colonial period of the Philippines.
-    He is considered the national hero of the Philippines."
+  info: {fileID: 0}
   timerValue: 8
+  panelNumber: 0
+--- !u!114 &-3599985183771892691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5785031963343729113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &5785031964399276803
 GameObject:
   m_ObjectHideFlags: 0

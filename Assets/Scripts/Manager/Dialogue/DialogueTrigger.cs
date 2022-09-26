@@ -59,10 +59,10 @@ public class DialogueTrigger : MonoBehaviour
 
     public void StartDialogue()
     {
-        /**  Kapag ang isAllNPCMet is false pa, and if ang NPC na gameobject na ito ay
+        /**  Kapag ang isPreQuestIntroductionDone is false pa, and if ang NPC na gameobject na ito ay
          first time palang kakausapin ni player, then we need to go inside this if block
          and execute ang instruction. */
-        if (DataPersistenceManager.instance.playerData.isAllNPCMet == false && CheckIfFirstTimeTalking(this.NPC_NAME))
+        if (DataPersistenceManager.instance.playerData.isPreQuestIntroductionDone == false && CheckIfFirstTimeTalking(this.NPC_NAME))
         {
             foreach (Quest quest in DataPersistenceManager.instance.playerData.currentQuests)
             {
@@ -72,7 +72,8 @@ public class DialogueTrigger : MonoBehaviour
 
                     if (quest.numberGoal.currentNumber == quest.numberGoal.targetNumber)
                     {
-                        QuestManager.instance?.OpenAlertBox();
+                        QuestManager.instance?.OpenPlainAlertBoxAndAlertBox("You met new villager");
+
                         DataPersistenceManager.instance.playerData.quests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
                         DataPersistenceManager.instance.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
                         
@@ -80,7 +81,7 @@ public class DialogueTrigger : MonoBehaviour
                         // CHECK IF THE INTRODUCTION OR PRE QUEST IS  DONE THEN WE ONLY SET THE isAllNPCMet to true.
                         if (QuestManager.instance.CheckIfPreQuestsDone() == true)
                         {
-                            DataPersistenceManager.instance.playerData.isAllNPCMet = true;
+                            DataPersistenceManager.instance.playerData.isPreQuestIntroductionDone = true;
                             QuestManager.instance?.GetListOfQuests();
                             QuestManager.instance?.SetupScriptsForDeliveryQuestToNPCs();
                         }
@@ -89,7 +90,7 @@ public class DialogueTrigger : MonoBehaviour
                     }
                     else
                     {
-                        QuestManager.instance?.OpenPlainAlertBox();
+                        QuestManager.instance?.OpenPlainAlertBox("You met new villager");
                     }
                 }
             }
@@ -111,6 +112,7 @@ public class DialogueTrigger : MonoBehaviour
 
         Destroy(popup);
     }
+
     bool CheckIfFirstTimeTalking(string NPC_NAME)
     {
         foreach (NPC_INFO npcInfo in DataPersistenceManager.instance.playerData.npcInfos)

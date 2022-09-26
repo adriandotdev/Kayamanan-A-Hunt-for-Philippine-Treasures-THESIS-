@@ -38,12 +38,12 @@ public class DialogueManager : MonoBehaviour
 
     private void OnEnable()
     {
-        SceneManager.sceneLoaded += OnHouseSceneLoaded;
+        SceneManager.sceneLoaded += OnSceneRequiresDialogueLoaded;
     }
 
     private void OnDisable()
     {
-        SceneManager.sceneLoaded -= OnHouseSceneLoaded;
+        SceneManager.sceneLoaded -= OnSceneRequiresDialogueLoaded;
     }
 
     private void Start()
@@ -55,10 +55,13 @@ public class DialogueManager : MonoBehaviour
     }
 
     // Run this function when house scene is loaded.
-    public void OnHouseSceneLoaded(Scene scene, LoadSceneMode mode)
+    public void OnSceneRequiresDialogueLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House")
-            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside"))
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Museum")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Church"))
         {
             this.houseGroup = GameObject.Find("House Canvas Group").GetComponent<CanvasGroup>();
         }
@@ -122,12 +125,17 @@ public class DialogueManager : MonoBehaviour
 
     public void ContinueDialogue()
     {
+        print(currentStory.canContinue);
+
         if (currentStory.canContinue)
         {
             string text = currentStory.Continue();
 
+            print(text.Length == 0);
+
             if (text == "")
             {
+                print("close");
                 OnDialogueRunning?.Invoke(false);
                 panel.gameObject.SetActive(false);
                 this.houseGroup.interactable = true;
@@ -161,6 +169,8 @@ public class DialogueManager : MonoBehaviour
     {
         List<Choice> choices = currentStory.currentChoices;
 
+        print("NUMBER OF CHOICES: " + choices.Count);
+
         if (choicesBtn.Length >= choices.Count)
         {
             int index = 0;
@@ -184,7 +194,6 @@ public class DialogueManager : MonoBehaviour
     public void MakeChoice(int choiceIndex)
     {
         currentStory.ChooseChoiceIndex(choiceIndex);
-
         this.ContinueDialogue();
     }
 }

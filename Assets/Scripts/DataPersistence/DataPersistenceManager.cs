@@ -74,6 +74,8 @@ public class DataPersistenceManager : MonoBehaviour
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Museum")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Church")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Philippine Map")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Luzon")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Visayas")

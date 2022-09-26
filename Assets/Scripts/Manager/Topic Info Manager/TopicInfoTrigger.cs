@@ -8,8 +8,10 @@ public class TopicInfoTrigger : MonoBehaviour
 {
     [SerializeField] private Sprite topicImage;
     [SerializeField] private string topic;
-    [SerializeField] [TextArea] private string info;
+    [SerializeField] private TextAsset info;
     [SerializeField] public float timerValue;
+    public enum PANEL_NUMBER { ONE, TWO, THREE, FOUR }
+    public PANEL_NUMBER panelNumber;
 
     private Button viewInfoBtn;
 
@@ -20,10 +22,10 @@ public class TopicInfoTrigger : MonoBehaviour
         {
             if (TopicInfoManager.Instance != null)
             {
-                TopicInfoManager.Instance.TopicImage = topicImage;
-                TopicInfoManager.Instance.Topic = topic;
-                TopicInfoManager.Instance.Info = info;
-                TopicInfoManager.Instance.TimerValue = timerValue;
+                TopicInfoManager.Instance.TopicImage = this.topicImage;
+                TopicInfoManager.Instance.Topic = this.topic;
+                TopicInfoManager.Instance.Info = this.info;
+                TopicInfoManager.Instance.panelNumber = (TopicInfoManager.PANEL_NUMBER) this.panelNumber;
                 SceneManager.LoadSceneAsync("Topic Info Scene", LoadSceneMode.Additive);
             }
         });

@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1823698290030706109}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.1, y: -7.26, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.12}
+  m_LocalScale: {x: 1.186962, y: 1.186962, z: 1.12}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -133,6 +133,9 @@ MonoBehaviour:
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
+    isPreQuestIntroductionDone: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
     name: 
     gender: male
     dunongPoints: 25
@@ -228,6 +231,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 0e315877-9b92-4e45-a833-ce1ca1cd55f5
       isCompleted: 0
       isClaimed: 0
@@ -251,6 +259,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: cbe9eae4-f90a-4ee8-a548-9e50df5bd96c
       isCompleted: 0
       isClaimed: 0
@@ -274,6 +287,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 846494dc-fad5-4dee-9ecf-ddea12eac625
       isCompleted: 0
       isClaimed: 0
@@ -297,6 +315,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 8dd57d85-fbf2-4843-a236-573bce5a66de
       isCompleted: 0
       isClaimed: 0
@@ -320,6 +343,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: cbef8523-142c-44b5-9d6f-5471daf99f83
       isCompleted: 0
       isClaimed: 0
@@ -343,8 +371,49 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     currentQuests: []
     completedQuests: []
+    npcInfos:
+    - name: Mang Esterlito
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Marites
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Julia
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ramon Villegas
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Gregorio Zaide
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Mikaela Fudolig
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ivan Henares
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
     inventory:
       items: []
     playerTime:

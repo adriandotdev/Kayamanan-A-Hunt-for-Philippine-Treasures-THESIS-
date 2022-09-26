@@ -78,9 +78,9 @@ public class NumberGoal
 {
     public int targetNumber;
     public int currentNumber;
-    public enum CORRESPONDING_OBJECT_TO_COUNT { TALK_NPC, FEEDING_CHICKEN }
+    public enum CORRESPONDING_OBJECT_TO_COUNT { TALK_NPC, READING }
     public CORRESPONDING_OBJECT_TO_COUNT correspondingCount;
-     
+    
     public NumberGoal( int targetNumber, CORRESPONDING_OBJECT_TO_COUNT count)
     {
         this.targetNumber = targetNumber;

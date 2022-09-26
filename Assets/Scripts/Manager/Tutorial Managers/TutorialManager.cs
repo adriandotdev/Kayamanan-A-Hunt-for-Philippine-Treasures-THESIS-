@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using System;
 
 public class TutorialManager : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class TutorialManager : MonoBehaviour
     private int popupIndex;
 
     private int firstPopupIndex = 0;
-
+    private int dunongPointsPopupIndex = 0;
     public Joystick joystick;
 
     private void Start()
@@ -62,11 +63,10 @@ public class TutorialManager : MonoBehaviour
 
                     if (selected != null &&  selected.name == "Next Step")
                     {
-                        print(firstPopupIndex);
 
                         this.firstPopupIndex++;
 
-                        if (firstPopupIndex == 1)
+                        if (this.firstPopupIndex == 1)
                         {
                             GameObject obj = this.popups[this.popupIndex].transform.GetChild(0).GetChild(0).GetChild(0).GetChild(1).gameObject;
 
@@ -75,7 +75,7 @@ public class TutorialManager : MonoBehaviour
                             text.text = "So now let's dive in the tutorial";
                         }
 
-                        else if (firstPopupIndex == 2)
+                        else if (this.firstPopupIndex == 2)
                         {
                             LeanTween.scale(this.popups[this.popupIndex].transform.GetChild(0).GetChild(0).GetChild(0).gameObject, Vector2.zero, .5f)
                                 .setEaseSpring()
@@ -86,7 +86,6 @@ public class TutorialManager : MonoBehaviour
                                    
                                 });
                             this.popupIndex++;
-                            print("POPUP INDEX: " + this.popupIndex);
                         }
                     }
                     selected = null;
@@ -96,48 +95,81 @@ public class TutorialManager : MonoBehaviour
 
         else if (this.popupIndex == 1)
         {
-            
-            LeanTween.scale(this.popups[this.popupIndex].transform.GetChild(0)
-            .GetChild(0).GetChild(1).gameObject, Vector2.one, .5f)
-            .setEaseSpring();
-
-            if (Input.touchCount == 1)
-            {
-                if (Input.GetMouseButtonDown(0))
-                {
-                    GameObject selected = EventSystem.current.currentSelectedGameObject;
-
-                    if (selected != null && selected.name == "Next Step")
-                    {
-                        this.popups[this.popupIndex].SetActive(false);
-                        this.popupIndex++;
-                    }
-                }
-            }
+            NextPopup(null, true);
         }
         else if (this.popupIndex == 2)
         {
-            LeanTween.scale(this.popups[this.popupIndex].transform.GetChild(0)
-            .GetChild(0).GetChild(1).gameObject, Vector2.one, .5f)
-            .setEaseSpring();
+            NextPopup(null, true);
+            
+        }
+        else if (this.popupIndex == 3)
+        {
+            NextPopup(DunongPointsPopup, false);
+        }
+        else if (this.popupIndex == 4)
+        {
+            NextPopup(FinishTutorial, true);
+        }
+    }
 
-            if (Input.touchCount == 1)
+    public void DunongPointsPopup()
+    {
+        this.dunongPointsPopupIndex++;
+
+        if (this.dunongPointsPopupIndex == 1)
+        {
+            GameObject obj = this.popups[this.popupIndex].transform.GetChild(0).GetChild(0).GetChild(1).GetChild(1).gameObject;
+
+            TMPro.TextMeshProUGUI text = obj.GetComponent<TMPro.TextMeshProUGUI>();
+
+            text.text = "You will get dunong points by completing the quests that you can locate to your Quests button.";
+        }
+
+        else if (this.dunongPointsPopupIndex == 2)
+        {
+            //LeanTween.scale(this.popups[this.popupIndex].transform.GetChild(0).GetChild(0).GetChild(0).gameObject, Vector2.zero, .5f)
+            //    .setEaseSpring()
+            //    .setOnComplete(() =>
+            //    {
+
+                    this.popups[this.popupIndex].SetActive(false);
+                    this.popupIndex++;
+                //});
+        }
+    }
+
+    public void FinishTutorial()
+    {
+        DataPersistenceManager.instance.playerData.isTutorialDone = true;
+        DataPersistenceManager.instance.SaveGame();
+        SceneManager.LoadScene("House");
+    }
+
+    /** THIS FUNCTION is for setting up the popups events. Since some the popups has the same behaviour
+     we only set new popup.*/
+    public void NextPopup(Action popupEventToExecute, bool isOnceToShow)
+    {
+        LeanTween.scale(this.popups[this.popupIndex].transform.GetChild(0)
+           .GetChild(0).GetChild(1).gameObject, Vector2.one, .5f)
+           .setEaseSpring();
+
+        if (Input.touchCount == 1)
+        {
+            if (Input.GetMouseButtonDown(0))
             {
-                if (Input.GetMouseButtonDown(0))
-                {
-                    GameObject selected = EventSystem.current.currentSelectedGameObject;
+                GameObject selected = EventSystem.current.currentSelectedGameObject;
 
-                    if (selected != null && selected.name == "Next Step")
+                if (selected != null && selected.name == "Next Step")
+                {
+                    if (isOnceToShow)
                     {
                         this.popups[this.popupIndex].SetActive(false);
                         this.popupIndex++;
-                        DataPersistenceManager.instance.playerData.isTutorialDone = true;
-                        DataPersistenceManager.instance.SaveGame();
-                        SceneManager.LoadScene("House");
                     }
+                    popupEventToExecute?.Invoke();
                 }
+                selected = null;
             }
-            
         }
     }
 }

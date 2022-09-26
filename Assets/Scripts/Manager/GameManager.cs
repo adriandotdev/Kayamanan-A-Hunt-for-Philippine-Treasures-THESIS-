@@ -51,28 +51,22 @@ public class GameManager : MonoBehaviour, IDataPersistence
     {
         SceneManager.sceneLoaded += OnMenuSceneLoaded;
         SceneManager.sceneLoaded += OnCharacterAndLoadSceneLoaded;
-        SceneManager.sceneLoaded += OnHouseSceneLoaded;
-        SceneManager.sceneLoaded += OnOutsideSceneLoaded;
-        SceneManager.sceneLoaded += OnSchoolSceneLoaded;
-        SceneManager.sceneLoaded += OnMuseumSceneLoaded;
         SceneManager.sceneLoaded += OnPhilippineMapSceneLoaded;
         SceneManager.sceneLoaded += OnAssessmentAndWordGamesSceneLoaded;
         SceneManager.sceneLoaded += OnMajorIslandsSceneLoaded;
         SceneManager.sceneLoaded += OnSleepCutsceneLoaded;
+        SceneManager.sceneLoaded += OnSceneRequiresDataLoaded;
     }
 
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnMenuSceneLoaded;
         SceneManager.sceneLoaded -= OnCharacterAndLoadSceneLoaded;
-        SceneManager.sceneLoaded -= OnHouseSceneLoaded;
-        SceneManager.sceneLoaded -= OnOutsideSceneLoaded;
-        SceneManager.sceneLoaded -= OnSchoolSceneLoaded;
-        SceneManager.sceneLoaded -= OnMuseumSceneLoaded;
         SceneManager.sceneLoaded -= OnPhilippineMapSceneLoaded;
         SceneManager.sceneLoaded -= OnAssessmentAndWordGamesSceneLoaded;
         SceneManager.sceneLoaded -= OnMajorIslandsSceneLoaded;
         SceneManager.sceneLoaded -= OnSleepCutsceneLoaded;
+        SceneManager.sceneLoaded -= OnSceneRequiresDataLoaded;
     }
 
     // For Menu Scene
@@ -90,6 +84,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
                 Button optionsPanelCloseBtn = GameObject.Find("Options Panel Close Button").GetComponent<Button>();
                 Button playButton = GameObject.Find("Play Button").GetComponent<Button>();
                 Button optionsButton = GameObject.Find("Options Button").GetComponent<Button>();
+                Button leaderboardsButton = GameObject.Find("Leaderboards Button").GetComponent<Button>();
 
                 this.soundButton.onClick.AddListener(() =>
                 {
@@ -115,6 +110,13 @@ public class GameManager : MonoBehaviour, IDataPersistence
                     SoundManager.instance.PlaySound("Button Click 1");
                     //TransitionLoader.instance.StartAnimation("CharacterAndLoad");
                 });
+
+                leaderboardsButton.onClick.AddListener(() =>
+                {
+                    this.LoadScene("Leaderboards");
+                    SoundManager.instance.PlaySound("Button Click 1");
+                });
+
                 optionsButton.onClick.AddListener(() => {
                     this.ShowOptionsPanel();
                     SoundManager.instance.PlaySound("Button Click 1");
@@ -142,57 +144,95 @@ public class GameManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    public void OnSceneRequiresDataLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Museum")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Church"))
+        {
+            if (scene.name == "House")
+            {
+                this.sceneToLoadFromPhilippineMap = "House";
+                this.playerData.sceneToLoad = "House";
+            }
+            else if (scene.name == "Outside")
+            {
+                this.sceneToLoadFromPhilippineMap = "Outside";
+                this.playerData.sceneToLoad = "Outside";
+            }
+            else if (scene.name == "Museum")
+            {
+                this.sceneToLoadFromPhilippineMap = "Museum";
+                this.playerData.sceneToLoad = "Museum";
+            }
+            else if (scene.name == "School")
+            {
+                this.sceneToLoadFromPhilippineMap = "School";
+                this.playerData.sceneToLoad = "House";
+            }
+            else if (scene.name == "Church")
+            {
+                this.sceneToLoadFromPhilippineMap = "Church";
+                this.playerData.sceneToLoad = "Church";
+            }
+
+            this.SetUpHouseOrOutsideSceneButtons();
+        }
+    }
+
     // For House Scene
-    public void OnHouseSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
-        {
-            this.sceneToLoadFromPhilippineMap = "House";
-            this.playerData.sceneToLoad = "House";
+    //public void OnHouseSceneLoaded(Scene scene, LoadSceneMode mode)
+    //{
+    //    if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
+    //    {
+    //        this.sceneToLoadFromPhilippineMap = "House";
+    //        this.playerData.sceneToLoad = "House";
 
-            // For testing purposes only
-            //this.playerData.isIntroductionDone = true;
-            // For testing purposes only.
+    //        // For testing purposes only
+    //        //this.playerData.isIntroductionDone = true;
+    //        // For testing purposes only.
 
-            this.SetUpHouseOrOutsideSceneButtons();
-        }
-    }
+    //        this.SetUpHouseOrOutsideSceneButtons();
+    //    }
+    //}
 
-    // For Outside Scene
-    public void OnOutsideSceneLoaded( Scene scene, LoadSceneMode mode )
-    {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside") )
-        {
-            // fOR tESTING PURPOSES
-            //DataPersistenceManager.instance.playerData.isTutorialDone = true;
-            this.sceneToLoadFromPhilippineMap = "Outside";
-            this.playerData.sceneToLoad = "Outside";
-            this.SetUpHouseOrOutsideSceneButtons();
-        }
-    }
+    //// For Outside Scene
+    //public void OnOutsideSceneLoaded( Scene scene, LoadSceneMode mode )
+    //{
+    //    if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside") )
+    //    {
+    //        // fOR tESTING PURPOSES
+    //        //DataPersistenceManager.instance.playerData.isTutorialDone = true;
+    //        this.sceneToLoadFromPhilippineMap = "Outside";
+    //        this.playerData.sceneToLoad = "Outside";
+    //        this.SetUpHouseOrOutsideSceneButtons();
+    //    }
+    //}
 
-    public void OnMuseumSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Museum"))
-        {
-            // fOR tESTING PURPOSES
-            //DataPersistenceManager.instance.playerData.isTutorialDone = true;
-            this.sceneToLoadFromPhilippineMap = "Museum";
-            this.playerData.sceneToLoad = "Museum";
-            this.SetUpHouseOrOutsideSceneButtons();
-        }
-    }
+    //public void OnMuseumSceneLoaded(Scene scene, LoadSceneMode mode)
+    //{
+    //    if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Museum"))
+    //    {
+    //        // fOR tESTING PURPOSES
+    //        //DataPersistenceManager.instance.playerData.isTutorialDone = true;
+    //        this.sceneToLoadFromPhilippineMap = "Museum";
+    //        this.playerData.sceneToLoad = "Museum";
+    //        this.SetUpHouseOrOutsideSceneButtons();
+    //    }
+    //}
 
-    // For Outside Scene
-    public void OnSchoolSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School"))
-        {
-            this.sceneToLoadFromPhilippineMap = "School";
-            this.playerData.sceneToLoad = "School";
-            this.SetUpHouseOrOutsideSceneButtons();
-        }
-    }
+    //// For Outside Scene
+    //public void OnSchoolSceneLoaded(Scene scene, LoadSceneMode mode)
+    //{
+    //    if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School"))
+    //    {
+    //        this.sceneToLoadFromPhilippineMap = "School";
+    //        this.playerData.sceneToLoad = "School";
+    //        this.SetUpHouseOrOutsideSceneButtons();
+    //    }
+    //}
 
     // For Philippine Map Scene
     public void OnPhilippineMapSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -360,7 +400,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
             this.optionsPanel.gameObject.SetActive(false);
             this.volumePanel.gameObject.SetActive(false);
         }
-        catch (System.Exception e) { print("ERROR IN GAME MANAGER"); }
+        catch (System.Exception e) { print(e.Message); }
     }
 
     public void LoadScene(string sceneName)

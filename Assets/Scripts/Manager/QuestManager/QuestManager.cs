@@ -11,6 +11,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
     // Events
     public static Action UpdateDPValueUI;
+    public static Action ShowItemReceivedPopup;
 
     public GameObject questPrefab;
     public GameObject questNumberGoalPrefab;
@@ -37,60 +38,29 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
     private void OnEnable()
     {
-        SceneManager.sceneLoaded += OnHouseSceneLoaded;
-        SceneManager.sceneLoaded += OnOutsideSceneLoaded;
-        SceneManager.sceneLoaded += OnSchoolSceneLoaded;
-        SceneManager.sceneLoaded += OnMuseumSceneLoaded;
-        //SceneManager.sceneLoaded += OnSceneWithQuestManagerSceneLoaded;
+        SceneManager.sceneLoaded += OnSceneRequiresQuestDataLoaded;
     }
 
     private void OnDisable()
     {
-        SceneManager.sceneLoaded -= OnHouseSceneLoaded;
-        SceneManager.sceneLoaded -= OnOutsideSceneLoaded;
-        SceneManager.sceneLoaded -= OnSchoolSceneLoaded;
-        SceneManager.sceneLoaded -= OnMuseumSceneLoaded;
-        //SceneManager.sceneLoaded -= OnSceneWithQuestManagerSceneLoaded;
+        SceneManager.sceneLoaded -= OnSceneRequiresQuestDataLoaded;
     }
 
-    void OnHouseSceneLoaded(Scene scene, LoadSceneMode mode)
+    void OnSceneRequiresQuestDataLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Museum")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Church"))
         {
-            // Commented for testing purposes only.
-            if (DataPersistenceManager.instance.playerData.isTutorialDone == false)
-                return;
+            
+            if (scene.name == "House")
+            {
+                if (DataPersistenceManager.instance.playerData.isTutorialDone == false)
+                    return;
+            }
 
-            this.GetAllNecessaryGameObjects();
-            this.GetListOfQuests();
-            this.SetupScriptsForDeliveryQuestToNPCs();
-        }
-    }
-
-    void OnOutsideSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside"))
-        {
-            this.GetAllNecessaryGameObjects();
-            this.GetListOfQuests();
-            this.SetupScriptsForDeliveryQuestToNPCs();
-        }
-    }
-
-    void OnMuseumSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Museum"))
-        {
-            this.GetAllNecessaryGameObjects();
-            this.GetListOfQuests();
-            this.SetupScriptsForDeliveryQuestToNPCs();
-        }
-    }
-
-    void OnSchoolSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School"))
-        {
             this.GetAllNecessaryGameObjects();
             this.GetListOfQuests();
             this.SetupScriptsForDeliveryQuestToNPCs();
@@ -102,7 +72,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     public void GetListOfQuests()
     {
         // This is the first quest for Day 1.
-        if (this.playerData.isAllNPCMet == false)
+        if (this.playerData.isPreQuestIntroductionDone == false)
         {
             foreach (Quest quest in this.playerData.quests)
             {
@@ -175,7 +145,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             this.questAlertBox = GameObject.Find("Alert Box");
             this.plainAlertBox = GameObject.Find("Plain Alert Box");
 
-            // Add event to pending btn.
+            // Add event to pending btn. IT IS LOCATED INSIDE THE QUEST PANEL.
             pendingBtn.onClick.AddListener(() =>
             {
                 SoundManager.instance?.PlaySound("Button Click 2");
@@ -185,6 +155,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 this.ChangeButtonColor(pendingBtn, completedBtn);
             });
 
+            // Add event to the completed button. IT IS LOCATED INSIDE THE QUEST PANEL.
             completedBtn.onClick.AddListener(() =>
             {
                 SoundManager.instance?.PlaySound("Button Click 2");
@@ -413,8 +384,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         {
             if (quest.questID == deliveryQuestID)
             {
-
-                this.OpenAlertBox();
+                this.OpenPlainAlertBoxAndAlertBox("Item succesfully given to " + quest.deliveryGoal.receiverName);
 
                 DataPersistenceManager.instance.playerData.dunongPoints += quest.dunongPointsRewards;
 
@@ -436,7 +406,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
                 if (this.CheckIfPreQuestsDone() == true)
                 {
-                    DataPersistenceManager.instance.playerData.isAllNPCMet = true;
+                    DataPersistenceManager.instance.playerData.isPreQuestIntroductionDone = true;
                     this.GetListOfQuests();
                     this.SetupScriptsForDeliveryQuestToNPCs();
                 }
@@ -539,11 +509,11 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         .setEaseSpring()
         .setOnComplete(() =>
         {
-            this.questAlertCoroutine = StartCoroutine(HideQuestAlertBox(this.questAlertBox));
+            this.questAlertCoroutine = StartCoroutine(HideQuestAlertBox(this.questAlertBox, 1f));
         });
     }
 
-    public void OpenPlainAlertBox()
+    public void OpenPlainAlertBox(string message)
     {
         if (this.plainAlertCoroutine != null)
         {
@@ -551,18 +521,52 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             StopCoroutine(this.plainAlertCoroutine);
         }
 
+        this.plainAlertBox.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = message;
+
+        LeanTween.scale(this.plainAlertBox.gameObject, Vector2.one, .2f)
+        .setEaseSpring()
+        .setOnComplete(() =>
+        {
+            this.plainAlertCoroutine = StartCoroutine(HideQuestAlertBox(this.plainAlertBox, 1f));
+        });
+    }
+
+    public void OpenPlainAlertBoxAndAlertBox(string message)
+    {
+        if (this.plainAlertCoroutine != null)
+        {
+            this.plainAlertBox.transform.localScale = Vector2.zero;
+            StopCoroutine(this.plainAlertCoroutine);
+        }
+
+        if (this.questAlertCoroutine != null)
+        {
+            this.questAlertBox.transform.localScale = Vector2.zero;
+            StopCoroutine(this.questAlertCoroutine);
+        }
+
+        this.plainAlertBox.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = message;
+
         LeanTween.scale(this.plainAlertBox.gameObject, Vector2.one, .2f)
             .setEaseSpring()
             .setOnComplete(() =>
             {
-                this.plainAlertCoroutine = StartCoroutine(HideQuestAlertBox(this.plainAlertBox));
+                this.plainAlertCoroutine = StartCoroutine(HideQuestAlertBox(this.plainAlertBox, 1f));
+
+                LeanTween.scale(this.questAlertBox.gameObject, Vector2.one, .2f)
+                .setEaseSpring()
+                .setOnComplete(() =>
+                {
+                    this.questAlertCoroutine = StartCoroutine(HideQuestAlertBox(this.questAlertBox, 1f));
+                })
+                .setDelay(1f);
             });
     }
 
     // Hides Alert Box.
-    IEnumerator HideQuestAlertBox(GameObject alertBox)
+    IEnumerator HideQuestAlertBox(GameObject alertBox, float timeToWaitBeforeClosingThePanel)
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(timeToWaitBeforeClosingThePanel);
 
         LeanTween.scale(alertBox, Vector2.zero, .2f)
             .setEaseSpring();

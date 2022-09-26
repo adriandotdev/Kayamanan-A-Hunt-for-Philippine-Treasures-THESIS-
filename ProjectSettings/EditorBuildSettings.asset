@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: d72f34fe794b25b439c9ce058286f55a
   - enabled: 1
+    path: Assets/Scenes/Leaderboards.unity
+    guid: 856a3e28196223343ab3fefc4225b15e
+  - enabled: 1
     path: Assets/Scenes/CharacterAndLoad.unity
     guid: 371151a26957d0443ae9d99e7b757dfc
   - enabled: 1
@@ -17,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CharacterCreation.unity
     guid: 198e218a299767f4c9a8ca0464eca38f
+  - enabled: 1
+    path: Assets/Scenes/Player Scenes/Church.unity
+    guid: 63191e5eb9a56a14d84682fd4acad801
   - enabled: 1
     path: Assets/Scenes/Player Scenes/House.unity
     guid: 4baa0ff7030ef3e47ab542cefe14b118

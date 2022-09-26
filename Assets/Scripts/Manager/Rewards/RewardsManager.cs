@@ -61,7 +61,7 @@ public class RewardsManager : MonoBehaviour
                     collectibleObj.transform.localScale = Vector2.zero;
 
                     collectibleObj.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>(collectible.imagePath);
-                    collectibleObj.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = collectible.name;
+                    //collectibleObj.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = collectible.name;
 
                     LeanTween.scale(collectibleObj, Vector2.one, .5f)
                         .setEaseSpring();

@@ -111,6 +111,8 @@ public class DeliveryGoalGiver : MonoBehaviour
         this.deliveryReqButton.enabled = true;
         this.giveItemButton.enabled = true;
 
+        QuestManager.instance?.OpenPlainAlertBox("You've received an item");
+
         LeanTween.scale(this.fedexPanel.gameObject, Vector2.zero, .2f)
         .setEaseSpring()
         .setOnComplete(() =>

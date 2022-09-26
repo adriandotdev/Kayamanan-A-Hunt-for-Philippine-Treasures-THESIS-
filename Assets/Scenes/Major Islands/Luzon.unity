@@ -517,7 +517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &148629290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,7 +535,9 @@ MonoBehaviour:
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
-    isAllNPCMet: 0
+    isPreQuestIntroductionDone: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
     name: 
     gender: male
     dunongPoints: 0
@@ -1406,12 +1408,18 @@ MonoBehaviour:
     - name: Mang Esterlito
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
     - name: Aling Marites
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
     - name: Aling Julia
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
     inventory:
       items: []
     playerTime:
@@ -4380,7 +4388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &877497084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4698,7 +4706,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2121310174}
   m_HandleRect: {fileID: 2121310173}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5171,7 +5179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1016711051
 Transform:
   m_ObjectHideFlags: 0
@@ -5207,12 +5215,15 @@ MonoBehaviour:
   menuSceneCanvasGroup: {fileID: 0}
   homeCanvasGroup: {fileID: 0}
   characterCreationGroup: {fileID: 0}
+  dunongPointsValue: {fileID: 0}
   playerData:
     id: 
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
-    isAllNPCMet: 0
+    isPreQuestIntroductionDone: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
     name: 
     gender: male
     dunongPoints: 0
@@ -6083,12 +6094,18 @@ MonoBehaviour:
     - name: Mang Esterlito
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
     - name: Aling Marites
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
     - name: Aling Julia
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
     inventory:
       items: []
     playerTime:
@@ -6119,7 +6136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1030441055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6137,10 +6154,12 @@ MonoBehaviour:
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
-    isAllNPCMet: 0
+    isPreQuestIntroductionDone: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
     name: 
     gender: male
-    dunongPoints: 1500
+    dunongPoints: 1231231
     requiredDunongPointsToPlay: 65
     remainingTime: 18000
     sceneToLoad: House
@@ -6148,108 +6167,60 @@ MonoBehaviour:
     yPos: 0
     notebook:
       collectibles:
-      - name: Jose Rizal
-        imagePath: Collectibles/Rizal
+      - name: Diego Silang
+        imagePath: Collectibles/Heroes/Diego Silang
         isCollected: 0
         categoryName: National Heroes
         regionName: Ilocos Region
         majorIsland: Luzon
-      - name: Anahaw
-        imagePath: Collectibles/Anahaw
+      - name: Cape Bojeador
+        imagePath: Collectibles/Tourist Attractions/Cape Bojeador
         isCollected: 0
-        categoryName: National Festivals
+        categoryName: Tourist Attractions
+        regionName: Ilocos Region
+        majorIsland: Luzon
+      - name: Ivatan Houses
+        imagePath: Collectibles/Tourist Attractions/Ivatan House
+        isCollected: 0
+        categoryName: Tourist Attractions
         regionName: Cagayan Valley
         majorIsland: Luzon
-      - name: Andres Bonifacio
-        imagePath: Collectibles/Bonifacio
+      - name: Panagbenga Festival
+        imagePath: Collectibles/Festivals/Panagbenga Festival
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: Cordillera Administrative Region
+        majorIsland: Luzon
+      - name: Diplomat Hotel
+        imagePath: Collectibles/Tourist Attractions/Diplomat Hotel
         isCollected: 0
         categoryName: Tourist Attractions
         regionName: Cordillera Administrative Region
         majorIsland: Luzon
-      - name: Kalabaw
-        imagePath: Collectibles/Kalabaw
+      - name: Marcelo H. Del Pilar
+        imagePath: Collectibles/Heroes/Marcelo H. Del Pilar
         isCollected: 0
         categoryName: National Heroes
         regionName: Central Luzon
         majorIsland: Luzon
-      - name: Kalabaw
-        imagePath: Collectibles/Kalabaw
-        isCollected: 0
-        categoryName: General Knowledge
-        regionName: CALABARZON
-        majorIsland: Luzon
-      - name: Jose Rizal
-        imagePath: Collectibles/Rizal
-        isCollected: 0
-        categoryName: Tourist Attractions
-        regionName: MIMAROPA
-        majorIsland: Luzon
-      - name: Anahaw
-        imagePath: Collectibles/Anahaw
+      - name: Gregorio Del Pilar
+        imagePath: Collectibles/Heroes/Gregorio Del Pilar
         isCollected: 0
         categoryName: National Heroes
-        regionName: Bicol Region
+        regionName: Central Luzon
         majorIsland: Luzon
-      - name: Andres Bonifacio
-        imagePath: Collectibles/Bonifacio
+      - name: Carabao Festival
+        imagePath: Collectibles/Festivals/Carabao Festival
         isCollected: 0
         categoryName: National Festivals
-        regionName: National Capital Region
+        regionName: Central Luzon
         majorIsland: Luzon
-      - name: Jose Rizal
-        imagePath: Collectibles/Rizal
-        isCollected: 0
-        categoryName: National Heroes
-        regionName: Western Visayas
-        majorIsland: VISAYAS
-      - name: Jose Rizal
-        imagePath: Collectibles/Rizal
+      - name: Hot Air Balloon Festival
+        imagePath: Collectibles/Festivals/Hot Air Balloon Festival
         isCollected: 0
         categoryName: National Festivals
-        regionName: Central Visayas
-        majorIsland: VISAYAS
-      - name: Jose Rizal
-        imagePath: Collectibles/Rizal
-        isCollected: 0
-        categoryName: General Knowledge
-        regionName: Eastern Visayas
-        majorIsland: VISAYAS
-      - name: Andres Bonifacio
-        imagePath: Collectibles/Bonifacio
-        isCollected: 0
-        categoryName: Tourist Attractions
-        regionName: Zamboanga Peninsula
-        majorIsland: MINDANAO
-      - name: Kalabaw
-        imagePath: Collectibles/Kalabaw
-        isCollected: 0
-        categoryName: National Heroes
-        regionName: Northern Mindanao
-        majorIsland: MINDANAO
-      - name: Kalabaw
-        imagePath: Collectibles/Kalabaw
-        isCollected: 0
-        categoryName: General Knowledge
-        regionName: Davao Region
-        majorIsland: MINDANAO
-      - name: Jose Rizal
-        imagePath: Collectibles/Rizal
-        isCollected: 0
-        categoryName: Tourist Attractions
-        regionName: SOCCSKSARGEN
-        majorIsland: MINDANAO
-      - name: Anahaw
-        imagePath: Collectibles/Anahaw
-        isCollected: 0
-        categoryName: National Heroes
-        regionName: Caraga Region
-        majorIsland: MINDANAO
-      - name: Andres Bonifacio
-        imagePath: Collectibles/Bonifacio
-        isCollected: 0
-        categoryName: National Festivals
-        regionName: BARMM
-        majorIsland: MINDANAO
+        regionName: Central Luzon
+        majorIsland: Luzon
     regionsData:
     - regionNumber: 1
       isOpen: 1
@@ -6470,11 +6441,11 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     quests:
-    - questID: 
+    - questID: 0ca3f20e-138f-49d4-a753-3f73abc21e49
       isCompleted: 0
       isClaimed: 0
-      title: Greet All
-      description: Talk to all vilagers.
+      title: A Day with Friendliness
+      description: Meet all the villagers.
       dunongPointsRewards: 0
       region: PRE-QUEST
       regionNum: 0
@@ -6494,11 +6465,39 @@ MonoBehaviour:
           quantity: 0
           stackable: 0
       numberGoal:
-        targetNumber: 3
+        targetNumber: 2
         currentNumber: 0
         correspondingCount: 0
       questType: 2
-    - questID: 434b6eea-c442-4d60-b6aa-4a32a02e73d1
+    - questID: 680dd876-c00f-4778-877f-b0be57a6dd16
+      isCompleted: 0
+      isClaimed: 0
+      title: A Simple Thanks
+      description: Get the Mango from Mang Esterlito and give it to Aling Nena.
+      dunongPointsRewards: 0
+      region: PRE-QUEST
+      regionNum: 0
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 9e981aac-6c76-4d72-997c-052fcb6c9961
+        deliveryMessage: Can you give this to Aling Nena?
+        giverName: Mang Esterlito
+        receiverName: Aling Nena
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 1
+          stackable: 1
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 1
+    - questID: 4e8b2bb6-2676-43fc-a494-2106814dcba5
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest!
@@ -6511,7 +6510,7 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: 9439576f-aac9-4ef0-ac18-05c8e62fda66
+        deliverGoalId: 259e83a7-cafe-4c80-acbf-c2bc3e1826c7
         deliveryMessage: Can you give this Mango to Mang Esterlito?
         giverName: Aling Marites
         receiverName: Mang Esterlito
@@ -6526,7 +6525,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 1
-    - questID: f5b6a403-a1dd-4430-8536-09eacd9083df
+    - questID: 2a19818b-c750-4217-b804-5eab5db98e6a
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest!
@@ -6539,7 +6538,7 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: 48f0bd66-6094-444e-8984-492e40e1168d
+        deliverGoalId: 3b718eae-dde3-4395-b40f-279fbd9edd0f
         deliveryMessage: Can you give this Mango to Aling Marites?
         giverName: Aling Julia
         receiverName: Aling Marites
@@ -6554,7 +6553,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 1
-    - questID: d714be77-2313-4bde-a787-4ad2897a8ab3
+    - questID: aba1c5fa-7c1f-414d-8104-8cdf93245dc5
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest!
@@ -6582,7 +6581,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 0
-    - questID: 498c3771-6a54-4a5a-84e8-14fe957d91b1
+    - questID: 6aa71152-042d-4123-ac16-1e6cd0f90150
       isCompleted: 0
       isClaimed: 0
       title: Cagayan Valley Quest!
@@ -6610,7 +6609,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 0
-    - questID: 0ef11b54-899a-4af0-9fe8-b6019edfe796
+    - questID: ac04c087-496f-4a4f-9eb5-e6fd2324db82
       isCompleted: 0
       isClaimed: 0
       title: CAR Quest!
@@ -6623,7 +6622,7 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: e248be1a-6fd0-4fee-b53e-90c14354cf02
+        deliverGoalId: fa5ab6fb-9bf7-4161-b7a6-7352ce8dfa38
         deliveryMessage: Can you give this Mango to Mang Esterlito?
         giverName: Aling Marites
         receiverName: Mang Esterlito
@@ -6638,7 +6637,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 1
-    - questID: 68792062-269b-498d-9a70-933345b96861
+    - questID: 13f8d0a6-eefe-4e50-ba17-8b2ca4019a79
       isCompleted: 0
       isClaimed: 0
       title: Central Luzon Quest!
@@ -6651,7 +6650,7 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: fba7cb97-a8bb-463d-9a80-310fa0da014a
+        deliverGoalId: 27f3366a-98be-4f8a-beb4-1dea25050181
         deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
         giverName: Aling Julia
         receiverName: Aling Marites
@@ -6666,7 +6665,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 1
-    - questID: 1007396d-e2ea-46bd-86f2-d79bd494b687
+    - questID: 9005c083-d46f-4853-a3d1-ea3a1a60b348
       isCompleted: 0
       isClaimed: 0
       title: NCR Quest!
@@ -6679,7 +6678,7 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: 6e189f7c-9d86-4ab0-a641-5d7e4f3ea2eb
+        deliverGoalId: a7db1172-6b40-4d9b-81e4-6635c4535880
         deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
         giverName: Mang Esterlito
         receiverName: Aling Marites
@@ -6694,7 +6693,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 1
-    - questID: 872f8c54-ea53-42b8-b960-7276030badd1
+    - questID: 6d67cfce-d75a-4fcf-be2d-005910d44756
       isCompleted: 0
       isClaimed: 0
       title: CALABARZON Quest!
@@ -6722,7 +6721,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 0
-    - questID: 3c014264-89b7-484f-a4db-e76fd2e7326c
+    - questID: f45346d9-1234-482c-a46c-d216c9c654ac
       isCompleted: 0
       isClaimed: 0
       title: MIMAROPA Quest!
@@ -6750,7 +6749,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 0
-    - questID: 288d62dc-e7ab-4e80-afdd-137fd4b9ddab
+    - questID: cec21a6d-b188-4a04-9af0-f071f1739765
       isCompleted: 0
       isClaimed: 0
       title: Bicol Region Quest!
@@ -6763,7 +6762,7 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: f845765a-6efe-4a69-861e-422a76ec0031
+        deliverGoalId: ddb0feb3-1af4-43e4-9845-0a0ca154609b
         deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
         giverName: Aling Julia
         receiverName: Aling Marites
@@ -6778,7 +6777,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 1
-    - questID: e20517b5-530c-45b5-8859-d027d7f5a7b3
+    - questID: 57a09992-2137-496b-86fb-d7c63d9c87db
       isCompleted: 0
       isClaimed: 0
       title: Western Visayas Quest!
@@ -6806,7 +6805,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 0
-    - questID: 86241e4c-0dbd-4e78-9823-92edb9ac153f
+    - questID: 02edc8fa-de93-4abd-902a-8b5f9e956927
       isCompleted: 0
       isClaimed: 0
       title: Central Visayas Quest!
@@ -6834,7 +6833,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 0
-    - questID: d9ab68be-cff7-4b79-a53d-7b0fcb86e1bf
+    - questID: ea100bf4-cf5d-42bc-80de-5ab4422b97d1
       isCompleted: 0
       isClaimed: 0
       title: Eastern Visayas Quest!
@@ -6862,7 +6861,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 0
-    - questID: 598b9399-c000-47b9-9a3a-b1d3ddddc807
+    - questID: 5a15bac8-2cf0-4715-8f2a-c4530ac94a25
       isCompleted: 0
       isClaimed: 0
       title: Zamboanga Peninsula Quest!
@@ -6890,7 +6889,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 0
-    - questID: ac7be1a9-77de-4de2-8538-7a9d2b21bf81
+    - questID: 5f923d69-1791-41b9-ac5b-091da2705afb
       isCompleted: 0
       isClaimed: 0
       title: Northern Mindanao Quest!
@@ -6918,7 +6917,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 0
-    - questID: 21ddc0ea-20e4-4743-a23b-1426805368cf
+    - questID: 076901b0-aa30-4ec6-a3e8-8f4567606221
       isCompleted: 0
       isClaimed: 0
       title: Davao Region Quest!
@@ -6946,7 +6945,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 0
-    - questID: 0dc3b5b3-4d23-48ed-bc70-b8b6e1fefd12
+    - questID: 0cda0514-0e00-432c-96e4-59e401a9b5df
       isCompleted: 0
       isClaimed: 0
       title: SOCCSKSARGEN Quest!
@@ -6974,7 +6973,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 0
-    - questID: 245d329b-2caf-4685-bea6-0c724dbff461
+    - questID: 24cca1fb-2809-4fce-a7f3-617a8422613c
       isCompleted: 0
       isClaimed: 0
       title: Caraga Region Quest!
@@ -7002,7 +7001,7 @@ MonoBehaviour:
         currentNumber: 0
         correspondingCount: 0
       questType: 0
-    - questID: 56e5eece-cc7a-4b24-b174-0ea97349dc71
+    - questID: 9ae699bb-5b79-4ddf-8f5d-fd9c026fb7e1
       isCompleted: 0
       isClaimed: 0
       title: BARMM Quest!
@@ -7036,12 +7035,38 @@ MonoBehaviour:
     - name: Mang Esterlito
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
     - name: Aling Marites
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
     - name: Aling Julia
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ramon Villegas
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Gregorio Zaide
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Mikaela Fudolig
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ivan Henares
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
     inventory:
       items: []
     playerTime:
@@ -7857,7 +7882,9 @@ MonoBehaviour:
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
-    isAllNPCMet: 0
+    isPreQuestIntroductionDone: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
     name: 
     gender: male
     dunongPoints: 25
@@ -8193,12 +8220,18 @@ MonoBehaviour:
     - name: Mang Esterlito
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
     - name: Aling Marites
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
     - name: Aling Julia
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
     inventory:
       items: []
     playerTime:
@@ -9980,7 +10013,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1594359697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9998,7 +10031,9 @@ MonoBehaviour:
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
-    isAllNPCMet: 0
+    isPreQuestIntroductionDone: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
     name: 
     gender: male
     dunongPoints: 0
@@ -10869,12 +10904,18 @@ MonoBehaviour:
     - name: Mang Esterlito
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
     - name: Aling Marites
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
     - name: Aling Julia
       info: 
       isMet: 0
+      xPos: 0
+      yPos: 0
     inventory:
       items: []
     playerTime:
@@ -11533,7 +11574,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 331524374}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.7098729
+  m_Size: 0.7098727
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

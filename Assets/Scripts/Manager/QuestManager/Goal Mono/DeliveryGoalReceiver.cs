@@ -12,10 +12,10 @@ public class DeliveryGoalReceiver : MonoBehaviour
     {
         this.giveBtn = transform.GetChild(0).GetChild(3).GetComponent<Button>();
 
-        this.giveBtn.onClick.AddListener(this.GiveItem);
+        this.giveBtn.onClick.AddListener(this.GiveItemToNPC);
     }
 
-    void GiveItem()
+    void GiveItemToNPC()
     {
         foreach (Quest quest in DataPersistenceManager.instance.playerData.currentQuests)
         {
@@ -37,6 +37,7 @@ public class DeliveryGoalReceiver : MonoBehaviour
                         break;
                     }
                 }
+
                 this.quest.isCompleted = true;
 
                 this.giveBtn.gameObject.SetActive(false);

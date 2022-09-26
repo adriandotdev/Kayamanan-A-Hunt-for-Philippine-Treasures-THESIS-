@@ -24,7 +24,7 @@ public class NPCIntroduction : MonoBehaviour, IDataPersistence
 
     private void Start()
     {
-        if (this.playerData.isAllNPCMet || this.playerData.isNPCIntroductionPanelDone) return;
+        if (this.playerData.isPreQuestIntroductionDone || this.playerData.isNPCIntroductionPanelDone) return;
 
         this.currentIndex = 0;
 
@@ -47,20 +47,21 @@ public class NPCIntroduction : MonoBehaviour, IDataPersistence
     // Update is called once per frame
     void Update()
     {
-        if (this.playerData.isAllNPCMet || this.currentIndex > this.npcIntroPopups.Length - 1) return;
+        if (this.playerData.isPreQuestIntroductionDone || this.currentIndex > this.npcIntroPopups.Length - 1) return;
 
         for (int i = 0; i < this.npcIntroPopups.Length; i++)
         {
+            // IF the currentIndex is NOT EQUAL to variable 'i', then we hide it.
             if (i != currentIndex)
             {
                 this.npcIntroPopups[i].SetActive(false);
             }
         }    
 
+        /** NOTE: number of cases is the sequence of popup */
         switch (this.currentIndex)
         {
             case 1:
-
                 this.npcIntroPopups[currentIndex].SetActive(true);
                 break;
             case 2:
@@ -75,8 +76,9 @@ public class NPCIntroduction : MonoBehaviour, IDataPersistence
 
     private void NextPopup()
     {
-        this.currentIndex++;
+        this.currentIndex++; // Increment
 
+        // IF the currentIndex is GREATER THAN the length of popups, then we close the panel.
         if (this.currentIndex > this.npcIntroPopups.Length - 1)
         {
             LeanTween.scale(this.npcIntroductionPanel, Vector2.zero, .2f)

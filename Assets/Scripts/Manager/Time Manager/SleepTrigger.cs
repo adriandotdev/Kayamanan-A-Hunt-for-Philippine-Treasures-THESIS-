@@ -11,7 +11,7 @@ public class SleepTrigger : MonoBehaviour
 
     private void OnEnable()
     {
-        TimeManager.OnTimeToSleep += TriggerSleepAnimation;
+        TimeManager.OnTimeToSleep += TriggerSleepAnimation; // Register to the event at TimeManager.
 
         this.panel = GameObject.Find("Go To Sleep Warning Panel");
         this.splashEffect = GameObject.Find("Splash Effect");
@@ -25,26 +25,34 @@ public class SleepTrigger : MonoBehaviour
 
     private void OnDisable()
     {
-        TimeManager.OnTimeToSleep -= TriggerSleepAnimation;
+        TimeManager.OnTimeToSleep -= TriggerSleepAnimation; // Unregister.
     }
 
     void TriggerSleepAnimation()
     {
         this.panel.SetActive(true);
 
+        // Scale the splash effect image
         LeanTween.scale(this.splashEffect, new Vector2(89.14472f, 89.14472f), .2f)
         .setEaseSpring()
+
+        // when complete
         .setOnComplete(() => 
         {
+            // scale the clock
             LeanTween.scale(this.clock, new Vector2(89.14472f, 89.14472f), .2f)
             .setEaseSpring()
+
+            // when the clock stops scaling
             .setOnComplete(() => {
 
+                // Scale the splash effect 2 times with a loop type of ping pong. meaning, it is scaling up and down.
                 LeanTween.scale(this.splashEffect, new Vector2(85.20542f, 85.20542f), .5f)
                     .setLoopPingPong()
                     .setLoopCount(2)
                     .setLoopType(LeanTweenType.pingPong);
 
+                // Rotate the clock 2 times and in a ping pong style.
                 LeanTween.rotateZ(this.clock, 25f, .5f)
                 .setLoopPingPong()
                 .setLoopCount(2)
@@ -61,8 +69,6 @@ public class SleepTrigger : MonoBehaviour
     IEnumerator LoadScene()
     {
         yield return new WaitForSeconds(2f);
-
-        print("Load Sleep Cutscene scene");
 
         SceneManager.LoadScene("Sleep Cutscene");
     }

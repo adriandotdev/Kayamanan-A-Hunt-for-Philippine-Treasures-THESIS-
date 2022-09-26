@@ -10,7 +10,7 @@ public class PlayerData
     public bool isNewlyCreated;
     public bool isTutorialDone;
     public bool isIntroductionDone;
-    public bool isAllNPCMet;
+    public bool isPreQuestIntroductionDone;
     public bool isNPCIntroductionPanelDone;
     public bool isFromSleeping;
     public string name;
@@ -68,7 +68,7 @@ public class PlayerData
         this.isNewlyCreated = true;
         this.isTutorialDone = false; // This is to track if the tutorial for UI is done.
         this.isIntroductionDone = false; // This is to track if the introduction of the game is already viewed or done.
-        this.isAllNPCMet = false;
+        this.isPreQuestIntroductionDone = false; 
         this.isNPCIntroductionPanelDone = false;
         this.id = null;
         this.name = null;
@@ -92,9 +92,9 @@ public class PlayerData
         this.AddRegionsForVisayas();
         this.AddRegionsForMindanao();
 
-        this.quests.Add(new Quest("Greet All", "Talk to all vilagers.", "PRE-QUEST", new NumberGoal(2, NumberGoal.CORRESPONDING_OBJECT_TO_COUNT.TALK_NPC)));
-        this.quests.Add(new Quest("A Simple Thanks", "Give this Mango to Aling Nena", "PRE-QUEST", 
-            new DeliveryGoal("Mang Esterlito", "Aling Nena", "Give this mango to Aling Nena", new Item("Mango", 1, "", true))));
+        this.quests.Add(new Quest("A Day with Friendliness", "Meet all the villagers.", "PRE-QUEST", new NumberGoal(2, NumberGoal.CORRESPONDING_OBJECT_TO_COUNT.TALK_NPC)));
+        this.quests.Add(new Quest("A Simple Thanks", "Get the Mango from Mang Esterlito and give it to Aling Nena.", "PRE-QUEST", 
+            new DeliveryGoal("Mang Esterlito", "Aling Nena", "Can you give this to Aling Nena?", new Item("Mango", 1, "", true))));
 
         // Quest for Luzon
         this.quests.Add(new Quest("Ilocos Region Quest!", "Get the Mango from Aling Marites and give it to Mang Esterlito", 25, ILOCOS_REGION, 1,
@@ -243,6 +243,48 @@ public class PlayerData
         this.npcInfos.Add(new NPC_INFO("Mikaela Fudolig", ""));
         this.npcInfos.Add(new NPC_INFO("Ivan Henares", ""));
     }
+
+    /**<summary>
+     *  A method that counts the number of collectibles of the specified
+     *  category.
+     *  @param categoryName
+     *  - name of the category that is going to be count.
+     * </summary> */
+     public int NumberOfCollectedCollectiblesFor(string categoryName)
+    {
+        int count = 0;
+
+        foreach (Collectible collectible in this.notebook.collectibles)
+        {
+            if (collectible.isCollected && collectible.categoryName.ToUpper() == categoryName.ToUpper())
+            {
+                count += 1;
+            }
+        }
+
+        return count;
+    }
+
+    /**<summary>
+     * Get the total number of collectibles collected.
+     * </summary> */
+    public int TotalOfCollectibles()
+    {
+        return this.NumberOfCollectedCollectiblesFor("National Heroes") + this.NumberOfCollectedCollectiblesFor("National Festivals")
+            + this.NumberOfCollectedCollectiblesFor("Tourist Attractions") + this.NumberOfCollectedCollectiblesFor("General Knowledge");
+    }
+
+    public int TotalNumberOfOpenRegions()
+    {
+        int count = 0;
+
+        foreach (RegionData regionData in this.regionsData)
+        {
+            if (regionData.isOpen) count++;
+        }
+
+        return count;
+    }
 }
 
 [System.Serializable]
@@ -282,33 +324,38 @@ public class Notebook
     const string CARAGA_REGION = "Caraga Region";
     const string BARMM = "BARMM";
 
+    // PATH
+    const string HEROES_FILEPATH = "Collectibles/Heroes/";
+    const string FESTIVALS_FILEPATH = "Collectibles/Festivals/";
+    const string TOURIST_ATT_FILEPATH = "Collectibles/Tourist Attractions/";
+
     public Notebook()
     {
         this.collectibles = new List<Collectible>();
 
-        // Collectibles for LUZON
-        this.collectibles.Add(new Collectible("Jose Rizal", "Collectibles/Rizal", HEROES, LUZON, REGION_1));
-        this.collectibles.Add(new Collectible("Diego Silang", "Collectibles/Diego Silang", HEROES, LUZON, REGION_1));
-        this.collectibles.Add(new Collectible("Anahaw", "Collectibles/Anahaw", FESTIVALS, LUZON, REGION_2));
-        this.collectibles.Add(new Collectible("Andres Bonifacio", "Collectibles/Bonifacio", TOURIST_ATTRACTIONS, LUZON, CAR));
-        this.collectibles.Add(new Collectible("Kalabaw", "Collectibles/Kalabaw", HEROES, LUZON, REGION_3));
-        this.collectibles.Add(new Collectible("Kalabaw", "Collectibles/Kalabaw", GENERAL_KNOWLEDGE, LUZON, REGION_4A));
-        this.collectibles.Add(new Collectible("Jose Rizal", "Collectibles/Rizal", TOURIST_ATTRACTIONS, LUZON, MIMAROPA));
-        this.collectibles.Add(new Collectible("Anahaw", "Collectibles/Anahaw", HEROES, LUZON, REGION_5));
-        this.collectibles.Add(new Collectible("Andres Bonifacio", "Collectibles/Bonifacio", FESTIVALS, LUZON, NCR));
+        // Collectibles for REGION 1
+        this.collectibles.Add(new Collectible("Diego Silang", HEROES_FILEPATH + "Diego Silang", HEROES, LUZON, REGION_1));
+        this.collectibles.Add(new Collectible("Cape Bojeador", TOURIST_ATT_FILEPATH + "Cape Bojeador", TOURIST_ATTRACTIONS, LUZON, REGION_1));
 
-        // Collectibles for VISAYAS
-        this.collectibles.Add(new Collectible("Jose Rizal", "Collectibles/Rizal", HEROES, VISAYAS, WESTERN_VISAYAS));
-        this.collectibles.Add(new Collectible("Jose Rizal", "Collectibles/Rizal", FESTIVALS, VISAYAS, CENTRAL_VISAYAS));
-        this.collectibles.Add(new Collectible("Jose Rizal", "Collectibles/Rizal", GENERAL_KNOWLEDGE, VISAYAS, EASTERN_VISAYAS));
+        // Collectibles for REGION 2
+        this.collectibles.Add(new Collectible("Ivatan Houses", TOURIST_ATT_FILEPATH + "Ivatan House", TOURIST_ATTRACTIONS, LUZON, REGION_2));
 
-        // Collectibles for MINDANAO
-        this.collectibles.Add(new Collectible("Andres Bonifacio", "Collectibles/Bonifacio", TOURIST_ATTRACTIONS, MINDANAO, ZAMBOANGA_PENINSULA));
-        this.collectibles.Add(new Collectible("Kalabaw", "Collectibles/Kalabaw", HEROES, MINDANAO, NORTHERN_MINDANAO));
-        this.collectibles.Add(new Collectible("Kalabaw", "Collectibles/Kalabaw", GENERAL_KNOWLEDGE, MINDANAO, DAVAO_REGION));
-        this.collectibles.Add(new Collectible("Jose Rizal", "Collectibles/Rizal", TOURIST_ATTRACTIONS, MINDANAO, SOCCSKSARGEN));
-        this.collectibles.Add(new Collectible("Anahaw", "Collectibles/Anahaw", HEROES, MINDANAO, CARAGA_REGION));
-        this.collectibles.Add(new Collectible("Andres Bonifacio", "Collectibles/Bonifacio", FESTIVALS, MINDANAO, BARMM));
+        // Collectibles for CAR
+        this.collectibles.Add(new Collectible("Panagbenga Festival", FESTIVALS_FILEPATH + "Panagbenga Festival", FESTIVALS, LUZON, CAR));
+        this.collectibles.Add(new Collectible("Diplomat Hotel", TOURIST_ATT_FILEPATH + "Diplomat Hotel", TOURIST_ATTRACTIONS, LUZON, CAR));
+
+        // Collectibles for REGION 3
+        this.collectibles.Add(new Collectible("Marcelo H. Del Pilar", HEROES_FILEPATH + "Marcelo H. Del Pilar", HEROES, LUZON, REGION_3));
+        this.collectibles.Add(new Collectible("Gregorio Del Pilar", HEROES_FILEPATH + "Gregorio Del Pilar", HEROES, LUZON, REGION_3));
+        this.collectibles.Add(new Collectible("Carabao Festival", FESTIVALS_FILEPATH + "Carabao Festival", FESTIVALS, LUZON, REGION_3));
+        this.collectibles.Add(new Collectible("Hot Air Balloon Festival", FESTIVALS_FILEPATH + "Hot Air Balloon Festival", FESTIVALS, LUZON, REGION_3));
+
+        // Collectibles for CALABARZON (REGION 4A)
+        this.collectibles.Add(new Collectible("Batingaw Festival", FESTIVALS_FILEPATH + "Batingaw Festival", FESTIVALS, LUZON, REGION_4A));
+        
+        // Collectibles for MIMAROPA (REGION 4B) 
+        this.collectibles.Add(new Collectible("Moriones Festival", FESTIVALS + "Moriones Festival", HEROES, LUZON, MIMAROPA));
+
     }
 }
 

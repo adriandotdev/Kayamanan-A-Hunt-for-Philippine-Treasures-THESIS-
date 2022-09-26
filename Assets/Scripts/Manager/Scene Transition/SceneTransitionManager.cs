@@ -31,18 +31,14 @@ public class SceneTransitionManager : MonoBehaviour
 
     private void OnEnable()
     {
-        SceneManager.sceneLoaded += OnOutsideSceneLoaded;
         SceneManager.sceneLoaded += OnPlayerHouseLoaded;
-        SceneManager.sceneLoaded += OnSchoolSceneLoaded;
-        SceneManager.sceneLoaded += OnMuseumSceneLoaded;
+        SceneManager.sceneLoaded += OnSceneRequiresTransitionLoaded;
     }
 
     private void OnDisable()
     {
-        SceneManager.sceneLoaded -= OnOutsideSceneLoaded;
         SceneManager.sceneLoaded -= OnPlayerHouseLoaded;
-        SceneManager.sceneLoaded -= OnSchoolSceneLoaded;
-        SceneManager.sceneLoaded -= OnMuseumSceneLoaded;
+        SceneManager.sceneLoaded -= OnSceneRequiresTransitionLoaded;
     }
 
     public void OnPlayerHouseLoaded(Scene scene, LoadSceneMode mode)
@@ -102,9 +98,10 @@ public class SceneTransitionManager : MonoBehaviour
         }
     }
 
-    public void OnOutsideSceneLoaded(Scene scene, LoadSceneMode mode)
+    void OnSceneRequiresTransitionLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "Outside")
+        if (scene.name == "Outside" || scene.name == "Museum" 
+            || scene.name == "School" || scene.name == "Church")
         {
             Vector2 position;
 
@@ -132,67 +129,7 @@ public class SceneTransitionManager : MonoBehaviour
 
                 this.SpawnPlayerCharacter(position);
             }
-            catch(System.Exception e) { }
-        }
-    }
-
-    public void OnSchoolSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (scene.name == "School")
-        {
-            Vector2 position;
-
-            /**
-             * <summary>
-             *  Since ang default scene pag nag create ng new profile is ang 'House' scene,
-             *  direct na natin ichecheck if ang outside scene ay nag load kung from entrance 
-             *  ba sa loob o labas galing si player.
-             *  
-             *  Also the player's position sa 'Outside' scene is nasasaved din if ever na hindi
-             *  siya galing sa loob ng bahay.
-             * </summary>
-             */
-            if (fromEnter)
-            {
-                fromEnter = false;
-                position = GameObject.Find(this.nameOfExit).transform.GetChild(0).position;
-            }
-            else
-            {
-                position = new Vector2(DataPersistenceManager.instance.playerData.xPos, DataPersistenceManager.instance.playerData.yPos);
-            }
-
-            this.SpawnPlayerCharacter(position);
-        }
-    }
-
-    public void OnMuseumSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (scene.name == "Museum")
-        {
-            Vector2 position;
-
-            /**
-             * <summary>
-             *  Since ang default scene pag nag create ng new profile is ang 'House' scene,
-             *  direct na natin ichecheck if ang outside scene ay nag load kung from entrance 
-             *  ba sa loob o labas galing si player.
-             *  
-             *  Also the player's position sa 'Outside' scene is nasasaved din if ever na hindi
-             *  siya galing sa loob ng bahay.
-             * </summary>
-             */
-            if (fromEnter)
-            {
-                fromEnter = false;
-                position = GameObject.Find(this.nameOfExit).transform.GetChild(0).position;
-            }
-            else
-            {
-                position = new Vector2(DataPersistenceManager.instance.playerData.xPos, DataPersistenceManager.instance.playerData.yPos);
-            }
-
-            this.SpawnPlayerCharacter(position);
+            catch (System.Exception e) { }
         }
     }
 

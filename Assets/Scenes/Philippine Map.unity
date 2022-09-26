@@ -3498,6 +3498,9 @@ MonoBehaviour:
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
+    isPreQuestIntroductionDone: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
     name: 
     gender: male
     dunongPoints: 25
@@ -3566,6 +3569,7 @@ MonoBehaviour:
       description: Talk to Mang Esterlito
       dunongPointsRewards: 15
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Mang Esterlito
@@ -3581,6 +3585,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: aa2d5937-b256-4d7c-8ebd-5863620f0029
       isCompleted: 0
       isClaimed: 0
@@ -3588,6 +3597,7 @@ MonoBehaviour:
       description: Talk to Aling Nena
       dunongPointsRewards: 10
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Nena
@@ -3603,6 +3613,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 18bf2aa4-3eb7-4a31-b0ab-b67e510b0752
       isCompleted: 0
       isClaimed: 0
@@ -3610,6 +3625,7 @@ MonoBehaviour:
       description: Talk to Aling Missy
       dunongPointsRewards: 5
       region: Region 2
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Nena
@@ -3625,6 +3641,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 062db199-0b36-4312-88a2-1653daeb0351
       isCompleted: 0
       isClaimed: 0
@@ -3632,6 +3653,7 @@ MonoBehaviour:
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
       dunongPointsRewards: 10
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -3647,6 +3669,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: f30d2d1a-989c-49b3-b462-6493b7cf7a56
       isCompleted: 0
       isClaimed: 0
@@ -3654,6 +3681,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 10
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -3669,6 +3697,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: e2fee506-c55c-48fe-b8e6-7721b65590a9
       isCompleted: 0
       isClaimed: 0
@@ -3676,6 +3709,7 @@ MonoBehaviour:
       description: Help Mang Esterlito give a gumamela to Aling Nena
       dunongPointsRewards: 10
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -3691,8 +3725,49 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     currentQuests: []
     completedQuests: []
+    npcInfos:
+    - name: Mang Esterlito
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Marites
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Julia
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ramon Villegas
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Gregorio Zaide
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Mikaela Fudolig
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ivan Henares
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
     inventory:
       items: []
     playerTime:
@@ -3707,6 +3782,7 @@ MonoBehaviour:
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
   regionName: 
+  regionNum: 0
   previousSceneToLoad: 
   categoryName: 
   correctAnswers: 
@@ -3748,7 +3824,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &523391419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3769,11 +3845,15 @@ MonoBehaviour:
   menuSceneCanvasGroup: {fileID: 0}
   homeCanvasGroup: {fileID: 0}
   characterCreationGroup: {fileID: 0}
+  dunongPointsValue: {fileID: 0}
   playerData:
     id: 
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
+    isPreQuestIntroductionDone: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
     name: 
     gender: male
     dunongPoints: 25
@@ -3873,6 +3953,7 @@ MonoBehaviour:
       description: Talk to Mang Esterlito
       dunongPointsRewards: 15
       region: Ilocos Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Mang Esterlito
@@ -3888,6 +3969,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: c99be312-8b0f-40d4-8073-2beb1c708af4
       isCompleted: 0
       isClaimed: 0
@@ -3895,6 +3981,7 @@ MonoBehaviour:
       description: Talk to Aling Nena
       dunongPointsRewards: 10
       region: Ilocos Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Nena
@@ -3910,6 +3997,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: ab582a6a-4a0a-44fe-8761-16e3351a109c
       isCompleted: 0
       isClaimed: 0
@@ -3917,6 +4009,7 @@ MonoBehaviour:
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
       dunongPointsRewards: 10
       region: Ilocos Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -3932,6 +4025,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 8031dc5f-851c-4c12-9cc6-95b78566e4cf
       isCompleted: 0
       isClaimed: 0
@@ -3939,6 +4037,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 10
       region: Ilocos Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -3954,6 +4053,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 77143ae2-f688-4710-be70-ad7082ebd0e7
       isCompleted: 0
       isClaimed: 0
@@ -3961,6 +4065,7 @@ MonoBehaviour:
       description: Help Mang Esterlito give a gumamela to Aling Nena
       dunongPointsRewards: 10
       region: Ilocos Region
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -3976,6 +4081,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 4eb231bb-715c-4923-a72e-e09e477473df
       isCompleted: 0
       isClaimed: 0
@@ -3983,6 +4093,7 @@ MonoBehaviour:
       description: Talk to Aling Melchora
       dunongPointsRewards: 10
       region: Cagayan Valley
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Melchora
@@ -3998,8 +4109,49 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     currentQuests: []
     completedQuests: []
+    npcInfos:
+    - name: Mang Esterlito
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Marites
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Julia
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ramon Villegas
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Gregorio Zaide
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Mikaela Fudolig
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ivan Henares
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
     inventory:
       items: []
     playerTime:
@@ -7989,6 +8141,9 @@ MonoBehaviour:
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
+    isPreQuestIntroductionDone: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
     name: 
     gender: male
     dunongPoints: 25
@@ -8068,6 +8223,7 @@ MonoBehaviour:
       description: Talk to Mang Esterlito
       dunongPointsRewards: 15
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Mang Esterlito
@@ -8083,6 +8239,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: f426a707-52bf-4d9e-bd27-b7ae850f0c37
       isCompleted: 0
       isClaimed: 0
@@ -8090,6 +8251,7 @@ MonoBehaviour:
       description: Talk to Aling Nena
       dunongPointsRewards: 10
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Nena
@@ -8105,6 +8267,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 63c16d5c-f69a-4677-aecc-5a855f0c0e16
       isCompleted: 0
       isClaimed: 0
@@ -8112,6 +8279,7 @@ MonoBehaviour:
       description: Talk to Aling Missy
       dunongPointsRewards: 5
       region: Region 2
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Nena
@@ -8127,6 +8295,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 805c77d8-a58f-4fa2-b4ed-31d4ea9843a2
       isCompleted: 0
       isClaimed: 0
@@ -8134,6 +8307,7 @@ MonoBehaviour:
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
       dunongPointsRewards: 10
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -8149,6 +8323,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 7214fd0b-e953-4283-8e50-d886e6144b8a
       isCompleted: 0
       isClaimed: 0
@@ -8156,6 +8335,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 10
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -8171,6 +8351,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: a3aafd1c-2b05-4d5d-95ed-d46c97ec8263
       isCompleted: 0
       isClaimed: 0
@@ -8178,6 +8363,7 @@ MonoBehaviour:
       description: Help Mang Esterlito give a gumamela to Aling Nena
       dunongPointsRewards: 10
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -8193,8 +8379,49 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     currentQuests: []
     completedQuests: []
+    npcInfos:
+    - name: Mang Esterlito
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Marites
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Julia
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ramon Villegas
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Gregorio Zaide
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Mikaela Fudolig
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ivan Henares
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
     inventory:
       items: []
     playerTime:
@@ -13952,7 +14179,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -151.00006, y: -296}
+  m_AnchoredPosition: {x: -151.00012, y: -296}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1962015918
@@ -15305,6 +15532,9 @@ MonoBehaviour:
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
+    isPreQuestIntroductionDone: 0
+    isNPCIntroductionPanelDone: 0
+    isFromSleeping: 0
     name: 
     gender: male
     dunongPoints: 25
@@ -15384,6 +15614,7 @@ MonoBehaviour:
       description: Talk to Mang Esterlito
       dunongPointsRewards: 15
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Mang Esterlito
@@ -15399,6 +15630,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: ad6bc7a9-f8e6-4225-8b09-bb88a48009ba
       isCompleted: 0
       isClaimed: 0
@@ -15406,6 +15642,7 @@ MonoBehaviour:
       description: Talk to Aling Nena
       dunongPointsRewards: 10
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Nena
@@ -15421,6 +15658,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: ce9c6b41-4b8c-4861-9b4c-5cce0cff10b6
       isCompleted: 0
       isClaimed: 0
@@ -15428,6 +15670,7 @@ MonoBehaviour:
       description: Talk to Aling Missy
       dunongPointsRewards: 5
       region: Region 2
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: Aling Nena
@@ -15443,6 +15686,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: d45bcdcf-035c-42d9-90cc-1cddc5080594
       isCompleted: 0
       isClaimed: 0
@@ -15450,6 +15698,7 @@ MonoBehaviour:
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
       dunongPointsRewards: 10
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -15465,6 +15714,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 9c0e81d9-29ea-4e19-bed0-2722ac0b4271
       isCompleted: 0
       isClaimed: 0
@@ -15472,6 +15726,7 @@ MonoBehaviour:
       description: Help Aling Julia to give Aling Marites a Mango
       dunongPointsRewards: 10
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -15487,6 +15742,11 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     - questID: 3cc30f6f-1556-476f-abbe-92f3b0479682
       isCompleted: 0
       isClaimed: 0
@@ -15494,6 +15754,7 @@ MonoBehaviour:
       description: Help Mang Esterlito give a gumamela to Aling Nena
       dunongPointsRewards: 10
       region: Region 1
+      regionNum: 0
       talkGoal:
         isFinished: 0
         npcName: 
@@ -15509,8 +15770,49 @@ MonoBehaviour:
           information: 
           quantity: 0
           stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      questType: 0
     currentQuests: []
     completedQuests: []
+    npcInfos:
+    - name: Mang Esterlito
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Marites
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Aling Julia
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ramon Villegas
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Gregorio Zaide
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Mikaela Fudolig
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ivan Henares
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
     inventory:
       items: []
     playerTime:
@@ -15525,6 +15827,7 @@ MonoBehaviour:
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
   regionName: 
+  regionNum: 0
   previousSceneToLoad: 
   categoryName: 
   correctAnswers: 

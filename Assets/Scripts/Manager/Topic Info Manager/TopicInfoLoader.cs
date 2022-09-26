@@ -3,77 +3,176 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Ink.Runtime;
 
 public class TopicInfoLoader : MonoBehaviour
 {
-    private Button closeButton;
-    private Image topicPhoto;
+    // All of the panels
+    private GameObject comicStrip1;
+    private GameObject comicStrip2;
+    private GameObject comicStrip3;
+
+    // For COMIC STRIP - 1
+    private Transform bubbleInfo;
     private TMPro.TextMeshProUGUI title;
-    private TMPro.TextMeshProUGUI info;
+    private TMPro.TextMeshProUGUI infoText;
+    public Transform cs1ImageContainer;
 
-    private float time;
-    private float maxTime;
+    // For COMIC STRIP - 2 
+    public Transform cs2TitleContainer;
+    public Transform cs2Stars;
+    public Transform cs2ImagePanel;
+    public Transform cs2InformationPanel;
 
-    // Timer UI
-    private GameObject timerUIParentObj;
-    private Image timerImage;
-    private TMPro.TextMeshProUGUI timerText;
+    // Canvas Group to disable.
+    private GameObject canvasOfMuseum;
 
-    // Info UI
-    private RectTransform bubbleEffectImage;
-    private TMPro.TextMeshProUGUI bubbleTitle;
-    void Start()
+    // story.
+    public Story story;
+
+    private void Start()
     {
-        this.bubbleEffectImage = GameObject.Find("Cloud Image").GetComponent<RectTransform>();
-        this.bubbleTitle = GameObject.Find("Main Title").GetComponent<TMPro.TextMeshProUGUI>();
+        this.InitializeComicStrips(); // Initialize Comic Strips
 
-        this.bubbleEffectImage.transform.localScale = Vector2.zero;
-        this.bubbleTitle.transform.localScale = Vector2.zero;
+        if (TopicInfoManager.Instance.panelNumber == TopicInfoManager.PANEL_NUMBER.ONE)
+        {
+            CanvasGroup canvasGroup1 = this.comicStrip1.GetComponent<CanvasGroup>();
+            this.comicStrip1.SetActive(true);
 
-        TweeningManager.instance.ShowTopicInfoMainTitle(this.bubbleEffectImage.gameObject, this.bubbleTitle.gameObject);
+            this.ModifyCanvasGroup(canvasGroup1, true);
 
-        //this.closeButton = GameObject.Find("Close").GetComponent<Button>();
-        //this.topicPhoto = GameObject.Find("Topic Photo").GetComponent<Image>();
-        this.title = GameObject.Find("Main Title").GetComponent<TMPro.TextMeshProUGUI>();
-        //this.info = GameObject.Find("Topic Info").GetComponent<TMPro.TextMeshProUGUI>();
+            this.bubbleInfo = GameObject.Find("Bubble Info").transform;
+            this.title = GameObject.Find("Subject Title").GetComponent<TMPro.TextMeshProUGUI>();
+            this.infoText = this.bubbleInfo.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>();
+            this.cs1ImageContainer = GameObject.Find("CS1 Image Container").transform;
+            this.cs1ImageContainer.GetChild(2).GetComponent<Image>().sprite = TopicInfoManager.Instance.TopicImage;
 
-        //// Get the Timer UI
-        //this.timerUIParentObj = GameObject.Find("Timer UI");
-        //this.timerImage = GameObject.Find("Timer Image").GetComponent<Image>();
-        //this.timerText = GameObject.Find("Timer Text").GetComponent<TMPro.TextMeshProUGUI>();
+            this.title.text = TopicInfoManager.Instance.Topic;
 
-        //this.topicPhoto.sprite = TopicInfoManager.Instance.TopicImage;
-        this.title.text = TopicInfoManager.Instance.Topic;
-        //this.info.text = TopicInfoManager.Instance.Info;
-        //this.time = TopicInfoManager.Instance.TimerValue;
-        //this.maxTime = this.time;
+            Transform infoTitle = GameObject.Find("Info Title").transform;
 
-        //// Hide and wait the closeButton to show for a certain amount of time.
-        //this.closeButton.gameObject.SetActive(false);
+            this.canvasOfMuseum = GameObject.Find("Canvas");
 
-        //// Add event to the button.
-        //this.closeButton.onClick.AddListener(() =>
-        //{
-        //    SceneManager.UnloadSceneAsync("Topic Info Scene", UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
-        //});
+            StartShowingInformation();
+            TweeningManager.instance.ScaleTitleElementsInPanelOne(this.cs1ImageContainer.GetChild(0).gameObject);
+            TweeningManager.instance.ScaleTitleElementsInPanelOne(this.cs1ImageContainer.GetChild(1).gameObject);
+            TweeningManager.instance.RotateStarInPanelOne(GameObject.Find("Stars").transform.GetChild(0).gameObject);
+            TweeningManager.instance.RotateStarInPanelOne(GameObject.Find("Stars").transform.GetChild(1).gameObject);
+        }
+        else if (TopicInfoManager.Instance.panelNumber == TopicInfoManager.PANEL_NUMBER.TWO)
+        {
+            CanvasGroup canvasGroup2 = this.comicStrip2.GetComponent<CanvasGroup>();
+            this.comicStrip2.SetActive(true);
+
+            this.ModifyCanvasGroup(canvasGroup2, true);
+
+            this.cs2TitleContainer = GameObject.Find("CS2 Title Container").transform;
+            this.cs2Stars = GameObject.Find("CS2 Stars").transform;
+            this.cs2ImagePanel = GameObject.Find("CS2 Image Panel").transform;
+            this.cs2InformationPanel = GameObject.Find("CS2 Information Panel").transform;
+
+            this.cs2ImagePanel.GetChild(0).GetComponent<Image>().sprite = TopicInfoManager.Instance.TopicImage;
+            this.cs2TitleContainer.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = TopicInfoManager.Instance.Topic;
+
+            this.canvasOfMuseum = GameObject.Find("Canvas");
+
+            StartShowingInformation();
+            TweeningManager.instance.ScaleTitleElementsInPanelOne(this.cs2Stars.GetChild(0).gameObject);
+            TweeningManager.instance.ScaleTitleElementsInPanelOne(this.cs2Stars.GetChild(1).gameObject);
+            TweeningManager.instance.ScaleTitleElementsInPanelOne(this.cs2TitleContainer.GetChild(0).gameObject);
+        }
+    }
+    
+    void InitializeComicStrips()
+    {
+        this.comicStrip1 = GameObject.Find("Comic Strip 1");
+        this.comicStrip2 = GameObject.Find("Comic Strip 2");
+
+        CanvasGroup canvasGroup1 = this.comicStrip1.GetComponent<CanvasGroup>();
+        CanvasGroup canvasGroup2 = this.comicStrip2.GetComponent<CanvasGroup>();
+
+        this.ModifyCanvasGroup(canvasGroup1, false);
+        this.ModifyCanvasGroup(canvasGroup2, false);
+
+        this.comicStrip1.SetActive(false);
+        this.comicStrip2.SetActive(false);
     }
 
-    //private void Update()
-    //{
-    //    if (time > 0)
-    //    {
-    //        time -= 1 * Time.deltaTime;
-    //        this.timerImage.fillAmount = (float)(time / maxTime);
-    //        this.timerText.text = ((int)time).ToString();
-    //    }
-    //    else
-    //    {
-    //        if(!this.closeButton.gameObject.activeInHierarchy)
-    //        {
-    //            this.closeButton.gameObject.SetActive(true);
-    //            this.timerUIParentObj.SetActive(false);
-    //        }
-    //    }
-    //}
+    void ModifyCanvasGroup(CanvasGroup cg, bool value)
+    {
+        cg.blocksRaycasts = value;
+        cg.interactable = value;
+    }
 
+    public void SetTextMeshToUse(string text)
+    {
+        if (this.infoText != null)
+        {
+            this.infoText.text = text;
+        }
+        else if (this.cs2InformationPanel != null)
+        {
+            this.cs2InformationPanel.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = text;
+        }
+    }
+
+    public void StartShowingInformation()
+    {
+        this.canvasOfMuseum.SetActive(false);
+
+        story = new Story(TopicInfoManager.Instance.Info.text);
+
+        if (story.canContinue)
+        {
+            string storyText = story.Continue();
+
+            if (storyText == "")
+            {
+                this.ExitTopicInformationPanel();
+                return;
+            }
+            this.SetTextMeshToUse(storyText);
+        }
+        else {
+            this.ExitTopicInformationPanel();
+        }
+    }
+
+    public void ContinueShowingDialogue()
+    {
+        if (story.canContinue)
+        {
+            string storyText = story.Continue();
+
+            if (storyText == "")
+            {
+                this.ExitTopicInformationPanel();
+            }
+            this.SetTextMeshToUse(storyText);
+        }
+        else
+        {
+            this.ExitTopicInformationPanel();
+        }
+    }
+
+
+    public void ExitTopicInformationPanel()
+    { 
+        this.canvasOfMuseum.SetActive(true);
+        SceneManager.UnloadSceneAsync("Topic Info Scene");
+    }
+
+    public void Next()
+    {
+        try
+        {
+            this.story.ChooseChoiceIndex(0);
+            this.ContinueShowingDialogue();
+        }
+        catch (System.Exception e)
+        {
+            this.ExitTopicInformationPanel();
+        }
+    }
 }

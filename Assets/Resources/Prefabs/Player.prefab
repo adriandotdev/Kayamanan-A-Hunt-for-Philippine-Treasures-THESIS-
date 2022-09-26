@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 2618897702407668079}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.03, y: -3.43, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
+  m_LocalScale: {x: 1.186962, y: 1.186962, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6392453652966912801}
@@ -114,7 +114,7 @@ MonoBehaviour:
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
-    isAllNPCMet: 0
+    isPreQuestIntroductionDone: 0
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
     name: 

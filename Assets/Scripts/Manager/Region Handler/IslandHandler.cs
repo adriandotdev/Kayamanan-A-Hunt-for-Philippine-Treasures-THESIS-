@@ -180,6 +180,7 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
                     m_RegionInformationPanelContent.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = foundRegionData.regionName;
                     m_RegionInformationPanelContent.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = foundRegionData.information;
 
+                    // Play Button
                     regionPanelInfoTransform.GetChild(regionPanelInfoTransform.childCount - 1).GetComponent<Button>().onClick.AddListener(() =>
                     {
                         if (!this.IsAllQuestCompleted())

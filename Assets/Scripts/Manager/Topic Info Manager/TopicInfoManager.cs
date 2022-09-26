@@ -11,11 +11,12 @@ public class TopicInfoManager : MonoBehaviour
     public Sprite TopicImage { set; get; }
     public string Topic { set; get; }
 
-    public string Info { set; get; }
+    public TextAsset Info { set; get; }
 
     public float TimerValue { set; get; }
-    /// UI
- 
+    
+    public enum PANEL_NUMBER { ONE, TWO, THREE, FOUR }
+    public PANEL_NUMBER panelNumber;
 
     private void Awake()
     {
