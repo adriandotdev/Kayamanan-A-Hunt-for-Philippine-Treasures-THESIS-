@@ -107,9 +107,14 @@ public class DeliveryGoalGiver : MonoBehaviour
         this.joystick.SetActive(true);
         this.inventoryPanel.SetActive(true);
 
-        this.talkButton.enabled = true;
-        this.deliveryReqButton.enabled = true;
-        this.giveItemButton.enabled = true;
+        if (talkButton != null)
+            this.talkButton.enabled = true;
+
+        if (deliveryReqButton != null) 
+            this.deliveryReqButton.enabled = true;
+
+        if (giveItemButton != null)
+            this.giveItemButton.enabled = true;
 
         QuestManager.instance?.OpenPlainAlertBox("You've received an item");
 

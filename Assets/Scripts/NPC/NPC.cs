@@ -7,8 +7,52 @@ public class NPC : MonoBehaviour
 {
     NavMeshAgent agent;
     // Array of waypoints to walk from one to the next one
-    [SerializeField]
     private Transform[] waypoints;
+
+    [Header("Normal Waypoints If Not Real NPCs")]
+    [SerializeField]
+    private Transform[] normalWaypoints;
+
+    [Header("Day 1 Start Position and Waypoints")]
+    [SerializeField]
+    private NPC_BEHAVIOR day1Behavior;
+    [SerializeField]
+    private Transform day1StartPos;
+    [SerializeField]
+    private Transform[] day1Waypoints;
+
+    [Header("Day 2 Start Position and Waypoints")]
+    [SerializeField]
+    private NPC_BEHAVIOR day2Behavior;
+    [SerializeField]
+    private Transform day2StartPos;
+    [SerializeField]
+    private Transform[] day2Waypoints;
+
+    [Header("Day 3 Start Position and Waypoints")]
+    [SerializeField]
+    private NPC_BEHAVIOR day3Behavior;
+    [SerializeField]
+    private Transform day3StartPos;
+    [SerializeField]
+    private Transform[] day3Waypoints;
+
+    [Header("Day 4 Start Position and Waypoints")]
+    [SerializeField]
+    private NPC_BEHAVIOR day4Behavior;
+    [SerializeField]
+    private Transform day4StartPos;
+    [SerializeField]
+    private Transform[] day4Waypoints;
+
+    [Header("Day 5 Start Position and Waypoints")]
+    [SerializeField]
+    private NPC_BEHAVIOR day5Behavior;
+    [SerializeField]
+    private Transform day5StartPos;
+    [SerializeField]
+    private Transform[] day5Waypoints;
+
     // Walk speed that can be set in Inspector
     [SerializeField]
     private float moveSpeed = 2f;
@@ -20,9 +64,13 @@ public class NPC : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Animator animator;
 
-    // STATES
+    // NPC Type and NPC Behavior
+    public enum NPC_TYPE { MUSEUM_INDIVIDUAL, REAL_NPC }
     public enum NPC_BEHAVIOR { STATIONARY, WANDERING, GOING_HOME, NONE }
+
+    public NPC_TYPE npcType;
     public NPC_BEHAVIOR npcBehavior;
+    public float waitingTimeBeforeWalkingAgain;
     public Transform positionOfHome;
    
     [SerializeField] private NPC_INFO npcInfo;
@@ -38,6 +86,7 @@ public class NPC : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
+        this.SetWaypoints();
         this.SetPosition();
     }
 
@@ -46,35 +95,21 @@ public class NPC : MonoBehaviour
     {
         string nameOfNpc = GetComponent<DialogueTrigger>()?.NPC_NAME;
 
-        if (TimeManager.instance.playerData.playerTime.m_ActualHourInRealLife >= 19 && TimeManager.instance.playerData.playerTime.m_IsDaytime == false)
+        if (this.npcBehavior == (int)NPC_BEHAVIOR.STATIONARY)
         {
-            this.GoHome(); return;
+            animator.SetFloat("Speed", 0);
         }
         else
         {
-            if (TimeManager.instance.playerData.playerTime.m_IsDaytime == true && TimeManager.instance.playerData.playerTime.m_ActualHourInRealLife >= 8 
-                && this.npcBehavior == NPC_BEHAVIOR.GOING_HOME)
+            if (this.npcBehavior == NPC_BEHAVIOR.WANDERING)
             {
-                this.npcBehavior = NPC_BEHAVIOR.WANDERING;
-                this.spriteRenderer.color = new Color(255, 255, 255, 1);
-            }
-
-            if (this.npcBehavior == (int)NPC_BEHAVIOR.STATIONARY)
-            {
-                animator.SetFloat("Speed", 0);
-            }
-            else
-            {
-                if (this.npcBehavior == NPC_BEHAVIOR.WANDERING)
+                if (DialogueManager._instance.isTalking && nameOfNpc.ToUpper() == DialogueManager._instance.npcName.ToUpper())
                 {
-                    if (DialogueManager._instance.isTalking && nameOfNpc.ToUpper() == DialogueManager._instance.npcName.ToUpper())
-                    {
-                        agent.isStopped = true;
-                        return;
-                    }
-                    // Move Enemy
-                    this.Move();
+                    agent.isStopped = true;
+                    return;
                 }
+                // Move Enemy
+                this.Move();
             }
         }
     }
@@ -106,6 +141,26 @@ public class NPC : MonoBehaviour
 
             if (Vector2.Distance(transform.position, this.waypoints[this.waypointIndex].position) <= 0.01f)
             {
+                if (this.npcType == NPC_TYPE.MUSEUM_INDIVIDUAL)
+                {
+                    if (this.waypoints[this.waypointIndex].transform.name == "1")
+                    {
+                        animator.SetBool("Look Left", true);
+                    }
+                    else if (this.waypoints[this.waypointIndex].transform.name == "2")
+                    {
+                        animator.SetBool("Look Up", true);
+                    }
+                    else if (this.waypoints[this.waypointIndex].transform.name == "3")
+                    {
+                        animator.SetBool("Look Right", true);
+                    }
+                    else if (this.waypoints[this.waypointIndex].transform.name == "4")
+                    {
+                        animator.SetBool("Look Down", true);
+                    }
+                }
+                    
                 this.waypointIndex += 1;
                 this.npcBehavior = NPC_BEHAVIOR.STATIONARY;
                 
@@ -155,10 +210,46 @@ public class NPC : MonoBehaviour
         }
     }
 
+    public void SetWaypoints()
+    {
+        if (this.npcType == NPC_TYPE.MUSEUM_INDIVIDUAL)
+        {
+            this.waypoints = this.normalWaypoints;
+            return;
+        }
+
+        switch(DataPersistenceManager.instance.playerData.playerTime.m_DayEvent)
+        {
+            case 1:
+                this.waypoints = day1Waypoints;
+                this.npcBehavior = this.day1Behavior;
+                break;
+            case 2:
+                this.waypoints = day2Waypoints;
+                this.npcBehavior = this.day2Behavior;
+                break;
+            case 3:
+                this.waypoints = day3Waypoints;
+                this.npcBehavior = this.day3Behavior;
+                break;
+            case 4:
+                this.waypoints = day4Waypoints;
+                this.npcBehavior = this.day4Behavior;
+                break;
+            case 5:
+                this.waypoints = day5Waypoints;
+                this.npcBehavior = this.day5Behavior;
+                break;
+        }
+    }
     IEnumerator WalkAgain()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(this.waitingTimeBeforeWalkingAgain);
 
         this.npcBehavior = NPC_BEHAVIOR.WANDERING;
+        animator.SetBool("Look Left", false);
+        animator.SetBool("Look Right", false);
+        animator.SetBool("Look Up", false);
+        animator.SetBool("Look Down", false);
     }
 }

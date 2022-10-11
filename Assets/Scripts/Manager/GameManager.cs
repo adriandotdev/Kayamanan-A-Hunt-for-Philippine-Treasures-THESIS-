@@ -22,6 +22,10 @@ public class GameManager : MonoBehaviour, IDataPersistence
     [SerializeField] public Button quitButton;
     [SerializeField] public RectTransform volumePanel;
 
+    [SerializeField] public Button closeNotesPanel;
+    [SerializeField] public RectTransform notesPanel;
+    [SerializeField] public Button notesButton;
+
     [Header("Canvas Groups")]
     public CanvasGroup menuSceneCanvasGroup;
     public CanvasGroup homeCanvasGroup;
@@ -181,7 +185,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
             this.SetUpHouseOrOutsideSceneButtons();
         }
     }
-
+    // CHECK IF THIS IS NOT NEEDED.
     // For House Scene
     //public void OnHouseSceneLoaded(Scene scene, LoadSceneMode mode)
     //{
@@ -341,11 +345,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
      */
     public void SetUpHouseOrOutsideSceneButtons()
     {
+        // Commented for Unit Testing ONLY!
         //if (!this.playerData.isTutorialDone)
         //{
         //    return;
         //}
-
         try
         {
             // GET ALL THE NECESSARY COMPONENTS.
@@ -355,11 +359,27 @@ public class GameManager : MonoBehaviour, IDataPersistence
             this.soundButton = GameObject.Find("Sounds").GetComponent<Button>();
             this.quitButton = GameObject.Find("Quit").GetComponent<Button>();
             this.volumePanel = GameObject.Find("Volume Panel").GetComponent<RectTransform>();
-
+            
             this.dunongPointsValue = GameObject.Find("Dunong Points").transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>();
             this.dunongPointsValue.text = DataPersistenceManager.instance.playerData.dunongPoints.ToString();
 
+            this.notesButton = GameObject.Find("Notes Button").GetComponent<Button>();
+            this.notesPanel = GameObject.Find("Notes Panel").GetComponent<RectTransform>();
+            this.closeNotesPanel = GameObject.Find("Close Notes Panel Button").GetComponent<Button>();
+
             Button closeButton = GameObject.Find("Close Button").GetComponent<Button>();
+
+            this.notesButton.onClick.AddListener(() => {
+
+                LeanTween.scale(this.notesPanel.gameObject, new Vector2(346.7167f, 346.7167f), .2f)
+                .setEaseSpring();
+            });
+
+            this.closeNotesPanel.onClick.AddListener(() =>
+            {
+                LeanTween.scale(this.notesPanel.gameObject, new Vector2(0, 0), .2f)
+                .setEaseSpring();
+            });
 
             this.soundButton.onClick.AddListener(() =>
             {
@@ -397,6 +417,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
             });
 
             // Hide the optionsPanel at first render
+            this.notesPanel.transform.localScale = new Vector2(0, 0);
             this.optionsPanel.gameObject.SetActive(false);
             this.volumePanel.gameObject.SetActive(false);
         }

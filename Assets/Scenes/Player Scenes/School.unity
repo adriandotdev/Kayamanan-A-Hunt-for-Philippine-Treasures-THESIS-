@@ -469,90 +469,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53975470}
   m_CullTransparentMesh: 1
---- !u!1 &65967153
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 65967154}
-  - component: {fileID: 65967155}
-  m_Layer: 0
-  m_Name: School Utilities_14
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &65967154
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65967153}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.05, y: 17.57, z: -151.58249}
-  m_LocalScale: {x: 16.901896, y: 16.901896, z: 16.901896}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2007091064}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &65967155
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65967153}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1048919151
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -293676339, guid: e8b03f3f37c6cbb4eb8399363f898715, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.81, y: 0.08}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &112271015
 GameObject:
   m_ObjectHideFlags: 0
@@ -2538,80 +2454,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -28}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &447789415
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 678667349}
-    m_Modifications:
-    - target: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4.9641924
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 4.9641924
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 4.9641924
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 33.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412357200545503069, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-      propertyPath: m_Name
-      value: National Museum
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
---- !u!4 &447789416 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7412357200545503059, guid: 974262457e5ec0c4cb0a298ebe82dc8d, type: 3}
-  m_PrefabInstance: {fileID: 447789415}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &449409791
 GameObject:
   m_ObjectHideFlags: 0
@@ -2747,6 +2589,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449409791}
   m_CullTransparentMesh: 1
+--- !u!4 &466552531 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8765389822877627096, guid: 953348a35546314468db70c5fdf7d200, type: 3}
+  m_PrefabInstance: {fileID: 8765389822731678731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &473646354
 GameObject:
   m_ObjectHideFlags: 0
@@ -3266,6 +3113,14 @@ MonoBehaviour:
         targetNumber: 2
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 2
     - questID: 1334aa30-54a2-449a-b7b8-2086c4b4391d
       isCompleted: 0
@@ -3294,6 +3149,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: c1a34049-cf4d-4dd6-9425-4e54376124c6
       isCompleted: 0
@@ -3322,6 +3185,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 1e955c44-2077-4a47-b2d9-8c07ad8701fc
       isCompleted: 0
@@ -3350,6 +3221,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 95985c2f-ac6d-4cc1-a39b-342e622f2838
       isCompleted: 0
@@ -3378,6 +3257,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 44ae936e-5e81-4512-a4ff-f7918c6542e4
       isCompleted: 0
@@ -3406,6 +3293,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 452fd892-82fa-4363-b6ab-7c363835dae9
       isCompleted: 0
@@ -3434,6 +3329,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 707e93ee-b60b-4672-8ee0-1c9f9401972b
       isCompleted: 0
@@ -3462,6 +3365,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: e5fa6dbb-fd71-4738-8384-a2eaa0bd62c2
       isCompleted: 0
@@ -3490,6 +3401,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 11dd95ea-598e-4ea2-babc-52192f859dbb
       isCompleted: 0
@@ -3518,6 +3437,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: ee0833b9-e668-44c4-93b1-7189d71e09a7
       isCompleted: 0
@@ -3546,6 +3473,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 83272093-110b-4b89-ae50-3259f3c99b76
       isCompleted: 0
@@ -3574,6 +3509,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: d1b3bd71-6450-4624-ae7a-220729eb82d5
       isCompleted: 0
@@ -3602,6 +3545,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 69024f76-cbad-4211-9231-99b70ef3bb2e
       isCompleted: 0
@@ -3630,6 +3581,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 54ccb147-a805-4bf7-b088-5c586ed26682
       isCompleted: 0
@@ -3658,6 +3617,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: f3c2ed2c-d256-4901-9335-80915a9feb62
       isCompleted: 0
@@ -3686,6 +3653,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 69bb3d91-a67e-4f0c-946c-231a546a1a39
       isCompleted: 0
@@ -3714,6 +3689,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: ac9efc71-1c7e-4131-a809-cb39f4bdcbf4
       isCompleted: 0
@@ -3742,6 +3725,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: e5054e6e-33e6-41bd-b471-15f307c3bede
       isCompleted: 0
@@ -3770,6 +3761,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 9febabd0-6164-49f5-a36f-9fbb99a83595
       isCompleted: 0
@@ -3798,6 +3797,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 143721ee-a6f8-4acd-81bf-5568dd15a95d
       isCompleted: 0
@@ -3826,6 +3833,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -4414,6 +4429,141 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryPanel: {fileID: 0}
+--- !u!1 &507527489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 507527490}
+  - component: {fileID: 507527492}
+  - component: {fileID: 507527491}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &507527490
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507527489}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 897259838}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &507527491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507527489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Accept
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
+  m_sharedMaterial: {fileID: -5432314662704744868, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279440179
+  m_fontColor: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 39
+  m_fontSizeBase: 39
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &507527492
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507527489}
+  m_CullTransparentMesh: 1
 --- !u!1 &534473957
 GameObject:
   m_ObjectHideFlags: 0
@@ -4957,7 +5107,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1890108543}
-  - {fileID: 447789416}
+  - {fileID: 466552531}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5476,7 +5626,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785969931}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.78, y: 19.53, z: 0}
+  m_LocalPosition: {x: -13.84, y: 9.95, z: 0}
   m_LocalScale: {x: 7.543123, y: 7.543123, z: 7.543123}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5814,7 +5964,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802896956}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.14, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30128,6 +30278,128 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887039463}
   m_CullTransparentMesh: 1
+--- !u!1 &897259837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 897259838}
+  - component: {fileID: 897259841}
+  - component: {fileID: 897259840}
+  - component: {fileID: 897259839}
+  m_Layer: 5
+  m_Name: Accept Request
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &897259838
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897259837}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.84974, y: 0.84974, z: 0.84974}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 507527490}
+  m_Father: {fileID: 1437013332}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 222, y: -155}
+  m_SizeDelta: {x: 202.69, y: 98.67}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &897259839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897259837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 897259840}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &897259840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897259837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: cda14d85e961c264798e84c99bb3ffba, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &897259841
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897259837}
+  m_CullTransparentMesh: 1
 --- !u!1 &903120098
 GameObject:
   m_ObjectHideFlags: 0
@@ -30159,6 +30431,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questPrefab: {fileID: 4842949073925795106, guid: f4ba6b95c96f1b24582fbc90b485fb3a, type: 3}
   questNumberGoalPrefab: {fileID: 7839413539097093806, guid: a6cf3985c671a3446a1e57ed753454bc, type: 3}
+  requestPrefab: {fileID: 4407080427585667628, guid: 6de4dc8cd177b824290faec7d09ee19e, type: 3}
+  requestItemImagePrefab: {fileID: 9085320197616715487, guid: 6f07e04659cf1354b97eff2f47d7fbc8, type: 3}
   playerData:
     id: 
     isNewlyCreated: 1
@@ -30169,8 +30443,8 @@ MonoBehaviour:
     isFromSleeping: 0
     name: 
     gender: male
-    dunongPoints: 25
-    requiredDunongPointsToPlay: 10
+    dunongPoints: 0
+    requiredDunongPointsToPlay: 65
     remainingTime: 18000
     sceneToLoad: House
     xPos: 0
@@ -30181,31 +30455,120 @@ MonoBehaviour:
         imagePath: Collectibles/Rizal
         isCollected: 0
         categoryName: National Heroes
-        regionName: Region 1
-        majorIsland: 
+        regionName: Ilocos Region
+        majorIsland: Luzon
+      - name: Diego Silang
+        imagePath: Collectibles/Diego Silang
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Ilocos Region
+        majorIsland: Luzon
       - name: Anahaw
         imagePath: Collectibles/Anahaw
         isCollected: 0
-        categoryName: National Symbols
-        regionName: Region 1
-        majorIsland: 
+        categoryName: National Festivals
+        regionName: Cagayan Valley
+        majorIsland: Luzon
       - name: Andres Bonifacio
         imagePath: Collectibles/Bonifacio
         isCollected: 0
-        categoryName: National Symbols
-        regionName: Region 2
-        majorIsland: 
+        categoryName: Tourist Attractions
+        regionName: Cordillera Administrative Region
+        majorIsland: Luzon
       - name: Kalabaw
         imagePath: Collectibles/Kalabaw
         isCollected: 0
-        categoryName: National Symbols
-        regionName: Region 3
-        majorIsland: 
+        categoryName: National Heroes
+        regionName: Central Luzon
+        majorIsland: Luzon
+      - name: Kalabaw
+        imagePath: Collectibles/Kalabaw
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: CALABARZON
+        majorIsland: Luzon
+      - name: Jose Rizal
+        imagePath: Collectibles/Rizal
+        isCollected: 0
+        categoryName: Tourist Attractions
+        regionName: MIMAROPA
+        majorIsland: Luzon
+      - name: Anahaw
+        imagePath: Collectibles/Anahaw
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Bicol Region
+        majorIsland: Luzon
+      - name: Andres Bonifacio
+        imagePath: Collectibles/Bonifacio
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: National Capital Region
+        majorIsland: Luzon
+      - name: Jose Rizal
+        imagePath: Collectibles/Rizal
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Western Visayas
+        majorIsland: VISAYAS
+      - name: Jose Rizal
+        imagePath: Collectibles/Rizal
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: Central Visayas
+        majorIsland: VISAYAS
+      - name: Jose Rizal
+        imagePath: Collectibles/Rizal
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: Eastern Visayas
+        majorIsland: VISAYAS
+      - name: Andres Bonifacio
+        imagePath: Collectibles/Bonifacio
+        isCollected: 0
+        categoryName: Tourist Attractions
+        regionName: Zamboanga Peninsula
+        majorIsland: MINDANAO
+      - name: Kalabaw
+        imagePath: Collectibles/Kalabaw
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Northern Mindanao
+        majorIsland: MINDANAO
+      - name: Kalabaw
+        imagePath: Collectibles/Kalabaw
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: Davao Region
+        majorIsland: MINDANAO
+      - name: Jose Rizal
+        imagePath: Collectibles/Rizal
+        isCollected: 0
+        categoryName: Tourist Attractions
+        regionName: SOCCSKSARGEN
+        majorIsland: MINDANAO
+      - name: Anahaw
+        imagePath: Collectibles/Anahaw
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Caraga Region
+        majorIsland: MINDANAO
+      - name: Andres Bonifacio
+        imagePath: Collectibles/Bonifacio
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: BARMM
+        majorIsland: MINDANAO
     regionsData:
     - regionNumber: 1
       isOpen: 1
-      regionName: REGION 1
-      information: It is more about Region 1
+      regionName: Ilocos Region
+      information: "Ilocos is a region in the Philippines, encompassing the northwestern
+        coast of Luzon island. It\u2019s known for its historic sites, beaches and
+        the well-preserved Spanish colonial city of Vigan. Dating from the 16th century,
+        Vigan\u2019s Mestizo district is characterized by cobblestone streets and
+        mansions with wrought-iron balconies. Farther north, Laoag City is a jumping-off
+        point for the huge La Paz Sand Dunes."
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -30213,40 +30576,361 @@ MonoBehaviour:
       - categoryName: National Heroes
         highestScore: 0
         noOfStars: 0
-      - categoryName: National Symbols
+      - categoryName: National Festivals
         highestScore: 0
         noOfStars: 0
     - regionNumber: 2
       isOpen: 0
-      regionName: REGION 2
-      information: 
+      regionName: Cagayan Valley
+      information: 'Cagayan Valley, designated as Region II, is an administrative
+        region in the Philippines, located in the northeastern section of Luzon Island.
+        It is composed of five Philippine provinces: Batanes, Cagayan, Isabela, Nueva
+        Vizcaya, and Quirino.'
       currentScore: 0
       highestScore: 0
       noOfStars: 0
       categories:
-      - categoryName: National Games
+      - categoryName: Tourist Attractions
         highestScore: 0
         noOfStars: 0
     - regionNumber: 3
       isOpen: 0
-      regionName: REGION 3
+      regionName: Cordillera Administrative Region
+      information: The Cordillera Administrative Region, also known as the Cordillera
+        Region, or simply, Cordillera, is an administrative region in the Philippines,
+        situated within the island of Luzon.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: National Festivals
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: General Knowledge
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 4
+      isOpen: 0
+      regionName: Central Luzon
       information: 
       currentScore: 0
       highestScore: 0
       noOfStars: 0
       categories:
-      - categoryName: Philippine Myths
+      - categoryName: National Festivals
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: General Knowledge
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 5
+      isOpen: 0
+      regionName: National Capital Region
+      information: 
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: National Festivals
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 6
+      isOpen: 0
+      regionName: CALABARZON
+      information: 
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: National Festivals
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 7
+      isOpen: 0
+      regionName: MIMAROPA
+      information: 
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Festivals
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: Tourist Attractions
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 8
+      isOpen: 0
+      regionName: Bicol Region
+      information: 
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 9
+      isOpen: 0
+      regionName: Western Visayas
+      information: Western Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 10
+      isOpen: 0
+      regionName: Eastern Visayas
+      information: Eastern Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 11
+      isOpen: 0
+      regionName: Central Visayas
+      information: Central Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 12
+      isOpen: 0
+      regionName: Zamboanga Peninsula
+      information: Western Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 13
+      isOpen: 0
+      regionName: Northern Mindanao
+      information: Central Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 14
+      isOpen: 0
+      regionName: Davao Region
+      information: Eastern Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 15
+      isOpen: 0
+      regionName: SOCCSKSARGEN
+      information: Western Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 16
+      isOpen: 0
+      regionName: Caraga Region
+      information: Central Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 17
+      isOpen: 0
+      regionName: BARMM
+      information: Eastern Visayas is the first region of Visayas major island.
+      currentScore: 0
+      highestScore: 0
+      noOfStars: 0
+      categories:
+      - categoryName: National Heroes
         highestScore: 0
         noOfStars: 0
     quests:
-    - questID: 709d9b9c-67c0-4013-9228-0bee3b73df90
+    - questID: a2266428-58f8-4567-8fa2-6115e7fcef08
       isCompleted: 0
       isClaimed: 0
-      title: Known All Heroes
-      description: Talk to Mang Esterlito
-      dunongPointsRewards: 25
-      region: Region 1
+      title: A Day with Friendliness
+      description: Meet all the villagers.
+      dunongPointsRewards: 0
+      region: PRE-QUEST
       regionNum: 0
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 2
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 2
+    - questID: 48678471-7465-47ad-bb88-ed5735fefbe7
+      isCompleted: 0
+      isClaimed: 0
+      title: A Simple Thanks
+      description: Give this Mango to Aling Nena
+      dunongPointsRewards: 0
+      region: PRE-QUEST
+      regionNum: 0
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 335c53e9-642c-4044-bf4e-458499623602
+        deliveryMessage: Get the Mango from Mang Esterlito and give it to Aling Nena.
+        giverName: Mang Esterlito
+        receiverName: Aling Nena
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 1
+          stackable: 1
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 1
+    - questID: 916774d3-43f3-4a2e-ab33-12030f1c3ae9
+      isCompleted: 0
+      isClaimed: 0
+      title: Ilocos Region Quest!
+      description: Get the Mango from Aling Marites and give it to Mang Esterlito
+      dunongPointsRewards: 25
+      region: Ilocos Region
+      regionNum: 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 86074b98-581b-4c0e-9a08-03418ccaceeb
+        deliveryMessage: Can you give this Mango to Mang Esterlito?
+        giverName: Aling Marites
+        receiverName: Mang Esterlito
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 1
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 1
+    - questID: 08751375-2c0c-4f05-90a5-2fc700c7a0e1
+      isCompleted: 0
+      isClaimed: 0
+      title: Ilocos Region Quest!
+      description: Get the Mango from Aling Julia and give it to Aling Marites
+      dunongPointsRewards: 25
+      region: Ilocos Region
+      regionNum: 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 34e3ec6b-4467-4c88-9222-45dcaa7b12d3
+        deliveryMessage: Can you give this Mango to Aling Marites?
+        giverName: Aling Julia
+        receiverName: Aling Marites
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 2
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 1
+    - questID: dced6e66-3a36-47c0-85a3-bcae8de61a07
+      isCompleted: 0
+      isClaimed: 0
+      title: Ilocos Region Quest!
+      description: Talk to Mang Esterlito
+      dunongPointsRewards: 15
+      region: Ilocos Region
+      regionNum: 1
       talkGoal:
         isFinished: 0
         npcName: Mang Esterlito
@@ -30266,15 +30950,23 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
-    - questID: 6452e374-0c00-4c1b-ac2c-6f1578ce4080
+    - questID: 1c96dcd0-0903-4928-ae52-52c829c6a2c3
       isCompleted: 0
       isClaimed: 0
-      title: Talk to your MILF
+      title: Cagayan Valley Quest!
       description: Talk to Aling Nena
-      dunongPointsRewards: 30
-      region: Region 1
-      regionNum: 0
+      dunongPointsRewards: 10
+      region: Cagayan Valley
+      regionNum: 2
       talkGoal:
         isFinished: 0
         npcName: Aling Nena
@@ -30294,48 +30986,136 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
-    - questID: 56f66f59-d06b-45a3-b9ff-fc5dec0af61c
+    - questID: a4f27297-6376-4e54-9278-9afe9a3aac5d
       isCompleted: 0
       isClaimed: 0
-      title: Best Friends
-      description: Talk to Aling Missy
-      dunongPointsRewards: 30
-      region: Region 2
-      regionNum: 0
-      talkGoal:
-        isFinished: 0
-        npcName: Aling Nena
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      questType: 0
-    - questID: 18d96acf-6622-440c-b7bf-534b1e8e2a44
-      isCompleted: 0
-      isClaimed: 0
-      title: Gather Goal
-      description: This is gather goal
-      dunongPointsRewards: 45
-      region: Region 2
-      regionNum: 0
+      title: CAR Quest!
+      description: Get the Mango from Aling Marites and give it to Mang Esterlito
+      dunongPointsRewards: 25
+      region: Cordillera Administrative Region
+      regionNum: 3
       talkGoal:
         isFinished: 0
         npcName: 
       deliveryGoal:
         isFinished: 0
+        deliverGoalId: 9656e7c0-0ac9-4b26-9fbe-cfc725d459d4
+        deliveryMessage: Can you give this Mango to Mang Esterlito?
+        giverName: Aling Marites
+        receiverName: Mang Esterlito
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 1
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 1
+    - questID: 5d51ea21-7f26-4127-9f83-efd7a8e104e7
+      isCompleted: 0
+      isClaimed: 0
+      title: Central Luzon Quest!
+      description: Help Aling Julia to give Aling Marites a Mango
+      dunongPointsRewards: 15
+      region: Central Luzon
+      regionNum: 4
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: b497d74b-9618-40da-8d61-1e1e4726b306
+        deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
+        giverName: Aling Julia
+        receiverName: Aling Marites
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 1
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 1
+    - questID: f14aa271-2ea0-40fa-9eb2-e1c73a95b932
+      isCompleted: 0
+      isClaimed: 0
+      title: NCR Quest!
+      description: Help Mang Esterlito to give Aling Marites a Mango
+      dunongPointsRewards: 5
+      region: National Capital Region
+      regionNum: 5
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: a5ab4f17-6b88-454e-b819-a36f0cb537bd
+        deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
+        giverName: Mang Esterlito
+        receiverName: Aling Marites
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 3
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 1
+    - questID: 50722f7b-141c-4a99-8568-9655ee32433b
+      isCompleted: 0
+      isClaimed: 0
+      title: CALABARZON Quest!
+      description: Talk to Aling Julia
+      dunongPointsRewards: 35
+      region: CALABARZON
+      regionNum: 6
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Julia
+      deliveryGoal:
+        isFinished: 0
         deliverGoalId: 
         deliveryMessage: 
         giverName: 
@@ -30350,6 +31130,410 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 0
+    - questID: 4a51135b-26a2-4c65-a7b4-420dd7ed4f47
+      isCompleted: 0
+      isClaimed: 0
+      title: MIMAROPA Quest!
+      description: Talk to Aling Marites
+      dunongPointsRewards: 15
+      region: MIMAROPA
+      regionNum: 7
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Marites
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 0
+    - questID: 212052dd-7e23-4194-a1b2-016b221284ce
+      isCompleted: 0
+      isClaimed: 0
+      title: Bicol Region Quest!
+      description: Help Aling Julia to give Aling Marites a Banana
+      dunongPointsRewards: 5
+      region: Bicol Region
+      regionNum: 8
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 48e46c95-73e7-4d54-bcf3-6d1c7cb94d68
+        deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
+        giverName: Aling Julia
+        receiverName: Aling Marites
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Banana
+          information: 
+          quantity: 2
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 1
+    - questID: 27743db5-33b1-4671-96cf-a4ab8e6c333f
+      isCompleted: 0
+      isClaimed: 0
+      title: Western Visayas Quest!
+      description: Talk to Aling Julia
+      dunongPointsRewards: 35
+      region: Western Visayas
+      regionNum: 9
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Julia
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 0
+    - questID: 58f026f0-e1b1-4132-908b-38cd9fb5ad7c
+      isCompleted: 0
+      isClaimed: 0
+      title: Central Visayas Quest!
+      description: Talk to Aling Marites
+      dunongPointsRewards: 25
+      region: Western Visayas
+      regionNum: 10
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Marites
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 0
+    - questID: d7dd02ae-49bf-4779-a081-dc62a1f62abf
+      isCompleted: 0
+      isClaimed: 0
+      title: Eastern Visayas Quest!
+      description: Talk to Aling Marites
+      dunongPointsRewards: 75
+      region: Western Visayas
+      regionNum: 11
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Marites
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 0
+    - questID: a5199a8f-fed6-4baa-ab15-c614ec3cf67e
+      isCompleted: 0
+      isClaimed: 0
+      title: Zamboanga Peninsula Quest!
+      description: Talk to Aling Julia
+      dunongPointsRewards: 35
+      region: Zamboanga Peninsula
+      regionNum: 12
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Julia
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 0
+    - questID: fed9955e-41d8-4d64-bcd4-36d7fdee16a0
+      isCompleted: 0
+      isClaimed: 0
+      title: Northern Mindanao Quest!
+      description: Talk to Aling Marites
+      dunongPointsRewards: 10
+      region: Northern Mindanao
+      regionNum: 13
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Marites
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 0
+    - questID: bbbf47ef-53b1-4a93-aca9-a972a1fcabf0
+      isCompleted: 0
+      isClaimed: 0
+      title: Davao Region Quest!
+      description: Talk to Aling Nena
+      dunongPointsRewards: 35
+      region: Davao Region
+      regionNum: 14
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Nena
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 0
+    - questID: d255ded6-b4bd-4aa2-bc06-ea4dae6fb0d4
+      isCompleted: 0
+      isClaimed: 0
+      title: SOCCSKSARGEN Quest!
+      description: Talk to Mang Esterlito
+      dunongPointsRewards: 15
+      region: SOCCSKSARGEN
+      regionNum: 15
+      talkGoal:
+        isFinished: 0
+        npcName: Mang Esterlito
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 0
+    - questID: e207104d-c58c-4068-b4d4-45dcb934c11d
+      isCompleted: 0
+      isClaimed: 0
+      title: Caraga Region Quest!
+      description: Talk to Aling Marites
+      dunongPointsRewards: 45
+      region: Caraga Region
+      regionNum: 16
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Marites
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      questType: 0
+    - questID: f19d6b78-05c0-4918-8b91-0c862365473f
+      isCompleted: 0
+      isClaimed: 0
+      title: BARMM Quest!
+      description: Talk to Aling Julia
+      dunongPointsRewards: 325
+      region: BARMM
+      regionNum: 17
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Julia
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -30365,6 +31549,26 @@ MonoBehaviour:
       xPos: 0
       yPos: 0
     - name: Aling Julia
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ramon Villegas
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Gregorio Zaide
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Mikaela Fudolig
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ivan Henares
       info: 
       isMet: 0
       xPos: 0
@@ -31239,6 +32443,141 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1011584759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1011584760}
+  - component: {fileID: 1011584762}
+  - component: {fileID: 1011584761}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1011584760
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011584759}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1039590925}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1011584761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011584759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Cancel
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
+  m_sharedMaterial: {fileID: -5432314662704744868, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279440179
+  m_fontColor: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 39
+  m_fontSizeBase: 39
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1011584762
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011584759}
+  m_CullTransparentMesh: 1
 --- !u!1 &1011945508
 GameObject:
   m_ObjectHideFlags: 0
@@ -31685,6 +33024,128 @@ Canvas:
   m_SortingLayerID: -1571024269
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1039590924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1039590925}
+  - component: {fileID: 1039590928}
+  - component: {fileID: 1039590927}
+  - component: {fileID: 1039590926}
+  m_Layer: 5
+  m_Name: Cancel Request
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1039590925
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039590924}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.84974, y: 0.84974, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1011584760}
+  m_Father: {fileID: 1437013332}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 424, y: -156}
+  m_SizeDelta: {x: 202.69, y: 98.67}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1039590926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039590924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1039590927}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1039590927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039590924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: cda14d85e961c264798e84c99bb3ffba, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1039590928
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039590924}
+  m_CullTransparentMesh: 1
 --- !u!1 &1044458165
 GameObject:
   m_ObjectHideFlags: 0
@@ -32193,6 +33654,7 @@ RectTransform:
   - {fileID: 1305586763}
   - {fileID: 1777169232}
   - {fileID: 1108649625}
+  - {fileID: 1136482185}
   m_Father: {fileID: 1464171927}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32590,6 +34052,84 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131860689}
+  m_CullTransparentMesh: 1
+--- !u!1 &1136482184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1136482185}
+  - component: {fileID: 1136482187}
+  - component: {fileID: 1136482186}
+  m_Layer: 5
+  m_Name: Request Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1136482185
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136482184}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5293.9263}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1600868206}
+  - {fileID: 1437013332}
+  m_Father: {fileID: 1085849837}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 265}
+  m_SizeDelta: {x: 1154.49, y: 471.01}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1136482186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136482184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7af93ec54de35a248aff5d2540c30719, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1136482187
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136482184}
   m_CullTransparentMesh: 1
 --- !u!1 &1181921423
 GameObject:
@@ -33487,7 +35027,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259590281}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.45, y: 19.53, z: 0}
+  m_LocalPosition: {x: -31.57, y: 14.97, z: 0}
   m_LocalScale: {x: 7.543123, y: 7.543123, z: 7.543123}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -34516,7 +36056,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.088889, y: 1}
+    m_SensorSize: {x: 2.1666667, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -34558,6 +36098,76 @@ MonoBehaviour:
   m_BoundingShape2D: {fileID: 1563583389}
   m_ConfineScreenEdges: 1
   m_Damping: 0
+--- !u!1 &1437013331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1437013332}
+  m_Layer: 5
+  m_Name: Delivery Quest Buttons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1437013332
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437013331}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 897259838}
+  - {fileID: 1039590925}
+  m_Father: {fileID: 1136482185}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1439582391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1439582392}
+  m_Layer: 0
+  m_Name: School NPCs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1439582392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439582391}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2118679704}
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1439609800
 GameObject:
   m_ObjectHideFlags: 0
@@ -35495,6 +37105,14 @@ MonoBehaviour:
         targetNumber: 2
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 2
     - questID: 64d15982-0a0a-4bf9-8c0b-35f73d5930da
       isCompleted: 0
@@ -35523,6 +37141,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 0e157795-2e13-4d75-a832-5aae90658783
       isCompleted: 0
@@ -35551,6 +37177,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 9dcb4955-5ec2-4753-896b-65cd1c68a7e3
       isCompleted: 0
@@ -35579,6 +37213,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: c84d689b-2b5c-40d5-9be5-5eb7e0125e2c
       isCompleted: 0
@@ -35607,6 +37249,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 491c1157-e3bc-49df-a68c-eb31b0c26014
       isCompleted: 0
@@ -35635,6 +37285,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 52a15e27-1a7f-416e-ab97-3906c24683a1
       isCompleted: 0
@@ -35663,6 +37321,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 55dd0561-827e-4567-ae4a-d24cca0ff81c
       isCompleted: 0
@@ -35691,6 +37357,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: b14f6064-8c92-4bad-9a34-3931bc8caa56
       isCompleted: 0
@@ -35719,6 +37393,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 35ee66c1-8a2b-451c-8566-a39a41fc6d75
       isCompleted: 0
@@ -35747,6 +37429,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 556a7a86-eb21-46cd-9e23-ff8c5282ad91
       isCompleted: 0
@@ -35775,6 +37465,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: f98df6ed-6888-4d0a-8974-cd84cbb17d9c
       isCompleted: 0
@@ -35803,6 +37501,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 09b76d83-d700-4d74-9a41-310109da9835
       isCompleted: 0
@@ -35831,6 +37537,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: e33fc278-ad36-4f49-a80f-4c6610575ff7
       isCompleted: 0
@@ -35859,6 +37573,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 341371f1-e7b9-4ae1-a43c-9d36a81e3440
       isCompleted: 0
@@ -35887,6 +37609,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 55087ab7-68a9-47c7-a740-add420b824c9
       isCompleted: 0
@@ -35915,6 +37645,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 9bc0e99a-697e-47f0-9f79-bcff8a783ec3
       isCompleted: 0
@@ -35943,6 +37681,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 25b8da75-dfb9-4d8c-89af-aa0b2d094a09
       isCompleted: 0
@@ -35971,6 +37717,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 9f1bbfbf-77c6-48ef-a7fd-5a3c7d074fa3
       isCompleted: 0
@@ -35999,6 +37753,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: a39176cd-3559-4677-bcde-4950909822c7
       isCompleted: 0
@@ -36027,6 +37789,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 48575f7d-5466-405b-8bd0-df4f074fe219
       isCompleted: 0
@@ -36055,6 +37825,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -36877,6 +38655,141 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1600868205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1600868206}
+  - component: {fileID: 1600868208}
+  - component: {fileID: 1600868207}
+  m_Layer: 5
+  m_Name: Request Message
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1600868206
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600868205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1136482185}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 161, y: -93}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1600868207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600868205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Request Message Here
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 6c3cedb5bbabe54459ba1e14a9ea5df0, type: 2}
+  m_sharedMaterial: {fileID: 2620557048739155963, guid: 6c3cedb5bbabe54459ba1e14a9ea5df0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 45.54
+  m_fontSizeBase: 45.54
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -831.45764, w: -217.72444}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1600868208
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600868205}
+  m_CullTransparentMesh: 1
 --- !u!1 &1603487678
 GameObject:
   m_ObjectHideFlags: 0
@@ -40248,7 +42161,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739241372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.49, y: 19.53, z: 0}
+  m_LocalPosition: {x: 7.81, y: 18.74, z: 0}
   m_LocalScale: {x: 7.543123, y: 7.543123, z: 7.543123}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -41813,11 +43726,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3472801485711738240, guid: d41d66a4eb0530844889bbb35bf0cce4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40.82
+      value: -34.17
       objectReference: {fileID: 0}
     - target: {fileID: 3472801485711738240, guid: d41d66a4eb0530844889bbb35bf0cce4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16
+      value: 20.2
       objectReference: {fileID: 0}
     - target: {fileID: 3472801485711738240, guid: d41d66a4eb0530844889bbb35bf0cce4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -42103,6 +44016,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: c966bd23-08a4-4d5a-b39b-8862bd01e45c
       isCompleted: 0
@@ -42131,6 +44052,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: f6af8b02-0fb6-4f5e-b42d-52916397ec7c
       isCompleted: 0
@@ -42159,6 +44088,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: a6befd39-9c97-44e8-aafe-351d316085e6
       isCompleted: 0
@@ -42187,6 +44124,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 52f6a865-ae0b-4ead-82e0-907669131a4e
       isCompleted: 0
@@ -42215,6 +44160,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: a4daf909-d99a-4933-b701-0fbff8579e3b
       isCompleted: 0
@@ -42243,6 +44196,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 8eb4a168-4936-4afd-9772-ff2f57deee74
       isCompleted: 0
@@ -42271,6 +44232,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 54c785c9-a207-407d-9e32-af11b532fcb1
       isCompleted: 0
@@ -42299,6 +44268,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -42591,90 +44568,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950774180}
   m_CullTransparentMesh: 1
---- !u!1 &1960297929
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1960297930}
-  - component: {fileID: 1960297931}
-  m_Layer: 0
-  m_Name: School Utilities_14 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1960297930
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960297929}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.52, y: 17.25, z: -151.58249}
-  m_LocalScale: {x: 16.901896, y: 16.901896, z: 16.901896}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2007091064}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1960297931
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960297929}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1048919151
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -293676339, guid: e8b03f3f37c6cbb4eb8399363f898715, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.81, y: 0.08}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1963073371
 GameObject:
   m_ObjectHideFlags: 0
@@ -42744,7 +44637,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965604950}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.04, y: 16.69, z: -151.58249}
+  m_LocalPosition: {x: 0.09, y: 13.76, z: -151.58249}
   m_LocalScale: {x: 8.350213, y: 8.350213, z: 8.350213}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43270,8 +45163,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1965604951}
-  - {fileID: 65967154}
-  - {fileID: 1960297930}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44191,6 +46082,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2109677466}
   m_CullTransparentMesh: 1
+--- !u!1001 &2118679703
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1439582392}
+    m_Modifications:
+    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -36.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 290617100952819013, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
+      propertyPath: m_Name
+      value: Joseph
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
+--- !u!4 &2118679704 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
+  m_PrefabInstance: {fileID: 2118679703}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2129879824
 GameObject:
   m_ObjectHideFlags: 0
@@ -44730,3 +46683,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146789779}
   m_CullTransparentMesh: 1
+--- !u!1001 &8765389822731678731
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 678667349}
+    m_Modifications:
+    - target: {fileID: 8765389822877627096, guid: 953348a35546314468db70c5fdf7d200, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765389822877627096, guid: 953348a35546314468db70c5fdf7d200, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765389822877627096, guid: 953348a35546314468db70c5fdf7d200, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 27.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765389822877627096, guid: 953348a35546314468db70c5fdf7d200, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765389822877627096, guid: 953348a35546314468db70c5fdf7d200, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999982
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765389822877627096, guid: 953348a35546314468db70c5fdf7d200, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765389822877627096, guid: 953348a35546314468db70c5fdf7d200, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765389822877627096, guid: 953348a35546314468db70c5fdf7d200, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0018913619
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765389822877627096, guid: 953348a35546314468db70c5fdf7d200, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765389822877627096, guid: 953348a35546314468db70c5fdf7d200, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765389822877627096, guid: 953348a35546314468db70c5fdf7d200, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.217
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765389822877627097, guid: 953348a35546314468db70c5fdf7d200, type: 3}
+      propertyPath: m_Name
+      value: School
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 953348a35546314468db70c5fdf7d200, type: 3}

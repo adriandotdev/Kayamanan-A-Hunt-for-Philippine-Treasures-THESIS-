@@ -10,7 +10,9 @@ public class DialogueTrigger : MonoBehaviour
     public TMPro.TextMeshProUGUI actorName;
     private Button talkButton; // Talk Button
     private Button deliveryReqButton; // Delivery Request Button.
-    private Button giveItemButton; // Give Item Button
+    private Button giveItemToNPCBtn; // Give Item to NPC Button
+    private Button giveItemToPlayer; // Give Item to Player Button
+
     [SerializeField]public string NPC_NAME;
 
     private void OnEnable()
@@ -24,7 +26,8 @@ public class DialogueTrigger : MonoBehaviour
         this.actorName = firstChild.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>();
         this.talkButton = firstChild.GetChild(1).GetComponent<Button>();
         this.deliveryReqButton = firstChild.GetChild(2).GetComponent<Button>();
-        this.giveItemButton = firstChild.GetChild(3).GetComponent<Button>();
+        this.giveItemToNPCBtn = firstChild.GetChild(3).GetComponent<Button>();
+        this.giveItemToPlayer = firstChild.GetChild(4).GetComponent<Button>();
 
         // Add Event to Talk Button
         this.talkButton.onClick.AddListener(() =>
@@ -72,18 +75,17 @@ public class DialogueTrigger : MonoBehaviour
 
                     if (quest.numberGoal.currentNumber == quest.numberGoal.targetNumber)
                     {
-                        QuestManager.instance?.OpenPlainAlertBoxAndAlertBox("You met new villager");
+                        QuestManager.instance?.OpenPlainAlertBoxAndAlertBox("You met a new villager");
 
                         DataPersistenceManager.instance.playerData.quests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
                         DataPersistenceManager.instance.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
                         
-
                         // CHECK IF THE INTRODUCTION OR PRE QUEST IS  DONE THEN WE ONLY SET THE isAllNPCMet to true.
                         if (QuestManager.instance.CheckIfPreQuestsDone() == true)
                         {
                             DataPersistenceManager.instance.playerData.isPreQuestIntroductionDone = true;
                             QuestManager.instance?.GetListOfQuests();
-                            QuestManager.instance?.SetupScriptsForDeliveryQuestToNPCs();
+                            QuestManager.instance?.SetupScriptsForRequestQuest();
                         }
 
                         break;
@@ -129,19 +131,21 @@ public class DialogueTrigger : MonoBehaviour
         return false;
     }
 
-    public void HideButtons(bool toHide)
+    public void HideButtons(bool toDisable)
     {
-        if (toHide)
+        if (toDisable)
         {
             this.talkButton.enabled = false;
             this.deliveryReqButton.enabled = false;
-            this.giveItemButton.enabled = false;
+            this.giveItemToNPCBtn.enabled = false;
+            this.giveItemToPlayer.enabled = false;
         }
         else
         {
             this.talkButton.enabled = true;
             this.deliveryReqButton.enabled = true;
-            this.giveItemButton.enabled = true;
+            this.giveItemToNPCBtn.enabled = true;
+            this.giveItemToPlayer.enabled = true;
         }
     }
 

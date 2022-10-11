@@ -79,7 +79,7 @@ public class SceneTransitionManager : MonoBehaviour
                 {
                     DataPersistenceManager.instance.playerData.isFromSleeping = false;
                     position = GameObject.Find("Bed Spawnpoint").transform.position;
-                    this.SpawnPlayerCharacter(position);
+                    this.SpawnPlayerCharacter(position, scene.name);
                     return; 
                 }
                 if (fromEnter)
@@ -94,7 +94,7 @@ public class SceneTransitionManager : MonoBehaviour
                     
             }
 
-            this.SpawnPlayerCharacter(position);
+            this.SpawnPlayerCharacter(position, scene.name);
         }
     }
 
@@ -127,28 +127,41 @@ public class SceneTransitionManager : MonoBehaviour
                     position = new Vector2(DataPersistenceManager.instance.playerData.xPos, DataPersistenceManager.instance.playerData.yPos);
                 }
 
-                this.SpawnPlayerCharacter(position);
+                this.SpawnPlayerCharacter(position, scene.name);
             }
             catch (System.Exception e) { }
         }
     }
 
-    private void SpawnPlayerCharacter(Vector2 position)
+    private void SpawnPlayerCharacter(Vector2 position, string sceneName)
     {
         GameObject player = null;
 
         if (DataPersistenceManager.instance.playerData.gender == "male")
         {
             player = Instantiate(Resources.Load<GameObject>("Prefabs/Player"));
+            this.ChangePlayerMinimapIconSize(player, sceneName);
         }
         else
         {
             player = Instantiate(Resources.Load<GameObject>("Prefabs/Female"));
+            this.ChangePlayerMinimapIconSize(player, sceneName);
         }
 
         player.transform.position = new Vector2(position.x, position.y);
     }
 
+    private void ChangePlayerMinimapIconSize(GameObject player, string sceneName)
+    {
+        if (sceneName == "Museum")
+        {
+            player.transform.GetChild(1).transform.localScale = new Vector2(2.786297f, 2.786297f);
+        }
+        else if (sceneName == "Outside")
+        {
+            player.transform.GetChild(1).transform.localScale = new Vector2(6.9839f, 6.9839f);
+        }
+    }
     public void LoadHouseScene()
     {
         SceneManager.LoadScene("House");

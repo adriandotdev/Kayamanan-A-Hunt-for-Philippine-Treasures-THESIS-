@@ -49,14 +49,11 @@ public class SleepTrigger : MonoBehaviour
                 // Scale the splash effect 2 times with a loop type of ping pong. meaning, it is scaling up and down.
                 LeanTween.scale(this.splashEffect, new Vector2(85.20542f, 85.20542f), .5f)
                     .setLoopPingPong()
-                    .setLoopCount(2)
                     .setLoopType(LeanTweenType.pingPong);
 
                 // Rotate the clock 2 times and in a ping pong style.
                 LeanTween.rotateZ(this.clock, 25f, .5f)
                 .setLoopPingPong()
-                .setLoopCount(2)
-                .setLoopType(LeanTweenType.pingPong)
                 .setOnComplete(() => {
 
                     DataPersistenceManager.instance.playerData.sceneToLoad = "House";

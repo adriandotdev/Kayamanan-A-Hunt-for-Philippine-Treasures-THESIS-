@@ -18,9 +18,9 @@ public class Quest
     public TalkGoal talkGoal;
     public DeliveryGoal deliveryGoal;
     public NumberGoal numberGoal;
+    public RequestGoal requestGoal;
 
-
-    public enum QUEST_TYPE { TALK, DELIVERY, NUMBER }
+    public enum QUEST_TYPE { TALK, DELIVERY, NUMBER, REQUEST }
 
     public QUEST_TYPE questType;
 
@@ -32,6 +32,7 @@ public class Quest
         this.dunongPointsRewards = dunongPointsRewards;
         this.talkGoal = goal;
         this.deliveryGoal = null;
+        this.requestGoal = null;
         this.region = region;
         this.regionNum = regionNum;
         this.questType = QUEST_TYPE.TALK;
@@ -45,6 +46,7 @@ public class Quest
         this.dunongPointsRewards = dunongPointsRewards;
         this.deliveryGoal = goal;
         this.talkGoal = null;
+        this.requestGoal = null;
         this.region = region;
         this.regionNum = regionNum;
         this.questType = QUEST_TYPE.DELIVERY;
@@ -70,6 +72,19 @@ public class Quest
         this.questType = QUEST_TYPE.DELIVERY;
     }
 
+    public Quest(string title, string description, int dunongPointsRewards, string region, int regionNum, RequestGoal goal)
+    {
+        this.questID = Guid.NewGuid().ToString();
+        this.title = title;
+        this.description = description;
+        this.region = region;
+        this.regionNum = regionNum;
+        this.dunongPointsRewards = dunongPointsRewards;
+        this.requestGoal = goal;
+
+        this.questType = QUEST_TYPE.REQUEST;
+    }
+
     private void SetQuestID(string questID)
     {
         this.questID = questID;
@@ -92,6 +107,15 @@ public class Quest
         questCopy.SetQuestID(this.questID);
 
         return questCopy;
+    }
+
+    public Quest CopyRequestGoal()
+    {
+        Quest copy = new Quest(this.title, this.description, this.dunongPointsRewards, this.region, this.regionNum, this.requestGoal.Copy());
+
+        copy.SetQuestID(this.questID);
+
+        return copy;
     }
 }
 

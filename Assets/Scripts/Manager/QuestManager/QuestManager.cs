@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System;
+using TMPro;
+
 public class QuestManager : MonoBehaviour, IDataPersistence
 {
     public static QuestManager instance;
@@ -14,9 +16,17 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     public static Action ShowItemReceivedPopup;
 
     public GameObject questPrefab;
+    
+    [Header("Number Quest Prefab")]
     public GameObject questNumberGoalPrefab;
+
+    [Header("Request Prefab")]
+    public GameObject requestPrefab;
+    public GameObject requestItemImagePrefab;
+
     private GameObject questAlertBox;
     private GameObject plainAlertBox;
+
 
     Coroutine questAlertCoroutine;
     Coroutine plainAlertCoroutine;
@@ -54,16 +64,18 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Church"))
         {
-            
+
             if (scene.name == "House")
             {
                 if (DataPersistenceManager.instance.playerData.isTutorialDone == false)
                     return;
             }
 
+            print("Quest Manager Loaded");
             this.GetAllNecessaryGameObjects();
             this.GetListOfQuests();
             this.SetupScriptsForDeliveryQuestToNPCs();
+            this.SetupScriptsForRequestQuest();
         }
     }
 
@@ -150,7 +162,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             {
                 SoundManager.instance?.PlaySound("Button Click 2");
                 this.RemoveAllQuest(questContentScrollView); // reset
-                this.GetAllCurrentQuests(questContentScrollView);
+                this.DisplayQuestPrefabAtQuestPanel(questContentScrollView);
 
                 this.ChangeButtonColor(pendingBtn, completedBtn);
             });
@@ -184,7 +196,8 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             openQuestPanel.onClick.AddListener(() =>
             {
                 SoundManager.instance?.PlaySound("Button Click 1");
-                this.GetAllCurrentQuests(questContentScrollView);
+                this.RemoveAllQuest(questContentScrollView);
+                this.DisplayQuestPrefabAtQuestPanel(questContentScrollView);
                 LeanTween.scale(questPanel.gameObject, new Vector2(296.8722f, 296.8722f), .2f)
                     .setEaseSpring();
                 inventoryPanel.SetActive(false);
@@ -216,119 +229,137 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         buttonToRevert.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().color = selectedColor;
     }
 
-    /** Display all the current quest at Quest Panel. */
-    public void GetAllCurrentQuests(RectTransform content)
+    /**
+     * <summary>
+     *  Displays the quest prefab at request panel.
+     *  
+     *  <paramref name="content"/> The RectTransform that holds all of the quest prefabs.
+     * </summary> 
+     */
+    public void DisplayQuestPrefabAtQuestPanel(RectTransform content)
     {
         foreach (Quest quest in this.playerData.currentQuests)
         {
             GameObject questSlot;
 
-            if (quest.questType == Quest.QUEST_TYPE.NUMBER)
+            switch (quest.questType)
             {
-                questSlot = Instantiate(questNumberGoalPrefab, content.transform);
 
-                questSlot.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>()
-                    .text = quest.title;
-                questSlot.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
-                    .text = quest.description;
-                questSlot.transform.GetChild(2).GetComponent<TMPro.TextMeshProUGUI>()
-                    .text = quest.numberGoal.currentNumber + "/" + quest.numberGoal.targetNumber;
-                questSlot.transform.GetChild(3).GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
-                    .text = quest.dunongPointsRewards.ToString();
-            }
-            else
-            {
-                questSlot = Instantiate(questPrefab, content.transform);
+                case Quest.QUEST_TYPE.NUMBER: 
 
-                // Title of Quest
-                questSlot.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>()
-                    .text = quest.title;
-                // Description of Quest
-                questSlot.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
-                    .text = quest.description;
+                    questSlot = Instantiate(questNumberGoalPrefab, content.transform);
 
-                if (quest.deliveryGoal != null)
-                {
-                    if (quest.deliveryGoal.itemReceivedFromGiver)
+                    questSlot.transform.GetChild(0).GetComponent<TextMeshProUGUI>()
+                        .text = quest.title;
+                    questSlot.transform.GetChild(1).GetComponent<TextMeshProUGUI>()
+                        .text = quest.description;
+                    questSlot.transform.GetChild(2).GetComponent<TextMeshProUGUI>()
+                        .text = quest.numberGoal.currentNumber + "/" + quest.numberGoal.targetNumber;
+                    questSlot.transform.GetChild(3).GetChild(1).GetComponent<TextMeshProUGUI>()
+                        .text = quest.dunongPointsRewards.ToString();
+                    break;
+
+                case Quest.QUEST_TYPE.REQUEST:
+
+                    questSlot = Instantiate(this.requestPrefab, content.transform);
+
+                    questSlot.transform.GetChild(0).GetComponent<TextMeshProUGUI>()
+                        .text = quest.title;
+                    questSlot.transform.GetChild(1).GetComponent<TextMeshProUGUI>()
+                        .text = quest.description;
+                    questSlot.transform.GetChild(2).GetChild(1).GetComponent<TextMeshProUGUI>()
+                        .text = quest.dunongPointsRewards.ToString();
+                    questSlot.transform.GetChild(3).GetChild(1).GetComponent<TextMeshProUGUI>()
+                        .text = quest.requestGoal.isRequestFromNPCGained == false ? "Pending"
+                        : this.isAllItemsGatheredForRequestQuest(quest.requestGoal.itemGivers) ? "Items Received" : "Request Accepted";
+                    foreach (ItemGiver giver in quest.requestGoal.itemGivers)
                     {
-                        questSlot.transform.GetChild(2).transform.GetChild(0)
-                            .GetComponent<TMPro.TextMeshProUGUI>()
-                            .text = "Received";
+                        foreach (Item item in giver.itemsToGive)
+                        {
+                            GameObject itemImage = Instantiate(this.requestItemImagePrefab, questSlot.transform.GetChild(4).GetChild(1));
+                            itemImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Collectibles/Items/" + item.itemName);
+                        }
                     }
-                    else
-                    {
-                        questSlot.transform.GetChild(2).transform.GetChild(0)
-                            .GetComponent<TMPro.TextMeshProUGUI>()
-                            .text = "Pending";
-                    }
-                }
-                else
-                {
-                    questSlot.transform.GetChild(2).transform.GetChild(0)
-                            .GetComponent<TMPro.TextMeshProUGUI>()
-                            .text = "Pending";
-                }
+                    break;
 
-                questSlot.transform.GetChild(3).transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
-                    .text = quest.dunongPointsRewards.ToString();
+                default:
+                    questSlot = Instantiate(questPrefab, content.transform);
+
+                    // Title of Quest
+                    questSlot.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>()
+                        .text = quest.title;
+                    // Description of Quest
+                    questSlot.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
+                        .text = quest.description;
+
+                    questSlot.transform.GetChild(2).transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
+                        .text = quest.dunongPointsRewards.ToString();
+                    break;
             }
-            
         }
+    }
+
+    public bool isAllItemsGatheredForRequestQuest(ItemGiver[] itemGivers)
+    {
+        foreach (ItemGiver itemGiver in itemGivers)
+        {
+            if (itemGiver.isItemsGiven == false) return false;
+        }
+
+        return true;
     }
 
     /** Display all the complete quest at Quest Panel. */
     public void GetAllCompletedQuest(RectTransform content)
     {
+        GameObject questSlot;
+
         foreach (Quest quest in this.playerData.completedQuests)
         {
-            // Instantiate the Quest Prefab
-            GameObject questSlot = Instantiate(questPrefab, content.transform); 
-
-            // Quest Title
-            questSlot.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>()
-                .text = quest.title;
-
-            // Quest Description
-            questSlot.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
-                .text = quest.description;
-
-            if (quest.isCompleted)
+            switch (quest.questType)
             {
-                Button claimBtn = questSlot.transform.GetChild(2).GetComponent<Button>();
+                case Quest.QUEST_TYPE.REQUEST:
 
-                if (!quest.isClaimed)
-                {
-                    claimBtn.onClick.AddListener(() =>
+                    questSlot = Instantiate(this.requestPrefab, content.transform);
+
+                    questSlot.transform.GetChild(0).GetComponent<TextMeshProUGUI>()
+                        .text = quest.title;
+                    questSlot.transform.GetChild(1).GetComponent<TextMeshProUGUI>()
+                        .text = quest.description;
+                    questSlot.transform.GetChild(2).GetChild(1).GetComponent<TextMeshProUGUI>()
+                        .text = quest.dunongPointsRewards.ToString();
+                    questSlot.transform.GetChild(3).GetChild(1).GetComponent<TextMeshProUGUI>()
+                        .text = quest.requestGoal.isRequestFromNPCGained == false ? "Pending"
+                        : this.isAllItemsGatheredForRequestQuest(quest.requestGoal.itemGivers) ? "Items Received" : "Request Accepted";
+                    foreach (ItemGiver giver in quest.requestGoal.itemGivers)
                     {
-                        questSlot.transform.GetChild(2).transform.GetChild(0)
-                         .GetComponent<TMPro.TextMeshProUGUI>()
-                         .text = "Claimed";
+                        foreach (Item item in giver.itemsToGive)
+                        {
+                            GameObject itemImage = Instantiate(this.requestItemImagePrefab, questSlot.transform.GetChild(4).GetChild(1));
+                            itemImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Collectibles/Items/" + item.itemName);
+                        }
+                    }
+                    break;
 
-                        this.playerData.dunongPoints += quest.dunongPointsRewards;
-                        quest.isClaimed = true;
-                        claimBtn.interactable = false;
-                        DataPersistenceManager.instance.SaveGame();
-                    });
+                default:
+                    // Instantiate the Quest Prefab
+                    questSlot = Instantiate(questPrefab, content.transform);
 
-                    // If it is not yet claimed, we display 'claim'
-                    questSlot.transform.GetChild(2).transform.GetChild(0)
-                     .GetComponent<TMPro.TextMeshProUGUI>()
-                     .text = "Claim";
-                }
-                else
-                {
-                    // If this function is called again, then if it is claimed, we display different text.
-                    claimBtn.interactable = false;
-                    questSlot.transform.GetChild(2).transform.GetChild(0)
-                     .GetComponent<TMPro.TextMeshProUGUI>()
-                     .text = "Claimed";
-                }
+                    // Quest Title
+                    questSlot.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>()
+                        .text = quest.title;
+
+                    // Quest Description
+                    questSlot.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
+                        .text = quest.description;
+
+                    // Dunong Points Rewards
+                    questSlot.transform.GetChild(2).transform.GetChild(1)
+                        .GetComponent<TMPro.TextMeshProUGUI>()
+                        .text = quest.dunongPointsRewards.ToString();
+                    break;
             }
 
-            // Dunong Points Rewards
-            questSlot.transform.GetChild(3).transform.GetChild(1)
-                .GetComponent<TMPro.TextMeshProUGUI>()
-                .text = quest.dunongPointsRewards.ToString();
         }
     }
 
@@ -338,6 +369,37 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         foreach (Transform questSlot in content)
         {
             Destroy(questSlot.gameObject);
+        }
+    }
+
+    public void SetupScriptsForRequestQuest()
+    {
+        foreach (Quest quest in this.playerData.currentQuests)
+        {
+            if (quest.requestGoal != null && quest.questID.Length > 0)
+            {
+                GameObject requester = GameObject.Find(quest.requestGoal.receiver);
+
+                Quest questCopy = quest; 
+
+                if (requester != null)
+                {
+                    requester.GetComponent<RequestRequester>().requestQuest = questCopy;
+                    requester.GetComponent<GiveItemsToNPC>().npcName = questCopy.requestGoal.receiver;
+                }
+
+                try
+                {
+                    // Notify all of the gameobject that has RequestGiver script attached to it.
+                    foreach (ItemGiver itemGiver in questCopy.requestGoal.itemGivers)
+                    {
+                        GameObject giver = GameObject.Find(itemGiver.giverName);
+                        giver.GetComponent<RequestGiver>().requestQuest = questCopy;
+                        giver.GetComponent<RequestGiver>().itemGiver = itemGiver;
+                    }
+                }
+                catch (System.Exception e) { }
+            }
         }
     }
 
@@ -377,6 +439,47 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    public void FindRequestQuest(string questID)
+    {
+        foreach (Quest quest in this.playerData.currentQuests)
+        {
+            if (quest.questID == questID)
+            {
+                this.OpenPlainAlertBoxAndAlertBox("Item succesfully given to " + quest.requestGoal.receiver);
+
+                SoundManager.instance?.PlaySound("Quest Notification");
+
+                Quest questFound = this.playerData.quests.Find((questToFind) => questToFind.questID == quest.questID).CopyRequestGoal();
+
+                questFound.isCompleted = true;
+
+                if (this.CheckIfPreQuestsDone())
+                {
+                    this.playerData.completedQuests.Add(questFound);
+
+                    DataPersistenceManager.instance.playerData.dunongPoints += quest.dunongPointsRewards;
+
+                    UpdateDPValueUI?.Invoke();
+                }
+
+                this.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
+                this.playerData.quests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
+
+                if (this.CheckIfPreQuestsDone() == true)
+                {
+                    DataPersistenceManager.instance.playerData.isPreQuestIntroductionDone = true;
+                    this.GetListOfQuests();
+                    this.SetupScriptsForRequestQuest();
+                }
+                this.GetListOfQuests();
+
+                DataPersistenceManager.instance?.SaveGame();
+
+                return;
+            }
+        }
+    }
+
     /** Find the delivery quest based on ID and set it as completed. */
     public void FindDeliveryQuestGoal(string deliveryQuestID)
     {
@@ -400,7 +503,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
                 if (this.CheckIfPreQuestsDone())
                     this.playerData.completedQuests.Add(questFound);
-                    
+
                 this.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
                 this.playerData.quests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
 
@@ -422,10 +525,10 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     /** Find the talk quest and set it as completed. */
     public void FindTalkQuestGoal(string npcName)
     {
-        foreach(Quest quest in this.playerData.currentQuests)
+        foreach (Quest quest in this.playerData.currentQuests)
         {
             if (quest.questType == Quest.QUEST_TYPE.TALK
-                && !quest.isCompleted 
+                && !quest.isCompleted
                 && quest.talkGoal.GetNPCName().ToUpper() == npcName.ToUpper())
             {
                 quest.isCompleted = true;
@@ -456,6 +559,34 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    /** Find the request quest and set the 'isRequestFromNPCGained' to true. */
+    public void SetRequestAccepted(string questID, bool isRequestAccepted)
+    {
+        foreach (Quest quest in DataPersistenceManager.instance.playerData.currentQuests)
+        {
+            if (quest.questID == questID)
+            {
+                if (isRequestAccepted == false)
+                {
+                    quest.requestGoal.isRequestFromNPCGained = true;
+                }
+            }
+            return;
+        }
+    }
+
+    public void SetRequestItemsAreGiven(string questID)
+    {
+        foreach (Quest quest in DataPersistenceManager.instance.playerData.currentQuests)
+        {
+            if (quest.questID == questID)
+            {
+                quest.requestGoal.isItemReceivedOfNpc = true;
+            }
+            return;
+        }
+    }
+
     public bool CheckIfPreQuestsDone()
     {
         foreach (Quest quest in DataPersistenceManager.instance.playerData.quests)
@@ -468,6 +599,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
         return true;
     }
+
     /// <summary>
     /// @called at MainGame class.
     /// </summary>
@@ -486,6 +618,19 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                     quest.deliveryGoal.isFinished = false;
                     quest.deliveryGoal.itemReceivedFromGiver = false;
                     this.playerData.quests.Add(quest.CopyQuestDeliveryGoal());
+                }
+                else if (quest.questType == Quest.QUEST_TYPE.REQUEST)
+                {
+                    quest.requestGoal.isRequestFromNPCGained = false;
+                    quest.requestGoal.isItemReceivedOfNpc = false;
+
+                    // Also reset the itemGiver object.
+                    foreach (ItemGiver itemGiver in quest.requestGoal.itemGivers)
+                    {
+                        itemGiver.isItemsGiven = false;
+                    }
+
+                    this.playerData.quests.Add(quest.CopyRequestGoal());
                 }
                 else if (quest.questType == Quest.QUEST_TYPE.TALK)
                 {
@@ -530,6 +675,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             this.plainAlertCoroutine = StartCoroutine(HideQuestAlertBox(this.plainAlertBox, 1f));
         });
     }
+
 
     public void OpenPlainAlertBoxAndAlertBox(string message)
     {

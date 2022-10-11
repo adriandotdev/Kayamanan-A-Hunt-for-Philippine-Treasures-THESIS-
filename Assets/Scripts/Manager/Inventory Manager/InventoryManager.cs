@@ -66,6 +66,13 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+    public void DeleteItem(Item itemToRemove)
+    {
+        List<Item> inventory = DataPersistenceManager.instance.playerData.inventory.items;
+
+        inventory.RemoveAll(itemToRemoveInInventory => itemToRemoveInInventory.itemName == itemToRemove.itemName);
+    }
+
     public void ResetInventoryItems()
     { 
         foreach (Transform slot in this.inventoryPanel.transform)

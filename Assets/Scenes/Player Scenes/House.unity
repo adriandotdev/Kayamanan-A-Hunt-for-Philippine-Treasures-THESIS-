@@ -3322,6 +3322,14 @@ MonoBehaviour:
         targetNumber: 2
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 2
     - questID: 1a102be7-0b0c-4a21-9787-50c6e6ba17bc
       isCompleted: 0
@@ -3350,6 +3358,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 3e0abb78-502a-44e6-8428-b0665218b457
       isCompleted: 0
@@ -3378,6 +3394,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 811acd6a-a430-4ff6-8511-3ca63698b148
       isCompleted: 0
@@ -3406,6 +3430,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 1c022d18-ba4b-4f7d-9a59-86e682d2c136
       isCompleted: 0
@@ -3434,6 +3466,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 351b0c8f-89bf-4a4d-bb4e-3dfcc01ed7ef
       isCompleted: 0
@@ -3462,6 +3502,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: e1e187c6-3f50-4375-ae0c-ed9c98703021
       isCompleted: 0
@@ -3490,6 +3538,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: e40cf139-6cda-4172-9cde-f1cd0be8fb3d
       isCompleted: 0
@@ -3518,6 +3574,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: b5dca845-1a8a-4d76-af67-4d2ecc8eadbc
       isCompleted: 0
@@ -3546,6 +3610,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 4c2aa185-9933-4a7a-a834-71af026fe639
       isCompleted: 0
@@ -3574,6 +3646,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 2f9732ef-d9f7-42f9-b2b3-41cbb344e3e8
       isCompleted: 0
@@ -3602,6 +3682,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: dcde700b-8dfc-4e28-82d1-c2e42e4a0f2d
       isCompleted: 0
@@ -3630,6 +3718,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 2dfd593a-ef4f-4fea-a622-d8a50a3a4001
       isCompleted: 0
@@ -3658,6 +3754,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 6bde5b3c-cf9f-4a0f-98cb-127942663c29
       isCompleted: 0
@@ -3686,6 +3790,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: f7c9dc30-53c2-4757-89a3-889691a9f5f2
       isCompleted: 0
@@ -3714,6 +3826,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 1f29fb03-03c1-4151-9fa0-325917343870
       isCompleted: 0
@@ -3742,6 +3862,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 568a659c-26c2-408c-a5dd-5acde3d4561e
       isCompleted: 0
@@ -3770,6 +3898,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 74b1d628-ad24-4075-a5ba-e8f58f1862dc
       isCompleted: 0
@@ -3798,6 +3934,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 09addf2d-ad17-46f5-98eb-7e10dd82bcdb
       isCompleted: 0
@@ -3826,6 +3970,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: bef1e4d4-607c-430d-8262-35f348018569
       isCompleted: 0
@@ -3854,6 +4006,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: c3869e51-e6a5-404f-baa7-cb812f341190
       isCompleted: 0
@@ -3882,6 +4042,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -4852,7 +5020,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.088889, y: 1}
+    m_SensorSize: {x: 2.1666667, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5162,68 +5330,6 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8862753538001341601, guid: e65ca7ca73a07ec4892b4c1b1f170356, type: 3}
   m_PrefabInstance: {fileID: 197189563}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &235485804
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1724582966}
-    m_Modifications:
-    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -7.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.16699015
-      objectReference: {fileID: 0}
-    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 290617100952819013, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
-      propertyPath: m_Name
-      value: Aling Nena
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
---- !u!4 &235485805 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 290617100952819008, guid: dd6ee1bc0ce44554c99e915ad6679cfa, type: 3}
-  m_PrefabInstance: {fileID: 235485804}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &241957485
 GameObject:
@@ -13914,6 +14020,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questPrefab: {fileID: 4842949073925795106, guid: f4ba6b95c96f1b24582fbc90b485fb3a, type: 3}
   questNumberGoalPrefab: {fileID: 7839413539097093806, guid: a6cf3985c671a3446a1e57ed753454bc, type: 3}
+  requestPrefab: {fileID: 4407080427585667628, guid: 6de4dc8cd177b824290faec7d09ee19e, type: 3}
+  requestItemImagePrefab: {fileID: 9085320197616715487, guid: 6f07e04659cf1354b97eff2f47d7fbc8, type: 3}
   playerData:
     id: 
     isNewlyCreated: 1
@@ -14287,6 +14395,14 @@ MonoBehaviour:
         targetNumber: 2
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 2
     - questID: 48678471-7465-47ad-bb88-ed5735fefbe7
       isCompleted: 0
@@ -14315,6 +14431,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 916774d3-43f3-4a2e-ab33-12030f1c3ae9
       isCompleted: 0
@@ -14343,6 +14467,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 08751375-2c0c-4f05-90a5-2fc700c7a0e1
       isCompleted: 0
@@ -14371,6 +14503,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: dced6e66-3a36-47c0-85a3-bcae8de61a07
       isCompleted: 0
@@ -14399,6 +14539,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 1c96dcd0-0903-4928-ae52-52c829c6a2c3
       isCompleted: 0
@@ -14427,6 +14575,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: a4f27297-6376-4e54-9278-9afe9a3aac5d
       isCompleted: 0
@@ -14455,6 +14611,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 5d51ea21-7f26-4127-9f83-efd7a8e104e7
       isCompleted: 0
@@ -14483,6 +14647,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: f14aa271-2ea0-40fa-9eb2-e1c73a95b932
       isCompleted: 0
@@ -14511,6 +14683,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 50722f7b-141c-4a99-8568-9655ee32433b
       isCompleted: 0
@@ -14539,6 +14719,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 4a51135b-26a2-4c65-a7b4-420dd7ed4f47
       isCompleted: 0
@@ -14567,6 +14755,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 212052dd-7e23-4194-a1b2-016b221284ce
       isCompleted: 0
@@ -14595,6 +14791,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 27743db5-33b1-4671-96cf-a4ab8e6c333f
       isCompleted: 0
@@ -14623,6 +14827,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 58f026f0-e1b1-4132-908b-38cd9fb5ad7c
       isCompleted: 0
@@ -14651,6 +14863,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: d7dd02ae-49bf-4779-a081-dc62a1f62abf
       isCompleted: 0
@@ -14679,6 +14899,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: a5199a8f-fed6-4baa-ab15-c614ec3cf67e
       isCompleted: 0
@@ -14707,6 +14935,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: fed9955e-41d8-4d64-bcd4-36d7fdee16a0
       isCompleted: 0
@@ -14735,6 +14971,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: bbbf47ef-53b1-4a93-aca9-a972a1fcabf0
       isCompleted: 0
@@ -14763,6 +15007,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: d255ded6-b4bd-4aa2-bc06-ea4dae6fb0d4
       isCompleted: 0
@@ -14791,6 +15043,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: e207104d-c58c-4068-b4d4-45dcb934c11d
       isCompleted: 0
@@ -14819,6 +15079,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: f19d6b78-05c0-4918-8b91-0c862365473f
       isCompleted: 0
@@ -14847,6 +15115,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -15372,7 +15648,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4087
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -20451,6 +20727,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 2b25390b-8d65-4206-a99a-45571e6896a4
       isCompleted: 0
@@ -20479,6 +20763,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 6ad0ae4a-84ed-4c7d-abf7-13ac647be9a0
       isCompleted: 0
@@ -20507,6 +20799,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 398e5b14-184f-4d04-8e4a-cc00d16cc7b2
       isCompleted: 0
@@ -20535,6 +20835,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 2c2e8da0-76cd-48f6-97e8-bc1a23beb4b1
       isCompleted: 0
@@ -20563,6 +20871,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 06d4ded3-4bbc-40b5-ab0c-93448dedb4d9
       isCompleted: 0
@@ -20591,6 +20907,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 39123c58-87e9-4d2a-b4e2-41d2f7ab1c94
       isCompleted: 0
@@ -20619,6 +20943,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: c852a9cf-9761-4dde-939b-9a1d24b8e2be
       isCompleted: 0
@@ -20647,6 +20979,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -20820,6 +21160,80 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
+--- !u!1001 &984304924
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1724582966}
+    m_Modifications:
+    - target: {fileID: 771019985750995986, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771019985750995986, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 771019985750995986, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 771019985750995986, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771019985750995986, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 771019985750995986, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771019985750995986, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771019985750995986, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771019985750995986, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771019985750995986, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771019985750995986, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771019985750995988, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 771019985750995989, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6003994425696880450, guid: 719d036f8dc3b34498e94c4d6c4757c7, type: 3}
+    - target: {fileID: 771019985750995990, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: npcType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771019985750995992, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+      propertyPath: m_Name
+      value: Aling Nena
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+--- !u!4 &984304925 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 771019985750995986, guid: 042131f05a6899a428e85b0f66d36db4, type: 3}
+  m_PrefabInstance: {fileID: 984304924}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &993637761
 GameObject:
   m_ObjectHideFlags: 0
@@ -28136,7 +28550,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 235485805}
+  - {fileID: 984304925}
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29267,6 +29681,14 @@ MonoBehaviour:
         targetNumber: 2
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 2
     - questID: 
       isCompleted: 0
@@ -29295,6 +29717,14 @@ MonoBehaviour:
         targetNumber: 7
         currentNumber: 0
         correspondingCount: 1
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 2
     - questID: d75e3bb6-3153-4334-b126-1d5c6a26c8be
       isCompleted: 0
@@ -29323,6 +29753,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 9d609fdb-8be6-41b2-810e-c481eee3d507
       isCompleted: 0
@@ -29351,6 +29789,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 9caf108b-e259-4b11-ac0a-8d013d9b2c4c
       isCompleted: 0
@@ -29379,6 +29825,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 77e1457f-754b-45b1-905f-45be0f985b79
       isCompleted: 0
@@ -29407,6 +29861,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: da0d0254-9bf2-4a17-879f-25a4e99905d5
       isCompleted: 0
@@ -29435,6 +29897,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: ea970132-516a-46be-a023-3f174e52d88b
       isCompleted: 0
@@ -29463,6 +29933,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 50ac1f5f-b071-4d69-a779-1239a2c17448
       isCompleted: 0
@@ -29491,6 +29969,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: ee5097bf-47da-40fe-8147-bda8f8f5b271
       isCompleted: 0
@@ -29519,6 +30005,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: d8161ee2-2696-4f16-83ba-7c3f250a17f3
       isCompleted: 0
@@ -29547,6 +30041,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: b44d1f1c-021e-4a77-9427-a1e71c9d17b3
       isCompleted: 0
@@ -29575,6 +30077,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 1
     - questID: 81b74878-ebfe-4c0c-9959-9a26e91ba6ad
       isCompleted: 0
@@ -29603,6 +30113,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: e34ae1f9-9d32-49ee-8674-d5176fde51a9
       isCompleted: 0
@@ -29631,6 +30149,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: ddad7265-6157-4da5-a9e6-5a23cdb54798
       isCompleted: 0
@@ -29659,6 +30185,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: f6cc5df8-0036-4517-a20c-2e8324236d8b
       isCompleted: 0
@@ -29687,6 +30221,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: e02e8ef0-0964-4fcc-9f5f-561e09711bb5
       isCompleted: 0
@@ -29715,6 +30257,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 3a6b8e38-ab68-4613-a65f-3ca567dea1b2
       isCompleted: 0
@@ -29743,6 +30293,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: f23d44ce-cf1d-4ae6-8607-cdc7aab5ec45
       isCompleted: 0
@@ -29771,6 +30329,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 20c249ab-e9fb-46c6-a991-d8f69fc82a92
       isCompleted: 0
@@ -29799,6 +30365,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     - questID: 019f1206-4865-4b6d-a975-2cfe1b2381e8
       isCompleted: 0
@@ -29827,6 +30401,14 @@ MonoBehaviour:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
       questType: 0
     currentQuests: []
     completedQuests: []

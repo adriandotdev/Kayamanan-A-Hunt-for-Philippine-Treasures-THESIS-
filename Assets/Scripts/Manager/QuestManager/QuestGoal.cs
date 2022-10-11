@@ -88,6 +88,119 @@ public class NumberGoal
     }
 }
 
+/**
+ * NEED NG SCRIPT FOR REQUESTGIVER AND REQUESTRECEIVER 
+ */
+[System.Serializable]
+public class RequestGoal
+{
+    public bool isRequestFromNPCGained;
+    public bool isItemReceivedOfNpc;
+
+    public string requestGoalID;
+
+    // RECEIVER and GIVER
+    public string receiver;
+    public ItemGiver[] itemGivers;
+
+    // MESSAGE
+    public string msgRequest;
+    public string msgOfGiver;
+
+    public RequestGoal(ItemGiver[] itemGivers, string receiver, string messageRequest, string msgOfGiver)
+    {
+        this.requestGoalID = Guid.NewGuid().ToString();
+
+        this.isRequestFromNPCGained = false;
+        this.isItemReceivedOfNpc = false;
+
+        this.itemGivers = itemGivers;
+        this.receiver = receiver;
+        this.msgRequest = messageRequest;
+        this.msgOfGiver = msgOfGiver;
+    }
+
+    public RequestGoal Copy()
+    {
+        RequestGoal rg = new RequestGoal(this.itemGivers, this.receiver, this.msgRequest, this.msgOfGiver);
+
+        rg.requestGoalID = this.requestGoalID;
+        rg.isRequestFromNPCGained = this.isRequestFromNPCGained;
+        rg.isItemReceivedOfNpc = this.isItemReceivedOfNpc;
+
+        return rg;
+    }
+}
+
+[System.Serializable]
+public class ItemGiver {
+
+    public string giverName;
+    public List<Item> itemsToGive;
+    public bool isItemsGiven;
+
+    public ItemGiver(string giverName, List<Item> itemsToGive)
+    {
+        this.giverName = giverName;
+        this.itemsToGive = itemsToGive;
+        this.isItemsGiven = false;
+    }
+}
+//[System.Serializable]
+//public class RequestGoal
+//{
+//    public bool isRequestFromNPCGained;
+//    public bool isItemReceived;
+
+//    public string deliverGoalId;
+
+//    // RECEIVER and GIVER
+//    public string receiver;
+//    public string giver;
+
+//    // MESSAGE
+//    public string msgRequest;
+//    public string msgOfGiver;
+
+//    // Item
+//    public Item item;
+
+//    public RequestGoal(string giver, string receiver, string messageRequest, string msgOfGiver, Item item)
+//    {
+//        this.deliverGoalId = Guid.NewGuid().ToString();
+
+//        this.isRequestFromNPCGained = false;
+//        this.isItemReceived = false;
+
+//        this.giver = giver;
+//        this.receiver = receiver;
+//        this.msgRequest = messageRequest;
+//        this.msgOfGiver = msgOfGiver;
+
+//        this.item = item;
+//    }
+
+//    public RequestGoal Copy()
+//    {
+//        RequestGoal rg = new RequestGoal(this.giver, this.receiver, this.msgRequest, this.msgOfGiver, this.item);
+
+//        return rg;
+//    }
+//}
+
+[System.Serializable]
+public class MsgRequest
+{
+    public string Message { get; private set; }
+    public string Response { get; private set; }
+
+    public MsgRequest(string message, string response)
+    {
+        this.Message = message;
+        this.Response = response;
+    }
+}
+
 [System.Serializable]
 public class Item
 {

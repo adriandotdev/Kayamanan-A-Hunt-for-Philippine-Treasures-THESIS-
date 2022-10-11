@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 
 [System.Serializable]
-public class PlayerData 
+public class PlayerData
 {
     public string id;
     public bool isNewlyCreated;
@@ -31,6 +31,7 @@ public class PlayerData
     public List<Quest> currentQuests;
     public List<Quest> completedQuests;
     public List<NPC_INFO> npcInfos;
+
     public Inventory inventory;
     public PlayerTime playerTime;
 
@@ -68,7 +69,7 @@ public class PlayerData
         this.isNewlyCreated = true;
         this.isTutorialDone = false; // This is to track if the tutorial for UI is done.
         this.isIntroductionDone = false; // This is to track if the introduction of the game is already viewed or done.
-        this.isPreQuestIntroductionDone = false; 
+        this.isPreQuestIntroductionDone = false;
         this.isNPCIntroductionPanelDone = false;
         this.id = null;
         this.name = null;
@@ -92,54 +93,59 @@ public class PlayerData
         this.AddRegionsForVisayas();
         this.AddRegionsForMindanao();
 
-        this.quests.Add(new Quest("A Day with Friendliness", "Meet all the villagers.", "PRE-QUEST", new NumberGoal(2, NumberGoal.CORRESPONDING_OBJECT_TO_COUNT.TALK_NPC)));
-        this.quests.Add(new Quest("A Simple Thanks", "Get the Mango from Mang Esterlito and give it to Aling Nena.", "PRE-QUEST", 
-            new DeliveryGoal("Mang Esterlito", "Aling Nena", "Can you give this to Aling Nena?", new Item("Mango", 1, "", true))));
+        this.quests.Add(new Quest("A Day with Friendliness", "Meet all the villagers.", "PRE-QUEST", new NumberGoal(10, NumberGoal.CORRESPONDING_OBJECT_TO_COUNT.TALK_NPC)));
+        this.quests.Add(new Quest("A Morning Recipe!", "Help Rolando to gather his recipes to Gregorio Zaide.", 25, "PRE-QUEST", 1,
+            new RequestGoal
+            (
+                new ItemGiver[]
+                {
+                    new ItemGiver("Gregorio Zaide", new List<Item> {new Item("Empanada", 3, "", false),
+                    new Item("Puto", 1, "", false), new Item("Bangus", 1, "", false)}),
+                },
+                "Rolando Laudico",
+                "Can you get my recipe?",
+                "Hello! Are you the one to get the item?"
+            )));
 
-        // Quest for Luzon
-        this.quests.Add(new Quest("Ilocos Region Quest!", "Get the Mango from Aling Marites and give it to Mang Esterlito", 25, ILOCOS_REGION, 1,
-            new DeliveryGoal("Aling Marites", "Mang Esterlito", "Can you give this Mango to Mang Esterlito?",
-            new Item("Mango", 1, "", false))));
-        this.quests.Add(new Quest("Ilocos Region Quest!", "Get the Mango from Aling Julia and give it to Aling Marites", 25, ILOCOS_REGION, 1,
-            new DeliveryGoal("Aling Julia", "Aling Marites", "Can you give this Mango to Aling Marites?",
-            new Item("Mango", 2, "", false))));
-        this.quests.Add(new Quest("Ilocos Region Quest!", "Talk to Mang Esterlito", 15, ILOCOS_REGION, 1, new TalkGoal("Mang Esterlito")));
+        // Quest for Luzon                            
+        this.quests.Add(new Quest("Ilocos Region Quest", "Help Mang Rolando to get his recipe from Ivan Henares and Gregorio Zaide.", 25, ILOCOS_REGION, 1,
+            new RequestGoal
+            (
+                new ItemGiver[]
+                {
+                    new ItemGiver("Ivan Henares", new List<Item> {new Item("Puto", 1, "", false), new Item("Empanada", 1, "", false)})
+                },
+                "Rolando Laudico",
+                "Can you get my recipe?",
+                "Hello! Are you the one to get the item?"
+            )));
 
-        this.quests.Add(new Quest("Cagayan Valley Quest!", "Talk to Aling Nena", 10, CAGAYAN_VALLEY, 2, new TalkGoal("Aling Nena")));
+        this.quests.Add(new Quest("A Forgotten Costume", "Help Joseph to get his salakot for his costume to his father Gregorio Zaide.", 25, ILOCOS_REGION, 1,
+            new RequestGoal
+            (
+                new ItemGiver[]
+                {
+                    new ItemGiver("Gregorio Zaide", new List<Item> {new Item("Salakot", 1, "", false)})
+                },
+                "Joseph",
+                "Hey.",
+                "Hello! Are you the one to get the item?"
+            )));
 
-        this.quests.Add(new Quest("CAR Quest!", "Get the Mango from Aling Marites and give it to Mang Esterlito", 25, CAR, 3,
-            new DeliveryGoal("Aling Marites", "Mang Esterlito", "Can you give this Mango to Mang Esterlito?",
-            new Item("Mango", 1, "", false))));
+        this.quests.Add(new Quest("Ilocos Region Quest", "Gregorio Zaide is asking for his lunch! Help him to buy his favorite dish.", 25, ILOCOS_REGION, 1,
+            new RequestGoal
+            (
+                new ItemGiver[]
+                {
+                    new ItemGiver("Rolando Laudico", new List<Item> {new Item("Longganisa", 1, "", false) })
+                },
+                "Gregorio Zaide",
+                "Can you get my recipe?",
+                "Hello! Are you the one to get the item?"
+            )));
 
-        this.quests.Add(new Quest("Central Luzon Quest!", "Help Aling Julia to give Aling Marites a Mango", 15, CENTRAL_LUZON, 4,
-            new DeliveryGoal("Aling Julia", "Aling Marites", "Hey! Would you mind if you give this to Aling Marites?",
-            new Item("Mango", 1, "", false))));
-
-        this.quests.Add(new Quest("NCR Quest!", "Help Mang Esterlito to give Aling Marites a Mango", 5, NCR, 5,
-            new DeliveryGoal("Mang Esterlito", "Aling Marites", "Hey! Would you mind if you give this to Aling Marites?",
-            new Item("Mango", 3, "", false))));
-
-        this.quests.Add(new Quest("CALABARZON Quest!", "Talk to Aling Julia", 35, CALABARZON, 6, new TalkGoal("Aling Julia")));
-
-        this.quests.Add(new Quest("MIMAROPA Quest!", "Talk to Aling Marites", 15, MIMAROPA, 7, new TalkGoal("Aling Marites")));
-
-        this.quests.Add(new Quest("Bicol Region Quest!", "Help Aling Julia to give Aling Marites a Banana", 5, BICOL_REGION, 8,
-            new DeliveryGoal("Aling Julia", "Aling Marites", "Hey! Would you mind if you give this to Aling Marites?",
-            new Item("Banana", 2, "", false))));
-
-        
-        // Quest for Visayas.
-        this.quests.Add(new Quest("Western Visayas Quest!", "Talk to Aling Julia", 35, WESTERN_VISAYAS, 9, new TalkGoal("Aling Julia")));
-        this.quests.Add(new Quest("Central Visayas Quest!", "Talk to Aling Marites", 25, WESTERN_VISAYAS, 10, new TalkGoal("Aling Marites")));
-        this.quests.Add(new Quest("Eastern Visayas Quest!", "Talk to Aling Marites", 75, WESTERN_VISAYAS, 11, new TalkGoal("Aling Marites")));
-
-        // Quest for Mindanao
-        this.quests.Add(new Quest("Zamboanga Peninsula Quest!", "Talk to Aling Julia", 35, ZAMBOANGA_PENINSULA, 12, new TalkGoal("Aling Julia")));
-        this.quests.Add(new Quest("Northern Mindanao Quest!", "Talk to Aling Marites", 10, NORTHERN_MINDANAO, 13, new TalkGoal("Aling Marites")));
-        this.quests.Add(new Quest("Davao Region Quest!", "Talk to Aling Nena", 35, DAVAO_REGION, 14, new TalkGoal("Aling Nena")));
-        this.quests.Add(new Quest("SOCCSKSARGEN Quest!", "Talk to Mang Esterlito", 15, SOCCSKSARGEN, 15, new TalkGoal("Mang Esterlito")));
-        this.quests.Add(new Quest("Caraga Region Quest!", "Talk to Aling Marites", 45, CARAGA_REGION, 16, new TalkGoal("Aling Marites")));
-        this.quests.Add(new Quest("BARMM Quest!", "Talk to Aling Julia", 325, BARMM, 17, new TalkGoal("Aling Julia")));
+        this.quests.Add(new Quest("Ilocos Region Quest!", "Since it is your first quests, let's learn from the other people. Talk to someone who is good at National Heroes.",
+            15, ILOCOS_REGION, 1, new TalkGoal("Gregorio Zaide")));
 
         this.AddNPCsInfo();
     }
@@ -154,9 +160,9 @@ public class PlayerData
                 1,
                 true,
                 ILOCOS_REGION,
-                "Ilocos is a region in the Philippines, encompassing the northwestern coast of Luzon island. It’s " +
+                "Ilocos is a region in the Philippines, encompassing the northwestern coast of Luzon island. Itï¿½s " +
                 "known for its historic sites, beaches and the well-preserved Spanish colonial city of Vigan. " +
-                "Dating from the 16th century, Vigan’s Mestizo district is characterized by cobblestone streets and " +
+                "Dating from the 16th century, Viganï¿½s Mestizo district is characterized by cobblestone streets and " +
                 "mansions with wrought-iron balconies. Farther north, Laoag City is a jumping-off point for the huge La Paz Sand Dunes.",
                 new Category[2] { new Category(HEROES), new Category(FESTIVALS) }));
 
@@ -227,7 +233,7 @@ public class PlayerData
     {
         this.regionsData.Add(new RegionData(12, false, ZAMBOANGA_PENINSULA, "Western Visayas is the first region of Visayas major island.", new Category[] { new Category(HEROES) }));
         this.regionsData.Add(new RegionData(13, false, NORTHERN_MINDANAO, "Central Visayas is the first region of Visayas major island.", new Category[] { new Category(HEROES) }));
-        this.regionsData.Add(new RegionData(14, false, DAVAO_REGION, "Eastern Visayas is the first region of Visayas major island.", new Category[] { new Category(HEROES) })); 
+        this.regionsData.Add(new RegionData(14, false, DAVAO_REGION, "Eastern Visayas is the first region of Visayas major island.", new Category[] { new Category(HEROES) }));
         this.regionsData.Add(new RegionData(15, false, SOCCSKSARGEN, "Western Visayas is the first region of Visayas major island.", new Category[] { new Category(HEROES) }));
         this.regionsData.Add(new RegionData(16, false, CARAGA_REGION, "Central Visayas is the first region of Visayas major island.", new Category[] { new Category(HEROES) }));
         this.regionsData.Add(new RegionData(17, false, BARMM, "Eastern Visayas is the first region of Visayas major island.", new Category[] { new Category(HEROES) }));
@@ -235,13 +241,16 @@ public class PlayerData
 
     void AddNPCsInfo()
     {
-        this.npcInfos.Add(new NPC_INFO("Mang Esterlito", ""));
-        this.npcInfos.Add(new NPC_INFO("Aling Marites", ""));
-        this.npcInfos.Add(new NPC_INFO("Aling Julia", ""));
-        this.npcInfos.Add(new NPC_INFO("Ramon Villegas", ""));
         this.npcInfos.Add(new NPC_INFO("Gregorio Zaide", ""));
         this.npcInfos.Add(new NPC_INFO("Mikaela Fudolig", ""));
         this.npcInfos.Add(new NPC_INFO("Ivan Henares", ""));
+        this.npcInfos.Add(new NPC_INFO("Ramon Villegas", ""));
+        this.npcInfos.Add(new NPC_INFO("Mai Jardaleza", ""));
+        this.npcInfos.Add(new NPC_INFO("Zardo Domenios", ""));
+        this.npcInfos.Add(new NPC_INFO("Rolando Laudico", ""));
+        this.npcInfos.Add(new NPC_INFO("Jeremiah Villaroman", ""));
+        this.npcInfos.Add(new NPC_INFO("BJ Pascual", ""));
+        this.npcInfos.Add(new NPC_INFO("Encarnacion Alzona", ""));
     }
 
     /**<summary>
@@ -250,7 +259,7 @@ public class PlayerData
      *  @param categoryName
      *  - name of the category that is going to be count.
      * </summary> */
-     public int NumberOfCollectedCollectiblesFor(string categoryName)
+    public int NumberOfCollectedCollectiblesFor(string categoryName)
     {
         int count = 0;
 
@@ -352,7 +361,7 @@ public class Notebook
 
         // Collectibles for CALABARZON (REGION 4A)
         this.collectibles.Add(new Collectible("Batingaw Festival", FESTIVALS_FILEPATH + "Batingaw Festival", FESTIVALS, LUZON, REGION_4A));
-        
+
         // Collectibles for MIMAROPA (REGION 4B) 
         this.collectibles.Add(new Collectible("Moriones Festival", FESTIVALS + "Moriones Festival", HEROES, LUZON, MIMAROPA));
 
@@ -425,7 +434,7 @@ public class Inventory
 {
     public List<Item> items;
     private int MAX_SLOT = 7;
-    
+
     public Inventory()
     {
         this.items = new List<Item>();
@@ -470,7 +479,7 @@ public class Inventory
 }
 
 [System.Serializable]
-public class PlayerTime 
+public class PlayerTime
 {
     public int m_ActualHourInRealLife;
     public int m_ActualMinuteInRealLife;
@@ -527,7 +536,7 @@ public class NPC_INFO
         this.isMet = isMet;
     }
 
-    public NPC_INFO Copy( )
+    public NPC_INFO Copy()
     {
         NPC_INFO copy = new NPC_INFO(this.name, this.info, this.isMet);
         copy.xPos = this.xPos;

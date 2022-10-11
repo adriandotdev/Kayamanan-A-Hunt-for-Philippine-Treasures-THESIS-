@@ -101,6 +101,11 @@ public class TimeManager : MonoBehaviour, IDataPersistence
             OnMinuteChanged?.Invoke();
         }
 
+        if (this.playerData.playerTime.m_ActualHourInRealLife >= 20)
+        {
+            OnTimeToSleep?.Invoke();
+        }
+
         /** If 60 minutes na then increment the Hour. */
         if (playerData.playerTime.m_ActualMinuteInRealLife >= 60)
         {
@@ -111,11 +116,6 @@ public class TimeManager : MonoBehaviour, IDataPersistence
             if (this.playerData.playerTime.m_ActualHourInRealLife >= 25)
             {
                 this.playerData.playerTime.m_ActualHourInRealLife = 1;
-            }
-
-            if (this.playerData.playerTime.m_ActualHourInRealLife >= 20)
-            {
-                OnTimeToSleep?.Invoke();
             }
 
             this.playerData.playerTime.m_ActualMinuteInRealLife = 0;
