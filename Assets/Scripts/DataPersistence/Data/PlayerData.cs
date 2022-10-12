@@ -99,8 +99,9 @@ public class PlayerData
             (
                 new ItemGiver[]
                 {
-                    new ItemGiver("Gregorio Zaide", new List<Item> {new Item("Empanada", 3, "", false),
-                    new Item("Puto", 1, "", false), new Item("Bangus", 1, "", false)}),
+                    new ItemGiver("Gregorio Zaide", 
+                    new List<Item> {new Item("Empanada", 3, false, "", ""),
+                    new Item("Puto", 1, false, "", ""), new Item("Bangus", 1, false, "", "")}),
                 },
                 "Rolando Laudico",
                 "Can you get my recipe?",
@@ -113,7 +114,8 @@ public class PlayerData
             (
                 new ItemGiver[]
                 {
-                    new ItemGiver("Ivan Henares", new List<Item> {new Item("Puto", 1, "", false), new Item("Empanada", 1, "", false)})
+                    new ItemGiver("Ivan Henares", 
+                    new List<Item> {new Item("Puto", 1, false, "", ""), new Item("Empanada", 1, false, "", "")})
                 },
                 "Rolando Laudico",
                 "Can you get my recipe?",
@@ -125,7 +127,7 @@ public class PlayerData
             (
                 new ItemGiver[]
                 {
-                    new ItemGiver("Gregorio Zaide", new List<Item> {new Item("Salakot", 1, "", false)})
+                    new ItemGiver("Gregorio Zaide", new List<Item> {new Item("Salakot", 1, false, "", "")})
                 },
                 "Joseph",
                 "Hey.",
@@ -137,7 +139,7 @@ public class PlayerData
             (
                 new ItemGiver[]
                 {
-                    new ItemGiver("Rolando Laudico", new List<Item> {new Item("Longganisa", 1, "", false) })
+                    new ItemGiver("Rolando Laudico", new List<Item> {new Item("Longganisa", 1, false, "Longganisa Festival.json", "Longganisa Festival.jpg") })
                 },
                 "Gregorio Zaide",
                 "Can you get my recipe?",

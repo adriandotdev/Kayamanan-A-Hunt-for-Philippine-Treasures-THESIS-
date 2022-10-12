@@ -26,7 +26,7 @@ public class SceneTransition : MonoBehaviour
             // Check if not null 
             if (SceneTransitionManager.instance != null)
             {
-                SceneTransitionManager.instance.nameOfExit = this.nameOfExit;
+                SceneTransitionManager.instance.nameOfExit = nameOfExit;
                 SceneTransitionManager.instance.fromEnter = true;
             }
             SceneManager.LoadScene(this.sceneToLoad);

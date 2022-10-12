@@ -204,8 +204,10 @@ public class NPC : MonoBehaviour
             {
                 this.npcInfo = npcInfo;
 
-                if (this.npcInfo.xPos != 0f || this.npcInfo.yPos != 0f)
+                if (this.npcInfo.xPos != 0 || this.npcInfo.yPos != 0)
+                {
                     transform.position = new Vector2(this.npcInfo.xPos, this.npcInfo.yPos);
+                }
             }
         }
     }

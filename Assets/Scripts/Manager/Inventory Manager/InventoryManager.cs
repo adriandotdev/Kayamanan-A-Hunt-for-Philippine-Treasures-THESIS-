@@ -37,7 +37,10 @@ public class InventoryManager : MonoBehaviour
     void OnPlaySceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
-            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House") 
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Museum")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Church")
             && DataPersistenceManager.instance.playerData.isTutorialDone == true)
         {
             this.inventoryPanel = GameObject.Find("Inventory Panel").GetComponent<RectTransform>();

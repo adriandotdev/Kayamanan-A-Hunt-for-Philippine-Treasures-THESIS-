@@ -201,25 +201,34 @@ public class MsgRequest
     }
 }
 
+/**
+ * <summary>
+ *  A class for holding information about the item that the user gets.
+ * </summary> 
+ */
 [System.Serializable]
 public class Item
 {
     public string itemName;
-    public string information;
     public int quantity;
     public bool stackable;
 
-    public Item(string itemName, int quantity, string information, bool stackable)
+    // For Information.
+    public string informationLink;
+    public string imageLink;
+
+    public Item(string itemName, int quantity, bool stackable, string informationLink, string imageLink)
     {
         this.itemName = itemName;
-        this.information = information;
         this.stackable = stackable;
         this.quantity = quantity;
+        this.informationLink = informationLink;
+        this.imageLink = imageLink;
     }
 
     public Item CopyItem()
     {
-        Item clonedItem = new Item(this.itemName, this.quantity, this.information, this.stackable);
+        Item clonedItem = new Item(this.itemName, this.quantity, this.stackable, this.informationLink, this.imageLink);
 
         return clonedItem;
     }

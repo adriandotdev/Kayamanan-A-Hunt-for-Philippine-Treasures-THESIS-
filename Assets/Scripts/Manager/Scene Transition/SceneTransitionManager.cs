@@ -104,7 +104,6 @@ public class SceneTransitionManager : MonoBehaviour
             || scene.name == "School" || scene.name == "Church")
         {
             Vector2 position;
-
             /**
              * <summary>
              *  Since ang default scene pag nag create ng new profile is ang 'House' scene,
@@ -115,8 +114,8 @@ public class SceneTransitionManager : MonoBehaviour
              *  siya galing sa loob ng bahay.
              * </summary>
              */
-            try
-            {
+            //try
+            //{
                 if (fromEnter)
                 {
                     fromEnter = false;
@@ -128,8 +127,8 @@ public class SceneTransitionManager : MonoBehaviour
                 }
 
                 this.SpawnPlayerCharacter(position, scene.name);
-            }
-            catch (System.Exception e) { }
+            //}
+            //catch (System.Exception e) { print("ERROR FROM SCENE TRANSITION MANAGER"); }
         }
     }
 

@@ -27,7 +27,6 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     private GameObject questAlertBox;
     private GameObject plainAlertBox;
 
-
     Coroutine questAlertCoroutine;
     Coroutine plainAlertCoroutine;
 
@@ -71,7 +70,6 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                     return;
             }
 
-            print("Quest Manager Loaded");
             this.GetAllNecessaryGameObjects();
             this.GetListOfQuests();
             this.SetupScriptsForDeliveryQuestToNPCs();

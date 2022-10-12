@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GiveItemsToNPC : MonoBehaviour
 {
@@ -49,7 +50,8 @@ public class GiveItemsToNPC : MonoBehaviour
                     this.showInfoOfItemsButton.onClick.RemoveAllListeners();
                     this.showInfoOfItemsButton.onClick.AddListener(() =>
                     {
-                        print("Showing Info");
+                        AlbumManager.Instance.itemGivers = GetComponent<RequestRequester>().requestQuest.requestGoal.itemGivers;
+                        SceneManager.LoadScene("Delivery Info Scene", LoadSceneMode.Additive);
                     });
                 }
             }
