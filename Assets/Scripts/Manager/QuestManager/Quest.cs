@@ -12,6 +12,7 @@ public class Quest
 
     public string title;
     public string description;
+    public string note;
     public int dunongPointsRewards;
     public string region;
     public int regionNum;
@@ -19,16 +20,18 @@ public class Quest
     public DeliveryGoal deliveryGoal;
     public NumberGoal numberGoal;
     public RequestGoal requestGoal;
+    public ShowPhotoAlbumGoal showPhotoAlbumGoal;
 
-    public enum QUEST_TYPE { TALK, DELIVERY, NUMBER, REQUEST }
+    public enum QUEST_TYPE { TALK, DELIVERY, NUMBER, REQUEST, SHOW_PHOTO_ALBUM }
 
     public QUEST_TYPE questType;
 
-    public Quest(string title, string description, int dunongPointsRewards, string region, int regionNum, TalkGoal goal)
+    public Quest(string title, string note, string description, int dunongPointsRewards, string region, int regionNum, TalkGoal goal)
     {
         this.questID = Guid.NewGuid().ToString();
         this.title = title;
         this.description = description;
+        this.note = note;
         this.dunongPointsRewards = dunongPointsRewards;
         this.talkGoal = goal;
         this.deliveryGoal = null;
@@ -72,17 +75,32 @@ public class Quest
         this.questType = QUEST_TYPE.DELIVERY;
     }
 
-    public Quest(string title, string description, int dunongPointsRewards, string region, int regionNum, RequestGoal goal)
+    public Quest(string title, string note, string description, int dunongPointsRewards, string region, int regionNum, RequestGoal goal)
     {
         this.questID = Guid.NewGuid().ToString();
         this.title = title;
         this.description = description;
+        this.note = note;
         this.region = region;
         this.regionNum = regionNum;
         this.dunongPointsRewards = dunongPointsRewards;
         this.requestGoal = goal;
 
         this.questType = QUEST_TYPE.REQUEST;
+    }
+
+    public Quest(string title, string note, string description, int dunongPointsRewards, string region, int regionNum, ShowPhotoAlbumGoal goal)
+    {
+        this.questID = Guid.NewGuid().ToString();
+        this.title = title;
+        this.description = description;
+        this.note = note;
+        this.dunongPointsRewards = dunongPointsRewards;
+        this.region = region;
+        this.regionNum = regionNum;
+        this.showPhotoAlbumGoal = goal;
+
+        this.questType = QUEST_TYPE.SHOW_PHOTO_ALBUM;
     }
 
     private void SetQuestID(string questID)
@@ -92,7 +110,7 @@ public class Quest
 
     public Quest CopyTalkQuestGoal()
     {
-        Quest questCopy = new Quest(this.title, this.description, this.dunongPointsRewards, this.region, this.regionNum, this.talkGoal.CopyTalkGoal());
+        Quest questCopy = new Quest(this.title, this.note, this.description, this.dunongPointsRewards, this.region, this.regionNum, this.talkGoal.CopyTalkGoal());
 
         questCopy.SetQuestID(this.questID);
 
@@ -111,7 +129,16 @@ public class Quest
 
     public Quest CopyRequestGoal()
     {
-        Quest copy = new Quest(this.title, this.description, this.dunongPointsRewards, this.region, this.regionNum, this.requestGoal.Copy());
+        Quest copy = new Quest(this.title, this.note, this.description, this.dunongPointsRewards, this.region, this.regionNum, this.requestGoal.Copy());
+
+        copy.SetQuestID(this.questID);
+
+        return copy;
+    }
+
+    public Quest CopyShowAlbumQuest()
+    {
+        Quest copy = new Quest(this.title, this.note, this.description, this.dunongPointsRewards, this.region, this.regionNum, this.showPhotoAlbumGoal.Copy());
 
         copy.SetQuestID(this.questID);
 

@@ -59,7 +59,7 @@ public class Character : MonoBehaviour, IDataPersistence
         movement = new Vector3(horizontal, vertical) * speed * Time.deltaTime;
 
         //if (movement != Vector3.zero)
-        //    SoundManager.instance.PlaySound("Wood Footsteps");
+        //    SoundManager.instance?.PlaySound("Wood Footsteps");
 
         transform.position += movement;
 

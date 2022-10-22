@@ -128,6 +128,7 @@ public class MainGame : MonoBehaviour
         {
             this.playerData.regionsData[regionNumber].isOpen = true;
             this.SetNewRequiredDunongPoints();
+            QuestManager.instance?.RemoveAllNotes();
         }
     }
 

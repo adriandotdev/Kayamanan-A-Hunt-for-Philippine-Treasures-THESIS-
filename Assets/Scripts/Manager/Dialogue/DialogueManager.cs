@@ -36,6 +36,8 @@ public class DialogueManager : MonoBehaviour
     /** Check if the npc is talking */
     public bool isTalking;
 
+    [SerializeField] public ShowPhotoAlbumGoal showAlbumGoal;
+
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneRequiresDialogueLoaded;
@@ -135,7 +137,6 @@ public class DialogueManager : MonoBehaviour
 
             if (text == "")
             {
-                print("close");
                 OnDialogueRunning?.Invoke(false);
                 panel.gameObject.SetActive(false);
                 this.houseGroup.interactable = true;
@@ -143,6 +144,14 @@ public class DialogueManager : MonoBehaviour
                 this.joystick.gameObject.SetActive(true);
                 this.inventoryPanel.gameObject.SetActive(true);
                 isTalking = false;
+
+                if (this.showAlbumGoal != null && this.showAlbumGoal.giverOfInfo.Length > 0)
+                {
+                    AlbumManager.Instance.isFirstAlbum = false;
+                    AlbumManager.Instance.items = this.showAlbumGoal.items;
+                    SceneManager.LoadScene("Showing Album", LoadSceneMode.Additive);
+                    this.showAlbumGoal = null;
+                }
                 return;
             }
 
@@ -168,8 +177,6 @@ public class DialogueManager : MonoBehaviour
     public void ShowChoices()
     {
         List<Choice> choices = currentStory.currentChoices;
-
-        print("NUMBER OF CHOICES: " + choices.Count);
 
         if (choicesBtn.Length >= choices.Count)
         {

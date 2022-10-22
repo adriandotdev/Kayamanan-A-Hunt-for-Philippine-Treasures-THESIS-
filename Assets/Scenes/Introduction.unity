@@ -330,7 +330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &221048115
 RectTransform:
   m_ObjectHideFlags: 0
@@ -833,7 +833,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1596873141
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1056,8 +1056,8 @@ MonoBehaviour:
     Most
     of the families in the village are quite busy preparing for their vacation.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
-  m_sharedMaterial: {fileID: -5432314662704744868, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6c3cedb5bbabe54459ba1e14a9ea5df0, type: 2}
+  m_sharedMaterial: {fileID: 2620557048739155963, guid: 6c3cedb5bbabe54459ba1e14a9ea5df0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1117,7 +1117,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 1018.6998, y: 0, z: -243.44102, w: -247.64044}
+  m_margin: {x: 1018.6998, y: 0, z: -495.42462, w: -247.64044}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1148,7 +1148,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 563, y: 127}
+  m_AnchoredPosition: {x: 461, y: 127}
   m_SizeDelta: {x: 2340, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!320 &1836222844

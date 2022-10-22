@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: c4f8eb1495d16364ebab6a51c4132c86
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Barlow Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 744f4d7e322400e48b42b679dd038be2, type: 3}
+  - {fileID: 12800000, guid: d26a18e35cd036f4cb4bea32a00b829c, type: 3}
+  - {fileID: 12800000, guid: 12ba5f8ad32781748af404aa58022e01, type: 3}
+  - {fileID: 12800000, guid: 107a24d0acb0eea42b001af9af02da26, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

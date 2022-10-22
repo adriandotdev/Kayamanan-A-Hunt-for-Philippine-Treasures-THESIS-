@@ -8,6 +8,7 @@ public class NPC : MonoBehaviour
     NavMeshAgent agent;
     // Array of waypoints to walk from one to the next one
     private Transform[] waypoints;
+    private Transform startPosition;
 
     [Header("Normal Waypoints If Not Real NPCs")]
     [SerializeField]
@@ -54,8 +55,8 @@ public class NPC : MonoBehaviour
     private Transform[] day5Waypoints;
 
     // Walk speed that can be set in Inspector
-    [SerializeField]
-    private float moveSpeed = 2f;
+    //[SerializeField]
+    //private float moveSpeed = 2f;
 
     // Index of current waypoint from which Enemy walks
     // to the next one
@@ -87,7 +88,15 @@ public class NPC : MonoBehaviour
         agent.updateUpAxis = false;
 
         this.SetWaypoints();
-        this.SetPosition();
+
+        if (this.npcBehavior == NPC_BEHAVIOR.STATIONARY && this.startPosition != null)
+        {
+            transform.position = this.startPosition.position;
+        }
+        else
+        {
+            this.SetPosition();
+        }
     }
 
     // Update is called once per frame
@@ -101,9 +110,10 @@ public class NPC : MonoBehaviour
         }
         else
         {
-            if (this.npcBehavior == NPC_BEHAVIOR.WANDERING)
+            if (this.npcBehavior == NPC_BEHAVIOR.WANDERING )
             {
-                if (DialogueManager._instance.isTalking && nameOfNpc.ToUpper() == DialogueManager._instance.npcName.ToUpper())
+                if (this.npcType != NPC_TYPE.MUSEUM_INDIVIDUAL && DialogueManager._instance != null &&
+                    DialogueManager._instance.isTalking && nameOfNpc.ToUpper() == DialogueManager._instance.npcName.ToUpper())
                 {
                     agent.isStopped = true;
                     return;
@@ -141,7 +151,7 @@ public class NPC : MonoBehaviour
 
             if (Vector2.Distance(transform.position, this.waypoints[this.waypointIndex].position) <= 0.01f)
             {
-                if (this.npcType == NPC_TYPE.MUSEUM_INDIVIDUAL)
+                if (this.npcType == NPC_TYPE.MUSEUM_INDIVIDUAL || this.npcType == NPC_TYPE.REAL_NPC)
                 {
                     if (this.waypoints[this.waypointIndex].transform.name == "1")
                     {
@@ -208,6 +218,7 @@ public class NPC : MonoBehaviour
                 {
                     transform.position = new Vector2(this.npcInfo.xPos, this.npcInfo.yPos);
                 }
+                return;
             }
         }
     }
@@ -224,22 +235,27 @@ public class NPC : MonoBehaviour
         {
             case 1:
                 this.waypoints = day1Waypoints;
+                this.startPosition = day1StartPos;
                 this.npcBehavior = this.day1Behavior;
                 break;
             case 2:
                 this.waypoints = day2Waypoints;
+                this.startPosition = day2StartPos;
                 this.npcBehavior = this.day2Behavior;
                 break;
             case 3:
                 this.waypoints = day3Waypoints;
+                this.startPosition = day3StartPos;
                 this.npcBehavior = this.day3Behavior;
                 break;
             case 4:
                 this.waypoints = day4Waypoints;
+                this.startPosition = day4StartPos;
                 this.npcBehavior = this.day4Behavior;
                 break;
             case 5:
                 this.waypoints = day5Waypoints;
+                this.startPosition = day5StartPos;
                 this.npcBehavior = this.day5Behavior;
                 break;
         }

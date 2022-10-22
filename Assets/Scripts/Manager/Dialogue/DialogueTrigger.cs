@@ -13,7 +13,9 @@ public class DialogueTrigger : MonoBehaviour
     private Button giveItemToNPCBtn; // Give Item to NPC Button
     private Button giveItemToPlayer; // Give Item to Player Button
 
-    [SerializeField]public string NPC_NAME;
+    [SerializeField] public string NPC_NAME;
+
+    [SerializeField] public Quest showAlbumQuest;
 
     private void OnEnable()
     {
@@ -102,9 +104,20 @@ public class DialogueTrigger : MonoBehaviour
         }
         else
         {
-            DialogueManager._instance?.StartDialogue(inks[this.CurrentOpenRegion()]);
-            DialogueManager._instance.actorField.text = this.NPC_NAME;
-            QuestManager.instance.FindTalkQuestGoal(this.NPC_NAME);
+            // If the quest is having a showing of album.
+            if (this.showAlbumQuest != null && this.showAlbumQuest.questID.Length > 0)
+            {
+                DialogueManager._instance.showAlbumGoal = this.showAlbumQuest.showPhotoAlbumGoal.Copy();
+                DialogueManager._instance?.StartDialogue(inks[this.CurrentOpenRegion()]);
+                DialogueManager._instance.actorField.text = this.NPC_NAME;
+                QuestManager.instance.FindTalkWithShowPhotoAlbum(this.showAlbumQuest.questID);
+            }
+            else
+            {
+                DialogueManager._instance?.StartDialogue(inks[this.CurrentOpenRegion()]);
+                DialogueManager._instance.actorField.text = this.NPC_NAME;
+                QuestManager.instance.FindTalkQuestGoal(this.NPC_NAME);
+            }
         }
     }
 

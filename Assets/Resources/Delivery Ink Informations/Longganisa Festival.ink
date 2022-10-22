@@ -1,8 +1,6 @@
 -> main
 // SAMPLE OUTPUT (NEED VERIFICATION)
 === main ===
-    A festival showcasing the cultural and natural heritage of the town, showcasing the unique and tasty longganisa products.
+    This festivity is celebrated in Vigan and celebrated every <b>22nd of January</b>. Longganisa is a local rendition of Mexican salami with a particular garlicky taste.
     + [Next]
-    With the event's highlights to include the Street Dancing and the Culinaria Longganisa Cooking and Making Contest.
-    + + [Next]
 -> END

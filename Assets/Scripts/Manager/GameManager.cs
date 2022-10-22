@@ -174,7 +174,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
             else if (scene.name == "School")
             {
                 this.sceneToLoadFromPhilippineMap = "School";
-                this.playerData.sceneToLoad = "House";
+                this.playerData.sceneToLoad = "School";
             }
             else if (scene.name == "Church")
             {
@@ -274,7 +274,10 @@ public class GameManager : MonoBehaviour, IDataPersistence
         {
             Button backButton = GameObject.Find("Back").GetComponent<Button>();
 
-            backButton.onClick.AddListener(() => SceneManager.LoadScene("Philippine Map"));
+            backButton.onClick.AddListener(() => {
+                SoundManager.instance?.PlaySound("Button Click 1");
+                SceneManager.LoadScene("Philippine Map"); // FOR TESTING ONLY. It should be sceneToLoad property.
+            });
         }
     }
 
@@ -320,16 +323,35 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     public void OnSleepCutsceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Sleep Cutscene"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Sleep Cutscene")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Fourth Sequence"))
         {
             if (this.playerData.gender.ToUpper() == "MALE")
             {
+                Transform toFollow = GameObject.Find("Male").transform;
                 GameObject.Find("Timeline for Player Female").SetActive(false);
+                GameObject.Find("Female").SetActive(false);
+
+                GameObject.Find("Sequence Follow Cam").GetComponent<Cinemachine.CinemachineVirtualCamera>().Follow = toFollow;
+            }
+            else
+            {
+                Transform toFollow = GameObject.Find("Female").transform;
+
+                GameObject.Find("Timeline for Player Male").SetActive(false);
+                GameObject.Find("Male").SetActive(false);
+
+                GameObject.Find("Sequence Follow Cam").GetComponent<Cinemachine.CinemachineVirtualCamera>().Follow = toFollow;
+            }
+        }
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Fifth Sequence"))
+        {
+            if (this.playerData.gender.ToUpper() == "MALE")
+            {
                 GameObject.Find("Female").SetActive(false);
             }
             else
             {
-                GameObject.Find("Timeline for Player Male").SetActive(false);
                 GameObject.Find("Male").SetActive(false);
             }
         }
@@ -350,6 +372,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         //{
         //    return;
         //}
+
         try
         {
             // GET ALL THE NECESSARY COMPONENTS.

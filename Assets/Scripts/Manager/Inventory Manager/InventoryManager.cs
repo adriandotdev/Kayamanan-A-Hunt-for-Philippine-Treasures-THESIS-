@@ -69,11 +69,19 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public void DeleteItem(Item itemToRemove)
+    public void DeleteItem(Item itemToRemove, int quantityToDeduct)
     {
         List<Item> inventory = DataPersistenceManager.instance.playerData.inventory.items;
 
-        inventory.RemoveAll(itemToRemoveInInventory => itemToRemoveInInventory.itemName == itemToRemove.itemName);
+        Item itemFound = inventory.Find(item => item.itemName == itemToRemove.itemName);
+
+        if (itemFound != null)
+        {
+            itemFound.quantity -= quantityToDeduct;
+
+            if (itemFound.quantity <= 0)
+                inventory.RemoveAll(itemToRemoveInInventory => itemToRemoveInInventory.itemName == itemToRemove.itemName);
+        }
     }
 
     public void ResetInventoryItems()

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Ink.Runtime;
+using TMPro;
 
 public class AlbumLoader : MonoBehaviour
 {
@@ -11,80 +12,117 @@ public class AlbumLoader : MonoBehaviour
     [SerializeField] private Transform photoCards;
 
     private Story story;
+
+    // UI
+    private TextMeshProUGUI title;
+    private TextMeshProUGUI description;
+    private Button nextPhotoBtn;
     private Button closeAlbumBtn;
 
     private float rotation = 7.872f;
     private int photoCardCurrentIndex;
+    private int photoToSwipe;
 
-    /**TO-DO
-     * - Next and previous button of the album.
-     * 
-     * -- THE NEXT BUTTON CAN HAVE 2 EVENTS
-     * - First is the loading of information from the ink file.
-     * - Second is for loading the next photo and information.
-     */
-
-    /**
-     * FLOW OF SETTING UP the PhotoCards
-     * 
-     * When the item is delivered to NPC, the giveItemToNPCBtn will change the event.
-     */
-
-     /**
-      * NOTE: Refactor the code and reuse some functionalities. 
-      */
+    [SerializeField] private List<Item> itemsToShowInAlbum;
 
     // Start is called before the first frame update
     void Start()
     {
         // Initialization Part
+        this.title = GameObject.Find("Image Title").GetComponent<TextMeshProUGUI>();
+        this.description = GameObject.Find("Image Description").GetComponent<TextMeshProUGUI>();
+        this.nextPhotoBtn = GameObject.Find("Next Photo Btn").GetComponent<Button>();
         this.closeAlbumBtn = GameObject.Find("Close Album Button").GetComponent<Button>();
-
-        int length = AlbumManager.Instance.itemGivers.Length; // Number of photocards.
+        this.itemsToShowInAlbum = new List<Item>();
         this.photoCardCurrentIndex = 0;
 
-        for (int i = 1; i <= length; i++)
+        if (AlbumManager.Instance.isFirstAlbum == true)
         {
-            GameObject photoCard = Instantiate(photoCardPrefab, photoCards);
-
-            // Add Event to each photoCard.
-            photoCard.GetComponent<Button>().onClick.AddListener(() =>
+            print("FIRST ALBUM");
+            foreach (ItemGiver itemGiver in AlbumManager.Instance.itemGivers)
             {
-                LeanTween.moveLocalX(photoCard, -Screen.width, .2f);
-            });
+                foreach (Item item in itemGiver.itemsToGive)
+                {
+                    if (item.informationLink.Length > 0)
+                    {
+                        GameObject gameObject = Instantiate(this.photoCardPrefab, this.photoCards);
+                        gameObject.transform.Rotate(new Vector3(0f, 0f, -rotation));
+                        rotation = -rotation;
 
-            if (i % 2 != 0)
-            {
-                photoCard.transform.Rotate(new Vector3(0f, 0f, -rotation));
+
+                        this.itemsToShowInAlbum.Add(item);
+
+                        gameObject = null;
+                    }
+                }
             }
-            else
+        }
+        else
+        {
+            print("SECOND ALBUM");
+
+            foreach (Item item in AlbumManager.Instance.items)
             {
-                photoCard.transform.Rotate(new Vector3(0f, 0f, rotation));
+                GameObject gameObject = Instantiate(this.photoCardPrefab, this.photoCards);
+                gameObject.transform.Rotate(new Vector3(0f, 0f, -rotation));
+                rotation = -rotation;
+
+                if (item.informationLink.Length > 0)
+                    this.itemsToShowInAlbum.Add(item);
+
+                gameObject = null;
             }
         }
 
-        this.closeAlbumBtn.onClick.AddListener(() => SceneManager.UnloadSceneAsync("Delivery Info Scene"));
+        int photoIndex = 0;
+
+        for (int i = this.photoCards.childCount - 1; i >= 0; i--)
+        {
+            this.photoCards.GetChild(i).GetChild(0).GetChild(0).GetComponent<Image>().sprite = 
+                Resources.Load<Sprite>(this.itemsToShowInAlbum[photoIndex].imageLink);
+
+            photoIndex++;
+        }
+
+        this.photoToSwipe = this.itemsToShowInAlbum.Count - 1;
+        this.nextPhotoBtn.onClick.AddListener(this.Next);
+        this.closeAlbumBtn.onClick.AddListener(()
+            => SceneManager.UnloadSceneAsync(AlbumManager.Instance.isFirstAlbum ? "Delivery Info Scene" : "Showing Album"));
 
         this.StartShowingInformation();
     }
 
     public void StartShowingInformation()
     {
-        this.story = new Story(AlbumManager.Instance.itemGivers[this.photoCardCurrentIndex].itemsToGive[0].informationLink);
+        if (this.photoCardCurrentIndex > this.itemsToShowInAlbum.Count - 1)
+        {
+            SceneManager.UnloadSceneAsync(AlbumManager.Instance.isFirstAlbum ? "Delivery Info Scene" : "Showing Album");
+            return;
+        }
+
+        this.story = 
+            new Story(Resources.Load<TextAsset>(this.itemsToShowInAlbum[this.photoCardCurrentIndex].informationLink).text);
+
+        this.title.text = this.itemsToShowInAlbum[this.photoCardCurrentIndex].titleOfInformation;
 
         if (story.canContinue)
         {
             string storyText = story.Continue();
-
+            
             if (storyText == "")
             {
-                this.ExitTopicInformationPanel();
+                if (this.photoCardCurrentIndex == this.itemsToShowInAlbum.Count - 1)
+                {
+                    SceneManager.UnloadSceneAsync("Delivery Info Scene");
+                    return;
+                }
+                return;
             }
-            print(storyText);
+            this.description.text = storyText;
         }
         else
         {
-            print("END OF STORY");
+            SceneManager.UnloadSceneAsync("Delivery Info Scene");
         }
     }
 
@@ -92,13 +130,19 @@ public class AlbumLoader : MonoBehaviour
     {
         if (story.canContinue)
         {
-            string storyText = story.Continue();
-
+            string storyText = this.story.Continue();
+            
             if (storyText == "")
             {
+                if (this.photoCardCurrentIndex == this.itemsToShowInAlbum.Count - 1)
+                {
+                    SceneManager.UnloadSceneAsync("Delivery Info Scene");
+                    return;
+                }
                 this.ExitTopicInformationPanel();
+                return;
             }
-            print(storyText);
+            this.description.text = storyText;
         }
         else
         {
@@ -109,7 +153,13 @@ public class AlbumLoader : MonoBehaviour
 
     public void ExitTopicInformationPanel()
     {
-        print("INK File is done");
+        if (this.photoCardCurrentIndex <= this.itemsToShowInAlbum.Count - 1)
+        {
+            this.photoCardCurrentIndex++;
+            LeanTween.moveLocalX(this.photoCards.GetChild(this.photoToSwipe).gameObject, -Screen.width * 3f, .3f);
+            this.photoToSwipe--;
+            this.StartShowingInformation();
+        }
     }
 
     public void Next()
@@ -119,9 +169,8 @@ public class AlbumLoader : MonoBehaviour
             this.story.ChooseChoiceIndex(0);
             this.ContinueShowingDialogue();
         }
-        catch (System.Exception e)
-        {
-            this.ExitTopicInformationPanel();
+        catch (System.Exception e) {
+            ExitTopicInformationPanel();
         }
     }
 }

@@ -35,7 +35,6 @@ Transform:
   m_LocalScale: {x: 0.96420187, y: 0.96420187, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6392453652966912801}
   - {fileID: 1740214816247491129}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -119,6 +118,7 @@ MonoBehaviour:
     isPreQuestIntroductionDone: 0
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
+    isSleepPanelNotShown: 1
     name: 
     gender: male
     dunongPoints: 25
@@ -211,9 +211,11 @@ MonoBehaviour:
         itemReceivedFromGiver: 0
         item:
           itemName: 
-          information: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -247,9 +249,11 @@ MonoBehaviour:
         itemReceivedFromGiver: 0
         item:
           itemName: 
-          information: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -283,9 +287,11 @@ MonoBehaviour:
         itemReceivedFromGiver: 0
         item:
           itemName: 
-          information: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -319,9 +325,11 @@ MonoBehaviour:
         itemReceivedFromGiver: 0
         item:
           itemName: Buko Pie
-          information: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -355,9 +363,11 @@ MonoBehaviour:
         itemReceivedFromGiver: 0
         item:
           itemName: Mango
-          information: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -391,9 +401,11 @@ MonoBehaviour:
         itemReceivedFromGiver: 0
         item:
           itemName: Gumamela
-          information: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -445,6 +457,7 @@ MonoBehaviour:
       isMet: 0
       xPos: 0
       yPos: 0
+    notesInfos: []
     inventory:
       items: []
     playerTime:
@@ -584,7 +597,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2618897702407668065}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7484761652368942764
 SpriteRenderer:
@@ -638,34 +651,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &8103485169758993300
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6392453652966912801}
-  m_Layer: 10
-  m_Name: Popup Text Position
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6392453652966912801
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8103485169758993300}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.017, y: 0.897, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2618897702407668065}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

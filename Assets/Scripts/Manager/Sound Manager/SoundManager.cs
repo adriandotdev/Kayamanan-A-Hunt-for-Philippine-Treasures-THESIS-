@@ -40,9 +40,14 @@ public class SoundManager : MonoBehaviour
     {
         Sound sound = Array.Find(sounds, sound => sound.name.ToUpper() == name.ToUpper());
 
+        if (sound.name.ToUpper() == "MAIN BG")
+        {
+            sound.volume = 0.086f;
+        }
+
         if (!sound.src.isPlaying)
             sound.src.Play();
-        else
+        else 
         {
             sound.src.Stop();
             sound.src.Play();

@@ -1759,7 +1759,7 @@ Transform:
   m_GameObject: {fileID: 138867147}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 32.277477, y: -16.107498, z: -0.40228447}
-  m_LocalScale: {x: 2.202754, y: 2.202754, z: 2.1451728}
+  m_LocalScale: {x: 1.232782, y: 1.232782, z: 2.1451728}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1803364197}
@@ -10767,12 +10767,12 @@ PrefabInstance:
       objectReference: {fileID: 4900000, guid: ee5f4204fc9e37f4583384dfce367bc6, type: 3}
     - target: {fileID: 5785031963343729126, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: topic
-      value: GIANT LANTERN FESTIVAL
+      value: PHILIPPINE EAGLE
       objectReference: {fileID: 0}
     - target: {fileID: 5785031963343729126, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: topicImage
       value: 
-      objectReference: {fileID: 21300000, guid: 54cdadcb84abaa54b8339a2f20eb4e07, type: 3}
+      objectReference: {fileID: 21300000, guid: 0343d32d871ba474caf4a2ef1d0f95db, type: 3}
     - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -11169,7 +11169,7 @@ Transform:
   m_GameObject: {fileID: 516578398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.0674763, y: -14.237496, z: -0.40228447}
-  m_LocalScale: {x: 2.202754, y: 2.202754, z: 2.2940216}
+  m_LocalScale: {x: 1.232782, y: 1.232782, z: 2.2940216}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1803364197}
@@ -16128,7 +16128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &782332388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16161,6 +16161,7 @@ MonoBehaviour:
     isPreQuestIntroductionDone: 0
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
+    isSleepPanelNotShown: 1
     name: 
     gender: male
     dunongPoints: 0
@@ -16521,6 +16522,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -16535,6 +16537,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 2
     - questID: 5246d402-58f6-448e-84f4-1767c75180d8
       isCompleted: 0
@@ -16558,6 +16563,7 @@ MonoBehaviour:
           itemName: Mango
           quantity: 1
           stackable: 1
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -16572,6 +16578,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 1
     - questID: dd6b9169-e131-42d9-8e24-671912733076
       isCompleted: 0
@@ -16595,6 +16604,7 @@ MonoBehaviour:
           itemName: Mango
           quantity: 1
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -16609,6 +16619,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 1
     - questID: 1d7929f0-fcd9-400f-a3ac-cc04c644033f
       isCompleted: 0
@@ -16632,6 +16645,7 @@ MonoBehaviour:
           itemName: Mango
           quantity: 2
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -16646,6 +16660,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 1
     - questID: 844824bb-2391-41b9-b3c3-b7bc6146f195
       isCompleted: 0
@@ -16669,6 +16686,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -16683,6 +16701,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: aba50753-f6e2-40c4-a873-dbe392bc1f4c
       isCompleted: 0
@@ -16706,6 +16727,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -16720,6 +16742,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: 2ac4321a-4d15-451f-9315-8ad0212d3ca4
       isCompleted: 0
@@ -16743,6 +16768,7 @@ MonoBehaviour:
           itemName: Mango
           quantity: 1
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -16757,6 +16783,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 1
     - questID: e1b49513-f86e-4b5d-9bc2-2edeafd1e0f5
       isCompleted: 0
@@ -16780,6 +16809,7 @@ MonoBehaviour:
           itemName: Mango
           quantity: 1
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -16794,6 +16824,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 1
     - questID: 4d357314-84af-49fa-a657-77eaa07f8113
       isCompleted: 0
@@ -16817,6 +16850,7 @@ MonoBehaviour:
           itemName: Mango
           quantity: 3
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -16831,6 +16865,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 1
     - questID: d9fce00f-ef02-4c2b-8215-48417c5b3432
       isCompleted: 0
@@ -16854,6 +16891,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -16868,6 +16906,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: 52c3f456-06dd-4a18-a7a7-d7f252c67e06
       isCompleted: 0
@@ -16891,6 +16932,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -16905,6 +16947,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: 6172ff5d-ce3c-41b5-983f-65ea746ceec4
       isCompleted: 0
@@ -16928,6 +16973,7 @@ MonoBehaviour:
           itemName: Banana
           quantity: 2
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -16942,6 +16988,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 1
     - questID: 7e660247-e1c0-4e9c-8b59-6730ac063ae9
       isCompleted: 0
@@ -16965,6 +17014,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -16979,6 +17029,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: b2387c32-bb0f-4ee8-98ca-e3b0d02342c8
       isCompleted: 0
@@ -17002,6 +17055,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -17016,6 +17070,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: 74f20f52-0b09-4f24-86e6-040a51ecc054
       isCompleted: 0
@@ -17039,6 +17096,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -17053,6 +17111,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: 96990532-81ca-46c8-a98b-e587314dd5b4
       isCompleted: 0
@@ -17076,6 +17137,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -17090,6 +17152,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: ca2a8e53-c08b-485e-9a53-039fc754eb06
       isCompleted: 0
@@ -17113,6 +17178,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -17127,6 +17193,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: 616ac96e-f5c0-4925-ab36-1307ce02c005
       isCompleted: 0
@@ -17150,6 +17219,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -17164,6 +17234,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: 708c0b39-c196-45f0-a59f-38cbe7361ba9
       isCompleted: 0
@@ -17187,6 +17260,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -17201,6 +17275,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: 4e6dc85e-f395-4043-b1f9-e175eb21ffd3
       isCompleted: 0
@@ -17224,6 +17301,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -17238,6 +17316,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: b740f28c-b99a-4dce-a0c0-f5848a84e615
       isCompleted: 0
@@ -17261,6 +17342,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -17275,6 +17357,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -17314,6 +17399,7 @@ MonoBehaviour:
       isMet: 0
       xPos: 0
       yPos: 0
+    notesInfos: []
     inventory:
       items: []
     playerTime:
@@ -46415,6 +46501,7 @@ MonoBehaviour:
     isPreQuestIntroductionDone: 0
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
+    isSleepPanelNotShown: 1
     name: 
     gender: male
     dunongPoints: 0
@@ -46616,6 +46703,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -46630,6 +46718,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: c966bd23-08a4-4d5a-b39b-8862bd01e45c
       isCompleted: 0
@@ -46653,6 +46744,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -46667,6 +46759,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: f6af8b02-0fb6-4f5e-b42d-52916397ec7c
       isCompleted: 0
@@ -46690,6 +46785,7 @@ MonoBehaviour:
           itemName: Buko Pie
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -46704,6 +46800,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: a6befd39-9c97-44e8-aafe-351d316085e6
       isCompleted: 0
@@ -46727,6 +46826,7 @@ MonoBehaviour:
           itemName: Mango
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -46741,6 +46841,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: 52f6a865-ae0b-4ead-82e0-907669131a4e
       isCompleted: 0
@@ -46764,6 +46867,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -46778,6 +46882,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: a4daf909-d99a-4933-b701-0fbff8579e3b
       isCompleted: 0
@@ -46801,6 +46908,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -46815,6 +46923,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: 8eb4a168-4936-4afd-9772-ff2f57deee74
       isCompleted: 0
@@ -46838,6 +46949,7 @@ MonoBehaviour:
           itemName: Mango
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -46852,6 +46964,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     - questID: 54c785c9-a207-407d-9e32-af11b532fcb1
       isCompleted: 0
@@ -46875,6 +46990,7 @@ MonoBehaviour:
           itemName: Mango
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -46889,6 +47005,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -46908,6 +47027,7 @@ MonoBehaviour:
       isMet: 0
       xPos: 0
       yPos: 0
+    notesInfos: []
     inventory:
       items: []
     playerTime:
@@ -53383,136 +53503,101 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questPrefab: {fileID: 4842949073925795106, guid: f4ba6b95c96f1b24582fbc90b485fb3a, type: 3}
   questNumberGoalPrefab: {fileID: 7839413539097093806, guid: a6cf3985c671a3446a1e57ed753454bc, type: 3}
-  requestPrefab: {fileID: 0}
-  requestItemImagePrefab: {fileID: 0}
+  requestPrefab: {fileID: 4407080427585667628, guid: 6de4dc8cd177b824290faec7d09ee19e, type: 3}
+  requestItemImagePrefab: {fileID: 9085320197616715487, guid: 6f07e04659cf1354b97eff2f47d7fbc8, type: 3}
   playerData:
     id: 
-    isNewlyCreated: 1
-    isTutorialDone: 0
-    isIntroductionDone: 0
-    isPreQuestIntroductionDone: 0
-    isNPCIntroductionPanelDone: 0
+    isNewlyCreated: 0
+    isTutorialDone: 1
+    isIntroductionDone: 1
+    isPreQuestIntroductionDone: 1
+    isNPCIntroductionPanelDone: 1
     isFromSleeping: 0
+    isSleepPanelNotShown: 0
     name: 
     gender: male
     dunongPoints: 0
-    requiredDunongPointsToPlay: 40
+    requiredDunongPointsToPlay: 65
     remainingTime: 18000
     sceneToLoad: House
     xPos: 0
     yPos: 0
     notebook:
       collectibles:
-      - name: Jose Rizal
-        imagePath: Collectibles/Rizal
+      - name: Diego Silang
+        imagePath: Collectibles/Heroes/Diego Silang
         isCollected: 0
         categoryName: National Heroes
         regionName: Ilocos Region
         majorIsland: Luzon
-      - name: Anahaw
-        imagePath: Collectibles/Anahaw
+      - name: Cape Bojeador
+        imagePath: Collectibles/Tourist Attractions/Cape Bojeador
         isCollected: 0
-        categoryName: National Festivals
+        categoryName: Tourist Attractions
+        regionName: Ilocos Region
+        majorIsland: Luzon
+      - name: Ivatan Houses
+        imagePath: Collectibles/Tourist Attractions/Ivatan House
+        isCollected: 0
+        categoryName: Tourist Attractions
         regionName: Cagayan Valley
         majorIsland: Luzon
-      - name: Andres Bonifacio
-        imagePath: Collectibles/Bonifacio
+      - name: Panagbenga Festival
+        imagePath: Collectibles/Festivals/Panagbenga Festival
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: Cordillera Administrative Region
+        majorIsland: Luzon
+      - name: Diplomat Hotel
+        imagePath: Collectibles/Tourist Attractions/Diplomat Hotel
         isCollected: 0
         categoryName: Tourist Attractions
         regionName: Cordillera Administrative Region
         majorIsland: Luzon
-      - name: Kalabaw
-        imagePath: Collectibles/Kalabaw
+      - name: Marcelo H. Del Pilar
+        imagePath: Collectibles/Heroes/Marcelo H. Del Pilar
         isCollected: 0
         categoryName: National Heroes
         regionName: Central Luzon
         majorIsland: Luzon
-      - name: Kalabaw
-        imagePath: Collectibles/Kalabaw
+      - name: Gregorio Del Pilar
+        imagePath: Collectibles/Heroes/Gregorio Del Pilar
         isCollected: 0
-        categoryName: General Knowledge
+        categoryName: National Heroes
+        regionName: Central Luzon
+        majorIsland: Luzon
+      - name: Carabao Festival
+        imagePath: Collectibles/Festivals/Carabao Festival
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: Central Luzon
+        majorIsland: Luzon
+      - name: Hot Air Balloon Festival
+        imagePath: Collectibles/Festivals/Hot Air Balloon Festival
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: Central Luzon
+        majorIsland: Luzon
+      - name: Batingaw Festival
+        imagePath: Collectibles/Festivals/Batingaw Festival
+        isCollected: 0
+        categoryName: National Festivals
         regionName: CALABARZON
         majorIsland: Luzon
-      - name: Jose Rizal
-        imagePath: Collectibles/Rizal
+      - name: Moriones Festival
+        imagePath: National FestivalsMoriones Festival
         isCollected: 0
-        categoryName: Tourist Attractions
+        categoryName: National Heroes
         regionName: MIMAROPA
         majorIsland: Luzon
-      - name: Anahaw
-        imagePath: Collectibles/Anahaw
-        isCollected: 0
-        categoryName: National Heroes
-        regionName: Bicol Region
-        majorIsland: Luzon
-      - name: Andres Bonifacio
-        imagePath: Collectibles/Bonifacio
-        isCollected: 0
-        categoryName: National Festivals
-        regionName: National Capital Region
-        majorIsland: Luzon
-      - name: Jose Rizal
-        imagePath: Collectibles/Rizal
-        isCollected: 0
-        categoryName: National Heroes
-        regionName: Western Visayas
-        majorIsland: VISAYAS
-      - name: Jose Rizal
-        imagePath: Collectibles/Rizal
-        isCollected: 0
-        categoryName: National Festivals
-        regionName: Central Visayas
-        majorIsland: VISAYAS
-      - name: Jose Rizal
-        imagePath: Collectibles/Rizal
-        isCollected: 0
-        categoryName: General Knowledge
-        regionName: Eastern Visayas
-        majorIsland: VISAYAS
-      - name: Andres Bonifacio
-        imagePath: Collectibles/Bonifacio
-        isCollected: 0
-        categoryName: Tourist Attractions
-        regionName: Zamboanga Peninsula
-        majorIsland: MINDANAO
-      - name: Kalabaw
-        imagePath: Collectibles/Kalabaw
-        isCollected: 0
-        categoryName: National Heroes
-        regionName: Northern Mindanao
-        majorIsland: MINDANAO
-      - name: Kalabaw
-        imagePath: Collectibles/Kalabaw
-        isCollected: 0
-        categoryName: General Knowledge
-        regionName: Davao Region
-        majorIsland: MINDANAO
-      - name: Jose Rizal
-        imagePath: Collectibles/Rizal
-        isCollected: 0
-        categoryName: Tourist Attractions
-        regionName: SOCCSKSARGEN
-        majorIsland: MINDANAO
-      - name: Anahaw
-        imagePath: Collectibles/Anahaw
-        isCollected: 0
-        categoryName: National Heroes
-        regionName: Caraga Region
-        majorIsland: MINDANAO
-      - name: Andres Bonifacio
-        imagePath: Collectibles/Bonifacio
-        isCollected: 0
-        categoryName: National Festivals
-        regionName: BARMM
-        majorIsland: MINDANAO
     regionsData:
     - regionNumber: 1
       isOpen: 1
       regionName: Ilocos Region
       information: "Ilocos is a region in the Philippines, encompassing the northwestern
-        coast of Luzon island. It\u2019s known for its historic sites, beaches and
+        coast of Luzon island. It\uFFFDs known for its historic sites, beaches and
         the well-preserved Spanish colonial city of Vigan. Dating from the 16th century,
-        Vigan\u2019s Mestizo district is characterized by cobblestone streets and
+        Vigan\uFFFDs Mestizo district is characterized by cobblestone streets and
         mansions with wrought-iron balconies. Farther north, Laoag City is a jumping-off
         point for the huge La Paz Sand Dunes."
       currentScore: 0
@@ -53725,11 +53810,11 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     quests:
-    - questID: 630962e2-b0c4-424b-84ab-9bb5bf73c588
+    - questID: addb4217-ce1d-4376-926e-997d29de2583
       isCompleted: 0
       isClaimed: 0
-      title: Ilocos Region Quest!
-      description: Get the Mango from Aling Marites and give it to Mang Esterlito
+      title: TEST QUEST
+      description: Request Quest Test
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -53738,15 +53823,16 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: 5898dc9d-0838-4e3a-995f-09a1385aa1be
-        deliveryMessage: Can you give this Mango to Mang Esterlito?
-        giverName: Aling Marites
-        receiverName: Mang Esterlito
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
         itemReceivedFromGiver: 0
         item:
-          itemName: Mango
-          quantity: 1
+          itemName: 
+          quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -53757,16 +53843,43 @@ MonoBehaviour:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
         requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 1
-    - questID: 7ca801ad-c5e4-4caa-8a71-6b3c53218a13
+        receiver: Rolando
+        itemGivers:
+        - giverName: Ivan Henares
+          itemsToGive:
+          - itemName: Puto
+            quantity: 1
+            stackable: 0
+            titleOfInformation: 
+            informationLink: 
+            imageLink: 
+          - itemName: Empanada
+            quantity: 1
+            stackable: 0
+            titleOfInformation: 
+            informationLink: 
+            imageLink: 
+          isItemsGiven: 0
+        - giverName: Gregorio Zaide
+          itemsToGive:
+          - itemName: Bangus
+            quantity: 1
+            stackable: 0
+            titleOfInformation: 
+            informationLink: 
+            imageLink: 
+          isItemsGiven: 0
+        msgRequest: Can you get my recipe?
+        msgOfGiver: Hello! Are you the one to get the item?
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
+      questType: 3
+    - questID: 2284c92e-770e-4089-a6de-76e97fb4ffeb
       isCompleted: 0
       isClaimed: 0
-      title: Ilocos Region Quest!
-      description: Get the Mango from Aling Julia and give it to Aling Marites
+      title: TEST QUEST 2
+      description: Request Quest Test 2
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -53775,15 +53888,16 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: 84064506-9afa-4adb-b329-87625831d5ff
-        deliveryMessage: Can you give this Mango to Aling Marites?
-        giverName: Aling Julia
-        receiverName: Aling Marites
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
         itemReceivedFromGiver: 0
         item:
-          itemName: Mango
-          quantity: 2
+          itemName: 
+          quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -53794,22 +53908,35 @@ MonoBehaviour:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
         requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 1
-    - questID: 3854cee4-dc25-47fa-a2b9-eb2ee0819afa
+        receiver: Gregorio Zaide
+        itemGivers:
+        - giverName: Mikaela Fudolig
+          itemsToGive:
+          - itemName: Longganisa
+            quantity: 1
+            stackable: 0
+            titleOfInformation: 
+            informationLink: 
+            imageLink: 
+          isItemsGiven: 0
+        msgRequest: Can you get my recipe?
+        msgOfGiver: Hello! Are you the one to get the item?
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
+      questType: 3
+    - questID: b0ea62bd-888e-49a0-832c-a3ba60a16983
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest!
-      description: Talk to Mang Esterlito
+      description: Since it is your first quests, let's learn from the other people.
+        Talk to someone who is good at National Heroes.
       dunongPointsRewards: 15
       region: Ilocos Region
       regionNum: 1
       talkGoal:
         isFinished: 0
-        npcName: Mang Esterlito
+        npcName: Gregorio Zaide
       deliveryGoal:
         isFinished: 0
         deliverGoalId: 
@@ -53821,6 +53948,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -53835,598 +53963,9 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
-      questType: 0
-    - questID: ed539438-f7d7-4d90-b3ed-b70144de84f9
-      isCompleted: 0
-      isClaimed: 0
-      title: Cagayan Valley Quest!
-      description: Talk to Aling Nena
-      dunongPointsRewards: 10
-      region: Cagayan Valley
-      regionNum: 2
-      talkGoal:
-        isFinished: 0
-        npcName: Aling Nena
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 0
-    - questID: 78025209-bed2-4f9b-af00-80a736c04554
-      isCompleted: 0
-      isClaimed: 0
-      title: CAR Quest!
-      description: Get the Mango from Aling Marites and give it to Mang Esterlito
-      dunongPointsRewards: 25
-      region: Cordillera Administrative Region
-      regionNum: 3
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: d9584fb6-610a-4015-a573-5a43b9ea7adf
-        deliveryMessage: Can you give this Mango to Mang Esterlito?
-        giverName: Aling Marites
-        receiverName: Mang Esterlito
-        itemReceivedFromGiver: 0
-        item:
-          itemName: Mango
-          quantity: 1
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 1
-    - questID: 3005bdf0-194a-47bd-b20c-161cf16afb80
-      isCompleted: 0
-      isClaimed: 0
-      title: Central Luzon Quest!
-      description: Help Aling Julia to give Aling Marites a Mango
-      dunongPointsRewards: 15
-      region: Central Luzon
-      regionNum: 4
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 10d08af2-d5c2-4734-afc9-32426504cc0c
-        deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
-        giverName: Aling Julia
-        receiverName: Aling Marites
-        itemReceivedFromGiver: 0
-        item:
-          itemName: Mango
-          quantity: 1
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 1
-    - questID: b3d76d99-3035-469a-a9ed-0feb4861c6fe
-      isCompleted: 0
-      isClaimed: 0
-      title: CALABARZON Quest!
-      description: Talk to Aling Julia
-      dunongPointsRewards: 35
-      region: CALABARZON
-      regionNum: 5
-      talkGoal:
-        isFinished: 0
-        npcName: Aling Julia
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 0
-    - questID: 9868adce-11d7-4817-9abb-dabd410c9e55
-      isCompleted: 0
-      isClaimed: 0
-      title: MIMAROPA Quest!
-      description: Talk to Aling Marites
-      dunongPointsRewards: 15
-      region: MIMAROPA
-      regionNum: 6
-      talkGoal:
-        isFinished: 0
-        npcName: Aling Marites
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 0
-    - questID: 30c0ac51-141a-4865-9f38-48bdb5211b42
-      isCompleted: 0
-      isClaimed: 0
-      title: Bicol Region Quest!
-      description: Help Aling Julia to give Aling Marites a Banana
-      dunongPointsRewards: 5
-      region: Bicol Region
-      regionNum: 7
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: c63b4bfc-761e-4b5c-92e3-b71bf80c68f0
-        deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
-        giverName: Aling Julia
-        receiverName: Aling Marites
-        itemReceivedFromGiver: 0
-        item:
-          itemName: Banana
-          quantity: 2
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 1
-    - questID: 6e439db1-89bb-4354-abca-d5cc63613265
-      isCompleted: 0
-      isClaimed: 0
-      title: NCR Quest!
-      description: Help Mang Esterlito to give Aling Marites a Mango
-      dunongPointsRewards: 5
-      region: National Capital Region
-      regionNum: 8
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: e849041c-5985-4dbf-97be-02afeb21a97e
-        deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
-        giverName: Mang Esterlito
-        receiverName: Aling Marites
-        itemReceivedFromGiver: 0
-        item:
-          itemName: Mango
-          quantity: 3
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 1
-    - questID: bdb91b4d-35f9-47ef-84b1-d7eab21806c4
-      isCompleted: 0
-      isClaimed: 0
-      title: Western Visayas Quest!
-      description: Talk to Aling Julia
-      dunongPointsRewards: 35
-      region: Western Visayas
-      regionNum: 9
-      talkGoal:
-        isFinished: 0
-        npcName: Aling Julia
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 0
-    - questID: beb1ab18-61d8-4ec4-9fd9-c9749fc0591b
-      isCompleted: 0
-      isClaimed: 0
-      title: Central Visayas Quest!
-      description: Talk to Aling Marites
-      dunongPointsRewards: 25
-      region: Western Visayas
-      regionNum: 10
-      talkGoal:
-        isFinished: 0
-        npcName: Aling Marites
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 0
-    - questID: af136190-0c48-4fce-b97e-c8ddd3c1ebbe
-      isCompleted: 0
-      isClaimed: 0
-      title: Eastern Visayas Quest!
-      description: Talk to Aling Marites
-      dunongPointsRewards: 75
-      region: Western Visayas
-      regionNum: 11
-      talkGoal:
-        isFinished: 0
-        npcName: Aling Marites
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 0
-    - questID: 638c2d43-3f51-4ad6-bfe2-08ed4723c8d9
-      isCompleted: 0
-      isClaimed: 0
-      title: Zamboanga Peninsula Quest!
-      description: Talk to Aling Julia
-      dunongPointsRewards: 35
-      region: Zamboanga Peninsula
-      regionNum: 12
-      talkGoal:
-        isFinished: 0
-        npcName: Aling Julia
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 0
-    - questID: b7b516ce-452a-4a87-8e30-de868a992364
-      isCompleted: 0
-      isClaimed: 0
-      title: Northern Mindanao Quest!
-      description: Talk to Aling Marites
-      dunongPointsRewards: 10
-      region: Northern Mindanao
-      regionNum: 13
-      talkGoal:
-        isFinished: 0
-        npcName: Aling Marites
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 0
-    - questID: de6a2a92-849c-4c46-91e2-6b290c69accb
-      isCompleted: 0
-      isClaimed: 0
-      title: Davao Region Quest!
-      description: Talk to Aling Nena
-      dunongPointsRewards: 35
-      region: Davao Region
-      regionNum: 14
-      talkGoal:
-        isFinished: 0
-        npcName: Aling Nena
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 0
-    - questID: 23b4ecbd-3221-49da-892d-baeedd985ee5
-      isCompleted: 0
-      isClaimed: 0
-      title: SOCCSKSARGEN Quest!
-      description: Talk to Mang Esterlito
-      dunongPointsRewards: 15
-      region: SOCCSKSARGEN
-      regionNum: 15
-      talkGoal:
-        isFinished: 0
-        npcName: Mang Esterlito
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 0
-    - questID: aa5c4f38-d4fc-434a-81f4-e32cc41fa272
-      isCompleted: 0
-      isClaimed: 0
-      title: Caraga Region Quest!
-      description: Talk to Aling Marites
-      dunongPointsRewards: 45
-      region: Caraga Region
-      regionNum: 16
-      talkGoal:
-        isFinished: 0
-        npcName: Aling Marites
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 0
-    - questID: 45838424-1053-40a0-9d42-f7505d60fa34
-      isCompleted: 0
-      isClaimed: 0
-      title: BARMM Quest!
-      description: Talk to Aling Julia
-      dunongPointsRewards: 325
-      region: BARMM
-      regionNum: 17
-      talkGoal:
-        isFinished: 0
-        npcName: Aling Julia
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -54446,6 +53985,27 @@ MonoBehaviour:
       isMet: 0
       xPos: 0
       yPos: 0
+    - name: Ramon Villegas
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Gregorio Zaide
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Mikaela Fudolig
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Ivan Henares
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    notesInfos: []
     inventory:
       items: []
     playerTime:
@@ -55470,7 +55030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1875426545
 Transform:
   m_ObjectHideFlags: 0
@@ -55506,6 +55066,7 @@ MonoBehaviour:
     isPreQuestIntroductionDone: 1
     isNPCIntroductionPanelDone: 1
     isFromSleeping: 0
+    isSleepPanelNotShown: 1
     name: 
     gender: male
     dunongPoints: 0
@@ -55802,103 +55363,12 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     quests:
-    - questID: 43ce1365-ca17-4708-823f-63cdfce58910
+    - questID: 90e5ed21-d004-49b3-8d41-1e21f2158eb1
       isCompleted: 0
       isClaimed: 0
-      title: A Day with Friendliness
-      description: Meet all the villagers.
-      dunongPointsRewards: 0
-      region: PRE-QUEST
-      regionNum: 0
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 2
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      questType: 2
-    - questID: 2199c18d-0058-467d-a792-e5491dea1c6b
-      isCompleted: 0
-      isClaimed: 0
-      title: A Morning Recipe!
-      description: Help Rolando to gather his recipes to Gregorio Zaide.
-      dunongPointsRewards: 25
-      region: PRE-QUEST
-      regionNum: 1
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 74aad8a8-0cb1-44f3-8ef0-b2bb606632f4
-        receiver: Rolando
-        itemGivers:
-        - giverName: Gregorio Zaide
-          itemsToGive:
-          - itemName: Empanada
-            quantity: 3
-            stackable: 0
-            informationLink: 
-            imageLink: 
-          - itemName: Puto
-            quantity: 1
-            stackable: 0
-            informationLink: 
-            imageLink: 
-          - itemName: Bangus
-            quantity: 1
-            stackable: 0
-            informationLink: 
-            imageLink: 
-          isItemsGiven: 0
-        msgRequest: Can you get my recipe?
-        msgOfGiver: Hello! Are you the one to get the item?
-      questType: 3
-    - questID: c1beed50-6a64-4b1e-aaf8-54b611fc402a
-      isCompleted: 0
-      isClaimed: 0
-      title: TEST QUEST
-      description: Request Quest Test
+      title: Ilocos Region Quest
+      description: Gregorio Zaide is asking for his lunch! Help him to buy his favorite
+        dish.
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -55916,6 +55386,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -55925,79 +55396,37 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: 8ae6785d-3a21-4c10-b64e-3d9caa0dc0c7
-        receiver: Rolando
-        itemGivers:
-        - giverName: Ivan Henares
-          itemsToGive:
-          - itemName: Puto
-            quantity: 1
-            stackable: 0
-            informationLink: 
-            imageLink: 
-          - itemName: Empanada
-            quantity: 1
-            stackable: 0
-            informationLink: 
-            imageLink: 
-          isItemsGiven: 0
-        - giverName: Gregorio Zaide
-          itemsToGive:
-          - itemName: Bangus
-            quantity: 1
-            stackable: 0
-            informationLink: 
-            imageLink: 
-          isItemsGiven: 0
-        msgRequest: Can you get my recipe?
-        msgOfGiver: Hello! Are you the one to get the item?
-      questType: 3
-    - questID: 179aa545-5014-4a82-8be2-f78cd485540b
-      isCompleted: 0
-      isClaimed: 0
-      title: TEST QUEST 2
-      description: Request Quest Test 2
-      dunongPointsRewards: 25
-      region: Ilocos Region
-      regionNum: 1
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 22589504-a5ec-4f79-b68d-dafb278077a0
+        requestGoalID: 25ab9ac8-2284-43c6-a042-e62f76183b57
         receiver: Gregorio Zaide
         itemGivers:
-        - giverName: Mikaela Fudolig
+        - giverName: Rolando Laudico
           itemsToGive:
+          - itemName: Salakot
+            quantity: 1
+            stackable: 0
+            titleOfInformation: Diego Silang
+            informationLink: Delivery Ink Informations/Diego Silang
+            imageLink: PCP/Puto Festival
+          - itemName: Empanada
+            quantity: 1
+            stackable: 0
+            titleOfInformation: Puto Festival
+            informationLink: Delivery Ink Informations/Puto Festival
+            imageLink: PCP/Puto Festival
           - itemName: Longganisa
             quantity: 1
             stackable: 0
-            informationLink: 
-            imageLink: 
+            titleOfInformation: Longganisa Festival
+            informationLink: Delivery Ink Informations/Longganisa Festival
+            imageLink: PCP/Longganisa Festival
           isItemsGiven: 0
         msgRequest: Can you get my recipe?
         msgOfGiver: Hello! Are you the one to get the item?
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 3
-    - questID: fc63ca3e-9f00-4eb1-a1d3-bdf99643ac84
+    - questID: f5443a43-f422-41b0-92b6-38dd02172488
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest!
@@ -56020,6 +55449,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          titleOfInformation: 
           informationLink: 
           imageLink: 
       numberGoal:
@@ -56034,30 +55464,13 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        photos: []
       questType: 0
     currentQuests: []
     completedQuests: []
     npcInfos:
-    - name: Mang Esterlito
-      info: 
-      isMet: 0
-      xPos: 0
-      yPos: 0
-    - name: Aling Marites
-      info: 
-      isMet: 0
-      xPos: 0
-      yPos: 0
-    - name: Aling Julia
-      info: 
-      isMet: 0
-      xPos: 0
-      yPos: 0
-    - name: Ramon Villegas
-      info: 
-      isMet: 0
-      xPos: 0
-      yPos: 0
     - name: Gregorio Zaide
       info: 
       isMet: 0
@@ -56073,6 +55486,42 @@ MonoBehaviour:
       isMet: 0
       xPos: 0
       yPos: 0
+    - name: Ramon Villegas
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Mai Jardaleza
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Zardo Domenios
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Rolando Laudico
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Jeremiah Villaroman
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: BJ Pascual
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Encarnacion Alzona
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    notesInfos: []
     inventory:
       items: []
     playerTime:

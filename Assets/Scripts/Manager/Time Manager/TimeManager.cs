@@ -101,9 +101,19 @@ public class TimeManager : MonoBehaviour, IDataPersistence
             OnMinuteChanged?.Invoke();
         }
 
-        if (this.playerData.playerTime.m_ActualHourInRealLife >= 20)
+        if (this.playerData.playerTime.m_ActualHourInRealLife >= 20 && this.playerData.isSleepPanelNotShown)
         {
+            /**If the player is decided to QUIT when the "Time to Sleep" panel is shown,
+             * then for safety, we set all the properties that MUST be modified when the player is time to sleep.*/
+            DataPersistenceManager.instance.playerData.isFromSleeping = true;
+            DataPersistenceManager.instance.playerData.playerTime.m_IsDaytime = true;
+            DataPersistenceManager.instance.playerData.playerTime.m_ActualHourInRealLife = 8;
+            DataPersistenceManager.instance.playerData.playerTime.m_ActualMinuteInRealLife = 0;
+            DataPersistenceManager.instance.playerData.playerTime.m_DayEvent += 1;
+            DataPersistenceManager.instance.playerData.sceneToLoad = "House";
+
             OnTimeToSleep?.Invoke();
+            this.playerData.isSleepPanelNotShown = false; // To avoid running this same block of code again.
         }
 
         /** If 60 minutes na then increment the Hour. */
@@ -111,8 +121,9 @@ public class TimeManager : MonoBehaviour, IDataPersistence
         {
             playerData.playerTime.m_NoOfSecondsPerMinute = playerData.playerTime.SECONDS_PER_MINUTE;
 
-            this.playerData.playerTime.m_ActualHourInRealLife++;
+            this.playerData.playerTime.m_ActualHourInRealLife++; // Increment the Hour.
 
+            /**Military time so if it is >24 then we set the actual hour in real life to 1. */
             if (this.playerData.playerTime.m_ActualHourInRealLife >= 25)
             {
                 this.playerData.playerTime.m_ActualHourInRealLife = 1;
@@ -128,7 +139,7 @@ public class TimeManager : MonoBehaviour, IDataPersistence
 
             if (this.playerData.playerTime.m_ActualHourInRealLife >= 24)
             {
-                this.playerData.playerTime.m_DayEvent++;
+                this.playerData.playerTime.m_DayEvent++; // Increment the number of days.
 
                 OnHourChanged?.Invoke(); // Invoke the event so that the other delegates will be called.
             }

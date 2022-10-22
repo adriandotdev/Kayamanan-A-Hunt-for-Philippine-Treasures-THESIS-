@@ -104,9 +104,14 @@ public class WordManager : MainGame, IDataPersistence
 
     public void ShowScorePanel(int noOfCorrectAnswers)
     {
+        this.CollectAllRewards();
+
         TweeningManager.instance.OpenScorePanel(noOfCorrectAnswers, () =>
         {
-            this.CollectAllRewards();
+            //this.CollectAllRewards();
+            if (IsRegionCollectiblesCanBeCollected() == false) return;
+
+            SceneManager.LoadSceneAsync("Collectibles", LoadSceneMode.Additive);
         });
     }
 
@@ -147,11 +152,17 @@ public class WordManager : MainGame, IDataPersistence
             this.layout.gameObject.SetActive(false); 
             this.scoreLabel.text = noOfCorrectAns + "/" + this.shuffled.Length;
 
+            //this.SetRegionHighestScore(noOfCorrectAns);
+            //this.ShowStars(noOfCorrectAns);
+            //this.ShowScorePanel(this.CountNoOfStarsToShow(noOfCorrectAns));
+            //this.CheckIfNextRegionIsReadyToOpen();
+            //this.CollectAllRewards();
             this.SetRegionHighestScore(noOfCorrectAns);
+
             this.ShowStars(noOfCorrectAns);
             this.ShowScorePanel(this.CountNoOfStarsToShow(noOfCorrectAns));
+
             this.CheckIfNextRegionIsReadyToOpen();
-            //this.CollectAllRewards();
 
             DataPersistenceManager.instance.SaveGame();
 

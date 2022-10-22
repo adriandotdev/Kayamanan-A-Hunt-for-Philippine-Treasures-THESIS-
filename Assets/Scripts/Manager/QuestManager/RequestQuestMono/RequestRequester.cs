@@ -8,7 +8,8 @@ public class RequestRequester : MonoBehaviour
 {
     public Transform requestPanel;
     public TextMeshProUGUI requestMessageTxt;
-    
+    public Quest completedQuestToGainInfo;
+
     // Buttons of Request Panel.
     Button acceptRequestBtn;
     Button cancelRequestBtn;
@@ -117,7 +118,10 @@ public class RequestRequester : MonoBehaviour
         {
             this.giveItemToNpcBtn.gameObject.SetActive(true);
         }
-
+        else if (collision.gameObject.CompareTag("Player") && this.completedQuestToGainInfo.questID.Length > 0)
+        {
+            this.giveItemToNpcBtn.gameObject.SetActive(true);
+        }
 
     }
 

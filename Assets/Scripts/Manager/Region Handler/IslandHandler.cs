@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class IslandHandler : MonoBehaviour, IDataPersistence
 {
@@ -54,23 +55,24 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
 
             this.m_IslandInformationPanel = GameObject.Find("Island Information Panel").GetComponent<RectTransform>();
             this.m_RegionInformationPanel = GameObject.Find("Region Information Panel").GetComponent<RectTransform>();
+
             this.m_RegionInformationPanelContent = this.m_RegionInformationPanel.GetChild(2).GetChild(0).GetChild(0).GetComponent<RectTransform>();
 
             // COLLECTIBLES VALUE
-            GameObject.Find("Heroes Value").GetComponent<TMPro.TextMeshProUGUI>().text = GetNumberOfCollectiblesCollected(scene.name, "National Heroes").ToString() 
+            GameObject.Find("Heroes Value").GetComponent<TextMeshProUGUI>().text = GetNumberOfCollectiblesCollected(scene.name, "National Heroes").ToString() 
                 + "/" + GetTotalOfCollectiblesCollected(scene.name, "National Heroes");
-            GameObject.Find("Festivals Value").GetComponent<TMPro.TextMeshProUGUI>().text = GetNumberOfCollectiblesCollected(scene.name, "National Festivals").ToString()
+            GameObject.Find("Festivals Value").GetComponent<TextMeshProUGUI>().text = GetNumberOfCollectiblesCollected(scene.name, "National Festivals").ToString()
                 + "/" + GetTotalOfCollectiblesCollected(scene.name, "National Festivals");
-            GameObject.Find("Tourist Attractions Value").GetComponent<TMPro.TextMeshProUGUI>().text = GetNumberOfCollectiblesCollected(scene.name, "Tourist Attractions").ToString()
+            GameObject.Find("Tourist Attractions Value").GetComponent<TextMeshProUGUI>().text = GetNumberOfCollectiblesCollected(scene.name, "Tourist Attractions").ToString()
                 + "/" + GetTotalOfCollectiblesCollected(scene.name, "Tourist Attractions");
-            GameObject.Find("General Knowledge Value").GetComponent<TMPro.TextMeshProUGUI>().text = GetNumberOfCollectiblesCollected(scene.name, "General Knowledge").ToString()
+            GameObject.Find("General Knowledge Value").GetComponent<TextMeshProUGUI>().text = GetNumberOfCollectiblesCollected(scene.name, "General Knowledge").ToString()
                 + "/" + GetTotalOfCollectiblesCollected(scene.name, "General Knowledge");
 
             majorIslandInformationBTN = GameObject.Find("Information BTN").GetComponent<Button>();
             closeRegionInformationPanelBTN = this.m_RegionInformationPanel.gameObject.transform.GetChild(0).GetComponent<Button>();
             closeIslandInformationPanelBTN = this.m_IslandInformationPanel.gameObject.transform.GetChild(0).GetComponent<Button>();
 
-            GameObject.Find("DP Value").GetComponent<TMPro.TextMeshProUGUI>().text = this.playerData.dunongPoints.ToString(); // Get the text for setting up the DP Value.
+            GameObject.Find("DP Value").GetComponent<TextMeshProUGUI>().text = this.playerData.dunongPoints.ToString(); // Get the text for setting up the DP Value.
 
             majorIslandInformationBTN.onClick.AddListener(() =>
             {
@@ -81,13 +83,14 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
 
             closeRegionInformationPanelBTN.onClick.AddListener(() =>
             {
-
+                SoundManager.instance?.PlaySound("Click Close");
                 LeanTween.scale(this.m_RegionInformationPanel.gameObject, Vector2.zero, .2f)
                 .setEaseSpring();
             });
 
             closeIslandInformationPanelBTN.onClick.AddListener(() =>
             {
+                SoundManager.instance?.PlaySound("Button Click 1");
                 LeanTween.scale(this.m_IslandInformationPanel.gameObject, Vector2.zero, .2f)
                 .setEaseSpring();
             });
@@ -155,11 +158,14 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
         {
             RegionData foundRegionData = this.FindRegionDataWithName(button.name);
 
+            
+
             if (foundRegionData != null)
             {
-
+                print(foundRegionData.regionName);
                 button.GetComponent<Button>().onClick.AddListener(() =>
                 {
+                    SoundManager.instance?.PlaySound("Button Click 1");
                     LeanTween.scale(this.m_RegionInformationPanel.gameObject, Vector2.one, .2f)
                     .setEaseSpring();
 
@@ -177,17 +183,20 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
                     regionPanelInfoTransform.GetChild(1).GetComponent<Image>().sprite = this.m_Images[button.name].sprite;
                     regionPanelInfoTransform.GetChild(1).GetComponent<Image>().color = this.m_Images[button.name].color;
 
-                    m_RegionInformationPanelContent.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = foundRegionData.regionName;
-                    m_RegionInformationPanelContent.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = foundRegionData.information;
+                    m_RegionInformationPanelContent.GetChild(0).GetComponent<TextMeshProUGUI>().text = foundRegionData.regionName;
+                    m_RegionInformationPanelContent.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = foundRegionData.information;
 
                     // Play Button
                     regionPanelInfoTransform.GetChild(regionPanelInfoTransform.childCount - 1).GetComponent<Button>().onClick.AddListener(() =>
                     {
-                        if (!this.IsAllQuestCompleted())
-                            print("All Quest should be completed");
-
-                        if (this.playerData.dunongPoints < this.playerData.requiredDunongPointsToPlay)
-                            print("Dunong points does not reached the required dunong points to play.");
+                        if (!this.IsAllQuestCompleted() || this.playerData.dunongPoints < this.playerData.requiredDunongPointsToPlay)
+                        {
+                            SoundManager.instance?.PlaySound("Click Error");
+                        }
+                        else
+                        {
+                            SoundManager.instance?.PlaySound("Button Click 1");
+                        }
 
                         // Check if all the quest is completed AND Check if the dunong points is valid.
                         if (this.IsAllQuestCompleted() && this.playerData.dunongPoints >= this.playerData.requiredDunongPointsToPlay)

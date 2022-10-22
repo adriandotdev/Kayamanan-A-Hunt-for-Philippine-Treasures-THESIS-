@@ -33,11 +33,19 @@ public class RequestGiver : MonoBehaviour
         this.inventoryPanel = GameObject.Find("Inventory Panel");
 
         // Initialize NPC Buttons
-        this.talkBtn = transform.GetChild(0).GetChild(1).GetComponent<Button>();
-        this.requestBtn = transform.GetChild(0).GetChild(2).GetComponent<Button>();
-        this.giveItemToNpcBtn = transform.GetChild(0).GetChild(3).GetComponent<Button>();
-        this.giveItemToPlayerBtn = transform.GetChild(0).GetChild(4).GetComponent<Button>();
-
+        if (gameObject.name == "Store in Market")
+        {
+            // When the game object is just a store.
+            this.giveItemToPlayerBtn = transform.GetChild(1).GetChild(0).GetComponent<Button>();
+        }
+        else
+        {
+            this.talkBtn = transform.GetChild(0).GetChild(1).GetComponent<Button>();
+            this.requestBtn = transform.GetChild(0).GetChild(2).GetComponent<Button>();
+            this.giveItemToNpcBtn = transform.GetChild(0).GetChild(3).GetComponent<Button>();
+            this.giveItemToPlayerBtn = transform.GetChild(0).GetChild(4).GetComponent<Button>();
+        }
+ 
         // Initialize Request Panel Components
         this.requestPanel = GameObject.Find("Request Panel").transform;
         this.requestMessageTxt = this.requestPanel.GetChild(0).GetComponent<TextMeshProUGUI>();
@@ -77,6 +85,7 @@ public class RequestGiver : MonoBehaviour
 
         // We set to false since the request is not yet accepted.
         QuestManager.instance?.SetRequestAccepted(this.requestQuest.questID, false);
+        QuestManager.instance?.OpenPlainAlertBox("You've received an items!");
 
         // ADD ALL ITEMS from itemGiver.
         foreach (Item item in this.itemGiver.itemsToGive)
@@ -123,10 +132,16 @@ public class RequestGiver : MonoBehaviour
     // Disable the NPC Buttons
     void DisableNPCButtons(bool isInteractable)
     {
-        this.talkBtn.enabled = isInteractable;
-        this.requestBtn.enabled = isInteractable;
-        this.giveItemToNpcBtn.enabled = isInteractable;
-        this.giveItemToPlayerBtn.enabled = isInteractable;
+        if (gameObject.name == "Store in Market")
+        {
+            this.giveItemToPlayerBtn.enabled = isInteractable;
+        }
+        else
+        {
+            this.talkBtn.enabled = isInteractable;
+            this.requestBtn.enabled = isInteractable;
+            this.giveItemToNpcBtn.enabled = isInteractable;
+        }
     }
 
 
@@ -140,9 +155,16 @@ public class RequestGiver : MonoBehaviour
     // Hide All NPC Buttons
     void HideAllButtons()
     {
-        this.talkBtn.gameObject.SetActive(false);
-        this.requestBtn.gameObject.SetActive(false);
-        this.giveItemToNpcBtn.gameObject.SetActive(false);
-        this.giveItemToPlayerBtn.gameObject.SetActive(false);
+        if (gameObject.name != "Store in Market")
+        {
+            this.talkBtn.gameObject.SetActive(false);
+            this.requestBtn.gameObject.SetActive(false);
+            this.giveItemToNpcBtn.gameObject.SetActive(false);
+            this.giveItemToPlayerBtn.gameObject.SetActive(false);
+        }
+        else
+        {
+            this.giveItemToPlayerBtn.gameObject.SetActive(false);
+        }       
     }
 }

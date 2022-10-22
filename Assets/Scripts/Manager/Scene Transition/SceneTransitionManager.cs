@@ -70,6 +70,7 @@ public class SceneTransitionManager : MonoBehaviour
              */
             if (DataPersistenceManager.instance.playerData.isNewlyCreated)
             {
+                DataPersistenceManager.instance.playerData.isIntroductionDone = true;
                 DataPersistenceManager.instance.playerData.isNewlyCreated = false;
                 position = GameObject.Find(this.nameOfExit).transform.GetChild(0).position;
             }
@@ -78,6 +79,7 @@ public class SceneTransitionManager : MonoBehaviour
                 if (DataPersistenceManager.instance.playerData.isFromSleeping)
                 {
                     DataPersistenceManager.instance.playerData.isFromSleeping = false;
+                    DataPersistenceManager.instance.playerData.isSleepPanelNotShown = true;
                     position = GameObject.Find("Bed Spawnpoint").transform.position;
                     this.SpawnPlayerCharacter(position, scene.name);
                     return; 
@@ -154,11 +156,11 @@ public class SceneTransitionManager : MonoBehaviour
     {
         if (sceneName == "Museum")
         {
-            player.transform.GetChild(1).transform.localScale = new Vector2(2.786297f, 2.786297f);
+            player.transform.GetChild(0).transform.localScale = new Vector2(2.786297f, 2.786297f);
         }
         else if (sceneName == "Outside")
         {
-            player.transform.GetChild(1).transform.localScale = new Vector2(6.9839f, 6.9839f);
+            player.transform.GetChild(0).transform.localScale = new Vector2(6.9839f, 6.9839f);
         }
     }
     public void LoadHouseScene()

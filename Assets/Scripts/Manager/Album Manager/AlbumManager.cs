@@ -8,6 +8,8 @@ public class AlbumManager : MonoBehaviour
     public static AlbumManager Instance { get; private set; }
 
     public ItemGiver[] itemGivers;
+    public Item[] items;
+    public bool isFirstAlbum;
 
     private void Awake()
     {

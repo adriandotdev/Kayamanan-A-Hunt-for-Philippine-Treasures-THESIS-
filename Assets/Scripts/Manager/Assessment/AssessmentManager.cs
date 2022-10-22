@@ -216,6 +216,7 @@ public class AssessmentManager : MainGame, IDataPersistence
 [System.Serializable]
 public class Assessment
 {
+    [TextArea]
     public string question;
     public string correctAnswer; // Heto yung correct answer
     public string[] choices; // Mga wrong answers

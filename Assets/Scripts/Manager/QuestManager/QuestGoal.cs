@@ -133,6 +133,26 @@ public class RequestGoal
 }
 
 [System.Serializable]
+public class ShowPhotoAlbumGoal
+{
+    public string giverOfInfo;
+    public Item[] items;
+
+    public ShowPhotoAlbumGoal(string giverOfInfo, Item[] item)
+    {
+        this.giverOfInfo = giverOfInfo;
+        this.items = item;
+    }
+
+    public ShowPhotoAlbumGoal Copy()
+    {
+        ShowPhotoAlbumGoal copyOfThisObj = new ShowPhotoAlbumGoal(this.giverOfInfo, this.items);
+
+        return copyOfThisObj;
+    }
+}
+
+[System.Serializable]
 public class ItemGiver {
 
     public string giverName;
@@ -214,22 +234,39 @@ public class Item
     public bool stackable;
 
     // For Information.
+    public string titleOfInformation;
     public string informationLink;
     public string imageLink;
 
-    public Item(string itemName, int quantity, bool stackable, string informationLink, string imageLink)
+    public Item(string itemName, int quantity, bool stackable, string titleOfInformation, string informationLink, string imageLink)
     {
         this.itemName = itemName;
         this.stackable = stackable;
         this.quantity = quantity;
+        this.titleOfInformation = titleOfInformation;
         this.informationLink = informationLink;
         this.imageLink = imageLink;
     }
 
     public Item CopyItem()
     {
-        Item clonedItem = new Item(this.itemName, this.quantity, this.stackable, this.informationLink, this.imageLink);
+        Item clonedItem = new Item(this.itemName, this.quantity, this.stackable, this.titleOfInformation, this.informationLink, this.imageLink);
 
         return clonedItem;
+    }
+}
+
+[System.Serializable]
+public class Photos
+{
+    public string photoTitle;
+    public string informationLink;
+    public string imageLink;
+
+    public Photos(string photoTitle, string informationLink, string imageLink)
+    {
+        this.photoTitle = photoTitle;
+        this.informationLink = informationLink;
+        this.imageLink = imageLink;
     }
 }

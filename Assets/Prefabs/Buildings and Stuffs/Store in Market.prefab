@@ -13,12 +13,14 @@ GameObject:
   - component: {fileID: 4975678664719453104}
   - component: {fileID: 4975678664719453105}
   - component: {fileID: 4975678664719453109}
+  - component: {fileID: 1484068968}
+  - component: {fileID: 1484068973}
   m_Layer: 0
   m_Name: Store in Market
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4975678664719453106
 Transform:
@@ -27,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4975678664719453070}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 20.27, y: -10.8, z: -544.68097}
   m_LocalScale: {x: 9.3932705, y: 9.3932705, z: 9.3932705}
   m_ConstrainProportionsScale: 0
@@ -139,6 +141,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9e95d3b290f6647be27d80fca73be1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1484068968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4975678664719453070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!114 &1484068973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4975678664719453070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 554bc47e900c42845a66652a394e74e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requestQuest:
+    questID: 
+    isCompleted: 0
+    isClaimed: 0
+    title: 
+    description: 
+    dunongPointsRewards: 0
+    region: 
+    regionNum: 0
+    talkGoal:
+      isFinished: 0
+      npcName: 
+    deliveryGoal:
+      isFinished: 0
+      deliverGoalId: 
+      deliveryMessage: 
+      giverName: 
+      receiverName: 
+      itemReceivedFromGiver: 0
+      item:
+        itemName: 
+        quantity: 0
+        stackable: 0
+        informationLink: 
+        imageLink: 
+    numberGoal:
+      targetNumber: 0
+      currentNumber: 0
+      correspondingCount: 0
+    requestGoal:
+      isRequestFromNPCGained: 0
+      isItemReceivedOfNpc: 0
+      requestGoalID: 
+      receiver: 
+      itemGivers: []
+      msgRequest: 
+      msgOfGiver: 
+    questType: 0
+  itemGiver:
+    giverName: 
+    itemsToGive: []
+    isItemsGiven: 0
+  requestPanel: {fileID: 0}
+  requestMessageTxt: {fileID: 0}
+  talkBtn: {fileID: 0}
+  requestBtn: {fileID: 0}
+  giveItemToNpcBtn: {fileID: 0}
+  giveItemToPlayerBtn: {fileID: 0}
+  canvasGroup: {fileID: 0}
+  joystick: {fileID: 0}
+  inventoryPanel: {fileID: 0}
 --- !u!1 &8037288932793434722
 GameObject:
   m_ObjectHideFlags: 0

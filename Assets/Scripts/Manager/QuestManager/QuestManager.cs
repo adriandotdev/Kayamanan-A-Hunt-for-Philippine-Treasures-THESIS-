@@ -74,6 +74,8 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             this.GetListOfQuests();
             this.SetupScriptsForDeliveryQuestToNPCs();
             this.SetupScriptsForRequestQuest();
+            this.SetupShowPhotoAlbumQuest();
+            this.SetupAllNotes();
         }
     }
 
@@ -361,6 +363,36 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    public void SetupAllNotes()
+    {
+        foreach (Quest quest in this.playerData.notesInfos)
+        {
+            if (quest.questType == Quest.QUEST_TYPE.REQUEST)
+            {
+                GameObject requester = GameObject.Find(quest.requestGoal.receiver);
+
+                if (requester != null)
+                {
+                    requester.GetComponent<RequestRequester>().completedQuestToGainInfo = quest;
+                    requester.GetComponent<GiveItemsToNPC>().npcName = quest.requestGoal.receiver;
+                }
+            }
+            else if (quest.questType == Quest.QUEST_TYPE.SHOW_PHOTO_ALBUM)
+            {
+                GameObject npc = GameObject.Find(quest.showPhotoAlbumGoal.giverOfInfo);
+                if (npc != null)
+                {
+                    npc.GetComponent<DialogueTrigger>().showAlbumQuest = quest;
+                }
+            }
+        }
+    }
+
+    public void RemoveAllNotes()
+    {
+        this.playerData.notesInfos = new List<Quest>();
+    }
+
     /** Remove all quest at Quest Panel */
     public void RemoveAllQuest(RectTransform content)
     {
@@ -370,12 +402,31 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    public void SetupShowPhotoAlbumQuest()
+    {
+        foreach (Quest quest in this.playerData.currentQuests)
+        {
+            if (quest.questType == Quest.QUEST_TYPE.SHOW_PHOTO_ALBUM && quest.questID.Length > 0)
+            {
+                GameObject npc = GameObject.Find(quest.showPhotoAlbumGoal.giverOfInfo);
+                if (npc != null)
+                {
+                    npc.GetComponent<DialogueTrigger>().showAlbumQuest = quest;
+                }
+            }
+        }
+    }
+
+    /**<summary>
+     *  Setups to all the gameobjects that has a request goal/quest.
+     * </summary> */
     public void SetupScriptsForRequestQuest()
     {
         foreach (Quest quest in this.playerData.currentQuests)
         {
             if (quest.requestGoal != null && quest.questID.Length > 0)
             {
+                // Find the gameobject that made a request.
                 GameObject requester = GameObject.Find(quest.requestGoal.receiver);
 
                 Quest questCopy = quest; 
@@ -383,6 +434,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 if (requester != null)
                 {
                     requester.GetComponent<RequestRequester>().requestQuest = questCopy;
+                    //requester.GetComponent<RequestRequester>().completedQuestToGainInfo = questCopy;
                     requester.GetComponent<GiveItemsToNPC>().npcName = questCopy.requestGoal.receiver;
                 }
 
@@ -437,6 +489,49 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    public void FindTalkWithShowPhotoAlbum(string questID)
+    {
+        foreach (Quest quest in this.playerData.currentQuests)
+        {
+            if (quest.questID == questID)
+            {
+                this.OpenAlertBox();
+
+                SoundManager.instance?.PlaySound("Quest Notification");
+
+                Quest questFound = this.playerData.quests.Find((questToFind) => questToFind.questID == quest.questID).CopyShowAlbumQuest();
+
+                questFound.isCompleted = true;
+
+                if (this.CheckIfPreQuestsDone())
+                {
+                    this.playerData.completedQuests.Add(questFound);
+                    this.playerData.notesInfos.Add(questFound);
+                    this.SetupAllNotes();
+
+                    DataPersistenceManager.instance.playerData.dunongPoints += quest.dunongPointsRewards;
+
+                    UpdateDPValueUI?.Invoke();
+                }
+
+                this.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
+                this.playerData.quests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
+
+                if (this.CheckIfPreQuestsDone() == true)
+                {
+                    DataPersistenceManager.instance.playerData.isPreQuestIntroductionDone = true;
+                    this.GetListOfQuests();
+                    this.SetupShowPhotoAlbumQuest();
+                }
+                this.GetListOfQuests();
+
+                DataPersistenceManager.instance?.SaveGame();
+
+                return;
+            }
+        }
+    }
+
     public void FindRequestQuest(string questID)
     {
         foreach (Quest quest in this.playerData.currentQuests)
@@ -454,6 +549,8 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 if (this.CheckIfPreQuestsDone())
                 {
                     this.playerData.completedQuests.Add(questFound);
+                    this.playerData.notesInfos.Add(questFound);
+                    this.SetupAllNotes();
 
                     DataPersistenceManager.instance.playerData.dunongPoints += quest.dunongPointsRewards;
 
@@ -462,7 +559,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
                 this.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
                 this.playerData.quests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
-
+                
                 if (this.CheckIfPreQuestsDone() == true)
                 {
                     DataPersistenceManager.instance.playerData.isPreQuestIntroductionDone = true;
@@ -611,12 +708,14 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             {
                 quest.isCompleted = false;
 
+                // IF THE Quest Type is Delivery
                 if (quest.questType == Quest.QUEST_TYPE.DELIVERY)
                 {
                     quest.deliveryGoal.isFinished = false;
                     quest.deliveryGoal.itemReceivedFromGiver = false;
                     this.playerData.quests.Add(quest.CopyQuestDeliveryGoal());
                 }
+                // IF the Quest
                 else if (quest.questType == Quest.QUEST_TYPE.REQUEST)
                 {
                     quest.requestGoal.isRequestFromNPCGained = false;
@@ -634,10 +733,15 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 {
                     this.playerData.quests.Add(quest.CopyTalkQuestGoal());
                 }
+                else if (quest.questType == Quest.QUEST_TYPE.SHOW_PHOTO_ALBUM)
+                {
+                    this.playerData.quests.Add(quest.CopyShowAlbumQuest());
+                }
             }
         }
 
         this.playerData.completedQuests.RemoveAll(questToRemove => questToRemove.region.ToUpper() == regionName.ToUpper());
+        this.RemoveAllNotes();
     }
 
     public void OpenAlertBox()

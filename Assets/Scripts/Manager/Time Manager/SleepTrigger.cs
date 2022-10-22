@@ -34,13 +34,12 @@ public class SleepTrigger : MonoBehaviour
 
         // Scale the splash effect image
         LeanTween.scale(this.splashEffect, new Vector2(89.14472f, 89.14472f), .2f)
-        .setEaseSpring()
-
         // when complete
         .setOnComplete(() => 
         {
             // scale the clock
             LeanTween.scale(this.clock, new Vector2(89.14472f, 89.14472f), .2f)
+            .setDelay(.2f)
             .setEaseSpring()
 
             // when the clock stops scaling
@@ -53,20 +52,13 @@ public class SleepTrigger : MonoBehaviour
 
                 // Rotate the clock 2 times and in a ping pong style.
                 LeanTween.rotateZ(this.clock, 25f, .5f)
-                .setLoopPingPong()
+                .setLoopPingPong(3)
                 .setOnComplete(() => {
 
                     DataPersistenceManager.instance.playerData.sceneToLoad = "House";
-                    StartCoroutine(this.LoadScene());
+                    SceneManager.LoadScene("Sleep Cutscene");
                 });
             });
         });
-    }
-
-    IEnumerator LoadScene()
-    {
-        yield return new WaitForSeconds(2f);
-
-        SceneManager.LoadScene("Sleep Cutscene");
     }
 }
