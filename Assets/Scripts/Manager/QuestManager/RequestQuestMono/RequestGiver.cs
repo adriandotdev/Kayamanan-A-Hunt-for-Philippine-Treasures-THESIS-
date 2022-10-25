@@ -33,7 +33,7 @@ public class RequestGiver : MonoBehaviour
         this.inventoryPanel = GameObject.Find("Inventory Panel");
 
         // Initialize NPC Buttons
-        if (gameObject.name == "Store in Market")
+        if (gameObject.name == "Store in Market" || gameObject.name == "Karinderya")
         {
             // When the game object is just a store.
             this.giveItemToPlayerBtn = transform.GetChild(1).GetChild(0).GetComponent<Button>();

@@ -30,6 +30,7 @@ public class TopicInfoTrigger : MonoBehaviour
         {
             if (TopicInfoManager.Instance != null)
             {
+                QuestManager.instance?.FindTalkQuestGoal(gameObject.name);
                 TopicInfoManager.Instance.TopicImage = this.topicImage;
                 TopicInfoManager.Instance.Topic = this.topic;
                 TopicInfoManager.Instance.Info = this.info;

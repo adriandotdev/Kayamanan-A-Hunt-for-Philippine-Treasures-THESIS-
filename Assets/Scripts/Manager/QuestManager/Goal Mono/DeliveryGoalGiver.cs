@@ -151,14 +151,18 @@ public class DeliveryGoalGiver : MonoBehaviour
          * so if the quest is null, it means na hindi kabilang ang
          NPC gameobject na ito sa kahit anong quest na makikita sa pending
         quest ni player. */
-        if (this.quest is null) return;
 
-        // Only show the help button if the quest item is not yet given.
-        if (collision.gameObject.CompareTag("Player") 
-             && this.quest != null
-             && !this.quest.deliveryGoal.itemReceivedFromGiver)
+        if (quest == null) return;
+
+        try
         {
-            this.deliveryReqButton.gameObject.SetActive(true);
+            if (this.quest != null && collision.gameObject.CompareTag("Player") && this.quest.questID.Length > 0
+                && this.quest.deliveryGoal.itemReceivedFromGiver == false)
+            {
+                this.deliveryReqButton.gameObject.SetActive(true);
+            }
+        }
+        catch (System.Exception e) { 
         }
     }
 

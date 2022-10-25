@@ -40,6 +40,8 @@ public class TutorialManager : MonoBehaviour
 
         this.joystick.gameObject.SetActive(false);
 
+        // Hides the popups that is not equal to the current
+        // value of index.
         for (int i = 0; i < popups.Length; i++)
         {
             if (i == this.popupIndex)
@@ -93,20 +95,25 @@ public class TutorialManager : MonoBehaviour
             }
         }
 
+        // Quest Button Tutorial
         else if (this.popupIndex == 1)
         {
             NextPopup(null, true);
         }
+        // Inventory Panel
         else if (this.popupIndex == 2)
         {
             NextPopup(null, true);
-            
         }
         else if (this.popupIndex == 3)
         {
-            NextPopup(DunongPointsPopup, false);
+            NextPopup(null, true);
         }
         else if (this.popupIndex == 4)
+        {
+            NextPopup(DunongPointsPopup, false);
+        }
+        else if (this.popupIndex == 5)
         {
             NextPopup(FinishTutorial, true);
         }

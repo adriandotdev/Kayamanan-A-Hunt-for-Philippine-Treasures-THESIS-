@@ -330,9 +330,9 @@ public class GameManager : MonoBehaviour, IDataPersistence
             {
                 Transform toFollow = GameObject.Find("Male").transform;
                 GameObject.Find("Timeline for Player Female").SetActive(false);
-                GameObject.Find("Female").SetActive(false);
 
                 GameObject.Find("Sequence Follow Cam").GetComponent<Cinemachine.CinemachineVirtualCamera>().Follow = toFollow;
+                GameObject.Find("Female").SetActive(false);
             }
             else
             {
@@ -346,13 +346,13 @@ public class GameManager : MonoBehaviour, IDataPersistence
         }
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Fifth Sequence"))
         {
-            if (this.playerData.gender.ToUpper() == "MALE")
+            if (this.playerData.gender.ToUpper() == "FEMALE")
             {
-                GameObject.Find("Female").SetActive(false);
+                GameObject.Find("Male").SetActive(false);
             }
             else
             {
-                GameObject.Find("Male").SetActive(false);
+                GameObject.Find("Female").SetActive(false);
             }
         }
     }
@@ -386,23 +386,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
             this.dunongPointsValue = GameObject.Find("Dunong Points").transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>();
             this.dunongPointsValue.text = DataPersistenceManager.instance.playerData.dunongPoints.ToString();
 
-            this.notesButton = GameObject.Find("Notes Button").GetComponent<Button>();
-            this.notesPanel = GameObject.Find("Notes Panel").GetComponent<RectTransform>();
-            this.closeNotesPanel = GameObject.Find("Close Notes Panel Button").GetComponent<Button>();
-
             Button closeButton = GameObject.Find("Close Button").GetComponent<Button>();
-
-            this.notesButton.onClick.AddListener(() => {
-
-                LeanTween.scale(this.notesPanel.gameObject, new Vector2(346.7167f, 346.7167f), .2f)
-                .setEaseSpring();
-            });
-
-            this.closeNotesPanel.onClick.AddListener(() =>
-            {
-                LeanTween.scale(this.notesPanel.gameObject, new Vector2(0, 0), .2f)
-                .setEaseSpring();
-            });
 
             this.soundButton.onClick.AddListener(() =>
             {
@@ -439,8 +423,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
                     TimeManager.instance.m_IsPaused = true;
             });
 
-            // Hide the optionsPanel at first render
-            this.notesPanel.transform.localScale = new Vector2(0, 0);
             this.optionsPanel.gameObject.SetActive(false);
             this.volumePanel.gameObject.SetActive(false);
         }

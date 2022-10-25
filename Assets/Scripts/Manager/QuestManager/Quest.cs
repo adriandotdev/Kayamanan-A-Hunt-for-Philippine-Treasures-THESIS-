@@ -13,6 +13,7 @@ public class Quest
     public string title;
     public string description;
     public string note;
+    public string hint;
     public int dunongPointsRewards;
     public string region;
     public int regionNum;
@@ -21,8 +22,9 @@ public class Quest
     public NumberGoal numberGoal;
     public RequestGoal requestGoal;
     public ShowPhotoAlbumGoal showPhotoAlbumGoal;
+    public SearchGoal searchGoal;
 
-    public enum QUEST_TYPE { TALK, DELIVERY, NUMBER, REQUEST, SHOW_PHOTO_ALBUM }
+    public enum QUEST_TYPE { TALK, DELIVERY, NUMBER, REQUEST, SHOW_PHOTO_ALBUM, SEARCH }
 
     public QUEST_TYPE questType;
 
@@ -41,10 +43,11 @@ public class Quest
         this.questType = QUEST_TYPE.TALK;
     }
 
-    public Quest(string title, string description, int dunongPointsRewards, string region, int regionNum, DeliveryGoal goal)
+    public Quest(string title, string note, string description, int dunongPointsRewards, string region, int regionNum, DeliveryGoal goal)
     {
         this.questID = Guid.NewGuid().ToString();
         this.title = title;
+        this.note = note;
         this.description = description;
         this.dunongPointsRewards = dunongPointsRewards;
         this.deliveryGoal = goal;
@@ -103,6 +106,20 @@ public class Quest
         this.questType = QUEST_TYPE.SHOW_PHOTO_ALBUM;
     }
 
+    public Quest(string title, string note, string description, string hint, int dunongPointsRewards, string region, int regionNum, SearchGoal searchGoal)
+    {
+        this.questID = Guid.NewGuid().ToString();
+        this.title = title;
+        this.description = description;
+        this.hint = hint;
+        this.dunongPointsRewards = dunongPointsRewards;
+        this.region = region;
+        this.regionNum = regionNum;
+        this.searchGoal = searchGoal;
+        this.note = note;
+        this.questType = QUEST_TYPE.SEARCH;
+    }
+
     private void SetQuestID(string questID)
     {
         this.questID = questID;
@@ -119,9 +136,9 @@ public class Quest
 
     public Quest CopyQuestDeliveryGoal()
     {
-        Quest questCopy = new Quest(this.title, this.description, this.dunongPointsRewards, this.region, this.regionNum,
-            this.deliveryGoal.Copy());
+        Quest questCopy = new Quest(this.title, this.note, this.description, this.dunongPointsRewards, this.region, this.regionNum, this.deliveryGoal.Copy());
 
+        questCopy.isCompleted = this.isCompleted;
         questCopy.SetQuestID(this.questID);
 
         return questCopy;
@@ -142,6 +159,13 @@ public class Quest
 
         copy.SetQuestID(this.questID);
 
+        return copy;
+    }
+
+    public Quest CopySearchQuest()
+    {
+        // string title, string note, string description, string hint, int dunongPointsRewards, string region, int regionNum, SearchGoal searchGoal
+        Quest copy = new Quest(this.title, this.note, this.description, this.hint, this.dunongPointsRewards, this.region, this.regionNum, this.searchGoal.Copy());
         return copy;
     }
 }

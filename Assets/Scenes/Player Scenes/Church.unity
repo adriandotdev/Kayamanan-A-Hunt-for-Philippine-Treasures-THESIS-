@@ -360,83 +360,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38014064}
   m_CullTransparentMesh: 1
---- !u!1 &45305129
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 45305130}
-  - component: {fileID: 45305132}
-  - component: {fileID: 45305131}
-  m_Layer: 5
-  m_Name: Panel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &45305130
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45305129}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 429472801}
-  m_Father: {fileID: 1330928943}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.87580013, y: -0.09870005}
-  m_SizeDelta: {x: -3.8922, y: -1.2062}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &45305131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45305129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &45305132
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45305129}
-  m_CullTransparentMesh: 1
 --- !u!1 &49523755
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,7 +667,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &129944603
+--- !u!1 &114817627
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -752,58 +675,91 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 129944604}
-  - component: {fileID: 129944606}
-  - component: {fileID: 129944605}
+  - component: {fileID: 114817628}
+  - component: {fileID: 114817631}
+  - component: {fileID: 114817630}
+  - component: {fileID: 114817629}
   m_Layer: 5
-  m_Name: Icon
+  m_Name: Scroll View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &129944604
+--- !u!224 &114817628
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129944603}
-  m_LocalRotation: {x: -0, y: -0, z: -0.3993676, w: 0.9167909}
+  m_GameObject: {fileID: 114817627}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.3046, y: 3.3046, z: 3.3046}
+  m_LocalScale: {x: 0.0058073713, y: 0.0058073713, z: 0.0058073713}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1469483249}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -47.077}
+  m_Children:
+  - {fileID: 584804805}
+  - {fileID: 2137166136}
+  m_Father: {fileID: 2140615464}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00021286, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -0.0049, y: -0.1777}
+  m_SizeDelta: {x: 599.4086, y: 366.5621}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &129944605
+--- !u!114 &114817629
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129944603}
+  m_GameObject: {fileID: 114817627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 2038786284}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 584804805}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 2137166137}
+  m_HorizontalScrollbarVisibility: 2
+  m_VerticalScrollbarVisibility: 2
+  m_HorizontalScrollbarSpacing: -3
+  m_VerticalScrollbarSpacing: -3
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &114817630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114817627}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 29385c48c05585239b0360e7c4f7c576, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -812,13 +768,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &129944606
+--- !u!222 &114817631
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129944603}
+  m_GameObject: {fileID: 114817627}
   m_CullTransparentMesh: 1
 --- !u!1 &144326364
 GameObject:
@@ -1462,7 +1418,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &190458246
 SpriteRenderer:
@@ -2251,7 +2207,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &249391957
 Transform:
@@ -2888,82 +2844,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8650264048717906526, guid: 08cc06c8d51f2394b9ab81562d78bf11, type: 3}
   m_PrefabInstance: {fileID: 282280561}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &313028203
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 313028204}
-  - component: {fileID: 313028206}
-  - component: {fileID: 313028205}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &313028204
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 313028203}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0020241495, y: 0.0020241495, z: -0.0020241495}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 429472801}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.563, y: 0.719}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &313028205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 313028203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 87c5886ca78428d4c8c1cf616bf43c02, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &313028206
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 313028203}
-  m_CullTransparentMesh: 1
 --- !u!1 &317023389
 GameObject:
   m_ObjectHideFlags: 0
@@ -3057,6 +2937,10 @@ PrefabInstance:
     - target: {fileID: 420160208551061573, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
       propertyPath: m_Name
       value: Long Church chair (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 420160208551061573, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
@@ -3548,7 +3432,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &354219955
 Transform:
@@ -4020,45 +3904,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8667486448117126994, guid: e3fc1d3a23200344e9de3f80771aa51c, type: 3}
   m_PrefabInstance: {fileID: 8667486447982183861}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &429472800
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 429472801}
-  m_Layer: 5
-  m_Name: Note
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &429472801
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429472800}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 313028204}
-  - {fileID: 1006499291}
-  - {fileID: 1273633642}
-  m_Father: {fileID: 45305130}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &480981014
 GameObject:
   m_ObjectHideFlags: 0
@@ -4074,7 +3919,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &480981015
 SpriteRenderer:
@@ -5938,6 +5783,97 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &584804804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 584804805}
+  - component: {fileID: 584804808}
+  - component: {fileID: 584804807}
+  - component: {fileID: 584804806}
+  m_Layer: 5
+  m_Name: Viewport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &584804805
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584804804}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2038786284}
+  m_Father: {fileID: 114817628}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &584804806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584804804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
+--- !u!114 &584804807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584804804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &584804808
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584804804}
+  m_CullTransparentMesh: 1
 --- !u!1 &607332315
 GameObject:
   m_ObjectHideFlags: 0
@@ -6983,6 +6919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long Church chair (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 420160208551061573, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
 --- !u!4 &760681243 stripped
@@ -7295,7 +7235,7 @@ RectTransform:
   - {fileID: 1843377953}
   - {fileID: 1621452150}
   - {fileID: 1942747246}
-  - {fileID: 879927731}
+  - {fileID: 1369062831}
   m_Father: {fileID: 1605873367}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8560,140 +8500,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &879927730
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 879927731}
-  - component: {fileID: 879927734}
-  - component: {fileID: 879927733}
-  - component: {fileID: 879927732}
-  m_Layer: 5
-  m_Name: Notes Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &879927731
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879927730}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.22055112, y: 0.22055112, z: 0.22055112}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1835992695}
-  m_Father: {fileID: 791918280}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -160, y: -708}
-  m_SizeDelta: {x: 876, y: 475}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &879927732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879927730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 879927733}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Philippine Map
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &879927733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879927730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0bfddfaca3a66f645bc651fbf63ae2f5, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &879927734
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879927730}
-  m_CullTransparentMesh: 1
 --- !u!1 &880960678
 GameObject:
   m_ObjectHideFlags: 0
@@ -9013,6 +8819,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898019347}
+  m_CullTransparentMesh: 1
+--- !u!1 &912108308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 912108309}
+  - component: {fileID: 912108311}
+  - component: {fileID: 912108310}
+  m_Layer: 5
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &912108309
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912108308}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1058236284}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &912108310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912108308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &912108311
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912108308}
   m_CullTransparentMesh: 1
 --- !u!1 &918255320
 GameObject:
@@ -9830,6 +9712,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953123446}
   m_CullTransparentMesh: 1
+--- !u!1 &961937989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 961937991}
+  - component: {fileID: 961937990}
+  m_Layer: 0
+  m_Name: Notes Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &961937990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961937989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe981b9d63ac8a4c93114d603bee91c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notesBtn: {fileID: 0}
+  notesPanel: {fileID: 0}
+  closeNotesPanelBtn: {fileID: 0}
+  notePrefab: {fileID: 5250430373601317227, guid: a934ba017c5e78e408573403663786c8, type: 3}
+  notesPanelContainer: {fileID: 0}
+--- !u!4 &961937991
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961937989}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &964715897
 GameObject:
   m_ObjectHideFlags: 0
@@ -9844,7 +9775,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &964715898
 Transform:
@@ -10149,141 +10080,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 967836869}
   m_CullTransparentMesh: 1
---- !u!1 &1006499290
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1006499291}
-  - component: {fileID: 1006499293}
-  - component: {fileID: 1006499292}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1006499291
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006499290}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0036045162, y: 0.0036045162, z: 0.0036045162}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 429472801}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.014, y: 0.707}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1006499292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006499290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Note 1
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4279440179
-  m_fontColor: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1006499293
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006499290}
-  m_CullTransparentMesh: 1
 --- !u!1 &1007916561
 GameObject:
   m_ObjectHideFlags: 0
@@ -10298,7 +10094,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1007916562
 Transform:
@@ -10486,7 +10282,7 @@ Transform:
   m_Children:
   - {fileID: 1346454673}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1030614408
 GameObject:
@@ -10789,6 +10585,43 @@ Transform:
   m_Father: {fileID: 1862358544}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1058236283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1058236284}
+  m_Layer: 5
+  m_Name: Sliding Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1058236284
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058236283}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 912108309}
+  m_Father: {fileID: 2137166136}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: -20}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1059088587
 GameObject:
   m_ObjectHideFlags: 0
@@ -11013,6 +10846,8 @@ MonoBehaviour:
       isClaimed: 0
       title: Known All Heroes
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Ilocos Region
       regionNum: 0
@@ -11026,6 +10861,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -11047,13 +10883,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: c966bd23-08a4-4d5a-b39b-8862bd01e45c
       isCompleted: 0
       isClaimed: 0
       title: Talk to your Mother
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Cagayan Valley
       regionNum: 0
@@ -11067,6 +10914,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -11088,13 +10936,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: f6af8b02-0fb6-4f5e-b42d-52916397ec7c
       isCompleted: 0
       isClaimed: 0
       title: Buko Pie Ayayay!
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Cordillera Administrative Region
       regionNum: 0
@@ -11108,6 +10967,7 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Buko Pie
           quantity: 0
@@ -11129,13 +10989,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: a6befd39-9c97-44e8-aafe-351d316085e6
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Central Luzon
       regionNum: 0
@@ -11149,6 +11020,7 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 0
@@ -11170,13 +11042,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 52f6a865-ae0b-4ead-82e0-907669131a4e
       isCompleted: 0
       isClaimed: 0
       title: Talk to Aling Julia
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: CALABARZON
       regionNum: 0
@@ -11190,6 +11073,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -11211,13 +11095,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: a4daf909-d99a-4933-b701-0fbff8579e3b
       isCompleted: 0
       isClaimed: 0
       title: Talk to Aling Marites
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: MIMAROPA
       regionNum: 0
@@ -11231,6 +11126,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -11252,13 +11148,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 8eb4a168-4936-4afd-9772-ff2f57deee74
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Bicol Region
       regionNum: 0
@@ -11272,6 +11179,7 @@ MonoBehaviour:
         giverName: Aling Nena
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 0
@@ -11293,13 +11201,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 54c785c9-a207-407d-9e32-af11b532fcb1
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: National Capital Region
       regionNum: 0
@@ -11313,6 +11232,7 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 0
@@ -11334,7 +11254,16 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -11369,6 +11298,140 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1061672958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1061672959}
+  - component: {fileID: 1061672962}
+  - component: {fileID: 1061672961}
+  - component: {fileID: 1061672960}
+  m_Layer: 5
+  m_Name: Close Notes Panel BTN
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1061672959
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061672958}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.0005023313, y: 0.0005023313, z: 0.0005023313}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1842821280}
+  m_Father: {fileID: 2140615464}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1.112, y: -0.34800005}
+  m_SizeDelta: {x: 604.62, y: 579.19995}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1061672960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061672958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1061672961}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ShowOptionsPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1061672961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061672958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0bfddfaca3a66f645bc651fbf63ae2f5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1061672962
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061672958}
+  m_CullTransparentMesh: 1
 --- !u!1 &1069900470
 GameObject:
   m_ObjectHideFlags: 0
@@ -11865,6 +11928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chair (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8204179021644888796, guid: 5dcd8e729e9d3534ea09cd78f779ea14, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8204179021644888798, guid: 5dcd8e729e9d3534ea09cd78f779ea14, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -12313,7 +12380,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &1140436223
 SpriteRenderer:
@@ -12392,6 +12459,10 @@ PrefabInstance:
     - target: {fileID: 8476456060706967680, guid: b19dc0c86c4ddd8409bf878d51fae5ba, type: 3}
       propertyPath: m_Name
       value: Flower Vase (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476456060706967680, guid: b19dc0c86c4ddd8409bf878d51fae5ba, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8476456060706967682, guid: b19dc0c86c4ddd8409bf878d51fae5ba, type: 3}
       propertyPath: m_RootOrder
@@ -12522,6 +12593,141 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174245422}
+  m_CullTransparentMesh: 1
+--- !u!1 &1177230491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1177230492}
+  - component: {fileID: 1177230494}
+  - component: {fileID: 1177230493}
+  m_Layer: 5
+  m_Name: Title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1177230492
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177230491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.005090242, y: 0.005090242, z: 0.025451208}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2140615464}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1.048, y: 1.078}
+  m_SizeDelta: {x: 277.0922, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1177230493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177230491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: My Notes
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7394abb855ac6bf40805ecdaf2506f0f, type: 2}
+  m_sharedMaterial: {fileID: -5557912328034547050, guid: 7394abb855ac6bf40805ecdaf2506f0f, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279440179
+  m_fontColor: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 46.56
+  m_fontSizeBase: 46.56
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -28.946075, w: 54.116734}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1177230494
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177230491}
   m_CullTransparentMesh: 1
 --- !u!1 &1200005092
 GameObject:
@@ -13501,128 +13707,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268336637}
   m_CullTransparentMesh: 1
---- !u!1 &1273633641
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1273633642}
-  - component: {fileID: 1273633645}
-  - component: {fileID: 1273633644}
-  - component: {fileID: 1273633643}
-  m_Layer: 5
-  m_Name: View
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1273633642
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273633641}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0047952314, y: 0.0047952314, z: 0.0047952314}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1642941173}
-  m_Father: {fileID: 429472801}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.442, y: 0.702}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1273633643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273633641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1273633644}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1273633644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273633641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1273633645
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273633641}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1286622945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13677,6 +13761,10 @@ PrefabInstance:
     - target: {fileID: 420160208551061573, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
       propertyPath: m_Name
       value: Long Church chair (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 420160208551061573, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
@@ -13878,6 +13966,9 @@ MonoBehaviour:
   - {fileID: 0}
   npcName: 
   isTalking: 0
+  showAlbumGoal:
+    giverOfInfo: 
+    items: []
 --- !u!4 &1306611335
 Transform:
   m_ObjectHideFlags: 0
@@ -13893,85 +13984,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1330928942
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1330928943}
-  - component: {fileID: 1330928945}
-  - component: {fileID: 1330928944}
-  m_Layer: 5
-  m_Name: Notes Panel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1330928943
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330928942}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 346.7167, y: 346.7167, z: 346.7167}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1469483249}
-  - {fileID: 1446259585}
-  - {fileID: 45305130}
-  m_Father: {fileID: 1605873367}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32, y: -11}
-  m_SizeDelta: {x: 5.42, y: 3.1}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1330928944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330928942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e7850ab64ae099b4a91cafe06479083e, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1330928945
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330928942}
-  m_CullTransparentMesh: 1
 --- !u!1 &1346454672
 GameObject:
   m_ObjectHideFlags: 0
@@ -14155,7 +14167,7 @@ RectTransform:
   - {fileID: 1605873367}
   - {fileID: 1174245423}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -14425,7 +14437,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1368414842
 MonoBehaviour:
@@ -14507,6 +14519,139 @@ Transform:
   m_Father: {fileID: 1007916562}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1369062830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1369062831}
+  - component: {fileID: 1369062834}
+  - component: {fileID: 1369062833}
+  - component: {fileID: 1369062832}
+  m_Layer: 5
+  m_Name: Notes Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1369062831
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369062830}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 788.5208}
+  m_LocalScale: {x: 0.4608333, y: 0.4608333, z: 0.4608333}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 791918280}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -135, y: -718}
+  m_SizeDelta: {x: 876, y: 475}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1369062832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369062830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1369062833}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Philippine Map
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1369062833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369062830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6f2f7b3c70859284f98ca83bc357dc84, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1369062834
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369062830}
+  m_CullTransparentMesh: 1
 --- !u!1 &1370279468
 GameObject:
   m_ObjectHideFlags: 0
@@ -15173,141 +15318,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443000742}
   m_CullTransparentMesh: 1
---- !u!1 &1446259584
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1446259585}
-  - component: {fileID: 1446259587}
-  - component: {fileID: 1446259586}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1446259585
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446259584}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.005090242, y: 0.005090242, z: 0.025451208}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1330928943}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.952, y: 0.892}
-  m_SizeDelta: {x: 277.0922, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1446259586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446259584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: My Notes
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4279440179
-  m_fontColor: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -28.946075, w: 54.116734}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1446259587
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446259584}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1449878443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15318,6 +15328,10 @@ PrefabInstance:
     - target: {fileID: 8476456060706967680, guid: b19dc0c86c4ddd8409bf878d51fae5ba, type: 3}
       propertyPath: m_Name
       value: Flower Vase (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476456060706967680, guid: b19dc0c86c4ddd8409bf878d51fae5ba, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8476456060706967682, guid: b19dc0c86c4ddd8409bf878d51fae5ba, type: 3}
       propertyPath: m_RootOrder
@@ -15639,140 +15653,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466268090}
-  m_CullTransparentMesh: 1
---- !u!1 &1469483248
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1469483249}
-  - component: {fileID: 1469483252}
-  - component: {fileID: 1469483251}
-  - component: {fileID: 1469483250}
-  m_Layer: 5
-  m_Name: Close Notes Panel Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1469483249
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469483248}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0005023313, y: 0.0005023313, z: 0.0005023313}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 129944604}
-  m_Father: {fileID: 1330928943}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.829, y: -0.43799996}
-  m_SizeDelta: {x: 604.62, y: 579.19995}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1469483250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469483248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1469483251}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ShowOptionsPanel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1469483251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469483248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0bfddfaca3a66f645bc651fbf63ae2f5, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1469483252
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469483248}
   m_CullTransparentMesh: 1
 --- !u!1 &1475315885
 GameObject:
@@ -16130,7 +16010,7 @@ Transform:
   - {fileID: 144326365}
   - {fileID: 2083688807}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1546989350
 GameObject:
@@ -16475,6 +16355,8 @@ MonoBehaviour:
       isClaimed: 0
       title: TEST QUEST
       description: Request Quest Test
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -16488,6 +16370,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -16533,13 +16416,24 @@ MonoBehaviour:
         msgOfGiver: Hello! Are you the one to get the item?
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 3
     - questID: 2284c92e-770e-4089-a6de-76e97fb4ffeb
       isCompleted: 0
       isClaimed: 0
       title: TEST QUEST 2
       description: Request Quest Test 2
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -16553,6 +16447,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -16583,7 +16478,16 @@ MonoBehaviour:
         msgOfGiver: Hello! Are you the one to get the item?
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 3
     - questID: b0ea62bd-888e-49a0-832c-a3ba60a16983
       isCompleted: 0
@@ -16591,6 +16495,8 @@ MonoBehaviour:
       title: Ilocos Region Quest!
       description: Since it is your first quests, let's learn from the other people.
         Talk to someone who is good at National Heroes.
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: Ilocos Region
       regionNum: 1
@@ -16604,6 +16510,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -16625,7 +16532,16 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -16709,7 +16625,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &1556715947
 SpriteRenderer:
@@ -17189,7 +17105,7 @@ RectTransform:
   - {fileID: 710053764}
   - {fileID: 848852958}
   - {fileID: 1389871580}
-  - {fileID: 1330928943}
+  - {fileID: 2140615464}
   m_Father: {fileID: 1351172474}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17574,7 +17490,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &1622661306
 SpriteRenderer:
@@ -17904,6 +17820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long Church chair (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 420160208551061573, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
 --- !u!4 &1638674236 stripped
@@ -17911,141 +17831,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 420160208551061571, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
   m_PrefabInstance: {fileID: 1638674235}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1642941172
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1642941173}
-  - component: {fileID: 1642941175}
-  - component: {fileID: 1642941174}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1642941173
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1642941172}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.407292, y: 1.407292, z: 1.407292}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1273633642}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.5, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1642941174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1642941172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: View
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7394abb855ac6bf40805ecdaf2506f0f, type: 2}
-  m_sharedMaterial: {fileID: -5557912328034547050, guid: 7394abb855ac6bf40805ecdaf2506f0f, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281677109
-  m_fontColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1642941175
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1642941172}
-  m_CullTransparentMesh: 1
 --- !u!1 &1668425814
 GameObject:
   m_ObjectHideFlags: 0
@@ -18235,6 +18020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long Church chair (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 420160208551061573, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
 --- !u!4 &1670094972 stripped
@@ -18296,6 +18085,10 @@ PrefabInstance:
     - target: {fileID: 420160208551061573, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
       propertyPath: m_Name
       value: Long Church chair (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 420160208551061573, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
@@ -18572,7 +18365,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &1711319826
 SpriteRenderer:
@@ -19279,7 +19072,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &1818426816
 SpriteRenderer:
@@ -19425,143 +19218,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823963065}
   m_CullTransparentMesh: 1
---- !u!1 &1835992694
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1835992695}
-  - component: {fileID: 1835992697}
-  - component: {fileID: 1835992696}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1835992695
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835992694}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 879927731}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1835992696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835992694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'Notes
-
-'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
-  m_sharedMaterial: {fileID: -5432314662704744868, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4279440179
-  m_fontColor: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 157.9
-  m_fontSizeBase: 157.9
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 13.21
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1835992697
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835992694}
-  m_CullTransparentMesh: 1
 --- !u!1 &1838663309
 GameObject:
   m_ObjectHideFlags: 0
@@ -19592,7 +19248,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1838663311
 MonoBehaviour:
@@ -19928,6 +19584,8 @@ MonoBehaviour:
       isClaimed: 0
       title: A Day with Friendliness
       description: Meet all the villagers.
+      note: 
+      hint: 
       dunongPointsRewards: 0
       region: PRE-QUEST
       regionNum: 0
@@ -19941,6 +19599,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -19962,13 +19621,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 2
     - questID: ebcaf540-4e59-4294-abfa-03335af62c0e
       isCompleted: 0
       isClaimed: 0
       title: A Simple Thanks
       description: Get the Mango from Mang Esterlito and give it to Aling Nena.
+      note: 
+      hint: 
       dunongPointsRewards: 0
       region: PRE-QUEST
       regionNum: 0
@@ -19982,6 +19652,7 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Nena
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 1
@@ -20003,13 +19674,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 1
     - questID: 437bc87f-3f7a-4bd9-8f44-e13c38f2646c
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest!
       description: Get the Mango from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -20023,6 +19705,7 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 1
@@ -20044,13 +19727,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 1
     - questID: 4b713116-4b9c-42e0-b717-91f124fb1ce0
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest!
       description: Get the Mango from Aling Julia and give it to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -20064,6 +19758,7 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 2
@@ -20085,13 +19780,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 1
     - questID: 59039968-f6df-4164-93d1-ee7e8684f6f3
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest!
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: Ilocos Region
       regionNum: 1
@@ -20105,6 +19811,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -20126,13 +19833,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: afe380b5-bdb2-45c2-a37f-485ae6f19971
       isCompleted: 0
       isClaimed: 0
       title: Cagayan Valley Quest!
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Cagayan Valley
       regionNum: 2
@@ -20146,6 +19864,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -20167,13 +19886,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: cfbd09b7-3191-42cd-b9b5-2c39054cfb04
       isCompleted: 0
       isClaimed: 0
       title: CAR Quest!
       description: Get the Mango from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Cordillera Administrative Region
       regionNum: 3
@@ -20187,6 +19917,7 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 1
@@ -20208,13 +19939,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 1
     - questID: 17d36f91-be0a-4833-8207-9fd3e2d53284
       isCompleted: 0
       isClaimed: 0
       title: Central Luzon Quest!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: Central Luzon
       regionNum: 4
@@ -20228,6 +19970,7 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 1
@@ -20249,13 +19992,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 1
     - questID: f679067f-7cfc-4583-aef7-c9b324c7280b
       isCompleted: 0
       isClaimed: 0
       title: NCR Quest!
       description: Help Mang Esterlito to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: National Capital Region
       regionNum: 5
@@ -20269,6 +20023,7 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 3
@@ -20290,13 +20045,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 1
     - questID: 16c74e37-d205-4e44-8f63-fe356a90bc13
       isCompleted: 0
       isClaimed: 0
       title: CALABARZON Quest!
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 35
       region: CALABARZON
       regionNum: 6
@@ -20310,6 +20076,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -20331,13 +20098,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: eb48c343-a54c-48fd-b0a4-e587a3cbd624
       isCompleted: 0
       isClaimed: 0
       title: MIMAROPA Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: MIMAROPA
       regionNum: 7
@@ -20351,6 +20129,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -20372,13 +20151,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: bd0e4173-e452-4dd4-a8a0-b5d1de8e04ae
       isCompleted: 0
       isClaimed: 0
       title: Bicol Region Quest!
       description: Help Aling Julia to give Aling Marites a Banana
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Bicol Region
       regionNum: 8
@@ -20392,6 +20182,7 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Banana
           quantity: 2
@@ -20413,13 +20204,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 1
     - questID: 9bcfd523-3445-42f8-8448-a08199546f9e
       isCompleted: 0
       isClaimed: 0
       title: Western Visayas Quest!
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 35
       region: Western Visayas
       regionNum: 9
@@ -20433,6 +20235,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -20454,13 +20257,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 8b27785f-26b0-4537-9797-8a5cb4c89335
       isCompleted: 0
       isClaimed: 0
       title: Central Visayas Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Western Visayas
       regionNum: 10
@@ -20474,6 +20288,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -20495,13 +20310,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: d4b5c6d9-3725-4d72-bde5-04c305e1b6c3
       isCompleted: 0
       isClaimed: 0
       title: Eastern Visayas Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 75
       region: Western Visayas
       regionNum: 11
@@ -20515,6 +20341,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -20536,13 +20363,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: f2dc8c7b-c73d-4977-b9db-8e4e7cc8dbfa
       isCompleted: 0
       isClaimed: 0
       title: Zamboanga Peninsula Quest!
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 35
       region: Zamboanga Peninsula
       regionNum: 12
@@ -20556,6 +20394,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -20577,13 +20416,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 7e6eb5bd-540e-48a7-b2b0-dcca3d4bd3b7
       isCompleted: 0
       isClaimed: 0
       title: Northern Mindanao Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Northern Mindanao
       regionNum: 13
@@ -20597,6 +20447,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -20618,13 +20469,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: bb612b1f-6472-4077-9be7-0f04b3913d41
       isCompleted: 0
       isClaimed: 0
       title: Davao Region Quest!
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 35
       region: Davao Region
       regionNum: 14
@@ -20638,6 +20500,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -20659,13 +20522,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 682564e5-d48a-42e8-b863-7f2f0f9997c4
       isCompleted: 0
       isClaimed: 0
       title: SOCCSKSARGEN Quest!
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: SOCCSKSARGEN
       regionNum: 15
@@ -20679,6 +20553,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -20700,13 +20575,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: fdabaae7-360c-4b21-b774-7ad83578340d
       isCompleted: 0
       isClaimed: 0
       title: Caraga Region Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 45
       region: Caraga Region
       regionNum: 16
@@ -20720,6 +20606,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -20741,13 +20628,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 8ba2fdae-1091-4f55-8c46-41d93b3fdf79
       isCompleted: 0
       isClaimed: 0
       title: BARMM Quest!
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 325
       region: BARMM
       regionNum: 17
@@ -20761,6 +20659,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -20782,7 +20681,16 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -20837,6 +20745,82 @@ MonoBehaviour:
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
   sceneToLoadFromPhilippineMap: 
+--- !u!1 &1842821279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1842821280}
+  - component: {fileID: 1842821282}
+  - component: {fileID: 1842821281}
+  m_Layer: 5
+  m_Name: Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1842821280
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842821279}
+  m_LocalRotation: {x: -0, y: -0, z: -0.3993676, w: 0.9167909}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.3046, y: 3.3046, z: 3.3046}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061672959}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -47.077}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00021286, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1842821281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842821279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 29385c48c05585239b0360e7c4f7c576, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1842821282
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842821279}
+  m_CullTransparentMesh: 1
 --- !u!1 &1843157304
 GameObject:
   m_ObjectHideFlags: 0
@@ -20852,7 +20836,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &1843157305
 SpriteRenderer:
@@ -21530,6 +21514,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower Vase (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8476456060706967680, guid: b19dc0c86c4ddd8409bf878d51fae5ba, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8476456060706967682, guid: b19dc0c86c4ddd8409bf878d51fae5ba, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -21873,7 +21861,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1094035490}
   m_HandleRect: {fileID: 1094035489}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -22211,7 +22199,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1979022516
 Transform:
@@ -22231,7 +22219,7 @@ Transform:
   - {fileID: 1007916562}
   - {fileID: 354219955}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2016377126
 GameObject:
@@ -22635,7 +22623,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2026214395
 MonoBehaviour:
@@ -22959,6 +22947,8 @@ MonoBehaviour:
       isClaimed: 0
       title: A Day with Friendliness
       description: Meet all the villagers.
+      note: 
+      hint: 
       dunongPointsRewards: 0
       region: PRE-QUEST
       regionNum: 0
@@ -22972,6 +22962,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -22993,13 +22984,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 2
     - questID: e2e3a425-b4c9-4147-9ad3-eea24a8a458e
       isCompleted: 0
       isClaimed: 0
       title: A Simple Thanks
       description: Get the Mango from Mang Esterlito and give it to Aling Nena.
+      note: 
+      hint: 
       dunongPointsRewards: 0
       region: PRE-QUEST
       regionNum: 0
@@ -23013,6 +23015,7 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Nena
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 1
@@ -23034,13 +23037,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 1
     - questID: 7c960290-1a4c-4e32-ad2e-d7bb61f62df4
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest!
       description: Get the Mango from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -23054,6 +23068,7 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 1
@@ -23075,13 +23090,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 1
     - questID: dffa4938-8646-45e4-8b77-b206d7752852
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest!
       description: Get the Mango from Aling Julia and give it to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -23095,6 +23121,7 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 2
@@ -23116,13 +23143,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 1
     - questID: 92b3bb29-682d-4682-9ad1-5f3f86134a36
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest!
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: Ilocos Region
       regionNum: 1
@@ -23136,6 +23174,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -23157,13 +23196,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: f7a27779-cfa7-4d7f-b233-2ad4976a4b20
       isCompleted: 0
       isClaimed: 0
       title: Cagayan Valley Quest!
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Cagayan Valley
       regionNum: 2
@@ -23177,6 +23227,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -23198,13 +23249,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 2e4e95b4-5e58-41fd-be66-1f49dfc0faf8
       isCompleted: 0
       isClaimed: 0
       title: CAR Quest!
       description: Get the Mango from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Cordillera Administrative Region
       regionNum: 3
@@ -23218,6 +23280,7 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 1
@@ -23239,13 +23302,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 1
     - questID: eeaa6fe0-e3cf-41dc-aa1f-1f45385e156c
       isCompleted: 0
       isClaimed: 0
       title: Central Luzon Quest!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: Central Luzon
       regionNum: 4
@@ -23259,6 +23333,7 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 1
@@ -23280,13 +23355,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 1
     - questID: d6d1e363-32e2-4c20-8c43-081e353d3d0d
       isCompleted: 0
       isClaimed: 0
       title: NCR Quest!
       description: Help Mang Esterlito to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: National Capital Region
       regionNum: 5
@@ -23300,6 +23386,7 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Mango
           quantity: 3
@@ -23321,13 +23408,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 1
     - questID: a630c390-c463-4fb7-95c8-349f6a7679fa
       isCompleted: 0
       isClaimed: 0
       title: CALABARZON Quest!
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 35
       region: CALABARZON
       regionNum: 6
@@ -23341,6 +23439,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -23362,13 +23461,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 6c3aad10-22ba-41d7-9c2c-93683ee4531d
       isCompleted: 0
       isClaimed: 0
       title: MIMAROPA Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: MIMAROPA
       regionNum: 7
@@ -23382,6 +23492,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -23403,13 +23514,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: b64ae2e8-ba84-41f8-89a4-7df0abfce793
       isCompleted: 0
       isClaimed: 0
       title: Bicol Region Quest!
       description: Help Aling Julia to give Aling Marites a Banana
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Bicol Region
       regionNum: 8
@@ -23423,6 +23545,7 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: Banana
           quantity: 2
@@ -23444,13 +23567,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 1
     - questID: 22621679-3be9-4987-aba8-6e8a442d9b08
       isCompleted: 0
       isClaimed: 0
       title: Western Visayas Quest!
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 35
       region: Western Visayas
       regionNum: 9
@@ -23464,6 +23598,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -23485,13 +23620,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: a9d1990e-4a44-4ad9-a1c7-dfcee1e924b3
       isCompleted: 0
       isClaimed: 0
       title: Central Visayas Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Western Visayas
       regionNum: 10
@@ -23505,6 +23651,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -23526,13 +23673,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 6fd4f6eb-63ea-424b-9353-e4c841fccfdf
       isCompleted: 0
       isClaimed: 0
       title: Eastern Visayas Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 75
       region: Western Visayas
       regionNum: 11
@@ -23546,6 +23704,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -23567,13 +23726,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 72182762-0edb-487e-93fd-1af3c3e31227
       isCompleted: 0
       isClaimed: 0
       title: Zamboanga Peninsula Quest!
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 35
       region: Zamboanga Peninsula
       regionNum: 12
@@ -23587,6 +23757,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -23608,13 +23779,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: b72a6bca-c2dd-4f27-baa9-5341f968165b
       isCompleted: 0
       isClaimed: 0
       title: Northern Mindanao Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Northern Mindanao
       regionNum: 13
@@ -23628,6 +23810,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -23649,13 +23832,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 1eb86205-ab0d-43db-9bb7-5c59b891e53d
       isCompleted: 0
       isClaimed: 0
       title: Davao Region Quest!
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 35
       region: Davao Region
       regionNum: 14
@@ -23669,6 +23863,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -23690,13 +23885,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 7d04b962-0981-4a77-a820-f3799dab2d4e
       isCompleted: 0
       isClaimed: 0
       title: SOCCSKSARGEN Quest!
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: SOCCSKSARGEN
       regionNum: 15
@@ -23710,6 +23916,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -23731,13 +23938,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 4e2ac436-4568-46fe-8f93-94184b8ffca6
       isCompleted: 0
       isClaimed: 0
       title: Caraga Region Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 45
       region: Caraga Region
       regionNum: 16
@@ -23751,6 +23969,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -23772,13 +23991,24 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     - questID: 9aea9d6d-6ecb-47ef-a92b-a5f283d0071b
       isCompleted: 0
       isClaimed: 0
       title: BARMM Quest!
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 325
       region: BARMM
       regionNum: 17
@@ -23792,6 +24022,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -23813,7 +24044,16 @@ MonoBehaviour:
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
-        photos: []
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -24063,6 +24303,69 @@ Transform:
   m_Father: {fileID: 1862358544}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2038786283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2038786284}
+  - component: {fileID: 2038786285}
+  m_Layer: 5
+  m_Name: Content
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2038786284
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038786283}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 584804805}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0.000014516966}
+  m_SizeDelta: {x: 0, y: 366.56}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &2038786285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038786283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 1
+  m_Spacing: -24.67
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 1
+  m_ReverseArrangement: 0
 --- !u!1 &2048275297
 GameObject:
   m_ObjectHideFlags: 0
@@ -24578,7 +24881,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2065751551
 GameObject:
@@ -24711,6 +25014,10 @@ PrefabInstance:
     - target: {fileID: 420160208551061573, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
       propertyPath: m_Name
       value: Long Church chair (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 420160208551061573, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
@@ -28409,6 +28716,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower Vase (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8476456060706967680, guid: b19dc0c86c4ddd8409bf878d51fae5ba, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8476456060706967682, guid: b19dc0c86c4ddd8409bf878d51fae5ba, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -28595,6 +28906,212 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108670859}
   m_CullTransparentMesh: 1
+--- !u!1 &2137166135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2137166136}
+  - component: {fileID: 2137166139}
+  - component: {fileID: 2137166138}
+  - component: {fileID: 2137166137}
+  m_Layer: 5
+  m_Name: Scrollbar Vertical
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2137166136
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137166135}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1058236284}
+  m_Father: {fileID: 114817628}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: -17}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &2137166137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137166135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 912108310}
+  m_HandleRect: {fileID: 912108309}
+  m_Direction: 2
+  m_Value: 0
+  m_Size: 0.99999475
+  m_NumberOfSteps: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2137166138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137166135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2137166139
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137166135}
+  m_CullTransparentMesh: 1
+--- !u!1 &2140615463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2140615464}
+  - component: {fileID: 2140615466}
+  - component: {fileID: 2140615465}
+  m_Layer: 5
+  m_Name: Notes Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2140615464
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140615463}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 788.5208}
+  m_LocalScale: {x: 334.82172, y: 334.82172, z: 334.82172}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1177230492}
+  - {fileID: 1061672959}
+  - {fileID: 114817628}
+  m_Father: {fileID: 1605873367}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 5.42, y: 3.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2140615465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140615463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b4c50de98c3f5a741978f1281f4ff7bf, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2140615466
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140615463}
+  m_CullTransparentMesh: 1
 --- !u!1001 &420160208465613655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28649,6 +29166,10 @@ PrefabInstance:
     - target: {fileID: 420160208551061573, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
       propertyPath: m_Name
       value: Long Church chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 420160208551061573, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c09785a41bc12438fa7774f45d7109, type: 3}
@@ -28707,6 +29228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table with Bible
       objectReference: {fileID: 0}
+    - target: {fileID: 1225496103102894451, guid: f5ba5045a8d9aeb40a0d3a127b58dc0f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5ba5045a8d9aeb40a0d3a127b58dc0f, type: 3}
 --- !u!1001 &3135234269688145226
@@ -28719,6 +29244,10 @@ PrefabInstance:
     - target: {fileID: 3135234269950073609, guid: 57186d6007f649e478ea2534d5537481, type: 3}
       propertyPath: m_Name
       value: Priest Chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135234269950073609, guid: 57186d6007f649e478ea2534d5537481, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3135234269950073615, guid: 57186d6007f649e478ea2534d5537481, type: 3}
       propertyPath: m_RootOrder
@@ -28777,6 +29306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chair
       objectReference: {fileID: 0}
+    - target: {fileID: 8204179021644888796, guid: 5dcd8e729e9d3534ea09cd78f779ea14, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8204179021644888798, guid: 5dcd8e729e9d3534ea09cd78f779ea14, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -28834,6 +29367,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower Vase
       objectReference: {fileID: 0}
+    - target: {fileID: 8476456060706967680, guid: b19dc0c86c4ddd8409bf878d51fae5ba, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8476456060706967682, guid: b19dc0c86c4ddd8409bf878d51fae5ba, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -28890,6 +29427,10 @@ PrefabInstance:
     - target: {fileID: 8667486448117126992, guid: e3fc1d3a23200344e9de3f80771aa51c, type: 3}
       propertyPath: m_Name
       value: Church Main Table
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667486448117126992, guid: e3fc1d3a23200344e9de3f80771aa51c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8667486448117126994, guid: e3fc1d3a23200344e9de3f80771aa51c, type: 3}
       propertyPath: m_RootOrder

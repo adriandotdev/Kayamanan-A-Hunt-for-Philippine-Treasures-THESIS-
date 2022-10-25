@@ -17,10 +17,18 @@ public class DeliveryGoalReceiver : MonoBehaviour
 
     void GiveItemToNPC()
     {
+        if (this.quest != null && this.quest.questID.Length > 0 && this.quest.isCompleted)
+        {
+            DialogueManager._instance?.StartDialogue(Resources.Load<TextAsset>(this.quest.deliveryGoal.informationLinkWhenInfoHasBeenSeen));
+            return;
+        }
+
         foreach (Quest quest in DataPersistenceManager.instance.playerData.currentQuests)
         {
             if (quest.questID == this.quest.questID && quest.questType == Quest.QUEST_TYPE.DELIVERY)
             {
+                DialogueManager._instance?.StartDialogue(Resources.Load<TextAsset>(this.quest.deliveryGoal.informationLink));
+
                 //// Loop through each item at inventory
                 foreach (Item item in DataPersistenceManager.instance.playerData.inventory.items)
                 {
@@ -45,8 +53,8 @@ public class DeliveryGoalReceiver : MonoBehaviour
                 QuestManager.instance.FindDeliveryQuestGoal(this.quest.questID);
 
                 // Reset all gameobjects holding a DeliveryGoal Giver and Receiver.
-                QuestManager.instance.SetupScriptsForDeliveryQuestToNPCs();
                 InventoryManager.instance.DisplayInventoryItems();
+                
                 return;
             }
         }
@@ -64,12 +72,28 @@ public class DeliveryGoalReceiver : MonoBehaviour
             && this.quest.deliveryGoal.itemReceivedFromGiver 
             && !this.quest.isCompleted)
         {
-            this.giveBtn.transform.GetChild(0).GetComponent<Image>().sprite 
-                = Resources.Load<Sprite>("Collectibles/Items/" + this.quest.deliveryGoal.item.itemName);
+            //this.giveBtn.transform.GetChild(0).GetComponent<Image>().sprite 
+            //    = Resources.Load<Sprite>("Collectibles/Items/" + this.quest.deliveryGoal.item.itemName);
+            this.giveBtn.gameObject.SetActive(true);
+        }
+        else if (collision.gameObject.CompareTag("Player")
+            && this.quest.isCompleted)
+        {
             this.giveBtn.gameObject.SetActive(true);
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (this.quest == null) return;
+
+        if (collision.gameObject.CompareTag("Player")
+            && this.quest.isCompleted)
+        {
+            this.giveBtn.onClick.RemoveAllListeners();
+            this.giveBtn.onClick.AddListener(this.GiveItemToNPC);
+        } 
+    }
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

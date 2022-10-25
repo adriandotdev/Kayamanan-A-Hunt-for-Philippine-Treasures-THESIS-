@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class DialogueTrigger : MonoBehaviour
 {
     public TextAsset npcIntroduction;
+    public TextAsset normalText;
     public TextAsset[] inks;
     public TMPro.TextMeshProUGUI actorName;
     private Button talkButton; // Talk Button
@@ -110,7 +111,13 @@ public class DialogueTrigger : MonoBehaviour
                 DialogueManager._instance.showAlbumGoal = this.showAlbumQuest.showPhotoAlbumGoal.Copy();
                 DialogueManager._instance?.StartDialogue(inks[this.CurrentOpenRegion()]);
                 DialogueManager._instance.actorField.text = this.NPC_NAME;
-                QuestManager.instance.FindTalkWithShowPhotoAlbum(this.showAlbumQuest.questID);
+
+                if (showAlbumQuest.isCompleted == false)
+                {
+                    print("FROM DIALOGUE TRIGGER: Note added!");
+                    QuestManager.instance.FindTalkWithShowPhotoAlbum(this.showAlbumQuest.questID);
+                }
+                    
             }
             else
             {

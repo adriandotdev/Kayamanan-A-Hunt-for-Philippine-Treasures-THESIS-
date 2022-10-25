@@ -45,8 +45,12 @@ public class GiveItemsToNPC : MonoBehaviour
                         QuestManager.instance.FindRequestQuest(GetComponent<RequestRequester>().requestQuest.questID);
                         QuestManager.instance.SetRequestItemsAreGiven(GetComponent<RequestRequester>().requestQuest.questID);
                         AlbumManager.Instance.itemGivers = GetComponent<RequestRequester>().completedQuestToGainInfo.requestGoal.itemGivers;
-                        AlbumManager.Instance.isFirstAlbum = true;
-                        SceneManager.LoadScene("Delivery Info Scene", LoadSceneMode.Additive);
+
+                        if (requestQuest.region.ToUpper() != "PRE-QUEST")
+                        {
+                            AlbumManager.Instance.isFirstAlbum = true;
+                            SceneManager.LoadScene("Delivery Info Scene", LoadSceneMode.Additive);
+                        }
                     });
                 }
                 else if (collision.gameObject.CompareTag("Player") && GetComponent<RequestRequester>().completedQuestToGainInfo.questID.Length > 0)
@@ -55,6 +59,7 @@ public class GiveItemsToNPC : MonoBehaviour
                     this.showInfoOfItemsButton.onClick.AddListener(() =>
                     {
                         print("GIVE ITEMS TO NPC 2");
+
                         AlbumManager.Instance.itemGivers = GetComponent<RequestRequester>().completedQuestToGainInfo.requestGoal.itemGivers;
                         AlbumManager.Instance.isFirstAlbum = true;
                         SceneManager.LoadScene("Delivery Info Scene", LoadSceneMode.Additive);

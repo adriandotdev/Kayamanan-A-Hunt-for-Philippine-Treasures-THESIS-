@@ -777,7 +777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &618264038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1113,6 +1113,8 @@ MonoBehaviour:
       title: Ilocos Region Quest
       description: Gregorio Zaide is asking for his lunch! Help him to buy his favorite
         dish.
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -1126,6 +1128,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -1169,6 +1172,15 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 3
     - questID: 09bdc87f-c8d4-4b8b-84bb-e1c1ef8d2415
       isCompleted: 0
@@ -1176,6 +1188,8 @@ MonoBehaviour:
       title: Ilocos Region Quest!
       description: Since it is your first quests, let's learn from the other people.
         Talk to someone who is good at National Heroes.
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: Ilocos Region
       regionNum: 1
@@ -1189,6 +1203,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -1211,6 +1226,15 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -1341,7 +1365,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.088889, y: 1}
+    m_SensorSize: {x: 2.1666667, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1382,7 +1406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &954710785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1405,7 +1429,7 @@ MonoBehaviour:
     isFromSleeping: 0
     isSleepPanelNotShown: 1
     name: 
-    gender: female
+    gender: male
     dunongPoints: 0
     requiredDunongPointsToPlay: 65
     remainingTime: 18000
@@ -1706,6 +1730,8 @@ MonoBehaviour:
       title: Ilocos Region Quest
       description: Gregorio Zaide is asking for his lunch! Help him to buy his favorite
         dish.
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -1719,6 +1745,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -1762,6 +1789,15 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 3
     - questID: ba8cbf6b-0a8a-492a-ace8-2fd203f2802b
       isCompleted: 0
@@ -1769,6 +1805,8 @@ MonoBehaviour:
       title: Ilocos Region Quest!
       description: Since it is your first quests, let's learn from the other people.
         Talk to someone who is good at National Heroes.
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: Ilocos Region
       regionNum: 1
@@ -1782,6 +1820,7 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
         item:
           itemName: 
           quantity: 0
@@ -1804,6 +1843,15 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
       questType: 0
     currentQuests: []
     completedQuests: []

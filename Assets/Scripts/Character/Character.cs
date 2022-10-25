@@ -92,16 +92,4 @@ public class Character : MonoBehaviour, IDataPersistence
     {
         throw new System.NotImplementedException();
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Item"))
-        {
-            Item itemCollected = collision.gameObject.GetComponent<ItemMono>().item.CopyItem();
-
-            DataPersistenceManager.instance.playerData.inventory.AddItem(itemCollected);
-
-            InventoryManager.instance.DisplayInventoryItems();
-        }
-    }
 }

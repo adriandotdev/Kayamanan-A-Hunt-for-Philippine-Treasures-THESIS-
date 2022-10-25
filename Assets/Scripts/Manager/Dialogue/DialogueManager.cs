@@ -137,6 +137,7 @@ public class DialogueManager : MonoBehaviour
 
             if (text == "")
             {
+                print("EMPTY TEXT");
                 OnDialogueRunning?.Invoke(false);
                 panel.gameObject.SetActive(false);
                 this.houseGroup.interactable = true;
@@ -154,7 +155,7 @@ public class DialogueManager : MonoBehaviour
                 }
                 return;
             }
-
+            print(text);
             StartCoroutine(this.DisplayLine(text));
         }
         else

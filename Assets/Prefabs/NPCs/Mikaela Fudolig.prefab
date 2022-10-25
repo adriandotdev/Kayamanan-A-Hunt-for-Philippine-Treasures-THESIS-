@@ -232,6 +232,9 @@ GameObject:
   - component: {fileID: 7624121224627446328}
   - component: {fileID: 3188169421085024575}
   - component: {fileID: 931311279038924285}
+  - component: {fileID: 2201871698922722451}
+  - component: {fileID: 8307373311938419075}
+  - component: {fileID: 5370205439902899957}
   m_Layer: 0
   m_Name: Mikaela Fudolig
   m_TagString: Untagged
@@ -382,7 +385,6 @@ MonoBehaviour:
   day5Behavior: 0
   day5StartPos: {fileID: 0}
   day5Waypoints: []
-  moveSpeed: 2
   spriteRenderer: {fileID: 0}
   animator: {fileID: 0}
   npcType: 1
@@ -421,6 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcIntroduction: {fileID: 4900000, guid: 233a8af6119b4af4ba6e7c0a4db7e7d8, type: 3}
+  normalText: {fileID: 0}
   inks:
   - {fileID: 4900000, guid: d8b60b9436a5505429d9ded580ec4389, type: 3}
   - {fileID: 4900000, guid: d8b60b9436a5505429d9ded580ec4389, type: 3}
@@ -441,9 +444,60 @@ MonoBehaviour:
   - {fileID: 4900000, guid: d8b60b9436a5505429d9ded580ec4389, type: 3}
   actorName: {fileID: 2726822130439472770}
   NPC_NAME: Gregorio Zaide
-  showAlbumGoal:
-    giverOfInfo: 
-    photos: []
+  showAlbumQuest:
+    questID: 
+    isCompleted: 0
+    isClaimed: 0
+    title: 
+    description: 
+    note: 
+    hint: 
+    dunongPointsRewards: 0
+    region: 
+    regionNum: 0
+    talkGoal:
+      isFinished: 0
+      npcName: 
+    deliveryGoal:
+      isFinished: 0
+      deliverGoalId: 
+      deliveryMessage: 
+      giverName: 
+      receiverName: 
+      itemReceivedFromGiver: 0
+      informationLink: 
+      item:
+        itemName: 
+        quantity: 0
+        stackable: 0
+        titleOfInformation: 
+        informationLink: 
+        imageLink: 
+    numberGoal:
+      targetNumber: 0
+      currentNumber: 0
+      correspondingCount: 0
+    requestGoal:
+      isRequestFromNPCGained: 0
+      isItemReceivedOfNpc: 0
+      requestGoalID: 
+      receiver: 
+      itemGivers: []
+      msgRequest: 
+      msgOfGiver: 
+    showPhotoAlbumGoal:
+      giverOfInfo: 
+      items: []
+    searchGoal:
+      npcToReceived: 
+      itemToFind:
+        itemName: 
+        quantity: 0
+        stackable: 0
+        titleOfInformation: 
+        informationLink: 
+        imageLink: 
+    questType: 0
 --- !u!195 &2726822129695393361
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -484,6 +538,8 @@ MonoBehaviour:
     isClaimed: 0
     title: 
     description: 
+    note: 
+    hint: 
     dunongPointsRewards: 0
     region: 
     regionNum: 0
@@ -497,6 +553,7 @@ MonoBehaviour:
       giverName: 
       receiverName: 
       itemReceivedFromGiver: 0
+      informationLink: 
       item:
         itemName: 
         quantity: 0
@@ -518,7 +575,16 @@ MonoBehaviour:
       msgOfGiver: 
     showPhotoAlbumGoal:
       giverOfInfo: 
-      photos: []
+      items: []
+    searchGoal:
+      npcToReceived: 
+      itemToFind:
+        itemName: 
+        quantity: 0
+        stackable: 0
+        titleOfInformation: 
+        informationLink: 
+        imageLink: 
     questType: 0
   itemGiver:
     giverName: 
@@ -553,6 +619,8 @@ MonoBehaviour:
     isClaimed: 0
     title: 
     description: 
+    note: 
+    hint: 
     dunongPointsRewards: 0
     region: 
     regionNum: 0
@@ -566,6 +634,7 @@ MonoBehaviour:
       giverName: 
       receiverName: 
       itemReceivedFromGiver: 0
+      informationLink: 
       item:
         itemName: 
         quantity: 0
@@ -587,7 +656,16 @@ MonoBehaviour:
       msgOfGiver: 
     showPhotoAlbumGoal:
       giverOfInfo: 
-      photos: []
+      items: []
+    searchGoal:
+      npcToReceived: 
+      itemToFind:
+        itemName: 
+        quantity: 0
+        stackable: 0
+        titleOfInformation: 
+        informationLink: 
+        imageLink: 
     questType: 0
   requestQuest:
     questID: 
@@ -595,6 +673,8 @@ MonoBehaviour:
     isClaimed: 0
     title: 
     description: 
+    note: 
+    hint: 
     dunongPointsRewards: 0
     region: 
     regionNum: 0
@@ -608,6 +688,7 @@ MonoBehaviour:
       giverName: 
       receiverName: 
       itemReceivedFromGiver: 0
+      informationLink: 
       item:
         itemName: 
         quantity: 0
@@ -629,7 +710,16 @@ MonoBehaviour:
       msgOfGiver: 
     showPhotoAlbumGoal:
       giverOfInfo: 
-      photos: []
+      items: []
+    searchGoal:
+      npcToReceived: 
+      itemToFind:
+        itemName: 
+        quantity: 0
+        stackable: 0
+        titleOfInformation: 
+        informationLink: 
+        imageLink: 
     questType: 0
   talkButton: {fileID: 0}
   requestBtn: {fileID: 0}
@@ -652,6 +742,204 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showInfoOfItemsButton: {fileID: 0}
   npcName: 
+--- !u!114 &2201871698922722451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2726822129695393368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c043e2aa58a39e4d94f887af29012ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest:
+    questID: 
+    isCompleted: 0
+    isClaimed: 0
+    title: 
+    description: 
+    note: 
+    hint: 
+    dunongPointsRewards: 0
+    region: 
+    regionNum: 0
+    talkGoal:
+      isFinished: 0
+      npcName: 
+    deliveryGoal:
+      isFinished: 0
+      deliverGoalId: 
+      deliveryMessage: 
+      giverName: 
+      receiverName: 
+      itemReceivedFromGiver: 0
+      informationLink: 
+      item:
+        itemName: 
+        quantity: 0
+        stackable: 0
+        titleOfInformation: 
+        informationLink: 
+        imageLink: 
+    numberGoal:
+      targetNumber: 0
+      currentNumber: 0
+      correspondingCount: 0
+    requestGoal:
+      isRequestFromNPCGained: 0
+      isItemReceivedOfNpc: 0
+      requestGoalID: 
+      receiver: 
+      itemGivers: []
+      msgRequest: 
+      msgOfGiver: 
+    showPhotoAlbumGoal:
+      giverOfInfo: 
+      items: []
+    searchGoal:
+      npcToReceived: 
+      itemToFind:
+        itemName: 
+        quantity: 0
+        stackable: 0
+        titleOfInformation: 
+        informationLink: 
+        imageLink: 
+    questType: 0
+--- !u!114 &8307373311938419075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2726822129695393368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 882a44b32ecef8645a131c87d6f4c90a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest:
+    questID: 
+    isCompleted: 0
+    isClaimed: 0
+    title: 
+    description: 
+    note: 
+    hint: 
+    dunongPointsRewards: 0
+    region: 
+    regionNum: 0
+    talkGoal:
+      isFinished: 0
+      npcName: 
+    deliveryGoal:
+      isFinished: 0
+      deliverGoalId: 
+      deliveryMessage: 
+      giverName: 
+      receiverName: 
+      itemReceivedFromGiver: 0
+      informationLink: 
+      item:
+        itemName: 
+        quantity: 0
+        stackable: 0
+        titleOfInformation: 
+        informationLink: 
+        imageLink: 
+    numberGoal:
+      targetNumber: 0
+      currentNumber: 0
+      correspondingCount: 0
+    requestGoal:
+      isRequestFromNPCGained: 0
+      isItemReceivedOfNpc: 0
+      requestGoalID: 
+      receiver: 
+      itemGivers: []
+      msgRequest: 
+      msgOfGiver: 
+    showPhotoAlbumGoal:
+      giverOfInfo: 
+      items: []
+    searchGoal:
+      npcToReceived: 
+      itemToFind:
+        itemName: 
+        quantity: 0
+        stackable: 0
+        titleOfInformation: 
+        informationLink: 
+        imageLink: 
+    questType: 0
+--- !u!114 &5370205439902899957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2726822129695393368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb16e4358c5dd78449babb512800e7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  searchQuest:
+    questID: 
+    isCompleted: 0
+    isClaimed: 0
+    title: 
+    description: 
+    note: 
+    hint: 
+    dunongPointsRewards: 0
+    region: 
+    regionNum: 0
+    talkGoal:
+      isFinished: 0
+      npcName: 
+    deliveryGoal:
+      isFinished: 0
+      deliverGoalId: 
+      deliveryMessage: 
+      giverName: 
+      receiverName: 
+      itemReceivedFromGiver: 0
+      informationLink: 
+      item:
+        itemName: 
+        quantity: 0
+        stackable: 0
+        titleOfInformation: 
+        informationLink: 
+        imageLink: 
+    numberGoal:
+      targetNumber: 0
+      currentNumber: 0
+      correspondingCount: 0
+    requestGoal:
+      isRequestFromNPCGained: 0
+      isItemReceivedOfNpc: 0
+      requestGoalID: 
+      receiver: 
+      itemGivers: []
+      msgRequest: 
+      msgOfGiver: 
+    showPhotoAlbumGoal:
+      giverOfInfo: 
+      items: []
+    searchGoal:
+      npcToReceived: 
+      itemToFind:
+        itemName: 
+        quantity: 0
+        stackable: 0
+        titleOfInformation: 
+        informationLink: 
+        imageLink: 
+    questType: 0
 --- !u!1 &2726822129759164345
 GameObject:
   m_ObjectHideFlags: 0

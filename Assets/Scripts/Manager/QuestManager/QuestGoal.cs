@@ -49,21 +49,27 @@ public class DeliveryGoal : QuestGoal
     public string giverName;
     public string receiverName;
     public bool itemReceivedFromGiver;
+
+    public string informationLink;
+    public string informationLinkWhenInfoHasBeenSeen;
     public Item item;
 
-    public DeliveryGoal(string giverName, string receiverName,  string deliveryMessage, Item item)
+    public DeliveryGoal(string giverName, string receiverName,  string deliveryMessage, 
+        string informationLink, string informationLinkWhenInfoHasBeenSeen, Item item)
     {
         this.deliverGoalId = Guid.NewGuid().ToString();
         this.giverName = giverName;
         this.receiverName = receiverName;
         this.deliveryMessage = deliveryMessage;
+        this.informationLink = informationLink;
+        this.informationLinkWhenInfoHasBeenSeen = informationLinkWhenInfoHasBeenSeen;
         this.item = item;
     }
 
     public DeliveryGoal Copy()
     {
         DeliveryGoal deliveryGoalCopy =  new DeliveryGoal(this.giverName, this.receiverName, 
-            this.deliveryMessage, 
+            this.deliveryMessage, this.informationLink, this.informationLinkWhenInfoHasBeenSeen,
             this.item.CopyItem());
 
         deliveryGoalCopy.itemReceivedFromGiver = this.itemReceivedFromGiver;
@@ -78,7 +84,7 @@ public class NumberGoal
 {
     public int targetNumber;
     public int currentNumber;
-    public enum CORRESPONDING_OBJECT_TO_COUNT { TALK_NPC, READING }
+    public enum CORRESPONDING_OBJECT_TO_COUNT { TALK_NPC, READING, FINDING }
     public CORRESPONDING_OBJECT_TO_COUNT correspondingCount;
     
     public NumberGoal( int targetNumber, CORRESPONDING_OBJECT_TO_COUNT count)
@@ -152,6 +158,30 @@ public class ShowPhotoAlbumGoal
     }
 }
 
+[System.Serializable] 
+public class SearchGoal
+{
+    public string npcToReceived;
+    public Item itemToFind;
+    public string sceneToSpawn;
+    public string locationToSpawn;
+
+    public SearchGoal(string npcToReceived, string sceneToSpawn, string locationToSpawn, Item itemToFind)
+    {
+        this.npcToReceived = npcToReceived;
+        this.itemToFind = itemToFind;
+        this.sceneToSpawn = sceneToSpawn;
+        this.locationToSpawn = locationToSpawn;
+    }
+
+    public SearchGoal Copy()
+    {
+        SearchGoal copy = new SearchGoal(this.npcToReceived, this.sceneToSpawn, this.locationToSpawn, this.itemToFind.CopyItem());
+
+        return copy;
+    }
+}
+
 [System.Serializable]
 public class ItemGiver {
 
@@ -166,6 +196,7 @@ public class ItemGiver {
         this.isItemsGiven = false;
     }
 }
+
 //[System.Serializable]
 //public class RequestGoal
 //{

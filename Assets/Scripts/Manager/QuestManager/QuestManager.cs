@@ -75,6 +75,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             this.SetupScriptsForDeliveryQuestToNPCs();
             this.SetupScriptsForRequestQuest();
             this.SetupShowPhotoAlbumQuest();
+            this.SetupSearchQuest();
             this.SetupAllNotes();
         }
     }
@@ -385,6 +386,16 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                     npc.GetComponent<DialogueTrigger>().showAlbumQuest = quest;
                 }
             }
+            else if (quest.questType == Quest.QUEST_TYPE.DELIVERY)
+            {
+                print(quest.deliveryGoal.receiverName);
+                GameObject receiver = GameObject.Find(quest.deliveryGoal.receiverName);
+
+                if (receiver != null)
+                {
+                    receiver.GetComponent<DeliveryGoalReceiver>().quest = quest.CopyQuestDeliveryGoal();
+                }
+            }
         }
     }
 
@@ -478,12 +489,39 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
                 if (giver != null)
                 {
+                    print(giver.name);
                     giver.GetComponent<DeliveryGoalGiver>().quest = quest.CopyQuestDeliveryGoal();
                 }
 
                 if (receiver != null)
                 {
+                    print(receiver.name);
                     receiver.GetComponent<DeliveryGoalReceiver>().quest = quest.CopyQuestDeliveryGoal();
+                }
+            }
+        }
+    }
+
+    public void SetupSearchQuest()
+    {
+        foreach (Quest quest in this.playerData.currentQuests)
+        {
+            if (quest.questType == Quest.QUEST_TYPE.SEARCH)
+            {
+                GameObject receiverOfFoundItem = GameObject.Find(quest.searchGoal.npcToReceived);
+
+                if (receiverOfFoundItem != null)
+                {
+                    receiverOfFoundItem.GetComponent<SearchQuest>().searchQuest = quest.CopySearchQuest();
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName(quest.searchGoal.sceneToSpawn))
+                {
+                    Transform positionToSpawn = GameObject.Find(quest.searchGoal.locationToSpawn).transform;
+                    GameObject itemToFind = Instantiate(Resources.Load<GameObject>("Prefabs/Item Prefab"));
+                    itemToFind.GetComponent<ItemMono>().item = quest.searchGoal.itemToFind.CopyItem();
+                    itemToFind.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Collectibles/Items/" + quest.searchGoal.itemToFind.itemName);
+                    itemToFind.transform.position = positionToSpawn.position;
                 }
             }
         }
@@ -491,6 +529,8 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
     public void FindTalkWithShowPhotoAlbum(string questID)
     {
+        print("IT IS GOING HERE IN SHOW PHOTO ALBUM");
+
         foreach (Quest quest in this.playerData.currentQuests)
         {
             if (quest.questID == questID)
@@ -584,10 +624,6 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             {
                 this.OpenPlainAlertBoxAndAlertBox("Item succesfully given to " + quest.deliveryGoal.receiverName);
 
-                DataPersistenceManager.instance.playerData.dunongPoints += quest.dunongPointsRewards;
-
-                UpdateDPValueUI?.Invoke(); // Update UI.
-
                 SoundManager.instance?.PlaySound("Quest Notification");
 
                 // Find and Copy the Delivery Quest
@@ -596,18 +632,27 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
                 questFound.isCompleted = true;
 
-                if (this.CheckIfPreQuestsDone())
-                    this.playerData.completedQuests.Add(questFound);
-
-                this.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
-                this.playerData.quests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
-
                 if (this.CheckIfPreQuestsDone() == true)
                 {
                     DataPersistenceManager.instance.playerData.isPreQuestIntroductionDone = true;
                     this.GetListOfQuests();
                     this.SetupScriptsForDeliveryQuestToNPCs();
                 }
+
+                if (this.CheckIfPreQuestsDone())
+                {
+                    this.playerData.notesInfos.Add(questFound);
+                    this.playerData.completedQuests.Add(questFound);
+
+                    this.SetupAllNotes();
+
+                    DataPersistenceManager.instance.playerData.dunongPoints += quest.dunongPointsRewards;
+
+                    UpdateDPValueUI?.Invoke(); // Update UI.
+                }
+                this.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
+                this.playerData.quests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
+
                 this.GetListOfQuests();
 
                 DataPersistenceManager.instance?.SaveGame();
@@ -637,6 +682,8 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 SoundManager.instance?.PlaySound("Quest Notification");
 
                 Quest questFoundInCurrentQuest = this.playerData.currentQuests.Find(questToFind => questToFind.questID == quest.questID).CopyTalkQuestGoal();
+
+                this.playerData.notesInfos.Add(questFoundInCurrentQuest);
 
                 this.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID.ToLower() == questFoundInCurrentQuest.questID.ToLower());
                 this.playerData.quests.RemoveAll(questToRemove => questToRemove.questID.ToLower() == questFoundInCurrentQuest.questID.ToLower());

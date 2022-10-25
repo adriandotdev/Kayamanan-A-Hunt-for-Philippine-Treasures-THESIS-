@@ -4420,7 +4420,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     quests:
-    - questID: 0edcdd70-f9ab-4ace-b849-862a5ecee182
+    - questID: 4ab09102-d9b8-4e1b-ba16-4af0aed6bc7c
       isCompleted: 0
       isClaimed: 0
       title: A Day with Friendliness
@@ -4447,7 +4447,7 @@ MonoBehaviour:
           informationLink: 
           imageLink: 
       numberGoal:
-        targetNumber: 3
+        targetNumber: 10
         currentNumber: 0
         correspondingCount: 0
       requestGoal:
@@ -4462,7 +4462,7 @@ MonoBehaviour:
         giverOfInfo: 
         items: []
       questType: 2
-    - questID: 31723277-2eb2-4c96-a8af-4b58df20f32e
+    - questID: 0115c146-cf93-4a0d-a9b1-c4eeb6e41f42
       isCompleted: 0
       isClaimed: 0
       title: Beautiful Places
@@ -4509,8 +4509,14 @@ MonoBehaviour:
           titleOfInformation: Pagudpud Beach
           informationLink: Delivery Ink Informations/Pagudpud Beach
           imageLink: PCP/Pagudpud Beach
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          titleOfInformation: Hundred Islands
+          informationLink: Delivery Ink Informations/Hundred Islands
+          imageLink: PCP/Hundred Islands
       questType: 4
-    - questID: b522a6ad-c06b-4fe6-aad5-fcaa48357bb0
+    - questID: 434ca87d-da13-4cf9-95cf-3befd941781f
       isCompleted: 0
       isClaimed: 0
       title: Gift of the North
@@ -4558,12 +4564,12 @@ MonoBehaviour:
           informationLink: Delivery Ink Informations/Malacanang of the North
           imageLink: PCP/Malacanang of the North
       questType: 4
-    - questID: 02149599-669a-4095-b7de-ea835bf8ae9c
+    - questID: ce898c41-6bf5-47f8-b583-7007357ecf71
       isCompleted: 0
       isClaimed: 0
       title: A Forgotten Costume
-      description: Help Joseph to get his salakot for his costume to his father Gregorio
-        Zaide.
+      description: Find Joseph at school and help him to get his salakot for his
+        costume to his father Gregorio Zaide.
       note: I can go to Joseph to know about Diego Silang.
       dunongPointsRewards: 25
       region: Ilocos Region
@@ -4592,7 +4598,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: f15601ed-c4ce-4d31-95cc-7a5faa53a9d8
+        requestGoalID: 1087fc4c-5679-414c-96cd-7914cd733aee
         receiver: Joseph
         itemGivers:
         - giverName: Gregorio Zaide
@@ -4613,7 +4619,7 @@ MonoBehaviour:
         giverOfInfo: 
         items: []
       questType: 3
-    - questID: b8eaa590-eb39-4e1a-b7e9-d66a9a1ecebb
+    - questID: ef9b8ca3-4320-461b-a589-ccb8b4a82004
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest
@@ -4647,17 +4653,11 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: 287dd158-27bf-4752-bf57-7ec190685916
+        requestGoalID: 768ed4a7-3b7c-404e-8eb0-968ed1e2de3a
         receiver: Rolando Laudico
         itemGivers:
         - giverName: Store in Market
           itemsToGive:
-          - itemName: Puto
-            quantity: 1
-            stackable: 0
-            titleOfInformation: Puto Festival
-            informationLink: Delivery Ink Informations/Puto Festival
-            imageLink: PCP/Puto Festival
           - itemName: Empanada
             quantity: 1
             stackable: 0
@@ -4677,7 +4677,7 @@ MonoBehaviour:
         giverOfInfo: 
         items: []
       questType: 3
-    - questID: 6d481d9a-6c7d-44ea-b74e-d1381c43e8df
+    - questID: 50324e92-cdee-43b3-965d-f461b25c12b4
       isCompleted: 0
       isClaimed: 0
       title: Ivan Henares' Lunch
@@ -4710,7 +4710,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: ae638cde-46b7-4d2b-b4a7-22afb66e9073
+        requestGoalID: ab4ff6c6-c2df-4d13-961e-97c34bcbadd7
         receiver: Ivan Henares
         itemGivers:
         - giverName: Rolando Laudico
@@ -4735,7 +4735,7 @@ MonoBehaviour:
         giverOfInfo: 
         items: []
       questType: 3
-    - questID: 78e10602-a959-49b3-87bd-9d0aa80f0b0d
+    - questID: 37c1906f-e3a6-493f-8a36-c3ca8cd34889
       isCompleted: 0
       isClaimed: 0
       title: Ilocos' Notable Heroes!
@@ -4777,7 +4777,7 @@ MonoBehaviour:
         giverOfInfo: 
         items: []
       questType: 0
-    - questID: 12caeafb-2689-4e4e-942d-1c53ba815dc1
+    - questID: edf96258-0549-48cf-bba9-40041d67de3e
       isCompleted: 0
       isClaimed: 0
       title: Cagayan Valley Quest
@@ -4825,7 +4825,7 @@ MonoBehaviour:
           informationLink: Delivery Ink Informations/Pagudpud Beach
           imageLink: PCP/Pagudpud Beach
       questType: 4
-    - questID: 63527875-06d3-47a9-9dd9-6dbf224095c1
+    - questID: 3cfe0a3b-db09-4a50-a967-e1bdf06e21c6
       isCompleted: 0
       isClaimed: 0
       title: Cagayan Valley Quest
@@ -4873,7 +4873,7 @@ MonoBehaviour:
           informationLink: Delivery Ink Informations/Malacanang of the North
           imageLink: PCP/Malacanang of the North
       questType: 4
-    - questID: 2bd9a029-bb80-402b-9f7b-0dab4294bb11
+    - questID: b83f558b-9c70-4b8b-9eb8-38af7b9c7504
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest
@@ -4907,7 +4907,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: db99ae5f-dcde-46c3-b072-6d12615910be
+        requestGoalID: d1a0a179-1cd6-472c-a835-5753233acdb0
         receiver: Rolando Laudico
         itemGivers:
         - giverName: Store in Market
@@ -4937,15 +4937,15 @@ MonoBehaviour:
         giverOfInfo: 
         items: []
       questType: 3
-    - questID: 5c9fc1a1-24ef-4bf9-8bae-be2e9a58d9b7
+    - questID: b01f1b30-7436-43fc-a601-f73e92beebc2
       isCompleted: 0
       isClaimed: 0
       title: CAR Quest
       description: Talk to Zardo Domenios
       note: CAR
       dunongPointsRewards: 25
-      region: Cagayan Valley
-      regionNum: 2
+      region: Cordillera Administrative Region
+      regionNum: 3
       talkGoal:
         isFinished: 0
         npcName: 
@@ -4985,15 +4985,15 @@ MonoBehaviour:
           informationLink: Delivery Ink Informations/Pagudpud Beach
           imageLink: PCP/Pagudpud Beach
       questType: 4
-    - questID: 7bb4e33c-b667-464b-901c-ccd93efc1c09
+    - questID: 98437dec-fb08-409a-a928-9cddbeb29512
       isCompleted: 0
       isClaimed: 0
       title: CAR Quest
       description: Talk to Mikaela Fudolig
       note: CAR
       dunongPointsRewards: 25
-      region: Cagayan Valley
-      regionNum: 2
+      region: Cordillera Administrative Region
+      regionNum: 3
       talkGoal:
         isFinished: 0
         npcName: 
@@ -5033,7 +5033,7 @@ MonoBehaviour:
           informationLink: Delivery Ink Informations/Malacanang of the North
           imageLink: PCP/Malacanang of the North
       questType: 4
-    - questID: 63ee8b38-4fb1-4a14-ad3c-c71c5b4ca02c
+    - questID: ed0cda19-6750-4bda-9af0-a94a666642c2
       isCompleted: 0
       isClaimed: 0
       title: CAR QUEST
@@ -5041,8 +5041,8 @@ MonoBehaviour:
         it to a store that has a color blue roof nearby.
       note: CAR QUEST
       dunongPointsRewards: 25
-      region: Cagayan Valley
-      regionNum: 2
+      region: Cordillera Administrative Region
+      regionNum: 3
       talkGoal:
         isFinished: 0
         npcName: 
@@ -5067,7 +5067,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: 9743eb3a-0fde-48c7-8537-2b8f19862671
+        requestGoalID: 9fc5d14f-b5dc-4862-a56b-f31e70a8cfbe
         receiver: Rolando Laudico
         itemGivers:
         - giverName: Store in Market
@@ -5097,6 +5097,90 @@ MonoBehaviour:
         giverOfInfo: 
         items: []
       questType: 3
+    - questID: 4d921c72-b5c4-462e-a81c-39196ee61f23
+      isCompleted: 0
+      isClaimed: 0
+      title: Central Luzon Quest
+      description: Talk to Mang Rolando
+      note: Go to Mang Rolando and know for National Heroes.
+      dunongPointsRewards: 15
+      region: Central Luzon
+      regionNum: 4
+      talkGoal:
+        isFinished: 0
+        npcName: Rolando Laudico
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      questType: 0
+    - questID: 8b425882-b2a2-45c9-97c3-aa847026348a
+      isCompleted: 0
+      isClaimed: 0
+      title: CALABARZON
+      description: Talk to Ivan Henares
+      note: Go to Ivan Henares and know for National Heroes.
+      dunongPointsRewards: 15
+      region: CALABARZON
+      regionNum: 5
+      talkGoal:
+        isFinished: 0
+        npcName: Ivan Henares
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      questType: 0
     currentQuests: []
     completedQuests: []
     npcInfos:
