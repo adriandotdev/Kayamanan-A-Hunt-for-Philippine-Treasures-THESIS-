@@ -1,0 +1,618 @@
+fileFormatVersion: 2
+guid: 61475091619f2024497b31487ef56b97
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: School Street Sign Right
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 355
+        width: 87
+        height: 158
+      alignment: 9
+      pivot: {x: 0.15, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f6271ddc99ec244a5d328f917fe143
+      internalID: -80567578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Left
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 359
+        width: 87
+        height: 158
+      alignment: 9
+      pivot: {x: 0.75, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c914ecd4170dfe741964cfb2049cadde
+      internalID: 67347336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Church Left
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 358
+        width: 87
+        height: 158
+      alignment: 9
+      pivot: {x: 0.77, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9937b68fe57ff945aefc53e344c3efc
+      internalID: -1950606788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum Right
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 363
+        width: 87
+        height: 158
+      alignment: 9
+      pivot: {x: 0.21, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ddfd1dee7dbb44c909379aa4be9f66
+      internalID: -834536965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum Left
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 364
+        width: 87
+        height: 158
+      alignment: 9
+      pivot: {x: 0.75, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2417161d601334887c8d11f5101206
+      internalID: 148517577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Left
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 358
+        width: 87
+        height: 158
+      alignment: 9
+      pivot: {x: 0.74, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca6393a9f2e4d2439a51b950756f7ab
+      internalID: -852462156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sitio Right
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 355
+        width: 87
+        height: 158
+      alignment: 9
+      pivot: {x: 0.2, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e965b0bf763e145a067c5bf95097db
+      internalID: 943814291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Booths and Street signs_7
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 169
+        width: 87
+        height: 158
+      alignment: 9
+      pivot: {x: 0.2, y: 0.09}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfa50f9a41901a44a76ac3183ad9edb
+      internalID: -1790526364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lapu-Lapu Statue
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 173
+        width: 47
+        height: 84
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a3427205e881544a9298d7ff00208c
+      internalID: -1322249629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Visayas Booth
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 166
+        width: 83
+        height: 88
+      alignment: 9
+      pivot: {x: 0.5, y: 0.14}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e59a54167a0eae4192b66699fe31e04
+      internalID: -1446006489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Statue
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 173
+        width: 63
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67e5e8cb8da7124abed8397d9e5edcb
+      internalID: -1313556614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luzon Booth
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 162
+        width: 83
+        height: 88
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ebf49d5e69cd64d83327ef617404bf
+      internalID: -333074678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Booths and Street signs_12
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 229
+        width: 47
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c6373b89dbb7746a7d748950bf3453
+      internalID: -1928218276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Booths and Street signs_13
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 186
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999a52e843d2da845b29c65660e4ce5d
+      internalID: -1467835154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Booths and Street signs_14
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 176
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98326e28eddac047abd97da5a1bbe67
+      internalID: -1916030638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Booths and Street signs_15
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 188
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3943d6d60b7943e44b1ca0fa0adca34e
+      internalID: 1649889219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Booths and Street signs_16
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 198
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7118a474cb42ead4c9fb69c56e57b309
+      internalID: -407471955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Booths and Street signs_17
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 186
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affadcdffc4df6d4b9626418e083ffa6
+      internalID: -1380690092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Frame 1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 29
+        width: 137
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cec07c56a88a0a4cb336418f074fed6
+      internalID: -664225267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Frame 2
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 36
+        width: 137
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238e2365d696e5e4ca04364e536e5a41
+      internalID: -2007248354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Frame 3
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 36
+        width: 137
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4d68f85ec01bd44922a0c299724b81
+      internalID: -1878032845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Frame 4
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 42
+        width: 137
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2f46440377c5c419a87a54231e8679
+      internalID: 824928542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      School Booths and Street signs_12: -1928218276
+      Luzon Booth: -333074678
+      Lapu-Lapu Statue: -1322249629
+      Market Left: -852462156
+      Visayas Booth: -1446006489
+      School Left: 67347336
+      Event Frame 2: -2007248354
+      School Booths and Street signs_7: -1790526364
+      Event Frame 3: -1878032845
+      School Booths and Street signs_16: -407471955
+      School Booths and Street signs_13: -1467835154
+      Church Left: -1950606788
+      Sitio Right: 943814291
+      Rizal Statue: -1313556614
+      Museum Right: -834536965
+      School Street Sign Right: -80567578
+      Museum Left: 148517577
+      Event Frame 4: 824928542
+      Event Frame 1: -664225267
+      School Booths and Street signs_17: -1380690092
+      School Booths and Street signs_14: -1916030638
+      School Booths and Street signs_15: 1649889219
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -73,7 +73,9 @@ public class AssessmentManager : MainGame, IDataPersistence
                 this.SetChoices();
                 this.AddEvents();
             }
-            catch (System.Exception e) {}
+            catch (System.Exception e) {
+                print(e.Message);
+            }
         }
     }
 
@@ -87,9 +89,10 @@ public class AssessmentManager : MainGame, IDataPersistence
     public void SetNextQuestion()
     {
         this.currentIndex += 1;
+        const int NUMBER_OF_QUESTIONS = 10;
 
         // Check if there are still questions to load.
-        if (this.currentIndex < this.shuffled.Length)
+        if (this.currentIndex < NUMBER_OF_QUESTIONS)
         {
             this.questionLabel.text = ((Assessment)this.shuffled[this.currentIndex]).question.ToString();
             this.SetChoices();
@@ -102,7 +105,7 @@ public class AssessmentManager : MainGame, IDataPersistence
 
             int noOfCorrectAns = this.CountCorrectAnswers();
 
-            scoreLabel.text = noOfCorrectAns + "/" + this.shuffled.Length;
+            scoreLabel.text = noOfCorrectAns + "/" + NUMBER_OF_QUESTIONS;
 
             this.SetRegionHighestScore(noOfCorrectAns);
 

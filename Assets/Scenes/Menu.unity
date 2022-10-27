@@ -2151,6 +2151,7 @@ MonoBehaviour:
       title: A Day with Friendliness
       description: Meet all the villagers.
       note: 
+      hint: 
       dunongPointsRewards: 0
       region: PRE-QUEST
       regionNum: 0
@@ -2164,6 +2165,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2186,6 +2190,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 2
     - questID: 6035b6bd-e032-443b-b611-52f14f71aac8
       isCompleted: 0
@@ -2193,6 +2208,7 @@ MonoBehaviour:
       title: A Simple Thanks
       description: Get the Mango from Mang Esterlito and give it to Aling Nena.
       note: 
+      hint: 
       dunongPointsRewards: 0
       region: PRE-QUEST
       regionNum: 0
@@ -2206,6 +2222,9 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Nena
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 1
@@ -2228,6 +2247,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 1
     - questID: 66b458a4-0cf3-4c17-b3a6-1dfaf0858b06
       isCompleted: 0
@@ -2235,6 +2265,7 @@ MonoBehaviour:
       title: Ilocos Region
       description: TEST FOR REQUEST GOAL
       note: 
+      hint: 
       dunongPointsRewards: 15
       region: Ilocos Region
       regionNum: 1
@@ -2248,6 +2279,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2270,6 +2304,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 3
     - questID: 575d2cb9-f2a5-49a9-9870-e636701b8078
       isCompleted: 0
@@ -2278,6 +2323,7 @@ MonoBehaviour:
       description: Since it is your first quests, let's learn from the other people.
         Talk to someone who is good at National Heroes.
       note: 
+      hint: 
       dunongPointsRewards: 15
       region: Ilocos Region
       regionNum: 1
@@ -2291,6 +2337,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2313,6 +2362,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: c420ce3a-7b4a-46bb-99ab-dca819be6870
       isCompleted: 0
@@ -2320,6 +2380,7 @@ MonoBehaviour:
       title: Ilocos Region Quest!
       description: Mang Rolando has a request about his recipe for tomorrow.
       note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -2333,6 +2394,9 @@ MonoBehaviour:
         giverName: Palengke 1
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 1
@@ -2355,6 +2419,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 1
     - questID: 7e3712ce-184c-49d4-aedf-30333b4e4ff1
       isCompleted: 0
@@ -2362,6 +2437,7 @@ MonoBehaviour:
       title: Ilocos Region Quest!
       description: Get the Mango from Aling Julia and give it to Aling Marites
       note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -2375,6 +2451,9 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 2
@@ -2397,6 +2476,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 1
     - questID: d9960903-64b4-47e3-a980-5a0cccd08e91
       isCompleted: 0
@@ -2404,6 +2494,7 @@ MonoBehaviour:
       title: Cagayan Valley Quest!
       description: Talk to Aling Nena
       note: 
+      hint: 
       dunongPointsRewards: 10
       region: Cagayan Valley
       regionNum: 2
@@ -2417,6 +2508,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2439,6 +2533,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 377285a3-ad1d-4f25-9ca9-645c2ad9c74c
       isCompleted: 0
@@ -2446,6 +2551,7 @@ MonoBehaviour:
       title: CAR Quest!
       description: Get the Mango from Aling Marites and give it to Mang Esterlito
       note: 
+      hint: 
       dunongPointsRewards: 25
       region: Cordillera Administrative Region
       regionNum: 3
@@ -2459,6 +2565,9 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 1
@@ -2481,6 +2590,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 1
     - questID: 9b503610-22c8-48d6-ba16-adf2056fd499
       isCompleted: 0
@@ -2488,6 +2608,7 @@ MonoBehaviour:
       title: Central Luzon Quest!
       description: Help Aling Julia to give Aling Marites a Mango
       note: 
+      hint: 
       dunongPointsRewards: 15
       region: Central Luzon
       regionNum: 4
@@ -2501,6 +2622,9 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 1
@@ -2523,6 +2647,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 1
     - questID: 81b9a1e8-81b0-4735-b1c3-d29dd3aa741a
       isCompleted: 0
@@ -2530,6 +2665,7 @@ MonoBehaviour:
       title: NCR Quest!
       description: Help Mang Esterlito to give Aling Marites a Mango
       note: 
+      hint: 
       dunongPointsRewards: 5
       region: National Capital Region
       regionNum: 5
@@ -2543,6 +2679,9 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 3
@@ -2565,6 +2704,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 1
     - questID: bc0ead17-c9fa-4180-b072-55721f2de61a
       isCompleted: 0
@@ -2572,6 +2722,7 @@ MonoBehaviour:
       title: CALABARZON Quest!
       description: Talk to Aling Julia
       note: 
+      hint: 
       dunongPointsRewards: 35
       region: CALABARZON
       regionNum: 6
@@ -2585,6 +2736,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2607,6 +2761,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: e25cda7f-5802-44c2-bef4-aa46cd251cfd
       isCompleted: 0
@@ -2614,6 +2779,7 @@ MonoBehaviour:
       title: MIMAROPA Quest!
       description: Talk to Aling Marites
       note: 
+      hint: 
       dunongPointsRewards: 15
       region: MIMAROPA
       regionNum: 7
@@ -2627,6 +2793,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2649,6 +2818,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 7ec4b333-4f27-4eac-84bb-a3092b3ea6c1
       isCompleted: 0
@@ -2656,6 +2836,7 @@ MonoBehaviour:
       title: Bicol Region Quest!
       description: Help Aling Julia to give Aling Marites a Banana
       note: 
+      hint: 
       dunongPointsRewards: 5
       region: Bicol Region
       regionNum: 8
@@ -2669,6 +2850,9 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Banana
           quantity: 2
@@ -2691,6 +2875,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 1
     - questID: 42d8261e-a297-469e-995c-09b5dd4621f4
       isCompleted: 0
@@ -2698,6 +2893,7 @@ MonoBehaviour:
       title: Western Visayas Quest!
       description: Talk to Aling Julia
       note: 
+      hint: 
       dunongPointsRewards: 35
       region: Western Visayas
       regionNum: 9
@@ -2711,6 +2907,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2733,6 +2932,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 822f1c67-ad1b-4c85-aca2-92b804ff53d6
       isCompleted: 0
@@ -2740,6 +2950,7 @@ MonoBehaviour:
       title: Central Visayas Quest!
       description: Talk to Aling Marites
       note: 
+      hint: 
       dunongPointsRewards: 25
       region: Western Visayas
       regionNum: 10
@@ -2753,6 +2964,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2775,6 +2989,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: ba75a1fb-a8ef-4be6-bc72-468bdff392a1
       isCompleted: 0
@@ -2782,6 +3007,7 @@ MonoBehaviour:
       title: Eastern Visayas Quest!
       description: Talk to Aling Marites
       note: 
+      hint: 
       dunongPointsRewards: 75
       region: Western Visayas
       regionNum: 11
@@ -2795,6 +3021,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2817,6 +3046,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 56d5d81a-234b-436b-b390-50250992a757
       isCompleted: 0
@@ -2824,6 +3064,7 @@ MonoBehaviour:
       title: Zamboanga Peninsula Quest!
       description: Talk to Aling Julia
       note: 
+      hint: 
       dunongPointsRewards: 35
       region: Zamboanga Peninsula
       regionNum: 12
@@ -2837,6 +3078,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2859,6 +3103,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 9d6302ee-74c5-4f39-901a-ecccaeb05fcd
       isCompleted: 0
@@ -2866,6 +3121,7 @@ MonoBehaviour:
       title: Northern Mindanao Quest!
       description: Talk to Aling Marites
       note: 
+      hint: 
       dunongPointsRewards: 10
       region: Northern Mindanao
       regionNum: 13
@@ -2879,6 +3135,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2901,6 +3160,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 15c2b0dd-1224-4023-902c-4e6713de219c
       isCompleted: 0
@@ -2908,6 +3178,7 @@ MonoBehaviour:
       title: Davao Region Quest!
       description: Talk to Aling Nena
       note: 
+      hint: 
       dunongPointsRewards: 35
       region: Davao Region
       regionNum: 14
@@ -2921,6 +3192,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2943,6 +3217,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: d521c85c-0f5c-4d63-bff0-b286f6e8b2f3
       isCompleted: 0
@@ -2950,6 +3235,7 @@ MonoBehaviour:
       title: SOCCSKSARGEN Quest!
       description: Talk to Mang Esterlito
       note: 
+      hint: 
       dunongPointsRewards: 15
       region: SOCCSKSARGEN
       regionNum: 15
@@ -2963,6 +3249,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2985,6 +3274,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 0293632c-c894-47b8-b999-a2fe18b82f38
       isCompleted: 0
@@ -2992,6 +3292,7 @@ MonoBehaviour:
       title: Caraga Region Quest!
       description: Talk to Aling Marites
       note: 
+      hint: 
       dunongPointsRewards: 45
       region: Caraga Region
       regionNum: 16
@@ -3005,6 +3306,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -3027,6 +3331,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 7cb98c60-e4a1-4251-b227-53ccacdd79e2
       isCompleted: 0
@@ -3034,6 +3349,7 @@ MonoBehaviour:
       title: BARMM Quest!
       description: Talk to Aling Julia
       note: 
+      hint: 
       dunongPointsRewards: 325
       region: BARMM
       regionNum: 17
@@ -3047,6 +3363,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -3069,6 +3388,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -4137,10 +4467,10 @@ MonoBehaviour:
         categoryName: National Heroes
         regionName: Ilocos Region
         majorIsland: Luzon
-      - name: Cape Bojeador
-        imagePath: Collectibles/Tourist Attractions/Cape Bojeador
+      - name: Bangus Festival
+        imagePath: Collectibles/Festivals/Bangus Festival
         isCollected: 0
-        categoryName: Tourist Attractions
+        categoryName: National Festivals
         regionName: Ilocos Region
         majorIsland: Luzon
       - name: Ivatan Houses
@@ -4155,12 +4485,6 @@ MonoBehaviour:
         categoryName: National Festivals
         regionName: Cordillera Administrative Region
         majorIsland: Luzon
-      - name: Diplomat Hotel
-        imagePath: Collectibles/Tourist Attractions/Diplomat Hotel
-        isCollected: 0
-        categoryName: Tourist Attractions
-        regionName: Cordillera Administrative Region
-        majorIsland: Luzon
       - name: Marcelo H. Del Pilar
         imagePath: Collectibles/Heroes/Marcelo H. Del Pilar
         isCollected: 0
@@ -4173,14 +4497,14 @@ MonoBehaviour:
         categoryName: National Heroes
         regionName: Central Luzon
         majorIsland: Luzon
-      - name: Carabao Festival
-        imagePath: Collectibles/Festivals/Carabao Festival
+      - name: Hot Air Balloon Festival
+        imagePath: Collectibles/Festivals/Hot Air Balloon Festival
         isCollected: 0
         categoryName: National Festivals
         regionName: Central Luzon
         majorIsland: Luzon
-      - name: Hot Air Balloon Festival
-        imagePath: Collectibles/Festivals/Hot Air Balloon Festival
+      - name: Kneeling Carabao Festival
+        imagePath: Collectibles/Festivals/Kneeling Carabao Festival
         isCollected: 0
         categoryName: National Festivals
         regionName: Central Luzon
@@ -4191,12 +4515,60 @@ MonoBehaviour:
         categoryName: National Festivals
         regionName: CALABARZON
         majorIsland: Luzon
-      - name: Moriones Festival
-        imagePath: National FestivalsMoriones Festival
+      - name: Jose Rizal
+        imagePath: Collectibles/Heroes/Jose Rizal
         isCollected: 0
         categoryName: National Heroes
+        regionName: CALABARZON
+        majorIsland: Luzon
+      - name: Moriones Festival
+        imagePath: Collectibles/Festivals/Moriones Festival
+        isCollected: 0
+        categoryName: National Festivals
         regionName: MIMAROPA
         majorIsland: Luzon
+      - name: Antonio Luna
+        imagePath: Collectibles/Heroes/Antonio Luna
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: National Capital Region
+        majorIsland: Luzon
+      - name: Emilio Jacinto
+        imagePath: Collectibles/Heroes/Emilio Jacinto
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: National Capital Region
+        majorIsland: Luzon
+      - name: Gregoria De Jesus
+        imagePath: Collectibles/Heroes/Gregoria De Jesus
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: National Capital Region
+        majorIsland: Luzon
+      - name: Chinese New Year
+        imagePath: Collectibles/Festivals/Chinese New Year
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: National Capital Region
+        majorIsland: Luzon
+      - name: Graciano Lopez Jaena
+        imagePath: Collectibles/Heroes/Graciano Lopez Jaena
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Western Visayas
+        majorIsland: VISAYAS
+      - name: Maskara Festival
+        imagePath: Collectibles/Festivals/Maskara Festival
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: Western Visayas
+        majorIsland: VISAYAS
+      - name: Lapu-Lapu
+        imagePath: Collectibles/Heroes/Lapu-Lapu
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Central Visayas
+        majorIsland: VISAYAS
     regionsData:
     - regionNumber: 1
       isOpen: 1
@@ -4420,12 +4792,13 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     quests:
-    - questID: 4ab09102-d9b8-4e1b-ba16-4af0aed6bc7c
+    - questID: fd954871-7c38-4935-ac29-dc3185725e39
       isCompleted: 0
       isClaimed: 0
       title: A Day with Friendliness
       description: Meet all the villagers.
       note: 
+      hint: 
       dunongPointsRewards: 0
       region: PRE-QUEST
       regionNum: 0
@@ -4439,6 +4812,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -4447,7 +4823,7 @@ MonoBehaviour:
           informationLink: 
           imageLink: 
       numberGoal:
-        targetNumber: 10
+        targetNumber: 3
         currentNumber: 0
         correspondingCount: 0
       requestGoal:
@@ -4461,13 +4837,91 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 2
-    - questID: 0115c146-cf93-4a0d-a9b1-c4eeb6e41f42
+    - questID: 8b2910da-1a27-4032-b7f4-67e6e51197b6
       isCompleted: 0
       isClaimed: 0
-      title: Beautiful Places
-      description: Talk to Zardo Domenios
-      note: I can reach Zardo Domenios about Pagudpud Beach.
+      title: Preparation for Lunch!
+      description: Buy a malunggay and sayote from the market nearby.
+      note: 
+      hint: 
+      dunongPointsRewards: 25
+      region: PRE-QUEST
+      regionNum: 0
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        item:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: c2f70e2a-fa5b-4eda-97d7-991a021347f5
+        receiver: Aling Nena
+        itemGivers:
+        - giverName: Store in Market
+          itemsToGive:
+          - itemName: Malunggay
+            quantity: 1
+            stackable: 0
+            titleOfInformation: Malunggay
+            informationLink: Delivery Ink Informations/Malunggay
+            imageLink: PCP/Malunggay
+          isItemsGiven: 0
+        msgRequest: Go buy a <b>Malunggay</b> to a nearby store for our lunch later.
+        msgOfGiver: Buy a Malunggay?
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 3
+    - questID: 9a192d2b-78d9-4ce2-b78d-d445c8a455c9
+      isCompleted: 0
+      isClaimed: 0
+      title: Gift of the North
+      description: Talk to Mikaela Fudolig
+      note: I can talk to Mikaela for Malacanang of the North.
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -4481,6 +4935,72 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        item:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: Mikaela Fudolig
+        items:
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          titleOfInformation: Malacanang of the North
+          informationLink: Delivery Ink Informations/Malacanang of the North
+          imageLink: PCP/Malacanang of the North
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 4
+    - questID: 834777fb-7acb-4624-8d36-6041e40180b2
+      isCompleted: 0
+      isClaimed: 0
+      title: Beautiful Places
+      description: Talk to Zardo Domenios
+      note: I can reach Zardo Domenios about Pagudpud Beach.
+      hint: 
+      dunongPointsRewards: 25
+      region: Ilocos Region
+      regionNum: 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -4515,19 +5035,31 @@ MonoBehaviour:
           titleOfInformation: Hundred Islands
           informationLink: Delivery Ink Informations/Hundred Islands
           imageLink: PCP/Hundred Islands
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 4
-    - questID: 434ca87d-da13-4cf9-95cf-3befd941781f
+    - questID: 547d9ca4-a416-4964-a7d1-8f8fe794801e
       isCompleted: 0
       isClaimed: 0
-      title: Gift of the North
-      description: Talk to Mikaela Fudolig
-      note: I can talk to Mikaela for Malacanang of the North.
-      dunongPointsRewards: 25
+      title: Ilocos' Notable Heroes!
+      description: Talk to someone who has a background for National Heroes.
+      note: Go to Gregorio Zaide for National Heroes.
+      hint: 
+      dunongPointsRewards: 15
       region: Ilocos Region
       regionNum: 1
       talkGoal:
         isFinished: 0
-        npcName: 
+        npcName: Gregorio Zaide
       deliveryGoal:
         isFinished: 0
         deliverGoalId: 
@@ -4535,6 +5067,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -4555,134 +5090,27 @@ MonoBehaviour:
         msgRequest: 
         msgOfGiver: 
       showPhotoAlbumGoal:
-        giverOfInfo: Mikaela Fudolig
-        items:
-        - itemName: None
-          quantity: 0
-          stackable: 0
-          titleOfInformation: Malacanang of the North
-          informationLink: Delivery Ink Informations/Malacanang of the North
-          imageLink: PCP/Malacanang of the North
-      questType: 4
-    - questID: ce898c41-6bf5-47f8-b583-7007357ecf71
-      isCompleted: 0
-      isClaimed: 0
-      title: A Forgotten Costume
-      description: Find Joseph at school and help him to get his salakot for his
-        costume to his father Gregorio Zaide.
-      note: I can go to Joseph to know about Diego Silang.
-      dunongPointsRewards: 25
-      region: Ilocos Region
-      regionNum: 1
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
           itemName: 
           quantity: 0
           stackable: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 1087fc4c-5679-414c-96cd-7914cd733aee
-        receiver: Joseph
-        itemGivers:
-        - giverName: Gregorio Zaide
-          itemsToGive:
-          - itemName: Salakot
-            quantity: 1
-            stackable: 0
-            titleOfInformation: Diego Silang
-            informationLink: Delivery Ink Informations/Diego Silang
-            imageLink: PCP/Diego Silang
-          isItemsGiven: 0
-        msgRequest: Hello! I have a favor for you. Can you get the salakot from my
-          father Gregorio Zaide?
-        msgOfGiver: Hi. Thank you so much for helping me to give this to my son.
-          After you gave this, you will get an info about to the character that he
-          is role playing.
-      showPhotoAlbumGoal:
-        giverOfInfo: 
-        items: []
-      questType: 3
-    - questID: ef9b8ca3-4320-461b-a589-ccb8b4a82004
-      isCompleted: 0
-      isClaimed: 0
-      title: Ilocos Region Quest
-      description: Mang Rolando is asking to get his recipe for today. Get all of
-        it to a store that has a color blue roof nearby.
-      note: Reach Mang Rolando about the info about his recipes.
-      dunongPointsRewards: 25
-      region: Ilocos Region
-      regionNum: 1
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 768ed4a7-3b7c-404e-8eb0-968ed1e2de3a
-        receiver: Rolando Laudico
-        itemGivers:
-        - giverName: Store in Market
-          itemsToGive:
-          - itemName: Empanada
-            quantity: 1
-            stackable: 0
-            titleOfInformation: Empanada Festival
-            informationLink: Delivery Ink Informations/Empanada Festival
-            imageLink: PCP/Empanada Festival
-          - itemName: Longganisa
-            quantity: 1
-            stackable: 0
-            titleOfInformation: Longganisa Festival
-            informationLink: Delivery Ink Informations/Longganisa Festival
-            imageLink: PCP/Longganisa Festival
-          isItemsGiven: 0
-        msgRequest: Hey! Do you mind if you help me to get my recipe?
-        msgOfGiver: Are you the one that will get all the recipes of Mang Rolando?
-      showPhotoAlbumGoal:
-        giverOfInfo: 
-        items: []
-      questType: 3
-    - questID: 50324e92-cdee-43b3-965d-f461b25c12b4
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 0ff43e35-941d-4761-b9c3-0adb23915bfe
       isCompleted: 0
       isClaimed: 0
       title: Ivan Henares' Lunch
       description: Help Ivan Henares to get his lunch at the karinderya.
       note: Talk to Ivan Henares about Puto Festival.
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -4696,6 +5124,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -4710,7 +5141,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: ab4ff6c6-c2df-4d13-961e-97c34bcbadd7
+        requestGoalID: 7a578a7b-59cc-4367-bfef-046cf62ec8c3
         receiver: Ivan Henares
         itemGivers:
         - giverName: Rolando Laudico
@@ -4734,152 +5165,168 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 3
-    - questID: 37c1906f-e3a6-493f-8a36-c3ca8cd34889
-      isCompleted: 0
-      isClaimed: 0
-      title: Ilocos' Notable Heroes!
-      description: Talk to someone who has a background for National Heroes.
-      note: Go to Gregorio Zaide for National Heroes.
-      dunongPointsRewards: 15
-      region: Ilocos Region
-      regionNum: 1
-      talkGoal:
-        isFinished: 0
-        npcName: Gregorio Zaide
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      showPhotoAlbumGoal:
-        giverOfInfo: 
-        items: []
-      questType: 0
-    - questID: edf96258-0549-48cf-bba9-40041d67de3e
-      isCompleted: 0
-      isClaimed: 0
-      title: Cagayan Valley Quest
-      description: Talk to Zardo Domenios
-      note: Cagayan Valley 2
-      dunongPointsRewards: 25
-      region: Cagayan Valley
-      regionNum: 2
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      showPhotoAlbumGoal:
-        giverOfInfo: Zardo Domenios
-        items:
-        - itemName: None
-          quantity: 0
-          stackable: 0
-          titleOfInformation: Pagudpud Beach
-          informationLink: Delivery Ink Informations/Pagudpud Beach
-          imageLink: PCP/Pagudpud Beach
-      questType: 4
-    - questID: 3cfe0a3b-db09-4a50-a967-e1bdf06e21c6
-      isCompleted: 0
-      isClaimed: 0
-      title: Cagayan Valley Quest
-      description: Talk to Mikaela Fudolig
-      note: Cagayan Valley 2
-      dunongPointsRewards: 25
-      region: Cagayan Valley
-      regionNum: 2
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      showPhotoAlbumGoal:
-        giverOfInfo: Mikaela Fudolig
-        items:
-        - itemName: None
-          quantity: 0
-          stackable: 0
-          titleOfInformation: Malacanang of the North
-          informationLink: Delivery Ink Informations/Malacanang of the North
-          imageLink: PCP/Malacanang of the North
-      questType: 4
-    - questID: b83f558b-9c70-4b8b-9eb8-38af7b9c7504
+    - questID: 177b054d-4441-4ec6-bcb9-0373410bd60a
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest
       description: Mang Rolando is asking to get his recipe for today. Get all of
         it to a store that has a color blue roof nearby.
-      note: Cagayan Valley 2
+      note: Reach Mang Rolando about the info about his recipes.
+      hint: 
+      dunongPointsRewards: 25
+      region: Ilocos Region
+      regionNum: 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        item:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 955365de-fe8e-4f41-9de0-533d05828429
+        receiver: Rolando Laudico
+        itemGivers:
+        - giverName: Store in Market
+          itemsToGive:
+          - itemName: Empanada
+            quantity: 1
+            stackable: 0
+            titleOfInformation: Empanada Festival
+            informationLink: Delivery Ink Informations/Empanada Festival
+            imageLink: PCP/Empanada Festival
+          - itemName: Longganisa
+            quantity: 1
+            stackable: 0
+            titleOfInformation: Longganisa Festival
+            informationLink: Delivery Ink Informations/Longganisa Festival
+            imageLink: PCP/Longganisa Festival
+          isItemsGiven: 0
+        msgRequest: Hello, do you mind helping me to get my recipe to a market nearby?
+        msgOfGiver: Buy Empanada and Longganisa?
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 3
+    - questID: 2246a989-a7dc-46c0-958e-bf30b40a8931
+      isCompleted: 0
+      isClaimed: 0
+      title: A Forgotten Costume
+      description: Find Joseph at school and help him to get his salakot for his
+        costume to his father Gregorio Zaide.
+      note: I can go to Joseph to know about Diego Silang.
+      hint: 
+      dunongPointsRewards: 25
+      region: Ilocos Region
+      regionNum: 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        item:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: c25c8c6e-f758-40c6-88ba-9ec09a118622
+        receiver: Joseph
+        itemGivers:
+        - giverName: Gregorio Zaide
+          itemsToGive:
+          - itemName: Salakot
+            quantity: 1
+            stackable: 0
+            titleOfInformation: Diego Silang
+            informationLink: Delivery Ink Informations/Diego Silang
+            imageLink: PCP/Diego Silang
+          isItemsGiven: 0
+        msgRequest: Hello! I have a favor for you. Can you get the salakot from my
+          father Gregorio Zaide?
+        msgOfGiver: Hi. Thank you so much for helping me to give this to my son.
+          After you gave this, you will get an info about to the character that he
+          is role playing.
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 3
+    - questID: 049e6bcf-dda6-4107-b2f1-caa8246beae5
+      isCompleted: 0
+      isClaimed: 0
+      title: Looks like a Cigarette
+      description: Go to Dale Abenjobar and talk to him.
+      note: I can see Dale Abenjobar about this Marlboro Country
+      hint: 
       dunongPointsRewards: 25
       region: Cagayan Valley
       regionNum: 2
@@ -4893,69 +5340,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: d1a0a179-1cd6-472c-a835-5753233acdb0
-        receiver: Rolando Laudico
-        itemGivers:
-        - giverName: Store in Market
-          itemsToGive:
-          - itemName: Puto
-            quantity: 1
-            stackable: 0
-            titleOfInformation: Puto Festival
-            informationLink: Delivery Ink Informations/Puto Festival
-            imageLink: PCP/Puto Festival
-          - itemName: Empanada
-            quantity: 1
-            stackable: 0
-            titleOfInformation: Empanada Festival
-            informationLink: Delivery Ink Informations/Empanada Festival
-            imageLink: PCP/Empanada Festival
-          - itemName: Longganisa
-            quantity: 1
-            stackable: 0
-            titleOfInformation: Longganisa Festival
-            informationLink: Delivery Ink Informations/Longganisa Festival
-            imageLink: PCP/Longganisa Festival
-          isItemsGiven: 0
-        msgRequest: Hey! Do you mind if you help me to get my recipe?
-        msgOfGiver: Are you the one that will get all the recipes of Mang Rolando?
-      showPhotoAlbumGoal:
-        giverOfInfo: 
-        items: []
-      questType: 3
-    - questID: b01f1b30-7436-43fc-a601-f73e92beebc2
-      isCompleted: 0
-      isClaimed: 0
-      title: CAR Quest
-      description: Talk to Zardo Domenios
-      note: CAR
-      dunongPointsRewards: 25
-      region: Cordillera Administrative Region
-      regionNum: 3
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -4976,139 +5363,40 @@ MonoBehaviour:
         msgRequest: 
         msgOfGiver: 
       showPhotoAlbumGoal:
-        giverOfInfo: Zardo Domenios
+        giverOfInfo: Dale Abenjobar
         items:
         - itemName: None
           quantity: 0
           stackable: 0
-          titleOfInformation: Pagudpud Beach
-          informationLink: Delivery Ink Informations/Pagudpud Beach
-          imageLink: PCP/Pagudpud Beach
-      questType: 4
-    - questID: 98437dec-fb08-409a-a928-9cddbeb29512
-      isCompleted: 0
-      isClaimed: 0
-      title: CAR Quest
-      description: Talk to Mikaela Fudolig
-      note: CAR
-      dunongPointsRewards: 25
-      region: Cordillera Administrative Region
-      regionNum: 3
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
+          titleOfInformation: Marlboro Country
+          informationLink: Delivery Ink Informations/Marlboro Country
+          imageLink: PCP/Marlboro Country
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
           itemName: 
           quantity: 0
           stackable: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 
-        receiver: 
-        itemGivers: []
-        msgRequest: 
-        msgOfGiver: 
-      showPhotoAlbumGoal:
-        giverOfInfo: Mikaela Fudolig
-        items:
-        - itemName: None
-          quantity: 0
-          stackable: 0
-          titleOfInformation: Malacanang of the North
-          informationLink: Delivery Ink Informations/Malacanang of the North
-          imageLink: PCP/Malacanang of the North
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 4
-    - questID: ed0cda19-6750-4bda-9af0-a94a666642c2
+    - questID: 4bdc54c4-2580-421f-a845-a88bc746519b
       isCompleted: 0
       isClaimed: 0
-      title: CAR QUEST
-      description: Mang Rolando is asking to get his recipe for today. Get all of
-        it to a store that has a color blue roof nearby.
-      note: CAR QUEST
-      dunongPointsRewards: 25
-      region: Cordillera Administrative Region
-      regionNum: 3
-      talkGoal:
-        isFinished: 0
-        npcName: 
-      deliveryGoal:
-        isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
-        itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
-      numberGoal:
-        targetNumber: 0
-        currentNumber: 0
-        correspondingCount: 0
-      requestGoal:
-        isRequestFromNPCGained: 0
-        isItemReceivedOfNpc: 0
-        requestGoalID: 9fc5d14f-b5dc-4862-a56b-f31e70a8cfbe
-        receiver: Rolando Laudico
-        itemGivers:
-        - giverName: Store in Market
-          itemsToGive:
-          - itemName: Puto
-            quantity: 1
-            stackable: 0
-            titleOfInformation: Puto Festival
-            informationLink: Delivery Ink Informations/Puto Festival
-            imageLink: PCP/Puto Festival
-          - itemName: Empanada
-            quantity: 1
-            stackable: 0
-            titleOfInformation: Empanada Festival
-            informationLink: Delivery Ink Informations/Empanada Festival
-            imageLink: PCP/Empanada Festival
-          - itemName: Longganisa
-            quantity: 1
-            stackable: 0
-            titleOfInformation: Longganisa Festival
-            informationLink: Delivery Ink Informations/Longganisa Festival
-            imageLink: PCP/Longganisa Festival
-          isItemsGiven: 0
-        msgRequest: Hey! Do you mind if you help me to get my recipe?
-        msgOfGiver: Are you the one that will get all the recipes of Mang Rolando?
-      showPhotoAlbumGoal:
-        giverOfInfo: 
-        items: []
-      questType: 3
-    - questID: 4d921c72-b5c4-462e-a81c-39196ee61f23
-      isCompleted: 0
-      isClaimed: 0
-      title: Central Luzon Quest
-      description: Talk to Mang Rolando
-      note: Go to Mang Rolando and know for National Heroes.
+      title: Looks like a Parol!
+      description: Go to <b>Museum</b> and see the info about an object that looks
+        like a lantern.
+      note: Go to museum and look for Giant Lantern
+      hint: 
       dunongPointsRewards: 15
       region: Central Luzon
-      regionNum: 4
+      regionNum: 3
       talkGoal:
         isFinished: 0
-        npcName: Rolando Laudico
+        npcName: Giant Lantern
       deliveryGoal:
         isFinished: 0
         deliverGoalId: 
@@ -5116,6 +5404,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -5138,29 +5429,46 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
-    - questID: 8b425882-b2a2-45c9-97c3-aa847026348a
+    - questID: 8e843c2f-1643-4f6e-838c-41f67e49cff9
       isCompleted: 0
       isClaimed: 0
-      title: CALABARZON
-      description: Talk to Ivan Henares
-      note: Go to Ivan Henares and know for National Heroes.
-      dunongPointsRewards: 15
-      region: CALABARZON
-      regionNum: 5
+      title: Generals' Sword
+      description: Help Ramon Villegas to give the antique sword to Gregorio Zaide.
+      note: I can ask Gregorio Zaide to know about Del Pilars.
+      hint: 
+      dunongPointsRewards: 25
+      region: Central Luzon
+      regionNum: 3
       talkGoal:
         isFinished: 0
-        npcName: Ivan Henares
+        npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: 
-        deliveryMessage: 
-        giverName: 
-        receiverName: 
+        deliverGoalId: 31a0581a-c279-42a4-8c04-e319ec88b269
+        deliveryMessage: Hello! I have a favor. Do you mind if you give this to Gregorio
+          Zaide?
+        giverName: Ramon Villegas
+        receiverName: Gregorio Zaide
         itemReceivedFromGiver: 0
+        informationLink: Delivery Ink Informations/Del Pilar and Trecson
+        informationLinkWhenInfoHasBeenSeen: Delivery Ink Informations/Del Pilar and
+          Trecson 2
+        wayOfInfo: Text
         item:
-          itemName: 
-          quantity: 0
+          itemName: Sword
+          quantity: 1
           stackable: 0
           titleOfInformation: 
           informationLink: 
@@ -5180,7 +5488,18 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
-      questType: 0
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 1
     currentQuests: []
     completedQuests: []
     npcInfos:

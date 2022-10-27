@@ -37,6 +37,7 @@ public class DialogueManager : MonoBehaviour
     public bool isTalking;
 
     [SerializeField] public ShowPhotoAlbumGoal showAlbumGoal;
+    [SerializeField] public DeliveryGoal deliveryGoal;
 
     private void OnEnable()
     {
@@ -127,17 +128,12 @@ public class DialogueManager : MonoBehaviour
 
     public void ContinueDialogue()
     {
-        print(currentStory.canContinue);
-
         if (currentStory.canContinue)
         {
             string text = currentStory.Continue();
 
-            print(text.Length == 0);
-
             if (text == "")
             {
-                print("EMPTY TEXT");
                 OnDialogueRunning?.Invoke(false);
                 panel.gameObject.SetActive(false);
                 this.houseGroup.interactable = true;
@@ -146,6 +142,8 @@ public class DialogueManager : MonoBehaviour
                 this.inventoryPanel.gameObject.SetActive(true);
                 isTalking = false;
 
+                // If the showAlbumGoal is not null, it means that it requires to show the album for 
+                // the requested by player.
                 if (this.showAlbumGoal != null && this.showAlbumGoal.giverOfInfo.Length > 0)
                 {
                     AlbumManager.Instance.isFirstAlbum = false;
@@ -153,9 +151,13 @@ public class DialogueManager : MonoBehaviour
                     SceneManager.LoadScene("Showing Album", LoadSceneMode.Additive);
                     this.showAlbumGoal = null;
                 }
+                else if (this.deliveryGoal != null && this.deliveryGoal.giverName.Length > 0)
+                {
+                    print("SHOWING ALBUM");
+                }
                 return;
             }
-            print(text);
+            
             StartCoroutine(this.DisplayLine(text));
         }
         else

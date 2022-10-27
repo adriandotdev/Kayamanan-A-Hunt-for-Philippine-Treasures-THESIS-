@@ -11,7 +11,7 @@ public class MajorIslandBooth : MonoBehaviour
 
     private void Start()
     {
-        this.playButton = transform.GetChild(1).GetChild(1).GetComponent<Button>();
+        this.playButton = transform.GetChild(1).GetChild(0).GetComponent<Button>();
 
         this.playButton.onClick.AddListener(() => {
 

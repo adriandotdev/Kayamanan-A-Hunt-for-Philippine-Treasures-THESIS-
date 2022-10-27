@@ -328,20 +328,29 @@ public class GameManager : MonoBehaviour, IDataPersistence
         {
             if (this.playerData.gender.ToUpper() == "MALE")
             {
-                Transform toFollow = GameObject.Find("Male").transform;
-                GameObject.Find("Timeline for Player Female").SetActive(false);
+                try
+                {
+                    Transform toFollow = GameObject.Find("Male").transform;
+                    GameObject.Find("Timeline for Player Female").SetActive(false);
 
-                GameObject.Find("Sequence Follow Cam").GetComponent<Cinemachine.CinemachineVirtualCamera>().Follow = toFollow;
-                GameObject.Find("Female").SetActive(false);
+                    GameObject.Find("Sequence Follow Cam").GetComponent<Cinemachine.CinemachineVirtualCamera>().Follow = toFollow;
+                    GameObject.Find("Female").SetActive(false);
+
+                }
+                catch (System.Exception e) { }
             }
             else
             {
-                Transform toFollow = GameObject.Find("Female").transform;
+                try {
+                    Transform toFollow = GameObject.Find("Female").transform;
 
-                GameObject.Find("Timeline for Player Male").SetActive(false);
-                GameObject.Find("Male").SetActive(false);
+                    GameObject.Find("Timeline for Player Male").SetActive(false);
+                    GameObject.Find("Male").SetActive(false);
 
-                GameObject.Find("Sequence Follow Cam").GetComponent<Cinemachine.CinemachineVirtualCamera>().Follow = toFollow;
+                    GameObject.Find("Sequence Follow Cam").GetComponent<Cinemachine.CinemachineVirtualCamera>().Follow = toFollow;
+
+                }
+                catch (System.Exception e) { }
             }
         }
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Fifth Sequence"))
@@ -426,7 +435,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
             this.optionsPanel.gameObject.SetActive(false);
             this.volumePanel.gameObject.SetActive(false);
         }
-        catch (System.Exception e) { print(e.Message); }
+        catch (System.Exception e) {  }
     }
 
     public void LoadScene(string sceneName)

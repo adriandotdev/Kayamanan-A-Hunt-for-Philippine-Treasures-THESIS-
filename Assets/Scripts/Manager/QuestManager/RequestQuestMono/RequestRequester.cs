@@ -48,7 +48,9 @@ public class RequestRequester : MonoBehaviour
         this.cancelRequestBtn = this.requestPanel.GetChild(1).GetChild(1).GetComponent<Button>();
 
         // Add event to requestBtn
-        this.requestBtn.onClick.AddListener(OpenRequestPanel);
+
+        if (this.requestQuest != null)
+            this.requestBtn.onClick.AddListener(OpenRequestPanel);
 
         // Add event to cancelRequestBtn
         cancelRequestBtn.onClick.AddListener(CloseRequestPanel);

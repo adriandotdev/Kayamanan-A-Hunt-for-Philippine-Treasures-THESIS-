@@ -12,12 +12,14 @@ public class DeliveryGoalReceiver : MonoBehaviour
     {
         this.giveBtn = transform.GetChild(0).GetChild(3).GetComponent<Button>();
 
-        this.giveBtn.onClick.AddListener(this.GiveItemToNPC);
+        if (this.quest != null)
+            this.giveBtn.onClick.AddListener(this.GiveItemToNPC);
     }
 
     void GiveItemToNPC()
     {
-        if (this.quest != null && this.quest.questID.Length > 0 && this.quest.isCompleted)
+        if (this.quest != null && this.quest.questID.Length > 0 && this.quest.isCompleted
+            && this.quest.deliveryGoal.wayOfInfo.ToUpper() == "text".ToUpper())
         {
             DialogueManager._instance?.StartDialogue(Resources.Load<TextAsset>(this.quest.deliveryGoal.informationLinkWhenInfoHasBeenSeen));
             return;
@@ -27,8 +29,23 @@ public class DeliveryGoalReceiver : MonoBehaviour
         {
             if (quest.questID == this.quest.questID && quest.questType == Quest.QUEST_TYPE.DELIVERY)
             {
-                DialogueManager._instance?.StartDialogue(Resources.Load<TextAsset>(this.quest.deliveryGoal.informationLink));
+                // If the WAY OF INFO IS ONLY PURE DIALOGUE.
+                if (this.quest.deliveryGoal.wayOfInfo.ToUpper() == "text".ToUpper())
+                {
+                    DialogueManager._instance.actorField.text= this.quest.deliveryGoal.receiverName;
+                    DialogueManager._instance.npcName = this.quest.deliveryGoal.receiverName;
+                    DialogueManager._instance?.StartDialogue(Resources.Load<TextAsset>(this.quest.deliveryGoal.informationLink));
+                }
+                else
+                {
+                    // IF THE WAY OF INFO IS DIALOGUE WITH PHOTO ALBUM
+                    DialogueManager._instance.deliveryGoal = this.quest.deliveryGoal.Copy();
+                    DialogueManager._instance.actorField.text = this.quest.deliveryGoal.receiverName;
+                    DialogueManager._instance.npcName = this.quest.deliveryGoal.receiverName;
+                    DialogueManager._instance?.StartDialogue(Resources.Load<TextAsset>(this.quest.deliveryGoal.informationLink));
 
+
+                }
                 //// Loop through each item at inventory
                 foreach (Item item in DataPersistenceManager.instance.playerData.inventory.items)
                 {

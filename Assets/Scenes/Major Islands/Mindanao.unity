@@ -283,6 +283,118 @@ MonoBehaviour:
     - Yes
     - Yes
     - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
 --- !u!114 &67704386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1339,6 +1451,118 @@ MonoBehaviour:
     - Yes
     - Yes
     - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
 --- !u!114 &347141083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2102,6 +2326,7 @@ MonoBehaviour:
   dunongPointsValue: {fileID: 0}
   playerData:
     id: 
+    isGameCompleted: 0
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
@@ -2207,6 +2432,8 @@ MonoBehaviour:
       isClaimed: 0
       title: Known All Heroes
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Ilocos Region
       regionNum: 0
@@ -2220,6 +2447,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2242,12 +2472,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: dc44b975-0bee-4b47-bd4c-5a5305b08aac
       isCompleted: 0
       isClaimed: 0
       title: Talk to your Mother
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Cagayan Valley
       regionNum: 0
@@ -2261,6 +2504,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2283,12 +2529,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: ee3102f5-5487-4c4b-80fc-1fee9605b321
       isCompleted: 0
       isClaimed: 0
       title: Buko Pie Ayayay!
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Cordillera Administrative Region
       regionNum: 0
@@ -2302,6 +2561,9 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Buko Pie
           quantity: 0
@@ -2324,12 +2586,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: d565b2e1-ed7d-4e22-b506-0b44c7813bba
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Central Luzon
       regionNum: 0
@@ -2343,6 +2618,9 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 0
@@ -2365,12 +2643,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 747dadda-daa3-41bc-b98c-80acae478135
       isCompleted: 0
       isClaimed: 0
       title: Talk to Aling Julia
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: CALABARZON
       regionNum: 0
@@ -2384,6 +2675,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2406,12 +2700,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: b46d897f-4412-4dd6-8450-7f3f59232344
       isCompleted: 0
       isClaimed: 0
       title: Talk to Aling Marites
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: MIMAROPA
       regionNum: 0
@@ -2425,6 +2732,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2447,12 +2757,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 3208b8bc-6c07-4ef0-96df-c59de431c1c9
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Bicol Region
       regionNum: 0
@@ -2466,6 +2789,9 @@ MonoBehaviour:
         giverName: Aling Nena
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 0
@@ -2488,12 +2814,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 8b2220fb-e04b-4591-8110-a16efbd1cf3a
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: National Capital Region
       regionNum: 0
@@ -2507,6 +2846,9 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 0
@@ -2529,6 +2871,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -2644,6 +2997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData:
     id: 
+    isGameCompleted: 0
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
@@ -2749,6 +3103,8 @@ MonoBehaviour:
       isClaimed: 0
       title: Known All Heroes
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Ilocos Region
       regionNum: 0
@@ -2762,6 +3118,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2784,12 +3143,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 7b5822be-c124-48ae-8cc7-d954f79bc795
       isCompleted: 0
       isClaimed: 0
       title: Talk to your Mother
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Cagayan Valley
       regionNum: 0
@@ -2803,6 +3175,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2825,12 +3200,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: f7e467da-166b-4d9d-9471-d84f20a999d4
       isCompleted: 0
       isClaimed: 0
       title: Buko Pie Ayayay!
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Cordillera Administrative Region
       regionNum: 0
@@ -2844,6 +3232,9 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Buko Pie
           quantity: 0
@@ -2866,12 +3257,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: ddaddac7-a848-4634-9f1e-c9e0061c5e29
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Central Luzon
       regionNum: 0
@@ -2885,6 +3289,9 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 0
@@ -2907,12 +3314,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: ce6b0ed1-05ed-4210-9211-7d17f1e9ed9f
       isCompleted: 0
       isClaimed: 0
       title: Talk to Aling Julia
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: CALABARZON
       regionNum: 0
@@ -2926,6 +3346,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2948,12 +3371,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: cbc73341-6a02-4734-9b2e-b1d388070353
       isCompleted: 0
       isClaimed: 0
       title: Talk to Aling Marites
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: MIMAROPA
       regionNum: 0
@@ -2967,6 +3403,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -2989,12 +3428,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 0d47f16a-1556-4c9d-94f4-1dbb38abda9c
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Bicol Region
       regionNum: 0
@@ -3008,6 +3460,9 @@ MonoBehaviour:
         giverName: Aling Nena
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 0
@@ -3030,12 +3485,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 812be0f0-c05c-4580-98f7-337c510556bf
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: National Capital Region
       regionNum: 0
@@ -3049,6 +3517,9 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 0
@@ -3071,6 +3542,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -4223,6 +4705,118 @@ MonoBehaviour:
     - Yes
     - Yes
     - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
 --- !u!114 &913362119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5154,6 +5748,118 @@ MonoBehaviour:
     - Yes
     - Yes
     - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
 --- !u!114 &1233996930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5661,6 +6367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData:
     id: 
+    isGameCompleted: 0
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
@@ -5745,6 +6452,8 @@ MonoBehaviour:
       isClaimed: 0
       title: Known All Heroes
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: Region 1
       regionNum: 0
@@ -5758,6 +6467,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -5786,12 +6498,25 @@ MonoBehaviour:
           titleOfInformation: Pagudpud Beach
           informationLink: Delivery Ink Informations/Pagudpud Beach
           imageLink: PCP/Pagudpud Beach
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: ad6bc7a9-f8e6-4225-8b09-bb88a48009ba
       isCompleted: 0
       isClaimed: 0
       title: Talk to your MILF
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -5805,6 +6530,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -5833,12 +6561,25 @@ MonoBehaviour:
           titleOfInformation: Malacanang of the North
           informationLink: Delivery Ink Informations/Malacanang of the North
           imageLink: PCP/Malacanang of the North
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: ce9c6b41-4b8c-4861-9b4c-5cce0cff10b6
       isCompleted: 0
       isClaimed: 0
       title: Best Friends
       description: Talk to Aling Missy
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Region 2
       regionNum: 0
@@ -5852,6 +6593,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -5886,12 +6630,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: d45bcdcf-035c-42d9-90cc-1cddc5080594
       isCompleted: 0
       isClaimed: 0
       title: Buko Pie Ayayay!
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -5905,6 +6662,9 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Buko Pie
           quantity: 0
@@ -5948,12 +6708,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 9c0e81d9-29ea-4e19-bed0-2722ac0b4271
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -5967,6 +6740,9 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 0
@@ -6005,12 +6781,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 3cc30f6f-1556-476f-abbe-92f3b0479682
       isCompleted: 0
       isClaimed: 0
       title: Gumamela Pula!
       description: Help Mang Esterlito give a gumamela to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -6024,6 +6813,9 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Nena
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Gumamela
           quantity: 0
@@ -6046,6 +6838,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -6675,6 +7478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData:
     id: 
+    isGameCompleted: 0
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
@@ -6748,6 +7552,8 @@ MonoBehaviour:
       isClaimed: 0
       title: Known All Heroes
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: Region 1
       regionNum: 0
@@ -6761,6 +7567,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -6789,12 +7598,25 @@ MonoBehaviour:
           titleOfInformation: Pagudpud Beach
           informationLink: Delivery Ink Informations/Pagudpud Beach
           imageLink: PCP/Pagudpud Beach
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: aa2d5937-b256-4d7c-8ebd-5863620f0029
       isCompleted: 0
       isClaimed: 0
       title: Talk to your MILF
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -6808,6 +7630,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -6836,12 +7661,25 @@ MonoBehaviour:
           titleOfInformation: Malacanang of the North
           informationLink: Delivery Ink Informations/Malacanang of the North
           imageLink: PCP/Malacanang of the North
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 18bf2aa4-3eb7-4a31-b0ab-b67e510b0752
       isCompleted: 0
       isClaimed: 0
       title: Best Friends
       description: Talk to Aling Missy
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Region 2
       regionNum: 0
@@ -6855,6 +7693,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -6889,12 +7730,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 062db199-0b36-4312-88a2-1653daeb0351
       isCompleted: 0
       isClaimed: 0
       title: Buko Pie Ayayay!
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -6908,6 +7762,9 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Buko Pie
           quantity: 0
@@ -6951,12 +7808,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: f30d2d1a-989c-49b3-b462-6493b7cf7a56
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -6970,6 +7840,9 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 0
@@ -7008,12 +7881,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: e2fee506-c55c-48fe-b8e6-7721b65590a9
       isCompleted: 0
       isClaimed: 0
       title: Gumamela Pula!
       description: Help Mang Esterlito give a gumamela to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -7027,6 +7913,9 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Nena
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Gumamela
           quantity: 0
@@ -7049,6 +7938,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -8428,6 +9328,118 @@ MonoBehaviour:
     - Yes
     - Yes
     - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
 --- !u!114 &1610040953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9294,6 +10306,7 @@ MonoBehaviour:
   m_RegionInformationPanelContent: {fileID: 0}
   playerData:
     id: 
+    isGameCompleted: 0
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
@@ -9432,6 +10445,8 @@ MonoBehaviour:
       isClaimed: 0
       title: Known All Heroes
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Ilocos Region
       regionNum: 0
@@ -9445,6 +10460,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -9467,12 +10485,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 908141be-daea-46a4-8d0d-1782e3c6c515
       isCompleted: 0
       isClaimed: 0
       title: Talk to your Mother
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Cagayan Valley
       regionNum: 0
@@ -9486,6 +10517,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -9508,12 +10542,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 6dbfc730-718c-420e-8f76-8ca339354b85
       isCompleted: 0
       isClaimed: 0
       title: Buko Pie Ayayay!
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Cordillera Administrative Region
       regionNum: 0
@@ -9527,6 +10574,9 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Buko Pie
           quantity: 0
@@ -9549,12 +10599,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: c8866462-92e4-4f7e-95c8-e16070ab13bf
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Central Luzon
       regionNum: 0
@@ -9568,6 +10631,9 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 0
@@ -9590,12 +10656,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 4c05659e-826b-43be-9d77-b4b6c75add95
       isCompleted: 0
       isClaimed: 0
       title: Talk to Aling Julia
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: CALABARZON
       regionNum: 0
@@ -9609,6 +10688,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -9631,12 +10713,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 96e432a7-cfa1-4d5d-8fd2-f38c142d89a9
       isCompleted: 0
       isClaimed: 0
       title: Talk to Aling Marites
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: MIMAROPA
       regionNum: 0
@@ -9650,6 +10745,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -9672,12 +10770,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 17d7f907-ae2e-4fb7-9a9c-f0c424912e42
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Bicol Region
       regionNum: 0
@@ -9691,6 +10802,9 @@ MonoBehaviour:
         giverName: Aling Nena
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 0
@@ -9713,12 +10827,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: d0c8be36-fcad-42ad-8f94-7a2774807359
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: National Capital Region
       regionNum: 0
@@ -9732,6 +10859,9 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 0
@@ -9754,6 +10884,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -9914,6 +11055,118 @@ MonoBehaviour:
     - Heimdall
     - Sef
     - Clint
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
+  - question: Real name of Hawkeye?
+    correctAnswer: Clint Barton
+    choices:
+    - Clint Barton
+    - Yes
+    - Yes
+    - Yes
   - question: Real name of Hawkeye?
     correctAnswer: Clint Barton
     choices:
@@ -10661,6 +11914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData:
     id: 
+    isGameCompleted: 0
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
@@ -10766,6 +12020,8 @@ MonoBehaviour:
       isClaimed: 0
       title: Known All Heroes
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Ilocos Region
       regionNum: 0
@@ -10779,6 +12035,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -10801,12 +12060,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 1ad6f5d9-62c1-4716-8724-803f565ad6ca
       isCompleted: 0
       isClaimed: 0
       title: Talk to your Mother
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Cagayan Valley
       regionNum: 0
@@ -10820,6 +12092,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -10842,12 +12117,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 6aca81a8-d760-40ed-afbf-1cb47ce0c480
       isCompleted: 0
       isClaimed: 0
       title: Buko Pie Ayayay!
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Cordillera Administrative Region
       regionNum: 0
@@ -10861,6 +12149,9 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Buko Pie
           quantity: 0
@@ -10883,12 +12174,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 8082947f-ddc6-4e4c-bf2b-9b13750b9db6
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Central Luzon
       regionNum: 0
@@ -10902,6 +12206,9 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 0
@@ -10924,12 +12231,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: fe27bdc9-ca13-437b-b093-55f8313f20d8
       isCompleted: 0
       isClaimed: 0
       title: Talk to Aling Julia
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: CALABARZON
       regionNum: 0
@@ -10943,6 +12263,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -10965,12 +12288,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: c61ecf07-62b9-4f4f-a0c0-6a3ea552813c
       isCompleted: 0
       isClaimed: 0
       title: Talk to Aling Marites
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: MIMAROPA
       regionNum: 0
@@ -10984,6 +12320,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -11006,12 +12345,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 9b2bf5b0-5d82-4352-a90e-48e957d1d763
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Bicol Region
       regionNum: 0
@@ -11025,6 +12377,9 @@ MonoBehaviour:
         giverName: Aling Nena
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 0
@@ -11047,12 +12402,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 22bcdca8-4e75-4f3c-bbeb-8334c417f08a
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: National Capital Region
       regionNum: 0
@@ -11066,6 +12434,9 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: Mango
           quantity: 0
@@ -11088,6 +12459,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -12162,6 +13544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData:
     id: 
+    isGameCompleted: 0
     isNewlyCreated: 0
     isTutorialDone: 1
     isIntroductionDone: 1
@@ -12473,6 +13856,8 @@ MonoBehaviour:
       isClaimed: 0
       title: Beautiful Places
       description: Talk to Zardo Domenios
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -12486,6 +13871,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -12514,12 +13902,25 @@ MonoBehaviour:
           titleOfInformation: Pagudpud Beach
           informationLink: Delivery Ink Informations/Pagudpud Beach
           imageLink: PCP/Pagudpud Beach
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 4
     - questID: 8743074d-12ae-4112-a688-195523e3a08d
       isCompleted: 0
       isClaimed: 0
       title: Gift of the North
       description: Talk to Mikaela Fudolig
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -12533,6 +13934,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -12561,6 +13965,17 @@ MonoBehaviour:
           titleOfInformation: Malacanang of the North
           informationLink: Delivery Ink Informations/Malacanang of the North
           imageLink: PCP/Malacanang of the North
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 4
     - questID: 3162a6b9-4691-4bcb-8b46-a0ec9263bc57
       isCompleted: 0
@@ -12568,6 +13983,8 @@ MonoBehaviour:
       title: A Forgotten Costume
       description: Help Joseph to get his salakot for his costume to his father Gregorio
         Zaide.
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -12581,6 +13998,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -12615,6 +14035,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 3
     - questID: f0818730-995e-4fc3-8fce-a841ae2b3828
       isCompleted: 0
@@ -12622,6 +14053,8 @@ MonoBehaviour:
       title: Ilocos Region Quest
       description: Mang Rolando is asking to get his recipe for today. Get all of
         it to a store that has a color blue roof nearby.
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -12635,6 +14068,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -12678,12 +14114,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 3
     - questID: eb605148-94cf-487b-bad8-d8c8df3c1abe
       isCompleted: 0
       isClaimed: 0
       title: Ivan Henares' Lunch
       description: Help Ivan Henares to get his lunch at the karinderya.
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -12697,6 +14146,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -12735,12 +14187,25 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 3
     - questID: f1c99914-fcf2-4729-bb20-15b81600d0bd
       isCompleted: 0
       isClaimed: 0
       title: Ilocos' Notable Heroes!
       description: Talk to someone who has a background for National Heroes.
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: Ilocos Region
       regionNum: 1
@@ -12754,6 +14219,9 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
         item:
           itemName: 
           quantity: 0
@@ -12776,6 +14244,17 @@ MonoBehaviour:
       showPhotoAlbumGoal:
         giverOfInfo: 
         items: []
+      searchGoal:
+        npcToReceived: 
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     currentQuests: []
     completedQuests: []

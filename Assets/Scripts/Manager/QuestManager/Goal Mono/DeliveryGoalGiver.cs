@@ -22,12 +22,14 @@ public class DeliveryGoalGiver : MonoBehaviour
     private Button giveItemButton; // Give Item Button
 
     private RectTransform fedexPanel;
-    private TMPro.TextMeshProUGUI requestMessage;
+    [SerializeField] private TMPro.TextMeshProUGUI requestMessage;
     private Image collectibleImage;
     private TMPro.TextMeshProUGUI itemName;
     private TMPro.TextMeshProUGUI itemQuantity;
     private Button accept;
     private Button cancel;
+
+    public Transform deliveryQuestItem;
 
     private void OnEnable()
     {
@@ -36,23 +38,27 @@ public class DeliveryGoalGiver : MonoBehaviour
         this.inventoryPanel = GameObject.Find("Inventory Panel");
 
         // Fedex Panel
-        this.fedexPanel = GameObject.Find("Fedex Quest Panel").GetComponent<RectTransform>();
+        this.fedexPanel = GameObject.Find("Request Panel").GetComponent<RectTransform>();
         this.requestMessage = this.fedexPanel.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>();
 
         this.talkButton = transform.GetChild(0).GetChild(1).GetComponent<Button>();
-        this.deliveryReqButton = transform.GetChild(0).GetChild(2).GetComponent<Button>();
-        this.giveItemButton = transform.GetChild(0).GetChild(3).GetComponent<Button>();
+        this.deliveryReqButton = transform.GetChild(0).GetChild(5).GetComponent<Button>();
+        this.giveItemButton = transform.GetChild(0).GetChild(6).GetComponent<Button>();
 
         // Buttons for accepting or declining the quest.
-        this.accept = GameObject.Find("Delivery Quest Buttons").transform.GetChild(0).GetComponent<Button>();
-        this.cancel = GameObject.Find("Delivery Quest Buttons").transform.GetChild(1).GetComponent<Button>();
+        this.accept = this.fedexPanel.GetChild(1).GetChild(0).GetComponent<Button>();
+        this.cancel = this.fedexPanel.GetChild(1).GetChild(1).GetComponent<Button>();
+
+        this.deliveryQuestItem = GameObject.Find("Delivery Quest Item").transform;
 
         // Item Information for Fedex Panel
-        this.collectibleImage = GameObject.Find("Delivery Quest Item").transform.GetChild(1).GetComponent<Image>();
-        this.itemName = GameObject.Find("Delivery Quest Item").transform.GetChild(2).GetComponent<TMPro.TextMeshProUGUI>();
-        this.itemQuantity = GameObject.Find("Delivery Quest Item").transform.GetChild(3).GetComponent<TMPro.TextMeshProUGUI>();
+        this.collectibleImage = this.deliveryQuestItem.GetChild(1).GetComponent<Image>();
+        this.itemName = this.deliveryQuestItem.GetChild(2).GetComponent<TMPro.TextMeshProUGUI>();
+        this.itemQuantity = this.deliveryQuestItem.GetChild(3).GetComponent<TMPro.TextMeshProUGUI>();
 
-        this.deliveryReqButton.onClick.AddListener(this.OpenDeliveryPanel);
+        if (this.quest != null)
+            this.deliveryReqButton.onClick.AddListener(this.OpenDeliveryPanel);
+
         this.fedexPanel.localScale = Vector2.zero;
     }
 
@@ -77,6 +83,7 @@ public class DeliveryGoalGiver : MonoBehaviour
             this.collectibleImage.sprite = Resources.Load<Sprite>("Collectibles/Items/" + this.quest.deliveryGoal.item.itemName);
             this.itemName.text = this.quest.deliveryGoal.item.itemName;
             this.itemQuantity.text = "x" + this.quest.deliveryGoal.item.quantity;
+            this.deliveryQuestItem.localScale = Vector2.one;
         });
     }
 
@@ -97,6 +104,7 @@ public class DeliveryGoalGiver : MonoBehaviour
         {
             this.accept.onClick.RemoveAllListeners();
             this.cancel.onClick.RemoveAllListeners();
+            this.deliveryQuestItem.localScale = Vector2.zero;
         });
     }
 
@@ -162,7 +170,8 @@ public class DeliveryGoalGiver : MonoBehaviour
                 this.deliveryReqButton.gameObject.SetActive(true);
             }
         }
-        catch (System.Exception e) { 
+        catch (System.Exception e) {
+            print(e.Message);
         }
     }
 

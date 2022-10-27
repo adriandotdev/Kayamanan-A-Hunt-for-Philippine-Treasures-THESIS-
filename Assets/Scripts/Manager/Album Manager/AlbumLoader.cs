@@ -170,6 +170,8 @@ public class AlbumLoader : MonoBehaviour
             this.ContinueShowingDialogue();
         }
         catch (System.Exception e) {
+
+            print(e.Message);
             ExitTopicInformationPanel();
         }
     }

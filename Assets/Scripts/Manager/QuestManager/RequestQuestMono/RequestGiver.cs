@@ -53,7 +53,8 @@ public class RequestGiver : MonoBehaviour
         this.cancelRequestBtn = this.requestPanel.GetChild(1).GetChild(1).GetComponent<Button>();
 
         // Add event to requestBtn
-        this.giveItemToPlayerBtn.onClick.AddListener(OpenRequestPanel);
+        if (this.requestQuest != null)
+            this.giveItemToPlayerBtn.onClick.AddListener(OpenRequestPanel);
 
         // Add event to cancelRequestBtn
         cancelRequestBtn.onClick.AddListener(CloseRequestPanel);

@@ -103,6 +103,11 @@ public class DialogueTrigger : MonoBehaviour
             DialogueManager._instance?.StartDialogue(this.npcIntroduction);
             DialogueManager._instance.actorField.text = this.NPC_NAME;
         }
+        else if (QuestManager.instance?.CheckIfPreQuestsDone() == false)
+        {
+            DialogueManager._instance?.StartDialogue(this.npcIntroduction);
+            DialogueManager._instance.actorField.text = this.NPC_NAME;
+        }
         else
         {
             // If the quest is having a showing of album.
@@ -114,7 +119,7 @@ public class DialogueTrigger : MonoBehaviour
 
                 if (showAlbumQuest.isCompleted == false)
                 {
-                    print("FROM DIALOGUE TRIGGER: Note added!");
+
                     QuestManager.instance.FindTalkWithShowPhotoAlbum(this.showAlbumQuest.questID);
                 }
                     

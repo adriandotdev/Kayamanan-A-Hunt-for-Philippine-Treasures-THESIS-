@@ -172,6 +172,7 @@ public class TopicInfoLoader : MonoBehaviour
         }
         catch (System.Exception e)
         {
+            print(e.Message);
             this.ExitTopicInformationPanel();
         }
     }

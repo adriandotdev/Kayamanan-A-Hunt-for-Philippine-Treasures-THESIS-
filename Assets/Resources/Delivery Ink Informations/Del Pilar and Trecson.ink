@@ -22,11 +22,8 @@ VAR count = -1
     + + [Next]
     Because of his youth, he became known as the <b>Boy General</b> or <b>Goyo</b>. Lastly, he was the nephew of Marcelo H. Del Pilar.
     -> items
-    * [Trinidad Tecson]
-    <b>Trinidad Tecson</b> is a <b>Mother of Biak-na-Bato</b> and </b>Mother of Mercy</b> because she fought to gain Philippines independence. She was born on <b>November 18, 1848</b> and died on <b>January 28, 1928</b>. Tecson was born in <b>San Miguel de Mayumo, Bulacan</b>.
-    -> items
-    + {count >= 3} [Next]
-    If you want to recap some of their information, just let me know.
+    + {count >= 2} [Next]
+    That's all. If you want to recap some of their information, just let me know.
         + + [Exit]
         -> DONE
 -> END

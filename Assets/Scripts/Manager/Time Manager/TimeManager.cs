@@ -12,6 +12,7 @@ public class TimeManager : MonoBehaviour, IDataPersistence
     public static Action OnMinuteChanged;
     public static Action OnHourChanged;
     public static Action OnTimeToSleep;
+    public static Action OnGameOver;
     public static Action<bool> OpenLights;
 
     public static int ActualHourInRealLife { get; private set; }
@@ -92,13 +93,19 @@ public class TimeManager : MonoBehaviour, IDataPersistence
         if (this.m_IsPaused) return;
 
         // For each frame, deduct the seconds.
-        playerData.playerTime.m_NoOfSecondsPerMinute -= (0.15f * Time.deltaTime); // it must be 0.15f * Time.deltaTime
+        playerData.playerTime.m_NoOfSecondsPerMinute -= (Time.deltaTime); // it must be 0.15f * Time.deltaTime
 
         if (playerData.playerTime.m_NoOfSecondsPerMinute <= 0)
         {
-            playerData.playerTime.m_NoOfSecondsPerMinute = 0.15f;
+            playerData.playerTime.m_NoOfSecondsPerMinute = 30f;
             playerData.playerTime.m_ActualMinuteInRealLife++;
             OnMinuteChanged?.Invoke();
+        }
+
+        if (this.playerData.playerTime.m_ActualHourInRealLife >= 17 && this.playerData.playerTime.m_DayEvent == 5)
+        {
+            OnGameOver?.Invoke();
+            return;
         }
 
         if (this.playerData.playerTime.m_ActualHourInRealLife >= 20 && this.playerData.isSleepPanelNotShown)
@@ -200,10 +207,7 @@ public class TimeManager : MonoBehaviour, IDataPersistence
                 globalLight.GetComponent<Light2D>().color = Color.Lerp(gabiColor, Color.white, (hourTime / 8f));
             }
         }
-        catch (System.Exception e)
-        {
-
-        }
+        catch (System.Exception e) { }
     }
 
     void OpenAllEstablishments()

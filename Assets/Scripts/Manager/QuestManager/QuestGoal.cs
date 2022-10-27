@@ -52,10 +52,11 @@ public class DeliveryGoal : QuestGoal
 
     public string informationLink;
     public string informationLinkWhenInfoHasBeenSeen;
+    public string wayOfInfo;
     public Item item;
 
     public DeliveryGoal(string giverName, string receiverName,  string deliveryMessage, 
-        string informationLink, string informationLinkWhenInfoHasBeenSeen, Item item)
+        string informationLink, string informationLinkWhenInfoHasBeenSeen, string wayOfInfo, Item item)
     {
         this.deliverGoalId = Guid.NewGuid().ToString();
         this.giverName = giverName;
@@ -63,6 +64,7 @@ public class DeliveryGoal : QuestGoal
         this.deliveryMessage = deliveryMessage;
         this.informationLink = informationLink;
         this.informationLinkWhenInfoHasBeenSeen = informationLinkWhenInfoHasBeenSeen;
+        this.wayOfInfo = wayOfInfo;
         this.item = item;
     }
 
@@ -70,6 +72,7 @@ public class DeliveryGoal : QuestGoal
     {
         DeliveryGoal deliveryGoalCopy =  new DeliveryGoal(this.giverName, this.receiverName, 
             this.deliveryMessage, this.informationLink, this.informationLinkWhenInfoHasBeenSeen,
+            this.wayOfInfo,
             this.item.CopyItem());
 
         deliveryGoalCopy.itemReceivedFromGiver = this.itemReceivedFromGiver;

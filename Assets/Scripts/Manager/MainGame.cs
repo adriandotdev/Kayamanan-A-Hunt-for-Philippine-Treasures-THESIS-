@@ -12,7 +12,7 @@ public class MainGame : MonoBehaviour
     public string categoryName;
     public System.Object[] shuffled;
     public List<bool> correctAnswers;
-
+    const int NUMBER_OF_QUESTIONS = 10;
     /**
      * <summary>
      *  Ang function na ito ay i-seset niya ang score ng category
@@ -38,9 +38,9 @@ public class MainGame : MonoBehaviour
      * </summary> */
     public int CountNoOfStarsToShow(int noOfCorrectAnswers)
     {
-        int passingScore = this.shuffled.Length / 2 + 1;
+        int passingScore = NUMBER_OF_QUESTIONS / 2 + 1;
 
-        if (noOfCorrectAnswers != this.shuffled.Length)
+        if (noOfCorrectAnswers != NUMBER_OF_QUESTIONS)
         {
             print("COMPLETED QUEST RESET");
 
@@ -50,7 +50,7 @@ public class MainGame : MonoBehaviour
                 print("Quest Manager is NULL");
         }
 
-        if (noOfCorrectAnswers == this.shuffled.Length)
+        if (noOfCorrectAnswers == NUMBER_OF_QUESTIONS)
         {
             return 3;
         }

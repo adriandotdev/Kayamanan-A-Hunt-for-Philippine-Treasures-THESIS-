@@ -69,6 +69,7 @@ public class RewardsManager : MonoBehaviour
             }
         }
         catch (System.Exception e) {
+            print(e.Message);
         }
     }
 

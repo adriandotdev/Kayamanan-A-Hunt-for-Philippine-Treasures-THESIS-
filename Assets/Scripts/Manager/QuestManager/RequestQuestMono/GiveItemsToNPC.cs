@@ -12,7 +12,8 @@ public class GiveItemsToNPC : MonoBehaviour
 
     private void Start()
     {
-        this.showInfoOfItemsButton = transform.GetChild(0).GetChild(3).GetComponent<Button>();
+        if (GetComponent<RequestRequester>().requestQuest != null)
+            this.showInfoOfItemsButton = transform.GetChild(0).GetChild(3).GetComponent<Button>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

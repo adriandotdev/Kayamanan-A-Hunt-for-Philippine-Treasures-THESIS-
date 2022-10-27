@@ -252,7 +252,7 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
     private void ConfirmBtnEventWhileLoadingProfile()
     {
         // For testing purposes.
-        //DataPersistenceManager.instance.playerData.isIntroductionDone = true;
+        DataPersistenceManager.instance.playerData.isIntroductionDone = true;
 
         if (!this.playerData.isIntroductionDone)
         {
@@ -291,9 +291,9 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
         DataPersistenceManager.instance.ConfirmCharacter();
 
         // For testing purposes, we direct load the House scene and setting the 'isIntroductionDone' and 'isTutorialDone' to 'true'.
-        //DataPersistenceManager.instance.playerData.isIntroductionDone = true;
+        DataPersistenceManager.instance.playerData.isIntroductionDone = true;
         //DataPersistenceManager.instance.playerData.isTutorialDone = true;
-        SceneManager.LoadScene("First Sequence");
+        SceneManager.LoadScene("House");
     }
 
     IEnumerator HideAlertBox()

@@ -144,13 +144,14 @@ public class WordManager : MainGame, IDataPersistence
     {
         this.CheckAnswer();
         this.currentIndex++;
+        const int NUMBER_OF_QUESTIONS = 10;
 
-        if (this.currentIndex >= this.shuffled.Length)
+        if (this.currentIndex >= NUMBER_OF_QUESTIONS)
         {
             int noOfCorrectAns = this.CountCorrectAnswers();
 
             this.layout.gameObject.SetActive(false); 
-            this.scoreLabel.text = noOfCorrectAns + "/" + this.shuffled.Length;
+            this.scoreLabel.text = noOfCorrectAns + "/" + NUMBER_OF_QUESTIONS;
 
             //this.SetRegionHighestScore(noOfCorrectAns);
             //this.ShowStars(noOfCorrectAns);
@@ -170,7 +171,7 @@ public class WordManager : MainGame, IDataPersistence
         }
         else
         {
-            if (this.currentIndex < this.shuffled.Length)
+            if (this.currentIndex < NUMBER_OF_QUESTIONS)
             {
                 this.RemoveAllLetterSlots(); // Destroy all letter slots.
                 this.SetWord();

@@ -73,10 +73,7 @@ public class CreateNewState : MonoBehaviour
                 toRemove.localPosition = Vector2.zero;
             }
         }
-        catch (System.Exception e)
-        {
-
-        }
+        catch (System.Exception e) { print(e.Message); }
     }
 
     public void ResumeToWaitBlock()
