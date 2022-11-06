@@ -91,7 +91,9 @@ public class NPC : MonoBehaviour
 
         if (this.npcBehavior == NPC_BEHAVIOR.STATIONARY && this.startPosition != null)
         {
-            transform.position = this.startPosition.position;
+            print(gameObject.name + "here");
+            transform.position = transform.TransformPoint(this.startPosition.localPosition);
+
         }
         else
         {
@@ -208,6 +210,11 @@ public class NPC : MonoBehaviour
 
     public void SetPosition()
     {
+        if (npcType == NPC.NPC_TYPE.MUSEUM_INDIVIDUAL)
+        {
+            return;
+        }
+
         foreach (NPC_INFO npcInfo in DataPersistenceManager.instance.playerData.npcInfos)
         {
             if (gameObject.name.ToUpper() == npcInfo.name.ToUpper())
@@ -228,6 +235,7 @@ public class NPC : MonoBehaviour
         if (this.npcType == NPC_TYPE.MUSEUM_INDIVIDUAL)
         {
             this.waypoints = this.normalWaypoints;
+            this.startPosition = day1StartPos;
             return;
         }
 

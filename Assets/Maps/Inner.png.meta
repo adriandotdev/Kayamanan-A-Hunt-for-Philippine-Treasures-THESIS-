@@ -880,6 +880,18 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -6543,8 +6555,8 @@ TextureImporter:
       Inner_58: -3174870475085490837
       Inner_113: -279075974593533082
       Inner_91: 1906408468201017330
-      Inner_103: 2846017002525007553
       Inner_144: 8161789644324605062
+      Inner_103: 2846017002525007553
       Inner_21: 8462256284298677522
       Inner_171: 617013741180781484
       Inner_238: -7402287047342992733
@@ -6603,10 +6615,10 @@ TextureImporter:
       Inner_82: 7288565350162986821
       Inner_165: -3374056713385881089
       Inner_229: -8352990998237239818
-      Inner_154: 818241812434116744
       Inner_38: 536419509007563539
-      Inner_13: -8661387119639139789
       Inner_31: 253046237464059606
+      Inner_13: -8661387119639139789
+      Inner_154: 818241812434116744
       Inner_56: 8812685325851998462
       Inner_250: -7340442164146700220
       Inner_53: -2712973052732409821

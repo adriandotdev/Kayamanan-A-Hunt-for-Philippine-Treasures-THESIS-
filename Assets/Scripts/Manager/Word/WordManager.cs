@@ -89,7 +89,7 @@ public class WordManager : MainGame, IDataPersistence
             }
             catch (System.Exception e)
             {
-                Debug.Log(e.StackTrace);
+                //Debug.Log(e.StackTrace);
             }
         }
     }

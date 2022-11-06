@@ -49,12 +49,12 @@ public class DeliveryGoalGiver : MonoBehaviour
         this.accept = this.fedexPanel.GetChild(1).GetChild(0).GetComponent<Button>();
         this.cancel = this.fedexPanel.GetChild(1).GetChild(1).GetComponent<Button>();
 
-        this.deliveryQuestItem = GameObject.Find("Delivery Quest Item").transform;
+        //this.deliveryQuestItem = GameObject.Find("Delivery Quest Item").transform;
 
-        // Item Information for Fedex Panel
-        this.collectibleImage = this.deliveryQuestItem.GetChild(1).GetComponent<Image>();
-        this.itemName = this.deliveryQuestItem.GetChild(2).GetComponent<TMPro.TextMeshProUGUI>();
-        this.itemQuantity = this.deliveryQuestItem.GetChild(3).GetComponent<TMPro.TextMeshProUGUI>();
+        //// Item Information for Fedex Panel
+        //this.collectibleImage = this.deliveryQuestItem.GetChild(1).GetComponent<Image>();
+        //this.itemName = this.deliveryQuestItem.GetChild(2).GetComponent<TMPro.TextMeshProUGUI>();
+        //this.itemQuantity = this.deliveryQuestItem.GetChild(3).GetComponent<TMPro.TextMeshProUGUI>();
 
         if (this.quest != null)
             this.deliveryReqButton.onClick.AddListener(this.OpenDeliveryPanel);
@@ -80,10 +80,10 @@ public class DeliveryGoalGiver : MonoBehaviour
             this.accept.onClick.AddListener(this.AcceptDeliverableItem);
             this.cancel.onClick.AddListener(this.CloseDeliveryPanel);
             this.requestMessage.text = this.quest.deliveryGoal.deliveryMessage;
-            this.collectibleImage.sprite = Resources.Load<Sprite>("Collectibles/Items/" + this.quest.deliveryGoal.item.itemName);
-            this.itemName.text = this.quest.deliveryGoal.item.itemName;
-            this.itemQuantity.text = "x" + this.quest.deliveryGoal.item.quantity;
-            this.deliveryQuestItem.localScale = Vector2.one;
+            //this.collectibleImage.sprite = Resources.Load<Sprite>("Collectibles/Items/" + this.quest.deliveryGoal.item.itemName);
+            //this.itemName.text = this.quest.deliveryGoal.item.itemName;
+            //this.itemQuantity.text = "x" + this.quest.deliveryGoal.item.quantity;
+            //this.deliveryQuestItem.localScale = Vector2.one;
         });
     }
 
@@ -104,7 +104,7 @@ public class DeliveryGoalGiver : MonoBehaviour
         {
             this.accept.onClick.RemoveAllListeners();
             this.cancel.onClick.RemoveAllListeners();
-            this.deliveryQuestItem.localScale = Vector2.zero;
+            //this.deliveryQuestItem.localScale = Vector2.zero;
         });
     }
 
@@ -146,7 +146,11 @@ public class DeliveryGoalGiver : MonoBehaviour
                 quest.deliveryGoal.itemReceivedFromGiver = true; // set to true
                 // reset ulit ang lahat ng gameobject na may handle ng DeliveryGoalGiver and DeliveryGoalReceiver.
                 QuestManager.instance.SetupScriptsForDeliveryQuestToNPCs();
-                DataPersistenceManager.instance.playerData.inventory.AddItem(quest.deliveryGoal.item.CopyItem());
+
+                foreach (Item item in quest.deliveryGoal.items)
+                {
+                    DataPersistenceManager.instance.playerData.inventory.AddItem(item.CopyItem());
+                }
                 InventoryManager.instance.DisplayInventoryItems();
                 return;
             }
@@ -171,7 +175,6 @@ public class DeliveryGoalGiver : MonoBehaviour
             }
         }
         catch (System.Exception e) {
-            print(e.Message);
         }
     }
 

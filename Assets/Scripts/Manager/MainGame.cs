@@ -206,6 +206,11 @@ public class MainGame : MonoBehaviour
         return true;
     }
     
+    /**
+     * <summary>
+     *  Ichecheck if ang noOfStars ng region is 3
+     * </summary> 
+     */
     public bool IsRegionCollectiblesCanBeCollected()
     {
         foreach (RegionData rd in this.playerData.regionsData)
@@ -218,10 +223,24 @@ public class MainGame : MonoBehaviour
         return true;
     }
 
+    /**
+     *<summary>
+     * Collects all the collectibles based on the current region.
+     *</summary> 
+     */
     public void CollectAllRewards()
     {
+
         if (IsRegionCollectiblesCanBeCollected() == false)
             return;
+
+
+        if (IsWinner("Ilocos Region") == false)
+        {
+            DataPersistenceManager.instance.playerData.hasNewOpenRegion = true;
+            DataPersistenceManager.instance.playerData.questNewIcon = true;
+            DataPersistenceManager.instance.playerData.achievementsNewIcon = true;
+        }
 
         foreach (Collectible collectible in playerData.notebook.collectibles)
         {
@@ -233,32 +252,35 @@ public class MainGame : MonoBehaviour
                 collectible.isCollected = true;
             }
         }
+
+        if (IsWinner("Ilocos Region"))
+        {
+            DataPersistenceManager.instance.playerData.questNewIcon = true;
+            DataPersistenceManager.instance.playerData.isGameCompleted = true;
+        }
         DataPersistenceManager.instance?.SaveGame();
         //SceneManager.LoadSceneAsync("Collectibles", LoadSceneMode.Additive);
     }
 
-    //public void CollectAllRewards()
-    //{
-    //    if (AllCategoriesCompleted() != true)
-    //        return;
+    public bool IsWinner(string regionName)
+    {
+        foreach (Collectible collectible in this.playerData.notebook.collectibles) { 
+            
+            if (collectible.regionName.ToUpper() == regionName.ToUpper())
+            {
+                if (collectible.isCollected == false) return false;
+            }
+        }
 
-    //    if (!CheckIfRegionCollectiblesIsCollected())
-    //        SoundManager.instance.PlaySound("Unlock Item");
+        return true;
+    }
 
-    //    foreach (Collectible collectible in playerData.notebook.collectibles)
-    //    {
-    //        if (collectible.regionName.ToUpper() == this.regionName.ToUpper())
-    //        {
-    //            if (collectible.isCollected)
-    //                return;
-
-    //            collectible.isCollected = true;
-    //        }
-    //    }
-    //    SceneManager.LoadSceneAsync("Collectibles", LoadSceneMode.Additive);
-
-    //}
-
+    /**
+     *<summary>
+     * Count the correct answers if the value is 'true' in the
+     * list 'correctAnswers'.
+     *</summary> 
+     */
     public int CountCorrectAnswers()
     {
         int count = 0;

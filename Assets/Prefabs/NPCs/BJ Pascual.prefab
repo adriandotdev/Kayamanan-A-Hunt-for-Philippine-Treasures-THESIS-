@@ -28,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 633832790040942488}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.00090288697}
-  m_LocalScale: {x: 2.725296, y: 2.725296, z: 1.5646576}
+  m_LocalScale: {x: 3.785279, y: 3.785279, z: 1.5646576}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7967447486831009185}
@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: 59.00082}
+  m_AnchoredPosition: {x: -447, y: 59.00082}
   m_SizeDelta: {x: 236.34, y: 84.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9160179760287770841
@@ -149,7 +149,7 @@ RectTransform:
   m_GameObject: {fileID: 3684422804857821500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.5213604, y: 3.5213604, z: 2.5558512}
+  m_LocalScale: {x: 4.554826, y: 4.554826, z: 2.5558512}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6947748483416329661}
@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 192, y: -206}
+  m_AnchoredPosition: {x: 228, y: -253}
   m_SizeDelta: {x: 91, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5407994843780403054
@@ -363,7 +363,7 @@ RectTransform:
   m_GameObject: {fileID: 6686860324130689256}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.00090288697}
-  m_LocalScale: {x: 2.8947194, y: 2.8947194, z: 1.6723377}
+  m_LocalScale: {x: 3.785279, y: 3.785279, z: 1.6723377}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7967447486831009185}
@@ -371,7 +371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 187, y: 68}
+  m_AnchoredPosition: {x: 216, y: 68}
   m_SizeDelta: {x: 236.34, y: 84.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8738518347924789811
@@ -484,7 +484,7 @@ RectTransform:
   m_GameObject: {fileID: 7967447486706491193}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.8948925, y: 2.8948925, z: 1.6724926}
+  m_LocalScale: {x: 3.785279, y: 3.785279, z: 1.6724926}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7967447486831009185}
@@ -492,7 +492,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 186, y: 60}
+  m_AnchoredPosition: {x: 211, y: 60}
   m_SizeDelta: {x: 236.34, y: 84.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7967447486706491197
@@ -712,7 +712,7 @@ RectTransform:
   m_GameObject: {fileID: 7967447486908672542}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.726144, y: 2.726144, z: 1.5650526}
+  m_LocalScale: {x: 3.785279, y: 3.785279, z: 1.5650526}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7967447486831009185}
@@ -720,7 +720,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -401, y: 51}
+  m_AnchoredPosition: {x: -444, y: 51}
   m_SizeDelta: {x: 236.34, y: 84.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7967447486908672530
@@ -1060,13 +1060,8 @@ MonoBehaviour:
       informationLink: 
       informationLinkWhenInfoHasBeenSeen: 
       wayOfInfo: 
-      item:
-        itemName: 
-        quantity: 0
-        stackable: 0
-        titleOfInformation: 
-        informationLink: 
-        imageLink: 
+      items: []
+      itemsToShow: []
     numberGoal:
       targetNumber: 0
       currentNumber: 0
@@ -1084,6 +1079,8 @@ MonoBehaviour:
       items: []
     searchGoal:
       npcToReceived: 
+      typesOfSearch: 
+      requestAccepted: 0
       itemToFind:
         itemName: 
         quantity: 0
@@ -1152,13 +1149,8 @@ MonoBehaviour:
       informationLink: 
       informationLinkWhenInfoHasBeenSeen: 
       wayOfInfo: 
-      item:
-        itemName: 
-        quantity: 0
-        stackable: 0
-        titleOfInformation: 
-        informationLink: 
-        imageLink: 
+      items: []
+      itemsToShow: []
     numberGoal:
       targetNumber: 0
       currentNumber: 0
@@ -1176,6 +1168,8 @@ MonoBehaviour:
       items: []
     searchGoal:
       npcToReceived: 
+      typesOfSearch: 
+      requestAccepted: 0
       itemToFind:
         itemName: 
         quantity: 0
@@ -1188,6 +1182,7 @@ MonoBehaviour:
     questType: 0
   itemGiver:
     giverName: 
+    message: 
     itemsToGive: []
     isItemsGiven: 0
   requestPanel: {fileID: 0}
@@ -1237,13 +1232,8 @@ MonoBehaviour:
       informationLink: 
       informationLinkWhenInfoHasBeenSeen: 
       wayOfInfo: 
-      item:
-        itemName: 
-        quantity: 0
-        stackable: 0
-        titleOfInformation: 
-        informationLink: 
-        imageLink: 
+      items: []
+      itemsToShow: []
     numberGoal:
       targetNumber: 0
       currentNumber: 0
@@ -1261,6 +1251,8 @@ MonoBehaviour:
       items: []
     searchGoal:
       npcToReceived: 
+      typesOfSearch: 
+      requestAccepted: 0
       itemToFind:
         itemName: 
         quantity: 0
@@ -1295,13 +1287,8 @@ MonoBehaviour:
       informationLink: 
       informationLinkWhenInfoHasBeenSeen: 
       wayOfInfo: 
-      item:
-        itemName: 
-        quantity: 0
-        stackable: 0
-        titleOfInformation: 
-        informationLink: 
-        imageLink: 
+      items: []
+      itemsToShow: []
     numberGoal:
       targetNumber: 0
       currentNumber: 0
@@ -1319,6 +1306,8 @@ MonoBehaviour:
       items: []
     searchGoal:
       npcToReceived: 
+      typesOfSearch: 
+      requestAccepted: 0
       itemToFind:
         itemName: 
         quantity: 0
@@ -1386,13 +1375,8 @@ MonoBehaviour:
       informationLink: 
       informationLinkWhenInfoHasBeenSeen: 
       wayOfInfo: 
-      item:
-        itemName: 
-        quantity: 0
-        stackable: 0
-        titleOfInformation: 
-        informationLink: 
-        imageLink: 
+      items: []
+      itemsToShow: []
     numberGoal:
       targetNumber: 0
       currentNumber: 0
@@ -1410,6 +1394,8 @@ MonoBehaviour:
       items: []
     searchGoal:
       npcToReceived: 
+      typesOfSearch: 
+      requestAccepted: 0
       itemToFind:
         itemName: 
         quantity: 0
@@ -1458,13 +1444,8 @@ MonoBehaviour:
       informationLink: 
       informationLinkWhenInfoHasBeenSeen: 
       wayOfInfo: 
-      item:
-        itemName: 
-        quantity: 0
-        stackable: 0
-        titleOfInformation: 
-        informationLink: 
-        imageLink: 
+      items: []
+      itemsToShow: []
     numberGoal:
       targetNumber: 0
       currentNumber: 0
@@ -1482,6 +1463,8 @@ MonoBehaviour:
       items: []
     searchGoal:
       npcToReceived: 
+      typesOfSearch: 
+      requestAccepted: 0
       itemToFind:
         itemName: 
         quantity: 0
@@ -1528,13 +1511,8 @@ MonoBehaviour:
       informationLink: 
       informationLinkWhenInfoHasBeenSeen: 
       wayOfInfo: 
-      item:
-        itemName: 
-        quantity: 0
-        stackable: 0
-        titleOfInformation: 
-        informationLink: 
-        imageLink: 
+      items: []
+      itemsToShow: []
     numberGoal:
       targetNumber: 0
       currentNumber: 0
@@ -1552,6 +1530,8 @@ MonoBehaviour:
       items: []
     searchGoal:
       npcToReceived: 
+      typesOfSearch: 
+      requestAccepted: 0
       itemToFind:
         itemName: 
         quantity: 0
@@ -1563,6 +1543,7 @@ MonoBehaviour:
       locationToSpawn: 
     questType: 0
   giveItemToNPCBtn: {fileID: 0}
+  requestBtn: {fileID: 0}
 --- !u!1 &7967447487293815513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,7 +1572,7 @@ RectTransform:
   m_GameObject: {fileID: 7967447487293815513}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.7261438, y: 2.7261438, z: 2.7261438}
+  m_LocalScale: {x: 3.785279, y: 3.785279, z: 2.7261438}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7967447486831009185}
@@ -1599,7 +1580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92, y: 195}
+  m_AnchoredPosition: {x: -92, y: 245}
   m_SizeDelta: {x: 236.34, y: 84.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7967447487293815517

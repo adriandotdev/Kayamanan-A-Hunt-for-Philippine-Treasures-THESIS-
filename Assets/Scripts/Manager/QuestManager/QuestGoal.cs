@@ -40,7 +40,6 @@ public class TalkGoal : QuestGoal
     }
 }
 
-
 [System.Serializable]
 public class DeliveryGoal : QuestGoal
 {
@@ -53,10 +52,11 @@ public class DeliveryGoal : QuestGoal
     public string informationLink;
     public string informationLinkWhenInfoHasBeenSeen;
     public string wayOfInfo;
-    public Item item;
+    public Item[] items;
+    public Item[] itemsToShow;
 
     public DeliveryGoal(string giverName, string receiverName,  string deliveryMessage, 
-        string informationLink, string informationLinkWhenInfoHasBeenSeen, string wayOfInfo, Item item)
+        string informationLink, string informationLinkWhenInfoHasBeenSeen, string wayOfInfo, Item[] items)
     {
         this.deliverGoalId = Guid.NewGuid().ToString();
         this.giverName = giverName;
@@ -65,7 +65,21 @@ public class DeliveryGoal : QuestGoal
         this.informationLink = informationLink;
         this.informationLinkWhenInfoHasBeenSeen = informationLinkWhenInfoHasBeenSeen;
         this.wayOfInfo = wayOfInfo;
-        this.item = item;
+        this.items = items;
+    }
+
+    public DeliveryGoal(string giverName, string receiverName, string deliveryMessage,
+        string informationLink, string informationLinkWhenInfoHasBeenSeen, string wayOfInfo, Item[] items, Item[] itemsToShow)
+    {
+        this.deliverGoalId = Guid.NewGuid().ToString();
+        this.giverName = giverName;
+        this.receiverName = receiverName;
+        this.deliveryMessage = deliveryMessage;
+        this.informationLink = informationLink;
+        this.informationLinkWhenInfoHasBeenSeen = informationLinkWhenInfoHasBeenSeen;
+        this.wayOfInfo = wayOfInfo;
+        this.items = items;
+        this.itemsToShow = itemsToShow;
     }
 
     public DeliveryGoal Copy()
@@ -73,7 +87,7 @@ public class DeliveryGoal : QuestGoal
         DeliveryGoal deliveryGoalCopy =  new DeliveryGoal(this.giverName, this.receiverName, 
             this.deliveryMessage, this.informationLink, this.informationLinkWhenInfoHasBeenSeen,
             this.wayOfInfo,
-            this.item.CopyItem());
+            this.items, this.itemsToShow);
 
         deliveryGoalCopy.itemReceivedFromGiver = this.itemReceivedFromGiver;
         deliveryGoalCopy.deliverGoalId = this.deliverGoalId;
@@ -165,21 +179,30 @@ public class ShowPhotoAlbumGoal
 public class SearchGoal
 {
     public string npcToReceived;
+    public string typesOfSearch;
+    public bool requestAccepted;
     public Item itemToFind;
     public string sceneToSpawn;
     public string locationToSpawn;
 
-    public SearchGoal(string npcToReceived, string sceneToSpawn, string locationToSpawn, Item itemToFind)
+    public enum SearchGoalType { CLUE, REQUEST_TO_FIND }
+
+    public SearchGoal(string npcToReceived, string sceneToSpawn, string locationToSpawn, 
+        string typesOfSearch, Item itemToFind)
     {
         this.npcToReceived = npcToReceived;
         this.itemToFind = itemToFind;
         this.sceneToSpawn = sceneToSpawn;
         this.locationToSpawn = locationToSpawn;
+        this.typesOfSearch = typesOfSearch;
+        this.requestAccepted = false;
     }
 
     public SearchGoal Copy()
     {
-        SearchGoal copy = new SearchGoal(this.npcToReceived, this.sceneToSpawn, this.locationToSpawn, this.itemToFind.CopyItem());
+        SearchGoal copy = new SearchGoal(this.npcToReceived, this.sceneToSpawn, this.locationToSpawn, this.typesOfSearch, this.itemToFind.CopyItem());
+
+        copy.requestAccepted = false;
 
         return copy;
     }
@@ -189,12 +212,14 @@ public class SearchGoal
 public class ItemGiver {
 
     public string giverName;
+    public string message;
     public List<Item> itemsToGive;
     public bool isItemsGiven;
 
-    public ItemGiver(string giverName, List<Item> itemsToGive)
+    public ItemGiver(string giverName, string message, List<Item> itemsToGive)
     {
         this.giverName = giverName;
+        this.message = message;
         this.itemsToGive = itemsToGive;
         this.isItemsGiven = false;
     }

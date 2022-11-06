@@ -1,7 +1,7 @@
 -> main
 
 === main ===
-    Empanada is a signature food of Ilocos, Norte particularly in Batac. It is derived from a <b>Spanish word</b> meaning <em>to wrap and coat in bread</em>.
+    Empanada is a signature food of Ilocos, Norte particularly in Batac. It is derived from a <b>Spanish word</b> meaning <b>to wrap and coat in bread</b>.
     + [Next]
     It has a crispy thin orange shell and is filled with longganisa, bean sprouts, and egg. The rice flour-based shell is colored using <b>achuete</b>.
     + + [Next]

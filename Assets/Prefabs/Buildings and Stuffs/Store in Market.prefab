@@ -552,13 +552,8 @@ MonoBehaviour:
       informationLink: 
       informationLinkWhenInfoHasBeenSeen: 
       wayOfInfo: 
-      item:
-        itemName: 
-        quantity: 0
-        stackable: 0
-        titleOfInformation: 
-        informationLink: 
-        imageLink: 
+      items: []
+      itemsToShow: []
     numberGoal:
       targetNumber: 0
       currentNumber: 0
@@ -576,6 +571,8 @@ MonoBehaviour:
       items: []
     searchGoal:
       npcToReceived: 
+      typesOfSearch: 
+      requestAccepted: 0
       itemToFind:
         itemName: 
         quantity: 0
@@ -588,6 +585,7 @@ MonoBehaviour:
     questType: 0
   itemGiver:
     giverName: 
+    message: 
     itemsToGive: []
     isItemsGiven: 0
   requestPanel: {fileID: 0}

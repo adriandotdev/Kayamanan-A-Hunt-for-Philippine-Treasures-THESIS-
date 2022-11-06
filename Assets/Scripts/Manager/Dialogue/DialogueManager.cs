@@ -105,18 +105,32 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator DisplayLine(string line)
     {
-        this.dialogueField.text = line;
-        this.dialogueField.maxVisibleCharacters = 0;
-
         this.HideChoices();
+
+        this.dialogueField.text = "";
 
         foreach (char c in line.ToCharArray())
         {
-            this.dialogueField.maxVisibleCharacters++;
+            this.dialogueField.text += c;
             yield return new WaitForSeconds(this.typingSpeed);
         }
         ShowChoices();
     }
+
+    //IEnumerator DisplayLine(string line)
+    //{
+    //    this.dialogueField.text = line;
+    //    this.dialogueField.maxVisibleCharacters = 0;
+
+    //    this.HideChoices();
+
+    //    foreach (char c in line.ToCharArray())
+    //    { 
+    //        this.dialogueField.maxVisibleCharacters++;
+    //        yield return new WaitForSeconds(this.typingSpeed);
+    //    }
+    //    ShowChoices();
+    //}
 
     public void HideChoices()
     {
@@ -134,6 +148,7 @@ public class DialogueManager : MonoBehaviour
 
             if (text == "")
             {
+                print("IT IS EMPTY");
                 OnDialogueRunning?.Invoke(false);
                 panel.gameObject.SetActive(false);
                 this.houseGroup.interactable = true;
@@ -153,7 +168,10 @@ public class DialogueManager : MonoBehaviour
                 }
                 else if (this.deliveryGoal != null && this.deliveryGoal.giverName.Length > 0)
                 {
-                    print("SHOWING ALBUM");
+                    AlbumManager.Instance.isFirstAlbum = false;
+                    AlbumManager.Instance.items = this.deliveryGoal.itemsToShow;
+                    SceneManager.LoadScene("Showing Album", LoadSceneMode.Additive);
+                    this.deliveryGoal = null;
                 }
                 return;
             }

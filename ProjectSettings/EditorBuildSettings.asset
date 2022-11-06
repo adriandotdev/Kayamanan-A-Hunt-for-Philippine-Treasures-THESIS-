@@ -89,6 +89,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscenes/Introduction Cutscenes/Fifth Sequence.unity
     guid: 3f6d8648990ac3f44a5a56a322cb7d71
+  - enabled: 1
+    path: Assets/Scenes/Achievements/Achievements.unity
+    guid: e64ea8346d072b54a9e73213ce91d0d5
+  - enabled: 1
+    path: Assets/Scenes/Achievements/Achievement Info.unity
+    guid: d1a1cb3c96f39dc44904b08851ccec98
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/ENDING/E First Sequence.unity
+    guid: 21b219d31b12ef44a938d346ae00dfcd
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/ENDING/E Second Sequence.unity
+    guid: 3932f9b89d8df7446bbdefbfa6af4b8d
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/ENDING/E Third Sequence.unity
+    guid: 2305883c6e019ce4498e8f473caf9c53
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/ENDING/Philippine Map Ending.unity
+    guid: ad652286726630342a2e3a7c8d6874f3
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/ENDING/Title Ending SC.unity
+    guid: 023eda3106cc7634f8a139bda9d531d7
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: f0628571f14175944b23ff9df709e903, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 410bec17ad676394fb4cc867ee09055b, type: 2}

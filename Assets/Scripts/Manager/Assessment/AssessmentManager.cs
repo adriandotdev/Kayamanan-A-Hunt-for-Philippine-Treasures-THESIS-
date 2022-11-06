@@ -158,32 +158,10 @@ public class AssessmentManager : MainGame, IDataPersistence
         }
     }
 
-    // This function updates the highest score of the specified region.
-    //public void SetRegionHighscore(int noOfCorrectAnswers)
-    //{
-    //    // Get all the regions from 'playerData.regionsData'.
-    //    foreach(RegionData regionData in playerData.regionsData)
-    //    {
-    //        if (regionData.regionName == this.regionName.ToUpper())
-    //        {
-    //            foreach (Category category in regionData.categories)
-    //            {
-    //                if (category.categoryName.ToUpper() == this.categoryName.ToUpper())
-    //                {
-    //                    if (noOfCorrectAnswers > category.highestScore)
-    //                    {
-    //                        category.highestScore = noOfCorrectAnswers;
-    //                    }
-    //                }
-    //            }
-    //        }
-    //    }
-    //}
-
     public void ShowScorePanel(int noOfCorrectAnswers)
     {
         this.CollectAllRewards();
-
+        
         TweeningManager.instance.OpenScorePanel(noOfCorrectAnswers, () =>
         {
             //this.CollectAllRewards();
@@ -219,7 +197,7 @@ public class AssessmentManager : MainGame, IDataPersistence
 [System.Serializable]
 public class Assessment
 {
-    [TextArea]
+    //[TextArea]
     public string question;
     public string correctAnswer; // Heto yung correct answer
     public string[] choices; // Mga wrong answers

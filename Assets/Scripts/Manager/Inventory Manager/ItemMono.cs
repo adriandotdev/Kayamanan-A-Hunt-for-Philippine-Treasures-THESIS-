@@ -17,6 +17,8 @@ public class ItemMono : MonoBehaviour
             InventoryManager.instance.DisplayInventoryItems();
 
             Destroy(gameObject);
+
+            QuestManager.instance.OpenPlainAlertBox("You've found an item!");
         });      
     }
 

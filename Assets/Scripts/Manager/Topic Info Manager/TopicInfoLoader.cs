@@ -13,9 +13,9 @@ public class TopicInfoLoader : MonoBehaviour
     private GameObject comicStrip3;
 
     // For COMIC STRIP - 1
-    private Transform bubbleInfo;
-    private TMPro.TextMeshProUGUI title;
-    private TMPro.TextMeshProUGUI infoText;
+    public Transform bubbleInfo;
+    public TMPro.TextMeshProUGUI title;
+    public TMPro.TextMeshProUGUI infoText;
     public Transform cs1ImageContainer;
 
     // For COMIC STRIP - 2 
@@ -36,6 +36,7 @@ public class TopicInfoLoader : MonoBehaviour
 
         if (TopicInfoManager.Instance.panelNumber == TopicInfoManager.PANEL_NUMBER.ONE)
         {
+            print("COMIC PANEL 1");
             CanvasGroup canvasGroup1 = this.comicStrip1.GetComponent<CanvasGroup>();
             this.comicStrip1.SetActive(true);
 

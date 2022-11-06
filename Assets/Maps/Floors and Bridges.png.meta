@@ -673,6 +673,18 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -4774,7 +4786,6 @@ TextureImporter:
       Floors and Bridges_89: 4007247031393655529
       Floors and Bridges_8: -1939044139680714277
       Floors and Bridges_130: -5589509138776665286
-      Floors and Bridges_180: 118786309410193131
       Floors and Bridges_172: 221681696751815789
       Floors and Bridges_17: -2422727967942729814
       Floors and Bridges_189: -6338050139787717708
@@ -4827,9 +4838,9 @@ TextureImporter:
       Floors and Bridges_87: -478292598235399040
       Floors and Bridges_3: -6381380908156285466
       Floors and Bridges_6: 1878725425197712823
+      Floors and Bridges_102: -9128980134806860468
       Floors and Bridges_93: 1543981164871507035
       Floors and Bridges_46: -7224581550060468898
-      Floors and Bridges_102: -9128980134806860468
       Floors and Bridges_13: -88888053378460307
       Floors and Bridges_168: -4693229765136009919
       Floors and Bridges_71: 8209559866136534374
@@ -4853,9 +4864,9 @@ TextureImporter:
       Floors and Bridges_107: -5674877646785007156
       Floors and Bridges_170: -7221148081674790507
       Floors and Bridges_132: -7613126670329404388
+      Floors and Bridges_169: -9213530921852094712
       Floors and Bridges_119: 7778820964191527061
       Floors and Bridges_150: -8466651451052460880
-      Floors and Bridges_169: -9213530921852094712
       Floors and Bridges_56: -7225071019766893497
       Floors and Bridges_44: 3815409380739567439
       Floors and Bridges_95: 3783747718089338133
@@ -4957,11 +4968,12 @@ TextureImporter:
       Floors and Bridges_113: 8818767601619059866
       Floors and Bridges_139: 975325517234263202
       Floors and Bridges_4: -5234109282317797173
-      Floors and Bridges_97: -7877444469896307988
+      Floors and Bridges_180: 118786309410193131
       Floors and Bridges_61: 3100233396653655010
+      Floors and Bridges_97: -7877444469896307988
       Floors and Bridges_143: 2218938176016962337
-      Floors and Bridges_79: 2508023209210300925
       Floors and Bridges_30: 5853609200060193465
+      Floors and Bridges_79: 2508023209210300925
       Floors and Bridges_15: 5088603047698597220
       Floors and Bridges_106: -723359014552109947
   spritePackingTag: 

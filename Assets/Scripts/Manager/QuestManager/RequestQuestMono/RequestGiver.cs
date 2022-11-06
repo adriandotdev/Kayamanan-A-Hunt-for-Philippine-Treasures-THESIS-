@@ -27,37 +27,41 @@ public class RequestGiver : MonoBehaviour
 
     void Start()
     {
-        // Initialize all the UI to hide when the request panel is opened.
-        this.canvasGroup = GameObject.Find("House Canvas Group").GetComponent<CanvasGroup>();
-        this.joystick = GameObject.Find("Fixed Joystick");
-        this.inventoryPanel = GameObject.Find("Inventory Panel");
-
-        // Initialize NPC Buttons
-        if (gameObject.name == "Store in Market" || gameObject.name == "Karinderya")
+        try
         {
-            // When the game object is just a store.
-            this.giveItemToPlayerBtn = transform.GetChild(1).GetChild(0).GetComponent<Button>();
-        }
-        else
-        {
-            this.talkBtn = transform.GetChild(0).GetChild(1).GetComponent<Button>();
-            this.requestBtn = transform.GetChild(0).GetChild(2).GetComponent<Button>();
-            this.giveItemToNpcBtn = transform.GetChild(0).GetChild(3).GetComponent<Button>();
-            this.giveItemToPlayerBtn = transform.GetChild(0).GetChild(4).GetComponent<Button>();
-        }
- 
-        // Initialize Request Panel Components
-        this.requestPanel = GameObject.Find("Request Panel").transform;
-        this.requestMessageTxt = this.requestPanel.GetChild(0).GetComponent<TextMeshProUGUI>();
-        this.acceptRequestBtn = this.requestPanel.GetChild(1).GetChild(0).GetComponent<Button>();
-        this.cancelRequestBtn = this.requestPanel.GetChild(1).GetChild(1).GetComponent<Button>();
+            // Initialize all the UI to hide when the request panel is opened.
+            this.canvasGroup = GameObject.Find("House Canvas Group").GetComponent<CanvasGroup>();
+            this.joystick = GameObject.Find("Fixed Joystick");
+            this.inventoryPanel = GameObject.Find("Inventory Panel");
 
-        // Add event to requestBtn
-        if (this.requestQuest != null)
-            this.giveItemToPlayerBtn.onClick.AddListener(OpenRequestPanel);
+            // Initialize NPC Buttons
+            if (CheckIfStore() == true)
+            {
+                // When the game object is just a store.
+                this.giveItemToPlayerBtn = transform.GetChild(1).GetChild(0).GetComponent<Button>();
+            }
+            else
+            {
+                this.talkBtn = transform.GetChild(0).GetChild(1).GetComponent<Button>();
+                this.requestBtn = transform.GetChild(0).GetChild(2).GetComponent<Button>();
+                this.giveItemToNpcBtn = transform.GetChild(0).GetChild(3).GetComponent<Button>();
+                this.giveItemToPlayerBtn = transform.GetChild(0).GetChild(4).GetComponent<Button>();
+            }
 
-        // Add event to cancelRequestBtn
-        cancelRequestBtn.onClick.AddListener(CloseRequestPanel);
+            // Initialize Request Panel Components
+            this.requestPanel = GameObject.Find("Request Panel").transform;
+            this.requestMessageTxt = this.requestPanel.GetChild(0).GetComponent<TextMeshProUGUI>();
+            this.acceptRequestBtn = this.requestPanel.GetChild(1).GetChild(0).GetComponent<Button>();
+            this.cancelRequestBtn = this.requestPanel.GetChild(1).GetChild(1).GetComponent<Button>();
+
+            // Add event to requestBtn
+            if (this.requestQuest != null)
+                this.giveItemToPlayerBtn.onClick.AddListener(OpenRequestPanel);
+
+            // Add event to cancelRequestBtn
+            cancelRequestBtn.onClick.AddListener(CloseRequestPanel);
+        }
+        catch (System.Exception e) { }
     }
 
     public void OpenRequestPanel()
@@ -70,7 +74,7 @@ public class RequestGiver : MonoBehaviour
             this.DisableOtherUIsWhenRequestPanelIsOpen(false);
             this.DisableNPCButtons(false);
 
-            this.requestMessageTxt.text = this.requestQuest.requestGoal.msgOfGiver; // set the message to textmeshpro
+            this.requestMessageTxt.text = this.itemGiver.message; // set the message to textmeshpro
 
             LeanTween.scale(this.requestPanel.gameObject, Vector2.one, .1f)
                 .setEaseSpring();
@@ -91,7 +95,8 @@ public class RequestGiver : MonoBehaviour
         // ADD ALL ITEMS from itemGiver.
         foreach (Item item in this.itemGiver.itemsToGive)
         {
-            DataPersistenceManager.instance.playerData.inventory.AddItem(item);
+            if (item.itemName != "None")
+                DataPersistenceManager.instance.playerData.inventory.AddItem(item);
         }
         InventoryManager.instance.DisplayInventoryItems();
 
@@ -133,7 +138,7 @@ public class RequestGiver : MonoBehaviour
     // Disable the NPC Buttons
     void DisableNPCButtons(bool isInteractable)
     {
-        if (gameObject.name == "Store in Market")
+        if (CheckIfStore() == true)
         {
             this.giveItemToPlayerBtn.enabled = isInteractable;
         }
@@ -156,7 +161,7 @@ public class RequestGiver : MonoBehaviour
     // Hide All NPC Buttons
     void HideAllButtons()
     {
-        if (gameObject.name != "Store in Market")
+        if (CheckIfStore() == false)
         {
             this.talkBtn.gameObject.SetActive(false);
             this.requestBtn.gameObject.SetActive(false);
@@ -167,5 +172,16 @@ public class RequestGiver : MonoBehaviour
         {
             this.giveItemToPlayerBtn.gameObject.SetActive(false);
         }       
+    }
+
+    public bool CheckIfStore()
+    {
+        if (gameObject.name == "Store in Market" || gameObject.name == "Karinderya"
+            || gameObject.name == "Flower Shop" || gameObject.name == "Strawberry Jam Shop"
+            || gameObject.name == "Karinderya")
+        {
+            return true;
+        }
+        return false;
     }
 }

@@ -412,6 +412,18 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -2756,10 +2768,10 @@ TextureImporter:
       Floors variety 2_24: -6441962980142323695
       Floors variety 2_46: -3080516107055839087
       Floors variety 2_9: 887729356715106317
-      Floors variety 2_94: -4168189018688221429
-      Floors variety 2_91: -4832061317916894236
-      Floors variety 2_53: 4991770554300548293
       Floors variety 2_99: 6106618865388055928
+      Floors variety 2_91: -4832061317916894236
+      Floors variety 2_94: -4168189018688221429
+      Floors variety 2_53: 4991770554300548293
       Floors variety 2_31: -3081560686799704567
       Floors variety 2_103: 8253516267728419201
       Floors variety 2_40: 4705755817042792228

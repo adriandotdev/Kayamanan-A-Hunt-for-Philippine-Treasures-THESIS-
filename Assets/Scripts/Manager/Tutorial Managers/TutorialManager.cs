@@ -74,7 +74,7 @@ public class TutorialManager : MonoBehaviour
 
                             TMPro.TextMeshProUGUI text = obj.GetComponent<TMPro.TextMeshProUGUI>();
 
-                            text.text = "So now let's dive in the tutorial";
+                            text.text = "NOW LET'S START!";
                         }
 
                         else if (this.firstPopupIndex == 2)
@@ -129,7 +129,7 @@ public class TutorialManager : MonoBehaviour
 
             TMPro.TextMeshProUGUI text = obj.GetComponent<TMPro.TextMeshProUGUI>();
 
-            text.text = "You will get dunong points by completing the quests that you can locate to your Quests button.";
+            text.text = "You must complete all the quests in order to gain dunong points . This will be used to take assessments at the  school event.";
         }
 
         else if (this.dunongPointsPopupIndex == 2)

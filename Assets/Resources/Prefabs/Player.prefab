@@ -112,6 +112,7 @@ MonoBehaviour:
   down: {fileID: 7351329100123977731, guid: 84d4727d711bf184b90aac3691ab37bf, type: 3}
   playerData:
     id: 
+    isGameCompleted: 0
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
@@ -196,6 +197,8 @@ MonoBehaviour:
       isClaimed: 0
       title: Known All Heroes
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: Region 1
       regionNum: 0
@@ -209,13 +212,11 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -228,12 +229,30 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 0ac36ac1-0279-4623-b349-1126f7a6765e
       isCompleted: 0
       isClaimed: 0
       title: Talk to your MILF
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -247,13 +266,11 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -266,12 +283,30 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 25ab664e-81cb-471b-9af8-511dc0ac4882
       isCompleted: 0
       isClaimed: 0
       title: Best Friends
       description: Talk to Aling Missy
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Region 2
       regionNum: 0
@@ -285,13 +320,11 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -304,12 +337,30 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 458f4936-2c76-409f-a2a1-6cf52e6c6ef6
       isCompleted: 0
       isClaimed: 0
       title: Buko Pie Ayayay!
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -323,13 +374,11 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
-        item:
-          itemName: Buko Pie
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -342,12 +391,30 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: b3416250-613f-4100-befc-f8c282e3da28
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -361,13 +428,11 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -380,12 +445,30 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: b6cc1a4d-530c-48a7-9322-9a0fa3557a70
       isCompleted: 0
       isClaimed: 0
       title: Gumamela Pula!
       description: Help Mang Esterlito give a gumamela to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -399,13 +482,11 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Nena
         itemReceivedFromGiver: 0
-        item:
-          itemName: Gumamela
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -418,6 +499,22 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -619,7 +716,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

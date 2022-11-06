@@ -16,12 +16,12 @@ public class MajorIslandBooth : MonoBehaviour
         this.playButton.onClick.AddListener(() => {
 
             if (gameObject.name.ToUpper() == "VISAYAS" && this.IsRegionWithNumberOpen(9))
-                SceneManager.LoadScene(gameObject.name);
+                SceneManager.LoadScene("Visayas");
             else if (gameObject.name.ToUpper() == "MINDANAO" && this.IsRegionWithNumberOpen(12))
-                SceneManager.LoadScene(gameObject.name);
+                SceneManager.LoadScene("Mindanao");
             else if (gameObject.name.ToUpper() == "LUZON")
             {
-                SceneManager.LoadScene(gameObject.name);
+                SceneManager.LoadScene("Luzon");
             }
             else
             {

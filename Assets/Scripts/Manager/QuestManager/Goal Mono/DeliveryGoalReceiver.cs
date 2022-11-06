@@ -24,6 +24,15 @@ public class DeliveryGoalReceiver : MonoBehaviour
             DialogueManager._instance?.StartDialogue(Resources.Load<TextAsset>(this.quest.deliveryGoal.informationLinkWhenInfoHasBeenSeen));
             return;
         }
+        // DELIVERY GOAL WITH SHOWING PHOTO ALBUM.
+        else if (this.quest != null && this.quest.questID.Length > 0 && this.quest.isCompleted
+            && this.quest.deliveryGoal.wayOfInfo.ToUpper() != "text".ToUpper())
+        {
+            DialogueManager._instance.deliveryGoal = this.quest.deliveryGoal.Copy();
+            DialogueManager._instance.actorField.text = this.quest.deliveryGoal.receiverName;
+            DialogueManager._instance.npcName = this.quest.deliveryGoal.receiverName;
+            DialogueManager._instance?.StartDialogue(Resources.Load<TextAsset>(this.quest.deliveryGoal.informationLinkWhenInfoHasBeenSeen));
+        }
 
         foreach (Quest quest in DataPersistenceManager.instance.playerData.currentQuests)
         {
@@ -43,25 +52,15 @@ public class DeliveryGoalReceiver : MonoBehaviour
                     DialogueManager._instance.actorField.text = this.quest.deliveryGoal.receiverName;
                     DialogueManager._instance.npcName = this.quest.deliveryGoal.receiverName;
                     DialogueManager._instance?.StartDialogue(Resources.Load<TextAsset>(this.quest.deliveryGoal.informationLink));
-
-
                 }
-                //// Loop through each item at inventory
-                foreach (Item item in DataPersistenceManager.instance.playerData.inventory.items)
+
+
+                foreach (Item item in this.quest.deliveryGoal.items)
                 {
-                    // If the quest item is equal to the 'current item' pointer
-                    if (item.itemName.ToUpper() == this.quest.deliveryGoal.item.itemName.ToUpper() && 
-                        quest.deliveryGoal.deliverGoalId == this.quest.deliveryGoal.deliverGoalId && quest.questType == Quest.QUEST_TYPE.DELIVERY
-                        && this.quest.questType == Quest.QUEST_TYPE.DELIVERY)
-                    {
-                        item.quantity -= this.quest.deliveryGoal.item.quantity;
-
-                        if (item.quantity <= 0)
-                            DataPersistenceManager.instance.playerData.inventory.items.RemoveAll(toRemove => toRemove.itemName.ToUpper()
-                            == item.itemName.ToUpper());
-                        break;
-                    }
+                    InventoryManager.instance.DeleteItem(item, item.quantity);
                 }
+
+                InventoryManager.instance.DisplayInventoryItems();
 
                 this.quest.isCompleted = true;
 

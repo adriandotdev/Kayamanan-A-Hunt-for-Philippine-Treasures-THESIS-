@@ -8,6 +8,9 @@ using TMPro;
 
 public class QuestManager : MonoBehaviour, IDataPersistence
 {
+    // Events
+    public static Action<string> OnAllQuestCompleted;
+
     public static QuestManager instance;
     //public List<Quest> quests;
 
@@ -31,6 +34,9 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     Coroutine plainAlertCoroutine;
 
     public PlayerData playerData;
+
+    // Buttons for Showing Icons
+    public Transform notesIcon;
 
     private void Awake()
     {
@@ -157,6 +163,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
             this.questAlertBox = GameObject.Find("Alert Box");
             this.plainAlertBox = GameObject.Find("Plain Alert Box");
+            this.notesIcon = GameObject.Find("Notes Button").transform;
 
             // Add event to pending btn. IT IS LOCATED INSIDE THE QUEST PANEL.
             pendingBtn.onClick.AddListener(() =>
@@ -197,6 +204,9 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             openQuestPanel.onClick.AddListener(() =>
             {
                 SoundManager.instance?.PlaySound("Button Click 1");
+                DataPersistenceManager.instance.playerData.questNewIcon = false; // set the questNewIcon property to false to hide the icon.
+                openQuestPanel.transform.GetChild(0).gameObject.SetActive(false); // Hide the 'New' TEXT.
+
                 this.RemoveAllQuest(questContentScrollView);
                 this.DisplayQuestPrefabAtQuestPanel(questContentScrollView);
                 LeanTween.scale(questPanel.gameObject, new Vector2(296.8722f, 296.8722f), .2f)
@@ -277,12 +287,35 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                     {
                         foreach (Item item in giver.itemsToGive)
                         {
-                            GameObject itemImage = Instantiate(this.requestItemImagePrefab, questSlot.transform.GetChild(4).GetChild(1));
-                            itemImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Collectibles/Items/" + item.itemName);
+                            if (item.itemName != "None")
+                            {
+                                GameObject itemImage = Instantiate(this.requestItemImagePrefab, questSlot.transform.GetChild(4).GetChild(1));
+                                itemImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Collectibles/Items/" + item.itemName);
+                            }
                         }
                     }
                     break;
+                case Quest.QUEST_TYPE.DELIVERY:
+                    questSlot = Instantiate(this.requestPrefab, content.transform);
 
+                    questSlot.transform.GetChild(0).GetComponent<TextMeshProUGUI>()
+                        .text = quest.title;
+
+                    questSlot.transform.GetChild(1).GetComponent<TextMeshProUGUI>()
+                        .text = quest.description;
+
+                    questSlot.transform.GetChild(2).GetChild(1).GetComponent<TextMeshProUGUI>()
+                        .text = quest.dunongPointsRewards.ToString();
+
+                    questSlot.transform.GetChild(3).GetChild(1).GetComponent<TextMeshProUGUI>()
+                       .text = quest.deliveryGoal.itemReceivedFromGiver == false ? "Pending" : "Items Received";
+
+                    foreach (Item item in quest.deliveryGoal.items)
+                    {
+                        GameObject itemImage = Instantiate(this.requestItemImagePrefab, questSlot.transform.GetChild(4).GetChild(1));
+                        itemImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Collectibles/Items/" + item.itemName);
+                    }
+                    break;
                 default:
                     questSlot = Instantiate(questPrefab, content.transform);
 
@@ -420,6 +453,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             if (quest.questType == Quest.QUEST_TYPE.SHOW_PHOTO_ALBUM && quest.questID.Length > 0)
             {
                 GameObject npc = GameObject.Find(quest.showPhotoAlbumGoal.giverOfInfo);
+
                 if (npc != null)
                 {
                     npc.GetComponent<DialogueTrigger>().showAlbumQuest = quest;
@@ -515,7 +549,8 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                     receiverOfFoundItem.GetComponent<SearchQuest>().searchQuest = quest.CopySearchQuest();
                 }
 
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName(quest.searchGoal.sceneToSpawn))
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName(quest.searchGoal.sceneToSpawn)
+                    && quest.searchGoal.typesOfSearch.ToLower() == "clue")
                 {
                     Transform positionToSpawn = GameObject.Find(quest.searchGoal.locationToSpawn).transform;
                     GameObject itemToFind = Instantiate(Resources.Load<GameObject>("Prefabs/Item Prefab"));
@@ -547,6 +582,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 {
                     this.playerData.completedQuests.Add(questFound);
                     this.playerData.notesInfos.Add(questFound);
+                    this.notesIcon.GetChild(0).gameObject.SetActive(true);
                     this.SetupAllNotes();
 
                     DataPersistenceManager.instance.playerData.dunongPoints += quest.dunongPointsRewards;
@@ -565,6 +601,10 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 }
                 this.GetListOfQuests();
 
+                if (this.playerData.currentQuests.Count < 1)
+                {
+                    OnAllQuestCompleted?.Invoke("Now you can take the assessment at the school event!");
+                }
                 DataPersistenceManager.instance?.SaveGame();
 
                 return;
@@ -590,6 +630,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 {
                     this.playerData.completedQuests.Add(questFound);
                     this.playerData.notesInfos.Add(questFound);
+                    this.notesIcon.GetChild(0).gameObject.SetActive(true);
                     this.SetupAllNotes();
 
                     DataPersistenceManager.instance.playerData.dunongPoints += quest.dunongPointsRewards;
@@ -607,6 +648,11 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                     this.SetupScriptsForRequestQuest();
                 }
                 this.GetListOfQuests();
+
+                if (this.playerData.currentQuests.Count < 1)
+                {
+                    OnAllQuestCompleted?.Invoke("Now you can take the assessment at the school event!");
+                }
 
                 DataPersistenceManager.instance?.SaveGame();
 
@@ -643,7 +689,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 {
                     this.playerData.notesInfos.Add(questFound);
                     this.playerData.completedQuests.Add(questFound);
-
+                    this.notesIcon.GetChild(0).gameObject.SetActive(true);
                     this.SetupAllNotes();
 
                     DataPersistenceManager.instance.playerData.dunongPoints += quest.dunongPointsRewards;
@@ -654,6 +700,11 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 this.playerData.quests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
 
                 this.GetListOfQuests();
+
+                if (this.playerData.currentQuests.Count < 1)
+                {
+                    OnAllQuestCompleted?.Invoke("Now you can take the assessment at the school event!");
+                }
 
                 DataPersistenceManager.instance?.SaveGame();
 
@@ -684,6 +735,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 Quest questFoundInCurrentQuest = this.playerData.currentQuests.Find(questToFind => questToFind.questID == quest.questID).CopyTalkQuestGoal();
 
                 this.playerData.notesInfos.Add(questFoundInCurrentQuest);
+                this.notesIcon.GetChild(0).gameObject.SetActive(true);
 
                 this.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID.ToLower() == questFoundInCurrentQuest.questID.ToLower());
                 this.playerData.quests.RemoveAll(questToRemove => questToRemove.questID.ToLower() == questFoundInCurrentQuest.questID.ToLower());
@@ -693,6 +745,11 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 this.playerData.completedQuests.Add(questFoundInCurrentQuest);
 
                 this.GetListOfQuests();
+
+                if (this.playerData.currentQuests.Count < 1)
+                {
+                    OnAllQuestCompleted?.Invoke("Now you can take the assessment at the school event!");
+                }
 
                 DataPersistenceManager.instance.SaveGame();
 
@@ -748,6 +805,8 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     /// <param name="regionName"></param>
     public void ResetAllCompletedQuests(string regionName)
     {
+        DataPersistenceManager.instance.playerData.isQuestReset = true;
+
         // Add all the completed quests to the current quest based on region
         foreach (Quest quest in DataPersistenceManager.instance.playerData.completedQuests)
         {

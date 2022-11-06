@@ -859,6 +859,18 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -6292,9 +6304,9 @@ TextureImporter:
       Floors and Bridges 1_109: 7730758620858023704
       Floors and Bridges 1_65: 1962248568703622328
       Floors and Bridges 1_108: -2220792823412408308
-      Floors and Bridges 1_121: -6709549744688623323
-      Floors and Bridges 1_185: -2384040957594215816
       Floors and Bridges 1_199: 6328546447185547487
+      Floors and Bridges 1_185: -2384040957594215816
+      Floors and Bridges 1_121: -6709549744688623323
       Floors and Bridges 1_247: 5477904570456368050
       Floors and Bridges 1_153: 4764652232287299132
       Floors and Bridges 1_250: -9177253829168291835
@@ -6334,10 +6346,10 @@ TextureImporter:
       Floors and Bridges 1_173: 5237301277591820417
       Floors and Bridges 1_154: 6868942202183570209
       Floors and Bridges 1_0: -9187361950385036369
-      Floors and Bridges 1_3: 2442145519764665782
       Floors and Bridges 1_52: -1936177215527931241
       Floors and Bridges 1_97: -1084414731740884606
       Floors and Bridges 1_232: 3372053516055427614
+      Floors and Bridges 1_3: 2442145519764665782
       Floors and Bridges 1_123: 5910518279902064319
       Floors and Bridges 1_187: 3767063124077354585
       Floors and Bridges 1_194: -944127990149760390
@@ -6395,8 +6407,8 @@ TextureImporter:
       Floors and Bridges 1_203: -3724089409753631784
       Floors and Bridges 1_181: 3131787443755870009
       Floors and Bridges 1_228: 3730690692287802721
-      Floors and Bridges 1_134: 4138134738082752713
       Floors and Bridges 1_230: 8515316978261718579
+      Floors and Bridges 1_134: 4138134738082752713
       Floors and Bridges 1_137: 8557114592147709033
       Floors and Bridges 1_220: -7224727483091748532
       Floors and Bridges 1_27: 8697791023566049737
@@ -6406,11 +6418,11 @@ TextureImporter:
       Floors and Bridges 1_51: -529184890684636456
       Floors and Bridges 1_71: -6044136406772581131
       Floors and Bridges 1_70: -7627002341941303388
-      Floors and Bridges 1_91: 7658573615417956411
       Floors and Bridges 1_253: -5898552860856967374
-      Floors and Bridges 1_149: -3832542045174995352
+      Floors and Bridges 1_91: 7658573615417956411
       Floors and Bridges 1_122: 7366562077952151042
       Floors and Bridges 1_117: 5282565560556602691
+      Floors and Bridges 1_149: -3832542045174995352
       Floors and Bridges 1_4: 3787801442005778607
       Floors and Bridges 1_129: -7812472229843339149
       Floors and Bridges 1_161: -342939079266336367

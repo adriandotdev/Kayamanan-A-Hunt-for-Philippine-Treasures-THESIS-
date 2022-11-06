@@ -73,7 +73,7 @@ public class InventoryManager : MonoBehaviour
     {
         List<Item> inventory = DataPersistenceManager.instance.playerData.inventory.items;
 
-        Item itemFound = inventory.Find(item => item.itemName == itemToRemove.itemName);
+        Item itemFound = inventory.Find(item => item.itemName == itemToRemove.itemName).CopyItem();
 
         if (itemFound != null)
         {

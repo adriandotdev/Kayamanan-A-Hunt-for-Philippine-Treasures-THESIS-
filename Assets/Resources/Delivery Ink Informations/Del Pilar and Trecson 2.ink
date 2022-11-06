@@ -3,9 +3,12 @@ VAR count = -1
 -> main
 
 === main ===
-    {~Hello! It's you again!, which heroes do you want to tackle?|Which heroes do you want to know? Don't be shy for asking me questions.}
+    Hello! It's you again. Do you want to recap the info about Del Pilars?
+    + [Yes] Alright then, which one you want to tackle first?
     -> items
-    + [Next]
+    + [No]
+        Alright then! Just go to me if you want to recap. 
+        + + [Exit]
 -> END
 
 === items ===

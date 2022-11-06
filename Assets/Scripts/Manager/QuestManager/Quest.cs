@@ -28,6 +28,7 @@ public class Quest
 
     public QUEST_TYPE questType;
 
+    // TALK QUEST
     public Quest(string title, string note, string description, int dunongPointsRewards, string region, int regionNum, TalkGoal goal)
     {
         this.questID = Guid.NewGuid().ToString();
@@ -43,6 +44,7 @@ public class Quest
         this.questType = QUEST_TYPE.TALK;
     }
 
+    // DELIVERY QUEST
     public Quest(string title, string note, string description, int dunongPointsRewards, string region, int regionNum, DeliveryGoal goal)
     {
         this.questID = Guid.NewGuid().ToString();
@@ -78,6 +80,7 @@ public class Quest
         this.questType = QUEST_TYPE.DELIVERY;
     }
 
+    // REQUEST GOAL
     public Quest(string title, string note, string description, int dunongPointsRewards, string region, int regionNum, RequestGoal goal)
     {
         this.questID = Guid.NewGuid().ToString();
@@ -92,6 +95,7 @@ public class Quest
         this.questType = QUEST_TYPE.REQUEST;
     }
 
+    // TALK GOAL PERO MAY IPAPAKITA NA ALBUM
     public Quest(string title, string note, string description, int dunongPointsRewards, string region, int regionNum, ShowPhotoAlbumGoal goal)
     {
         this.questID = Guid.NewGuid().ToString();

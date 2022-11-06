@@ -15,6 +15,11 @@ public class NotesManager : MonoBehaviour
     public GameObject notePrefab;
     public Transform notesPanelContainer;
 
+    // UI Elements to Hide/Disabled
+    public CanvasGroup houseCanvasGroup;
+    public GameObject inventoryPanel;
+    public GameObject joyStick;
+
     private void Awake()
     {
         if (instance == null)
@@ -31,18 +36,27 @@ public class NotesManager : MonoBehaviour
         this.closeNotesPanelBtn = GameObject.Find("Close Notes Panel BTN").GetComponent<Button>();
         this.notesPanelContainer = this.notesPanel.GetChild(2).GetChild(0).GetChild(0);
         this.notesPanel.localScale = Vector2.zero;
-
+        this.houseCanvasGroup = GameObject.Find("House Canvas Group").GetComponent<CanvasGroup>();
+        this.joyStick = GameObject.Find("Fixed Joystick");
+        this.inventoryPanel = GameObject.Find("Inventory Panel");
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House") && 
             DataPersistenceManager.instance.playerData.isTutorialDone == false)
             return;
 
-        this.notesBtn.onClick.AddListener(this.OpenNotesPanel);
+        this.notesBtn.onClick.AddListener(() => {
+            this.OpenNotesPanel();
+            this.notesBtn.transform.GetChild(0).gameObject.SetActive(false);
+        });
         this.closeNotesPanelBtn.onClick.AddListener(this.CloseNotesPanel);
     }
 
     public void OpenNotesPanel()
     {
+        this.houseCanvasGroup.interactable = false;
+        this.inventoryPanel.SetActive(false);
+        this.joyStick.SetActive(false);
+
         LeanTween.scale(this.notesPanel.gameObject, new Vector2(334.8216f, 334.8216f), .2f)
             .setEaseSpring();
 
@@ -55,6 +69,10 @@ public class NotesManager : MonoBehaviour
 
     public void CloseNotesPanel()
     {
+        this.houseCanvasGroup.interactable = true;
+        this.inventoryPanel.SetActive(true);
+        this.joyStick.SetActive(true);
+
         LeanTween.scale(this.notesPanel.gameObject, Vector2.zero, .2f)
            .setEaseSpring();
 

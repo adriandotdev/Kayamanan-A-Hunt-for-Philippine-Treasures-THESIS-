@@ -7,11 +7,14 @@ public class SearchQuest : MonoBehaviour
 {
     public Quest searchQuest;
     public Button giveItemToNPCBtn;
+    public Button requestBtn;
 
     private void Start()
     {
         this.giveItemToNPCBtn = transform.GetChild(0).GetChild(3).GetComponent<Button>();
+        this.requestBtn = transform.GetChild(0).GetChild(2).GetComponent<Button>();
 
+        this.requestBtn.onClick.AddListener(() => Debug.Log("Request Type of Search"));
         this.giveItemToNPCBtn.onClick.AddListener(GiveItem);
     }
 
@@ -35,9 +38,15 @@ public class SearchQuest : MonoBehaviour
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player")
-            && searchQuest != null && IsPlayerHasItemNeeded())
+            && searchQuest != null && IsPlayerHasItemNeeded() && searchQuest.searchGoal.typesOfSearch == "clue")
         {
             this.giveItemToNPCBtn.gameObject.SetActive(true);
+        }
+        else if (collision.gameObject.CompareTag("Player")
+            && searchQuest != null && IsPlayerHasItemNeeded() == false
+            && searchQuest.searchGoal.typesOfSearch == "request")
+        {
+            this.requestBtn.gameObject.SetActive(true);
         }
     }
 
@@ -46,6 +55,7 @@ public class SearchQuest : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             this.giveItemToNPCBtn.gameObject.SetActive(false);
+            this.requestBtn.gameObject.SetActive(false);
         }
     }
 }

@@ -16,6 +16,7 @@ TagManager:
   - Go Home Entrance
   - SpawnPoint
   - Rooms
+  - Inventory Panel
   layers:
   - Default
   - TransparentFX
@@ -67,4 +68,7 @@ TagManager:
     locked: 0
   - name: User Interface
     uniqueID: 2723943027
+    locked: 0
+  - name: Additive UIs
+    uniqueID: 262622231
     locked: 0

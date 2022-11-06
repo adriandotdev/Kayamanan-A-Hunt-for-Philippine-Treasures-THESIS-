@@ -79,7 +79,7 @@ public class DialogueTrigger : MonoBehaviour
                     if (quest.numberGoal.currentNumber == quest.numberGoal.targetNumber)
                     {
                         QuestManager.instance?.OpenPlainAlertBoxAndAlertBox("You met a new villager");
-
+                        SoundManager.instance?.PlaySound("Quest Notification");
                         DataPersistenceManager.instance.playerData.quests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
                         DataPersistenceManager.instance.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
                         
@@ -89,6 +89,9 @@ public class DialogueTrigger : MonoBehaviour
                             DataPersistenceManager.instance.playerData.isPreQuestIntroductionDone = true;
                             QuestManager.instance?.GetListOfQuests();
                             QuestManager.instance?.SetupScriptsForRequestQuest();
+
+                            QuestManager.OnAllQuestCompleted?.Invoke("Pre-Quest is done. You can check now the new quests for Ilocos Region"); // Show the quest completed panel.
+                            DataPersistenceManager.instance.playerData.questNewIcon = true; // Set the questIconNew to true
                         }
 
                         break;

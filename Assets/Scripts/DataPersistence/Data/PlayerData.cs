@@ -16,6 +16,15 @@ public class PlayerData
     public bool isNPCIntroductionPanelDone;
     public bool isFromSleeping;
     public bool isSleepPanelNotShown;
+    public bool isFirstTimeGoingToSchool;
+    public bool isQuestReset;
+    public bool hasNewOpenRegion;
+
+    // Icons Notification Booleans
+    public bool questNewIcon;
+    public bool notesNewIcon;
+    public bool achievementsNewIcon;
+
     public string name;
     public string gender;
     public int dunongPoints;
@@ -69,6 +78,8 @@ public class PlayerData
     const string GENERAL_KNOWLEDGE = "General Knowledge";
 
     const string INFO_PATH = "Delivery Ink Informations";
+    const string THANKYOU_PATH = "Delivery Ink Informations/Thank You Inks/";
+
     public PlayerData()
     {
         this.previousData = null;
@@ -79,6 +90,14 @@ public class PlayerData
         this.isPreQuestIntroductionDone = false;
         this.isNPCIntroductionPanelDone = false;
         this.isSleepPanelNotShown = true;
+        this.isFirstTimeGoingToSchool = true;
+        this.isQuestReset = false;
+        this.hasNewOpenRegion = false;
+
+        this.questNewIcon = false;
+        this.achievementsNewIcon = false;
+        this.notesNewIcon = false;
+         
         this.id = null;
         this.name = null;
         this.gender = "male";
@@ -103,16 +122,19 @@ public class PlayerData
         this.AddRegionsForMindanao();
 
         // PRE-QUEST
-        this.PreQuest();
-        // Regions Quest
+        //this.PreQuest();
+        //// Regions Quest
+
         this.QuestForIlocosRegion();
-        this.QuestForCagayanValley();
-        this.QuestForCar();
+        //this.QuestForCagayanValley();
+        //this.QuestForCAR();
+        //this.QuestForCentralLuzon();
+        //this.QuestForNCR();
+        //this.QuestForCALABARZON();
 
-
-        //// string title, string note, string description, string hint, int dunongPointsRewards, string region, int regionNum, SearchGoal searchGoal
-        //this.quests.Add(new Quest("Fossil Fuel", "I can talk to Dale Abenjobar", "Find a bone around museum.", "It is located behind it", 
-        //    35, CAGAYAN_VALLEY, 2, new SearchGoal("Ivan Henares", "Outside", "SP 1", new Item("Mango", 1, false, "", "", ""))));
+        // string title, string note, string description, string hint, int dunongPointsRewards, string region, int regionNum, SearchGoal searchGoal
+        //this.quests.Add(new Quest("A Lost Bone", "", "Find a bone around museum.", "It is located behind it",
+        //    35, ILOCOS_REGION, 1, new SearchGoal("Ivan Henares", "Outside", "SP 1", "clue", new Item("Mango", 1, false, "", "", ""))));
 
         this.AddNPCsInfo();
         this.InitializeRequiredDunongPointsToPlay(1);
@@ -137,12 +159,12 @@ public class PlayerData
     public void PreQuest()
     {
         this.quests.Add(new Quest("A Day with Friendliness", "Meet all the villagers.", "PRE-QUEST", new NumberGoal(3, NumberGoal.CORRESPONDING_OBJECT_TO_COUNT.TALK_NPC)));
-        this.quests.Add(new Quest("Preparation for Lunch!", "", "Buy a malunggay and sayote from the market nearby.", 25, "PRE-QUEST", 0,
+        this.quests.Add(new Quest("Preparation for Lunch!", "", "Buy a malunggay from the market nearby.", 25, "PRE-QUEST", 0,
             new RequestGoal
             (
                 new ItemGiver[]
                 {
-                    new ItemGiver("Store in Market", new List<Item> {new Item("Malunggay", 1, false, "Malunggay", "Delivery Ink Informations/Malunggay", "PCP/Malunggay")})
+                    new ItemGiver("Store in Market", "Buy a Malunggay?", new List<Item> {new Item("Malunggay", 1, false, "Malunggay", "Delivery Ink Informations/Malunggay", "PCP/Malunggay")})
                 },
                 "Aling Nena",
                 "Go buy a <b>Malunggay</b> to a nearby store for our lunch later.",
@@ -152,82 +174,214 @@ public class PlayerData
 
     public void QuestForIlocosRegion()
     {
-        this.quests.Add(new Quest("Gift of the North", "I can talk to Mikaela for Malacanang of the North.", "Talk to Mikaela Fudolig", 25, ILOCOS_REGION, 1,
-        new ShowPhotoAlbumGoal("Mikaela Fudolig",
-        new Item[] { new Item("None", 0, false, "Malacanang of the North", "Delivery Ink Informations/Malacanang of the North", "PCP/Malacanang of the North") })));
+        //this.quests.Add(new Quest("Gift of the North", "I can talk to Mikaela for Malacanang of the North.", "Talk to Mikaela Fudolig", 25, ILOCOS_REGION, 1,
+        //new ShowPhotoAlbumGoal("Mikaela Fudolig",
+        //new Item[] { new Item("None", 0, false, "Malacanang of the North", "Delivery Ink Informations/Malacanang of the North", "PCP/Malacanang of the North") })));
 
-        this.quests.Add(new Quest("Beautiful Places", "I can reach Zardo Domenios about Pagudpud Beach.", "Talk to Zardo Domenios", 25, ILOCOS_REGION, 1,
-        new ShowPhotoAlbumGoal("Zardo Domenios",
-        new Item[]
-            {
-                        new Item("None", 0, false, "Pagudpud Beach", "Delivery Ink Informations/Pagudpud Beach", "PCP/Pagudpud Beach"),
-                        new Item("None", 0, false, "Hundred Islands", "Delivery Ink Informations/Hundred Islands", "PCP/Hundred Islands")
-            })));
+        //this.quests.Add(new Quest("Beautiful Places", "I can reach Zardo Domenios about Pagudpud Beach.", "Talk to Zardo Domenios", 25, ILOCOS_REGION, 1,
+        //new ShowPhotoAlbumGoal("Zardo Domenios",
+        //new Item[]
+        //    {
+        //                new Item("None", 0, false, "Pagudpud Beach", "Delivery Ink Informations/Pagudpud Beach", "PCP/Pagudpud Beach"),
+        //                new Item("None", 0, false, "Hundred Islands", "Delivery Ink Informations/Hundred Islands", "PCP/Hundred Islands")
+        //    })));
 
-        this.quests.Add(new Quest("Ilocos' Notable Heroes!", "Go to Gregorio Zaide for National Heroes.", "Talk to someone who has a background for National Heroes.",
-            15, ILOCOS_REGION, 1, new TalkGoal("Gregorio Zaide")));
+        //this.quests.Add(new Quest("Ilocos' Notable Heroes!", "Go to Gregorio Zaide for National Heroes.", "Talk to someone who has a background for National Heroes.",
+        //    15, ILOCOS_REGION, 1, new TalkGoal("Gregorio Zaide")));
 
-        this.quests.Add(new Quest("Ivan Henares' Lunch", "Talk to Ivan Henares about Puto Festival.", "Help Ivan Henares to get his lunch at the karinderya.", 25, ILOCOS_REGION, 1,
-            new RequestGoal
-            (
-                new ItemGiver[]
-                {
-                    new ItemGiver("Rolando Laudico", new List<Item> {
-                        new Item("Puto", 1, false, "Puto Festival", "Delivery Ink Informations/Puto Festival", "PCP/Puto Festival"),
-                        new Item("Dinuguan", 1, false, "", "", "")
-                    })
-                },
-                "Ivan Henares",
-                "Hi! Can you I ask you a favor to buy me a <b>Puto</b> and <b>Dinuguan</b> at the <b>Karinderya</b>?",
-                "Buy <b>Puto</b> and <b>Dinuguan</b>?"
-            )));
+        //this.quests.Add(new Quest("Ivan Henares' Lunch", "Talk to Ivan Henares about Puto Festival.", "Help Ivan Henares to get his lunch at the karinderya.", 25, ILOCOS_REGION, 1,
+        //    new RequestGoal
+        //    (
+        //        new ItemGiver[]
+        //        {
+        //            new ItemGiver("Karinderya", "Buy Puto and Dinuguan?", new List<Item> {
+        //                new Item("Puto", 1, false, "Puto Festival", "Delivery Ink Informations/Puto Festival", "PCP/Puto Festival"),
+        //                new Item("Dinuguan", 1, false, "", "", "")
+        //            })
+        //        },
+        //        "Ivan Henares",
+        //        "Hi! Can you I ask you a favor to buy me a <b>Puto</b> and <b>Dinuguan</b> at the <b>Karinderya</b>?",
+        //        "Buy <b>Puto</b> and <b>Dinuguan</b>?"
+        //    )));
 
         this.quests.Add(new Quest("Chef's Request!", "Reach Mang Rolando about the info about his recipes.", "Mang Rolando is asking to get his recipe for today. Get all of it to a store that has a color blue roof nearby.", 25, ILOCOS_REGION, 1,
             new RequestGoal
             (
                 new ItemGiver[]
                 {
-                    new ItemGiver("Store in Market", new List<Item> {
+                    new ItemGiver("Store in Market", "Buy Empanada and Longganisa?", new List<Item> {
                         new Item("Empanada", 1, false, "Empanada Festival", "Delivery Ink Informations/Empanada Festival", "PCP/Empanada Festival"),
                         new Item("Longganisa", 1, false, "Longganisa Festival", "Delivery Ink Informations/Longganisa Festival", "PCP/Longganisa Festival")
                     })
                 },
                 "Rolando Laudico",
-                "Hello, do you mind helping me to get my recipe to a market nearby?",
+                "Hello, do you mind helping me to get my recipe to a market nearby? The recipe that I needed is <b>Empanada</b> and <b>Longganisa</b>.",
                 "Buy Empanada and Longganisa?"
             )));
 
-        this.quests.Add(new Quest("A Forgotten Costume", "I can go to Joseph to know about Diego Silang.", "Find Joseph at school and help him to get his salakot for his costume to his father Gregorio Zaide.", 25, ILOCOS_REGION, 1,
-            new RequestGoal
-            (
-                new ItemGiver[]
-                {
-                    new ItemGiver("Gregorio Zaide", new List<Item> {new Item("Salakot", 1, false, "Diego Silang", "Delivery Ink Informations/Diego Silang", "PCP/Diego Silang")})
-                },
-                "Joseph",
-                "Hello! I have a favor for you. Can you get the salakot from my father Gregorio Zaide?",
-                "Hi. Thank you so much for helping me to give this to my son. After you gave this, you will get an info about to the character that he is role playing."
-            )));
+        //this.quests.Add(new Quest("A Forgotten Costume", "I can go to Joseph to know about Diego Silang.", "Find Joseph at school and help him to get his salakot for his costume to his father Gregorio Zaide.", 25, ILOCOS_REGION, 1,
+        //    new RequestGoal
+        //    (
+        //        new ItemGiver[]
+        //        {
+        //            new ItemGiver("Gregorio Zaide",
+        //            "Hi. Thank you so much for helping me to give this to my son. After you gave this, you will get an info about to the character that he is role playing.",
+        //            new List<Item> {new Item("Salakot", 1, false, "Diego Silang", "Delivery Ink Informations/Diego Silang", "PCP/Diego Silang")})
+        //        },
+        //        "Joseph",
+        //        "Hello! I have a favor for you. Can you get the salakot from my father Gregorio Zaide?",
+        //        "Hi. Thank you so much for helping me to give this to my son. After you gave this, you will get an info about to the character that he is role playing."
+        //    )));
     }
 
     public void QuestForCagayanValley()
     {
+        this.quests.Add(new Quest("A Beauty in Darkness", "I can see Ivan Henares about Aglipay and Callao caves.", "Go to Ivan Henares.", 25, CAGAYAN_VALLEY, 2,
+         new ShowPhotoAlbumGoal("Ivan Henares",
+         new Item[] { 
+             new Item("None", 0, false, "Aglipay Cave Quirino", "Delivery Ink Informations/Aglipay Cave Quirino", "PCP/Aglipay Cave Quirino") ,
+             new Item("None", 0, false, "Callao Cave", "Delivery Ink Informations/Callao Cave", "PCP/Callao Cave")
+         })));
+
         this.quests.Add(new Quest("Looks like a Cigarette", "I can see Dale Abenjobar about this Marlboro Country", "Go to Dale Abenjobar and talk to him.", 25, CAGAYAN_VALLEY, 2,
          new ShowPhotoAlbumGoal("Dale Abenjobar",
          new Item[] { new Item("None", 0, false, "Marlboro Country", "Delivery Ink Informations/Marlboro Country", "PCP/Marlboro Country") })));
+
+        //this.quests.Add(new Quest("Strength of a great typhoon!", "Ivatan House is located at museum.", "Read about Ivatan House in ",
+        //  15, CAGAYAN_VALLEY, 2, new TalkGoal("Ivatan House")));
     }
-    public void QuestForCar()
+
+    public void QuestForCAR()
+    {
+
+        this.quests.Add(new Quest("Flowers In Powers", "I can approach BJ Pascual about Panagbenga Festival.",
+            "Help BJ Pascual to get the flowers from a nearby flower shop.", 10, CAR, 3,
+            new RequestGoal
+            (
+                new ItemGiver[]
+                {
+                    new ItemGiver("Flower Shop", "Buy Flower?", new List<Item> {
+                        new Item("Flower", 1, false, "Panagbenga Festival", "Delivery Ink Informations/Panagbenga Festival", "PCP/Panagbenga Festival")
+                    })
+                },
+                "BJ Pascual",
+                "Hi! I'm planning to give my friend a present when she got home. Do you mind if you get me some flowers at nearby flower shop?",
+                "Buy a flower?"
+            )));
+
+        this.quests.Add(new Quest("Jam of Sweetness", "I can approach Chef Rolando for info about La Trinidad Strawberry Farms.",
+            "Help Mang Rolando to get a strawberry jam from a nearby store.", 10, CAR, 3,
+            new RequestGoal
+            (
+                new ItemGiver[]
+                {
+                    new ItemGiver("Strawberry Jam Shop", "Buy Strawberry Jam?", new List<Item> {
+                        new Item("Strawberry Jam", 7, false, "La Trinidad Strawberry Farm", "Delivery Ink Informations/La Trinidad Strawberry Farm", 
+                        "PCP/La Trinidad Strawberry Farm")
+                    })
+                },
+                "Rolando Laudico",
+                "Hi! I'm planning to bake a unque bread for the miryenda menu of the karinderya. Do you mind to buy me a strawberry jam at the local strawberry jam store?",
+                "Buy a strawberry jam?"
+            )));
+
+        this.quests.Add(new Quest("A Home Full of Colors", "Sto Bosa at School",
+            "Find a photo booth about colorful houses at school.", 15, CAR, 3, new TalkGoal("Colors of Stobosa")));
+
+        this.quests.Add(new Quest("A Stairs of Rice", "Picture of Banaue Rice Terraces at School.",
+            "Find a photo stand of Rice Terraces at school.", 15, CAR, 3, new TalkGoal("Banaue Rice Terraces")));
+
+        this.quests.Add(new Quest("Mines View Park", "I can talk to Dale Abenjobar", "Help Ivan Henares to give a rope to Dale Abenjobar.",
+        25, CAR, 3,
+        new DeliveryGoal("Ivan Henares", "Dale Abenjobar", "Do you mind to give this rope to Dale?",
+        THANKYOU_PATH + "Mines View Park", THANKYOU_PATH + "Mines View Park 2",
+        "Text", new Item[] { new Item("Rope", 1, false, "", "", "") })));
+
+        this.quests.Add(new Quest("Blessed With a Best View!", "Rix Seminarian has a knowledge about the Our Lady of Lourdes.", 
+            "Talk to Rix the Seminarian.", 15, CAR, 3, new TalkGoal("Rix the Seminarian")));
+    }
+
+    public void QuestForCentralLuzon()
     {
         this.quests.Add(new Quest("Looks like a Parol!", "Go to museum and look for Giant Lantern",
             "Go to <b>Museum</b> and see the info about an object that looks like a lantern.",
-            15, CAR, 3, new TalkGoal("Giant Lantern")));
+            15, CENTRAL_LUZON, 4, new TalkGoal("Giant Lantern")));
 
-        this.quests.Add(new Quest("Generals' Sword", "I can ask Gregorio Zaide to know about Del Pilars.", "Help Ramon Villegas to give the antique sword to Gregorio Zaide.", 
-            25, CAR, 3,
+        this.quests.Add(new Quest("Ashes Catastrophe!", "Mae Jardaleza has a knowledge about Mt. Pinatubo.",
+            "Talk to someone who is good at Volcanoes.",
+            15, CENTRAL_LUZON, 4, new TalkGoal("Mae Jardaleza")));
+
+        this.quests.Add(new Quest("All About Balloons and Carabaos!", "I can reach BJ Pascual about Hot Air Balloon and Carabao Festival.", 
+            "Talk to someone who takes pictures about festivals.", 15, CENTRAL_LUZON, 4,
+            new ShowPhotoAlbumGoal("BJ Pascual",
+            new Item[] {
+                new Item("None", 0, false, "Hot Air Balloon Festival", INFO_PATH + "/Hot Air Balloon Festival", "PCP/Hot Air Balloon Festival"),
+                new Item("None", 0, false, "Carabao Festival", INFO_PATH + "/Carabao Festival", "PCP/Carabao Festival")
+            })));
+
+        this.quests.Add(new Quest("The Del Pilars", "I can ask Gregorio Zaide to know about Del Pilars.", "Help Ramon Villegas to give the antique sword to Gregorio Zaide.", 
+            25, CENTRAL_LUZON, 4,
             new DeliveryGoal("Ramon Villegas", "Gregorio Zaide", "Hello! I have a favor. Do you mind if you give this to Gregorio Zaide?",
             INFO_PATH + "/Del Pilar and Trecson", INFO_PATH + "/Del Pilar and Trecson 2",
-            "Text", new Item("Sword", 1, false, "", "", ""))));
+            "Text", new Item[] { new Item("Sword", 1, false, "", "", "") })));
+
+        this.quests.Add(new Quest("Dinamulag Festival", "I can ask Ramon Villegas about Dinamulag Festival.", 
+            "Help Rolando to give 3 pcs of Mango to Ramon Villegas.",
+          25, CENTRAL_LUZON, 4,
+          new DeliveryGoal("Rolando Laudico", "Ramon Villegas", "Hello! Do you mind to give this to Ramon Villegas?",
+          THANKYOU_PATH + "Dinamulag Festival", THANKYOU_PATH + "Dinamulag Festival 2",
+          "Not Text", new Item[] { new Item("Mango", 3, false, "", "", "") },
+          new Item[] {
+                    new Item("Dinamulag Festival", 0, false, "Dinamulag Festival", INFO_PATH + "/Dinamulag Festival", "PCP/Dinamulag Festival")
+          })));
     }
+
+    public void QuestForNCR()
+    {
+        // FOR TESTING ONLY
+        this.quests.Add(new Quest("A Beauty in Darkness", "I can see Ivan Henares about Aglipay and Callao caves.", "Go to Ivan Henares.", 
+            25, NCR, 5,
+         new ShowPhotoAlbumGoal("Ivan Henares",
+         new Item[] {
+             new Item("None", 0, false, "Aglipay Cave Quirino", "Delivery Ink Informations/Aglipay Cave Quirino", "PCP/Aglipay Cave Quirino") ,
+             new Item("None", 0, false, "Callao Cave", "Delivery Ink Informations/Callao Cave", "PCP/Callao Cave")
+         })));
+    }
+
+    public void QuestForCALABARZON()
+    {
+        this.quests.Add(new Quest("He Don't Need A Sword.", "I can go to Jose Rizal's bust inside the museum.",
+        "Go to <b>Museum</b> and see the info about Jose Rizal.",
+        15, CALABARZON, 6, new TalkGoal("Jose Rizal")));
+
+        this.quests.Add(new Quest("The Revolutionaries", "I can go to Gregorio to know about the revolutionaries.",
+        "Talk to Gregorio Zaide.",
+        15, CALABARZON, 6, new TalkGoal("Gregorio Zaide")));
+
+        this.quests.Add(new Quest("Colorful Leaves!", "I can go to BJ Pascual to know what is Pahiyas Festival.", 
+            "Buy an unusual leaves at a nearby store for BJ Pascual.", 25, CALABARZON, 6,
+            new RequestGoal
+            (
+                new ItemGiver[]
+                {
+                    new ItemGiver("Store in Market", "Buy Kiping?", new List<Item> {
+                        new Item("Kiping", 5, false, "Pahiyas Festival", "Delivery Ink Informations/Pahiyas Festival", "PCP/Pahiyas Festival"),
+                         new Item("None", 5, false, "Higantes Festival", "Delivery Ink Informations/Higantes Festival", "PCP/Higantes Festival")
+                    }),
+                    new ItemGiver("Gregorio Zaide", "Get the Sampaguita?", new List<Item> {
+                        new Item("Sampaguita", 5, false, "Sampaguita Festival", "Delivery Ink Informations/Sampaguita Festival", "PCP/Sampaguita Festival")
+                    })
+                },
+                "BJ Pascual",
+                "Hello, do you mind to get me a kiping at a nearby market?",
+                "Buy a Kiping leaves?"
+            )));
+
+        this.quests.Add(new Quest("A Tall of Holiness", "I can talk to Rix to know about Kamay ni Jesus.", "Talk to Rix the Seminarian.", 25, CALABARZON, 6,
+        new ShowPhotoAlbumGoal("Rix the Seminarian",
+        new Item[] { new Item("None", 0, false, "Kamay ni Jesus", "Delivery Ink Informations/Kamay ni Jesus", "PCP/Kamay ni Jesus") })));
+    }
+
 
     /// <summary>
     /// A function that adds all the regions of Luzon.
@@ -410,7 +564,7 @@ public class PlayerData
 
         playerData.QuestForIlocosRegion();
         playerData.QuestForCagayanValley();
-        playerData.QuestForCar();
+        playerData.QuestForCentralLuzon();
 
         playerData.AddNPCsInfo();
         playerData.InitializeRequiredDunongPointsToPlay(1);

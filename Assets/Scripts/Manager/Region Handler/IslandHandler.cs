@@ -162,7 +162,6 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
 
             if (foundRegionData != null)
             {
-                print(foundRegionData.regionName);
                 button.GetComponent<Button>().onClick.AddListener(() =>
                 {
                     SoundManager.instance?.PlaySound("Button Click 1");

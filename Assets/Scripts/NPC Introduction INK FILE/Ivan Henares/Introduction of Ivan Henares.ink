@@ -2,13 +2,13 @@
 
 == main ==
     Good Morning! (Magandang Umaga) I'm Ivan Henares and you can call me Ivan. I'm a remote worker. 
-    + [What is remote worker?]
-    It basically means that I do my job even I'm not in the actual workplace or work environment.
+    + [What is a remote worker?]
+    It is basically mean that I do my job even if I'm not in the actual workplace or in an actual work environment.
     + + [That's cool. So you can work anywhere around the world?]
-    Yes! I actually love to travel to different locations especially with breathtaking sceneries.
+    Yes! I actually love to travel in any different locations especially with a breathtaking sceneries.
     + + + [Next]
-    I currently here because I visit my Internet friend.
+    I'm currently here because I'm visiting my Internet friend around the area.
     + + + + [Next]
-    If you have question about different astounding locations in the Philippines. Just let me know!
+    If you have questions about the different astounding locations in the Philippines, just let me know!
     + + + + + [Thank you!]
 -> END

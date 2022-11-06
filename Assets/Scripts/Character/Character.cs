@@ -26,6 +26,8 @@ public class Character : MonoBehaviour, IDataPersistence
 
     Vector3 movement;
 
+    bool isMoving = false;
+
     // Player Data
     public PlayerData playerData;
 
@@ -37,7 +39,7 @@ public class Character : MonoBehaviour, IDataPersistence
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         float horizontal = joystick.Horizontal;
         float vertical = joystick.Vertical;
@@ -46,11 +48,12 @@ public class Character : MonoBehaviour, IDataPersistence
         if (horizontal != 0 || vertical != 0)
         {
             animator.SetFloat("Speed", 1);
-            
+            isMoving = true;
         }
         else
         {
             animator.SetFloat("Speed", 0);
+            isMoving = false;
         }
 
         animator.SetFloat("Horizontal", horizontal);
@@ -63,7 +66,7 @@ public class Character : MonoBehaviour, IDataPersistence
 
         transform.position += movement;
 
-        if (DataPersistenceManager.instance != null)
+        if (isMoving == false && DataPersistenceManager.instance != null)
         {
             DataPersistenceManager.instance.playerData.xPos = transform.position.x;
             DataPersistenceManager.instance.playerData.yPos = transform.position.y;
@@ -73,11 +76,7 @@ public class Character : MonoBehaviour, IDataPersistence
 
     public void LoadPlayerData(PlayerData playerData)
     {
-        //this.characterNameText = GameObject.Find("Character Name").GetComponent<TMPro.TextMeshProUGUI>();
-
         this.playerData = playerData;
-
-        //this.characterNameText.text = this.playerData.name;
     }
 
     public void SavePlayerData()
