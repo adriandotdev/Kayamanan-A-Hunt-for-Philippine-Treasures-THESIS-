@@ -829,8 +829,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -593, y: 315}
-  m_SizeDelta: {x: 792.67, y: 118.38}
+  m_AnchoredPosition: {x: -609.48, y: 315}
+  m_SizeDelta: {x: 759.71, y: 118.38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1171146892
 MonoBehaviour:
@@ -852,7 +852,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Festival
+  m_text: Malacanang of the North
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a26d2f4e0a35f724bb6dda39ba442ac9, type: 2}
   m_sharedMaterial: {fileID: -732908864483190472, guid: a26d2f4e0a35f724bb6dda39ba442ac9, type: 2}
@@ -879,10 +879,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 78.8
+  m_fontSize: 72
   m_fontSizeBase: 78.8
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1241,12 +1241,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.74
+  m_fontSize: 41.6
   m_fontSizeBase: 36.74
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 55
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256

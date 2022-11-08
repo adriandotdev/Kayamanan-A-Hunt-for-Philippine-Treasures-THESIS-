@@ -2299,7 +2299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &676839373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2334,6 +2334,12 @@ MonoBehaviour:
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
     isSleepPanelNotShown: 1
+    isFirstTimeGoingToSchool: 1
+    isQuestReset: 0
+    hasNewOpenRegion: 0
+    questNewIcon: 0
+    notesNewIcon: 0
+    achievementsNewIcon: 0
     name: 
     gender: male
     dunongPoints: 0
@@ -2450,13 +2456,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -2474,6 +2475,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -2507,13 +2510,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -2531,6 +2529,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -2564,13 +2564,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Buko Pie
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -2588,6 +2583,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -2621,13 +2618,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -2645,6 +2637,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -2678,13 +2672,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -2702,6 +2691,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -2735,13 +2726,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -2759,6 +2745,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -2792,13 +2780,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -2816,6 +2799,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -2849,13 +2834,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -2873,6 +2853,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -2982,7 +2964,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &696050345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3005,6 +2987,12 @@ MonoBehaviour:
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
     isSleepPanelNotShown: 1
+    isFirstTimeGoingToSchool: 1
+    isQuestReset: 0
+    hasNewOpenRegion: 0
+    questNewIcon: 0
+    notesNewIcon: 0
+    achievementsNewIcon: 0
     name: 
     gender: male
     dunongPoints: 0
@@ -3121,13 +3109,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -3145,6 +3128,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -3178,13 +3163,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -3202,6 +3182,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -3235,13 +3217,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Buko Pie
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -3259,6 +3236,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -3292,13 +3271,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -3316,6 +3290,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -3349,13 +3325,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -3373,6 +3344,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -3406,13 +3379,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -3430,6 +3398,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -3463,13 +3433,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -3487,6 +3452,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -3520,13 +3487,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -3544,6 +3506,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -6375,6 +6339,12 @@ MonoBehaviour:
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
     isSleepPanelNotShown: 1
+    isFirstTimeGoingToSchool: 1
+    isQuestReset: 0
+    hasNewOpenRegion: 0
+    questNewIcon: 0
+    notesNewIcon: 0
+    achievementsNewIcon: 0
     name: 
     gender: male
     dunongPoints: 25
@@ -6470,13 +6440,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -6500,6 +6465,8 @@ MonoBehaviour:
           imageLink: PCP/Pagudpud Beach
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -6533,13 +6500,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -6563,6 +6525,8 @@ MonoBehaviour:
           imageLink: PCP/Malacanang of the North
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -6596,13 +6560,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -6614,6 +6573,7 @@ MonoBehaviour:
         receiver: Joseph
         itemGivers:
         - giverName: Gregorio Zaide
+          message: 
           itemsToGive:
           - itemName: Salakot
             quantity: 1
@@ -6632,6 +6592,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -6665,13 +6627,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Buko Pie
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -6683,6 +6640,7 @@ MonoBehaviour:
         receiver: Rolando Laudico
         itemGivers:
         - giverName: Store in Market
+          message: 
           itemsToGive:
           - itemName: Puto
             quantity: 1
@@ -6710,6 +6668,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -6743,13 +6703,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -6761,6 +6716,7 @@ MonoBehaviour:
         receiver: Ivan Henares
         itemGivers:
         - giverName: Rolando Laudico
+          message: 
           itemsToGive:
           - itemName: Puto
             quantity: 1
@@ -6783,6 +6739,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -6816,13 +6774,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Gumamela
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -6840,6 +6793,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -7486,6 +7441,12 @@ MonoBehaviour:
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
     isSleepPanelNotShown: 1
+    isFirstTimeGoingToSchool: 1
+    isQuestReset: 0
+    hasNewOpenRegion: 0
+    questNewIcon: 0
+    notesNewIcon: 0
+    achievementsNewIcon: 0
     name: 
     gender: male
     dunongPoints: 25
@@ -7570,13 +7531,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -7600,6 +7556,8 @@ MonoBehaviour:
           imageLink: PCP/Pagudpud Beach
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -7633,13 +7591,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -7663,6 +7616,8 @@ MonoBehaviour:
           imageLink: PCP/Malacanang of the North
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -7696,13 +7651,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -7714,6 +7664,7 @@ MonoBehaviour:
         receiver: Joseph
         itemGivers:
         - giverName: Gregorio Zaide
+          message: 
           itemsToGive:
           - itemName: Salakot
             quantity: 1
@@ -7732,6 +7683,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -7765,13 +7718,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Buko Pie
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -7783,6 +7731,7 @@ MonoBehaviour:
         receiver: Rolando Laudico
         itemGivers:
         - giverName: Store in Market
+          message: 
           itemsToGive:
           - itemName: Puto
             quantity: 1
@@ -7810,6 +7759,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -7843,13 +7794,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -7861,6 +7807,7 @@ MonoBehaviour:
         receiver: Ivan Henares
         itemGivers:
         - giverName: Rolando Laudico
+          message: 
           itemsToGive:
           - itemName: Puto
             quantity: 1
@@ -7883,6 +7830,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -7916,13 +7865,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Gumamela
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -7940,6 +7884,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -8374,7 +8320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1431375234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8387,6 +8333,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac5cfd9a69ee15a419e83bc25a76ee6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgSound:
+    name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    src: {fileID: 0}
+    isLooping: 0
   sounds:
   - name: Main BG
     clip: {fileID: 8300000, guid: 0ce10b54811a11c49b4d56474771bc2a, type: 3}
@@ -8454,6 +8407,9 @@ MonoBehaviour:
     pitch: 1
     src: {fileID: 0}
     isLooping: 0
+  slider: {fileID: 0}
+  BGMToggle: {fileID: 0}
+  SFXToggle: {fileID: 0}
 --- !u!4 &1431375235
 Transform:
   m_ObjectHideFlags: 0
@@ -10314,6 +10270,12 @@ MonoBehaviour:
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
     isSleepPanelNotShown: 1
+    isFirstTimeGoingToSchool: 1
+    isQuestReset: 0
+    hasNewOpenRegion: 0
+    questNewIcon: 0
+    notesNewIcon: 0
+    achievementsNewIcon: 0
     name: 
     gender: male
     dunongPoints: 0
@@ -10463,13 +10425,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -10487,6 +10444,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -10520,13 +10479,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -10544,6 +10498,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -10577,13 +10533,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Buko Pie
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -10601,6 +10552,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -10634,13 +10587,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -10658,6 +10606,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -10691,13 +10641,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -10715,6 +10660,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -10748,13 +10695,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -10772,6 +10714,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -10805,13 +10749,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -10829,6 +10768,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -10862,13 +10803,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -10886,6 +10822,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -11899,7 +11837,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1880570644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11922,6 +11860,12 @@ MonoBehaviour:
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
     isSleepPanelNotShown: 1
+    isFirstTimeGoingToSchool: 1
+    isQuestReset: 0
+    hasNewOpenRegion: 0
+    questNewIcon: 0
+    notesNewIcon: 0
+    achievementsNewIcon: 0
     name: 
     gender: male
     dunongPoints: 0
@@ -12038,13 +11982,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -12062,6 +12001,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -12095,13 +12036,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -12119,6 +12055,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -12152,13 +12090,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Buko Pie
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -12176,6 +12109,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -12209,13 +12144,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -12233,6 +12163,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -12266,13 +12198,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -12290,6 +12217,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -12323,13 +12252,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -12347,6 +12271,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -12380,13 +12306,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -12404,6 +12325,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -12437,13 +12360,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -12461,6 +12379,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -13529,7 +13449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2118643047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13552,6 +13472,12 @@ MonoBehaviour:
     isNPCIntroductionPanelDone: 1
     isFromSleeping: 0
     isSleepPanelNotShown: 1
+    isFirstTimeGoingToSchool: 1
+    isQuestReset: 0
+    hasNewOpenRegion: 0
+    questNewIcon: 0
+    notesNewIcon: 0
+    achievementsNewIcon: 0
     name: 
     gender: male
     dunongPoints: 0
@@ -13874,13 +13800,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -13904,6 +13825,8 @@ MonoBehaviour:
           imageLink: PCP/Pagudpud Beach
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -13937,13 +13860,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -13967,6 +13885,8 @@ MonoBehaviour:
           imageLink: PCP/Malacanang of the North
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -14001,13 +13921,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -14019,6 +13934,7 @@ MonoBehaviour:
         receiver: Joseph
         itemGivers:
         - giverName: Gregorio Zaide
+          message: 
           itemsToGive:
           - itemName: Salakot
             quantity: 1
@@ -14037,6 +13953,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -14071,13 +13989,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -14089,6 +14002,7 @@ MonoBehaviour:
         receiver: Rolando Laudico
         itemGivers:
         - giverName: Store in Market
+          message: 
           itemsToGive:
           - itemName: Puto
             quantity: 1
@@ -14116,6 +14030,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -14149,13 +14065,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -14167,6 +14078,7 @@ MonoBehaviour:
         receiver: Ivan Henares
         itemGivers:
         - giverName: Rolando Laudico
+          message: 
           itemsToGive:
           - itemName: Puto
             quantity: 1
@@ -14189,6 +14101,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -14222,13 +14136,8 @@ MonoBehaviour:
         informationLink: 
         informationLinkWhenInfoHasBeenSeen: 
         wayOfInfo: 
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -14246,6 +14155,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0

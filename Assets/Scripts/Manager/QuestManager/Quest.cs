@@ -33,6 +33,7 @@ public class Quest
     {
         this.questID = Guid.NewGuid().ToString();
         this.title = title;
+        this.hint = "";
         this.description = description;
         this.note = note;
         this.dunongPointsRewards = dunongPointsRewards;
@@ -43,12 +44,47 @@ public class Quest
         this.regionNum = regionNum;
         this.questType = QUEST_TYPE.TALK;
     }
+    // TALK QUEST WITH HINT PARAMETER
+    public Quest(string title, string hint, string note, string description, int dunongPointsRewards, string region, int regionNum, TalkGoal goal)
+    {
+        this.questID = Guid.NewGuid().ToString();
+        this.title = title;
+        this.hint = hint;
+        this.note = note;
+        this.description = description;
+        this.dunongPointsRewards = dunongPointsRewards;
+        this.talkGoal = goal;
+        this.deliveryGoal = null;
+        this.requestGoal = null;
+        this.region = region;
+        this.regionNum = regionNum;
+        this.questType = QUEST_TYPE.TALK;
+    }
+
 
     // DELIVERY QUEST
     public Quest(string title, string note, string description, int dunongPointsRewards, string region, int regionNum, DeliveryGoal goal)
     {
         this.questID = Guid.NewGuid().ToString();
         this.title = title;
+        this.hint = "";
+        this.note = note;
+        this.description = description;
+        this.dunongPointsRewards = dunongPointsRewards;
+        this.deliveryGoal = goal;
+        this.talkGoal = null;
+        this.requestGoal = null;
+        this.region = region;
+        this.regionNum = regionNum;
+        this.questType = QUEST_TYPE.DELIVERY;
+    }
+
+    // DELIVERY QUEST WITH HINT.
+    public Quest(string title, string hint, string note, string description, int dunongPointsRewards, string region, int regionNum, DeliveryGoal goal)
+    {
+        this.questID = Guid.NewGuid().ToString();
+        this.title = title;
+        this.hint = hint;
         this.note = note;
         this.description = description;
         this.dunongPointsRewards = dunongPointsRewards;
@@ -70,21 +106,28 @@ public class Quest
         this.questType = QUEST_TYPE.NUMBER;
     }
 
-    public Quest(string title, string description, string region, DeliveryGoal goal)
-    {
-        this.questID = Guid.NewGuid().ToString();
-        this.title = title;
-        this.description = description;
-        this.region = region;
-        this.deliveryGoal = goal;
-        this.questType = QUEST_TYPE.DELIVERY;
-    }
-
-    // REQUEST GOAL
+    // REQUEST TYPE
     public Quest(string title, string note, string description, int dunongPointsRewards, string region, int regionNum, RequestGoal goal)
     {
         this.questID = Guid.NewGuid().ToString();
         this.title = title;
+        this.hint = "";
+        this.description = description;
+        this.note = note;
+        this.region = region;
+        this.regionNum = regionNum;
+        this.dunongPointsRewards = dunongPointsRewards;
+        this.requestGoal = goal;
+
+        this.questType = QUEST_TYPE.REQUEST;
+    }
+
+    // REQUEST TYPE WITH HINT
+    public Quest(string title, string hint, string note, string description, int dunongPointsRewards, string region, int regionNum, RequestGoal goal)
+    {
+        this.questID = Guid.NewGuid().ToString();
+        this.title = title;
+        this.hint = hint;
         this.description = description;
         this.note = note;
         this.region = region;
@@ -100,6 +143,7 @@ public class Quest
     {
         this.questID = Guid.NewGuid().ToString();
         this.title = title;
+        this.hint = "";
         this.description = description;
         this.note = note;
         this.dunongPointsRewards = dunongPointsRewards;

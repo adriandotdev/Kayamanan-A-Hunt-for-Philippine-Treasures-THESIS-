@@ -36,6 +36,8 @@ public class DialogueManager : MonoBehaviour
     /** Check if the npc is talking */
     public bool isTalking;
 
+    public bool isNotWantToRecap;
+
     [SerializeField] public ShowPhotoAlbumGoal showAlbumGoal;
     [SerializeField] public DeliveryGoal deliveryGoal;
 
@@ -73,6 +75,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(TextAsset ink)
     {
         isTalking = true;
+        isNotWantToRecap = false;
 
         currentStory = new Story(ink.text);
         panel.gameObject.SetActive(true);
@@ -103,34 +106,36 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    IEnumerator DisplayLine(string line)
-    {
-        this.HideChoices();
-
-        this.dialogueField.text = "";
-
-        foreach (char c in line.ToCharArray())
-        {
-            this.dialogueField.text += c;
-            yield return new WaitForSeconds(this.typingSpeed);
-        }
-        ShowChoices();
-    }
-
     //IEnumerator DisplayLine(string line)
     //{
-    //    this.dialogueField.text = line;
-    //    this.dialogueField.maxVisibleCharacters = 0;
-
     //    this.HideChoices();
 
+    //    this.dialogueField.text = "";
+
     //    foreach (char c in line.ToCharArray())
-    //    { 
-    //        this.dialogueField.maxVisibleCharacters++;
+    //    {
+    //        this.dialogueField.text += c;
     //        yield return new WaitForSeconds(this.typingSpeed);
     //    }
     //    ShowChoices();
     //}
+
+    IEnumerator DisplayLine(string line)
+    {
+        this.dialogueField.text = line;
+        this.dialogueField.maxVisibleCharacters = 0;
+
+        this.HideChoices();
+
+        foreach (char c in line.ToCharArray())
+        {
+            this.dialogueField.maxVisibleCharacters++;
+            yield return new WaitForSeconds(this.typingSpeed);
+        }
+        ShowChoices();
+        if (currentStory.currentTags.Count > 0)
+            isNotWantToRecap = true;
+    }
 
     public void HideChoices()
     {
@@ -168,10 +173,15 @@ public class DialogueManager : MonoBehaviour
                 }
                 else if (this.deliveryGoal != null && this.deliveryGoal.giverName.Length > 0)
                 {
-                    AlbumManager.Instance.isFirstAlbum = false;
-                    AlbumManager.Instance.items = this.deliveryGoal.itemsToShow;
-                    SceneManager.LoadScene("Showing Album", LoadSceneMode.Additive);
-                    this.deliveryGoal = null;
+
+                    if (isNotWantToRecap == false)
+                    {
+
+                        AlbumManager.Instance.isFirstAlbum = false;
+                        AlbumManager.Instance.items = this.deliveryGoal.itemsToShow;
+                        SceneManager.LoadScene("Showing Album", LoadSceneMode.Additive);
+                        this.deliveryGoal = null;
+                    }
                 }
                 return;
             }
@@ -221,6 +231,7 @@ public class DialogueManager : MonoBehaviour
 
     public void MakeChoice(int choiceIndex)
     {
+
         currentStory.ChooseChoiceIndex(choiceIndex);
         this.ContinueDialogue();
     }

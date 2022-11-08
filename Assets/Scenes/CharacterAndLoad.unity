@@ -1177,6 +1177,7 @@ MonoBehaviour:
   alertBox: {fileID: 42868609}
   playerData:
     id: 
+    isGameCompleted: 0
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
@@ -1184,6 +1185,12 @@ MonoBehaviour:
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
     isSleepPanelNotShown: 1
+    isFirstTimeGoingToSchool: 1
+    isQuestReset: 0
+    hasNewOpenRegion: 0
+    questNewIcon: 0
+    notesNewIcon: 0
+    achievementsNewIcon: 0
     name: 
     gender: male
     dunongPoints: 25
@@ -1261,6 +1268,8 @@ MonoBehaviour:
       isClaimed: 0
       title: Known All Heroes
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: Region 1
       regionNum: 0
@@ -1274,13 +1283,11 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -1293,12 +1300,30 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 588f4408-a285-4bf0-ae0f-a3a5b18d81b9
       isCompleted: 0
       isClaimed: 0
       title: Talk to your MILF
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -1312,13 +1337,11 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -1331,12 +1354,30 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 432866b6-9824-4c2c-99f7-4923d5a1e9a2
       isCompleted: 0
       isClaimed: 0
       title: Best Friends
       description: Talk to Aling Missy
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Region 2
       regionNum: 0
@@ -1350,13 +1391,11 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -1369,12 +1408,30 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 36e1ba29-068b-4227-9d00-af2b90b13ca0
       isCompleted: 0
       isClaimed: 0
       title: Buko Pie Ayayay!
       description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -1388,13 +1445,11 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
-        item:
-          itemName: Buko Pie
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -1407,12 +1462,30 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 3697cdf6-5c19-4fbf-abff-11bf894e4a31
       isCompleted: 0
       isClaimed: 0
       title: Mango Aloho!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -1426,13 +1499,11 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
-        item:
-          itemName: Mango
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -1445,12 +1516,30 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 5a14fc8c-7303-4621-9309-d148ff88f2b9
       isCompleted: 0
       isClaimed: 0
       title: Gumamela Pula!
       description: Help Mang Esterlito give a gumamela to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Region 1
       regionNum: 0
@@ -1464,13 +1553,11 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Nena
         itemReceivedFromGiver: 0
-        item:
-          itemName: Gumamela
-          quantity: 0
-          stackable: 0
-          titleOfInformation: 
-          informationLink: 
-          imageLink: 
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
@@ -1483,6 +1570,22 @@ MonoBehaviour:
         itemGivers: []
         msgRequest: 
         msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -5019,7 +5122,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125.999985, y: -42}
+  m_AnchoredPosition: {x: 125.999985, y: -45}
   m_SizeDelta: {x: 95, y: 126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1744513130
@@ -5042,7 +5145,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5523310493559919428, guid: 9ca4ca9ed1bbc5c44bcfae6425a64814, type: 3}
+  m_Sprite: {fileID: 2117996107275875613, guid: e19c376318d275f4a8c64da261527a3d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

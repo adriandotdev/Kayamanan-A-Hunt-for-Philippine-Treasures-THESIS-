@@ -12,8 +12,8 @@ public class RequestGiver : MonoBehaviour
     // Request Panel Components
     public Transform requestPanel;
     public TextMeshProUGUI requestMessageTxt;
-    Button acceptRequestBtn;
-    Button cancelRequestBtn;
+    public Button acceptRequestBtn;
+    public Button cancelRequestBtn;
 
     // NPC Buttons
     public Button talkBtn;
@@ -53,6 +53,12 @@ public class RequestGiver : MonoBehaviour
             this.requestMessageTxt = this.requestPanel.GetChild(0).GetComponent<TextMeshProUGUI>();
             this.acceptRequestBtn = this.requestPanel.GetChild(1).GetChild(0).GetComponent<Button>();
             this.cancelRequestBtn = this.requestPanel.GetChild(1).GetChild(1).GetComponent<Button>();
+
+            if (gameObject.tag == "Store")
+            {
+                transform.GetChild(2).GetComponent<BuyTrigger>().acceptRequestBtn = acceptRequestBtn;
+                transform.GetChild(2).GetComponent<BuyTrigger>().giveItemToPlayerBtn = giveItemToPlayerBtn;
+            }
 
             // Add event to requestBtn
             if (this.requestQuest != null)
@@ -117,7 +123,7 @@ public class RequestGiver : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")
+        if (collision.gameObject.CompareTag("Player") && gameObject.tag != "Store"
             && this.requestQuest != null && this.requestQuest.questID.Length > 0 && this.requestQuest.requestGoal.isRequestFromNPCGained
             && this.itemGiver.isItemsGiven == false)
         {
@@ -127,7 +133,7 @@ public class RequestGiver : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")
+        if (collision.gameObject.CompareTag("Player") && gameObject.tag != "Store"
             && requestQuest != null && this.requestQuest.questID.Length > 0)
         {
             this.HideAllButtons();
@@ -159,7 +165,7 @@ public class RequestGiver : MonoBehaviour
     }
 
     // Hide All NPC Buttons
-    void HideAllButtons()
+    public void HideAllButtons()
     {
         if (CheckIfStore() == false)
         {

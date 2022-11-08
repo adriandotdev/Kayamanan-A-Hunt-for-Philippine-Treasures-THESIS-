@@ -235,7 +235,7 @@ public class MainGame : MonoBehaviour
             return;
 
 
-        if (IsWinner("Ilocos Region") == false)
+        if (IsWinner("Bicol Region") == false)
         {
             DataPersistenceManager.instance.playerData.hasNewOpenRegion = true;
             DataPersistenceManager.instance.playerData.questNewIcon = true;
@@ -253,7 +253,7 @@ public class MainGame : MonoBehaviour
             }
         }
 
-        if (IsWinner("Ilocos Region"))
+        if (IsWinner("Bicol Region"))
         {
             DataPersistenceManager.instance.playerData.questNewIcon = true;
             DataPersistenceManager.instance.playerData.isGameCompleted = true;

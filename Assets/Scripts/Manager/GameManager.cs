@@ -130,9 +130,9 @@ public class GameManager : MonoBehaviour, IDataPersistence
                     this.ShowOptionsPanel();
                     SoundManager.instance.PlaySound("Button Click 1");
                 });
-                // Hide the optionsPanel at first render
-                this.optionsPanel.gameObject.SetActive(false);
-                this.volumePanel.gameObject.SetActive(false);
+            // Hide the optionsPanel at first render
+            this.optionsPanel.gameObject.transform.localScale = Vector2.zero;
+            this.volumePanel.gameObject.transform.localScale = Vector2.zero;
         
         }
     }
@@ -466,6 +466,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         soundButton.gameObject.SetActive(false);
         quitButton.gameObject.SetActive(false);
         volumePanel.gameObject.SetActive(true);
+        volumePanel.localScale = Vector2.one;
     }
 
     public void CloseVolumeUI()

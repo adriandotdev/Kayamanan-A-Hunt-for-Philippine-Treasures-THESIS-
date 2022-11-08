@@ -17,6 +17,8 @@ TagManager:
   - SpawnPoint
   - Rooms
   - Inventory Panel
+  - Store
+  - Podium
   layers:
   - Default
   - TransparentFX

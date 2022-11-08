@@ -517,7 +517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &148629290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2714,7 +2714,7 @@ GameObject:
   - component: {fileID: 349705425}
   - component: {fileID: 349705424}
   - component: {fileID: 349705426}
-  - component: {fileID: 349705428}
+  - component: {fileID: 349705427}
   m_Layer: 5
   m_Name: MIMAROPA
   m_TagString: Untagged
@@ -2824,7 +2824,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &349705428
+--- !u!114 &349705427
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2833,153 +2833,53 @@ MonoBehaviour:
   m_GameObject: {fileID: 349705422}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9afdacb68613d3478825d0cfeefc825, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b991cdf70e85934da25c4e8c0d82acb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Assessment
-  previousSceneToLoad: Luzon
+  sceneToLoad: Word Games
+  previousSceneToLoad: 
   categoryName: 0
-  assessments:
-  - question: Kailan ipinanganak si Jose Rizal?
-    correctAnswer: June 19, 1861
-    choices:
-    - June 19, 1861
-    - June 20, 1861
-    - June 19, 1862
-    - July 19, 1861
-  - question: Sino ang kalaban sa Infinity War?
-    correctAnswer: Thanos
-    choices:
-    - Thanos
-    - Yes
-    - Yes
-    - Yes
-  - question: Sino ang kapatid ni Thor na lalaki?
-    correctAnswer: Loki
-    choices:
-    - Loki
-    - Heimdall
-    - Sef
-    - Clint
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
+  words:
+  - question: Moriones festival is a lenten festival held annually  on ______ on
+      the island of Marinduque,  Philippines.
+    word: Holy Week
+  - question: This festival is a week-long celebration participated  in by male penitents
+      in costumes who parade around  town.
+    word: Moriones
+  - question: The "Moriones" are men and women in costumes  and masks called ______
+      masks replicating the  biblical Imperial Roman soldiers within the story of 
+      the Passion of the Christ.
+    word: Morion
+  - question: This festival is celebrated in Baco, Mindoro
+    word: Banana
+  - question: The Senorita, Latundan, Lacatan and Saba are what  type of fruits?
+    word: Banana
+  - question: It is a hard, glistening object produced within the  soft tissue of
+      a living shelled mollusk or another  animal similar to an oyster.
+    word: Pearl
+  - question: Pearls are often cultured or farmed from pearl  oysters which are plentiful
+      in what province?
+    word: Palawan
+  - question: ' A pearl is grown and cultured from a living shelled  mollusk or another
+      animal similar to a what?'
+    word: Oyster
+  - question: On top of the lid of the Manunggul Jar is a _____ with two human figures
+      representing two souls on a  journey to the afterlife.
+    word: Boat
+  - question: What province is the cave that contains an 8.2km  long underground
+      river located?
+    word: Palawan
+  - question: The Puerto Princesa Underground River is declared  as one of the New
+      _______ Wonders of Nature.
+    word: Seven
+  - question: The tubbataha reef is composed of underwater  _______.
+    word: Volcanoes
+  - question: Tubbataha Reefs Natural Park lies in a unique  position in the center
+      of what sea?
+    word: Sulu
+  - question: The ______ declared the Tubbataha Reefs National  Park as a World Heritage
+      Site
+    word: UNESCO
 --- !u!1 &387544748
 GameObject:
   m_ObjectHideFlags: 0
@@ -2996,7 +2896,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &387544749
 Transform:
   m_ObjectHideFlags: 0
@@ -3026,7 +2926,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questPrefab: {fileID: 0}
   questNumberGoalPrefab: {fileID: 0}
-  requestPrefab: {fileID: 0}
+  requestPrefabWithNoHint: {fileID: 0}
+  requestPrefabWithHint: {fileID: 0}
   requestItemImagePrefab: {fileID: 0}
   playerData:
     id: 
@@ -5163,6 +5064,7 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+  notesIcon: {fileID: 0}
 --- !u!1 &412545127
 GameObject:
   m_ObjectHideFlags: 0
@@ -5927,6 +5829,53 @@ MonoBehaviour:
     - Aguinaldo Shrine
     - Taal Volcano
     - Jose Rizal Shrine
+  - question: The shrine is the ancestral home of Emilio  Aguinaldo designed by Aguinaldo
+      himself.
+    correctAnswer: Aguinaldo Shrine
+    choices:
+    - Aguinaldo Shrine
+    - Taal Shrine
+    - Aguinaldo House
+    - Emilio Shrine
+  - question: It is a national shrine and museum located in  Kawit, Cavite in the
+      Philippines, where the Philippine  Declaration of Independence from Spain was 
+      declared on June 12, 1898.
+    correctAnswer: Aguinaldo Shrine
+    choices:
+    - Kamay ni Hesus
+    - Aguinaldo Shrine
+    - Taal Volcano
+    - Jose Rizal Shrine
+  - question: The shrine is the ancestral home of Emilio  Aguinaldo designed designed
+      by?
+    correctAnswer: Emilio Aguinaldo
+    choices:
+    - Emilio Aguinaldo
+    - Emilio Mabini
+    - Jose Rizal
+    - Juan Nakpil
+  - question: ' Is a large caldera filled by Taal Lake in the  Philippines.'
+    correctAnswer: Taal Volcano
+    choices:
+    - Taal Volcano
+    - Mt. Pinatubo
+    - Mayon Volcano
+    - Mt. Bulusan
+  - question: ' Is a large volcanic crater, especially one formed by  a major eruption
+      leading to the collapse of the mouth  of the volcano.'
+    correctAnswer: Caldera
+    choices:
+    - Caldera
+    - Plateau
+    - Mountain
+    - Valley
+  - question: The ______ volcano is second of the most active  volcanoes in the country.
+    correctAnswer: Taal
+    choices:
+    - Taal
+    - Bulusan
+    - Mayon
+    - Pinatubo
 --- !u!1 &660599353
 GameObject:
   m_ObjectHideFlags: 0
@@ -6512,146 +6461,95 @@ MonoBehaviour:
   previousSceneToLoad: Luzon
   categoryName: 0
   assessments:
-  - question: Kailan ipinanganak si Jose Rizal?
-    correctAnswer: June 19, 1861
+  - question: ' Is an annual event which takes place in Masbate,  Philippines that
+      showcases skills in livestock handling,  such as lassoing, wrestling, and riding
+      cattle.'
+    correctAnswer: Rodeo Festival
     choices:
-    - June 19, 1861
-    - June 20, 1861
-    - June 19, 1862
-    - July 19, 1861
-  - question: Sino ang kalaban sa Infinity War?
-    correctAnswer: Thanos
+    - Bahaghari Festival
+    - Rodeo Festival
+    - Carabao Festival
+    - Tamaraw Festival
+  - question: The Rodeo Festival is celebrated in which province
+    correctAnswer: Masbate
     choices:
-    - Thanos
-    - Yes
-    - Yes
-    - Yes
-  - question: Sino ang kapatid ni Thor na lalaki?
-    correctAnswer: Loki
+    - Albay
+    - Camarines Sur
+    - Masbate
+    - Romblon
+  - question: Men and women dress up in what type of outfits  to perform stunts?
+    correctAnswer: Cowboy
     choices:
-    - Loki
-    - Heimdall
-    - Sef
-    - Clint
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
+    - Cowboy
+    - Princess
+    - Royal
+    - Hero
+  - question: In what month is the Rodeo Festival celebrated
+    correctAnswer: April
     choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
+    - April
+    - October
+    - November
+    - January
+  - question: What type of landform is Mt. Mayon?
+    correctAnswer: Volcano
     choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
+    - Volcano
+    - Valley
+    - Plateau
+    - Mountain
+  - question: ' In what province can the Mayon Volcano be  found?'
+    correctAnswer: Albay
     choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
+    - Albay
+    - Guimaras
+    - Quezon
+    - Camarines Sur
+  - question: Mt. Mayon its known for its "Perfect _______"  Shape
+    correctAnswer: Cone
     choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
+    - Cone
+    - Star
+    - Cylinder
+    - Circle
+  - question: What is in the southernmost tip of Luzon? This is  also where you can
+      find the whale sharks, or also  known as Butanding.
+    correctAnswer: Sorsogon
     choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
+    - Sorsogon
+    - Albay
+    - Romblon
+    - Camarines Sur
+  - question: What do the locals call the whale sharks?
+    correctAnswer: Butanding
     choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
+    - Butanding
+    - Paniki
+    - Panunding
+    - Bulanding
+  - question: What color are the spots of Whale sharks?
+    correctAnswer: White
     choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
+    - White
+    - Red
+    - Blue
+    - Blue Green
+  - question: It is the first world-class watersports complex in  the Philippines
+      and in Asia.
+    correctAnswer: Camsur Watersports Complex
     choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
+    - Camsur Watersports Complex
+    - Luneta Park
+    - Rizal Park
+    - Manila Ocean Complex
+  - question: The park offers facilities for various water sports,  especially for
+      wakeboarding, wakeskating,  kneeboarding, and waterskiing, day and night.
+    correctAnswer: Camsur Watersports Complex
     choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
+    - Camsur Watersports Complex
+    - Rizal Complex
+    - Camsur Watersports Comples
+    - Manila Ocean Park
 --- !u!1001 &718328730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7280,6 +7178,53 @@ MonoBehaviour:
     - Aguinaldo Shrine
     - Taal Volcano
     - Jose Rizal Shrine
+  - question: The shrine is the ancestral home of Emilio  Aguinaldo designed by Aguinaldo
+      himself.
+    correctAnswer: Aguinaldo Shrine
+    choices:
+    - Aguinaldo Shrine
+    - Taal Shrine
+    - Aguinaldo House
+    - Emilio Shrine
+  - question: It is a national shrine and museum located in  Kawit, Cavite in the
+      Philippines, where the Philippine  Declaration of Independence from Spain was 
+      declared on June 12, 1898.
+    correctAnswer: Aguinaldo Shrine
+    choices:
+    - Kamay ni Hesus
+    - Aguinaldo Shrine
+    - Taal Volcano
+    - Jose Rizal Shrine
+  - question: The shrine is the ancestral home of Emilio  Aguinaldo designed designed
+      by?
+    correctAnswer: Emilio Aguinaldo
+    choices:
+    - Emilio Aguinaldo
+    - Emilio Mabini
+    - Jose Rizal
+    - Juan Nakpil
+  - question: ' Is a large caldera filled by Taal Lake in the  Philippines.'
+    correctAnswer: Taal Volcano
+    choices:
+    - Taal Volcano
+    - Mt. Pinatubo
+    - Mayon Volcano
+    - Mt. Bulusan
+  - question: ' Is a large volcanic crater, especially one formed by  a major eruption
+      leading to the collapse of the mouth  of the volcano.'
+    correctAnswer: Caldera
+    choices:
+    - Caldera
+    - Plateau
+    - Mountain
+    - Valley
+  - question: The ______ volcano is second of the most active  volcanoes in the country.
+    correctAnswer: Taal
+    choices:
+    - Taal
+    - Bulusan
+    - Mayon
+    - Pinatubo
 --- !u!1 &769218979
 GameObject:
   m_ObjectHideFlags: 0
@@ -7799,7 +7744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &877497084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7812,6 +7757,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac5cfd9a69ee15a419e83bc25a76ee6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgSound:
+    name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    src: {fileID: 0}
+    isLooping: 0
   sounds:
   - name: Main BG
     clip: {fileID: 8300000, guid: 0ce10b54811a11c49b4d56474771bc2a, type: 3}
@@ -7879,6 +7831,9 @@ MonoBehaviour:
     pitch: 1
     src: {fileID: 0}
     isLooping: 0
+  slider: {fileID: 0}
+  BGMToggle: {fileID: 0}
+  SFXToggle: {fileID: 0}
 --- !u!4 &877497085
 Transform:
   m_ObjectHideFlags: 0
@@ -8664,7 +8619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1016711051
 Transform:
   m_ObjectHideFlags: 0
@@ -10127,7 +10082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1030441055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15126,7 +15081,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1594359697
 MonoBehaviour:
   m_ObjectHideFlags: 0

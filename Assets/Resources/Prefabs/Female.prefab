@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: -1048919151
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5523310493559919428, guid: 9ca4ca9ed1bbc5c44bcfae6425a64814, type: 3}
+  m_Sprite: {fileID: -2321706177036514680, guid: e19c376318d275f4a8c64da261527a3d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -139,6 +139,12 @@ MonoBehaviour:
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
     isSleepPanelNotShown: 1
+    isFirstTimeGoingToSchool: 1
+    isQuestReset: 0
+    hasNewOpenRegion: 0
+    questNewIcon: 0
+    notesNewIcon: 0
+    achievementsNewIcon: 0
     name: 
     gender: male
     dunongPoints: 25

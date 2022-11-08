@@ -293,7 +293,7 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
         // For testing purposes, we direct load the House scene and setting the 'isIntroductionDone' and 'isTutorialDone' to 'true'.
         //DataPersistenceManager.instance.playerData.isIntroductionDone = true;
         //DataPersistenceManager.instance.playerData.isTutorialDone = true;
-        SceneManager.LoadScene("House"); // It must be first sequence.
+        SceneManager.LoadScene("First Sequence"); // It must be first sequence.
     }
 
     IEnumerator HideAlertBox()

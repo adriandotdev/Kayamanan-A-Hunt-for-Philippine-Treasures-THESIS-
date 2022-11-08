@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System;
 using TMPro;
+using UnityEngine.Rendering.Universal;
 
 public class QuestManager : MonoBehaviour, IDataPersistence
 {
@@ -24,7 +25,8 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     public GameObject questNumberGoalPrefab;
 
     [Header("Request Prefab")]
-    public GameObject requestPrefab;
+    public GameObject requestPrefabWithNoHint;
+    public GameObject requestPrefabWithHint;
     public GameObject requestItemImagePrefab;
 
     private GameObject questAlertBox;
@@ -272,7 +274,10 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
                 case Quest.QUEST_TYPE.REQUEST:
 
-                    questSlot = Instantiate(this.requestPrefab, content.transform);
+                    if (quest.hint.Length > 0)
+                        questSlot = Instantiate(this.requestPrefabWithHint, content.transform);
+                    else
+                        questSlot = Instantiate(this.requestPrefabWithNoHint, content.transform);
 
                     questSlot.transform.GetChild(0).GetComponent<TextMeshProUGUI>()
                         .text = quest.title;
@@ -294,9 +299,17 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                             }
                         }
                     }
+
+                    if (quest.hint.Length > 0)
+                        questSlot.transform.GetChild(5).GetChild(0).GetComponent<TextMeshProUGUI>().text = quest.hint;
+
                     break;
+
                 case Quest.QUEST_TYPE.DELIVERY:
-                    questSlot = Instantiate(this.requestPrefab, content.transform);
+                    if (quest.hint.Length > 0)
+                        questSlot = Instantiate(this.requestPrefabWithHint, content.transform);
+                    else
+                        questSlot = Instantiate(this.requestPrefabWithNoHint, content.transform);
 
                     questSlot.transform.GetChild(0).GetComponent<TextMeshProUGUI>()
                         .text = quest.title;
@@ -315,6 +328,9 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                         GameObject itemImage = Instantiate(this.requestItemImagePrefab, questSlot.transform.GetChild(4).GetChild(1));
                         itemImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Collectibles/Items/" + item.itemName);
                     }
+
+                    if (quest.hint.Length > 0)
+                        questSlot.transform.GetChild(5).GetChild(0).GetComponent<TextMeshProUGUI>().text = quest.hint;
                     break;
                 default:
                     questSlot = Instantiate(questPrefab, content.transform);
@@ -328,6 +344,15 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
                     questSlot.transform.GetChild(2).transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
                         .text = quest.dunongPointsRewards.ToString();
+
+                    if (quest.hint.Length > 0)
+                    {
+                        questSlot.transform.GetChild(3).GetChild(0).GetComponent<TextMeshProUGUI>().text = quest.hint;
+                    }
+                    else
+                    {
+                        questSlot.transform.GetChild(3).gameObject.SetActive(false);
+                    }
                     break;
             }
         }
@@ -354,7 +379,10 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             {
                 case Quest.QUEST_TYPE.REQUEST:
 
-                    questSlot = Instantiate(this.requestPrefab, content.transform);
+                    if (quest.hint != null && quest.hint.Length > 0)
+                        questSlot = Instantiate(this.requestPrefabWithHint, content.transform);
+                    else
+                        questSlot = Instantiate(this.requestPrefabWithNoHint, content.transform);
 
                     questSlot.transform.GetChild(0).GetComponent<TextMeshProUGUI>()
                         .text = quest.title;
@@ -363,19 +391,55 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                     questSlot.transform.GetChild(2).GetChild(1).GetComponent<TextMeshProUGUI>()
                         .text = quest.dunongPointsRewards.ToString();
                     questSlot.transform.GetChild(3).GetChild(1).GetComponent<TextMeshProUGUI>()
-                        .text = quest.requestGoal.isRequestFromNPCGained == false ? "Pending"
-                        : this.isAllItemsGatheredForRequestQuest(quest.requestGoal.itemGivers) ? "Items Received" : "Request Accepted";
+                        .text = "COMPLETED";
+
                     foreach (ItemGiver giver in quest.requestGoal.itemGivers)
                     {
                         foreach (Item item in giver.itemsToGive)
                         {
-                            GameObject itemImage = Instantiate(this.requestItemImagePrefab, questSlot.transform.GetChild(4).GetChild(1));
-                            itemImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Collectibles/Items/" + item.itemName);
+                            if (item.itemName != "None")
+                            {
+                                GameObject itemImage = Instantiate(this.requestItemImagePrefab, questSlot.transform.GetChild(4).GetChild(1));
+                                itemImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Collectibles/Items/" + item.itemName);
+                            }
                         }
                     }
+
+                    if (quest.hint != null && quest.hint.Length > 0)
+                        questSlot.transform.GetChild(5).GetChild(0).GetComponent<TextMeshProUGUI>().text = quest.hint;
+                    break;
+
+                case Quest.QUEST_TYPE.DELIVERY:
+
+                    if (quest.hint != null && quest.hint.Length > 0)
+                        questSlot = Instantiate(this.requestPrefabWithHint, content.transform);
+                    else
+                        questSlot = Instantiate(this.requestPrefabWithNoHint, content.transform);
+
+                    questSlot.transform.GetChild(0).GetComponent<TextMeshProUGUI>()
+                        .text = quest.title;
+
+                    questSlot.transform.GetChild(1).GetComponent<TextMeshProUGUI>()
+                        .text = quest.description;
+
+                    questSlot.transform.GetChild(2).GetChild(1).GetComponent<TextMeshProUGUI>()
+                        .text = quest.dunongPointsRewards.ToString();
+
+                    questSlot.transform.GetChild(3).GetChild(1).GetComponent<TextMeshProUGUI>()
+                       .text = quest.deliveryGoal.itemReceivedFromGiver == false ? "Pending" : "Items Received";
+
+                    foreach (Item item in quest.deliveryGoal.items)
+                    {
+                        GameObject itemImage = Instantiate(this.requestItemImagePrefab, questSlot.transform.GetChild(4).GetChild(1));
+                        itemImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Collectibles/Items/" + item.itemName);
+                    }
+
+                    if (quest.hint != null && quest.hint.Length > 0)
+                        questSlot.transform.GetChild(5).GetChild(0).GetComponent<TextMeshProUGUI>().text = quest.hint;
                     break;
 
                 default:
+
                     // Instantiate the Quest Prefab
                     questSlot = Instantiate(questPrefab, content.transform);
 
@@ -391,6 +455,15 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                     questSlot.transform.GetChild(2).transform.GetChild(1)
                         .GetComponent<TMPro.TextMeshProUGUI>()
                         .text = quest.dunongPointsRewards.ToString();
+
+                    if (quest.hint != null && quest.hint.Length > 0)
+                    {
+                        questSlot.transform.GetChild(3).GetChild(0).GetComponent<TextMeshProUGUI>().text = quest.hint;
+                    }
+                    else
+                    {
+                        questSlot.transform.GetChild(3).gameObject.SetActive(false);
+                    }
                     break;
             }
 
@@ -489,6 +562,10 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                     foreach (ItemGiver itemGiver in questCopy.requestGoal.itemGivers)
                     {
                         GameObject giver = GameObject.Find(itemGiver.giverName);
+
+                        if (giver.tag == "Store")
+                            giver.transform.GetChild(2).GetComponent<Light2D>().enabled = true;
+                            
                         giver.GetComponent<RequestGiver>().requestQuest = questCopy;
                         giver.GetComponent<RequestGiver>().itemGiver = itemGiver;
                     }
@@ -583,6 +660,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                     this.playerData.completedQuests.Add(questFound);
                     this.playerData.notesInfos.Add(questFound);
                     this.notesIcon.GetChild(0).gameObject.SetActive(true);
+                    DataPersistenceManager.instance.playerData.notesNewIcon = true;
                     this.SetupAllNotes();
 
                     DataPersistenceManager.instance.playerData.dunongPoints += quest.dunongPointsRewards;
@@ -626,15 +704,24 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
                 questFound.isCompleted = true;
 
+                // CHECK IF THE PRE-QUEST IS DONE.
                 if (this.CheckIfPreQuestsDone())
                 {
+                    // ADD TO COMPLETED QUEST
                     this.playerData.completedQuests.Add(questFound);
-                    this.playerData.notesInfos.Add(questFound);
-                    this.notesIcon.GetChild(0).gameObject.SetActive(true);
-                    this.SetupAllNotes();
 
+                    // ADD TO NOTES
+                    this.playerData.notesInfos.Add(questFound);
+
+                    // SHOW THE NEW ICON IN THE NOTES BUTTON
+                    DataPersistenceManager.instance.playerData.notesNewIcon = true;
+                    this.notesIcon.GetChild(0).gameObject.SetActive(true);
+                    this.SetupAllNotes(); // SETUP ALL NOTES.
+
+                    // ADD ADITIONAL DUNONG POINTS
                     DataPersistenceManager.instance.playerData.dunongPoints += quest.dunongPointsRewards;
 
+                    // UPDATE DUNONG POINTS VALUE IN UI.
                     UpdateDPValueUI?.Invoke();
                 }
 
@@ -647,7 +734,12 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                     this.GetListOfQuests();
                     this.SetupScriptsForRequestQuest();
                 }
-                this.GetListOfQuests();
+                else
+                {
+                    this.GetListOfQuests();
+                    this.SetupScriptsForRequestQuest();
+                }
+                //this.GetListOfQuests();
 
                 if (this.playerData.currentQuests.Count < 1)
                 {
@@ -689,6 +781,9 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 {
                     this.playerData.notesInfos.Add(questFound);
                     this.playerData.completedQuests.Add(questFound);
+
+                    // SHOW THE NEW icon in the notes button
+                    DataPersistenceManager.instance.playerData.notesNewIcon = true;
                     this.notesIcon.GetChild(0).gameObject.SetActive(true);
                     this.SetupAllNotes();
 
@@ -735,6 +830,9 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 Quest questFoundInCurrentQuest = this.playerData.currentQuests.Find(questToFind => questToFind.questID == quest.questID).CopyTalkQuestGoal();
 
                 this.playerData.notesInfos.Add(questFoundInCurrentQuest);
+
+                // SHOW the New Icon at notes button.
+                DataPersistenceManager.instance.playerData.notesNewIcon = true;
                 this.notesIcon.GetChild(0).gameObject.SetActive(true);
 
                 this.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID.ToLower() == questFoundInCurrentQuest.questID.ToLower());

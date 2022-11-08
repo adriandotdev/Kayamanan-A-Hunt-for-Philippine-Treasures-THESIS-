@@ -887,10 +887,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This festival is celebrated in the second week of August to honor the town's
-    patron saint, Our Lady of Assumption where they held street dance presentatiions
-    and different activities that promotes the town's products, one of which is the
-    Longganisa promoted to be among the array of Bicol's culinary delicacies
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 00a94aaa5aff49c42b99a919f5915b68, type: 2}
   m_sharedMaterial: {fileID: 6661176882776006618, guid: 00a94aaa5aff49c42b99a919f5915b68, type: 2}
@@ -920,9 +917,9 @@ MonoBehaviour:
   m_fontSize: 40.3
   m_fontSizeBase: 40.3
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 55
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -934,7 +931,7 @@ MonoBehaviour:
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
+  m_wordWrappingRatios: 0.218
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
@@ -1203,7 +1200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Longganisa Festival
+  m_text: Panagbenga Festival
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a26d2f4e0a35f724bb6dda39ba442ac9, type: 2}
   m_sharedMaterial: {fileID: -732908864483190472, guid: a26d2f4e0a35f724bb6dda39ba442ac9, type: 2}
@@ -1230,10 +1227,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 78.8
+  m_fontSize: 72
   m_fontSizeBase: 78.8
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1266,7 +1263,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -739.1646, w: -74.0605}
+  m_margin: {x: 0, y: 0, z: -528.08777, w: -74.0605}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

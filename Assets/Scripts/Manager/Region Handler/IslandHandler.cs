@@ -198,7 +198,7 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
                         }
 
                         // Check if all the quest is completed AND Check if the dunong points is valid.
-                        if (this.IsAllQuestCompleted() && this.playerData.dunongPoints >= this.playerData.requiredDunongPointsToPlay)
+                        if (this.IsAllQuestCompleted() && this.playerData.dunongPoints == this.playerData.requiredDunongPointsToPlay)
                         {
                             this.playerData.dunongPoints -= this.playerData.requiredDunongPointsToPlay;
 

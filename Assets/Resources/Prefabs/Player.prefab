@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 2618897702407668079}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.32, y: -3.35, z: 0}
-  m_LocalScale: {x: 0.96420187, y: 0.96420187, z: 0}
+  m_LocalScale: {x: 1.2965622, y: 1.2965622, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1740214816247491129}
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: -1048919151
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -587472938, guid: bc5ede02e8017eb44a2bc1a86e7ac642, type: 3}
+  m_Sprite: {fileID: -4025726472542044644, guid: e19c376318d275f4a8c64da261527a3d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -120,6 +120,12 @@ MonoBehaviour:
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
     isSleepPanelNotShown: 1
+    isFirstTimeGoingToSchool: 1
+    isQuestReset: 0
+    hasNewOpenRegion: 0
+    questNewIcon: 0
+    notesNewIcon: 0
+    achievementsNewIcon: 0
     name: 
     gender: male
     dunongPoints: 25
@@ -655,7 +661,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.19, y: 1.88}
+    oldSize: {x: 0.87, y: 1.33}
     newSize: {x: 0.15, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

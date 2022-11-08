@@ -116,7 +116,8 @@ public class RequestRequester : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Player") && requestQuest != null
                     && requestQuest.questID.Length > 0 && isAllItemsGathered()
-                    && requestQuest.requestGoal.isItemReceivedOfNpc == true)
+                    && requestQuest.requestGoal.isItemReceivedOfNpc == true 
+                    && requestQuest.region.ToUpper() != "PRE-QUEST")
         {
             this.giveItemToNpcBtn.gameObject.SetActive(true);
         }

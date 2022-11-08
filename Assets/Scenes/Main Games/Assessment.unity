@@ -2844,7 +2844,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1635617003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2867,6 +2867,12 @@ MonoBehaviour:
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
     isSleepPanelNotShown: 1
+    isFirstTimeGoingToSchool: 1
+    isQuestReset: 0
+    hasNewOpenRegion: 0
+    questNewIcon: 0
+    notesNewIcon: 0
+    achievementsNewIcon: 0
     name: 
     gender: male
     dunongPoints: 0
@@ -3088,6 +3094,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -3140,6 +3148,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -3192,6 +3202,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -3244,6 +3256,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -3296,6 +3310,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -3348,6 +3364,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -3400,6 +3418,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0
@@ -3452,6 +3472,8 @@ MonoBehaviour:
         items: []
       searchGoal:
         npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
         itemToFind:
           itemName: 
           quantity: 0

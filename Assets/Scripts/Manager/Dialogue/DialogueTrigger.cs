@@ -98,6 +98,7 @@ public class DialogueTrigger : MonoBehaviour
                     }
                     else
                     {
+                        SoundManager.instance?.PlaySound("Quest Notification");
                         QuestManager.instance?.OpenPlainAlertBox("You met new villager");
                     }
                 }

@@ -1,7 +1,11 @@
 -> main
 
 == main ==
-   The pearl was found in the Palawan sea, which surrounds the island of Palawan in the Philippines, and was found by a Filipino diver
+   A pearl is a hard, glistening object produced within the soft tissue of a living shelled mollusk or another animal similar to an oyster.
     + [Next]
-    It is not considered a gemstone pearl, but is instead known as a "clam pearl" or "Tridacna pearl" from a giant clam.
+    These are often cultured or farmed from pearl oysters which are plentiful in Palawan. A 34-kilogram pearl is said to be found in Palawan was surrendered to Puerto Princesa Tourism Office.
+    + + [Next]
+    It is considered to be the largest pearl in the world.
+    + + + [Next]
+
 -> END

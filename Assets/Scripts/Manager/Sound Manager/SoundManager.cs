@@ -3,11 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using System;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance;
+    public Sound bgSound;
+    public static float previousVolumeValue;
+
     public Sound[] sounds;
+    public Slider slider;
+    public Toggle BGMToggle;
+    public Toggle SFXToggle;
+
+    public static bool BGToggle;
 
     private void Awake()
     {
@@ -23,6 +33,7 @@ public class SoundManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            BGToggle = true;
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -33,7 +44,46 @@ public class SoundManager : MonoBehaviour
 
     private void Start()
     {
-        this.PlaySound("Main BG");
+        this.PlayBGMusic("Main BG");
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+
+        if (scene.name == "Menu" || scene.name == "Outside" ||
+            scene.name == "House" || scene.name == "Church" || scene.name == "School" ||
+            scene.name == "Museum")
+        {
+            this.slider = GameObject.Find("Slider Initializer").GetComponent<SliderInitializer>().slider;
+            this.BGMToggle = GameObject.Find("Slider Initializer").GetComponent<SliderInitializer>().toggleBGMusic;
+            this.BGMToggle.isOn = BGToggle;
+
+            try
+            {
+                this.slider.value = bgSound.src.volume;
+            }
+            catch (System.Exception e) { }
+
+            this.BGMToggle.onValueChanged.AddListener(this.ToggleBGM);
+            this.slider.onValueChanged.AddListener(Volume);
+        }
+    }
+
+    public void PlayBGMusic(string name)
+    {
+        this.PlaySound(name);
+
+        this.slider.value = this.bgSound.src.volume;
     }
 
     public void PlaySound(string name)
@@ -42,15 +92,45 @@ public class SoundManager : MonoBehaviour
 
         if (sound.name.ToUpper() == "MAIN BG")
         {
+            bgSound = sound;
             sound.volume = 0.086f;
+            previousVolumeValue = bgSound.src.volume;
         }
 
         if (!sound.src.isPlaying)
+        {
             sound.src.Play();
-        else 
+        }
+        else
         {
             sound.src.Stop();
             sound.src.Play();
+        }        
+    }
+
+    public void ToggleBGM(bool toggle)
+    {
+        BGToggle = toggle;
+
+        if (toggle == true)
+        {
+            bgSound.src.volume = previousVolumeValue;
+            this.slider.value = bgSound.src.volume;
+        }
+        else
+        {
+            bgSound.src.volume = 0;
+        }
+    }
+
+    public void Volume(float value)
+    {
+        if (BGToggle)
+        {
+            print("adjusting volume");
+            bgSound.volume = value;
+            bgSound.src.volume = value;
+            previousVolumeValue = bgSound.src.volume;
         }
     }
 }

@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 4407080427585667631}
   - component: {fileID: 4407080427585667630}
   m_Layer: 5
-  m_Name: Request Quest
+  m_Name: Request Prefab with NO HINT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
