@@ -115,15 +115,16 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
                 playButton.onClick.AddListener(() => {
 
-                    this.LoadScene("CharacterAndLoad");
+                    //this.LoadScene("CharacterAndLoad");
                     SoundManager.instance.PlaySound("Button Click 1");
-                    //TransitionLoader.instance.StartAnimation("CharacterAndLoad");
+                    TransitionLoader.instance?.StartAnimation("CharacterAndLoad");
                 });
 
                 leaderboardsButton.onClick.AddListener(() =>
                 {
-                    this.LoadScene("Leaderboards");
+                    //this.LoadScene("Leaderboards");
                     SoundManager.instance.PlaySound("Button Click 1");
+                    TransitionLoader.instance?.StartAnimation("Leaderboards");
                 });
 
                 optionsButton.onClick.AddListener(() => {
@@ -159,7 +160,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Museum")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School")
-            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Church"))
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Church")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Vacation Scene"))
         {
             if (scene.name == "House")
             {
@@ -186,7 +188,12 @@ public class GameManager : MonoBehaviour, IDataPersistence
                 this.sceneToLoadFromPhilippineMap = "Church";
                 this.playerData.sceneToLoad = "Church";
             }
-
+            else if (scene.name == "Vacation Scene")
+            {
+                print("VCS");
+                this.sceneToLoadFromPhilippineMap = "Vacation Scene";
+                DataPersistenceManager.instance.playerData.sceneToLoad = "Vacation Scene";
+            }
             this.SetUpHouseOrOutsideSceneButtons();
         }
     }
@@ -230,7 +237,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
             backButton.onClick.AddListener(() => {
                 SoundManager.instance?.PlaySound("Button Click 1");
                 /*SceneManager.LoadScene("Philippine Map");*/ // FOR TESTING ONLY. It should be sceneToLoad property.
-                SceneManager.LoadScene(this.playerData.sceneToLoad);
+                //SceneManager.LoadScene(this.playerData.sceneToLoad);
+                TransitionLoader.instance?.StartAnimation(this.playerData.sceneToLoad);
             });
         }
     }
@@ -270,8 +278,19 @@ public class GameManager : MonoBehaviour, IDataPersistence
                 }
             });
 
-            exit.onClick.AddListener(() => this.LoadScene(AssessmentManager.instance.previousSceneToLoad));
-            close .onClick.AddListener(() => this.LoadScene(AssessmentManager.instance.previousSceneToLoad));
+            exit.onClick.AddListener(() => 
+            {
+                SoundManager.instance?.PlaySound("Click Close");
+                //this.LoadScene(AssessmentManager.instance.previousSceneToLoad);
+                TransitionLoader.instance?.StartAnimation(AssessmentManager.instance.previousSceneToLoad);
+            });
+
+            close.onClick.AddListener(() =>
+            {
+                SoundManager.instance?.PlaySound("Click Close");
+                //this.LoadScene(AssessmentManager.instance.previousSceneToLoad);
+                TransitionLoader.instance?.StartAnimation(AssessmentManager.instance.previousSceneToLoad);
+            });
         }
     }
 
@@ -367,7 +386,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
             this.quitButton.onClick.AddListener(() =>
             {
                 SoundManager.instance?.PlaySound("Button Click 2");
-                this.LoadScene("Menu");
+                TransitionLoader.instance?.StartAnimation("Menu");
+                //this.LoadScene("Menu");
             });
 
             Button showMapButton = GameObject.Find("Show Map").GetComponent<Button>();
@@ -407,7 +427,10 @@ public class GameManager : MonoBehaviour, IDataPersistence
         }
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
-            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School"))
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Church")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Museum")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Vacation Scene"))
         {
             this.homeCanvasGroup.interactable = true;
             this.homeCanvasGroup.blocksRaycasts = true;
@@ -423,7 +446,10 @@ public class GameManager : MonoBehaviour, IDataPersistence
         }
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
-            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School"))
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Church")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Museum")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Vacation Scene"))
         {
             this.homeCanvasGroup.interactable = false;
             this.homeCanvasGroup.blocksRaycasts = false;

@@ -1,0 +1,443 @@
+fileFormatVersion: 2
+guid: 4a690b5dc60532442b1b3902e6cdb2b6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: General Knowledge Assets_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 557
+        width: 128
+        height: 122
+      alignment: 9
+      pivot: {x: 0.4957887, y: 0.16542631}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd1b723fb718b24d97528082dd7a717
+      internalID: -951491441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General Knowledge Assets_2
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 542
+        width: 120
+        height: 177
+      alignment: 9
+      pivot: {x: 0.55839515, y: 0.101052836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db79fd13bd6c8714fae43e303e1953a2
+      internalID: 1675950226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General Knowledge Assets_3
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 569
+        width: 173
+        height: 81
+      alignment: 9
+      pivot: {x: 0.4808233, y: 0.16210711}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5545fbdda2ddf438c583256648260e
+      internalID: 1508795265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General Knowledge Assets_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 375
+        width: 129
+        height: 141
+      alignment: 9
+      pivot: {x: 0.46212035, y: 0.16829449}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f936761c2456d4b90f6159211709ab
+      internalID: 938480612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General Knowledge Assets_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 413
+        width: 60
+        height: 101
+      alignment: 9
+      pivot: {x: 0.5116343, y: 0.18897995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8709a559f156cac41b3900fdf12ef8d4
+      internalID: 1476307069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General Knowledge Assets_7
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 414
+        width: 141
+        height: 84
+      alignment: 9
+      pivot: {x: 0.49335194, y: 0.12057859}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd459f9ce0c8cb4994536997b231913
+      internalID: 2054145999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General Knowledge Assets_8
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 394
+        width: 177
+        height: 131
+      alignment: 9
+      pivot: {x: 0.5052963, y: 0.11717096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391e529693665f2429a06d8904a04f2f
+      internalID: 1085400788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General Knowledge Assets_9
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 149
+        width: 197
+        height: 153
+      alignment: 9
+      pivot: {x: 0.49578992, y: 0.12596898}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e455bc69911aaf14eb7df2d7aa137cf0
+      internalID: 1456178259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General Knowledge Assets_10
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 134
+        width: 236
+        height: 186
+      alignment: 9
+      pivot: {x: 0.46134263, y: 0.3617712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f93980ead9f98e42a915fd602ecc36b
+      internalID: 1591957477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General Knowledge Assets_11
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 152
+        width: 242
+        height: 165
+      alignment: 9
+      pivot: {x: 0.47943646, y: 0.39444348}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0324db94933bde942aaec80b3b110ceb
+      internalID: -413632104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General Knowledge Assets_12
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 151
+        width: 275
+        height: 173
+      alignment: 9
+      pivot: {x: 0.47285601, y: 0.39453062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8168e11b07e37ea4d9cfcd1316366d8e
+      internalID: -665533104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General Knowledge Assets_13
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 199
+        width: 159
+        height: 168
+      alignment: 9
+      pivot: {x: 0.53129685, y: 0.119870685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8c1f10847cf4944b0253c798d729c9
+      internalID: 1157255733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General Knowledge Assets_14
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 27
+        width: 118
+        height: 48
+      alignment: 9
+      pivot: {x: 0.48594284, y: 0.22354317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d39cd3e16525d94794506a2ca9be0ac
+      internalID: -2084626919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General Knowledge Assets_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 550
+        width: 95
+        height: 155
+      alignment: 9
+      pivot: {x: 0.5929466, y: 0.11034448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7006e034c253f77408ddbc51c12c26ff
+      internalID: 26957971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      General Knowledge Assets_5: 938480612
+      General Knowledge Assets_12: -665533104
+      General Knowledge Assets_1: 26957971
+      General Knowledge Assets_4: 233017593
+      General Knowledge Assets_6: 1476307069
+      General Knowledge Assets_2: 1675950226
+      General Knowledge Assets_3: 1508795265
+      General Knowledge Assets_9: 1456178259
+      General Knowledge Assets_8: 1085400788
+      General Knowledge Assets_14: -2084626919
+      General Knowledge Assets_7: 2054145999
+      General Knowledge Assets_10: 1591957477
+      General Knowledge Assets_13: 1157255733
+      General Knowledge Assets_11: -413632104
+      General Knowledge Assets_0: -951491441
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

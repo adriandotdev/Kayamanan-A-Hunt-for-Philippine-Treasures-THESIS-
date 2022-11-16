@@ -51,7 +51,8 @@ public class SceneTransition : MonoBehaviour
                 SceneTransitionManager.instance.nameOfExit = nameOfExit;
                 SceneTransitionManager.instance.fromEnter = true;
             }
-            SceneManager.LoadScene(this.sceneToLoad);
+            //SceneManager.LoadScene(this.sceneToLoad);
+            TransitionLoader.instance?.StartAnimation(this.sceneToLoad);
         }
     }
 

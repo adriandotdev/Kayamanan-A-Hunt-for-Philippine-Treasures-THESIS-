@@ -547,6 +547,7 @@ MonoBehaviour:
     isFirstTimeGoingToSchool: 1
     isQuestReset: 0
     hasNewOpenRegion: 0
+    versionNumber: 1.0
     questNewIcon: 0
     notesNewIcon: 0
     achievementsNewIcon: 0
@@ -654,6 +655,7 @@ MonoBehaviour:
         - itemName: None
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: Pagudpud Beach
           informationLink: Delivery Ink Informations/Pagudpud Beach
           imageLink: PCP/Pagudpud Beach
@@ -665,6 +667,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -714,6 +717,7 @@ MonoBehaviour:
         - itemName: None
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: Malacanang of the North
           informationLink: Delivery Ink Informations/Malacanang of the North
           imageLink: PCP/Malacanang of the North
@@ -725,6 +729,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -772,6 +777,7 @@ MonoBehaviour:
           - itemName: Salakot
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Diego Silang
             informationLink: Delivery Ink Informations/Diego Silang
             imageLink: PCP/Diego Silang
@@ -792,6 +798,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -839,18 +846,21 @@ MonoBehaviour:
           - itemName: Puto
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Puto Festival
             informationLink: Delivery Ink Informations/Puto Festival
             imageLink: PCP/Puto Festival
           - itemName: Empanada
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Empanada Festival
             informationLink: Delivery Ink Informations/Empanada Festival
             imageLink: PCP/Empanada Festival
           - itemName: Longganisa
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Longganisa Festival
             informationLink: Delivery Ink Informations/Longganisa Festival
             imageLink: PCP/Longganisa Festival
@@ -868,6 +878,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -915,12 +926,14 @@ MonoBehaviour:
           - itemName: Puto
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Puto Festival
             informationLink: Delivery Ink Informations/Puto Festival
             imageLink: PCP/Puto Festival
           - itemName: Dinuguan
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: 
             informationLink: 
             imageLink: 
@@ -939,6 +952,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -993,6 +1007,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -1076,7 +1091,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &174512353
 GameObject:
@@ -1945,6 +1960,160 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &400622381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400622382}
+  - component: {fileID: 400622383}
+  m_Layer: 0
+  m_Name: Western Visayas Res
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400622382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400622381}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 804216493}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &400622383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400622381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b991cdf70e85934da25c4e8c0d82acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Word Games
+  previousSceneToLoad: 
+  categoryName: 0
+  words:
+  - question: Graciano Lopez Jaena was born in what province?
+    word: Ilo-ilo
+  - question: Graciano Lopez Jaena is a national hero who is well  known for his
+      contribution in what newspaper?
+    word: La Solidaridad
+  - question: Graciano Lopez Jaena was a Filipino _________,  orator, reformist
+    word: Journalist
+  - question: ' Graciano Lopez Jaena is considered to be one of  the greatest ______
+      in Filipino history'
+    word: Orator
+  - question: Graciano Lopez Jaena was born in ______, Iloilo
+    word: Jaro
+  - question: Teresa Magbanua was a Filipino school ______ and  military leader.
+    word: Teacher
+  - question: Teresa Magbanua was a Filipino school teacher  and _______ leader.
+    word: Military
+  - question: Teresa Magbanua was born in what province in the  Philippines?
+    word: Ilo-ilo
+  - question: "Teresa Magbanua is dubbed as the \u201CVisayan Joan  of ______\u201D."
+    word: Arc
+  - question: "Teresa Magbanua is also known as \u201C______\u201D."
+    word: Nanay Isa
+  - question: Ati-atihan festival is a Philippine festival held  annually in January
+      in honor of the ______ (Holy  Child or Infant Jesus).
+    word: "Santo Ni\xF1o"
+  - question: The Ati-atihan festival is celebrated in the province  of?
+    word: Aklan
+  - question: "What festival is a Philippine festival held annually  in January in
+      honor of the Santo Ni\xF10 (Holy Child or  Infant Jesus)"
+    word: Ati-Atihan
+  - question: "The name Ati-Atihan means \"to imitate the Ati  people\" or \u201Cto
+      be like Atis or _____ (Aklan Province\u2019s  natives).\u201D"
+    word: Aetas
+  - question: "What festival is known to be the \u201CThe Mother of  All Philipine
+      Festivals\u201D."
+    word: Ati-Atihan
+  - question: ' Is a religious and cultural festival in Iloilo City,  Philippines,
+      held annually on the 4th Sunday of  January, or right after the Sinulog in
+      Cebu and the  Ati-Atihan Festival in Kalibo, Aklan.'
+    word: Dinagyang
+  - question: "It is the Ilo-ilo\u2019s version of Ati-atihan festival of  Aklan."
+    word: Dinagyang
+  - question: Dinagyang festival is celebrated in what city?
+    word: Ilo-ilo
+  - question: The word Dinagyang came from a Hiligaynon word  extrapolated from _______,
+      meaning
+    word: "d\xE1gyang"
+  - question: What month is the dinagyang festival celebrated?
+    word: January
+  - question: "This annual festival is like Brazil\u2019s Rio Carnival."
+    word: Masskara
+  - question: "Literally translates to \u201Cmany faces,\u201D"
+    word: Masskara
+  - question: ' Is celebrated every ______ in Bacolod, Ilo-Ilo. Known as the city
+      of smiles.'
+    word: October
+  - question: " It is known as \u201CThe City of Smiles\u201D."
+    word: Bacolod
+  - question: The annual Masskara festival is like Rio Carnival from what country.
+    word: Brazil
+  - question: ' It is a resort island in the Western Visayas region of  the Philippines.'
+    word: Boracay
+  - question: Boracay was originally inhabited by the ______ people, but commercial
+      development has led to  leave and relocate.
+    word: Ati
+  - question: Apart from its white sand beaches, ______ is also  famous for being
+      one of the world's top destinations  for relaxation.
+    word: Boracay
+  - question: The island's indigenous Ati people say that the  name of the island
+      came from the Inati words "bora",  meaning _______, and "bocay", meaning white.
+    word: Bubbles
+  - question: Boracay is a resort island in the Western _____  region of the Philippines.
+    word: Visayas
+  - question: ' _____ Ruins is the remains of the ancestral home  mansion of the
+      wealthy sugar businessman, Don  Mariano Ledesma Lacson and his family.'
+    word: Ledesma
+  - question: Ledesma Ruins is the remains of the ancestral  home mansion of the
+      wealthy ______ businessman,  Don Mariano Ledesma Lacson and his family.
+    word: Sugar
+  - question: The Ledesma Ruins can be visited in the city of  ______, Negros Occidental.
+    word: Talisay
+  - question: The mansion was built in early 1900s and inspired  by _______ architecture.
+    word: Italian
+  - question: ' Balay Negrese is an ancestral house and is a  museum in _____ City,
+      Negros Occidental'
+    word: Silay
+  - question: t is notable for being the first museum to be  established in the province
+      of Negros Occidental.
+    word: Balay Negrese
+  - question: The house is of the type called bahay na _______,  literally means
+      "house of stone".
+    word: Bato
+  - question: Owned by one of the pioneers of ________ cultivation in the Philippines.
+    word: Sugarcane
+  - question: The house is of the type called bahay na bato,  literally "house of
+      _____".
+    word: Stone
+  - question: "Masskara is from the word \u201C_____\u201D (meaning a  multitude
+      of people)."
+    word: Mass
+  - question: "Masskara is from the word \u201CMass\u201D (meaning a  multitude of
+      ______)."
+    word: People
+  - question: The Spanish word cara (meaning ______), thus  forming MassKara (a multitude
+      of faces).
+    word: Face
 --- !u!1 &478878600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2048,7 +2217,7 @@ RectTransform:
   m_GameObject: {fileID: 513934635}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0133947395, y: 0.0133947395, z: 0.0133947395}
+  m_LocalScale: {x: 0.019729732, y: 0.019729732, z: 0.019729732}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 682916811}
@@ -2056,7 +2225,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -71, y: 32}
+  m_AnchoredPosition: {x: -71, y: 19}
   m_SizeDelta: {x: 7806.25, y: 7681.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &513934637
@@ -2079,9 +2248,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 14726eb5ad76d304ba13180f32eca37f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6f2f7b3c70859284f98ca83bc357dc84, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2147,7 +2316,7 @@ GameObject:
   - component: {fileID: 524035936}
   - component: {fileID: 524035935}
   - component: {fileID: 524035934}
-  - component: {fileID: 524035933}
+  - component: {fileID: 524035937}
   m_Layer: 5
   m_Name: Eastern Visayas
   m_TagString: Untagged
@@ -2175,162 +2344,6 @@ RectTransform:
   m_AnchoredPosition: {x: -1542.24, y: -717.85}
   m_SizeDelta: {x: 155, y: 235}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &524035933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524035931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9afdacb68613d3478825d0cfeefc825, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneToLoad: Assessment
-  previousSceneToLoad: Luzon
-  categoryName: 0
-  assessments:
-  - question: Kailan ipinanganak si Jose Rizal?
-    correctAnswer: June 19, 1861
-    choices:
-    - June 19, 1861
-    - June 20, 1861
-    - June 19, 1862
-    - July 19, 1861
-  - question: Sino ang kalaban sa Infinity War?
-    correctAnswer: Thanos
-    choices:
-    - Thanos
-    - Yes
-    - Yes
-    - Yes
-  - question: Sino ang kapatid ni Thor na lalaki?
-    correctAnswer: Loki
-    choices:
-    - Loki
-    - Heimdall
-    - Sef
-    - Clint
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
 --- !u!114 &524035934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2413,6 +2426,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524035931}
   m_CullTransparentMesh: 1
+--- !u!114 &524035937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524035931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b991cdf70e85934da25c4e8c0d82acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Word Games
+  previousSceneToLoad: 
+  categoryName: 0
+  words:
+  - question: San _______ Bridge is a bridge that  stretches from Samar to Leyte
+      in the  Philippines.
+    word: Juanico
+  - question: San Juanico Bridge is the _______ longest  bridge over a body of water
+      in the  Philippines
+    word: Second
+  - question: San Juanico Bridge is a bridge that  stretches from ________ to Leyte
+      in the  Philippines.
+    word: Samar
+  - question: San Juanico Bridge is a bridge that  stretches from Samar to _______
+      in the  Philippines.
+    word: Leyte
+  - question: The San Juanico bridge was constructed  during the administration of
+      President  Ferdinand _______.
+    word: Marcos
+  - question: Mac Arthur's Landing is also known as  MacArthur Landing Memorial ___________ 
+      Park.
+    word: National
+  - question: Mac Arthur's Landing is located in what  Province?
+    word: Leyte
+  - question: Mac Arthur's Landing in the Philippines  led to the largest ______
+      battle of World  War II.
+    word: Naval
+  - question: Douglas Mac Arthur was an _______  military leader who served as General
+      of the  Army for the United States.
+    word: American
+  - question: Upon the arrival of Douglas Mac Arthur in  the Philippines he gave
+      a speech in which he  promised "I shall _______" to the  Philippines.
+    word: Return
+  - question: _______ Mac Arthur gave a speech in  which he promised "I shall return"
+      to the  Philippines.
+    word: Douglas
 --- !u!1 &527761384
 GameObject:
   m_ObjectHideFlags: 0
@@ -3112,7 +3173,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &678421173
 MonoBehaviour:
@@ -3355,7 +3416,7 @@ RectTransform:
   m_Children:
   - {fileID: 74930261}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3395,9 +3456,9 @@ RectTransform:
   m_Father: {fileID: 2140062551}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 64.45999, y: -50}
   m_SizeDelta: {x: 128.92, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &763758961
@@ -3437,6 +3498,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763758959}
+  m_CullTransparentMesh: 1
+--- !u!1 &769169575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 769169576}
+  - component: {fileID: 769169578}
+  - component: {fileID: 769169577}
+  m_Layer: 0
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &769169576
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769169575}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 931505023}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &769169577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769169575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &769169578
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769169575}
   m_CullTransparentMesh: 1
 --- !u!1 &798688727
 GameObject:
@@ -3518,6 +3655,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798688727}
   m_CullTransparentMesh: 1
+--- !u!1 &804216492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 804216493}
+  m_Layer: 0
+  m_Name: 'RESERVED '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &804216493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804216492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.30369383, y: -0.76433486, z: 167.86047}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 400622382}
+  - {fileID: 1547191383}
+  - {fileID: 1384861639}
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &809610769
 GameObject:
   m_ObjectHideFlags: 0
@@ -3703,9 +3874,9 @@ RectTransform:
   m_Father: {fileID: 2140062551}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 252.54001, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &844586990
@@ -3758,7 +3929,7 @@ GameObject:
   - component: {fileID: 872225013}
   - component: {fileID: 872225012}
   - component: {fileID: 872225011}
-  - component: {fileID: 872225010}
+  - component: {fileID: 872225014}
   m_Layer: 5
   m_Name: Western Visayas
   m_TagString: Untagged
@@ -3786,162 +3957,6 @@ RectTransform:
   m_AnchoredPosition: {x: -1545.72, y: -718.8646}
   m_SizeDelta: {x: 155, y: 235}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &872225010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872225008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9afdacb68613d3478825d0cfeefc825, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneToLoad: Assessment
-  previousSceneToLoad: Luzon
-  categoryName: 0
-  assessments:
-  - question: Kailan ipinanganak si Jose Rizal?
-    correctAnswer: June 19, 1861
-    choices:
-    - June 19, 1861
-    - June 20, 1861
-    - June 19, 1862
-    - July 19, 1861
-  - question: Sino ang kalaban sa Infinity War?
-    correctAnswer: Thanos
-    choices:
-    - Thanos
-    - Yes
-    - Yes
-    - Yes
-  - question: Sino ang kapatid ni Thor na lalaki?
-    correctAnswer: Loki
-    choices:
-    - Loki
-    - Heimdall
-    - Sef
-    - Clint
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
 --- !u!114 &872225011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4024,6 +4039,125 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872225008}
   m_CullTransparentMesh: 1
+--- !u!114 &872225014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872225008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b991cdf70e85934da25c4e8c0d82acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Word Games
+  previousSceneToLoad: 
+  categoryName: 0
+  words:
+  - question: Graciano Lopez Jaena was born in what province?
+    word: Ilo-ilo
+  - question: Graciano Lopez Jaena was a Filipino _________,  orator, reformist
+    word: Journalist
+  - question: ' Graciano Lopez Jaena is considered to be one of  the greatest ______
+      in Filipino history'
+    word: Orator
+  - question: Graciano Lopez Jaena was born in ______, Iloilo
+    word: Jaro
+  - question: Teresa Magbanua was a Filipino school ______ and  military leader.
+    word: Teacher
+  - question: Teresa Magbanua was a Filipino school teacher  and _______ leader.
+    word: Military
+  - question: Teresa Magbanua was born in what province in the  Philippines?
+    word: Ilo-ilo
+  - question: "Teresa Magbanua is dubbed as the \u201CVisayan Joan  of ______\u201D."
+    word: Arc
+  - question: "Teresa Magbanua is also known as \u201C______\u201D."
+    word: Nanay Isa
+  - question: Ati-atihan festival is a Philippine festival held  annually in January
+      in honor of the ______ (Holy  Child or Infant Jesus).
+    word: "Santo Ni\xF1o"
+  - question: The Ati-atihan festival is celebrated in the province  of?
+    word: Aklan
+  - question: "What festival is a Philippine festival held annually  in January in
+      honor of the Santo Ni\xF10 (Holy Child or  Infant Jesus)"
+    word: Ati-Atihan
+  - question: "The name Ati-Atihan means \"to imitate the Ati  people\" or \u201Cto
+      be like Atis or _____ (Aklan Province\u2019s  natives).\u201D"
+    word: Aetas
+  - question: "What festival is known to be the \u201CThe Mother of  All Philipine
+      Festivals\u201D."
+    word: Ati-Atihan
+  - question: ' Is a religious and cultural festival in Iloilo City,  Philippines,
+      held annually on the 4th Sunday of  January, or right after the Sinulog in
+      Cebu and the  Ati-Atihan Festival in Kalibo, Aklan.'
+    word: Dinagyang
+  - question: "It is the Ilo-ilo\u2019s version of Ati-atihan festival of  Aklan."
+    word: Dinagyang
+  - question: Dinagyang festival is celebrated in what city?
+    word: Ilo-ilo
+  - question: The word Dinagyang came from a Hiligaynon word  extrapolated from _______,
+      meaning
+    word: "d\xE1gyang"
+  - question: What month is the dinagyang festival celebrated?
+    word: January
+  - question: "This annual festival is like Brazil\u2019s Rio Carnival."
+    word: Masskara
+  - question: "Literally translates to \u201Cmany faces,\u201D"
+    word: Masskara
+  - question: ' Is celebrated every ______ in Bacolod, Ilo-Ilo. Known as the city
+      of smiles.'
+    word: October
+  - question: " It is known as \u201CThe City of Smiles\u201D."
+    word: Bacolod
+  - question: The annual Masskara festival is like Rio Carnival from what country.
+    word: Brazil
+  - question: ' It is a resort island in the Western Visayas region of  the Philippines.'
+    word: Boracay
+  - question: Boracay was originally inhabited by the ______ people, but commercial
+      development has led to  leave and relocate.
+    word: Ati
+  - question: Apart from its white sand beaches, ______ is also  famous for being
+      one of the world's top destinations  for relaxation.
+    word: Boracay
+  - question: The island's indigenous Ati people say that the  name of the island
+      came from the Inati words "bora",  meaning _______, and "bocay", meaning white.
+    word: Bubbles
+  - question: Boracay is a resort island in the Western _____  region of the Philippines.
+    word: Visayas
+  - question: ' _____ Ruins is the remains of the ancestral home  mansion of the
+      wealthy sugar businessman, Don  Mariano Ledesma Lacson and his family.'
+    word: Ledesma
+  - question: Ledesma Ruins is the remains of the ancestral  home mansion of the
+      wealthy ______ businessman,  Don Mariano Ledesma Lacson and his family.
+    word: Sugar
+  - question: The Ledesma Ruins can be visited in the city of  ______, Negros Occidental.
+    word: Talisay
+  - question: The mansion was built in early 1900s and inspired  by _______ architecture.
+    word: Italian
+  - question: ' Balay Negrese is an ancestral house and is a  museum in _____ City,
+      Negros Occidental'
+    word: Silay
+  - question: t is notable for being the first museum to be  established in the province
+      of Negros Occidental.
+    word: Balay Negrese
+  - question: The house is of the type called bahay na _______,  literally means
+      "house of stone".
+    word: Bato
+  - question: Owned by one of the pioneers of ________ cultivation in the Philippines.
+    word: Sugarcane
+  - question: The house is of the type called bahay na bato,  literally "house of
+      _____".
+    word: Stone
+  - question: "Masskara is from the word \u201C_____\u201D (meaning a  multitude
+      of people)."
+    word: Mass
+  - question: "Masskara is from the word \u201CMass\u201D (meaning a  multitude of
+      ______)."
+    word: People
+  - question: The Spanish word cara (meaning ______), thus  forming MassKara (a multitude
+      of faces).
+    word: Face
 --- !u!1 &923378716
 GameObject:
   m_ObjectHideFlags: 0
@@ -4143,8 +4277,143 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &931505017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 931505023}
+  - component: {fileID: 931505022}
+  - component: {fileID: 931505021}
+  - component: {fileID: 931505020}
+  - component: {fileID: 931505019}
+  - component: {fileID: 931505018}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &931505018
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931505017}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a110705f64c12804e823b70196a725e6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!225 &931505019
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931505017}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &931505020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931505017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &931505021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931505017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0.5
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &931505022
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931505017}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &931505023
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931505017}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 769169576}
+  m_Father: {fileID: 2036704502}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &935574774
 GameObject:
   m_ObjectHideFlags: 0
@@ -4481,7 +4750,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &968918079
 GameObject:
@@ -4578,7 +4847,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &986077992
 GameObject:
@@ -4707,6 +4976,7 @@ MonoBehaviour:
     isFirstTimeGoingToSchool: 1
     isQuestReset: 0
     hasNewOpenRegion: 0
+    versionNumber: 1.0
     questNewIcon: 0
     notesNewIcon: 0
     achievementsNewIcon: 0
@@ -4914,6 +5184,7 @@ MonoBehaviour:
         - itemName: None
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: Pagudpud Beach
           informationLink: Delivery Ink Informations/Pagudpud Beach
           imageLink: PCP/Pagudpud Beach
@@ -4925,6 +5196,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -4974,6 +5246,7 @@ MonoBehaviour:
         - itemName: None
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: Malacanang of the North
           informationLink: Delivery Ink Informations/Malacanang of the North
           imageLink: PCP/Malacanang of the North
@@ -4985,6 +5258,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -5032,6 +5306,7 @@ MonoBehaviour:
           - itemName: Salakot
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Diego Silang
             informationLink: Delivery Ink Informations/Diego Silang
             imageLink: PCP/Diego Silang
@@ -5052,6 +5327,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -5099,18 +5375,21 @@ MonoBehaviour:
           - itemName: Puto
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Puto Festival
             informationLink: Delivery Ink Informations/Puto Festival
             imageLink: PCP/Puto Festival
           - itemName: Empanada
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Empanada Festival
             informationLink: Delivery Ink Informations/Empanada Festival
             imageLink: PCP/Empanada Festival
           - itemName: Longganisa
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Longganisa Festival
             informationLink: Delivery Ink Informations/Longganisa Festival
             imageLink: PCP/Longganisa Festival
@@ -5128,6 +5407,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -5175,12 +5455,14 @@ MonoBehaviour:
           - itemName: Puto
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Puto Festival
             informationLink: Delivery Ink Informations/Puto Festival
             imageLink: PCP/Puto Festival
           - itemName: Dinuguan
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: 
             informationLink: 
             imageLink: 
@@ -5199,6 +5481,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -5253,6 +5536,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -5339,7 +5623,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &995598275
 GameObject:
@@ -5395,6 +5679,7 @@ MonoBehaviour:
     isFirstTimeGoingToSchool: 1
     isQuestReset: 0
     hasNewOpenRegion: 0
+    versionNumber: 1.0
     questNewIcon: 0
     notesNewIcon: 0
     achievementsNewIcon: 0
@@ -5539,6 +5824,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -5593,6 +5879,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -5647,6 +5934,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -5701,6 +5989,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -5755,6 +6044,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -5809,6 +6099,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -5863,6 +6154,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -5917,6 +6209,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -6004,7 +6297,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &997798632
 GameObject:
@@ -6393,7 +6686,7 @@ RectTransform:
   - {fileID: 1989089965}
   - {fileID: 400351976}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6442,6 +6735,7 @@ MonoBehaviour:
     isFirstTimeGoingToSchool: 1
     isQuestReset: 0
     hasNewOpenRegion: 0
+    versionNumber: 1.0
     questNewIcon: 0
     notesNewIcon: 0
     achievementsNewIcon: 0
@@ -6586,6 +6880,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -6640,6 +6935,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -6694,6 +6990,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -6748,6 +7045,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -6802,6 +7100,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -6856,6 +7155,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -6910,6 +7210,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -6964,6 +7265,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -7062,7 +7364,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1087101807
 GameObject:
@@ -7097,9 +7399,9 @@ RectTransform:
   m_Father: {fileID: 2140062551}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 426.16003, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1087101809
@@ -8123,7 +8425,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1375459421
 GameObject:
@@ -8304,6 +8606,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377259570}
   m_CullTransparentMesh: 1
+--- !u!1 &1384861638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1384861639}
+  - component: {fileID: 1384861640}
+  m_Layer: 0
+  m_Name: Eastern Visayas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1384861639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384861638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 804216493}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1384861640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384861638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b991cdf70e85934da25c4e8c0d82acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Word Games
+  previousSceneToLoad: 
+  categoryName: 0
+  words:
+  - question: San _______ Bridge is a bridge that  stretches from Samar to Leyte
+      in the  Philippines.
+    word: Juanico
+  - question: San Juanico Bridge is the _______ longest  bridge over a body of water
+      in the  Philippines
+    word: Second
+  - question: San Juanico Bridge is a bridge that  stretches from ________ to Leyte
+      in the  Philippines.
+    word: Samar
+  - question: San Juanico Bridge is a bridge that  stretches from Samar to _______
+      in the  Philippines.
+    word: Leyte
+  - question: The San Juanico bridge was constructed  during the administration of
+      President  Ferdinand _______.
+    word: Marcos
+  - question: Mac Arthur's Landing is also known as  MacArthur Landing Memorial ___________ 
+      Park.
+    word: National
+  - question: Mac Arthur's Landing is located in what  Province?
+    word: Leyte
+  - question: Mac Arthur's Landing in the Philippines  led to the largest ______
+      battle of World  War II.
+    word: Naval
+  - question: Douglas Mac Arthur was an _______  military leader who served as General
+      of the  Army for the United States.
+    word: American
+  - question: Upon the arrival of Douglas Mac Arthur in  the Philippines he gave
+      a speech in which he  promised "I shall _______" to the  Philippines.
+    word: Return
+  - question: _______ Mac Arthur gave a speech in  which he promised "I shall return"
+      to the  Philippines.
+    word: Douglas
 --- !u!1 &1405981201
 GameObject:
   m_ObjectHideFlags: 0
@@ -8513,7 +8895,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1520769971
 GameObject:
@@ -8705,6 +9087,305 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532682466}
   m_CullTransparentMesh: 1
+--- !u!1 &1547191382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1547191383}
+  - component: {fileID: 1547191384}
+  m_Layer: 0
+  m_Name: Central Visayas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1547191383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547191382}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 804216493}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1547191384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547191382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9afdacb68613d3478825d0cfeefc825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Assessment
+  previousSceneToLoad: 
+  categoryName: 0
+  assessments:
+  - question: He is known as the first filipino hero
+    correctAnswer: Lapu-Lapu
+    choices:
+    - Lapu-Lapu
+    - Jose Rizal
+    - Apolinario Mabini
+    - Emilio Aguinaldo
+  - question: Was a datu (chief) of Mactan in the _______ in the  Philippines.
+    correctAnswer: Visayas
+    choices:
+    - Visayas
+    - Luzon
+    - Mindanao
+    - Sabah
+  - question: ' ______ years later after the death of Magellan,  Miguel Lopez de
+      Legazpi continued the expeditions of  Magellan, leading to the colonization
+      of the  Philippines for 333 years.'
+    correctAnswer: 40
+    choices:
+    - 40
+    - 100
+    - 243
+    - 333
+  - question: What were built all over the Philippines to honor  Lapu-Lapu's bravery
+      against the spaniards
+    correctAnswer: Statues
+    choices:
+    - Statues
+    - Dams
+    - Roads
+    - Bridges
+  - question: What ended Magellan's voyage of  circumnavigation around the globe.
+    correctAnswer: Death
+    choices:
+    - Drowning
+    - Stomach Ache
+    - Storm
+    - Death
+  - question: He a hero born in Bohol and is a Is a barangay  captain before the
+      longest revolt
+    correctAnswer: Francisco Dagohoy
+    choices:
+    - Lapu-Lapu
+    - Jose Rizal
+    - Francisco Dagohoy
+    - Emilio Aguinaldo
+  - question: Fransisco Dagohoy is a _____ before the longest  revolt in Philippine
+      history.
+    correctAnswer: Barangay Captain
+    choices:
+    - Barangay Captain
+    - Astronaut
+    - Swimmer
+    - Emilio Aguinaldo
+  - question: "Known as a Filipino revolutionary who holds the  distinction of having
+      initiated the longest revolt in  Philippine history, known as the \u201CDagohoy 
+      Rebellion\u201D"
+    correctAnswer: Francisco Dagohoy
+    choices:
+    - Gregorio Del Pilar
+    - Francisco Dagohoy
+    - Diego Silang
+    - Juan Luna
+  - question: He started the revolt at the age of 20.
+    correctAnswer: Francisco Dagohoy
+    choices:
+    - Emilio Aguinaldo
+    - Jose Rizal
+    - Francisco Dagohoy
+    - Lapu-Lapu
+  - question: Fransisco Dagohoy started the revolt when he was  only at the age of
+      what?
+    correctAnswer: 20
+    choices:
+    - 20
+    - 15
+    - 19
+    - 21
+  - question: A festival celebrated in the month of January that  is also known as
+      the Santo Nino Festival is an annual  religious and cultural festival in Cebu.
+    correctAnswer: Sinulog
+    choices:
+    - Sinulog
+    - Ati-atihan
+    - Ibon-Ibon
+    - Tabako
+  - question: ' This Festival is nicknamed as "The grandest festival  in the Philippines".'
+    correctAnswer: Sinulog
+    choices:
+    - Sinulog
+    - Panagbenga
+    - Banana
+    - Bangus
+  - question: "Sinulog comes from the _______ word \u201Csulog\u201D  which means
+      \u201Clike water current movement\u201D which  depicts the forward-backward
+      step of Sinulog dance."
+    correctAnswer: Cebuano
+    choices:
+    - Cebuano
+    - Spanish
+    - English
+    - Tagalog
+  - question: Sinulog is a festival celebrated in the month of  January that is also
+      known as the Santo Nino Festival  is an annual religious and cultural festival
+      in what  province?
+    correctAnswer: Cebu
+    choices:
+    - Cebu
+    - Samar
+    - Negros Occidental
+    - Bohol
+  - question: The Sinulog is a festival nicknamed as "The  Grandest festival in the
+      _______".
+    correctAnswer: Philippines
+    choices:
+    - Philippines
+    - Thailand
+    - Vietnam
+    - Japan
+  - question: ' It is an annual historical celebration that takes  place every year
+      in Tagbilaran City where the the  Blood Compact happend.'
+    correctAnswer: Sandugo
+    choices:
+    - Banana
+    - Sandugo
+    - Sinulog
+    - Dinagyang
+  - question: "The Blood Compact or Sandugo occurred when a  Spanish navigator named
+      Legaspi and the local Datu  did a ritual of them both shedding blood (or in 
+      tagalog \u201C______\u201D) into a cup and then drinking the  contents thereof."
+    correctAnswer: Dugo
+    choices:
+    - Dugo
+    - Balat
+    - Buto
+    - Ulo
+  - question: "This festival commemorates the Treaty of  Friendship between a Datu
+      in _________ and Spanish  Miguel L\xF3pez de Legazpi."
+    correctAnswer: Spanish
+    choices:
+    - Spanish
+    - Samoan
+    - Arab
+    - Italian
+  - question: It serves as a landmark that is considered as one  of the most important
+      historical markers in Cebu City  since it serves as a reminder of the birth
+      of  Christianity in the Philippines.
+    correctAnswer: Magellan's Cross
+    choices:
+    - Magellan's Cross
+    - Lapu-Lapu's Cross
+    - Emilio's Cross
+    - Jose Rizal's Cross
+  - question: It was brought by Ferdinand Magellan and locals  were baptized as they
+      agreed to accept Christianity.
+    correctAnswer: Cross
+    choices:
+    - Cross
+    - Shield
+    - Gun
+    - Pen
+  - question: Magellan's Cross also serves as a reminder of the  birth of _________
+      in the Philippines.
+    correctAnswer: Christianity
+    choices:
+    - Christianity
+    - Love
+    - Jesus
+    - Jose Rizal
+  - question: Where is the Magellan's cross located?
+    correctAnswer: Cebu
+    choices:
+    - Cebu
+    - Mactan
+    - Bohol
+    - Hoyohoy
+  - question: They are covered in green grass that turns brown  during the dry season,
+      hence the name.
+    correctAnswer: Chocolate Hills
+    choices:
+    - Chocolate Hills
+    - Mt. Mayon
+    - Mt. Pinatubo
+    - Chocolate Volcano
+  - question: "These cone-shaped hills are actually made of grass\x02covered limestone."
+    correctAnswer: Chocolate Hills
+    choices:
+    - Chocolate Hills
+    - Mt. Arayat
+    - Mt. Pinatubo
+    - Mt. Mayon
+  - question: The most famous tourist attraction in Bohol.
+    correctAnswer: Chocolate Hills
+    choices:
+    - Chocolate Hills
+    - Mt. Pinatubo
+    - Mt. Arayat
+    - Mt. Mayon
+  - question: The Chocolate hills is found in what province
+    correctAnswer: Bohol
+    choices:
+    - Bohol
+    - Cebu
+    - Davao
+    - Guimaras
+  - question: Is a basilica in Cebu City in the Philippines that was  founded in
+      1565, and is the oldest Roman Catholic  Church in the Philippines.
+    correctAnswer: "The Bas\xEDlica Menor del Santo Ni\xF1o de Ceb\xFA"
+    choices:
+    - "The Bas\xEDlica Menor del Santo Ni\xF1o de Ceb\xFA"
+    - Manila Cathedral
+    - St. Polycarp Parish
+    - Barasoain Church
+  - question: ' Known as the "Mother and Head of all Churches in  the Philippines".'
+    correctAnswer: "The Bas\xEDlica Menor del Santo Ni\xF1o de Ceb\xFA"
+    choices:
+    - "The Bas\xEDlica Menor del Santo Ni\xF1o de Ceb\xFA"
+    - Barasoain Church
+    - Manila Cathedral
+    - St. Polycarp
+  - question: "The Bas\xEDlica Menor del Santo Ni\xF1o de Ceb\xFA is the  _________
+      Roman Catholic church in the country."
+    correctAnswer: Oldest
+    choices:
+    - Oldest
+    - Largest
+    - Youngest
+    - Smallest
+  - question: Ferdiand Magellan is a ________ navigator and  explorer who sailed
+      under the flags of both Portugal  and Spain.
+    correctAnswer: Portuguese
+    choices:
+    - Portuguese
+    - Spanish
+    - American
+    - Malaysian
+  - question: He was killed by Lapu-Lapu in the battle in Mactan.
+    correctAnswer: Magellan
+    choices:
+    - Magellan
+    - Sultan Kudarat
+    - Juan Luna
+    - Jose Rizal
+  - question: This was the statue of the baby Jesus that was  handed to the Rajah
+      Humabon of Cebu by the  Portuguese explorer Ferdinand Magellan in 1521.
+    correctAnswer: Sto. Nino
+    choices:
+    - Sto. Nino
+    - St. Joseph
+    - Belen
+    - Holy Eucharist
 --- !u!1 &1593325255
 GameObject:
   m_ObjectHideFlags: 0
@@ -8950,6 +9631,7 @@ MonoBehaviour:
     isFirstTimeGoingToSchool: 1
     isQuestReset: 0
     hasNewOpenRegion: 0
+    versionNumber: 1.0
     questNewIcon: 0
     notesNewIcon: 0
     achievementsNewIcon: 0
@@ -9068,6 +9750,7 @@ MonoBehaviour:
         - itemName: None
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: Pagudpud Beach
           informationLink: Delivery Ink Informations/Pagudpud Beach
           imageLink: PCP/Pagudpud Beach
@@ -9079,6 +9762,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -9128,6 +9812,7 @@ MonoBehaviour:
         - itemName: None
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: Malacanang of the North
           informationLink: Delivery Ink Informations/Malacanang of the North
           imageLink: PCP/Malacanang of the North
@@ -9139,6 +9824,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -9186,6 +9872,7 @@ MonoBehaviour:
           - itemName: Salakot
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Diego Silang
             informationLink: Delivery Ink Informations/Diego Silang
             imageLink: PCP/Diego Silang
@@ -9206,6 +9893,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -9253,18 +9941,21 @@ MonoBehaviour:
           - itemName: Puto
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Puto Festival
             informationLink: Delivery Ink Informations/Puto Festival
             imageLink: PCP/Puto Festival
           - itemName: Empanada
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Empanada Festival
             informationLink: Delivery Ink Informations/Empanada Festival
             imageLink: PCP/Empanada Festival
           - itemName: Longganisa
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Longganisa Festival
             informationLink: Delivery Ink Informations/Longganisa Festival
             imageLink: PCP/Longganisa Festival
@@ -9282,6 +9973,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -9329,12 +10021,14 @@ MonoBehaviour:
           - itemName: Puto
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Puto Festival
             informationLink: Delivery Ink Informations/Puto Festival
             imageLink: PCP/Puto Festival
           - itemName: Dinuguan
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: 
             informationLink: 
             imageLink: 
@@ -9353,6 +10047,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -9407,6 +10102,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -9494,7 +10190,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1627418475
 GameObject:
@@ -9581,12 +10277,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31.79
+  m_fontSize: 40
   m_fontSizeBase: 31.79
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -9658,7 +10354,7 @@ RectTransform:
   m_GameObject: {fileID: 1672776673}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0133947395, y: 0.0133947395, z: 0.0133947395}
+  m_LocalScale: {x: 0.02665356, y: 0.02665356, z: 0.02665356}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1831944674}
@@ -9666,7 +10362,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -71, y: 32}
+  m_AnchoredPosition: {x: -71, y: 27}
   m_SizeDelta: {x: 7806.25, y: 7681.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1672776675
@@ -9689,9 +10385,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 14726eb5ad76d304ba13180f32eca37f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f7e3c96bd9f4cc24b965a00551277759, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -9719,7 +10415,7 @@ GameObject:
   - component: {fileID: 1701553899}
   - component: {fileID: 1701553898}
   - component: {fileID: 1701553897}
-  - component: {fileID: 1701553896}
+  - component: {fileID: 1701553900}
   m_Layer: 5
   m_Name: Central Visayas
   m_TagString: Untagged
@@ -9747,162 +10443,6 @@ RectTransform:
   m_AnchoredPosition: {x: -1544.3507, y: -720.65063}
   m_SizeDelta: {x: 155, y: 235}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1701553896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701553894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9afdacb68613d3478825d0cfeefc825, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneToLoad: Assessment
-  previousSceneToLoad: Luzon
-  categoryName: 0
-  assessments:
-  - question: Kailan ipinanganak si Jose Rizal?
-    correctAnswer: June 19, 1861
-    choices:
-    - June 19, 1861
-    - June 20, 1861
-    - June 19, 1862
-    - July 19, 1861
-  - question: Sino ang kalaban sa Infinity War?
-    correctAnswer: Thanos
-    choices:
-    - Thanos
-    - Yes
-    - Yes
-    - Yes
-  - question: Sino ang kapatid ni Thor na lalaki?
-    correctAnswer: Loki
-    choices:
-    - Loki
-    - Heimdall
-    - Sef
-    - Clint
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
-  - question: Real name of Hawkeye?
-    correctAnswer: Clint Barton
-    choices:
-    - Clint Barton
-    - Yes
-    - Yes
-    - Yes
 --- !u!114 &1701553897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9985,6 +10525,273 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701553894}
   m_CullTransparentMesh: 1
+--- !u!114 &1701553900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701553894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9afdacb68613d3478825d0cfeefc825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Assessment
+  previousSceneToLoad: 
+  categoryName: 0
+  assessments:
+  - question: He is known as the first filipino hero
+    correctAnswer: Lapu-Lapu
+    choices:
+    - Lapu-Lapu
+    - Jose Rizal
+    - Apolinario Mabini
+    - Emilio Aguinaldo
+  - question: Was a datu (chief) of Mactan in the _______ in the  Philippines.
+    correctAnswer: Visayas
+    choices:
+    - Visayas
+    - Luzon
+    - Mindanao
+    - Sabah
+  - question: ' ______ years later after the death of Magellan,  Miguel Lopez de
+      Legazpi continued the expeditions of  Magellan, leading to the colonization
+      of the  Philippines for 333 years.'
+    correctAnswer: 40
+    choices:
+    - 40
+    - 100
+    - 243
+    - 333
+  - question: What were built all over the Philippines to honor  Lapu-Lapu's bravery
+      against the spaniards
+    correctAnswer: Statues
+    choices:
+    - Statues
+    - Dams
+    - Roads
+    - Bridges
+  - question: What ended Magellan's voyage of  circumnavigation around the globe.
+    correctAnswer: Death
+    choices:
+    - Drowning
+    - Stomach Ache
+    - Storm
+    - Death
+  - question: He a hero born in Bohol and is a Is a barangay  captain before the
+      longest revolt
+    correctAnswer: Francisco Dagohoy
+    choices:
+    - Lapu-Lapu
+    - Jose Rizal
+    - Francisco Dagohoy
+    - Emilio Aguinaldo
+  - question: Fransisco Dagohoy is a _____ before the longest  revolt in Philippine
+      history.
+    correctAnswer: Barangay Captain
+    choices:
+    - Barangay Captain
+    - Astronaut
+    - Swimmer
+    - Emilio Aguinaldo
+  - question: "Known as a Filipino revolutionary who holds the  distinction of having
+      initiated the longest revolt in  Philippine history, known as the \u201CDagohoy 
+      Rebellion\u201D"
+    correctAnswer: Francisco Dagohoy
+    choices:
+    - Gregorio Del Pilar
+    - Francisco Dagohoy
+    - Diego Silang
+    - Juan Luna
+  - question: He started the revolt at the age of 20.
+    correctAnswer: Francisco Dagohoy
+    choices:
+    - Emilio Aguinaldo
+    - Jose Rizal
+    - Francisco Dagohoy
+    - Lapu-Lapu
+  - question: Fransisco Dagohoy started the revolt when he was  only at the age of
+      what?
+    correctAnswer: 20
+    choices:
+    - 20
+    - 15
+    - 19
+    - 21
+  - question: A festival celebrated in the month of January that  is also known as
+      the Santo Nino Festival is an annual  religious and cultural festival in Cebu.
+    correctAnswer: Sinulog
+    choices:
+    - Sinulog
+    - Ati-atihan
+    - Ibon-Ibon
+    - Tabako
+  - question: ' This Festival is nicknamed as "The grandest festival  in the Philippines".'
+    correctAnswer: Sinulog
+    choices:
+    - Sinulog
+    - Panagbenga
+    - Banana
+    - Bangus
+  - question: "Sinulog comes from the _______ word \u201Csulog\u201D  which means
+      \u201Clike water current movement\u201D which  depicts the forward-backward
+      step of Sinulog dance."
+    correctAnswer: Cebuano
+    choices:
+    - Cebuano
+    - Spanish
+    - English
+    - Tagalog
+  - question: Sinulog is a festival celebrated in the month of  January that is also
+      known as the Santo Nino Festival  is an annual religious and cultural festival
+      in what  province?
+    correctAnswer: Cebu
+    choices:
+    - Cebu
+    - Samar
+    - Negros Occidental
+    - Bohol
+  - question: The Sinulog is a festival nicknamed as "The  Grandest festival in the
+      _______".
+    correctAnswer: Philippines
+    choices:
+    - Philippines
+    - Thailand
+    - Vietnam
+    - Japan
+  - question: ' It is an annual historical celebration that takes  place every year
+      in Tagbilaran City where the the  Blood Compact happend.'
+    correctAnswer: Sandugo
+    choices:
+    - Banana
+    - Sandugo
+    - Sinulog
+    - Dinagyang
+  - question: "The Blood Compact or Sandugo occurred when a  Spanish navigator named
+      Legaspi and the local Datu  did a ritual of them both shedding blood (or in 
+      tagalog \u201C______\u201D) into a cup and then drinking the  contents thereof."
+    correctAnswer: Dugo
+    choices:
+    - Dugo
+    - Balat
+    - Buto
+    - Ulo
+  - question: "This festival commemorates the Treaty of  Friendship between a Datu
+      in _________ and Spanish  Miguel L\xF3pez de Legazpi."
+    correctAnswer: Spanish
+    choices:
+    - Spanish
+    - Samoan
+    - Arab
+    - Italian
+  - question: It serves as a landmark that is considered as one  of the most important
+      historical markers in Cebu City  since it serves as a reminder of the birth
+      of  Christianity in the Philippines.
+    correctAnswer: Magellan's Cross
+    choices:
+    - Magellan's Cross
+    - Lapu-Lapu's Cross
+    - Emilio's Cross
+    - Jose Rizal's Cross
+  - question: It was brought by Ferdinand Magellan and locals  were baptized as they
+      agreed to accept Christianity.
+    correctAnswer: Cross
+    choices:
+    - Cross
+    - Shield
+    - Gun
+    - Pen
+  - question: Magellan's Cross also serves as a reminder of the  birth of _________
+      in the Philippines.
+    correctAnswer: Christianity
+    choices:
+    - Christianity
+    - Love
+    - Jesus
+    - Jose Rizal
+  - question: Where is the Magellan's cross located?
+    correctAnswer: Cebu
+    choices:
+    - Cebu
+    - Mactan
+    - Bohol
+    - Hoyohoy
+  - question: They are covered in green grass that turns brown  during the dry season,
+      hence the name.
+    correctAnswer: Chocolate Hills
+    choices:
+    - Chocolate Hills
+    - Mt. Mayon
+    - Mt. Pinatubo
+    - Chocolate Volcano
+  - question: "These cone-shaped hills are actually made of grass\x02covered limestone."
+    correctAnswer: Chocolate Hills
+    choices:
+    - Chocolate Hills
+    - Mt. Arayat
+    - Mt. Pinatubo
+    - Mt. Mayon
+  - question: The most famous tourist attraction in Bohol.
+    correctAnswer: Chocolate Hills
+    choices:
+    - Chocolate Hills
+    - Mt. Pinatubo
+    - Mt. Arayat
+    - Mt. Mayon
+  - question: The Chocolate hills is found in what province
+    correctAnswer: Bohol
+    choices:
+    - Bohol
+    - Cebu
+    - Davao
+    - Guimaras
+  - question: Is a basilica in Cebu City in the Philippines that was  founded in
+      1565, and is the oldest Roman Catholic  Church in the Philippines.
+    correctAnswer: "The Bas\xEDlica Menor del Santo Ni\xF1o de Ceb\xFA"
+    choices:
+    - "The Bas\xEDlica Menor del Santo Ni\xF1o de Ceb\xFA"
+    - Manila Cathedral
+    - St. Polycarp Parish
+    - Barasoain Church
+  - question: ' Known as the "Mother and Head of all Churches in  the Philippines".'
+    correctAnswer: "The Bas\xEDlica Menor del Santo Ni\xF1o de Ceb\xFA"
+    choices:
+    - "The Bas\xEDlica Menor del Santo Ni\xF1o de Ceb\xFA"
+    - Barasoain Church
+    - Manila Cathedral
+    - St. Polycarp
+  - question: "The Bas\xEDlica Menor del Santo Ni\xF1o de Ceb\xFA is the  _________
+      Roman Catholic church in the country."
+    correctAnswer: Oldest
+    choices:
+    - Oldest
+    - Largest
+    - Youngest
+    - Smallest
+  - question: Ferdiand Magellan is a ________ navigator and  explorer who sailed
+      under the flags of both Portugal  and Spain.
+    correctAnswer: Portuguese
+    choices:
+    - Portuguese
+    - Spanish
+    - American
+    - Malaysian
+  - question: He was killed by Lapu-Lapu in the battle in Mactan.
+    correctAnswer: Magellan
+    choices:
+    - Magellan
+    - Sultan Kudarat
+    - Juan Luna
+    - Jose Rizal
+  - question: This was the statue of the baby Jesus that was  handed to the Rajah
+      Humabon of Cebu by the  Portuguese explorer Ferdinand Magellan in 1521.
+    correctAnswer: Sto. Nino
+    choices:
+    - Sto. Nino
+    - St. Joseph
+    - Belen
+    - Holy Eucharist
 --- !u!1 &1702294940
 GameObject:
   m_ObjectHideFlags: 0
@@ -10018,9 +10825,9 @@ RectTransform:
   m_Father: {fileID: 2140062551}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 599.78, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1702294942
@@ -10408,7 +11215,7 @@ RectTransform:
   m_Children:
   - {fileID: 1532682467}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10475,8 +11282,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ilocos Region
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
-  m_sharedMaterial: {fileID: -5432314662704744868, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7394abb855ac6bf40805ecdaf2506f0f, type: 2}
+  m_sharedMaterial: {fileID: -5557912328034547050, guid: 7394abb855ac6bf40805ecdaf2506f0f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10500,8 +11307,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 62.69
+  m_fontSizeBase: 62.69
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11312,6 +12119,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013118126}
   m_CullTransparentMesh: 1
+--- !u!1 &2036704500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2036704502}
+  - component: {fileID: 2036704501}
+  m_Layer: 0
+  m_Name: SceneTransitionLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2036704501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036704500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1407c8d9b21db64ab765a61ba3e4a9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 931505018}
+  transitionSpeed: 0.2
+--- !u!4 &2036704502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036704500}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.1719346, y: -0.23445642, z: 622.7956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 931505023}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2073193270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11460,7 +12314,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2074698060
 MonoBehaviour:
@@ -11487,6 +12341,7 @@ MonoBehaviour:
     isFirstTimeGoingToSchool: 1
     isQuestReset: 0
     hasNewOpenRegion: 0
+    versionNumber: 1.0
     questNewIcon: 0
     notesNewIcon: 0
     achievementsNewIcon: 0
@@ -11991,6 +12846,7 @@ MonoBehaviour:
     isFirstTimeGoingToSchool: 1
     isQuestReset: 0
     hasNewOpenRegion: 0
+    versionNumber: 1.0
     questNewIcon: 0
     notesNewIcon: 0
     achievementsNewIcon: 0
@@ -12135,6 +12991,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -12189,6 +13046,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -12243,6 +13101,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -12297,6 +13156,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -12351,6 +13211,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -12405,6 +13266,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -12459,6 +13321,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -12513,6 +13376,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -12615,7 +13479,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2097873511
 GameObject:
@@ -12958,7 +13822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2140062551
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12978,10 +13842,10 @@ RectTransform:
   m_Father: {fileID: 1953514931}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 723.4, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 398.7, y: -220.33}
+  m_SizeDelta: {x: 723.4, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2140062552
 MonoBehaviour:

@@ -79,7 +79,8 @@ public class DataPersistenceManager : MonoBehaviour
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Philippine Map")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Luzon")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Visayas")
-            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Mindanao"))
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Mindanao")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Vacation Scene"))
         {
             this.LoadGame();
         }
@@ -195,7 +196,7 @@ public class PlayerDataHandler
     public void Save(PlayerData playerData) 
     {
         string json = JsonUtility.ToJson(playerData, true);
-
+        
         File.WriteAllText(Application.persistentDataPath + "/" + id + ".txt", json);
     }
 }

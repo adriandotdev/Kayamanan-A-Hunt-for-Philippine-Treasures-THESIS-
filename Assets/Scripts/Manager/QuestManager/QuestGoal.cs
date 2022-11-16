@@ -84,10 +84,24 @@ public class DeliveryGoal : QuestGoal
 
     public DeliveryGoal Copy()
     {
+        Item[] itemsCopy = new Item[this.items.Length];
+
+        for (int i = 0; i < itemsCopy.Length; i++)
+        {
+            itemsCopy[i] = this.items[i].CopyItem();
+        }
+
+        Item[] itemsToShowCopy = new Item[this.itemsToShow.Length];
+
+        for (int j = 0; j < this.itemsToShow.Length; j++)
+        {
+            itemsToShowCopy[j] = this.itemsToShow[j].CopyItem();
+        }
+
         DeliveryGoal deliveryGoalCopy =  new DeliveryGoal(this.giverName, this.receiverName, 
             this.deliveryMessage, this.informationLink, this.informationLinkWhenInfoHasBeenSeen,
             this.wayOfInfo,
-            this.items, this.itemsToShow);
+            itemsCopy, itemsToShowCopy);
 
         deliveryGoalCopy.itemReceivedFromGiver = this.itemReceivedFromGiver;
         deliveryGoalCopy.deliverGoalId = this.deliverGoalId;
@@ -145,7 +159,14 @@ public class RequestGoal
 
     public RequestGoal Copy()
     {
-        RequestGoal rg = new RequestGoal(this.itemGivers, this.receiver, this.msgRequest, this.msgOfGiver);
+        ItemGiver[] itemGiversCopy = new ItemGiver[this.itemGivers.Length];
+
+        for (int i = 0; i < itemGiversCopy.Length; i++)
+        {
+            itemGiversCopy[i] = this.itemGivers[i].CopyItemGiver();
+        }
+
+        RequestGoal rg = new RequestGoal(itemGiversCopy, this.receiver, this.msgRequest, this.msgOfGiver);
 
         rg.requestGoalID = this.requestGoalID;
         rg.isRequestFromNPCGained = this.isRequestFromNPCGained;
@@ -223,6 +244,20 @@ public class ItemGiver {
         this.itemsToGive = itemsToGive;
         this.isItemsGiven = false;
     }
+
+    public ItemGiver CopyItemGiver()
+    {
+        List<Item> itemsToGiveCopy = new List<Item>();
+
+        foreach (Item item in this.itemsToGive)
+        {
+            itemsToGiveCopy.Add(item.CopyItem());
+        }
+
+        ItemGiver ig = new ItemGiver(this.giverName, this.message, itemsToGiveCopy);
+
+        return ig;
+    }
 }
 
 //[System.Serializable]
@@ -291,6 +326,7 @@ public class Item
     public string itemName;
     public int quantity;
     public bool stackable;
+    public int originalQuantity;
 
     // For Information.
     public string titleOfInformation;
@@ -302,6 +338,7 @@ public class Item
         this.itemName = itemName;
         this.stackable = stackable;
         this.quantity = quantity;
+        this.originalQuantity = quantity;
         this.titleOfInformation = titleOfInformation;
         this.informationLink = informationLink;
         this.imageLink = imageLink;
@@ -309,7 +346,7 @@ public class Item
 
     public Item CopyItem()
     {
-        Item clonedItem = new Item(this.itemName, this.quantity, this.stackable, this.titleOfInformation, this.informationLink, this.imageLink);
+        Item clonedItem = new Item(this.itemName, this.originalQuantity, this.stackable, this.titleOfInformation, this.informationLink, this.imageLink);
 
         return clonedItem;
     }

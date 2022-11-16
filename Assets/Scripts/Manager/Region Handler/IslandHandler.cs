@@ -200,17 +200,19 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
                         // Check if all the quest is completed AND Check if the dunong points is valid.
                         if (this.IsAllQuestCompleted() && this.playerData.dunongPoints == this.playerData.requiredDunongPointsToPlay)
                         {
-                            this.playerData.dunongPoints -= this.playerData.requiredDunongPointsToPlay;
+                            //this.playerData.dunongPoints -= this.playerData.requiredDunongPointsToPlay;
 
                             if (typeOfAssessment != null)
                             {
                                 AssessmentManager.instance.StartAssessments(typeOfAssessment.assessments);
-                                SceneManager.LoadScene(typeOfAssessment.sceneToLoad);
+                                TransitionLoader.instance?.StartAnimation(typeOfAssessment.sceneToLoad);
+                                //SceneManager.LoadScene(typeOfAssessment.sceneToLoad);
                             }
                             else if (typeOfWord != null)
                             {
                                 WordManager.instance.StartWordGames(typeOfWord.words);
-                                SceneManager.LoadScene(typeOfWord.sceneToLoad);
+                                TransitionLoader.instance?.StartAnimation(typeOfWord.sceneToLoad);
+                                //SceneManager.LoadScene(typeOfWord.sceneToLoad);
                             }
                             return;
                         }

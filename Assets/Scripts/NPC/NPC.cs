@@ -21,6 +21,7 @@ public class NPC : MonoBehaviour
     private Transform day1StartPos;
     [SerializeField]
     private Transform[] day1Waypoints;
+    public float timeToLook1;
 
     [Header("Day 2 Start Position and Waypoints")]
     [SerializeField]
@@ -29,6 +30,7 @@ public class NPC : MonoBehaviour
     private Transform day2StartPos;
     [SerializeField]
     private Transform[] day2Waypoints;
+    public float timeToLook2;
 
     [Header("Day 3 Start Position and Waypoints")]
     [SerializeField]
@@ -37,6 +39,7 @@ public class NPC : MonoBehaviour
     private Transform day3StartPos;
     [SerializeField]
     private Transform[] day3Waypoints;
+    public float timeToLook3;
 
     [Header("Day 4 Start Position and Waypoints")]
     [SerializeField]
@@ -45,6 +48,7 @@ public class NPC : MonoBehaviour
     private Transform day4StartPos;
     [SerializeField]
     private Transform[] day4Waypoints;
+    public float timeToLook4;
 
     [Header("Day 5 Start Position and Waypoints")]
     [SerializeField]
@@ -53,6 +57,7 @@ public class NPC : MonoBehaviour
     private Transform day5StartPos;
     [SerializeField]
     private Transform[] day5Waypoints;
+    public float timeToLook5;
 
     // Walk speed that can be set in Inspector
     //[SerializeField]
@@ -84,16 +89,22 @@ public class NPC : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         agent = GetComponent<NavMeshAgent>();
-        agent.updateRotation = false;
-        agent.updateUpAxis = false;
+
+        if (agent != null)
+        {
+            agent.updateRotation = false;
+            agent.updateUpAxis = false;
+
+        }
 
         this.SetWaypoints();
 
         if (this.npcBehavior == NPC_BEHAVIOR.STATIONARY && this.startPosition != null)
         {
             print(gameObject.name + "here");
-            transform.position = transform.TransformPoint(this.startPosition.localPosition);
-
+            GetComponent<NavMeshAgent>().enabled = false;
+            transform.position = this.startPosition.position;
+            StartCoroutine(EnableNavMeshAgent());
         }
         else
         {
@@ -126,6 +137,12 @@ public class NPC : MonoBehaviour
         }
     }
 
+    IEnumerator EnableNavMeshAgent()
+    {
+        yield return new WaitForSeconds(.5f);
+
+        GetComponent<NavMeshAgent>().enabled = true;
+    }
     private void LateUpdate()
     {
         this.npcInfo.xPos = transform.position.x;
@@ -245,21 +262,25 @@ public class NPC : MonoBehaviour
                 this.waypoints = day1Waypoints;
                 this.startPosition = day1StartPos;
                 this.npcBehavior = this.day1Behavior;
+                this.waitingTimeBeforeWalkingAgain = timeToLook1;
                 break;
             case 2:
                 this.waypoints = day2Waypoints;
                 this.startPosition = day2StartPos;
                 this.npcBehavior = this.day2Behavior;
+                this.waitingTimeBeforeWalkingAgain = timeToLook2;
                 break;
             case 3:
                 this.waypoints = day3Waypoints;
                 this.startPosition = day3StartPos;
                 this.npcBehavior = this.day3Behavior;
+                this.waitingTimeBeforeWalkingAgain = timeToLook3;
                 break;
             case 4:
                 this.waypoints = day4Waypoints;
                 this.startPosition = day4StartPos;
                 this.npcBehavior = this.day4Behavior;
+                this.waitingTimeBeforeWalkingAgain = timeToLook4;
                 break;
             case 5:
                 this.waypoints = day5Waypoints;

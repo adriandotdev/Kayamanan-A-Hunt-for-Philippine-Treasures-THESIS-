@@ -45,6 +45,7 @@ public class NotesManager : MonoBehaviour
             return;
 
         this.notesBtn.onClick.AddListener(() => {
+            SoundManager.instance?.PlaySound("Button Click 1");
             this.OpenNotesPanel();
             this.notesBtn.transform.GetChild(0).gameObject.SetActive(false);
         });
@@ -56,6 +57,9 @@ public class NotesManager : MonoBehaviour
         this.houseCanvasGroup.interactable = false;
         this.inventoryPanel.SetActive(false);
         this.joyStick.SetActive(false);
+
+        if (DataPersistenceManager.instance != null)
+            DataPersistenceManager.instance.playerData.notesNewIcon = false;
 
         LeanTween.scale(this.notesPanel.gameObject, new Vector2(334.8216f, 334.8216f), .2f)
             .setEaseSpring();
@@ -69,6 +73,7 @@ public class NotesManager : MonoBehaviour
 
     public void CloseNotesPanel()
     {
+        SoundManager.instance?.PlaySound("Button Click 1");
         this.houseCanvasGroup.interactable = true;
         this.inventoryPanel.SetActive(true);
         this.joyStick.SetActive(true);

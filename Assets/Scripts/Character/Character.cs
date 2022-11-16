@@ -24,9 +24,9 @@ public class Character : MonoBehaviour, IDataPersistence
     public Sprite up;
     public Sprite down;
 
-    Vector3 movement;
+    public Vector3 movement;
 
-    bool isMoving = false;
+    public bool isMoving = false;
 
     // Player Data
     public PlayerData playerData;
@@ -43,9 +43,18 @@ public class Character : MonoBehaviour, IDataPersistence
     {
         float horizontal = joystick.Horizontal;
         float vertical = joystick.Vertical;
-        
 
-        if (horizontal != 0 || vertical != 0)
+        if (joystick.gameObject.activeSelf == false)
+        {
+            isMoving = false;
+            animator.SetFloat("Speed", 0);
+            joystick.gameObject.transform.GetChild(0).gameObject.transform.localPosition = Vector2.zero;
+            joystick.input = Vector2.zero;
+            return;
+        }
+
+        if (horizontal >= .5f || horizontal <= -.5f || vertical >= .5f || vertical <= -.5f 
+            && joystick.Direction != Vector2.zero)
         {
             animator.SetFloat("Speed", 1);
             isMoving = true;
@@ -59,12 +68,11 @@ public class Character : MonoBehaviour, IDataPersistence
         animator.SetFloat("Horizontal", horizontal);
         animator.SetFloat("Vertical", vertical);
 
-        movement = new Vector3(horizontal, vertical) * speed * Time.deltaTime;
-
-        //if (movement != Vector3.zero)
-        //    SoundManager.instance?.PlaySound("Wood Footsteps");
-
-        transform.position += movement;
+        if (isMoving)
+        {
+            movement = new Vector3(horizontal, vertical) * speed * Time.deltaTime;
+            transform.position += movement;
+        }
 
         if (isMoving == false && DataPersistenceManager.instance != null)
         {

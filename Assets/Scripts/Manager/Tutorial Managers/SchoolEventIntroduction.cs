@@ -73,7 +73,8 @@ public class SchoolEventIntroduction : MonoBehaviour
         {
             this.InitializeNotificationComponent();
 
-            dialogueText.text = "Congratulations! You've opened a new region in the Luzon booth!";
+
+            dialogueText.text = "Congratulations! You've opened a new region!";
 
             nextBtn.onClick.AddListener(() =>
             {

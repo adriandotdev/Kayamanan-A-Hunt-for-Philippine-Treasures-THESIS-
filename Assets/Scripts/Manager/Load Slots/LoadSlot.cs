@@ -40,6 +40,8 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
 
     [Header("Alert Box for Message about Maximum number of slots.")]
     [SerializeField] private RectTransform alertBox;
+    [SerializeField] private TMPro.TextMeshProUGUI profileMaxNumTxt;
+
     Coroutine hidingAlertBox;
 
     private bool isCharacterPanelOpen = false;
@@ -56,7 +58,22 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
         this.SetupCharacterPanelUIElements();
         this.SetupDeleteConfirmation();
 
+        this.profileMaxNumTxt = GameObject.Find("Profile Max Number").GetComponent<TMPro.TextMeshProUGUI>();
         this.LoadAllSlots();
+
+        SlotsFileHandler fileHandler = new SlotsFileHandler();
+        Slots slots = fileHandler.Load();
+
+        if (slots.ids.Count == 5)
+        {
+            this.btnCreateNewProfile.gameObject.SetActive(false);
+            this.profileMaxNumTxt.gameObject.SetActive(true);
+        }
+        else
+        {
+            this.btnCreateNewProfile.gameObject.SetActive(true);
+            this.profileMaxNumTxt.gameObject.SetActive(false);
+        }
     }
 
     /**
@@ -225,6 +242,12 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
 
             this.RemoveAllSlots();
             this.LoadAllSlots();
+
+            if (slots.ids.Count < 5)
+            {
+                this.btnCreateNewProfile.gameObject.SetActive(true);
+                this.profileMaxNumTxt.gameObject.SetActive(false);
+            }
         });
 
         this.btnCancelDelete.onClick.AddListener(() =>
@@ -254,14 +277,23 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
         // For testing purposes.
         //DataPersistenceManager.instance.playerData.isIntroductionDone = true;
 
+        if (this.playerData.isGameCompleted)
+        {
+            //SceneManager.LoadScene("Vacation Scene");
+            TransitionLoader.instance.StartAnimation("Vacation Scene");
+            return;
+        }
+
         if (!this.playerData.isIntroductionDone)
         {
-            SceneManager.LoadScene("First Sequence");
+            //SceneManager.LoadScene("First Sequence");
+            TransitionLoader.instance.StartAnimation("First Sequence");
             return;
         }
 
         SoundManager.instance.PlaySound("Button Click 2");
-        SceneManager.LoadScene(this.playerData.sceneToLoad);
+        TransitionLoader.instance.StartAnimation(this.playerData.sceneToLoad);
+        //SceneManager.LoadScene(this.playerData.sceneToLoad);
     }
 
     /**
@@ -286,6 +318,20 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
             this.hidingAlertBox = StartCoroutine(HideAlertBox());
             return;
         }
+        
+        foreach (string id in slots.ids)
+        {
+            PlayerDataHandler handler = new PlayerDataHandler(id);
+            PlayerData pd = handler.Load();
+
+            if (pd.name.ToLower() == this.btnCharacterName.text.ToLower())
+            {
+                this.alertBox.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "Profile name exists.";
+                this.alertBox.gameObject.SetActive(true);
+                this.hidingAlertBox = StartCoroutine(HideAlertBox());
+                return;
+            }
+        }
 
         this.playerData.name = this.btnCharacterName.text;
         DataPersistenceManager.instance.ConfirmCharacter();
@@ -293,7 +339,9 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
         // For testing purposes, we direct load the House scene and setting the 'isIntroductionDone' and 'isTutorialDone' to 'true'.
         //DataPersistenceManager.instance.playerData.isIntroductionDone = true;
         //DataPersistenceManager.instance.playerData.isTutorialDone = true;
-        SceneManager.LoadScene("First Sequence"); // It must be first sequence.
+        //DataPersistenceManager.instance.playerData.isPreQuestIntroductionDone = true;
+        TransitionLoader.instance.StartAnimation("First Sequence");
+        //TransitionLoader.instance.StartAnimation("House");// It must be first sequence.
     }
 
     IEnumerator HideAlertBox()

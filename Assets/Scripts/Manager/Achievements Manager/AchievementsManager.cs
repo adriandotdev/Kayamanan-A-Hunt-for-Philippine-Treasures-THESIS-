@@ -12,10 +12,13 @@ public class AchievementsManager : MonoBehaviour
     public Image achievementImage;
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI infoText;
+    public Scrollbar vertScrollBar;
+
     public Sprite sprite;
 
     public string title;
     public string info;
+    public float vertValue = 1f;
 
     private void Awake()
     {
@@ -51,7 +54,13 @@ public class AchievementsManager : MonoBehaviour
             Button backButton = GameObject.Find("Back").GetComponent<Button>();
 
             backButton.onClick.AddListener(() 
-                => SceneManager.LoadScene(DataPersistenceManager.instance.playerData.sceneToLoad));
+                => {
+                    SoundManager.instance?.PlaySound("Click Close");
+                    TransitionLoader.instance?.StartAnimation(DataPersistenceManager.instance.playerData.sceneToLoad);
+                    //SceneManager.LoadScene(DataPersistenceManager.instance.playerData.sceneToLoad);
+                });
+
+            vertScrollBar = GameObject.Find("Scrollbar Vertical").GetComponent<Scrollbar>();
         }
     }
 
@@ -69,20 +78,32 @@ public class AchievementsManager : MonoBehaviour
             titleText.text = title;
             infoText.text = info;
 
-            back.onClick.AddListener(() => SceneManager.LoadScene("Achievements"));
+            back.onClick.AddListener(() => {
+                SoundManager.instance?.PlaySound("Click Close");
+                TransitionLoader.instance?.StartAnimation("Achievements");
+                //SceneManager.LoadScene("Achievements");
+            });
         }
+    }
+
+    public void ScrollbarChanged(float value)
+    {
+        vertValue = value;
     }
 
     public void OnPlayerScenesLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "Outside" || scene.name == "House" || 
-            scene.name == "School" || scene.name == "Museum" || scene.name == "Church")
+            scene.name == "School" || scene.name == "Museum" || scene.name == "Church"
+            || scene.name == "Vacation Scene")
         {
             Button achievementsButton = GameObject.Find("Achievements BTN").GetComponent<Button>();
 
             achievementsButton.onClick.AddListener(() => {
 
-                SceneManager.LoadScene("Achievements");
+                //SceneManager.LoadScene("Achievements");
+                SoundManager.instance?.PlaySound("Button Click 1");
+                TransitionLoader.instance?.StartAnimation("Achievements");
                 DataPersistenceManager.instance.playerData.achievementsNewIcon = false;
             });
         }

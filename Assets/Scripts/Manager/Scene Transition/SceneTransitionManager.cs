@@ -33,12 +33,14 @@ public class SceneTransitionManager : MonoBehaviour
     {
         SceneManager.sceneLoaded += OnPlayerHouseLoaded;
         SceneManager.sceneLoaded += OnSceneRequiresTransitionLoaded;
+        SceneManager.sceneLoaded += OnVacationSceneLoaded;
     }
 
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnPlayerHouseLoaded;
         SceneManager.sceneLoaded -= OnSceneRequiresTransitionLoaded;
+        SceneManager.sceneLoaded -= OnVacationSceneLoaded;
     }
 
     public void OnPlayerHouseLoaded(Scene scene, LoadSceneMode mode)
@@ -73,6 +75,8 @@ public class SceneTransitionManager : MonoBehaviour
                 DataPersistenceManager.instance.playerData.isIntroductionDone = true;
                 DataPersistenceManager.instance.playerData.isNewlyCreated = false;
                 position = GameObject.Find(this.nameOfExit).transform.GetChild(0).position;
+                DataPersistenceManager.instance.playerData.xPos = position.x;
+                DataPersistenceManager.instance.playerData.yPos = position.y;
             }
             else
             {
@@ -97,6 +101,31 @@ public class SceneTransitionManager : MonoBehaviour
             }
 
             this.SpawnPlayerCharacter(position, scene.name);
+        }
+    }
+
+    public void OnVacationSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Vacation Scene")
+        {
+            print("IT IS VACATION SCENE");
+
+            Vector2 position;
+
+            position = GameObject.Find("Player Spawn Point").transform.position;
+
+            GameObject player = null;
+
+            if (DataPersistenceManager.instance.playerData.gender == "male")
+            {
+                player = Instantiate(Resources.Load<GameObject>("Prefabs/Player"));
+            }
+            else
+            {
+                player = Instantiate(Resources.Load<GameObject>("Prefabs/Female"));
+            }
+
+            player.transform.position = new Vector2(position.x, position.y);
         }
     }
 
@@ -149,7 +178,7 @@ public class SceneTransitionManager : MonoBehaviour
             this.ChangePlayerMinimapIconSize(player, sceneName);
         }
 
-        player.transform.position = new Vector2(position.x, position.y);
+        player.transform.position = position;
     }
 
     private void ChangePlayerMinimapIconSize(GameObject player, string sceneName)

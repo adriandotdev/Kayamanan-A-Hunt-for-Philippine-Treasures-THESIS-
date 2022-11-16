@@ -18,6 +18,7 @@ public class SoundManager : MonoBehaviour
     public Toggle SFXToggle;
 
     public static bool BGToggle;
+    public static bool fxToggle;
 
     private void Awake()
     {
@@ -34,6 +35,7 @@ public class SoundManager : MonoBehaviour
         {
             instance = this;
             BGToggle = true;
+            fxToggle = true;
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -66,7 +68,9 @@ public class SoundManager : MonoBehaviour
         {
             this.slider = GameObject.Find("Slider Initializer").GetComponent<SliderInitializer>().slider;
             this.BGMToggle = GameObject.Find("Slider Initializer").GetComponent<SliderInitializer>().toggleBGMusic;
+            this.SFXToggle = GameObject.Find("Slider Initializer").GetComponent<SliderInitializer>().toggleSFX;
             this.BGMToggle.isOn = BGToggle;
+            this.SFXToggle.isOn = fxToggle;
 
             try
             {
@@ -75,6 +79,7 @@ public class SoundManager : MonoBehaviour
             catch (System.Exception e) { }
 
             this.BGMToggle.onValueChanged.AddListener(this.ToggleBGM);
+            this.SFXToggle.onValueChanged.AddListener(this.ToggleSFX);
             this.slider.onValueChanged.AddListener(Volume);
         }
     }
@@ -83,7 +88,11 @@ public class SoundManager : MonoBehaviour
     {
         this.PlaySound(name);
 
-        this.slider.value = this.bgSound.src.volume;
+        try
+        {
+            this.slider.value = this.bgSound.src.volume;
+        }
+        catch(System.Exception e) { }
     }
 
     public void PlaySound(string name)
@@ -97,15 +106,33 @@ public class SoundManager : MonoBehaviour
             previousVolumeValue = bgSound.src.volume;
         }
 
-        if (!sound.src.isPlaying)
+        if (sound.name.ToUpper() == "MAIN BG")
         {
-            sound.src.Play();
+            if (!sound.src.isPlaying)
+            {
+                sound.src.Play();
+            }
+            else
+            {
+                sound.src.Stop();
+                sound.src.Play();
+            }
         }
         else
         {
-            sound.src.Stop();
-            sound.src.Play();
-        }        
+            if (fxToggle)
+            {
+                if (!sound.src.isPlaying)
+                {
+                    sound.src.Play();
+                }
+                else
+                {
+                    sound.src.Stop();
+                    sound.src.Play();
+                }
+            }
+        }
     }
 
     public void ToggleBGM(bool toggle)
@@ -123,11 +150,16 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    public void ToggleSFX(bool toggle)
+    {
+        this.SFXToggle.isOn = toggle;
+        fxToggle = toggle;
+    } 
+
     public void Volume(float value)
     {
         if (BGToggle)
         {
-            print("adjusting volume");
             bgSound.volume = value;
             bgSound.src.volume = value;
             previousVolumeValue = bgSound.src.volume;

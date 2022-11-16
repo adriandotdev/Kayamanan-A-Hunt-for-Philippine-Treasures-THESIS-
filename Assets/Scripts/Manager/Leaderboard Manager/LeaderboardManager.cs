@@ -17,7 +17,7 @@ public class LeaderboardManager : MonoBehaviour
     [SerializeField] private Transform leaderboardItemPrefab;
 
     private Slots slots;
-    private LeaderboardData[] leaderboardData;
+    private List<LeaderboardData> leaderboardData;
 
     /** <summary>
      *  The leaderboard item consists of
@@ -31,7 +31,7 @@ public class LeaderboardManager : MonoBehaviour
      *  General Knowledge (int)
      *  Total (int)
      * </summary>*/
-    class LeaderboardData
+    class LeaderboardData : IComparable<LeaderboardData>
     {
         public PlayerData PlayerData { get; private set; }
 
@@ -53,6 +53,12 @@ public class LeaderboardManager : MonoBehaviour
             this.GeneralKnowledge = this.PlayerData.NumberOfCollectedCollectiblesFor("General Knowledge");
             this.Region = this.PlayerData.TotalNumberOfOpenRegions();
             this.Total = this.PlayerData.TotalOfCollectibles();
+            this.Profile = this.PlayerData.name;
+        }
+
+        public int CompareTo(LeaderboardData other)
+        {
+            return Total > other.Total ? 1 : 0;
         }
     }
 
@@ -63,7 +69,7 @@ public class LeaderboardManager : MonoBehaviour
         SlotsFileHandler slotsFileHandler = new SlotsFileHandler();
         this.slots = slotsFileHandler.Load();
 
-        this.leaderboardData = new LeaderboardData[this.slots.ids.Count];
+        this.leaderboardData = new List<LeaderboardData>(this.slots.ids.Count);
 
         for (int i = 0; i < this.slots.ids.Count; i++)
         {
@@ -71,20 +77,20 @@ public class LeaderboardManager : MonoBehaviour
 
             PlayerData currentPlayerData = playerDataHandler.Load();
 
-            this.leaderboardData[i] = new LeaderboardData(currentPlayerData);
-
+            this.leaderboardData.Add(new LeaderboardData(currentPlayerData));
+            
             playerDataHandler = null;
         }
 
         this.DisplayLeaderboards();
-
         this.closeButton.onClick.AddListener(CloseLeaderboardScene);
     }
 
     void DisplayLeaderboards()
     {
         /**Sort the data based on the total number of collectibles collected.*/
-        Array.Sort(this.leaderboardData, ComparePlayerData()); 
+        this.leaderboardData.Sort();
+        this.leaderboardData.Reverse();
 
         int rank = 1;
 
@@ -114,19 +120,22 @@ public class LeaderboardManager : MonoBehaviour
             LeaderboardData px = x as LeaderboardData;
             LeaderboardData py = y as LeaderboardData;
 
+            print(px.Profile + " : " + py.Profile);
+
             if (px.PlayerData.TotalOfCollectibles() > py.PlayerData.TotalOfCollectibles())
                 return -1;
             return 0;
         }
-    }
+    } 
 
     public static IComparer ComparePlayerData()
     {
-        return (IComparer)new CompareLeaderboard();
+        return new CompareLeaderboard();
     }
 
     private void CloseLeaderboardScene()
     {
-        SceneManager.LoadScene("Menu");
+        SoundManager.instance?.PlaySound("Button Click 1");
+        TransitionLoader.instance?.StartAnimation("Menu");
     }
 }

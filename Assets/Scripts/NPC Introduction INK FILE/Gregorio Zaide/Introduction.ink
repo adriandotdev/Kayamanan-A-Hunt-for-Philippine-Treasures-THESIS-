@@ -1,7 +1,7 @@
 -> main
 
 == main ==
-    Hello! I'm Gregorio Zaide. I'm majoring History, specifically about National Heroes. I'm currently studying at Ateneo De Manila but I returned home after knowing my mother is sick.
+    Hello! I'm Gregorio Zaide. I'm majoring in History, specifically about National Heroes. I'm currently studying at Ateneo De Manila, but I returned home after knowing my mother is sick.
     + [Why is your mother sick?]
         My mother is diagnosed with Leukemia.
         + + [Sorry to hear that.]

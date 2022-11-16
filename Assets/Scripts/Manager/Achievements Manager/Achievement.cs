@@ -10,7 +10,7 @@ public class Achievement : MonoBehaviour
     private Image achievementImage;
 
     [SerializeField] private string achievementName;
-    [TextArea]
+
     [SerializeField] private string info;
 
     private Button btn;
@@ -24,6 +24,7 @@ public class Achievement : MonoBehaviour
             achievementImage.color = Color.white;
             btn.onClick.AddListener(() =>
             {
+                SoundManager.instance?.PlaySound("Button Click 1");
                 AchievementsManager.instance.sprite = achievementImage.sprite;
                 AchievementsManager.instance.title = this.achievementName;
                 AchievementsManager.instance.info = this.info;

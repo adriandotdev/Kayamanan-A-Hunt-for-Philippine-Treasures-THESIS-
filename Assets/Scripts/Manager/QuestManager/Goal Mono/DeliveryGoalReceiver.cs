@@ -21,6 +21,7 @@ public class DeliveryGoalReceiver : MonoBehaviour
         if (this.quest != null && this.quest.questID.Length > 0 && this.quest.isCompleted
             && this.quest.deliveryGoal.wayOfInfo.ToUpper() == "text".ToUpper())
         {
+            print("TEXT 1");
             DialogueManager._instance?.StartDialogue(Resources.Load<TextAsset>(this.quest.deliveryGoal.informationLinkWhenInfoHasBeenSeen));
             return;
         }
@@ -28,6 +29,7 @@ public class DeliveryGoalReceiver : MonoBehaviour
         else if (this.quest != null && this.quest.questID.Length > 0 && this.quest.isCompleted
             && this.quest.deliveryGoal.wayOfInfo.ToUpper() != "text".ToUpper())
         {
+            print("text 2");
             DialogueManager._instance.deliveryGoal = this.quest.deliveryGoal.Copy();
             DialogueManager._instance.actorField.text = this.quest.deliveryGoal.receiverName;
             DialogueManager._instance.npcName = this.quest.deliveryGoal.receiverName;

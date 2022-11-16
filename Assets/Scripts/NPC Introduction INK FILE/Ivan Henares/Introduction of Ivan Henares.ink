@@ -3,9 +3,9 @@
 == main ==
     Good Morning! (Magandang Umaga) I'm Ivan Henares and you can call me Ivan. I'm a remote worker. 
     + [What is a remote worker?]
-    It is basically mean that I do my job even if I'm not in the actual workplace or in an actual work environment.
+    It basically means that I do my job even if I'm not in the actual workplace or in an actual work environment.
     + + [That's cool. So you can work anywhere around the world?]
-    Yes! I actually love to travel in any different locations especially with a breathtaking sceneries.
+    Yes! I actually love to travel in different locations, especially with breathtaking scenery.
     + + + [Next]
     I'm currently here because I'm visiting my Internet friend around the area.
     + + + + [Next]

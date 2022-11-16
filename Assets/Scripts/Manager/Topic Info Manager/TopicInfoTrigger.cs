@@ -37,7 +37,7 @@ public class TopicInfoTrigger : MonoBehaviour
                     QuestManager.instance?.FindTalkQuestGoal(gameObject.transform.parent.name);
                 }
                 TopicInfoManager.Instance.TopicImage = this.topicImage;
-                TopicInfoManager.Instance.Topic = this.topic;
+                TopicInfoManager.Instance.Topic = this.topic.ToUpper();
                 TopicInfoManager.Instance.Info = this.info;
                 TopicInfoManager.Instance.panelNumber = (TopicInfoManager.PANEL_NUMBER)this.panelNumber;
                 SceneManager.LoadSceneAsync("Topic Info Scene", LoadSceneMode.Additive);

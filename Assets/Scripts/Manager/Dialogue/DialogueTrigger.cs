@@ -186,6 +186,12 @@ public class DialogueTrigger : MonoBehaviour
             DialogueManager._instance.npcName = this.NPC_NAME;
             DialogueManager._instance.isTalking = true;
             GetComponent<NPC>()?.animator.SetFloat("Speed", 0);
+
+            try
+            {
+                GetComponent<NavMeshAgent>().isStopped = true;
+            }
+            catch (System.Exception e) { }
         }
     }
 
@@ -194,5 +200,11 @@ public class DialogueTrigger : MonoBehaviour
         talkButton.gameObject.SetActive(false);
         DialogueManager._instance.npcName = "";
         DialogueManager._instance.isTalking = false;
+
+        try
+        {
+            GetComponent<NavMeshAgent>().isStopped = false;
+        }
+        catch (System.Exception e) { }
     }
 }

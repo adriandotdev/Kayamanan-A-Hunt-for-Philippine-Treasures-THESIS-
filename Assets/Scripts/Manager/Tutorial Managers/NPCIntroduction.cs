@@ -76,6 +76,12 @@ public class NPCIntroduction : MonoBehaviour, IDataPersistence
             case 5:
                 this.npcIntroPopups[currentIndex].SetActive(true);
                 break;
+            case 6:
+                this.npcIntroPopups[currentIndex].SetActive(true);
+                break;
+            case 7:
+                this.npcIntroPopups[currentIndex].SetActive(true);
+                break;
         }
     }
 

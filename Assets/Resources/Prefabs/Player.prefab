@@ -123,6 +123,7 @@ MonoBehaviour:
     isFirstTimeGoingToSchool: 1
     isQuestReset: 0
     hasNewOpenRegion: 0
+    versionNumber: 1.0
     questNewIcon: 0
     notesNewIcon: 0
     achievementsNewIcon: 0
@@ -613,7 +614,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &684017005
 MonoBehaviour:

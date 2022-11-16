@@ -578,18 +578,18 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     /** Setups all the gameobject who handles DeliveryGoalGiver and DeliveryGoalReceiver Quest. */
     public void SetupScriptsForDeliveryQuestToNPCs()
     {
-        DeliveryGoalGiver[] dgg = GameObject.FindObjectsOfType<DeliveryGoalGiver>();
-        DeliveryGoalReceiver[] dgr = GameObject.FindObjectsOfType<DeliveryGoalReceiver>();
+        //DeliveryGoalGiver[] dgg = GameObject.FindObjectsOfType<DeliveryGoalGiver>();
+        //DeliveryGoalReceiver[] dgr = GameObject.FindObjectsOfType<DeliveryGoalReceiver>();
 
-        foreach (DeliveryGoalGiver dg in dgg)
-        {
-            dg.quest = null;
-        }
+        //foreach (DeliveryGoalGiver dg in dgg)
+        //{
+        //    dg.quest = null;
+        //}
 
-        foreach (DeliveryGoalReceiver dr in dgr)
-        {
-            dr.quest = null;
-        }
+        //foreach (DeliveryGoalReceiver dr in dgr)
+        //{
+        //    dr.quest = null;
+        //}
 
         foreach (Quest quest in this.playerData.currentQuests)
         {

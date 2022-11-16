@@ -175,7 +175,7 @@ public class Quest
 
     public Quest CopyTalkQuestGoal()
     {
-        Quest questCopy = new Quest(this.title, this.note, this.description, this.dunongPointsRewards, this.region, this.regionNum, this.talkGoal.CopyTalkGoal());
+        Quest questCopy = new Quest(this.title, this.hint, this.note, this.description, this.dunongPointsRewards, this.region, this.regionNum, this.talkGoal.CopyTalkGoal());
 
         questCopy.SetQuestID(this.questID);
 
@@ -184,7 +184,7 @@ public class Quest
 
     public Quest CopyQuestDeliveryGoal()
     {
-        Quest questCopy = new Quest(this.title, this.note, this.description, this.dunongPointsRewards, this.region, this.regionNum, this.deliveryGoal.Copy());
+        Quest questCopy = new Quest(this.title, this.hint, this.note, this.description, this.dunongPointsRewards, this.region, this.regionNum, this.deliveryGoal.Copy());
 
         questCopy.isCompleted = this.isCompleted;
         questCopy.SetQuestID(this.questID);
@@ -194,7 +194,7 @@ public class Quest
 
     public Quest CopyRequestGoal()
     {
-        Quest copy = new Quest(this.title, this.note, this.description, this.dunongPointsRewards, this.region, this.regionNum, this.requestGoal.Copy());
+        Quest copy = new Quest(this.title, this.hint, this.note, this.description, this.dunongPointsRewards, this.region, this.regionNum, this.requestGoal.Copy());
 
         copy.SetQuestID(this.questID);
 

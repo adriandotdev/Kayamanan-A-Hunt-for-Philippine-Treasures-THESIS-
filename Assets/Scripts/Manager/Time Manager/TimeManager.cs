@@ -93,16 +93,16 @@ public class TimeManager : MonoBehaviour, IDataPersistence
         if (this.m_IsPaused) return;
 
         // For each frame, deduct the seconds.
-        playerData.playerTime.m_NoOfSecondsPerMinute -= (Time.deltaTime); // it must be 0.15f * Time.deltaTime
+        playerData.playerTime.m_NoOfSecondsPerMinute -= (1 * Time.deltaTime); // it must be 0.15f * Time.deltaTime
 
         if (playerData.playerTime.m_NoOfSecondsPerMinute <= 0)
         {
-            playerData.playerTime.m_NoOfSecondsPerMinute = 30f;
+            playerData.playerTime.m_NoOfSecondsPerMinute = 10f;
             playerData.playerTime.m_ActualMinuteInRealLife++;
             OnMinuteChanged?.Invoke();
         }
 
-        if (this.playerData.playerTime.m_ActualHourInRealLife >= 17 && this.playerData.playerTime.m_DayEvent == 5)
+        if (this.playerData.playerTime.m_ActualHourInRealLife >= 20 && this.playerData.playerTime.m_DayEvent == 5)
         {
             OnGameOver?.Invoke();
             return;
@@ -213,7 +213,7 @@ public class TimeManager : MonoBehaviour, IDataPersistence
     void OpenAllEstablishments()
     {
         // If it is NOT daytime, then it must be 5 pm because it is fixed closing hours of establishment.
-        if (this.playerData.playerTime.m_ActualHourInRealLife >= 17 && this.playerData.playerTime.m_IsDaytime == false)
+        if (this.playerData.playerTime.m_ActualHourInRealLife >= 20 && this.playerData.playerTime.m_IsDaytime == false)
         {
             this.playerData.playerTime.m_IsAllEstablishmentsOpen = false;
             DataPersistenceManager.instance?.SaveGame();

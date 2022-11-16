@@ -153,7 +153,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &48040821
 MonoBehaviour:
@@ -561,7 +561,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &463277435
 GameObject:
@@ -646,7 +646,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &463277439
 MonoBehaviour:
@@ -681,6 +681,141 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1 &465094417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 465094423}
+  - component: {fileID: 465094422}
+  - component: {fileID: 465094421}
+  - component: {fileID: 465094420}
+  - component: {fileID: 465094419}
+  - component: {fileID: 465094418}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &465094418
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465094417}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a110705f64c12804e823b70196a725e6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!225 &465094419
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465094417}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &465094420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465094417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &465094421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465094417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0.5
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &465094422
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465094417}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &465094423
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465094417}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 526751249}
+  m_Father: {fileID: 923069112}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &470110903
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,6 +891,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470110903}
+  m_CullTransparentMesh: 1
+--- !u!1 &526751248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 526751249}
+  - component: {fileID: 526751251}
+  - component: {fileID: 526751250}
+  m_Layer: 0
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &526751249
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526751248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 465094423}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &526751250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526751248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &526751251
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526751248}
   m_CullTransparentMesh: 1
 --- !u!1 &530526395
 GameObject:
@@ -1020,7 +1231,7 @@ RectTransform:
   - {fileID: 591467585}
   - {fileID: 1951996978}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1234,7 +1445,7 @@ RectTransform:
   m_GameObject: {fileID: 805220334}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3371687, y: 0.3371687, z: 0.3371687}
+  m_LocalScale: {x: 0.36100653, y: 0.36100653, z: 0.36100653}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 405124258}
@@ -1265,7 +1476,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 14726eb5ad76d304ba13180f32eca37f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f7e3c96bd9f4cc24b965a00551277759, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1359,6 +1570,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890945508}
   m_CullTransparentMesh: 1
+--- !u!1 &923069110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 923069112}
+  - component: {fileID: 923069111}
+  m_Layer: 0
+  m_Name: SceneTransitionLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &923069111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923069110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1407c8d9b21db64ab765a61ba3e4a9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 465094418}
+  transitionSpeed: 0.2
+--- !u!4 &923069112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923069110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.1719346, y: -0.23445642, z: 622.7956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 465094423}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &954788456
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,7 +2026,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1389273583
 MonoBehaviour:
@@ -1784,12 +2042,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData:
     id: 
+    isGameCompleted: 0
     isNewlyCreated: 1
     isTutorialDone: 0
     isIntroductionDone: 0
     isPreQuestIntroductionDone: 0
     isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
+    isSleepPanelNotShown: 1
+    isFirstTimeGoingToSchool: 1
+    isQuestReset: 0
+    hasNewOpenRegion: 0
+    versionNumber: 1.0
+    questNewIcon: 0
+    notesNewIcon: 0
+    achievementsNewIcon: 0
     name: 
     gender: male
     dunongPoints: 0
@@ -2091,6 +2358,8 @@ MonoBehaviour:
       isClaimed: 0
       title: A Day with Friendliness
       description: Meet all the villagers.
+      note: 
+      hint: 
       dunongPointsRewards: 0
       region: PRE-QUEST
       regionNum: 0
@@ -2104,21 +2373,47 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 2
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 2
     - questID: af582fe2-1f9e-4aa7-8f27-1214eada8ce2
       isCompleted: 0
       isClaimed: 0
       title: A Simple Thanks
       description: Get the Mango from Mang Esterlito and give it to Aling Nena.
+      note: 
+      hint: 
       dunongPointsRewards: 0
       region: PRE-QUEST
       regionNum: 0
@@ -2132,21 +2427,47 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Nena
         itemReceivedFromGiver: 0
-        item:
-          itemName: Mango
-          information: 
-          quantity: 1
-          stackable: 1
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 1
     - questID: ff23ac63-2d80-4a65-83cd-7ac4a17caa86
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest!
       description: Get the Mango from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -2160,21 +2481,47 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
-        item:
-          itemName: Mango
-          information: 
-          quantity: 1
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 1
     - questID: a9787dd1-553c-4881-acb9-5262732a46eb
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest!
       description: Get the Mango from Aling Julia and give it to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Ilocos Region
       regionNum: 1
@@ -2188,21 +2535,47 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
-        item:
-          itemName: Mango
-          information: 
-          quantity: 2
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 1
     - questID: 27eef462-6ede-46b2-92f2-247335f5e90d
       isCompleted: 0
       isClaimed: 0
       title: Ilocos Region Quest!
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: Ilocos Region
       regionNum: 1
@@ -2216,21 +2589,47 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 5d29beb2-4992-442b-b923-0b6eceaa4b05
       isCompleted: 0
       isClaimed: 0
       title: Cagayan Valley Quest!
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Cagayan Valley
       regionNum: 2
@@ -2244,21 +2643,47 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 7faa7ef2-e52b-40af-973c-7580abf6fc37
       isCompleted: 0
       isClaimed: 0
       title: CAR Quest!
       description: Get the Mango from Aling Marites and give it to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Cordillera Administrative Region
       regionNum: 3
@@ -2272,21 +2697,47 @@ MonoBehaviour:
         giverName: Aling Marites
         receiverName: Mang Esterlito
         itemReceivedFromGiver: 0
-        item:
-          itemName: Mango
-          information: 
-          quantity: 1
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 1
     - questID: 2cafe8dd-b917-4763-8b58-96053da07636
       isCompleted: 0
       isClaimed: 0
       title: Central Luzon Quest!
       description: Help Aling Julia to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: Central Luzon
       regionNum: 4
@@ -2300,21 +2751,47 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
-        item:
-          itemName: Mango
-          information: 
-          quantity: 1
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 1
     - questID: e16e30e1-9be9-4280-abd5-0a22912edfc1
       isCompleted: 0
       isClaimed: 0
       title: NCR Quest!
       description: Help Mang Esterlito to give Aling Marites a Mango
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: National Capital Region
       regionNum: 5
@@ -2328,21 +2805,47 @@ MonoBehaviour:
         giverName: Mang Esterlito
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
-        item:
-          itemName: Mango
-          information: 
-          quantity: 3
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 1
     - questID: 05d6a9ad-aed8-453b-814e-0db53b5f1982
       isCompleted: 0
       isClaimed: 0
       title: CALABARZON Quest!
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 35
       region: CALABARZON
       regionNum: 6
@@ -2356,21 +2859,47 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 5eb41cc4-c9b0-48fc-bf21-8f5b797738de
       isCompleted: 0
       isClaimed: 0
       title: MIMAROPA Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: MIMAROPA
       regionNum: 7
@@ -2384,21 +2913,47 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: f7d9dd0c-d2af-40e3-b81a-9a59e07ef48a
       isCompleted: 0
       isClaimed: 0
       title: Bicol Region Quest!
       description: Help Aling Julia to give Aling Marites a Banana
+      note: 
+      hint: 
       dunongPointsRewards: 5
       region: Bicol Region
       regionNum: 8
@@ -2412,21 +2967,47 @@ MonoBehaviour:
         giverName: Aling Julia
         receiverName: Aling Marites
         itemReceivedFromGiver: 0
-        item:
-          itemName: Banana
-          information: 
-          quantity: 2
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 1
     - questID: 0131ac61-e916-4511-8042-8b8501a3d32b
       isCompleted: 0
       isClaimed: 0
       title: Western Visayas Quest!
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 35
       region: Western Visayas
       regionNum: 9
@@ -2440,21 +3021,47 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 8e2dc0a6-225c-4a42-be53-a35cc51fece1
       isCompleted: 0
       isClaimed: 0
       title: Central Visayas Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 25
       region: Western Visayas
       regionNum: 10
@@ -2468,21 +3075,47 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 38908cdc-df32-4c6b-a01e-ecc8cb2f23ab
       isCompleted: 0
       isClaimed: 0
       title: Eastern Visayas Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 75
       region: Western Visayas
       regionNum: 11
@@ -2496,21 +3129,47 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 69f50f56-5830-45cd-beca-524b161d57d1
       isCompleted: 0
       isClaimed: 0
       title: Zamboanga Peninsula Quest!
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 35
       region: Zamboanga Peninsula
       regionNum: 12
@@ -2524,21 +3183,47 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 4ba68cc1-8458-48f4-81fe-7f0db8893b7e
       isCompleted: 0
       isClaimed: 0
       title: Northern Mindanao Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 10
       region: Northern Mindanao
       regionNum: 13
@@ -2552,21 +3237,47 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 615ba4e3-9401-4f8f-87b4-537140d441cd
       isCompleted: 0
       isClaimed: 0
       title: Davao Region Quest!
       description: Talk to Aling Nena
+      note: 
+      hint: 
       dunongPointsRewards: 35
       region: Davao Region
       regionNum: 14
@@ -2580,21 +3291,47 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: 94f57b0b-46c2-4f88-8943-90bf80f8937c
       isCompleted: 0
       isClaimed: 0
       title: SOCCSKSARGEN Quest!
       description: Talk to Mang Esterlito
+      note: 
+      hint: 
       dunongPointsRewards: 15
       region: SOCCSKSARGEN
       regionNum: 15
@@ -2608,21 +3345,47 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: ea4175e8-89c2-4c55-a909-ef8d0e3aa404
       isCompleted: 0
       isClaimed: 0
       title: Caraga Region Quest!
       description: Talk to Aling Marites
+      note: 
+      hint: 
       dunongPointsRewards: 45
       region: Caraga Region
       regionNum: 16
@@ -2636,21 +3399,47 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     - questID: d9d5ca38-9d75-43a4-bea8-aea95bebe1ea
       isCompleted: 0
       isClaimed: 0
       title: BARMM Quest!
       description: Talk to Aling Julia
+      note: 
+      hint: 
       dunongPointsRewards: 325
       region: BARMM
       regionNum: 17
@@ -2664,15 +3453,39 @@ MonoBehaviour:
         giverName: 
         receiverName: 
         itemReceivedFromGiver: 0
-        item:
-          itemName: 
-          information: 
-          quantity: 0
-          stackable: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
       numberGoal:
         targetNumber: 0
         currentNumber: 0
         correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
       questType: 0
     currentQuests: []
     completedQuests: []
@@ -2712,6 +3525,7 @@ MonoBehaviour:
       isMet: 0
       xPos: 0
       yPos: 0
+    notesInfos: []
     inventory:
       items: []
     playerTime:
@@ -2831,7 +3645,7 @@ RectTransform:
   m_GameObject: {fileID: 1838287875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3371687, y: 0.3371687, z: 0.3371687}
+  m_LocalScale: {x: 0.5159693, y: 0.5159693, z: 0.5159693}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 405124258}
@@ -2862,7 +3676,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 14726eb5ad76d304ba13180f32eca37f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6f2f7b3c70859284f98ca83bc357dc84, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

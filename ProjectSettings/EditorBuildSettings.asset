@@ -110,6 +110,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscenes/ENDING/Title Ending SC.unity
     guid: 023eda3106cc7634f8a139bda9d531d7
+  - enabled: 1
+    path: Assets/Scenes/Winner Scene To Load/Vacation Scene.unity
+    guid: 7dd79283435f78e4bb83d4306634ce8a
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: f0628571f14175944b23ff9df709e903, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 410bec17ad676394fb4cc867ee09055b, type: 2}

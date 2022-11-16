@@ -165,6 +165,8 @@ public class WordManager : MainGame, IDataPersistence
 
             this.CheckIfNextRegionIsReadyToOpen();
 
+            DataPersistenceManager.instance.playerData.dunongPoints = 0;
+
             DataPersistenceManager.instance.SaveGame();
 
             return;
@@ -230,6 +232,7 @@ public class WordManager : MainGame, IDataPersistence
                 // Add an event to the current button.
                 btn.onClick.AddListener(() =>
                 {
+                    SoundManager.instance?.PlaySound("Button Click 2");
                     /** 
                      <summary>
                         If the button is inside the word or answered container,

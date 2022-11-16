@@ -115,6 +115,8 @@ public class AssessmentManager : MainGame, IDataPersistence
             this.CheckIfNextRegionIsReadyToOpen();
 
             //this.CollectAllRewards();
+            DataPersistenceManager.instance.playerData.dunongPoints = 0;
+            //DataPersistenceManager.instance.playerData.dunongPoints -= DataPersistenceManager.instance.playerData.requiredDunongPointsToPlay;
 
             DataPersistenceManager.instance.SaveGame();
         }
@@ -127,6 +129,8 @@ public class AssessmentManager : MainGame, IDataPersistence
         {
             choice.GetComponent<Button>().onClick.AddListener(() =>
             {
+                SoundManager.instance?.PlaySound("Button Click 2");
+
                 // When the button is clicked, get the text of the text mesh pro under the clicked button.
                 this.answer = choice.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text;
 

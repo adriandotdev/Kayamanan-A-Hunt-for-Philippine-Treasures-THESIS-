@@ -27,7 +27,7 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject[] choicesBtn;
 
-    private float typingSpeed = 0.02f;
+    private float typingSpeed = 0.001f;
 
     public Coroutine coroutine;
 
@@ -164,15 +164,17 @@ public class DialogueManager : MonoBehaviour
 
                 // If the showAlbumGoal is not null, it means that it requires to show the album for 
                 // the requested by player.
-                if (this.showAlbumGoal != null && this.showAlbumGoal.giverOfInfo.Length > 0)
+                if (this.showAlbumGoal != null && this.showAlbumGoal.giverOfInfo.Length > 0 && this.showAlbumGoal.giverOfInfo.Length > 0)
                 {
+                    print("IT IS SHOWING ALBUM");
                     AlbumManager.Instance.isFirstAlbum = false;
                     AlbumManager.Instance.items = this.showAlbumGoal.items;
                     SceneManager.LoadScene("Showing Album", LoadSceneMode.Additive);
                     this.showAlbumGoal = null;
                 }
-                else if (this.deliveryGoal != null && this.deliveryGoal.giverName.Length > 0)
+                else if (this.deliveryGoal != null && this.deliveryGoal.wayOfInfo.ToLower() == "not text" && this.deliveryGoal.giverName.Length > 0)
                 {
+                    print("IT IS DELIVERY GOAL ONLY");
 
                     if (isNotWantToRecap == false)
                     {
@@ -182,6 +184,7 @@ public class DialogueManager : MonoBehaviour
                         SceneManager.LoadScene("Showing Album", LoadSceneMode.Additive);
                         this.deliveryGoal = null;
                     }
+                    this.deliveryGoal = null;
                 }
                 return;
             }
