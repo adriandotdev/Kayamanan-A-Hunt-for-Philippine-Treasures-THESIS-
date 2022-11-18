@@ -3172,6 +3172,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -3226,6 +3227,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -3280,6 +3282,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -3334,6 +3337,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -3388,6 +3392,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -3442,6 +3447,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 

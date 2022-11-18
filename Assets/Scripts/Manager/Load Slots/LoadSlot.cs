@@ -388,12 +388,17 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
             // LOAD Button Event
             gameObject.transform.GetChild(1).gameObject.GetComponent<Button>().onClick.AddListener(() =>
             {
+                PlayerData VERSION_PLD = new PlayerData();
+
                 UICanvasGroup.interactable = false;
                 SoundManager.instance?.PlaySound("Button Click 2"); // Sound Click
 
                 this.playerData = playerData;
                 DataPersistenceManager.instance.playerData = this.playerData;
 
+                if (DataPersistenceManager.instance.playerData.versionNumber != VERSION_PLD.versionNumber) {
+                    this.playerData.CopyTo(this.playerData, VERSION_PLD);
+                }
                 LeanTween.scale(confirmationPanel.gameObject, new Vector2(1, 1), .2f)
                 .setEaseSpring();
                 this.confirmationMessage.text = "Are you sure you want to load";

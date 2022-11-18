@@ -93,7 +93,7 @@ public class PlayerData
         this.isFirstTimeGoingToSchool = true;
         this.isQuestReset = false;
         this.hasNewOpenRegion = false;
-        this.versionNumber = "3.0";
+        this.versionNumber = "4.0";
 
         this.questNewIcon = false;
         this.achievementsNewIcon = false;
@@ -143,6 +143,7 @@ public class PlayerData
         this.QuestForDavaoRegion();
         this.QuestForSOCCSKSARGEN();
         this.QuestForCARAGARegion();
+        this.QuestForBARMM();
 
         // string title, string note, string description, string hint, int dunongPointsRewards, string region, int regionNum, SearchGoal searchGoal
         //this.quests.Add(new Quest("A Lost Bone", "", "Find a bone around museum.", "It is located behind it",
@@ -198,21 +199,21 @@ public class PlayerData
                         new Item("None", 0, false, "Hundred Islands", "Delivery Ink Informations/Hundred Islands", "PCP/Hundred Islands")
             })));
 
-        this.quests.Add(new Quest("Ilocos' Notable Heroes!", "He is a man with <b>long hair</b> and <b>eyeglasses</b>.", "Go to Gregorio Zaide for National Heroes.", "Talk to someone who has a background for National Heroes.",
+        this.quests.Add(new Quest("Ilocos' Notable Heroes!", "He is a man with <b>long hair</b> and <b>eyeglasses</b>.", "Go to Gregorio Zaide for National Heroes.", "Talk to someone who is an expert on our National Heroes.",
             15, ILOCOS_REGION, 1, new TalkGoal("Gregorio Zaide")));
 
-        this.quests.Add(new Quest("Ivan Henares' Lunch", "I can recap the info about Puto Festival to Ivan Henares.", "Help Ivan Henares to get his lunch at the karinderya.", 25, ILOCOS_REGION, 1,
+        this.quests.Add(new Quest("A Bloody Lunch?!", "I can recap the info about Puto Festival to Ivan Henares.", "Help Ivan Henares to get his lunch at the karinderya.", 25, ILOCOS_REGION, 1,
             new RequestGoal
             (
                 new ItemGiver[]
                 {
-                    new ItemGiver("Karinderya", "Buy Puto and Dinuguan?", new List<Item> {
+                    new ItemGiver("Karinderya", "Buy a <b>Puto</b> and <b>Dinuguan</b>?", new List<Item> {
                         new Item("Puto", 1, false, "Puto Festival", "Delivery Ink Informations/Puto Festival", "PCP/Puto Festival"),
                         new Item("Dinuguan", 1, false, "", "", "")
                     })
                 },
                 "Ivan Henares",
-                "Hi! Can you I ask you a favor to buy me a <b>Puto</b> and <b>Dinuguan</b> at the <b>Karinderya</b>?",
+                "Hi! Can you I ask you a favor to buy me a <b>Puto</b> and <b>Dinuguan</b> at the <b>Karinderya</b> for my lunch?",
                 "Buy <b>Puto</b> and <b>Dinuguan</b>?"
             )));
 
@@ -261,8 +262,8 @@ public class PlayerData
          new ShowPhotoAlbumGoal("Dale Abenjobar",
          new Item[] { new Item("None", 0, false, "Marlboro Country", "Delivery Ink Informations/Marlboro Country", "PCP/Marlboro Country") })));
 
-        //this.quests.Add(new Quest("Strength of a great typhoon!", "Ivatan House is located at museum.", "Read about Ivatan House in ",
-        //  15, CAGAYAN_VALLEY, 2, new TalkGoal("Ivatan House")));
+        this.quests.Add(new Quest("Strength of a Great Typhoon!", "Ivatan House is located at school.", "Read the info about Ivatan House at <b>School</b>.",
+          15, CAGAYAN_VALLEY, 2, new TalkGoal("Ivatan House")));
     }
 
     public void QuestForCAR()
@@ -414,7 +415,7 @@ public class PlayerData
             "Find a Pearl inside the museum.",
         15, MIMAROPA, 7, new TalkGoal("Palawan Pearl")));
 
-        this.quests.Add(new Quest("Chef's Request!", "You can buy the recipe to a nearby store with a <b>BLUE</b> roof.", "I can go to Mang Rolando for Banana Festival info.", "Help Mang to get a Banana at the nearby store.", 25, MIMAROPA, 7,
+        this.quests.Add(new Quest("Chef's Request!", "You can buy the recipe to a nearby store with a <b>BLUE</b> roof.", "I can go to Mang Rolando for Banana Festival info.", "Help Mang Rolando to get a Banana at the nearby store.", 25, MIMAROPA, 7,
             new RequestGoal
             (
                 new ItemGiver[]
@@ -479,7 +480,7 @@ public class PlayerData
            new ItemGiver[]
            {
                 new ItemGiver("Dale Abenjobar", "Get the Surf board?", new List<Item> {
-                    new Item("Surf Board", 1, false, "Rodeo Festival", INFO_PATH + "/Camsur Watersports", "PCP/Camsur Watersports")
+                    new Item("Surfboard", 1, false, "Rodeo Festival", INFO_PATH + "/Camsur Watersports", "PCP/Camsur Watersports")
                 })
            },
            "Zardo Domenios",
@@ -679,6 +680,14 @@ public class PlayerData
             new Item("None", 0, false, "Tinuy-an Falls", INFO_PATH + "/Tinuy-an Falls", "PCP/Tinuy-an Falls")})));
     }
 
+    public void QuestForBARMM()
+    {
+        this.quests.Add(new Quest("Unknown Depth", "I can know the info about Margues Blue Lagoon from Zardo Domenios.",
+            "Talk to someone who loves to surf.", 15, BARMM, 17, new TalkGoal("Zardo Domenios")));
+
+        this.quests.Add(new Quest("Holy Pink", "I can know the info about Pink Mosque to Mikaela Fudolig.",
+            "Talk to someone who is good at architecture.", 15, BARMM, 17, new TalkGoal("Mikaela Fudolig")));
+    }
     /// <summary>
     /// A function that adds all the regions of Luzon.
     /// </summary>
@@ -912,7 +921,6 @@ public class PlayerData
         newPlayerData.isFirstTimeGoingToSchool = toCopy.isFirstTimeGoingToSchool;
         newPlayerData.isQuestReset = toCopy.isQuestReset;
         newPlayerData.hasNewOpenRegion = toCopy.hasNewOpenRegion;
-        newPlayerData.versionNumber = toCopy.versionNumber;
 
         newPlayerData.questNewIcon = toCopy.questNewIcon;
         newPlayerData.achievementsNewIcon = toCopy.achievementsNewIcon;
@@ -934,14 +942,15 @@ public class PlayerData
             newPlayerData.regionsData.Add(rd);
         }
 
-        //this.notebook = new Notebook();
-        //this.quests = new List<Quest>();
-        //this.currentQuests = new List<Quest>();
-        //this.completedQuests = new List<Quest>();
-        //this.npcInfos = new List<NPC_INFO>();
-        //this.notesInfos = new List<Quest>();
-        //this.inventory = new Inventory();
-        //this.playerTime = new PlayerTime();
+        newPlayerData.notebook = toCopy.notebook;
+        newPlayerData.quests = toCopy.quests;
+        newPlayerData.currentQuests = toCopy.currentQuests;
+        newPlayerData.completedQuests = toCopy.completedQuests;
+        newPlayerData.npcInfos = toCopy.npcInfos;
+        newPlayerData.notesInfos = toCopy.notesInfos;
+        newPlayerData.inventory = toCopy.inventory;
+        newPlayerData.playerTime = toCopy.playerTime;
+       
     }
 
     public PlayerData Restart()
@@ -996,6 +1005,7 @@ public class PlayerData
         playerData.QuestForDavaoRegion();
         playerData.QuestForSOCCSKSARGEN();
         playerData.QuestForCARAGARegion();
+        playerData.QuestForBARMM();
 
         playerData.AddNPCsInfo();
         playerData.InitializeRequiredDunongPointsToPlay(1);

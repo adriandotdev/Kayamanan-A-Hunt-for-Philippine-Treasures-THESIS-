@@ -235,7 +235,7 @@ public class MainGame : MonoBehaviour
             return;
 
 
-        if (IsWinner("Caraga Region") == false)
+        if (IsWinner("BARMM") == false)
         {
             DataPersistenceManager.instance.playerData.hasNewOpenRegion = true;
             DataPersistenceManager.instance.playerData.questNewIcon = true;
@@ -253,7 +253,7 @@ public class MainGame : MonoBehaviour
             }
         }
 
-        if (IsWinner("Caraga Region"))
+        if (IsWinner("BARMM"))
         {
             DataPersistenceManager.instance.playerData.questNewIcon = true;
             DataPersistenceManager.instance.playerData.isGameCompleted = true;

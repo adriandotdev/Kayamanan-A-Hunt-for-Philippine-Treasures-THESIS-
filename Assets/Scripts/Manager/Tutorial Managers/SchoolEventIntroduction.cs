@@ -27,6 +27,9 @@ public class SchoolEventIntroduction : MonoBehaviour
 
     int dialogueIndex = 0;
 
+    public Sprite sadMan;
+    public Sprite happyMan;
+
     private void Start()
     {
         if (DataPersistenceManager.instance.playerData.isGameCompleted)
@@ -34,6 +37,8 @@ public class SchoolEventIntroduction : MonoBehaviour
             this.dialogueIndex = 0;
 
             this.InitializeNotificationComponent();
+
+            man.GetComponent<Image>().sprite = happyMan;
 
             dialogueText.text = winnerGame[dialogueIndex];
 
@@ -45,17 +50,21 @@ public class SchoolEventIntroduction : MonoBehaviour
 
             this.InitializeNotificationComponent();
 
+            man.GetComponent<Image>().sprite = happyMan;
+
             dialogueText.text = introductions[dialogueIndex];
 
             nextBtn.onClick.AddListener(NextDialogue);
 
-            DataPersistenceManager.instance.playerData.isFirstTimeGoingToSchool = false;
+            
         }
         else if (DataPersistenceManager.instance.playerData.isQuestReset)
         {
             this.InitializeNotificationComponent();
 
-            dialogueText.text = "OOOPS! It seems like you didn't ace the assessments! Complete the quests again and review all the information.";
+            dialogueText.text = "OOOPS! <b>YOU RAN OUT OF DUNONG POINTS!</b> It seems like you didn't ace the assessments. <b>In order to retake the assessment, you must complete all the quests again and review the information.</b>";
+
+            man.GetComponent<Image>().sprite = sadMan;
 
             nextBtn.onClick.AddListener(() =>
             {
@@ -73,6 +82,7 @@ public class SchoolEventIntroduction : MonoBehaviour
         {
             this.InitializeNotificationComponent();
 
+            man.GetComponent<Image>().sprite = happyMan;
 
             dialogueText.text = "Congratulations! You've opened a new region!";
 
@@ -153,6 +163,8 @@ public class SchoolEventIntroduction : MonoBehaviour
                     .setEaseSpring();
 
             this.ShowUIElements(true);
+
+            DataPersistenceManager.instance.playerData.isFirstTimeGoingToSchool = false;
         }
     }
 

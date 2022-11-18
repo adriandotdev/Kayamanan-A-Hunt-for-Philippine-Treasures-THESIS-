@@ -11,6 +11,7 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
     public RectTransform m_IslandInformationPanel;
     public RectTransform m_RegionInformationPanel;
     public RectTransform m_RegionInformationPanelContent;
+    public RectTransform m_AlertBox;
     public PlayerData playerData;
 
     Dictionary<string, Image> m_Images = new Dictionary<string, Image>();
@@ -57,6 +58,7 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
             this.m_RegionInformationPanel = GameObject.Find("Region Information Panel").GetComponent<RectTransform>();
 
             this.m_RegionInformationPanelContent = this.m_RegionInformationPanel.GetChild(2).GetChild(0).GetChild(0).GetComponent<RectTransform>();
+            this.m_AlertBox = GameObject.Find("Plain Alert Box IH").GetComponent<RectTransform>();
 
             // COLLECTIBLES VALUE
             GameObject.Find("Heroes Value").GetComponent<TextMeshProUGUI>().text = GetNumberOfCollectiblesCollected(scene.name, "National Heroes").ToString() 
@@ -97,6 +99,7 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
 
             this.m_IslandInformationPanel.localScale = Vector2.zero;
             this.m_RegionInformationPanel.localScale = Vector2.zero;
+            this.m_AlertBox.localScale = Vector2.zero;
 
             this.GetAllRegionImages(scene.name);
             this.GetAllRegionButtons(scene.name);
@@ -190,6 +193,11 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
                     {
                         if (!this.IsAllQuestCompleted() || this.playerData.dunongPoints < this.playerData.requiredDunongPointsToPlay)
                         {
+                            LeanTween.scale(this.m_AlertBox.gameObject, Vector2.one, .2f)
+                                .setEaseSpring();
+
+                            StartCoroutine(this.HideAlertBox());
+
                             SoundManager.instance?.PlaySound("Click Error");
                         }
                         else
@@ -242,6 +250,13 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
         }
     }
 
+    IEnumerator HideAlertBox()
+    {
+        yield return new WaitForSeconds(1f);
+
+        LeanTween.scale(this.m_AlertBox.gameObject, Vector2.zero, .2f)
+                                .setEaseSpring();
+    }
     // Find Region by name.
     public RegionData FindRegionDataWithName(string regionName)
     {

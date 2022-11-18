@@ -158,6 +158,7 @@ RectTransform:
   - {fileID: 2121405234}
   - {fileID: 581582500}
   - {fileID: 798688728}
+  - {fileID: 1094150855}
   m_Father: {fileID: 732803897}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1483,7 +1484,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Luzon
+  m_text: Visayas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
   m_sharedMaterial: {fileID: -5432314662704744868, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
@@ -1560,124 +1561,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281571787}
   m_CullTransparentMesh: 1
---- !u!1001 &353236717
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 604995587}
-    m_Modifications:
-    - target: {fileID: 2033838500720032165, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_text
-      value: Central Luzon
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.b
-      value: 0.91372555
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.g
-      value: 0.7137255
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 59.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 59.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124006, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Name
-      value: Region Items in Panel (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
---- !u!224 &353236718 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-  m_PrefabInstance: {fileID: 353236717}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &388506469
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,7 +2588,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1889055271}
-  - {fileID: 1375459422}
+  - {fileID: 1796522282}
   - {fileID: 398855272}
   m_Father: {fileID: 74930261}
   m_RootOrder: 4
@@ -2753,6 +2636,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581582499}
   m_CullTransparentMesh: 1
+--- !u!1 &583864105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 583864106}
+  - component: {fileID: 583864108}
+  - component: {fileID: 583864107}
+  m_Layer: 5
+  m_Name: Message
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &583864106
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583864105}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1094150855}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -6, y: -3}
+  m_SizeDelta: {x: 678.44, y: 158.91}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &583864107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583864105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: You must complete all the quest first to take an assessment
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7394abb855ac6bf40805ecdaf2506f0f, type: 2}
+  m_sharedMaterial: {fileID: -5557912328034547050, guid: 7394abb855ac6bf40805ecdaf2506f0f, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279440179
+  m_fontColor: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 46.65
+  m_fontSizeBase: 46.65
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 4.8854523, y: 0, z: -0.13876343, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &583864108
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583864105}
+  m_CullTransparentMesh: 1
 --- !u!1 &604995586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,11 +2806,6 @@ RectTransform:
   - {fileID: 1092068243}
   - {fileID: 1266555034}
   - {fileID: 998205116}
-  - {fileID: 353236718}
-  - {fileID: 2100226470}
-  - {fileID: 1308074182}
-  - {fileID: 1718163114}
-  - {fileID: 2073193271}
   m_Father: {fileID: 2013118127}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3575,6 +3588,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769169575}
   m_CullTransparentMesh: 1
+--- !u!1 &769289882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 769289883}
+  - component: {fileID: 769289885}
+  - component: {fileID: 769289884}
+  m_Layer: 5
+  m_Name: WV
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &769289883
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769289882}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 0.006439719, y: 0.006439719, z: 0.006439719}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1796522282}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1549.1, y: -720.25006}
+  m_SizeDelta: {x: 277.5902, y: 419.3384}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &769289884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769289882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6179246, g: 1, b: 0.7690448, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: af1017c0538d20b468377d9394181e01, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &769289885
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769289882}
+  m_CullTransparentMesh: 1
 --- !u!1 &798688727
 GameObject:
   m_ObjectHideFlags: 0
@@ -3689,158 +3778,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &809610769
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 809610770}
-  - component: {fileID: 809610772}
-  - component: {fileID: 809610771}
-  m_Layer: 5
-  m_Name: Region 3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &809610770
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 809610769}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1.703424, y: 1.703424, z: 1.703424}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1375459422}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 547, y: 47}
-  m_SizeDelta: {x: 111.0078, y: 102.7016}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &809610771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 809610769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.7122642, b: 0.9139599, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -243147364, guid: 3464dd3ab0c32c14dac7053650fcfce3, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &809610772
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 809610769}
-  m_CullTransparentMesh: 1
---- !u!1 &821893244
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 821893245}
-  - component: {fileID: 821893247}
-  - component: {fileID: 821893246}
-  m_Layer: 5
-  m_Name: Cagayan Valley
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &821893245
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821893244}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1.4054399, y: 1.4054399, z: 1.4054399}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1375459422}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 588.5688, y: 191.80621}
-  m_SizeDelta: {x: 102.5599, y: 166.7737}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &821893246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821893244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.745105, g: 0.77312815, b: 0.9811321, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -1395284894, guid: 3464dd3ab0c32c14dac7053650fcfce3, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &821893247
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821893244}
-  m_CullTransparentMesh: 1
 --- !u!1 &844586988
 GameObject:
   m_ObjectHideFlags: 0
@@ -4138,9 +4075,9 @@ MonoBehaviour:
   - question: ' Balay Negrese is an ancestral house and is a  museum in _____ City,
       Negros Occidental'
     word: Silay
-  - question: t is notable for being the first museum to be  established in the province
-      of Negros Occidental.
-    word: Balay Negrese
+  - question: It is notable for being the first museum to be  established in the
+      province of Negros Occidental. It is called Balay _______
+    word: Negrese
   - question: The house is of the type called bahay na _______,  literally means
       "house of stone".
     word: Bato
@@ -4472,7 +4409,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Regions of Luzon
+  m_text: Regions of Visayas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
   m_sharedMaterial: {fileID: -5432314662704744868, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
@@ -4917,12 +4854,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 28
+    m_Left: 47
     m_Right: 12
     m_Top: 0
     m_Bottom: 12
   m_ChildAlignment: 4
-  m_Spacing: 15.5
+  m_Spacing: 25.44
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -4963,6 +4900,7 @@ MonoBehaviour:
   m_IslandInformationPanel: {fileID: 0}
   m_RegionInformationPanel: {fileID: 0}
   m_RegionInformationPanelContent: {fileID: 0}
+  m_AlertBox: {fileID: 0}
   playerData:
     id: 
     isGameCompleted: 0
@@ -6345,19 +6283,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2033838500720032165, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
       propertyPath: m_text
-      value: Cagayan Valley
+      value: Eastern Visayas
       objectReference: {fileID: 0}
     - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
       propertyPath: m_Color.b
-      value: 0.9803922
+      value: 0.9960785
       objectReference: {fileID: 0}
     - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
       propertyPath: m_Color.g
-      value: 0.7725491
+      value: 0.9568628
       objectReference: {fileID: 0}
     - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
       propertyPath: m_Color.r
-      value: 0.74509805
+      value: 0.909804
       objectReference: {fileID: 0}
     - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
       propertyPath: m_Pivot.x
@@ -7449,6 +7387,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 604995587}
     m_Modifications:
+    - target: {fileID: 2033838500720032165, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
+      propertyPath: m_text
+      value: Western Visayas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.61960787
+      objectReference: {fileID: 0}
     - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7544,6 +7498,83 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
   m_PrefabInstance: {fileID: 1092068242}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1094150854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1094150855}
+  - component: {fileID: 1094150857}
+  - component: {fileID: 1094150856}
+  m_Layer: 5
+  m_Name: Plain Alert Box IH
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1094150855
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094150854}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 12.960299}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 583864106}
+  m_Father: {fileID: 74930261}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -155}
+  m_SizeDelta: {x: 755.53, y: 199.57}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1094150856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094150854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b4c50de98c3f5a741978f1281f4ff7bf, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1094150857
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094150854}
+  m_CullTransparentMesh: 1
 --- !u!1 &1099863355
 GameObject:
   m_ObjectHideFlags: 0
@@ -7666,82 +7697,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099863355}
   m_CullTransparentMesh: 1
---- !u!1 &1154707837
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1154707838}
-  - component: {fileID: 1154707840}
-  - component: {fileID: 1154707839}
-  m_Layer: 5
-  m_Name: MIMAROPA
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1154707838
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154707837}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1.703424, y: 1.703424, z: 1.703424}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1375459422}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 442.84393, y: -350.1812}
-  m_SizeDelta: {x: 329.0638, y: 278.6398}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1154707839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154707837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9903656, b: 0.5613208, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b86c41655c95f0642b134b5cc01d2ad2, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1154707840
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154707837}
-  m_CullTransparentMesh: 1
 --- !u!1 &1210054490
 GameObject:
   m_ObjectHideFlags: 0
@@ -7800,11 +7755,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Luzon sits at the northern end of the Philippines, and is the country\u2019s
-    largest and most populous island. It\u2019s known for its mountains, beaches
-    and coral reefs, and is home to Manila, the national capital. Set on a deep bay
-    with famed sunsets, the city has many Spanish-colonial landmarks, national memorials
-    and monuments, a centuries-old Chinatown and a diversity of museums."
+  m_text: "Visayas is one of the Philippines' 3 main island groups. In Central Visayas,
+    Cebu City\u2019s Spanish colonial architecture includes the triangular Fort San
+    Pedro and the Basilica del Santo Ni\xF1o. Bohol Island\u2019s Chocolate Hills
+    are a group of more than 1,000 conical, grass-covered mounds that turn brown
+    in the dry season. In Corella, rare bug-eyed primates called tarsiers are protected
+    at the Philippine Tarsier Sanctuary."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 00a94aaa5aff49c42b99a919f5915b68, type: 2}
   m_sharedMaterial: {fileID: 6661176882776006618, guid: 00a94aaa5aff49c42b99a919f5915b68, type: 2}
@@ -7867,7 +7823,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 19.521946, w: 7.7140656}
+  m_margin: {x: 0, y: -28.83162, z: 25.730534, w: 7.7140656}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7881,82 +7837,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210054490}
   m_CullTransparentMesh: 1
---- !u!1 &1212475974
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1212475975}
-  - component: {fileID: 1212475977}
-  - component: {fileID: 1212475976}
-  m_Layer: 5
-  m_Name: Region 4A
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1212475975
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212475974}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1.703424, y: 1.703424, z: 1.703424}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1375459422}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 594.68134, y: -54.981255}
-  m_SizeDelta: {x: 100.91, y: 107.4454}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1212475976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212475974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.7122642, g: 1, b: 0.9596858, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c0e8b7888dc4f73438403f79fe59a4f0, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1212475977
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212475974}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1266555033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7966,19 +7846,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2033838500720032165, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
       propertyPath: m_text
-      value: Cordillera Administrative Region
+      value: Central Visayas
       objectReference: {fileID: 0}
     - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
       propertyPath: m_Color.b
-      value: 0.68235296
+      value: 0.43921572
       objectReference: {fileID: 0}
     - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
       propertyPath: m_Color.g
-      value: 0.79215693
+      value: 0.81568635
       objectReference: {fileID: 0}
     - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
       propertyPath: m_Color.r
-      value: 0.9333334
+      value: 0.9960785
       objectReference: {fileID: 0}
     - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
       propertyPath: m_Pivot.x
@@ -8075,82 +7955,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
   m_PrefabInstance: {fileID: 1266555033}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1287941588
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1287941589}
-  - component: {fileID: 1287941591}
-  - component: {fileID: 1287941590}
-  m_Layer: 5
-  m_Name: Region 5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1287941589
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287941588}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1.703424, y: 1.703424, z: 1.703424}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1375459422}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 734.81903, y: -155.94061}
-  m_SizeDelta: {x: 99.3817, y: 125.5276}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1287941590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287941588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.48584908, b: 0.48584908, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dd8a54f566407524a825a9b071ce7be5, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1287941591
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287941588}
-  m_CullTransparentMesh: 1
 --- !u!1 &1295705351
 GameObject:
   m_ObjectHideFlags: 0
@@ -8227,124 +8031,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295705351}
   m_CullTransparentMesh: 1
---- !u!1001 &1308074181
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 604995587}
-    m_Modifications:
-    - target: {fileID: 2033838500720032165, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_text
-      value: CALABARZON
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.b
-      value: 0.9607844
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.r
-      value: 0.7137255
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 59.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 59.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124006, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Name
-      value: Region Items in Panel (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
---- !u!224 &1308074182 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-  m_PrefabInstance: {fileID: 1308074181}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1337020855
 GameObject:
   m_ObjectHideFlags: 0
@@ -8427,50 +8113,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1375459421
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1375459422}
-  m_Layer: 5
-  m_Name: Luzon (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1375459422
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1375459421}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.75251, y: 0.75251, z: 0.75251}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1828176629}
-  - {fileID: 821893245}
-  - {fileID: 1594150657}
-  - {fileID: 809610770}
-  - {fileID: 1866883614}
-  - {fileID: 1212475975}
-  - {fileID: 1287941589}
-  - {fileID: 1154707838}
-  m_Father: {fileID: 581582500}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -815, y: 94}
-  m_SizeDelta: {x: 754.9199, y: 335.09998}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1377259570
 GameObject:
   m_ObjectHideFlags: 0
@@ -8769,8 +8411,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 677865220}
   m_HandleRect: {fileID: 677865219}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.70987284
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9513,82 +9155,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593325255}
   m_CullTransparentMesh: 1
---- !u!1 &1594150656
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1594150657}
-  - component: {fileID: 1594150659}
-  - component: {fileID: 1594150658}
-  m_Layer: 5
-  m_Name: Cordillera Administrative Region
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1594150657
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1594150656}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1.4438399, y: 1.4438399, z: 1.4438399}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1375459422}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 548.03143, y: 207.73431}
-  m_SizeDelta: {x: 66, y: 140}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1594150658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1594150656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.9339623, g: 0.79024976, b: 0.6828498, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -2071005426, guid: 3464dd3ab0c32c14dac7053650fcfce3, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1594150659
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1594150656}
-  m_CullTransparentMesh: 1
 --- !u!1 &1613017823
 GameObject:
   m_ObjectHideFlags: 0
@@ -10192,6 +9758,82 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1624906393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1624906394}
+  - component: {fileID: 1624906396}
+  - component: {fileID: 1624906395}
+  m_Layer: 5
+  m_Name: EV
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1624906394
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624906393}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 0.006439719, y: 0.006439719, z: 0.006439719}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1796522282}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1546.6, y: -719.57007}
+  m_SizeDelta: {x: 248.0593, y: 448.8691}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1624906395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624906393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9103774, g: 0.9578695, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d3b305db0a769734f89dc0f4749cce2e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1624906396
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624906393}
+  m_CullTransparentMesh: 1
 --- !u!1 &1627418475
 GameObject:
   m_ObjectHideFlags: 0
@@ -10679,11 +10321,11 @@ MonoBehaviour:
     - Ulo
   - question: "This festival commemorates the Treaty of  Friendship between a Datu
       in _________ and Spanish  Miguel L\xF3pez de Legazpi."
-    correctAnswer: Spanish
+    correctAnswer: Bohol
     choices:
     - Spanish
     - Samoan
-    - Arab
+    - Bohol
     - Italian
   - question: It serves as a landmark that is considered as one  of the most important
       historical markers in Cebu City  since it serves as a reminder of the birth
@@ -10868,124 +10510,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702294940}
   m_CullTransparentMesh: 1
---- !u!1001 &1718163113
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 604995587}
-    m_Modifications:
-    - target: {fileID: 2033838500720032165, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_text
-      value: MIMAROPA
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.b
-      value: 0.56078434
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.g
-      value: 0.9921569
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 59.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 59.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124006, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Name
-      value: Region Items in Panel (6)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
---- !u!224 &1718163114 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-  m_PrefabInstance: {fileID: 1718163113}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1724915110
 GameObject:
   m_ObjectHideFlags: 0
@@ -11357,7 +10881,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772156056}
   m_CullTransparentMesh: 1
---- !u!1 &1828176628
+--- !u!1 &1796522281
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11365,74 +10889,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1828176629}
-  - component: {fileID: 1828176631}
-  - component: {fileID: 1828176630}
+  - component: {fileID: 1796522282}
   m_Layer: 5
-  m_Name: Ilocos Region
+  m_Name: Visayas Island Picture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1828176629
+--- !u!224 &1796522282
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828176628}
+  m_GameObject: {fileID: 1796522281}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1.703424, y: 1.703424, z: 1.703424}
+  m_LocalPosition: {x: 0, y: 0, z: -9810.001}
+  m_LocalScale: {x: 108.000015, y: 108.000015, z: 108.000015}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1375459422}
-  m_RootOrder: 0
+  m_Children:
+  - {fileID: 769289883}
+  - {fileID: 1955774830}
+  - {fileID: 1624906394}
+  m_Father: {fileID: 581582500}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 493.825, y: 184.47498}
-  m_SizeDelta: {x: 65.9999, y: 146.0625}
+  m_AnchoredPosition: {x: 166752.03, y: 77760.01}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1828176630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828176628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.6595331, g: 0.8490566, b: 0.59674263, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 1764292558, guid: 3464dd3ab0c32c14dac7053650fcfce3, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1828176631
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828176628}
-  m_CullTransparentMesh: 1
 --- !u!1 &1831944673
 GameObject:
   m_ObjectHideFlags: 0
@@ -11592,82 +11079,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847244281}
-  m_CullTransparentMesh: 1
---- !u!1 &1866883613
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1866883614}
-  - component: {fileID: 1866883616}
-  - component: {fileID: 1866883615}
-  m_Layer: 5
-  m_Name: NCR
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1866883614
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866883613}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1.703424, y: 1.703424, z: 1.703424}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1375459422}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 553.825, y: -35.031303}
-  m_SizeDelta: {x: 28, y: 25}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1866883615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866883613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.6367924, b: 0.6367924, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 925084634, guid: 3464dd3ab0c32c14dac7053650fcfce3, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1866883616
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866883613}
   m_CullTransparentMesh: 1
 --- !u!1 &1889055270
 GameObject:
@@ -11960,6 +11371,82 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1955774829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1955774830}
+  - component: {fileID: 1955774832}
+  - component: {fileID: 1955774831}
+  m_Layer: 5
+  m_Name: CV
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1955774830
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955774829}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 0.006439719, y: 0.006439719, z: 0.006439719}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1796522282}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1548.1, y: -720.83}
+  m_SizeDelta: {x: 327.7927, y: 386.8544}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1955774831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955774829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.8140447, b: 0.43867922, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b56e502db5510894c80866e772b48ecf, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1955774832
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955774829}
+  m_CullTransparentMesh: 1
 --- !u!1 &1989089964
 GameObject:
   m_ObjectHideFlags: 0
@@ -12038,7 +11525,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 445.12, y: 0}
+  m_AnchoredPosition: {x: 454.62, y: 0}
   m_SizeDelta: {x: 821.75, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2013118128
@@ -12166,124 +11653,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2073193270
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 604995587}
-    m_Modifications:
-    - target: {fileID: 2033838500720032165, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_text
-      value: Bicol Region
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.b
-      value: 0.48627454
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.g
-      value: 0.48627454
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 59.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 59.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124006, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Name
-      value: Region Items in Panel (7)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
---- !u!224 &2073193271 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-  m_PrefabInstance: {fileID: 2073193270}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2074698057
 GameObject:
   m_ObjectHideFlags: 0
@@ -12341,13 +11710,13 @@ MonoBehaviour:
     isFirstTimeGoingToSchool: 1
     isQuestReset: 0
     hasNewOpenRegion: 0
-    versionNumber: 1.0
+    versionNumber: 4.0
     questNewIcon: 0
     notesNewIcon: 0
     achievementsNewIcon: 0
     name: 
     gender: male
-    dunongPoints: 5000
+    dunongPoints: 140
     requiredDunongPointsToPlay: 140
     remainingTime: 18000
     sceneToLoad: House
@@ -12445,6 +11814,12 @@ MonoBehaviour:
         categoryName: National Festivals
         regionName: MIMAROPA
         majorIsland: Luzon
+      - name: Moriones Festival
+        imagePath: Collectibles/Festivals/Moriones Festival
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: Bicol Region
+        majorIsland: Luzon
       - name: Antonio Luna
         imagePath: Collectibles/Heroes/Antonio Luna
         isCollected: 0
@@ -12505,11 +11880,65 @@ MonoBehaviour:
         categoryName: Tourist Attractions
         regionName: Central Visayas
         majorIsland: VISAYAS
+      - name: Anahaw
+        imagePath: Collectibles/General Knowledge/Anahaw
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: Eastern Visayas
+        majorIsland: VISAYAS
+      - name: Duwende
+        imagePath: Collectibles/General Knowledge/Duwende
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: Eastern Visayas
+        majorIsland: VISAYAS
+      - name: Kalabaw
+        imagePath: Collectibles/General Knowledge/Kalabaw
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: Zamboanga Peninsula
+        majorIsland: MINDANAO
       - name: Sunken Cemetery
         imagePath: Collectibles/Tourist Attractions/Sunken Cemetery
         isCollected: 0
         categoryName: Tourist Attractions
         regionName: Northern Mindanao
+        majorIsland: MINDANAO
+      - name: Kapre
+        imagePath: Collectibles/General Knowledge/Kapre
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: Davao Region
+        majorIsland: MINDANAO
+      - name: Manananggal
+        imagePath: Collectibles/General Knowledge/Manananggal
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: SOCCSKSARGEN
+        majorIsland: MINDANAO
+      - name: Mango
+        imagePath: Collectibles/General Knowledge/Mango
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: Caraga Region
+        majorIsland: MINDANAO
+      - name: Patintero
+        imagePath: Collectibles/General Knowledge/Patintero
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: Caraga Region
+        majorIsland: MINDANAO
+      - name: Piko
+        imagePath: Collectibles/General Knowledge/Piko
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: BARMM
+        majorIsland: MINDANAO
+      - name: Tumbang Preso
+        imagePath: Collectibles/General Knowledge/Tumbang Preso
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: BARMM
         majorIsland: MINDANAO
     regionsData:
     - regionNumber: 1
@@ -12570,7 +11999,9 @@ MonoBehaviour:
     - regionNumber: 4
       isOpen: 0
       regionName: Central Luzon
-      information: 
+      information: Central Luzon, designated as Region III, is an administrative
+        region in the Philippines, primarily serving to organize the 7 provinces
+        of the vast central plains of the island of Luzon, for administrative convenience.
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -12584,7 +12015,9 @@ MonoBehaviour:
     - regionNumber: 5
       isOpen: 0
       regionName: National Capital Region
-      information: 
+      information: Metropolitan Manila, officially the National Capital Region, is
+        the seat of government and one of three defined metropolitan areas in the
+        Philippines.
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -12598,7 +12031,10 @@ MonoBehaviour:
     - regionNumber: 6
       isOpen: 0
       regionName: CALABARZON
-      information: 
+      information: 'Calabarzon, formally known as the Southern Tagalog Mainland,
+        is an administrative region in the Philippines, designated as Region IV-A.
+        The region comprises five provinces: Batangas, Cavite, Laguna, Quezon, and
+        Rizal; and one highly urbanized city, Lucena.'
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -12612,7 +12048,10 @@ MonoBehaviour:
     - regionNumber: 7
       isOpen: 0
       regionName: MIMAROPA
-      information: 
+      information: Mimaropa, formerly known as the Southwestern Tagalog Region, is
+        an administrative region in the Philippines. It was also formerly designated
+        as Region IV-B until 2016. It is one of two regions in the country having
+        no land border with another region.
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -12626,7 +12065,12 @@ MonoBehaviour:
     - regionNumber: 8
       isOpen: 0
       regionName: Bicol Region
-      information: 
+      information: "Bicol is a region in the Philippines encompassing the southern
+        part of Luzon Island and nearby island provinces. Caramoan, a peninsula in
+        the east, is dotted with caves, limestone cliffs and white-sand beaches.
+        Nearby, Catanduanes Island has mountains, waterfalls and coral reefs. Donsol,
+        in the west, is home to whale sharks. The region\u2019s active volcanoes
+        include Bulusan Volcano and Mayon Volcano."
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -12637,7 +12081,11 @@ MonoBehaviour:
     - regionNumber: 9
       isOpen: 1
       regionName: Western Visayas
-      information: Western Visayas is the first region of Visayas major island.
+      information: 'Western Visayas is an administrative region in the Philippines,
+        numerically designated as Region VI. It consists of six provinces and two
+        highly urbanized cities. The regional center is Iloilo City. The region is
+        dominated by the native speakers of four Visayan languages: Hiligaynon, Kinaray-a,
+        Aklanon and Capiznon.'
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -12647,8 +12095,10 @@ MonoBehaviour:
         noOfStars: 0
     - regionNumber: 10
       isOpen: 0
-      regionName: Eastern Visayas
-      information: Eastern Visayas is the first region of Visayas major island.
+      regionName: Central Visayas
+      information: 'Central Visayas is an administrative region in the Philippines,
+        numerically designated as Region VII. It consists of four provinces: and
+        three highly urbanized cities: Cebu City, Lapu-Lapu, and Mandaue.'
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -12658,8 +12108,10 @@ MonoBehaviour:
         noOfStars: 0
     - regionNumber: 11
       isOpen: 0
-      regionName: Central Visayas
-      information: Central Visayas is the first region of Visayas major island.
+      regionName: Eastern Visayas
+      information: Eastern Visayas is an administrative region in the Philippines,
+        designated as Region VIII. It consists of three main islands, Samar, Leyte
+        and Biliran.
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -12670,7 +12122,10 @@ MonoBehaviour:
     - regionNumber: 12
       isOpen: 0
       regionName: Zamboanga Peninsula
-      information: Western Visayas is the first region of Visayas major island.
+      information: Zamboanga Peninsula is an administrative region in the Philippines,
+        designated as Region IX. It consists of three provinces including four cities
+        and the highly urbanized Zamboanga City. The region was previously known
+        as Western Mindanao before the signing of Executive Order No. 36 of 2001.
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -12681,7 +12136,11 @@ MonoBehaviour:
     - regionNumber: 13
       isOpen: 0
       regionName: Northern Mindanao
-      information: Central Visayas is the first region of Visayas major island.
+      information: 'Northern Mindanao is an administrative region in the Philippines,
+        designated as Region X. It comprises five provinces: Bukidnon, Camiguin,
+        Misamis Occidental, Misamis Oriental, and Lanao del Norte, and two cities
+        classified as highly urbanized, all occupying the north-central part of Mindanao
+        island, and the island-province of Camiguin.'
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -12692,7 +12151,10 @@ MonoBehaviour:
     - regionNumber: 14
       isOpen: 0
       regionName: Davao Region
-      information: Eastern Visayas is the first region of Visayas major island.
+      information: 'Davao Region, formerly called Southern Mindanao, is an administrative
+        region in the Philippines, designated as Region XI. It is situated at the
+        southeastern portion of Mindanao and comprises five provinces: Davao de Oro,
+        Davao del Norte, Davao del Sur, Davao Oriental and Davao Occidental.'
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -12703,7 +12165,10 @@ MonoBehaviour:
     - regionNumber: 15
       isOpen: 0
       regionName: SOCCSKSARGEN
-      information: Western Visayas is the first region of Visayas major island.
+      information: Soccsksargen, formerly known as Central Mindanao, is an administrative
+        region of the Philippines, designated as Region XII. Located in south-central
+        Mindanao, its name is an acronym that stands for the region's four provinces
+        and one highly urbanized city.
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -12714,7 +12179,10 @@ MonoBehaviour:
     - regionNumber: 16
       isOpen: 0
       regionName: Caraga Region
-      information: Central Visayas is the first region of Visayas major island.
+      information: Caraga, officially the Caraga Administrative Region and designated
+        as Region XIII, is an administrative region in the Philippines occupying
+        the northeastern section of Mindanao. The region was created through Republic
+        Act No. 7901 on February 23, 1995.
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -12725,7 +12193,8 @@ MonoBehaviour:
     - regionNumber: 17
       isOpen: 0
       regionName: BARMM
-      information: Eastern Visayas is the first region of Visayas major island.
+      information: Bangsamoro, officially the Bangsamoro Autonomous Region in Muslim
+        Mindanao, is an autonomous region located in the southern Philippines.
       currentScore: 0
       highestScore: 0
       noOfStars: 0
@@ -12757,7 +12226,7 @@ MonoBehaviour:
       isMet: 0
       xPos: 0
       yPos: 0
-    - name: Mai Jardaleza
+    - name: Mae Jardaleza
       info: 
       isMet: 0
       xPos: 0
@@ -12787,6 +12256,16 @@ MonoBehaviour:
       isMet: 0
       xPos: 0
       yPos: 0
+    - name: Dale Abenjobar
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
+    - name: Rix the Seminarian
+      info: 
+      isMet: 0
+      xPos: 0
+      yPos: 0
     notesInfos: []
     inventory:
       items: []
@@ -12797,7 +12276,7 @@ MonoBehaviour:
       m_IsAllEstablishmentsOpen: 1
       m_DayEvent: 1
       m_NoOfSecondsPerTwoAndHalfMinutes: 1
-      m_NoOfSecondsPerMinute: 30
+      m_NoOfSecondsPerMinute: 10
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
@@ -13557,124 +13036,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097873511}
   m_CullTransparentMesh: 1
---- !u!1001 &2100226469
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 604995587}
-    m_Modifications:
-    - target: {fileID: 2033838500720032165, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_text
-      value: NCR
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.b
-      value: 0.63529414
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.g
-      value: 0.63529414
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124004, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 59.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 59.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033838501390124006, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-      propertyPath: m_Name
-      value: Region Items in Panel (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
---- !u!224 &2100226470 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2033838501390124005, guid: 2406f97bab0fa244aa1f3a0d818ceb9b, type: 3}
-  m_PrefabInstance: {fileID: 2100226469}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2104339481
 GameObject:
   m_ObjectHideFlags: 0
