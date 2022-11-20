@@ -2079,6 +2079,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   regionName: 
   regionNum: 0
   previousSceneToLoad: 
@@ -5261,6 +5263,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   notesIcon: {fileID: 0}
 --- !u!1 &412545127
 GameObject:
@@ -8281,7 +8285,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2121310174}
   m_HandleRect: {fileID: 2121310173}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -10283,6 +10287,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   sceneToLoadFromPhilippineMap: 
 --- !u!1 &1030441054
 GameObject:
@@ -15381,6 +15387,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   slots:
     ids: []
   confirmButton: {fileID: 0}
@@ -15991,7 +15999,7 @@ MonoBehaviour:
     - Novicio Luna
     - Juan Antonio Luna
   - question: Where is Juan Luna's birthplace?
-    correctAnswer: Batac, Ilocos Norte
+    correctAnswer: Badoc, Ilocos Norte
     choices:
     - Calasiao, Pangasinan
     - Batac, Ilocos Norte
@@ -16877,6 +16885,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   regionName: 
   regionNum: 0
   previousSceneToLoad: 
@@ -17646,6 +17656,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
 --- !u!1 &1287173374
 GameObject:
   m_ObjectHideFlags: 0
@@ -21664,6 +21676,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   regionName: 
   regionNum: 0
   previousSceneToLoad: 
@@ -22446,8 +22460,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 331524375}
   m_HandleRect: {fileID: 331524374}
   m_Direction: 3
-  m_Value: 1
-  m_Size: 0.7098727
+  m_Value: 1.0000004
+  m_Size: 0.7098729
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -24337,6 +24351,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   regionName: 
   regionNum: 0
   previousSceneToLoad: 

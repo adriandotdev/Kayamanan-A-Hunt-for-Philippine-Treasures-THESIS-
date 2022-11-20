@@ -161,8 +161,6 @@ public class IslandHandler : MonoBehaviour, IDataPersistence
         {
             RegionData foundRegionData = this.FindRegionDataWithName(button.name);
 
-            
-
             if (foundRegionData != null)
             {
                 button.GetComponent<Button>().onClick.AddListener(() =>

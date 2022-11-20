@@ -1496,7 +1496,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &56574378
 GameObject:
@@ -2456,6 +2456,127 @@ MonoBehaviour:
   - {x: 7.597645, y: -0.5215368, z: 0}
   - {x: 7.4157066, y: 0.4194088, z: 0}
   - {x: -0.61959267, y: 0.47173643, z: 0}
+--- !u!1 &77207373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 77207374}
+  - component: {fileID: 77207377}
+  - component: {fileID: 77207376}
+  - component: {fileID: 77207375}
+  m_Layer: 5
+  m_Name: Info
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 0
+--- !u!224 &77207374
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77207373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.8409588, y: 2.8409588, z: 2.8409588}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1313299129}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 58, y: 68}
+  m_SizeDelta: {x: 236.34, y: 84.85}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &77207375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77207373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 77207376}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &77207376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77207373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -2447155346327589188, guid: 2ee097bbfa61e004e8a6e5a0c150f313, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &77207377
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77207373}
+  m_CullTransparentMesh: 1
 --- !u!1 &95309138
 GameObject:
   m_ObjectHideFlags: 0
@@ -2978,7 +3099,7 @@ RectTransform:
   m_GameObject: {fileID: 126252538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.8409588, y: 2.8409588, z: 2.8409588}
+  m_LocalScale: {x: 1.923075, y: 1.923075, z: 2.8409588}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1976424589}
@@ -2986,7 +3107,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: 129}
+  m_AnchoredPosition: {x: 80, y: -24}
   m_SizeDelta: {x: 236.34, y: 84.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &126252540
@@ -4398,7 +4519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 727, y: -460}
+  m_AnchoredPosition: {x: 727, y: -509}
   m_SizeDelta: {x: 236.34, y: 84.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &178209247
@@ -4843,7 +4964,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1839, y: -1608}
+  m_AnchoredPosition: {x: 1821, y: -1662}
   m_SizeDelta: {x: 236.34, y: 84.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &212792074
@@ -5874,6 +5995,90 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!1 &230532785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 230532786}
+  - component: {fileID: 230532787}
+  m_Layer: 12
+  m_Name: Minimap Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &230532786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230532785}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.17, y: -0.26, z: 1.7982019}
+  m_LocalScale: {x: 1.3457096, y: 1.3457096, z: 1.3457096}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1131973296}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &230532787
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230532785}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 2054145999, guid: 4a690b5dc60532442b1b3902e6cdb2b6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &232916733
 GameObject:
   m_ObjectHideFlags: 0
@@ -7434,8 +7639,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: b54345142085d0145b445fd100bcce25, type: 3}
     - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2556
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1229
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964498783709, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7448,6 +7665,10 @@ PrefabInstance:
     - target: {fileID: 5785031964829394273, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_text
       value: luneta park shrine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13151,8 +13372,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 0b925093eac436b4f9318f726129e043, type: 3}
     - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2570
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1193
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964498783709, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13169,6 +13402,10 @@ PrefabInstance:
     - target: {fileID: 5785031964829394273, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_text
       value: bahay kubo
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15081,8 +15318,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 0343d32d871ba474caf4a2ef1d0f95db, type: 3}
     - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1224
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964498783709, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15091,6 +15336,10 @@ PrefabInstance:
     - target: {fileID: 5785031964829394273, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_text
       value: Philippine eagle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15181,6 +15430,90 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8cf3b03234a6d9b4f9739c0b036f9ad5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &509384351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509384352}
+  - component: {fileID: 509384353}
+  m_Layer: 12
+  m_Name: Minimap Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &509384352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509384351}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.13, y: -1.03, z: 1.683753}
+  m_LocalScale: {x: 1.2600601, y: 1.2600601, z: 1.2600601}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 896192155}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &509384353
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509384351}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1675950226, guid: 4a690b5dc60532442b1b3902e6cdb2b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -18173,6 +18506,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 198471836}
+  - {fileID: 1259653871}
   m_Father: {fileID: 0}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19132,7 +19466,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1472804978}
   m_HandleRect: {fileID: 1472804977}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -19404,6 +19738,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607149849}
   m_CullTransparentMesh: 1
+--- !u!1 &610154525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610154526}
+  - component: {fileID: 610154527}
+  m_Layer: 12
+  m_Name: Minimap Icon (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &610154526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610154525}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.071601, y: -0.80354, z: 2.1751425}
+  m_LocalScale: {x: 2.5917804, y: 2.5917804, z: 2.5917804}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 971369924}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &610154527
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610154525}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 804b9d6dfab58db449c8bfb47a157ef4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &610796700
 GameObject:
   m_ObjectHideFlags: 0
@@ -21249,7 +21667,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 58, y: 68}
+  m_AnchoredPosition: {x: -11, y: -90}
   m_SizeDelta: {x: 236.34, y: 84.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &705178143
@@ -23794,6 +24212,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   sceneToLoadFromPhilippineMap: 
 --- !u!4 &782332389
 Transform:
@@ -23808,7 +24228,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &792277815
 GameObject:
@@ -32172,6 +32592,7 @@ Transform:
   m_Children:
   - {fileID: 1033450574}
   - {fileID: 824691023}
+  - {fileID: 509384352}
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32431,8 +32852,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 6d8621f0130b3d2419ec2f4a6a222ffb, type: 3}
     - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1142
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964498783709, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -32445,6 +32874,10 @@ PrefabInstance:
     - target: {fileID: 5785031964829394273, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_text
       value: Baybayin
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -34475,7 +34908,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &971369924
 Transform:
@@ -34491,7 +34924,7 @@ Transform:
   m_Children:
   - {fileID: 1825124123}
   - {fileID: 2089946496}
-  - {fileID: 1328772852}
+  - {fileID: 610154526}
   m_Father: {fileID: 254573940}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36452,7 +36885,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.091, y: 0.8506266}
+  m_AnchoredPosition: {x: -0.003, y: 0.587}
   m_SizeDelta: {x: 3120.0002, y: 1440}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1033450575
@@ -38817,7 +39250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5785031963343729124, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_Size.y
-      value: 0.29986155
+      value: 0.44275218
       objectReference: {fileID: 0}
     - target: {fileID: 5785031963343729124, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_Offset.x
@@ -38825,7 +39258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5785031963343729124, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_Offset.y
-      value: -0.09724191
+      value: -0.025796585
       objectReference: {fileID: 0}
     - target: {fileID: 5785031963343729124, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -38848,12 +39281,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 47feade2e988dba489fb1201a955c7ce, type: 3}
     - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1149
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964498783709, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -38877,7 +39318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -39479,6 +39920,7 @@ GameObject:
   - component: {fileID: 1131973297}
   - component: {fileID: 1131973299}
   - component: {fileID: 1131973298}
+  - component: {fileID: 1131973300}
   m_Layer: 0
   m_Name: Kalabaw
   m_TagString: Untagged
@@ -39549,7 +39991,9 @@ Transform:
   m_LocalPosition: {x: 126.8, y: -18.83, z: 0}
   m_LocalScale: {x: 5.5611105, y: 5.5611105, z: 5.5611105}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1313299129}
+  - {fileID: 230532786}
   m_Father: {fileID: 0}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -39566,7 +40010,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03456928, y: 0.3235966}
+  m_Offset: {x: -0.034569263, y: 0.276657}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.49335194, y: 0.12057859}
@@ -39577,7 +40021,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98032427, y: 0.45915055}
+  m_Size: {x: 0.98032427, y: 0.6712477}
   m_EdgeRadius: 0
 --- !u!114 &1131973298
 MonoBehaviour:
@@ -39608,6 +40052,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortingType: 0
+--- !u!114 &1131973300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131973294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea198ab8f2187a4f9510f7984ce5d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topicImage: {fileID: 21300000, guid: 5d969d8f325c9c847802df1c68733ec3, type: 3}
+  topic: CARABAO
+  info: {fileID: 4900000, guid: ff7863b763517694a82f2a841d424596, type: 3}
+  timerValue: 0
+  panelNumber: 1
 --- !u!1 &1133879005
 GameObject:
   m_ObjectHideFlags: 0
@@ -39780,6 +40241,7 @@ RectTransform:
   - {fileID: 109392707}
   - {fileID: 1898634979}
   - {fileID: 1628213979}
+  - {fileID: 1640603983}
   m_Father: {fileID: 807623927}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -71665,6 +72127,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1156214173}
+  - {fileID: 1289716668}
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -71681,7 +72144,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0147634, y: 0.41321826}
+  m_Offset: {x: -0.0147634, y: 0.32940248}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.4957887, y: 0.16542631}
@@ -71692,7 +72155,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.37308297, y: 0.32316184}
+  m_Size: {x: 0.37308297, y: 0.4907934}
   m_EdgeRadius: 0
 --- !u!114 &1222447984
 MonoBehaviour:
@@ -72318,7 +72781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00002466879}
+  m_AnchoredPosition: {x: 0, y: -0.000018611887}
   m_SizeDelta: {x: 0, y: 366.56}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1231686272
@@ -72561,6 +73024,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259194644}
   m_CullTransparentMesh: 1
+--- !u!1 &1259653870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1259653871}
+  - component: {fileID: 1259653872}
+  m_Layer: 12
+  m_Name: Minimap Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1259653871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259653870}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.29, y: -2.35, z: 4.053014}
+  m_LocalScale: {x: 3.0331295, y: 3.0331295, z: 3.0331295}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 563960108}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1259653872
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259653870}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 26957971, guid: 4a690b5dc60532442b1b3902e6cdb2b6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1264533775
 GameObject:
   m_ObjectHideFlags: 0
@@ -73088,6 +73635,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288725630}
   m_CullTransparentMesh: 1
+--- !u!1 &1289716667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1289716668}
+  - component: {fileID: 1289716669}
+  m_Layer: 12
+  m_Name: Minimap Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1289716668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289716667}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.64, y: -0.77, z: 2.6270943}
+  m_LocalScale: {x: 1.9660226, y: 1.9660226, z: 1.9660226}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1222447982}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1289716669
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289716667}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -951491441, guid: 4a690b5dc60532442b1b3902e6cdb2b6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1291643305
 GameObject:
   m_ObjectHideFlags: 0
@@ -73251,8 +73882,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2615
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1183
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964498783709, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -73269,6 +73912,10 @@ PrefabInstance:
     - target: {fileID: 5785031964829394273, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_text
       value: Vinta festival
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -73488,6 +74135,107 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1313299128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1313299129}
+  - component: {fileID: 1313299132}
+  - component: {fileID: 1313299131}
+  - component: {fileID: 1313299130}
+  m_Layer: 5
+  m_Name: NPC Utils (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!224 &1313299129
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313299128}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 19.69883}
+  m_LocalScale: {x: 0.0015194806, y: 0.0015194806, z: 0.0015194806}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 77207374}
+  m_Father: {fileID: 1131973296}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.11, y: 0.57}
+  m_SizeDelta: {x: 3120.0002, y: 1440}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1313299130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313299128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1313299131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313299128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!223 &1313299132
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313299128}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: -1571024269
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1318387737
 GameObject:
   m_ObjectHideFlags: 0
@@ -74212,90 +74960,6 @@ MonoBehaviour:
   - {x: 0.4157348, y: -0.27778515, z: 0}
   - {x: 0.46193978, y: -0.19134171, z: 0}
   - {x: 0.49039266, y: -0.09754512, z: 0}
---- !u!1 &1328772851
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1328772852}
-  - component: {fileID: 1328772853}
-  m_Layer: 12
-  m_Name: Minimap Icon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1328772852
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328772851}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.033, y: -0.033, z: -1.13}
-  m_LocalScale: {x: 0.6867376, y: 0.6867376, z: 0.6867376}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 971369924}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1328772853
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328772851}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 804b9d6dfab58db449c8bfb47a157ef4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1341962489
 GameObject:
   m_ObjectHideFlags: 0
@@ -75896,7 +76560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6, y: 190}
+  m_AnchoredPosition: {x: 6, y: 36}
   m_SizeDelta: {x: 236.34, y: 84.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1383763613
@@ -76242,8 +76906,12 @@ PrefabInstance:
       value: 1.4213917
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2573
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1092
+      value: -1156
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964498783705, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_Enabled
@@ -76280,6 +76948,10 @@ PrefabInstance:
     - target: {fileID: 5785031964829394273, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_text
       value: PALAWAN PEARL
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -78640,6 +79312,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   globalLight: {fileID: 0}
 --- !u!4 &1449817046
 Transform:
@@ -79996,7 +80670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1497031775
 RectTransform:
   m_ObjectHideFlags: 0
@@ -83432,7 +84106,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592557271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.59, y: -20.38, z: -10}
+  m_LocalPosition: {x: 70.14, y: -9.22, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -84021,6 +84695,144 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637682780}
+  m_CullTransparentMesh: 1
+--- !u!1 &1640603982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1640603983}
+  - component: {fileID: 1640603985}
+  - component: {fileID: 1640603984}
+  m_Layer: 5
+  m_Name: Completed QUEST NOTE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1640603983
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640603982}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -19.125757}
+  m_LocalScale: {x: 0.008117978, y: 0.008117978, z: 0.008117978}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1143711319}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1.193, y: -0.323}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1640603984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640603982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'you''ve completed all the quests!
+
+    head to the school campus and look
+    for the three (3) booths where you can take assessments.'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7394abb855ac6bf40805ecdaf2506f0f, type: 2}
+  m_sharedMaterial: {fileID: -5557912328034547050, guid: 7394abb855ac6bf40805ecdaf2506f0f, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279440179
+  m_fontColor: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 8.12
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -284.56876, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1640603985
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640603982}
   m_CullTransparentMesh: 1
 --- !u!1 &1643936135
 GameObject:
@@ -86690,7 +87502,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.001, y: 228}
+  m_AnchoredPosition: {x: 6.001, y: 75}
   m_SizeDelta: {x: 236.34, y: 84.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1711269478
@@ -90563,6 +91375,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   notesIcon: {fileID: 0}
 --- !u!4 &1830136714
 Transform:
@@ -90864,7 +91678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6, y: 190}
+  m_AnchoredPosition: {x: 6, y: 26}
   m_SizeDelta: {x: 236.34, y: 84.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1843203368
@@ -91104,7 +91918,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844409528}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 48.41385, y: -5.045313, z: -10}
+  m_LocalPosition: {x: 48.41385, y: -5.045313, z: -11}
   m_LocalScale: {x: 1.7306527, y: 1.7306527, z: 1.7306527}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -91848,7 +92662,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1875426546
 MonoBehaviour:
@@ -91865,24 +92679,24 @@ MonoBehaviour:
   playerData:
     id: 
     isGameCompleted: 0
-    isNewlyCreated: 0
-    isTutorialDone: 1
-    isIntroductionDone: 1
-    isPreQuestIntroductionDone: 1
-    isNPCIntroductionPanelDone: 1
+    isNewlyCreated: 1
+    isTutorialDone: 0
+    isIntroductionDone: 0
+    isPreQuestIntroductionDone: 0
+    isNPCIntroductionPanelDone: 0
     isFromSleeping: 0
     isSleepPanelNotShown: 1
     isFirstTimeGoingToSchool: 1
     isQuestReset: 0
     hasNewOpenRegion: 0
-    versionNumber: 1.0
+    versionNumber: 4.0
     questNewIcon: 0
     notesNewIcon: 0
     achievementsNewIcon: 0
     name: 
     gender: male
     dunongPoints: 0
-    requiredDunongPointsToPlay: 0
+    requiredDunongPointsToPlay: 140
     remainingTime: 18000
     sceneToLoad: House
     xPos: 0
@@ -92087,6 +92901,12 @@ MonoBehaviour:
         categoryName: General Knowledge
         regionName: Caraga Region
         majorIsland: MINDANAO
+      - name: Patintero
+        imagePath: Collectibles/General Knowledge/Patintero
+        isCollected: 0
+        categoryName: General Knowledge
+        regionName: Caraga Region
+        majorIsland: MINDANAO
       - name: Piko
         imagePath: Collectibles/General Knowledge/Piko
         isCollected: 0
@@ -92123,7 +92943,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 2
-      isOpen: 1
+      isOpen: 0
       regionName: Cagayan Valley
       information: 'Cagayan Valley, designated as Region II, is an administrative
         region in the Philippines, located in the northeastern section of Luzon Island.
@@ -92137,7 +92957,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 3
-      isOpen: 1
+      isOpen: 0
       regionName: Cordillera Administrative Region
       information: The Cordillera Administrative Region, also known as the Cordillera
         Region, or simply, Cordillera, is an administrative region in the Philippines,
@@ -92156,7 +92976,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 4
-      isOpen: 1
+      isOpen: 0
       regionName: Central Luzon
       information: Central Luzon, designated as Region III, is an administrative
         region in the Philippines, primarily serving to organize the 7 provinces
@@ -92172,7 +92992,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 5
-      isOpen: 1
+      isOpen: 0
       regionName: National Capital Region
       information: Metropolitan Manila, officially the National Capital Region, is
         the seat of government and one of three defined metropolitan areas in the
@@ -92188,7 +93008,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 6
-      isOpen: 1
+      isOpen: 0
       regionName: CALABARZON
       information: 'Calabarzon, formally known as the Southern Tagalog Mainland,
         is an administrative region in the Philippines, designated as Region IV-A.
@@ -92205,7 +93025,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 7
-      isOpen: 1
+      isOpen: 0
       regionName: MIMAROPA
       information: Mimaropa, formerly known as the Southwestern Tagalog Region, is
         an administrative region in the Philippines. It was also formerly designated
@@ -92222,7 +93042,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 8
-      isOpen: 1
+      isOpen: 0
       regionName: Bicol Region
       information: "Bicol is a region in the Philippines encompassing the southern
         part of Luzon Island and nearby island provinces. Caramoan, a peninsula in
@@ -92238,7 +93058,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 9
-      isOpen: 1
+      isOpen: 0
       regionName: Western Visayas
       information: 'Western Visayas is an administrative region in the Philippines,
         numerically designated as Region VI. It consists of six provinces and two
@@ -92253,7 +93073,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 10
-      isOpen: 1
+      isOpen: 0
       regionName: Central Visayas
       information: 'Central Visayas is an administrative region in the Philippines,
         numerically designated as Region VII. It consists of four provinces: and
@@ -92266,7 +93086,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 11
-      isOpen: 1
+      isOpen: 0
       regionName: Eastern Visayas
       information: Eastern Visayas is an administrative region in the Philippines,
         designated as Region VIII. It consists of three main islands, Samar, Leyte
@@ -92362,7 +93182,3124 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     quests:
-    - questID: 512a96f5-e727-4671-ab65-073c15309692
+    - questID: f3588bc7-e29b-4326-b4d9-e30c7dffbc9d
+      isCompleted: 0
+      isClaimed: 0
+      title: A Day with Friendliness
+      description: Meet all the villagers.
+      note: 
+      hint: 
+      dunongPointsRewards: 0
+      region: PRE-QUEST
+      regionNum: 0
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 12
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 2
+    - questID: 10a731c3-8368-464f-bad3-2bc2373f489c
+      isCompleted: 0
+      isClaimed: 0
+      title: Preparation for Lunch!
+      description: Buy your mother a malunggay from the market nearby.
+      note: Find a market store that has blue roof.
+      hint: 
+      dunongPointsRewards: 25
+      region: PRE-QUEST
+      regionNum: 0
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: e2cada9b-8786-48a5-882b-5afb5097b4da
+        receiver: Aling Nena
+        itemGivers:
+        - giverName: Store in Market
+          message: Buy a Malunggay?
+          itemsToGive:
+          - itemName: Malunggay
+            quantity: 1
+            stackable: 0
+            originalQuantity: 1
+            titleOfInformation: Malunggay
+            informationLink: Delivery Ink Informations/Malunggay
+            imageLink: PCP/Malunggay
+          isItemsGiven: 0
+        msgRequest: Go buy a <b>Malunggay</b> to a nearby store for our lunch later.
+        msgOfGiver: Buy a Malunggay?
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 3
+    - questID: 6be46585-6986-42d9-bc55-ec70a8bd97d6
+      isCompleted: 0
+      isClaimed: 0
+      title: Gift of the North
+      description: Talk to <b>Mikaela Fudolig</b>
+      note: I can talk to Mikaela for Malacanang of the North.
+      hint: 
+      dunongPointsRewards: 25
+      region: Ilocos Region
+      regionNum: 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: Mikaela Fudolig
+        items:
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Malacanang of the North
+          informationLink: Delivery Ink Informations/Malacanang of the North
+          imageLink: PCP/Malacanang of the North
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 4
+    - questID: 728bff5e-1e97-4947-902f-0de658f9a5b8
+      isCompleted: 0
+      isClaimed: 0
+      title: Beautiful Places
+      description: Talk to <b>Zardo Domenios</b>
+      note: I can reach Zardo Domenios about Pagudpud Beach.
+      hint: 
+      dunongPointsRewards: 25
+      region: Ilocos Region
+      regionNum: 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: Zardo Domenios
+        items:
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Pagudpud Beach
+          informationLink: Delivery Ink Informations/Pagudpud Beach
+          imageLink: PCP/Pagudpud Beach
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Hundred Islands
+          informationLink: Delivery Ink Informations/Hundred Islands
+          imageLink: PCP/Hundred Islands
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 4
+    - questID: f1773ed4-d8ad-4408-af2e-69481fcc1378
+      isCompleted: 0
+      isClaimed: 0
+      title: Ilocos' Notable Heroes!
+      description: Talk to someone who is an expert on our National Heroes.
+      note: Go to Gregorio Zaide for National Heroes.
+      hint: He is a man with <b>long hair</b> and <b>eyeglasses</b>.
+      dunongPointsRewards: 15
+      region: Ilocos Region
+      regionNum: 1
+      talkGoal:
+        isFinished: 0
+        npcName: Gregorio Zaide
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: d1f7bf0f-fdc9-4988-8717-89ae24378ec9
+      isCompleted: 0
+      isClaimed: 0
+      title: A Bloody Lunch?!
+      description: Help Ivan Henares to get his lunch at the karinderya.
+      note: I can recap the info about Puto Festival to Ivan Henares.
+      hint: 
+      dunongPointsRewards: 25
+      region: Ilocos Region
+      regionNum: 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: f2c1a9d9-a267-4c69-8828-7685d905700c
+        receiver: Ivan Henares
+        itemGivers:
+        - giverName: Karinderya
+          message: Buy a <b>Puto</b> and <b>Dinuguan</b>?
+          itemsToGive:
+          - itemName: Puto
+            quantity: 1
+            stackable: 0
+            originalQuantity: 1
+            titleOfInformation: Puto Festival
+            informationLink: Delivery Ink Informations/Puto Festival
+            imageLink: PCP/Puto Festival
+          - itemName: Dinuguan
+            quantity: 1
+            stackable: 0
+            originalQuantity: 1
+            titleOfInformation: 
+            informationLink: 
+            imageLink: 
+          isItemsGiven: 0
+        msgRequest: Hi! Can you I ask you a favor to buy me a <b>Puto</b> and <b>Dinuguan</b>
+          at the <b>Karinderya</b> for my lunch?
+        msgOfGiver: Buy <b>Puto</b> and <b>Dinuguan</b>?
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 3
+    - questID: 32442925-2f13-44b4-bebb-9a2a24e7f2da
+      isCompleted: 0
+      isClaimed: 0
+      title: Chef's Request!
+      description: Help Mang Rolando to gather his recipes.
+      note: Reach Mang Rolando about the info about his recipes.
+      hint: You can buy the recipe to a nearby store with a <b>BLUE</b> roof.
+      dunongPointsRewards: 25
+      region: Ilocos Region
+      regionNum: 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 9b0be5ca-6fc6-4a2d-8149-3e48b49315a6
+        receiver: Rolando Laudico
+        itemGivers:
+        - giverName: Store in Market
+          message: Buy Empanada and Longganisa?
+          itemsToGive:
+          - itemName: Empanada
+            quantity: 1
+            stackable: 0
+            originalQuantity: 1
+            titleOfInformation: Empanada Festival
+            informationLink: Delivery Ink Informations/Empanada Festival
+            imageLink: PCP/Empanada Festival
+          - itemName: Longganisa
+            quantity: 1
+            stackable: 0
+            originalQuantity: 1
+            titleOfInformation: Longganisa Festival
+            informationLink: Delivery Ink Informations/Longganisa Festival
+            imageLink: PCP/Longganisa Festival
+          isItemsGiven: 0
+        msgRequest: Hello, do you mind helping me to get my recipe to a market nearby?
+          The recipe that I needed is <b>Empanada</b> and <b>Longganisa</b>.
+        msgOfGiver: Buy Empanada and Longganisa?
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 3
+    - questID: 491c7a65-1b0e-4e72-be5f-131b6abd37b9
+      isCompleted: 0
+      isClaimed: 0
+      title: A Forgotten Costume
+      description: Help Joseph to get his costume.
+      note: I can go to Joseph to know about Diego Silang.
+      hint: You can find <b>Joseph</b> at <b>School</b>.
+      dunongPointsRewards: 25
+      region: Ilocos Region
+      regionNum: 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: cdb3785e-b372-4e68-babd-3cf9a8c35e38
+        receiver: Joseph
+        itemGivers:
+        - giverName: Gregorio Zaide
+          message: Hi. Thank you so much for helping me to give this to my son. After
+            you gave this, you will get an info about to the character that he is
+            role playing.
+          itemsToGive:
+          - itemName: Salakot
+            quantity: 1
+            stackable: 0
+            originalQuantity: 1
+            titleOfInformation: Diego Silang
+            informationLink: Delivery Ink Informations/Diego Silang
+            imageLink: PCP/Diego Silang
+          isItemsGiven: 0
+        msgRequest: Hello! I have a favor for you. Can you get the salakot from my
+          father Gregorio Zaide?
+        msgOfGiver: Hi. Thank you so much for helping me to give this to my son.
+          After you gave this, you will get an info about to the character that he
+          is role playing.
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 3
+    - questID: ef12fc46-281f-4c04-9d64-30760935d94f
+      isCompleted: 0
+      isClaimed: 0
+      title: A Beauty in Darkness
+      description: Go and talk to Ivan Henares.
+      note: I can go and talk to Ivan Henares about Aglipay and Callao caves.
+      hint: 
+      dunongPointsRewards: 25
+      region: Cagayan Valley
+      regionNum: 2
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: Ivan Henares
+        items:
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Aglipay Cave Quirino
+          informationLink: Delivery Ink Informations/Aglipay Cave Quirino
+          imageLink: PCP/Aglipay Cave Quirino
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Callao Cave
+          informationLink: Delivery Ink Informations/Callao Cave
+          imageLink: PCP/Callao Cave
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 4
+    - questID: 3964c421-d2ce-40b4-a46e-cf1fe38a41a3
+      isCompleted: 0
+      isClaimed: 0
+      title: Looks like a Cigarette
+      description: Go and talk to Dale Abenjobar.
+      note: I can talk to Dale Abenjobar about this Marlboro Country
+      hint: 
+      dunongPointsRewards: 25
+      region: Cagayan Valley
+      regionNum: 2
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: Dale Abenjobar
+        items:
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Marlboro Country
+          informationLink: Delivery Ink Informations/Marlboro Country
+          imageLink: PCP/Marlboro Country
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 4
+    - questID: 3c5de689-92d7-470f-ae93-731476d5be1e
+      isCompleted: 0
+      isClaimed: 0
+      title: Strength of a Great Typhoon!
+      description: Read the info about Ivatan House at <b>School</b>.
+      note: Ivatan House is located at school.
+      hint: 
+      dunongPointsRewards: 15
+      region: Cagayan Valley
+      regionNum: 2
+      talkGoal:
+        isFinished: 0
+        npcName: Ivatan House
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: f6b7e94e-27a5-424b-9a8c-9515d2d0ae06
+      isCompleted: 0
+      isClaimed: 0
+      title: Flowers In Powers
+      description: Help BJ Pascual to get the flowers from a nearby flower shop.
+      note: I can approach BJ Pascual about Panagbenga Festival.
+      hint: 
+      dunongPointsRewards: 10
+      region: Cordillera Administrative Region
+      regionNum: 3
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 5bbcbadd-8b1c-482e-8f31-bc16cfd77a23
+        receiver: BJ Pascual
+        itemGivers:
+        - giverName: Flower Shop
+          message: Buy a Flower?
+          itemsToGive:
+          - itemName: Flower
+            quantity: 1
+            stackable: 0
+            originalQuantity: 1
+            titleOfInformation: Panagbenga Festival
+            informationLink: Delivery Ink Informations/Panagbenga Festival
+            imageLink: PCP/Panagbenga Festival
+          isItemsGiven: 0
+        msgRequest: Hi! I'm planning to give my friend a present when she got home.
+          Do you mind if you get me some flowers at nearby flower shop?
+        msgOfGiver: Buy a flower?
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 3
+    - questID: ad1c8f0a-4231-4767-a1fd-4afb893cfadd
+      isCompleted: 0
+      isClaimed: 0
+      title: Jam of Sweetness
+      description: Help Mang Rolando to get a strawberry jam from a nearby store.
+      note: I can approach Chef Rolando for the info about La Trinidad Strawberry
+        Farms.
+      hint: 
+      dunongPointsRewards: 10
+      region: Cordillera Administrative Region
+      regionNum: 3
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 0baaaef9-24f4-4cb8-8c53-738f946b88a5
+        receiver: Rolando Laudico
+        itemGivers:
+        - giverName: Strawberry Jam Shop
+          message: Buy Strawberry Jam?
+          itemsToGive:
+          - itemName: Strawberry Jam
+            quantity: 7
+            stackable: 0
+            originalQuantity: 7
+            titleOfInformation: La Trinidad Strawberry Farm
+            informationLink: Delivery Ink Informations/La Trinidad Strawberry Farm
+            imageLink: PCP/La Trinidad Strawberry Farm
+          isItemsGiven: 0
+        msgRequest: Hi! I'm planning to bake a unque bread for the miryenda menu
+          of the karinderya. Do you mind to buy me a strawberry jam at the local
+          strawberry jam store?
+        msgOfGiver: Buy a strawberry jam?
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 3
+    - questID: e20350b0-0d18-4a98-97e5-b807e23cae1f
+      isCompleted: 0
+      isClaimed: 0
+      title: A Home Full of Colors
+      description: Find a photo stand about colorful houses at school.
+      note: I can go to school to know the info about Sto Bosa.
+      hint: 
+      dunongPointsRewards: 15
+      region: Cordillera Administrative Region
+      regionNum: 3
+      talkGoal:
+        isFinished: 0
+        npcName: Colors of Stobosa
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: d3516ecc-91f0-42d6-8465-3bf4b3b178eb
+      isCompleted: 0
+      isClaimed: 0
+      title: A Stairs of Rice
+      description: Find a photo stand of Banaue Rice Terraces at school.
+      note: Picture of Banaue Rice Terraces at School.
+      hint: 
+      dunongPointsRewards: 15
+      region: Cordillera Administrative Region
+      regionNum: 3
+      talkGoal:
+        isFinished: 0
+        npcName: Banaue Rice Terraces
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 654fac77-4b40-4f4e-b324-48e0133f51bc
+      isCompleted: 0
+      isClaimed: 0
+      title: Mines View Park
+      description: Help Ivan Henares to give a rope to Dale Abenjobar.
+      note: I can talk to Dale Abenjobar about Mines View Park
+      hint: 
+      dunongPointsRewards: 25
+      region: Cordillera Administrative Region
+      regionNum: 3
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 4b189a7a-1138-41cb-9a1d-a790370940fc
+        deliveryMessage: Do you mind to give this rope to Dale?
+        giverName: Ivan Henares
+        receiverName: Dale Abenjobar
+        itemReceivedFromGiver: 0
+        informationLink: Delivery Ink Informations/Thank You Inks/Mines View Park
+        informationLinkWhenInfoHasBeenSeen: Delivery Ink Informations/Thank You Inks/Mines
+          View Park 2
+        wayOfInfo: Text
+        items:
+        - itemName: Rope
+          quantity: 1
+          stackable: 0
+          originalQuantity: 1
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 1
+    - questID: 5a8afaa2-4efe-469a-9ad2-8a07e579caa2
+      isCompleted: 0
+      isClaimed: 0
+      title: Blessed With a Best View!
+      description: Talk to Rix the Seminarian.
+      note: Rix the Seminarian has a knowledge about the Our Lady of Lourdes.
+      hint: 
+      dunongPointsRewards: 15
+      region: Cordillera Administrative Region
+      regionNum: 3
+      talkGoal:
+        isFinished: 0
+        npcName: Rix the Seminarian
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 0f23008e-53ea-416e-88c5-2222bdd2c87b
+      isCompleted: 0
+      isClaimed: 0
+      title: Looks like a Parol!
+      description: Go to <b>Museum</b> and see the info about an object that looks
+        like a lantern.
+      note: Go to museum and look for a parol
+      hint: 
+      dunongPointsRewards: 15
+      region: Central Luzon
+      regionNum: 4
+      talkGoal:
+        isFinished: 0
+        npcName: Giant Lantern
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 2d962ba1-6960-41c9-b5ca-ff5b544460e8
+      isCompleted: 0
+      isClaimed: 0
+      title: Ashes' Catastrophe!
+      description: Talk to someone who is good at Volcanoes.
+      note: Mae Jardaleza has a knowledge about Mt. Pinatubo.
+      hint: 
+      dunongPointsRewards: 15
+      region: Central Luzon
+      regionNum: 4
+      talkGoal:
+        isFinished: 0
+        npcName: Mae Jardaleza
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 62684aab-88d7-4243-9cb7-89f7793c9daa
+      isCompleted: 0
+      isClaimed: 0
+      title: Balloons and Carabaos!
+      description: Talk to someone who takes pictures about festivals.
+      note: I can reach BJ Pascual about Hot Air Balloon and Carabao Festival.
+      hint: 
+      dunongPointsRewards: 15
+      region: Central Luzon
+      regionNum: 4
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: BJ Pascual
+        items:
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Hot Air Balloon Festival
+          informationLink: Delivery Ink Informations/Hot Air Balloon Festival
+          imageLink: PCP/Hot Air Balloon Festival
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Carabao Festival
+          informationLink: Delivery Ink Informations/Carabao Festival
+          imageLink: PCP/Carabao Festival
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 4
+    - questID: b6391aa1-9fa8-4a45-b89d-0bb28a5b8fa0
+      isCompleted: 0
+      isClaimed: 0
+      title: The Del Pilars
+      description: Help Ramon Villegas to give the antique sword to Gregorio Zaide.
+      note: I can ask Gregorio Zaide to know about Del Pilars.
+      hint: 
+      dunongPointsRewards: 25
+      region: Central Luzon
+      regionNum: 4
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 27e565a1-1c31-4210-960d-be7888c5be74
+        deliveryMessage: Hello! I have a favor. Do you mind if you give this to Gregorio
+          Zaide?
+        giverName: Ramon Villegas
+        receiverName: Gregorio Zaide
+        itemReceivedFromGiver: 0
+        informationLink: Delivery Ink Informations/Del Pilar and Trecson
+        informationLinkWhenInfoHasBeenSeen: Delivery Ink Informations/Del Pilar and
+          Trecson 2
+        wayOfInfo: Text
+        items:
+        - itemName: Sword
+          quantity: 1
+          stackable: 0
+          originalQuantity: 1
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 1
+    - questID: 52b92612-1436-4368-ba27-dd7d91504ac6
+      isCompleted: 0
+      isClaimed: 0
+      title: Dinamulag Festival
+      description: Help Rolando to give 3 pcs of Mango to Ramon Villegas.
+      note: I can ask Ramon Villegas about Dinamulag Festival.
+      hint: 
+      dunongPointsRewards: 25
+      region: Central Luzon
+      regionNum: 4
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: c9b419eb-c39d-44f3-87d4-c8bf551b006a
+        deliveryMessage: Hello! Do you mind to give this to Ramon Villegas?
+        giverName: Rolando Laudico
+        receiverName: Ramon Villegas
+        itemReceivedFromGiver: 0
+        informationLink: Delivery Ink Informations/Thank You Inks/Dinamulag Festival
+        informationLinkWhenInfoHasBeenSeen: Delivery Ink Informations/Thank You Inks/Dinamulag
+          Festival 2
+        wayOfInfo: Not Text
+        items:
+        - itemName: Mango
+          quantity: 3
+          stackable: 0
+          originalQuantity: 3
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        itemsToShow:
+        - itemName: Dinamulag Festival
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Dinamulag Festival
+          informationLink: Delivery Ink Informations/Dinamulag Festival
+          imageLink: PCP/Dinamulag Festival
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 1
+    - questID: 1136c4eb-a25e-4f97-8a66-7061c0ee5beb
+      isCompleted: 0
+      isClaimed: 0
+      title: Looks like a Parol!
+      description: Go to <b>Museum</b> and see the info about an object that looks
+        like a lantern.
+      note: Go to museum and look for Giant Lantern
+      hint: 
+      dunongPointsRewards: 15
+      region: National Capital Region
+      regionNum: 5
+      talkGoal:
+        isFinished: 0
+        npcName: Giant Lantern
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 856622a9-25a1-4c82-b7f2-d4923c4c44c5
+      isCompleted: 0
+      isClaimed: 0
+      title: He Don't Need A Sword.
+      description: Go to <b>Museum</b> and see the info about Jose Rizal.
+      note: I can go to Jose Rizal's bust inside the museum.
+      hint: 
+      dunongPointsRewards: 15
+      region: CALABARZON
+      regionNum: 6
+      talkGoal:
+        isFinished: 0
+        npcName: Jose Rizal
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 00bfd10a-5db6-466d-b4df-44657b463db4
+      isCompleted: 0
+      isClaimed: 0
+      title: The Revolutionaries
+      description: Talk to Gregorio Zaide.
+      note: I can go to Gregorio to know about the revolutionaries.
+      hint: 
+      dunongPointsRewards: 15
+      region: CALABARZON
+      regionNum: 6
+      talkGoal:
+        isFinished: 0
+        npcName: Gregorio Zaide
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: e65a0c9a-0eec-4e1a-acd3-26e1ce9d81ba
+      isCompleted: 0
+      isClaimed: 0
+      title: Colorful Leaves!
+      description: Buy an unusual leaves at a nearby store for BJ Pascual and get
+        a sampaguita to Gregorio Zaide.
+      note: I can go to BJ Pascual to know what is Pahiyas Festival.
+      hint: 
+      dunongPointsRewards: 25
+      region: CALABARZON
+      regionNum: 6
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 00029581-215f-42b4-b4b0-215d9d7857a2
+        receiver: BJ Pascual
+        itemGivers:
+        - giverName: Store in Market
+          message: Buy Kiping?
+          itemsToGive:
+          - itemName: Kiping
+            quantity: 5
+            stackable: 0
+            originalQuantity: 5
+            titleOfInformation: Pahiyas Festival
+            informationLink: Delivery Ink Informations/Pahiyas Festival
+            imageLink: PCP/Pahiyas Festival
+          - itemName: None
+            quantity: 5
+            stackable: 0
+            originalQuantity: 5
+            titleOfInformation: Higantes Festival
+            informationLink: Delivery Ink Informations/Higantes Festival
+            imageLink: PCP/Higantes Festival
+          isItemsGiven: 0
+        - giverName: Gregorio Zaide
+          message: Get the Sampaguita?
+          itemsToGive:
+          - itemName: Sampaguita
+            quantity: 5
+            stackable: 0
+            originalQuantity: 5
+            titleOfInformation: Sampaguita Festival
+            informationLink: Delivery Ink Informations/Sampaguita Festival
+            imageLink: PCP/Sampaguita Festival
+          isItemsGiven: 0
+        msgRequest: Hello, do you mind to get me a kiping at a nearby market?
+        msgOfGiver: Buy a Kiping leaves?
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 3
+    - questID: 01c7d418-34b9-489f-b34f-7b93a5f696c8
+      isCompleted: 0
+      isClaimed: 0
+      title: A Great Caldera
+      description: Find the Taal Volcano info.
+      note: I can go to school to know about the Taal Volcano.
+      hint: 
+      dunongPointsRewards: 15
+      region: CALABARZON
+      regionNum: 6
+      talkGoal:
+        isFinished: 0
+        npcName: Taal Volcano
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: e8cc74ee-489b-49e7-94cd-f7269a56f0a8
+      isCompleted: 0
+      isClaimed: 0
+      title: Holy Tall
+      description: Find the inf about Kamay ni Jesus.
+      note: I can go to school to know about the Kamay ni Jesus.
+      hint: 
+      dunongPointsRewards: 15
+      region: CALABARZON
+      regionNum: 6
+      talkGoal:
+        isFinished: 0
+        npcName: Kamay ni Jesus
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 971f3680-2825-41ce-91e6-2b981c9704f8
+      isCompleted: 0
+      isClaimed: 0
+      title: Giant's Celebration
+      description: Find the info about Higantes Festival.
+      note: I can go to school to know about the Higantes Festival.
+      hint: 
+      dunongPointsRewards: 15
+      region: CALABARZON
+      regionNum: 6
+      talkGoal:
+        isFinished: 0
+        npcName: Higantes Festival
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: b01b9047-1645-4e10-86a0-62226cc01a3a
+      isCompleted: 0
+      isClaimed: 0
+      title: Aguinaldo Shrine
+      description: Go to school and search for Aguinaldo Shrine.
+      note: I can go to school to know about the Aguinaldo Shrine.
+      hint: 
+      dunongPointsRewards: 15
+      region: CALABARZON
+      regionNum: 6
+      talkGoal:
+        isFinished: 0
+        npcName: Aguinaldo Shrine
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: b938d4e0-8286-4a82-96f7-2741d5bcf870
+      isCompleted: 0
+      isClaimed: 0
+      title: Unusual Jar
+      description: Find a Jar that you can get an info.
+      note: I can go to museum to know about the Manunggul Jar.
+      hint: 
+      dunongPointsRewards: 15
+      region: MIMAROPA
+      regionNum: 7
+      talkGoal:
+        isFinished: 0
+        npcName: Manunggul Jar
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 106002d9-29e0-4cf3-8470-2fe7d8219aa4
+      isCompleted: 0
+      isClaimed: 0
+      title: Palawan Pearls
+      description: Find a Pearl inside the museum.
+      note: I can go to museum to know about the Palawan Pearl.
+      hint: 
+      dunongPointsRewards: 15
+      region: MIMAROPA
+      regionNum: 7
+      talkGoal:
+        isFinished: 0
+        npcName: Palawan Pearl
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 8b2a3a5e-138c-4669-856b-6c41f8f8845d
+      isCompleted: 0
+      isClaimed: 0
+      title: Chef's Request!
+      description: Help Mang Rolando to get a Banana at the nearby store.
+      note: I can go to Mang Rolando for Banana Festival info.
+      hint: You can buy the recipe to a nearby store with a <b>BLUE</b> roof.
+      dunongPointsRewards: 25
+      region: MIMAROPA
+      regionNum: 7
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: ff9d359b-25aa-4520-aad1-dd962550f7b6
+        receiver: Rolando Laudico
+        itemGivers:
+        - giverName: Store in Market
+          message: Buy 5pcs of Banana?
+          itemsToGive:
+          - itemName: Banana
+            quantity: 5
+            stackable: 0
+            originalQuantity: 5
+            titleOfInformation: Banana Festival
+            informationLink: Delivery Ink Informations/Banana Festival
+            imageLink: PCP/Banana Festival
+          isItemsGiven: 0
+        msgRequest: Hello, do you mind helping me to get my recipe to a market nearby?
+          The recipe that I needed is <b>Empanada</b> and <b>Longganisa</b>.
+        msgOfGiver: Buy Empanada and Longganisa?
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 3
+    - questID: 4c2b8780-8427-4fd4-9638-ed80d8d6dc6c
+      isCompleted: 0
+      isClaimed: 0
+      title: Moriones Festival
+      description: Find 4 manequin soldiers at <b>School</b>.
+      note: I can go to school to know about the Moriones Festival.
+      hint: 
+      dunongPointsRewards: 15
+      region: MIMAROPA
+      regionNum: 7
+      talkGoal:
+        isFinished: 0
+        npcName: Moriones Festival
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 76c2aad7-fa9b-4ba9-80fb-6ee0ec9e3915
+      isCompleted: 0
+      isClaimed: 0
+      title: Underground and Reefs
+      description: Help Rolando to give a banana to Zardo Domenios.
+      note: I can ask Zardo to know about Underground and Reefs.
+      hint: 
+      dunongPointsRewards: 25
+      region: MIMAROPA
+      regionNum: 7
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: fec776af-d567-4763-b495-542c52f7dbd2
+        deliveryMessage: Hey! Do you mind giving this to Zardo?
+        giverName: Rolando Laudico
+        receiverName: Zardo Domenios
+        itemReceivedFromGiver: 0
+        informationLink: Delivery Ink Informations/Thank You Inks/Underground River
+          and Reef
+        informationLinkWhenInfoHasBeenSeen: Delivery Ink Informations/Thank You Inks/Underground
+          River and Reef 2
+        wayOfInfo: Not Text
+        items:
+        - itemName: Banana
+          quantity: 3
+          stackable: 0
+          originalQuantity: 3
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        itemsToShow:
+        - itemName: Puerto Princessa Underground River
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Puerto Princessa Underground River
+          informationLink: Delivery Ink Informations/Puerto Princessa Underground
+            River
+          imageLink: PCP/Puerto Princessa Underground River
+        - itemName: Tubbataha Reef Natural Park
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Tubbataha Reef Natural ParK
+          informationLink: Delivery Ink Informations/Tubbataha Reef Natural Park
+          imageLink: PCP/Tubbataha Reef Natural Park
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 1
+    - questID: 6dc60c6a-cc9f-47c5-bd56-3b326194e20c
+      isCompleted: 0
+      isClaimed: 0
+      title: Cowboy Yarn?
+      description: BJ Pascual is requesting for the costume of her friend.
+      note: I can to BJ Pascual to know about Rodeo Festival
+      hint: 
+      dunongPointsRewards: 25
+      region: Bicol Region
+      regionNum: 8
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 12c16615-6ef2-4e0a-94d1-35a8ec9e5abb
+        receiver: BJ Pascual
+        itemGivers:
+        - giverName: Ramon Villegas
+          message: Get the Hat?
+          itemsToGive:
+          - itemName: Cowboy Hat
+            quantity: 1
+            stackable: 0
+            originalQuantity: 1
+            titleOfInformation: Rodeo Festival
+            informationLink: Delivery Ink Informations/Rodeo Festival
+            imageLink: PCP/Rodeo Festival
+          isItemsGiven: 0
+        msgRequest: Do you mind if you get the <b>cowboy hat</b> to Ramon Villegas?
+          My friend will use that as a costume at her school.
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 3
+    - questID: e831289a-f371-4941-b580-213c838eb98a
+      isCompleted: 0
+      isClaimed: 0
+      title: Cone of an Ice Cream
+      description: Learn about Mayon Volcano
+      note: I can get the info of Mayon Volcano at School
+      hint: 
+      dunongPointsRewards: 15
+      region: Bicol Region
+      regionNum: 8
+      talkGoal:
+        isFinished: 0
+        npcName: Mayon Volcano
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: a35dc559-74b9-4ef3-9221-c79167e6dff4
+      isCompleted: 0
+      isClaimed: 0
+      title: Butanding
+      description: Look for an object that looks like a fish.
+      note: I can go to school to know the info of Whale Shark
+      hint: 
+      dunongPointsRewards: 15
+      region: Bicol Region
+      regionNum: 8
+      talkGoal:
+        isFinished: 0
+        npcName: Sorsogon's Whale Shark
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: fc32586b-dd42-4585-8518-8ea2f58f01c9
+      isCompleted: 0
+      isClaimed: 0
+      title: Surfer Yarn?
+      description: Zardo Domenios want to surf. Help him to get the surfboard to
+        Dale Abenjobar.
+      note: I can to Zardo to know about CamSur Watersports Complex
+      hint: 
+      dunongPointsRewards: 25
+      region: Bicol Region
+      regionNum: 8
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 0e2f1778-dc7b-4223-a59f-5637827c1822
+        receiver: Zardo Domenios
+        itemGivers:
+        - giverName: Dale Abenjobar
+          message: Get the Surf board?
+          itemsToGive:
+          - itemName: Surfboard
+            quantity: 1
+            stackable: 0
+            originalQuantity: 1
+            titleOfInformation: Rodeo Festival
+            informationLink: Delivery Ink Informations/Camsur Watersports
+            imageLink: PCP/Camsur Watersports
+          isItemsGiven: 0
+        msgRequest: Do you mind if you get the surfboard to Ramon Villegas?
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 3
+    - questID: 6f1c37a3-44de-4435-b9f2-2ca7374b8397
+      isCompleted: 0
+      isClaimed: 0
+      title: BREAKING NEWS ALERT!
+      description: Go to Gregorio Zaide and know what's his request.
+      note: I can go to Gregorio to know about Graciano Lopez Jaena.
+      hint: 
+      dunongPointsRewards: 20
+      region: Western Visayas
+      regionNum: 9
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: c338d09b-3bf0-47d5-a6c8-375ee971f006
+        receiver: Gregorio Zaide
+        itemGivers:
+        - giverName: Ramon Villegas
+          message: Hello! Gregorio is asking for this. Thank you for helping me to
+            give this to him.
+          itemsToGive:
+          - itemName: Newspaper
+            quantity: 5
+            stackable: 0
+            originalQuantity: 5
+            titleOfInformation: Graciano Lopez Jaena
+            informationLink: Delivery Ink Informations/Graciano Lopez Jaena
+            imageLink: PCP/Graciano Lopez Jaena
+          - itemName: None
+            quantity: 0
+            stackable: 0
+            originalQuantity: 0
+            titleOfInformation: Teresa Magbanua
+            informationLink: Delivery Ink Informations/Teresa Magbanua
+            imageLink: PCP/Teresa Magbanua
+          isItemsGiven: 0
+        msgRequest: Do you mind if you get the newspaper to Ramon Villegas?
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 3
+    - questID: 7f2d928c-bc24-4ec3-9ad1-8552108b678a
+      isCompleted: 0
+      isClaimed: 0
+      title: Black is Beautiful!
+      description: Talk to <b>BJ Pascual</b>
+      note: I can talk to BJ Pascual for festivals that has a mask.
+      hint: 
+      dunongPointsRewards: 25
+      region: Western Visayas
+      regionNum: 9
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: BJ Pascual
+        items:
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Ati-Atihan
+          informationLink: Delivery Ink Informations/Ati-Atihan
+          imageLink: PCP/Ati-Atihan
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Dinagyang Festival
+          informationLink: Delivery Ink Informations/Dinagyang Festival
+          imageLink: PCP/Dinagyang Festival
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 4
+    - questID: b7d7466b-6bcf-4b58-a072-e90f3eaeaedb
+      isCompleted: 0
+      isClaimed: 0
+      title: Don't Hide the Smile
+      description: Find a mask to know the info about Masskara Festival.
+      note: I can go to museum to look at Mask for info about Masskara Festival.
+      hint: 
+      dunongPointsRewards: 15
+      region: Western Visayas
+      regionNum: 9
+      talkGoal:
+        isFinished: 0
+        npcName: Masskara Festival
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: a54374c6-bb1c-4a5f-9667-0a6ae2500ec0
+      isCompleted: 0
+      isClaimed: 0
+      title: Pure White!
+      description: Talk to <b>Ivan Henares</b>
+      note: I can talk to Ivan Henares for the info about Boracay.
+      hint: 
+      dunongPointsRewards: 25
+      region: Western Visayas
+      regionNum: 9
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: Ivan Henares
+        items:
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Boracay
+          informationLink: Delivery Ink Informations/Boracay
+          imageLink: PCP/Boracay
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 4
+    - questID: b725b0db-f244-449b-b428-8a8a9fbba3e3
+      isCompleted: 0
+      isClaimed: 0
+      title: Ancestral House
+      description: Ask to a person who is good to architecture.
+      note: I can go to School to know the info about Balay Negrese.
+      hint: 
+      dunongPointsRewards: 15
+      region: Western Visayas
+      regionNum: 9
+      talkGoal:
+        isFinished: 0
+        npcName: Mikaela Fudolig
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 896e91b4-0d00-48f2-9672-b3a34dde82f7
+      isCompleted: 0
+      isClaimed: 0
+      title: The First Battle
+      description: Go to Lapu-Lapu statue.
+      note: I can go to School to know the info about Lapu-Lapu.
+      hint: 
+      dunongPointsRewards: 15
+      region: Central Visayas
+      regionNum: 10
+      talkGoal:
+        isFinished: 0
+        npcName: Lapu-Lapu
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: fe6340ba-13ad-419e-89e5-d046f9d74b43
+      isCompleted: 0
+      isClaimed: 0
+      title: Another Younges Captain?!
+      description: Talk to someone who loves history specificaly about National Heroes.
+      note: I can go to School to know the info about Francisco Dagohoy.
+      hint: 
+      dunongPointsRewards: 5
+      region: Central Visayas
+      regionNum: 10
+      talkGoal:
+        isFinished: 0
+        npcName: Encarnacion Alzona
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 3207144c-1b4b-4b74-8491-9c674ddff56e
+      isCompleted: 0
+      isClaimed: 0
+      title: A Cup of Blood
+      description: Find a statue about Sandugo
+      note: I can go to School to know the info about Sandugo.
+      hint: Five men and two men are sitting.
+      dunongPointsRewards: 5
+      region: Central Visayas
+      regionNum: 10
+      talkGoal:
+        isFinished: 0
+        npcName: Sandugo
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 97352c3a-bfb4-4750-a1c5-d5dc899b5a32
+      isCompleted: 0
+      isClaimed: 0
+      title: Magellan's Cross
+      description: Find a cross inside the school event.
+      note: I can go to School to know the info about Sandugo.
+      hint: 
+      dunongPointsRewards: 5
+      region: Central Visayas
+      regionNum: 10
+      talkGoal:
+        isFinished: 0
+        npcName: Magellan's Cross
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 7ededb60-f0c8-42c6-900c-fb2b2b56c924
+      isCompleted: 0
+      isClaimed: 0
+      title: Mother of all Churches
+      description: Talk to someone who is know about churches.
+      note: "I can go to museum to know the info about The Bas\xEDlica Menor del
+        Santo Ni\xF1o de Ceb\xFA."
+      hint: 
+      dunongPointsRewards: 5
+      region: Central Visayas
+      regionNum: 10
+      talkGoal:
+        isFinished: 0
+        npcName: Rix the Seminarian
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: ea2e922b-de74-4a11-83eb-2eb0b979f71f
+      isCompleted: 0
+      isClaimed: 0
+      title: Chocolate Hills
+      description: Learn the info about Chocolate Hills.
+      note: I can go to School to know the info about Chocolate Hills.
+      hint: 
+      dunongPointsRewards: 5
+      region: Central Visayas
+      regionNum: 10
+      talkGoal:
+        isFinished: 0
+        npcName: Chocolate Hills
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 465966b2-4ccb-43fa-8e24-f4f924ab2fac
+      isCompleted: 0
+      isClaimed: 0
+      title: Celebration of Gratitude
+      description: Learn the info about Sinulog Festival at school.
+      note: I can go to School to know the info about Sinulog Festival.
+      hint: 
+      dunongPointsRewards: 5
+      region: Central Visayas
+      regionNum: 10
+      talkGoal:
+        isFinished: 0
+        npcName: Sinulog Festival
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 814213cd-0873-4ce8-b616-ef59f4e13ebb
       isCompleted: 0
       isClaimed: 0
       title: Connect with Others
@@ -92417,7 +96354,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 7c198f48-b382-45b9-96bf-1929d19661ad
+    - questID: 60fcf709-43b4-46b5-8992-01582d990087
       isCompleted: 0
       isClaimed: 0
       title: I Shall Return
@@ -92472,7 +96409,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: c5bf0547-edf5-48cf-9624-47b2aa893191
+    - questID: e6d80af4-b1c6-44db-af70-9e144993d5cf
       isCompleted: 0
       isClaimed: 0
       title: Boat Racing
@@ -92527,7 +96464,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 43491b20-c047-43dc-8486-4fb110d03737
+    - questID: 3450ec83-7ba6-4b0f-825b-736d5cb3c1ac
       isCompleted: 0
       isClaimed: 0
       title: Eeew! Is it cockroach?!
@@ -92582,13 +96519,13 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: b27391c6-1935-43e4-b16b-01b9529073c2
+    - questID: dad3d45f-5bc6-478a-af98-62cfffab11fd
       isCompleted: 0
       isClaimed: 0
       title: Got Exiled
       description: Learn the info about Dapitan Shrine.
       note: I can go to school to know the info about Dapitan Shrine.
-      hint: It is one of the photo displayed in school.
+      hint: It is one of the photo stand displayed in school.
       dunongPointsRewards: 15
       region: Zamboanga Peninsula
       regionNum: 12
@@ -92637,13 +96574,13 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 0366d1ee-49ab-4659-99c5-21d3544d3295
+    - questID: 172cee30-f6a3-4a44-983b-86814660b01b
       isCompleted: 0
       isClaimed: 0
-      title: Got Exiled
+      title: A Fortress
       description: Learn the info about Fort Pillar.
       note: I can go to school to know the info about Fort Pillar.
-      hint: It is one of the photo displayed in school.
+      hint: It is one of the photo stand displayed in school.
       dunongPointsRewards: 15
       region: Zamboanga Peninsula
       regionNum: 12
@@ -92692,7 +96629,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: e34f25fc-0f77-4479-9e29-8bd5980370d3
+    - questID: 64cafa4a-3995-4dc9-ab93-c7bc79b9af08
       isCompleted: 0
       isClaimed: 0
       title: Christmas is near!
@@ -92747,7 +96684,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: e8e28559-0e89-4852-94c4-d5d0fa2cc10c
+    - questID: 78353043-5a4f-4bc3-8870-9c265434f1de
       isCompleted: 0
       isClaimed: 0
       title: Rafting!
@@ -92802,13 +96739,13 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 993ae9f3-1bbb-4b55-bf0e-c9f79572361b
+    - questID: 41d3adf2-01e1-4a22-bd23-26738a027564
       isCompleted: 0
       isClaimed: 0
-      title: Rafting!
+      title: The Vanished!
       description: Find a cross that looks like sits at the ocean.
       note: I can go to school to know the info about Sunken Cemetery.
-      hint: A cross and has that looks like a tomb.
+      hint: A cross that sits to looks like a tomb.
       dunongPointsRewards: 15
       region: Northern Mindanao
       regionNum: 13
@@ -92857,19 +96794,20 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 1968670e-196e-432e-b99d-b17673ad48b1
+    - questID: 65850e22-deb2-4114-9d82-0739412e3d48
       isCompleted: 0
       isClaimed: 0
       title: Like a Stairway to Heaven!
-      description: Find a cross that looks like sits at the ocean.
-      note: I can go to school to know the info about Sunken Cemetery.
-      hint: A cross and has that looks like a tomb.
+      description: Find a statue that has a <b>two rays</b> and the color of two
+        rays is <b>Blue and Red</b>.
+      note: I can go to school to know the info about Divine Mercy Shrine.
+      hint: 
       dunongPointsRewards: 15
       region: Northern Mindanao
       regionNum: 13
       talkGoal:
         isFinished: 0
-        npcName: Sunken Cemetery
+        npcName: Divine Mercy Shrine
       deliveryGoal:
         isFinished: 0
         deliverGoalId: 
@@ -92912,7 +96850,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: ea7ca712-f607-46bf-a31c-eb7f356e0fa8
+    - questID: 70fadc49-806b-4297-8b81-75c6649eab3c
       isCompleted: 0
       isClaimed: 0
       title: Twins!
@@ -92967,7 +96905,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: e2a3064b-b53f-4fc2-b629-913daeed0f40
+    - questID: 3af545a2-487e-4b48-b94b-3da97ca52ef6
       isCompleted: 0
       isClaimed: 0
       title: Highest Peak
@@ -93022,7 +96960,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 21d9a1c4-286b-4631-b0e2-048837ac74b1
+    - questID: 1648a580-cc74-4da5-af1c-b8770614bd8f
       isCompleted: 0
       isClaimed: 0
       title: A Great Eagle
@@ -93077,7 +97015,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: f95ed638-abd6-4c8f-88f5-d8fc209cb8d2
+    - questID: 12e388c9-182b-4a1c-9748-8e4a74f6c6c1
       isCompleted: 0
       isClaimed: 0
       title: All About Gratitude
@@ -93132,10 +97070,66 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 715ff402-8890-49a8-b02c-291311aadf54
+    - questID: 093b9289-7fcb-47ac-910a-7a38a6841b21
       isCompleted: 0
       isClaimed: 0
-      title: Tuna
+      title: Wild Beasts
+      description: Find a crocodile replica to know the info about Davao's Crododile
+        Park.
+      note: I can know the info about Crocodile's Park from museum.
+      hint: 
+      dunongPointsRewards: 15
+      region: Davao Region
+      regionNum: 14
+      talkGoal:
+        isFinished: 0
+        npcName: Davao Crocodile Park
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: b3c6cd5e-6da8-4231-a16b-c68a39eea5cd
+      isCompleted: 0
+      isClaimed: 0
+      title: Century Tuna
       description: Help Mang Rolando to get his Tuna to a market nearby.
       note: I can recap the info about Tuna Fesival to Chef Rolando.
       hint: 
@@ -93164,7 +97158,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: f2add1b1-d1bf-4e22-9c2f-2ac17ddd5317
+        requestGoalID: c1f8c3ab-c9b6-482c-a0a7-e0ac8df7407d
         receiver: Rolando Laudico
         itemGivers:
         - giverName: Store in Market
@@ -93173,7 +97167,7 @@ MonoBehaviour:
           - itemName: Tuna
             quantity: 1
             stackable: 0
-            originalQuantity: 0
+            originalQuantity: 1
             titleOfInformation: Tuna Festival
             informationLink: Delivery Ink Informations/Tuna Festival
             imageLink: PCP/Tuna Festival
@@ -93199,7 +97193,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 3
-    - questID: b1a4563f-f8b5-4300-bab6-a6a6e2fd2fc6
+    - questID: 2b93fa42-f40d-46a2-a450-d3b331aacfab
       isCompleted: 0
       isClaimed: 0
       title: Lake Sebu
@@ -93214,7 +97208,7 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: c1d01212-9f79-452f-8ba7-487d7e386920
+        deliverGoalId: 2797911c-4c74-4762-a43b-8aa1fd655f2f
         deliveryMessage: Hello. I have a lotus here and Mae Jardaleza is requesting
           to have one. Do you mind to give it to her?
         giverName: Zardo Domenios
@@ -93228,7 +97222,7 @@ MonoBehaviour:
         - itemName: Lotus
           quantity: 1
           stackable: 0
-          originalQuantity: 0
+          originalQuantity: 1
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -93263,7 +97257,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 1
-    - questID: 9ca4046e-8195-4df1-9aa6-6b654528753c
+    - questID: 0eb1e468-5bc1-4625-bc0f-c5902ba51a57
       isCompleted: 0
       isClaimed: 0
       title: Grand Mosque
@@ -93318,10 +97312,10 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 7df2764d-db72-4849-a808-03f080658b26
+    - questID: 9954a1cf-540b-4653-be10-9fcf8c1f5728
       isCompleted: 0
       isClaimed: 0
-      title: Grand Mosque
+      title: Sky Is The Limit
       description: Talk to a person who loves birds to know the info about a bird
         sanctuary here in the Philippines.
       note: I can know the info about Bird Sanctuary to Elly.
@@ -93374,7 +97368,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 0e5ad5d9-fd12-4f5b-bf3a-06572d2b96ab
+    - questID: 8255255c-a5c0-402a-9fb9-1b620b023a2a
       isCompleted: 0
       isClaimed: 0
       title: Sultan of Swing
@@ -93387,6 +97381,250 @@ MonoBehaviour:
       talkGoal:
         isFinished: 0
         npcName: Gregorio Zaide
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 5fe19c21-b24d-48c9-b49e-e4f8a49c0358
+      isCompleted: 0
+      isClaimed: 0
+      title: A Wildlife Protector
+      description: Help Ramon Villegas to give a <b>DUCK Figurine</b> to someone
+        who loves birds.
+      note: I can talk to Encarnacion Alzona about Agusan Marsh Wildlife Sanctuary.
+      hint: 
+      dunongPointsRewards: 25
+      region: Caraga Region
+      regionNum: 16
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: fe88469e-8a62-4477-bd4a-e4ee46f02c6c
+        deliveryMessage: Hey! Encarnacion or Elly loves birds. Do you mind to give
+          this Duck Figurine to her?
+        giverName: Ramon Villegas
+        receiverName: Encarnacion Alzona
+        itemReceivedFromGiver: 0
+        informationLink: Delivery Ink Informations/Thank You Inks/Agusan Marsh
+        informationLinkWhenInfoHasBeenSeen: Delivery Ink Informations/Thank You Inks/Agusan
+          Marsh 2
+        wayOfInfo: Text
+        items:
+        - itemName: Duck Figurine
+          quantity: 1
+          stackable: 0
+          originalQuantity: 1
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 1
+    - questID: 0b73ac32-41ea-4ead-a591-2b9b8a450b3f
+      isCompleted: 0
+      isClaimed: 0
+      title: Enchanted to Meet You
+      description: Talk to someone who loves oceans or water sceneries.
+      note: I can talk to Zardo Domenios for Enchanted River and Tinuy-an Falls.
+      hint: 
+      dunongPointsRewards: 25
+      region: Caraga Region
+      regionNum: 16
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: Zardo Domenios
+        items:
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Enchanted River
+          informationLink: Delivery Ink Informations/Enchanted River
+          imageLink: PCP/Enchanted River
+        - itemName: None
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: Tinuy-an Falls
+          informationLink: Delivery Ink Informations/Tinuy-an Falls
+          imageLink: PCP/Tinuy-an Falls
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 4
+    - questID: 37ae7342-2547-49cd-aed5-87c01a302d1a
+      isCompleted: 0
+      isClaimed: 0
+      title: Unknown Depth
+      description: Talk to someone who loves to surf.
+      note: I can know the info about Margues Blue Lagoon from Zardo Domenios.
+      hint: 
+      dunongPointsRewards: 15
+      region: BARMM
+      regionNum: 17
+      talkGoal:
+        isFinished: 0
+        npcName: Zardo Domenios
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: aab75893-2a20-4d20-a066-96ddfc9f5bab
+      isCompleted: 0
+      isClaimed: 0
+      title: Holy Pink
+      description: Talk to someone who is good at architecture.
+      note: I can know the info about Pink Mosque to Mikaela Fudolig.
+      hint: 
+      dunongPointsRewards: 15
+      region: BARMM
+      regionNum: 17
+      talkGoal:
+        isFinished: 0
+        npcName: Mikaela Fudolig
       deliveryGoal:
         isFinished: 0
         deliverGoalId: 
@@ -93502,10 +97740,12 @@ MonoBehaviour:
       m_IsAllEstablishmentsOpen: 1
       m_DayEvent: 1
       m_NoOfSecondsPerTwoAndHalfMinutes: 1
-      m_NoOfSecondsPerMinute: 30
+      m_NoOfSecondsPerMinute: 10
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   slots:
     ids: []
   confirmButton: {fileID: 0}
@@ -95882,7 +100122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5785031963343729124, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_Size.y
-      value: 0.29986155
+      value: 0.4386693
       objectReference: {fileID: 0}
     - target: {fileID: 5785031963343729124, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_Offset.x
@@ -95890,7 +100130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5785031963343729124, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_Offset.y
-      value: -0.09724191
+      value: -0.027838036
       objectReference: {fileID: 0}
     - target: {fileID: 5785031963343729124, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -95917,8 +100157,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2570
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1154
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964498783709, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -95927,6 +100179,10 @@ PrefabInstance:
     - target: {fileID: 5785031964829394273, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_text
       value: kkk flag
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -96304,8 +100560,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 54cdadcb84abaa54b8339a2f20eb4e07, type: 3}
     - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2580
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1171
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964498783709, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -96322,6 +100590,10 @@ PrefabInstance:
     - target: {fileID: 5785031964829394273, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_text
       value: giant lantern
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -96476,7 +100748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6, y: 190}
+  m_AnchoredPosition: {x: 6, y: 26}
   m_SizeDelta: {x: 236.34, y: 84.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1977439353
@@ -101150,7 +105422,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.164251, y: 1}
+    m_SensorSize: {x: 1.9912536, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -101167,7 +105439,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138169911}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.59, y: -20.38, z: -10}
+  m_LocalPosition: {x: 70.14, y: -9.22, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -101307,8 +105579,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 9c4b3210799d9b84b8aba9a47ce85d19, type: 3}
     - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276803, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2577
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964399276812, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1188
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964498783709, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_IsActive
@@ -101317,6 +105601,10 @@ PrefabInstance:
     - target: {fileID: 5785031964498783709, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5785031964829394279, guid: 71499787920ea664d95e7274a5e45d8f, type: 3}
       propertyPath: m_StaticEditorFlags

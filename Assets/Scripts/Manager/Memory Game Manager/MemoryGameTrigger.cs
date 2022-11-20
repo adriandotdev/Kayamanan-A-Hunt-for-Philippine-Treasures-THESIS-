@@ -11,12 +11,25 @@ public class MemoryGameTrigger : MonoBehaviour
 
     private void Start()
     {
-            
+        if (gameObject.name != "1")
+        {
+            if (DataPersistenceManager.instance.playerData.memoryGameData.memoryGameProgress[int.Parse(gameObject.name) - 1])
+            {
+                transform.GetChild(0).gameObject.SetActive(true);
+                transform.GetChild(1).gameObject.SetActive(false);
+            }
+        }
     }
-
     public void StartMemoryGame()
     {
-        MemoryGameManager.instance?.StartMemoryGame(this.buttonImages, this.maxTimeForShowingCards, this.maxTimerValue);
-        SceneManager.LoadScene("Memory Game");
+        if (DataPersistenceManager.instance != null)
+        {
+            if (DataPersistenceManager.instance.playerData.memoryGameData.memoryGameProgress[int.Parse(gameObject.name) - 1])
+            {
+                MemoryGameManager.instance.indexOfNextMemoryGameToBeOpen = int.Parse(gameObject.name);
+                MemoryGameManager.instance?.StartMemoryGame(this.buttonImages, this.maxTimeForShowingCards, this.maxTimerValue);
+                TransitionLoader.instance?.StartAnimation("Memory Game");
+            }
+        }
     }
 }

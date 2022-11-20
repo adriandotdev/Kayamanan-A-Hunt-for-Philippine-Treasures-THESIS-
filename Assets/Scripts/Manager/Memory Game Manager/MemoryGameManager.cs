@@ -13,6 +13,7 @@ public class MemoryGameManager : MonoBehaviour
     public GameObject puzzleButton; // Puzzle Prefab
     public Sprite notFlippedImage; // Image of the button when it is not clicked.
     public Sprite[] buttonImages; // Images that is going to be used for memory game.
+    public int indexOfNextMemoryGameToBeOpen;
 
     public bool firstGuess;
     public bool secondGuess;
@@ -28,7 +29,8 @@ public class MemoryGameManager : MonoBehaviour
 
     // Out of Time Panel UI
     private Button replayButton;
-    private Button exitButton;
+    private Button closeButton;
+    private Button mainCloseButton;
 
     // Timer UI
     public Image timerImage;
@@ -38,6 +40,8 @@ public class MemoryGameManager : MonoBehaviour
     public float maxTimerValue;
     private float timerValue; // need to set by memory trigger script.
     private float showingCardsTimer;
+
+    public bool isGameOverPanelNotShowing;
 
     private void Awake()
     {
@@ -79,6 +83,7 @@ public class MemoryGameManager : MonoBehaviour
         this.maxTimerValue = maxTimerValue;
         this.timerValue = this.maxTimerValue;
         this.showingCardsTimer = this.maxTimeForShowingCards;
+        this.isGameOverPanelNotShowing = true;
     }
 
     /// <summary>
@@ -105,8 +110,12 @@ public class MemoryGameManager : MonoBehaviour
             /**If the player is run out of time, then we show the Out of time panel. */
             else if (this.timerValue <= 0f && !this.IsAllFlipped())
             {
-                TweeningManager.instance?.ShowOutOfTimePanel();
-                return;
+                if (this.isGameOverPanelNotShowing)
+                {
+                    TweeningManager.instance?.ShowOutOfTimePanel();
+                    this.isGameOverPanelNotShowing = false;
+                    return;
+                }
             }
         }
         // This will run if the cards is still showing to be memorize by the player.
@@ -136,6 +145,8 @@ public class MemoryGameManager : MonoBehaviour
             this.timerImage = GameObject.Find("Timer Image").GetComponent<Image>();
             this.timerText = GameObject.Find("Timer Text").GetComponent<TextMeshProUGUI>();
             this.replayButton = GameObject.Find("Replay Button").GetComponent<Button>();
+            this.closeButton = GameObject.Find("Close Button").GetComponent<Button>();
+            this.mainCloseButton = GameObject.Find("Main Close Button").GetComponent<Button>();
             this.timerText.text = ((int)this.timerValue).ToString();
 
             this.AddAllButtons();
@@ -146,11 +157,18 @@ public class MemoryGameManager : MonoBehaviour
             {
                 SceneManager.LoadScene("Memory Game");
             });
+
+            this.closeButton.onClick.AddListener(() => print("CLOSING FROM GAME OVER PANEL"));
+
+            this.mainCloseButton.onClick.AddListener(() => {
+                TransitionLoader.instance.StartAnimation("Memory Game UI");
+            });
         }
     }
 
     public void Reset()
     {
+        StopAllCoroutines();
         this.isShowingAllCards = true;
         this.timerValue = this.maxTimerValue;
         this.showingCardsTimer = this.maxTimeForShowingCards;
@@ -182,15 +200,16 @@ public class MemoryGameManager : MonoBehaviour
          * </summary> 
          */
         GameObject memoryGameBTN = null;
-        for (int i = 0; i < (4 * 2); i++)
+        for (int i = 0; i < (this.buttonImages.Length * 2); i++)
         {
-            memoryGameBTN = Instantiate(this.puzzleButton, this.puzzleContainer, false);
+            memoryGameBTN = Instantiate(this.puzzleButton, this.puzzleContainer, false); // INSTANTIATE WITH A PARENT TO 'puzzleContainer'.
             memoryGameBTN.GetComponent<Image>().sprite = this.notFlippedImage;
             memoryGameBTN.GetComponent<FlippedScript>().IsFlipped = false;
         }
 
-        int index = 0;
-        int j = 0;
+        int index = 0; // ang index nito ay taga track lang ng sa length / 2 na value
+        int j = 0; // etong index na ito ay taga track sa total items nung sa images.
+
         foreach (Transform transform in this.puzzleContainer)
         {
             // We need to check if the index is equal to half of 'buttonsContainer' number of childs then we set it again to 0.
@@ -238,15 +257,18 @@ public class MemoryGameManager : MonoBehaviour
 
         this.isShowingAllCards = false;
 
-        foreach (Transform transform in this.puzzleContainer)
+        if (this.puzzleContainer != null)
         {
-            transform.GetComponent<Image>().sprite = this.notFlippedImage;
-
-            // Add events to each buttons.
-            transform.GetComponent<Button>().onClick.AddListener(() =>
+            foreach (Transform transform in this.puzzleContainer)
             {
-                this.CheckImage(transform);
-            });
+                transform.GetComponent<Image>().sprite = this.notFlippedImage;
+
+                // Add events to each buttons.
+                transform.GetComponent<Button>().onClick.AddListener(() =>
+                {
+                    this.CheckImage(transform);
+                });
+            }
         }
     }
 
@@ -319,7 +341,12 @@ public class MemoryGameManager : MonoBehaviour
                         // If all the cards are flipped.
                         if (IsAllFlipped())
                         {
-                            print("IS ALL FLIPPED");
+                            print("WINNER");
+                            if (DataPersistenceManager.instance != null)
+                            {
+                                DataPersistenceManager.instance.playerData.memoryGameData.memoryGameProgress[this.indexOfNextMemoryGameToBeOpen] = true;
+                                TweeningManager.instance?.ShowWinnerUIMemoryGame();
+                            }
                         }
                         this.firstGuess = false;
                         this.secondGuess = false;
@@ -339,6 +366,11 @@ public class MemoryGameManager : MonoBehaviour
         }
     }
 
+    /**
+     *<summary>
+     *  Ang function na ito ay ifliflip ang card na isa lang kapag si player ay iniwan ang card na naka select mag isa.
+     *</summary> 
+     */
     IEnumerator FlipCard(Transform transform)
     {
         yield return new WaitForSeconds(1.5f);

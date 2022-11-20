@@ -11,6 +11,7 @@ public class SchoolEventIntroduction : MonoBehaviour
     public string[] introductions;
     [TextArea]
     public string[] winnerGame;
+
     // Needed UI
     public Transform schoolEventTutorialPanel;
     public Transform man;
@@ -55,8 +56,24 @@ public class SchoolEventIntroduction : MonoBehaviour
             dialogueText.text = introductions[dialogueIndex];
 
             nextBtn.onClick.AddListener(NextDialogue);
+        }
+        else if (DataPersistenceManager.instance.playerData.currentQuests.Count < 1)
+        {
+            this.InitializeNotificationComponent();
 
-            
+            dialogueText.text = "Hello there! <b>You have an enough dunong points</b>. You can now take an assessment.";
+
+            man.GetComponent<Image>().sprite = happyMan;
+
+            nextBtn.onClick.AddListener(() =>
+            {
+                LeanTween.moveLocalX(man.gameObject, -Screen.width, .3f)
+                .setEaseInBounce();
+
+                LeanTween.scale(schoolEventTutorialPanel.gameObject, Vector2.zero, .2f)
+                        .setEaseSpring();
+                this.ShowUIElements(true);
+            });
         }
         else if (DataPersistenceManager.instance.playerData.isQuestReset)
         {
@@ -74,9 +91,9 @@ public class SchoolEventIntroduction : MonoBehaviour
                 LeanTween.scale(schoolEventTutorialPanel.gameObject, Vector2.zero, .2f)
                         .setEaseSpring();
                 this.ShowUIElements(true);
-            });
 
-            DataPersistenceManager.instance.playerData.isQuestReset = false;
+                DataPersistenceManager.instance.playerData.isQuestReset = false;
+            });
         }
         else if (DataPersistenceManager.instance.playerData.hasNewOpenRegion)
         {
@@ -84,7 +101,7 @@ public class SchoolEventIntroduction : MonoBehaviour
 
             man.GetComponent<Image>().sprite = happyMan;
 
-            dialogueText.text = "Congratulations! You've opened a new region!";
+            dialogueText.text = "Congratulations! You've opened a new region! Check your new <b>QUESTS</b> that will help you to ace the assessment.";
 
             nextBtn.onClick.AddListener(() =>
             {
@@ -94,9 +111,9 @@ public class SchoolEventIntroduction : MonoBehaviour
                 LeanTween.scale(schoolEventTutorialPanel.gameObject, Vector2.zero, .2f)
                         .setEaseSpring();
                 this.ShowUIElements(true);
-            });
 
-            DataPersistenceManager.instance.playerData.hasNewOpenRegion = false; ;
+                DataPersistenceManager.instance.playerData.hasNewOpenRegion = false; ;
+            });
         }
     }
 

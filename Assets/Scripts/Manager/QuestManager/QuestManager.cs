@@ -40,6 +40,8 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     // Buttons for Showing Icons
     public Transform notesIcon;
 
+    public TextMeshProUGUI questDoneNoteInPanel;
+
     private void Awake()
     {
         if (instance == null)
@@ -166,7 +168,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             this.questAlertBox = GameObject.Find("Alert Box");
             this.plainAlertBox = GameObject.Find("Plain Alert Box");
             this.notesIcon = GameObject.Find("Notes Button").transform;
-
+            this.questDoneNoteInPanel = GameObject.Find("Completed QUEST NOTE").GetComponent<TextMeshProUGUI>();
             // Add event to pending btn. IT IS LOCATED INSIDE THE QUEST PANEL.
             pendingBtn.onClick.AddListener(() =>
             {
@@ -217,12 +219,23 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 fixedJoystick.SetActive(false);
                 houseCanvasGroup.interactable = false;
                 houseCanvasGroup.blocksRaycasts = false;
+
+                if (DataPersistenceManager.instance.playerData.currentQuests.Count < 1)
+                {
+                    this.questDoneNoteInPanel.gameObject.SetActive(true);
+                }
+                else
+                {
+                    this.questDoneNoteInPanel.gameObject.SetActive(false);
+                }
             });
 
             this.ChangeButtonColor(pendingBtn, completedBtn);
             this.questAlertBox.transform.localScale = Vector2.zero;
             this.plainAlertBox.transform.localScale = Vector2.zero;
             questPanel.transform.localScale = Vector2.zero;
+
+
         }
         catch (System.Exception e) { Debug.Log(e.Message); }
     }
@@ -564,8 +577,11 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                         GameObject giver = GameObject.Find(itemGiver.giverName);
 
                         if (giver.tag == "Store")
+                        {
                             giver.transform.GetChild(2).GetComponent<Light2D>().enabled = true;
-                            
+                            giver.transform.GetChild(2).GetComponent<BuyTrigger>().requestQuest = questCopy;
+                            giver.transform.GetChild(2).GetComponent<BuyTrigger>().itemGiver = itemGiver;
+                        }
                         giver.GetComponent<RequestGiver>().requestQuest = questCopy;
                         giver.GetComponent<RequestGiver>().itemGiver = itemGiver;
                     }
@@ -730,6 +746,10 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 
                 if (this.CheckIfPreQuestsDone() == true)
                 {
+                    if (DataPersistenceManager.instance.playerData.isPreQuestIntroductionDone == false)
+                    {
+                        OnAllQuestCompleted?.Invoke("<b>Pre-Quest is done</b>. You can check now the new quests for <b>Ilocos Region</b>.");
+                    }
                     DataPersistenceManager.instance.playerData.isPreQuestIntroductionDone = true;
                     this.GetListOfQuests();
                     this.SetupScriptsForRequestQuest();
@@ -904,6 +924,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     public void ResetAllCompletedQuests(string regionName)
     {
         DataPersistenceManager.instance.playerData.isQuestReset = true;
+        DataPersistenceManager.instance.playerData.questNewIcon = true;
 
         // Add all the completed quests to the current quest based on region
         foreach (Quest quest in DataPersistenceManager.instance.playerData.completedQuests)

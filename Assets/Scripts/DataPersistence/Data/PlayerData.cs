@@ -48,6 +48,7 @@ public class PlayerData
 
     public Inventory inventory;
     public PlayerTime playerTime;
+    public MemoryGameData memoryGameData;
 
     // LIST OF REGIONS FOR LUZON
     const string ILOCOS_REGION = "Ilocos Region";
@@ -118,6 +119,7 @@ public class PlayerData
         this.notesInfos = new List<Quest>();
         this.inventory = new Inventory();
         this.playerTime = new PlayerTime();
+        this.memoryGameData = new MemoryGameData();
 
         this.AddRegionsForLuzon(); 
         this.AddRegionsForVisayas();
@@ -1303,6 +1305,7 @@ public class Notebook
         this.collectibles.Add(new Collectible("Kapre", GENKNOW_FILEPATH + "Kapre", GENERAL_KNOWLEDGE, MINDANAO, DAVAO_REGION));
 
         // SOCCSARGEN (Region 12)
+        this.collectibles.Add(new Collectible("Sultan Kudarat", HEROES_FILEPATH + "Sultan Kudarat", HEROES, MINDANAO, SOCCSKSARGEN));
         this.collectibles.Add(new Collectible("Manananggal", GENKNOW_FILEPATH + "Manananggal", GENERAL_KNOWLEDGE, MINDANAO, SOCCSKSARGEN));
 
         // CARAGA (Region 13)
@@ -1555,5 +1558,23 @@ public class NPC_INFO
         copy.yPos = this.yPos;
 
         return copy;
+    }
+}
+
+[System.Serializable]
+public class MemoryGameData
+{
+    public bool[] memoryGameProgress;
+
+    public MemoryGameData()
+    {
+        this.memoryGameProgress = new bool[17];
+
+        this.memoryGameProgress[0] = true;
+
+        for(int i = 1; i < this.memoryGameProgress.Length; i++)
+        {
+            this.memoryGameProgress[i] = false;
+        }
     }
 }

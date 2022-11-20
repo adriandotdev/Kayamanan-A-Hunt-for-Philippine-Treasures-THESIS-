@@ -25,6 +25,7 @@ public class TweeningManager : MonoBehaviour
 
     [Header("Memory Game Run Out Of Time Panel")]
     RectTransform outOfTimePanel;
+    RectTransform winnerMGPanel;
 
     private void Awake()
     {
@@ -81,6 +82,9 @@ public class TweeningManager : MonoBehaviour
         {
             this.outOfTimePanel = GameObject.Find("Out of Time").GetComponent<RectTransform>();
             this.outOfTimePanel.localScale = Vector2.zero;
+
+            this.winnerMGPanel = GameObject.Find("Winner UI").GetComponent<RectTransform>();
+            this.winnerMGPanel.localScale = Vector2.zero;
         }
     }
 
@@ -116,7 +120,23 @@ public class TweeningManager : MonoBehaviour
     public void ShowOutOfTimePanel()
     {
         LeanTween.scale(this.outOfTimePanel.gameObject, Vector2.one, .2f)
-            .setEaseSpring();
+            .setEaseSpring()
+            .setOnComplete(() =>
+            {
+                LeanTween.rotateZ(this.outOfTimePanel.transform.GetChild(0).gameObject, 180f, 3)
+                  .setLoopPingPong();
+            });
+    }
+
+    public void ShowWinnerUIMemoryGame()
+    {
+        LeanTween.scale(this.winnerMGPanel.gameObject, Vector2.one, .2f)
+           .setEaseSpring()
+           .setOnComplete(() =>
+           {
+               LeanTween.rotateZ(this.winnerMGPanel.transform.GetChild(0).gameObject, 180f, 3)
+               .setLoopPingPong();
+           });
     }
 
     public void OpenScorePanel(int noOfStars, Action ShowRewardsScene)

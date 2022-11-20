@@ -88,6 +88,8 @@ public class DialogueTrigger : MonoBehaviour
                         {
                             DataPersistenceManager.instance.playerData.isPreQuestIntroductionDone = true;
                             QuestManager.instance?.GetListOfQuests();
+                            QuestManager.instance?.SetupShowPhotoAlbumQuest();
+                            QuestManager.instance?.SetupScriptsForDeliveryQuestToNPCs();
                             QuestManager.instance?.SetupScriptsForRequestQuest();
 
                             QuestManager.OnAllQuestCompleted?.Invoke("Pre-Quest is done. You can check now the new quests for Ilocos Region"); // Show the quest completed panel.
