@@ -312,7 +312,7 @@ MonoBehaviour:
     notesNewIcon: 0
     achievementsNewIcon: 0
     name: Nadzkie
-    gender: female
+    gender: male
     dunongPoints: 0
     requiredDunongPointsToPlay: 25
     remainingTime: 18000
@@ -742,12 +742,14 @@ MonoBehaviour:
           - itemName: Empanada
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Empanada Festival
             informationLink: Delivery Ink Informations/Empanada Festival
             imageLink: PCP/Empanada Festival
           - itemName: Longganisa
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Longganisa Festival
             informationLink: Delivery Ink Informations/Longganisa Festival
             imageLink: PCP/Longganisa Festival
@@ -766,6 +768,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -839,6 +842,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   slots:
     ids: []
   confirmButton: {fileID: 0}
@@ -997,8 +1002,6 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -6968587030945704006, guid: edacb39917b1eb14ea96517f29ae26f6, type: 2}
     value: {fileID: 1375914302}
-  - key: {fileID: 3944468716486923595, guid: edacb39917b1eb14ea96517f29ae26f6, type: 2}
-    value: {fileID: 1534293828}
   - key: {fileID: 2530603814696838326, guid: edacb39917b1eb14ea96517f29ae26f6, type: 2}
     value: {fileID: 1534293832}
   - key: {fileID: 3164804257589245825, guid: edacb39917b1eb14ea96517f29ae26f6, type: 2}
@@ -1834,7 +1837,7 @@ MonoBehaviour:
     notesNewIcon: 0
     achievementsNewIcon: 0
     name: 
-    gender: female
+    gender: male
     dunongPoints: 0
     requiredDunongPointsToPlay: 25
     remainingTime: 18000
@@ -2264,12 +2267,14 @@ MonoBehaviour:
           - itemName: Empanada
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Empanada Festival
             informationLink: Delivery Ink Informations/Empanada Festival
             imageLink: PCP/Empanada Festival
           - itemName: Longganisa
             quantity: 1
             stackable: 0
+            originalQuantity: 0
             titleOfInformation: Longganisa Festival
             informationLink: Delivery Ink Informations/Longganisa Festival
             imageLink: PCP/Longganisa Festival
@@ -2288,6 +2293,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -2361,6 +2367,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   sceneToLoadFromPhilippineMap: 
 --- !u!4 &2117671679
 Transform:

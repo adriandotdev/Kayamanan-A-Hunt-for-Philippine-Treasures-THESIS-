@@ -82,6 +82,35 @@ public class NPC : MonoBehaviour
     [SerializeField] private NPC_INFO npcInfo;
 
     // Use this for initialization
+
+    private void OnEnable()
+    {
+        //// Set position of Enemy as position of the first waypoint
+        ////transform.position = waypoints[waypointIndex].transform.position;
+        //animator = GetComponent<Animator>();
+        //spriteRenderer = GetComponent<SpriteRenderer>();
+        //agent = GetComponent<NavMeshAgent>();
+
+        //if (agent != null)
+        //{
+        //    agent.updateRotation = false;
+        //    agent.updateUpAxis = false;
+        //}
+
+        //this.SetWaypoints();
+
+        //if (this.npcBehavior == NPC_BEHAVIOR.STATIONARY && this.startPosition != null)
+        //{
+        //    GetComponent<NavMeshAgent>().enabled = false;
+        //    transform.position = new Vector2(this.startPosition.position.x, this.startPosition.position.y);
+        //    StartCoroutine(EnableNavMeshAgent());
+        //}
+        //else
+        //{
+        //    this.SetPosition();
+        //}
+    }
+
     private void Start()
     {
         // Set position of Enemy as position of the first waypoint
@@ -94,16 +123,14 @@ public class NPC : MonoBehaviour
         {
             agent.updateRotation = false;
             agent.updateUpAxis = false;
-
         }
 
         this.SetWaypoints();
 
         if (this.npcBehavior == NPC_BEHAVIOR.STATIONARY && this.startPosition != null)
         {
-            print(gameObject.name + "here");
             GetComponent<NavMeshAgent>().enabled = false;
-            transform.position = this.startPosition.position;
+            transform.position = new Vector2(this.startPosition.position.x, this.startPosition.position.y);
             StartCoroutine(EnableNavMeshAgent());
         }
         else
@@ -143,6 +170,7 @@ public class NPC : MonoBehaviour
 
         GetComponent<NavMeshAgent>().enabled = true;
     }
+
     private void LateUpdate()
     {
         this.npcInfo.xPos = transform.position.x;
@@ -152,7 +180,6 @@ public class NPC : MonoBehaviour
     // Method that actually make Enemy walk
     private void Move()
     {
-        
         // If Enemy didn't reach last waypoint it can move
         // If enemy reached last waypoint then it stops
         if (this.waypointIndex <= this.waypoints.Length - 1)

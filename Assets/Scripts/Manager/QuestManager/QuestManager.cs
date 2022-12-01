@@ -177,6 +177,11 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 this.DisplayQuestPrefabAtQuestPanel(questContentScrollView);
 
                 this.ChangeButtonColor(pendingBtn, completedBtn);
+
+                if (DataPersistenceManager.instance.playerData.currentQuests.Count < 1)
+                {
+                    this.questDoneNoteInPanel.gameObject.SetActive(true);
+                }
             });
 
             // Add event to the completed button. IT IS LOCATED INSIDE THE QUEST PANEL.
@@ -187,6 +192,8 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 this.GetAllCompletedQuest(questContentScrollView);
 
                 this.ChangeButtonColor(completedBtn, pendingBtn);
+
+                this.questDoneNoteInPanel.gameObject.SetActive(false);
             });
 
             closeQuestPanel.onClick.AddListener(() =>

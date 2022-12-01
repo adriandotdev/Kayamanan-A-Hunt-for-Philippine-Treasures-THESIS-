@@ -4467,7 +4467,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230072266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3738445, y: -1.1318097, z: 575.1661}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4603,10 +4603,10 @@ MonoBehaviour:
         categoryName: National Festivals
         regionName: MIMAROPA
         majorIsland: Luzon
-      - name: Moriones Festival
-        imagePath: Collectibles/Festivals/Moriones Festival
+      - name: Patintero
+        imagePath: Collectibles/General Knowledge/Patintero
         isCollected: 0
-        categoryName: National Festivals
+        categoryName: General Knowledge
         regionName: Bicol Region
         majorIsland: Luzon
       - name: Antonio Luna
@@ -4687,6 +4687,18 @@ MonoBehaviour:
         categoryName: General Knowledge
         regionName: Zamboanga Peninsula
         majorIsland: MINDANAO
+      - name: Regatta de Zamboanga
+        imagePath: Collectibles/Festivals/Regatta de Zamboanga
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: Zamboanga Peninsula
+        majorIsland: MINDANAO
+      - name: Christmas Symbol
+        imagePath: Collectibles/Festivals/Christmas Symbol
+        isCollected: 0
+        categoryName: National Festivals
+        regionName: Zamboanga Peninsula
+        majorIsland: MINDANAO
       - name: Sunken Cemetery
         imagePath: Collectibles/Tourist Attractions/Sunken Cemetery
         isCollected: 0
@@ -4699,6 +4711,12 @@ MonoBehaviour:
         categoryName: General Knowledge
         regionName: Davao Region
         majorIsland: MINDANAO
+      - name: Sultan Kudarat
+        imagePath: Collectibles/Heroes/Sultan Kudarat
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: SOCCSKSARGEN
+        majorIsland: MINDANAO
       - name: Manananggal
         imagePath: Collectibles/General Knowledge/Manananggal
         isCollected: 0
@@ -4707,12 +4725,6 @@ MonoBehaviour:
         majorIsland: MINDANAO
       - name: Mango
         imagePath: Collectibles/General Knowledge/Mango
-        isCollected: 0
-        categoryName: General Knowledge
-        regionName: Caraga Region
-        majorIsland: MINDANAO
-      - name: Patintero
-        imagePath: Collectibles/General Knowledge/Patintero
         isCollected: 0
         categoryName: General Knowledge
         regionName: Caraga Region
@@ -4992,7 +5004,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     quests:
-    - questID: 7277ed3e-8641-4b0f-9485-4b0d5a661424
+    - questID: 8f77d68f-bc34-4b23-b02c-8c8fbb5a8b90
       isCompleted: 0
       isClaimed: 0
       title: A Day with Friendliness
@@ -5047,7 +5059,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 2
-    - questID: 503de22b-818b-4c32-9510-3a99415c4108
+    - questID: 54e9822d-9366-4664-98e9-9caa9e0b13c8
       isCompleted: 0
       isClaimed: 0
       title: Preparation for Lunch!
@@ -5079,7 +5091,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: 39dbc1f0-fb1b-48d2-862c-357a1b921ce7
+        requestGoalID: 52c40e55-4185-4c88-8175-3498aeabc4d5
         receiver: Aling Nena
         itemGivers:
         - giverName: Store in Market
@@ -5113,7 +5125,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 3
-    - questID: d5d20512-dc8b-4701-be0b-d487764d159e
+    - questID: f5702ed9-1647-4a46-833d-d11f60863215
       isCompleted: 0
       isClaimed: 0
       title: Gift of the North
@@ -5175,7 +5187,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 4
-    - questID: 1fe61828-e6e6-4d58-b6e9-9aa3f9fc0065
+    - questID: 9697341f-63e7-4583-bbe2-65f59f3cef9c
       isCompleted: 0
       isClaimed: 0
       title: Beautiful Places
@@ -5244,7 +5256,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 4
-    - questID: dab6f7f2-00b5-49ec-831f-b22655f1c488
+    - questID: bcddc2fd-1532-4d63-a8ef-9844b5d7338b
       isCompleted: 0
       isClaimed: 0
       title: Ilocos' Notable Heroes!
@@ -5299,7 +5311,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: fd021209-de06-432a-852e-7d133855a1fe
+    - questID: 34bdc2db-7647-4147-8f60-aa7f5dd64612
       isCompleted: 0
       isClaimed: 0
       title: A Bloody Lunch?!
@@ -5331,7 +5343,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: b625d748-b0cf-48cc-8f74-0f65e8549d20
+        requestGoalID: 21c06511-ac61-4b39-9354-39f77208b059
         receiver: Ivan Henares
         itemGivers:
         - giverName: Karinderya
@@ -5373,7 +5385,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 3
-    - questID: 172a09a9-ac33-4f74-846a-32edd3d031fc
+    - questID: efced707-52e3-40f4-90fb-f48070a697de
       isCompleted: 0
       isClaimed: 0
       title: Chef's Request!
@@ -5405,7 +5417,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: f870bf2d-0b82-4f55-8abb-9b219f6a0ecf
+        requestGoalID: dc9359a3-3fb3-4e02-8c77-3296ffbcdf67
         receiver: Rolando Laudico
         itemGivers:
         - giverName: Store in Market
@@ -5447,7 +5459,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 3
-    - questID: 04aa805f-42d3-4244-8a2a-cf807d9ca686
+    - questID: fc60ffe4-33c8-452c-8fe1-b60d29057c63
       isCompleted: 0
       isClaimed: 0
       title: A Forgotten Costume
@@ -5479,7 +5491,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: 7b38a192-94b9-40dd-bb6a-f9cc31efdccd
+        requestGoalID: ea71d70a-9347-40f0-b59d-8786efc02194
         receiver: Joseph
         itemGivers:
         - giverName: Gregorio Zaide
@@ -5518,7 +5530,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 3
-    - questID: c9979ede-8fbe-48de-a298-83690ae8069d
+    - questID: 8afb9be1-11f2-4f8f-838c-033b36f956d6
       isCompleted: 0
       isClaimed: 0
       title: A Beauty in Darkness
@@ -5587,7 +5599,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 4
-    - questID: 2e68d15f-8cc9-4c58-870c-469413551fc8
+    - questID: 86e66ec0-ef89-44a4-8a2d-2da73089d089
       isCompleted: 0
       isClaimed: 0
       title: Looks like a Cigarette
@@ -5649,7 +5661,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 4
-    - questID: 9a680dac-9fdb-4cf1-9d01-242f27884923
+    - questID: 8f3081f1-9cb8-4dcb-af2a-e6e22f6cb8ec
       isCompleted: 0
       isClaimed: 0
       title: Strength of a Great Typhoon!
@@ -5704,7 +5716,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: a18fc93b-ff00-4afc-864b-1dbd297864b2
+    - questID: 9035448d-f0f3-467f-8127-6921051b128e
       isCompleted: 0
       isClaimed: 0
       title: Flowers In Powers
@@ -5736,7 +5748,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: 4531e291-164c-485c-95d6-9941db065b5b
+        requestGoalID: aebd52c6-2c59-41fc-9309-c4ec0d9c4d96
         receiver: BJ Pascual
         itemGivers:
         - giverName: Flower Shop
@@ -5771,7 +5783,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 3
-    - questID: f58fd8cc-1c17-47a0-ba3c-d192bc57ea96
+    - questID: b3a48b06-aadd-4e0e-87fa-47098ce2d62a
       isCompleted: 0
       isClaimed: 0
       title: Jam of Sweetness
@@ -5804,7 +5816,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: 9b6d07b7-6fa0-418b-a9bd-4a90f2ce97d7
+        requestGoalID: 6c4b788c-f7fe-4ad6-a9c8-4cfb7fcfcfbb
         receiver: Rolando Laudico
         itemGivers:
         - giverName: Strawberry Jam Shop
@@ -5840,7 +5852,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 3
-    - questID: ae6f7b02-d439-4681-9635-287df1485772
+    - questID: 28ff4f79-bb26-43fb-96ae-b4d59c24d9eb
       isCompleted: 0
       isClaimed: 0
       title: A Home Full of Colors
@@ -5895,7 +5907,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 66f73130-9200-4264-952a-6e88589ed3ae
+    - questID: d945d5ec-8513-4881-9b83-236d895f5ac6
       isCompleted: 0
       isClaimed: 0
       title: A Stairs of Rice
@@ -5950,7 +5962,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 418e5db3-5624-4155-881a-afb7b6b668c5
+    - questID: ba92358a-9f9f-426c-9e38-67ae6b8783b7
       isCompleted: 0
       isClaimed: 0
       title: Mines View Park
@@ -5965,7 +5977,7 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: 29d6fbe9-6339-4c77-a17b-4506611e784c
+        deliverGoalId: 7f4357ea-af28-4a24-aae6-800ab6405f16
         deliveryMessage: Do you mind to give this rope to Dale?
         giverName: Ivan Henares
         receiverName: Dale Abenjobar
@@ -6013,7 +6025,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 1
-    - questID: d450915b-d453-4c86-9ae0-7278edce19d1
+    - questID: 48c8385d-97aa-4417-aec7-332fec10f935
       isCompleted: 0
       isClaimed: 0
       title: Blessed With a Best View!
@@ -6068,7 +6080,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: ce18ebd1-18b4-42d2-8f37-87e172d8a8d6
+    - questID: 9aefc8b3-db4b-41bb-804f-1ee7211ca3c1
       isCompleted: 0
       isClaimed: 0
       title: Looks like a Parol!
@@ -6124,7 +6136,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 293a9768-f4b8-4f26-834c-e96b2ed35bbd
+    - questID: 25914a1c-9274-40ec-998f-5d0a0f0aa524
       isCompleted: 0
       isClaimed: 0
       title: Ashes' Catastrophe!
@@ -6179,7 +6191,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 726d0591-f326-440c-a207-95e6b2f8d045
+    - questID: 935e20a5-a025-49bb-b8be-4da84f23718c
       isCompleted: 0
       isClaimed: 0
       title: Balloons and Carabaos!
@@ -6248,7 +6260,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 4
-    - questID: f586b166-2dd9-4f7a-870d-d5f8e181938d
+    - questID: ce40cb1b-cafd-432e-a650-d68c72ddf9bc
       isCompleted: 0
       isClaimed: 0
       title: The Del Pilars
@@ -6263,7 +6275,7 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: 05dc8d54-ddfe-43f8-815a-a4f9bc22f258
+        deliverGoalId: 52743229-9a13-4c66-a0bd-345efffaf677
         deliveryMessage: Hello! I have a favor. Do you mind if you give this to Gregorio
           Zaide?
         giverName: Ramon Villegas
@@ -6312,7 +6324,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 1
-    - questID: 7675ea32-3a83-4081-82ff-a72e9e11c30f
+    - questID: 8020c836-9de4-4021-8ca5-a51d7d7a95a1
       isCompleted: 0
       isClaimed: 0
       title: Dinamulag Festival
@@ -6327,7 +6339,7 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: 17bba67b-ba64-4d7b-b8bc-d78146367368
+        deliverGoalId: c0345b45-282b-4814-93e3-6049acffc892
         deliveryMessage: Hello! Do you mind to give this to Ramon Villegas?
         giverName: Rolando Laudico
         receiverName: Ramon Villegas
@@ -6382,20 +6394,19 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 1
-    - questID: f9a5df59-1dd7-43a3-93c1-d8af41df3735
+    - questID: 1249d495-7094-4ccf-bdab-227b235116c3
       isCompleted: 0
       isClaimed: 0
-      title: Looks like a Parol!
-      description: Go to <b>Museum</b> and see the info about an object that looks
-        like a lantern.
-      note: Go to museum and look for Giant Lantern
+      title: A Store and a Shield
+      description: Talk to someone who is an expert on our National Heroes.
+      note: Go to Gregorio Zaide for National Heroes.
       hint: 
       dunongPointsRewards: 15
       region: National Capital Region
       regionNum: 5
       talkGoal:
         isFinished: 0
-        npcName: Giant Lantern
+        npcName: Gregorio Zaide
       deliveryGoal:
         isFinished: 0
         deliverGoalId: 
@@ -6438,7 +6449,284 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 06ddbe69-fde2-47dc-80a9-984a41f4568d
+    - questID: 19146536-9288-4cc7-8405-bf2e229bb4b6
+      isCompleted: 0
+      isClaimed: 0
+      title: Black Nazarene
+      description: Go to Church to know about Black Nazarene.
+      note: Black Nazarene is located at Church.
+      hint: 
+      dunongPointsRewards: 15
+      region: National Capital Region
+      regionNum: 5
+      talkGoal:
+        isFinished: 0
+        npcName: Black Nazarene
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: e6008015-a6d9-4a41-8d65-7972e415d386
+      isCompleted: 0
+      isClaimed: 0
+      title: Facing a New Chapter
+      description: Find and know the info of Chinese New Year.
+      note: I can go to school to know the info about Chinese New Year.
+      hint: Find a statue of a dragon.
+      dunongPointsRewards: 15
+      region: National Capital Region
+      regionNum: 5
+      talkGoal:
+        isFinished: 0
+        npcName: Chinese New Year
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: e0a59886-d6fe-429f-98e6-5b4a817b8696
+      isCompleted: 0
+      isClaimed: 0
+      title: A Walled City
+      description: Find a photostand of an Intramuros at the school event.
+      note: I can go to school to know the info about Intramuros.
+      hint: A <b>Photo stand</b> can be located beside of a building with a pink
+        roof.
+      dunongPointsRewards: 15
+      region: National Capital Region
+      regionNum: 5
+      talkGoal:
+        isFinished: 0
+        npcName: Intramuros
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 561712c8-697a-4a55-91ea-68c393766c52
+      isCompleted: 0
+      isClaimed: 0
+      title: Bagumbayan
+      description: Find a Rizal monument at the school event.
+      note: I can go to school to know the info about Luneta Park.
+      hint: It is located near of the <b>Luzon booth</b>.
+      dunongPointsRewards: 15
+      region: National Capital Region
+      regionNum: 5
+      talkGoal:
+        isFinished: 0
+        npcName: Rizal Statue
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: bcfa9801-5242-481b-80d4-8d2359454d14
+      isCompleted: 0
+      isClaimed: 0
+      title: A Storage of the Past
+      description: Go and check the front of the museum to know the info about National
+        Museum.
+      note: I can go to the front of the Museum to know the info about it.
+      hint: You can find it at the front of the Museum.
+      dunongPointsRewards: 15
+      region: National Capital Region
+      regionNum: 5
+      talkGoal:
+        isFinished: 0
+        npcName: Museum Info
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        informationLink: 
+        informationLinkWhenInfoHasBeenSeen: 
+        wayOfInfo: 
+        items: []
+        itemsToShow: []
+      numberGoal:
+        targetNumber: 0
+        currentNumber: 0
+        correspondingCount: 0
+      requestGoal:
+        isRequestFromNPCGained: 0
+        isItemReceivedOfNpc: 0
+        requestGoalID: 
+        receiver: 
+        itemGivers: []
+        msgRequest: 
+        msgOfGiver: 
+      showPhotoAlbumGoal:
+        giverOfInfo: 
+        items: []
+      searchGoal:
+        npcToReceived: 
+        typesOfSearch: 
+        requestAccepted: 0
+        itemToFind:
+          itemName: 
+          quantity: 0
+          stackable: 0
+          originalQuantity: 0
+          titleOfInformation: 
+          informationLink: 
+          imageLink: 
+        sceneToSpawn: 
+        locationToSpawn: 
+      questType: 0
+    - questID: 02a3eada-dbe8-4dbb-b3ae-7a1513254dd4
       isCompleted: 0
       isClaimed: 0
       title: He Don't Need A Sword.
@@ -6493,7 +6781,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 6506d85e-7ebf-40d5-ab49-3e240209a6ce
+    - questID: 9a6098c9-3eed-48d4-b439-bc4e240da138
       isCompleted: 0
       isClaimed: 0
       title: The Revolutionaries
@@ -6548,7 +6836,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: bdae04ef-339b-4b47-9cef-eb3a2d945ea5
+    - questID: 8824cd9c-a03c-4593-be20-3403c507a042
       isCompleted: 0
       isClaimed: 0
       title: Colorful Leaves!
@@ -6581,7 +6869,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: 0f578928-30c6-43ff-8a4d-63f734ae2a78
+        requestGoalID: 569bce49-efb8-4e43-896c-bb321f73c8b1
         receiver: BJ Pascual
         itemGivers:
         - giverName: Store in Market
@@ -6633,7 +6921,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 3
-    - questID: f1e3b348-4a92-44a4-90a8-0db212f595c8
+    - questID: 8b74924a-0dcc-48ef-9582-28cd3e998684
       isCompleted: 0
       isClaimed: 0
       title: A Great Caldera
@@ -6688,7 +6976,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: de9abb7b-c385-407c-b0ef-8049c23cda1a
+    - questID: 708a490a-198d-4138-ad54-c33eae3e654b
       isCompleted: 0
       isClaimed: 0
       title: Holy Tall
@@ -6743,7 +7031,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: d686a4be-4a52-4ab3-a57a-d5f055ebf147
+    - questID: c0ee29f4-37e6-46fa-9560-9eebb23fe4c5
       isCompleted: 0
       isClaimed: 0
       title: Giant's Celebration
@@ -6798,7 +7086,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 7c77049c-eb0d-499f-b04b-61f2de780d4e
+    - questID: 88c4d788-1888-4e56-8ac3-cd7b7f97134f
       isCompleted: 0
       isClaimed: 0
       title: Aguinaldo Shrine
@@ -6853,7 +7141,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: c8f91176-de16-4c70-baa9-4d4f27245076
+    - questID: db4cdc42-39df-403d-9fb9-a0d85fb285ff
       isCompleted: 0
       isClaimed: 0
       title: Unusual Jar
@@ -6908,7 +7196,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 9b406c19-5b1e-49b0-a902-6b0793b41046
+    - questID: 5e3fb375-1727-4158-8335-96e719c477e1
       isCompleted: 0
       isClaimed: 0
       title: Palawan Pearls
@@ -6963,7 +7251,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 6f2a5ad1-03d4-4ea0-806f-02a00b1d1116
+    - questID: bd9c887a-ece6-414a-8b8d-8eca27eb1be8
       isCompleted: 0
       isClaimed: 0
       title: Chef's Request!
@@ -6995,7 +7283,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: f3f982d6-d1f2-401f-af69-87b7c108a3a2
+        requestGoalID: be63664b-a95e-4844-9ca1-6d873b3870a5
         receiver: Rolando Laudico
         itemGivers:
         - giverName: Store in Market
@@ -7030,7 +7318,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 3
-    - questID: 3b22a472-7c5e-41c7-9f13-f30143af0cd9
+    - questID: 76661ee4-7766-4b6a-b990-9c904cdfaf4f
       isCompleted: 0
       isClaimed: 0
       title: Moriones Festival
@@ -7085,7 +7373,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: a9130a5e-41f3-4089-a4d2-c8816077706d
+    - questID: 7b96d3c3-92c0-4156-b158-72dae73ce48c
       isCompleted: 0
       isClaimed: 0
       title: Underground and Reefs
@@ -7100,7 +7388,7 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: 4f3bd094-ebfa-473f-bef5-8d0bb1a0e3f4
+        deliverGoalId: b294e405-e347-4d19-833b-94a1ae9a5688
         deliveryMessage: Hey! Do you mind giving this to Zardo?
         giverName: Rolando Laudico
         receiverName: Zardo Domenios
@@ -7164,7 +7452,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 1
-    - questID: e79e1e42-b26d-402d-838a-c82185ed238a
+    - questID: f16fb1a7-8c28-4904-8453-a6d9cfa1b794
       isCompleted: 0
       isClaimed: 0
       title: Cowboy Yarn?
@@ -7196,7 +7484,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: c3ae9c22-4873-4700-a7de-8850de246606
+        requestGoalID: e5fdf47e-e92c-4299-ad6c-058bddc27b45
         receiver: BJ Pascual
         itemGivers:
         - giverName: Ramon Villegas
@@ -7231,7 +7519,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 3
-    - questID: 9b980c77-596a-4bd6-9564-c002f1d84ef2
+    - questID: 6d71705f-fc8a-4679-91db-567304863e48
       isCompleted: 0
       isClaimed: 0
       title: Cone of an Ice Cream
@@ -7286,7 +7574,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: dfc93399-e1cf-406f-9e51-68db105cced8
+    - questID: da89b73b-7475-486e-aa6f-6af197988128
       isCompleted: 0
       isClaimed: 0
       title: Butanding
@@ -7341,7 +7629,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 616ebe0a-2118-4602-9b70-afcece01125a
+    - questID: eb6c7aa5-cfcc-4865-b1fa-989113af8ce9
       isCompleted: 0
       isClaimed: 0
       title: Surfer Yarn?
@@ -7374,7 +7662,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: 2c75f47b-490e-489c-9967-e8f56c1f47b7
+        requestGoalID: 1497bef2-e630-48f0-9589-e5f2fe425201
         receiver: Zardo Domenios
         itemGivers:
         - giverName: Dale Abenjobar
@@ -7388,7 +7676,7 @@ MonoBehaviour:
             informationLink: Delivery Ink Informations/Camsur Watersports
             imageLink: PCP/Camsur Watersports
           isItemsGiven: 0
-        msgRequest: Do you mind if you get the surfboard to Ramon Villegas?
+        msgRequest: Do you mind if you get the surfboard to Dale Abenjobar?
         msgOfGiver: 
       showPhotoAlbumGoal:
         giverOfInfo: 
@@ -7408,7 +7696,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 3
-    - questID: 37bc9496-0f90-466d-b82a-24846c1cc5ec
+    - questID: f3218c19-64ba-4d95-8c16-a1a30fdee8df
       isCompleted: 0
       isClaimed: 0
       title: BREAKING NEWS ALERT!
@@ -7440,7 +7728,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: 1920f28f-dd00-4023-b76b-0e5d30b3a93c
+        requestGoalID: eba409a1-e469-4454-a2a3-d696e333e761
         receiver: Gregorio Zaide
         itemGivers:
         - giverName: Ramon Villegas
@@ -7482,7 +7770,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 3
-    - questID: 29b37eff-9fe9-4316-8db5-24fc00af26a3
+    - questID: f16ce7b8-51df-4700-a172-999b6fd5ad36
       isCompleted: 0
       isClaimed: 0
       title: Black is Beautiful!
@@ -7551,7 +7839,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 4
-    - questID: c8f620fc-996c-41b5-afe1-00a89ba96624
+    - questID: 97585f9f-3a7a-4309-b9af-0734fc1548d4
       isCompleted: 0
       isClaimed: 0
       title: Don't Hide the Smile
@@ -7606,7 +7894,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 1e31a42a-fbb0-4349-a6d3-98abb87d9e61
+    - questID: 95767dd1-d195-4200-a5b3-bdb8bf61766e
       isCompleted: 0
       isClaimed: 0
       title: Pure White!
@@ -7668,7 +7956,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 4
-    - questID: 6e6c3b96-5540-421c-a8dd-21def70a3cb9
+    - questID: 6401c3ea-1a49-4cff-8923-071352c147a2
       isCompleted: 0
       isClaimed: 0
       title: Ancestral House
@@ -7723,7 +8011,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 5ac553eb-ea68-4eb8-982c-4cd28bd3c4e6
+    - questID: 99545f7a-639e-4755-b5f0-ead5c4059aa3
       isCompleted: 0
       isClaimed: 0
       title: The First Battle
@@ -7778,7 +8066,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 8f6afdb4-b15a-421a-885f-14e07b5749ac
+    - questID: fe7aa931-7b4f-4b98-89dc-0864a558b616
       isCompleted: 0
       isClaimed: 0
       title: Another Younges Captain?!
@@ -7833,7 +8121,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: cf893d82-2c1a-41ae-8b4d-e02ad1a0af73
+    - questID: a77a5271-6286-4433-b5d6-13f554565dc1
       isCompleted: 0
       isClaimed: 0
       title: A Cup of Blood
@@ -7888,12 +8176,12 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 65cfc857-d030-420a-a06a-9b7160c21eb9
+    - questID: cf50b2c2-5961-406a-bf01-3e4ec5496cbd
       isCompleted: 0
       isClaimed: 0
       title: Magellan's Cross
       description: Find a cross inside the school event.
-      note: I can go to School to know the info about Sandugo.
+      note: I can go to School to know the info about Magellan's Cross.
       hint: 
       dunongPointsRewards: 5
       region: Central Visayas
@@ -7943,7 +8231,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 47a71bdc-1af9-4b32-84d4-d19a509da9ce
+    - questID: 0c285e72-53a5-49d5-b485-ac73994db3d6
       isCompleted: 0
       isClaimed: 0
       title: Mother of all Churches
@@ -7999,7 +8287,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 1979093a-e6b4-4e73-9bdf-fe0cf385c684
+    - questID: c6a7193b-198e-4ae8-b181-dba48f0f04e2
       isCompleted: 0
       isClaimed: 0
       title: Chocolate Hills
@@ -8054,7 +8342,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 5f6ebcf3-e8f0-4fc3-96ca-df300e2bc9da
+    - questID: b6506edf-c202-437a-91e7-c102549e8622
       isCompleted: 0
       isClaimed: 0
       title: Celebration of Gratitude
@@ -8109,7 +8397,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 6d686ba1-a53f-43ca-b46a-b4a1274c8bdf
+    - questID: 92f43bf5-846d-48b7-8967-7e4de2777ed2
       isCompleted: 0
       isClaimed: 0
       title: Connect with Others
@@ -8164,7 +8452,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 6500bf47-83ee-46e3-af69-25e317d67e5e
+    - questID: 13376dd2-1309-4737-a640-f3f1e92fc073
       isCompleted: 0
       isClaimed: 0
       title: I Shall Return
@@ -8219,7 +8507,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 57e21c5d-f063-4c15-8353-ec45f27669da
+    - questID: cf5f7f2b-7153-4e77-a3f7-f692514a4b01
       isCompleted: 0
       isClaimed: 0
       title: Boat Racing
@@ -8274,7 +8562,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 8d56e999-9ce8-42b1-9cf7-eb58a4da5c2c
+    - questID: e50ad017-569b-4de5-8c26-31d51d985e92
       isCompleted: 0
       isClaimed: 0
       title: Eeew! Is it cockroach?!
@@ -8329,7 +8617,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 86481e49-7c37-474b-886c-fbe26422c229
+    - questID: 32f5cb47-a2fb-43f5-9f16-457f0539f494
       isCompleted: 0
       isClaimed: 0
       title: Got Exiled
@@ -8384,7 +8672,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: d16a3928-3dea-442b-8164-615ee8c57cc4
+    - questID: 57befa72-eebe-49a1-bc3d-61a69141e110
       isCompleted: 0
       isClaimed: 0
       title: A Fortress
@@ -8439,7 +8727,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 57500829-bba5-4e0d-893b-6789b7804e17
+    - questID: eeacaedf-2137-4d0c-895b-b563c9506b6b
       isCompleted: 0
       isClaimed: 0
       title: Christmas is near!
@@ -8494,7 +8782,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 47300802-ebb6-418f-8727-33558f84401d
+    - questID: b67fe110-b804-44b1-9257-41adf301cdd1
       isCompleted: 0
       isClaimed: 0
       title: Rafting!
@@ -8549,7 +8837,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: c0e58f13-0028-41d4-9a72-42aaf4f558b7
+    - questID: e13bfb06-cdd6-4afd-b2ba-50837dfd09b7
       isCompleted: 0
       isClaimed: 0
       title: The Vanished!
@@ -8604,7 +8892,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: c8cecf1d-3a52-4c63-b57e-bfe71025c1b3
+    - questID: cc588b78-9edc-440d-be0d-28e56b995c9a
       isCompleted: 0
       isClaimed: 0
       title: Like a Stairway to Heaven!
@@ -8660,7 +8948,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: e6008ed5-ea0b-4d9b-9f45-4ed15efee5cb
+    - questID: 68dde049-8a13-4b38-b8c7-8a7c523840ee
       isCompleted: 0
       isClaimed: 0
       title: Twins!
@@ -8715,7 +9003,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 50e90141-d810-4da8-8962-124801acae0b
+    - questID: 467784a3-10b0-4217-bd07-33b647dea778
       isCompleted: 0
       isClaimed: 0
       title: Highest Peak
@@ -8770,7 +9058,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 12e2f8d5-3f64-419f-967b-502698abab22
+    - questID: 2b5ffb82-201e-47b6-898c-54fc7827d7dd
       isCompleted: 0
       isClaimed: 0
       title: A Great Eagle
@@ -8825,7 +9113,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 00d4c486-53c6-4a36-9ba7-ccaa55f2e94d
+    - questID: a4c6fefa-d18e-4f0e-98dd-5ded70fd937d
       isCompleted: 0
       isClaimed: 0
       title: All About Gratitude
@@ -8880,7 +9168,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 9d89bb1e-f9f0-4226-8936-bef8bb1c498d
+    - questID: 1dd2a532-8059-4549-8969-707182e69274
       isCompleted: 0
       isClaimed: 0
       title: Wild Beasts
@@ -8936,7 +9224,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: ecfca51f-5b90-48e3-9eb6-9b45b800a392
+    - questID: 2782d1f6-5ac5-483b-9517-7a05973052a8
       isCompleted: 0
       isClaimed: 0
       title: Century Tuna
@@ -8968,7 +9256,7 @@ MonoBehaviour:
       requestGoal:
         isRequestFromNPCGained: 0
         isItemReceivedOfNpc: 0
-        requestGoalID: 027ef9a1-c4be-47a3-8950-aa9525163f43
+        requestGoalID: 2eda70c3-d9f9-4bbf-8ccf-770057d2d6a0
         receiver: Rolando Laudico
         itemGivers:
         - giverName: Store in Market
@@ -9003,7 +9291,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 3
-    - questID: 6929a942-961a-4377-a543-794be5d63fae
+    - questID: 5dcda4ea-1096-4a72-8470-f3b16ed52c3c
       isCompleted: 0
       isClaimed: 0
       title: Lake Sebu
@@ -9018,7 +9306,7 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: 393f1627-4a95-42b1-8cc7-46c6fbc84c12
+        deliverGoalId: ed2eb218-90b6-44e6-a82a-fff94db72a55
         deliveryMessage: Hello. I have a lotus here and Mae Jardaleza is requesting
           to have one. Do you mind to give it to her?
         giverName: Zardo Domenios
@@ -9067,7 +9355,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 1
-    - questID: 59ba664b-c255-4eac-96d9-5eda012df21d
+    - questID: 35e38ec6-f786-41b1-9f0c-0a96555b8f02
       isCompleted: 0
       isClaimed: 0
       title: Grand Mosque
@@ -9122,7 +9410,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: 9275f6cb-380e-46c5-b08b-9cdafd31ec50
+    - questID: 83709952-01b3-4be3-aa25-6af92aa64ffd
       isCompleted: 0
       isClaimed: 0
       title: Sky Is The Limit
@@ -9178,7 +9466,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: e00d77ad-8981-4163-957c-9f89c5bb82c7
+    - questID: 2c959401-9f33-4f97-a126-cbd35b63109a
       isCompleted: 0
       isClaimed: 0
       title: Sultan of Swing
@@ -9233,7 +9521,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: a4fa418b-0957-4fca-91b7-4afb4aa473b6
+    - questID: 12665e34-1ac8-47b3-a266-618f7f7818fc
       isCompleted: 0
       isClaimed: 0
       title: A Wildlife Protector
@@ -9249,7 +9537,7 @@ MonoBehaviour:
         npcName: 
       deliveryGoal:
         isFinished: 0
-        deliverGoalId: 5ae6c5b9-815b-46e8-91f0-656f865d7022
+        deliverGoalId: 4aa4d1e0-91db-410c-b5b0-2960d812cd7d
         deliveryMessage: Hey! Encarnacion or Elly loves birds. Do you mind to give
           this Duck Figurine to her?
         giverName: Ramon Villegas
@@ -9298,7 +9586,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 1
-    - questID: bd48c899-f600-4629-b17f-1ac4d12856cf
+    - questID: 23f2a730-5427-47d3-ad56-c59dde16f65a
       isCompleted: 0
       isClaimed: 0
       title: Enchanted to Meet You
@@ -9367,7 +9655,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 4
-    - questID: 2fb4d50f-07f7-4aab-b30e-a8d849cc7af5
+    - questID: 1db14bff-c574-4b62-8595-8419979a726f
       isCompleted: 0
       isClaimed: 0
       title: Unknown Depth
@@ -9422,7 +9710,7 @@ MonoBehaviour:
         sceneToSpawn: 
         locationToSpawn: 
       questType: 0
-    - questID: d96ce178-3402-4090-be7e-902a5af6e4be
+    - questID: c5a1039c-035a-4a79-b27a-330eecf18b3d
       isCompleted: 0
       isClaimed: 0
       title: Holy Pink

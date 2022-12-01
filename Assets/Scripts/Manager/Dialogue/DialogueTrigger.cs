@@ -48,6 +48,15 @@ public class DialogueTrigger : MonoBehaviour
     {
         this.NPC_NAME = transform.gameObject.name;
         this.actorName.text = transform.name;
+
+        if (DataPersistenceManager.instance.playerData.isPreQuestIntroductionDone == false && this.CheckIfNotMet(this.NPC_NAME))
+        {
+            transform.GetChild(1).GetComponent<SpriteRenderer>().color = Color.black;
+        }
+        else
+        {
+            transform.GetChild(1).GetComponent<SpriteRenderer>().color = Color.white;
+        }
     }
 
     public int CurrentOpenRegion()
@@ -82,7 +91,8 @@ public class DialogueTrigger : MonoBehaviour
                         SoundManager.instance?.PlaySound("Quest Notification");
                         DataPersistenceManager.instance.playerData.quests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
                         DataPersistenceManager.instance.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
-                        
+                        transform.GetChild(1).GetComponent<SpriteRenderer>().color = Color.white;
+
                         // CHECK IF THE INTRODUCTION OR PRE QUEST IS  DONE THEN WE ONLY SET THE isAllNPCMet to true.
                         if (QuestManager.instance.CheckIfPreQuestsDone() == true)
                         {
@@ -102,6 +112,7 @@ public class DialogueTrigger : MonoBehaviour
                     {
                         SoundManager.instance?.PlaySound("Quest Notification");
                         QuestManager.instance?.OpenPlainAlertBox("You met new villager");
+                        transform.GetChild(1).GetComponent<SpriteRenderer>().color = Color.white;
                     }
                 }
             }
@@ -146,6 +157,20 @@ public class DialogueTrigger : MonoBehaviour
         Destroy(popup);
     }
 
+    bool CheckIfNotMet(string NPC_NAME)
+    {
+        foreach (NPC_INFO npcInfo in DataPersistenceManager.instance.playerData.npcInfos)
+        {
+            if (npcInfo.name.ToUpper() == NPC_NAME.ToUpper())
+            {
+                if (!npcInfo.isMet)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     bool CheckIfFirstTimeTalking(string NPC_NAME)
     {
         foreach (NPC_INFO npcInfo in DataPersistenceManager.instance.playerData.npcInfos)

@@ -7990,6 +7990,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   slots:
     ids: []
   confirmButton: {fileID: 0}
@@ -9728,7 +9730,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3555165803412554036, guid: 8f4bd26ad55d40140908e62d7857fec7, type: 3}
       propertyPath: info
-      value: he Ruins is the remains of the ancestral home mansion of the family
+      value: The Ruins is the remains of the ancestral home mansion of the family
         of Don Mariano Ledesma Lacson and Maria Braga Lacson. It is situated in Talisay,
         Negros Occidental, Philippines. The mansion was built in early 1900s and
         inspired by Italian architecture.
@@ -10835,7 +10837,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.00060107996}
   m_SizeDelta: {x: 0, y: 6138.3}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1700587085
@@ -10921,8 +10923,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 67539085}
   m_HandleRect: {fileID: 67539084}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.11637425
+  m_Value: 1.0000001
+  m_Size: 0.11637424
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

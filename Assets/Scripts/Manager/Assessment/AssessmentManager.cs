@@ -212,14 +212,13 @@ public class FisherYates
 {
     static System.Random random = new System.Random();
 
-    public static Assessment[] Shuffle(Assessment[] toShuffle)
+    public static Assessment[] Shuffle(Assessment[] newArray)
     {
-        Assessment[] newArray = toShuffle;
         System.Random random = new System.Random();
 
         for (int i = newArray.Length - 1; i > 0; i--)
         {
-            int randomNum = random.Next(newArray.Length - 1);
+            int randomNum = random.Next(i + 1);
 
             Assessment temp = newArray[i];
             newArray[i] = newArray[randomNum];
@@ -235,7 +234,7 @@ public class FisherYates
 
         for (int i = toShuffle.Length - 1; i > 0; i--)
         {
-            int randomNum = random.Next(toShuffle.Length - 1);
+            int randomNum = random.Next(i + 1);
 
             Sprite temp = toShuffle[i];
             toShuffle[i] = toShuffle[randomNum];
@@ -249,7 +248,7 @@ public class FisherYates
 
         for (int i = toShuffle.Length - 1; i > 0; i--)
         {
-            int randomNum = random.Next(toShuffle.Length - 1);
+            int randomNum = random.Next(i + 1);
 
             GameObject temp = toShuffle[i];
             toShuffle[i] = toShuffle[randomNum];
@@ -257,14 +256,14 @@ public class FisherYates
         }
     }
 
-    public static Word[] Shuffle(Word[] toShuffle)
+    public static Word[] Shuffle(Word[] newArray)
     {
-        Word[] newArray = toShuffle;
+        //Word[] newArray = toShuffle;
         System.Random random = new System.Random();
 
         for (int i = newArray.Length - 1; i > 0; i--)
         {
-            int randomNum = random.Next(newArray.Length - 1);
+            int randomNum = random.Next(i + 1);
 
             Word temp = newArray[i];
             newArray[i] = newArray[randomNum];
@@ -274,14 +273,13 @@ public class FisherYates
         return newArray;
     }
 
-    public static char[] Shuffle(char[] toShuffle)
+    public static char[] Shuffle(char[] newArray)
     {
-        char[] newArray = toShuffle;
         System.Random random = new System.Random();
 
         for (int i = newArray.Length - 1; i > 0; i--)
         {
-            int randomNum = random.Next(newArray.Length - 1);
+            int randomNum = random.Next(i + 1);
 
             char temp = newArray[i];
             newArray[i] = newArray[randomNum];
@@ -291,14 +289,13 @@ public class FisherYates
         return newArray;
     }
 
-    public static string[] Shuffle(string[] toShuffle)
+    public static string[] Shuffle(string[] newArray)
     {
-        string[] newArray = toShuffle;
         System.Random random = new System.Random();
 
         for (int i = newArray.Length - 1; i > 0; i--)
         {
-            int randomNum = random.Next(newArray.Length - 1);
+            int randomNum = random.Next(i + 1);
 
             string temp = newArray[i];
             newArray[i] = newArray[randomNum];
@@ -314,7 +311,7 @@ public class FisherYates
 
         for (int i = toShuffle.Length - 1; i > 0; i--)
         {
-            int randomNum = random.Next(toShuffle.Length - 1);
+            int randomNum = random.Next(i+1);
 
             int temp = toShuffle[i];
             toShuffle[i] = toShuffle[randomNum];
@@ -322,15 +319,13 @@ public class FisherYates
         }
     }
 
-    public static System.Object[] Shuffle(System.Object[] toShuffle)
+    public static System.Object[] Shuffle(System.Object[] newArray)
     {
-        System.Object[] newArray = toShuffle;
-
         System.Random random = new System.Random();
 
         for (int i = newArray.Length - 1; i > 0; i--)
         {
-            int randomNum = random.Next(newArray.Length - 1);
+            int randomNum = random.Next(i+1);
 
             System.Object temp = newArray[i];
             newArray[i] = newArray[randomNum];

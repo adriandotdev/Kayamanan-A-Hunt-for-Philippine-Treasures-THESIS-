@@ -27,7 +27,7 @@ VAR numberOfChoices = 0
         + + [Next]
             He is a painter, a sculptor, and a political activist.
             + + + [Next]
-                He also well-know about hist painting named "Spolarium". Have you seen it in the museum?
+                He also well-know about his painting named "Spolarium". Have you seen it in the museum?
                 + + + + [Yes]
                     -> simple_question
                 + + + + [Not yet]

@@ -452,8 +452,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 379881166}
   m_HandleRect: {fileID: 379881165}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.87307864
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3538,7 +3538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138867147}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.277477, y: -16.107498, z: -0.40228447}
+  m_LocalPosition: {x: 28.8, y: -16.107498, z: -0.40228447}
   m_LocalScale: {x: 1.232782, y: 1.232782, z: 2.1451728}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34411,8 +34411,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 114.8
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 28.27
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -72781,8 +72781,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000018611887}
-  m_SizeDelta: {x: 0, y: 366.56}
+  m_AnchoredPosition: {x: 0, y: -0.00001653607}
+  m_SizeDelta: {x: 0, y: 419.85}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1231686272
 MonoBehaviour:
@@ -91378,6 +91378,7 @@ MonoBehaviour:
     memoryGameData:
       memoryGameProgress: 0100000000000000000000000000000000
   notesIcon: {fileID: 0}
+  questDoneNoteInPanel: {fileID: 0}
 --- !u!4 &1830136714
 Transform:
   m_ObjectHideFlags: 0
@@ -98364,6 +98365,7 @@ MonoBehaviour:
   - {fileID: 1420683975}
   - {fileID: 378589706}
   - {fileID: 847428947}
+  lengthOfText: 0
   npcName: 
   isTalking: 0
   isNotWantToRecap: 0
@@ -105422,7 +105424,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9912536, y: 1}
+    m_SensorSize: {x: 2.1666667, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

@@ -30,7 +30,7 @@ public class DialogueManager : MonoBehaviour
     private float typingSpeed = 0.001f;
 
     public Coroutine coroutine;
-
+    public int lengthOfText;
     // the name of the current talking npc.
     public string npcName;
     /** Check if the npc is talking */
@@ -69,6 +69,22 @@ public class DialogueManager : MonoBehaviour
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Church"))
         {
             this.houseGroup = GameObject.Find("House Canvas Group").GetComponent<CanvasGroup>();
+
+            try
+            {
+                this.panel.GetComponent<Button>().onClick.AddListener(() =>
+                {
+                    print("WANT TO SKIP THE TYPING EFFECT");
+
+                    if (coroutine != null)
+                    {
+                        StopCoroutine(coroutine);
+                        this.dialogueField.maxVisibleCharacters = lengthOfText;
+                        this.ShowChoices();
+                    }
+                });
+            }
+            catch (System.Exception e) { }
         }
     }
 
@@ -97,8 +113,8 @@ public class DialogueManager : MonoBehaviour
                 isTalking = false;
                 return;
             }
-
-            StartCoroutine(this.DisplayLine(text));
+            lengthOfText = text.Length;
+            coroutine = StartCoroutine(this.DisplayLine(text));
         }
         else
         {
@@ -188,8 +204,8 @@ public class DialogueManager : MonoBehaviour
                 }
                 return;
             }
-            
-            StartCoroutine(this.DisplayLine(text));
+            lengthOfText = text.Length;
+            coroutine = StartCoroutine(this.DisplayLine(text));
         }
         else
         {

@@ -355,9 +355,27 @@ public class PlayerData
 
     public void QuestForNCR()
     {
-        this.quests.Add(new Quest("Looks like a Parol!", "Go to museum and look for Giant Lantern",
-            "Go to <b>Museum</b> and see the info about an object that looks like a lantern.",
-            15, NCR, 5, new TalkGoal("Giant Lantern")));
+        // WALA PANG DIALOGUE ITO
+        this.quests.Add(new Quest("A Store and a Shield", "Go to Gregorio Zaide for National Heroes.", "Talk to someone who is an expert on our National Heroes.",
+           15, NCR, 5, new TalkGoal("Gregorio Zaide")));
+
+        this.quests.Add(new Quest("Black Nazarene", "Black Nazarene is located at Church.", "Go to Church to know about Black Nazarene.",
+           15, NCR, 5, new TalkGoal("Black Nazarene")));
+
+        //this.quests.Add(new Quest("Father of Katipunan", "You can find the bonifacio monument at the front of school building.", "I can gain the info of Bonifacio at the Bonifacio monument at school..", "Find the Bonifacio Monument.",
+        //   15, NCR, 5, new TalkGoal("Bonifacio Monument")));
+
+        this.quests.Add(new Quest("Facing a New Chapter", "Find a statue of a dragon.", "I can go to school to know the info about Chinese New Year.", "Find and know the info of Chinese New Year.",
+           15, NCR, 5, new TalkGoal("Chinese New Year")));
+
+        this.quests.Add(new Quest("A Walled City", "A <b>Photo stand</b> can be located beside of a building with a pink roof.", "I can go to school to know the info about Intramuros.", "Find a photostand of an Intramuros at the school event.",
+           15, NCR, 5, new TalkGoal("Intramuros")));
+
+        this.quests.Add(new Quest("Bagumbayan", "It is located near of the <b>Luzon booth</b>.", "I can go to school to know the info about Luneta Park.", "Find a Rizal monument at the school event.",
+           15, NCR, 5, new TalkGoal("Rizal Statue")));
+
+        this.quests.Add(new Quest("A Storage of the Past", "You can find it at the front of the Museum.", "I can go to the front of the Museum to know the info about it.", "Go and check the front of the museum to know the info about National Museum.",
+           15, NCR, 5, new TalkGoal("Museum Info")));
     }
 
     public void QuestForCALABARZON()
@@ -486,7 +504,7 @@ public class PlayerData
                 })
            },
            "Zardo Domenios",
-           "Do you mind if you get the surfboard to Ramon Villegas?",
+           "Do you mind if you get the surfboard to Dale Abenjobar?",
            ""
        )));
     }
@@ -550,7 +568,7 @@ public class PlayerData
         this.quests.Add(new Quest("A Cup of Blood", "Five men and two men are sitting.", "I can go to School to know the info about Sandugo.",
 "Find a statue about Sandugo", 5, CENTRAL_VISAYAS, 10, new TalkGoal("Sandugo")));
 
-        this.quests.Add(new Quest("Magellan's Cross", "I can go to School to know the info about Sandugo.",
+        this.quests.Add(new Quest("Magellan's Cross", "I can go to School to know the info about Magellan's Cross.",
 "Find a cross inside the school event.", 5, CENTRAL_VISAYAS, 10, new TalkGoal("Magellan's Cross")));
 
         // NEED DIALOGUE KAY RIX THE SEMINARIAN (DONE)
@@ -1269,7 +1287,7 @@ public class Notebook
         this.collectibles.Add(new Collectible("Moriones Festival", FESTIVALS_FILEPATH + "Moriones Festival", FESTIVALS, LUZON, MIMAROPA));
 
         // Bicol Region or Region 5
-        this.collectibles.Add(new Collectible("Moriones Festival", FESTIVALS_FILEPATH + "Moriones Festival", FESTIVALS, LUZON, REGION_5));
+        this.collectibles.Add(new Collectible("Patintero", GENKNOW_FILEPATH + "Patintero", GENERAL_KNOWLEDGE, LUZON, REGION_5));
 
         // National Capital Region (NCR)
         this.collectibles.Add(new Collectible("Antonio Luna", HEROES_FILEPATH + "Antonio Luna", HEROES, LUZON, NCR));
@@ -1297,6 +1315,8 @@ public class Notebook
 
         // ZAMBOANGA PENINSULA (Region 9)
         this.collectibles.Add(new Collectible("Kalabaw", GENKNOW_FILEPATH + "Kalabaw", GENERAL_KNOWLEDGE, MINDANAO, ZAMBOANGA_PENINSULA));
+        this.collectibles.Add(new Collectible("Regatta de Zamboanga", FESTIVALS_FILEPATH + "Regatta de Zamboanga", FESTIVALS, MINDANAO, ZAMBOANGA_PENINSULA));
+        this.collectibles.Add(new Collectible("Christmas Symbol", FESTIVALS_FILEPATH + "Christmas Symbol", FESTIVALS, MINDANAO, ZAMBOANGA_PENINSULA));
 
         // Northern Mindanao (Region 10)
         this.collectibles.Add(new Collectible("Sunken Cemetery", TOURIST_ATT_FILEPATH + "Sunken Cemetery", TOURIST_ATTRACTIONS, MINDANAO, NORTHERN_MINDANAO));
@@ -1310,8 +1330,7 @@ public class Notebook
 
         // CARAGA (Region 13)
         this.collectibles.Add(new Collectible("Mango", GENKNOW_FILEPATH + "Mango", GENERAL_KNOWLEDGE, MINDANAO, CARAGA_REGION));
-        this.collectibles.Add(new Collectible("Patintero", GENKNOW_FILEPATH + "Patintero", GENERAL_KNOWLEDGE, MINDANAO, CARAGA_REGION));
-
+        
         // BARMM (Region 14)
         this.collectibles.Add(new Collectible("Piko", GENKNOW_FILEPATH + "Piko", GENERAL_KNOWLEDGE, MINDANAO, BARMM));
         this.collectibles.Add(new Collectible("Tumbang Preso", GENKNOW_FILEPATH + "Tumbang Preso", GENERAL_KNOWLEDGE, MINDANAO, BARMM));

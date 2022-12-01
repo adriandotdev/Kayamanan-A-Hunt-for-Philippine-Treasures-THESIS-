@@ -1067,6 +1067,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   regionName: 
   regionNum: 0
   previousSceneToLoad: 
@@ -4072,12 +4074,12 @@ MonoBehaviour:
     word: Talisay
   - question: The mansion was built in early 1900s and inspired  by _______ architecture.
     word: Italian
-  - question: ' Balay Negrese is an ancestral house and is a  museum in _____ City,
-      Negros Occidental'
+  - question: Balay Negrense is an ancestral house and is a  museum in _____ City,
+      Negros Occidental
     word: Silay
   - question: It is notable for being the first museum to be  established in the
       province of Negros Occidental. It is called Balay _______
-    word: Negrese
+    word: Negrense
   - question: The house is of the type called bahay na _______,  literally means
       "house of stone".
     word: Bato
@@ -5548,6 +5550,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
 --- !u!4 &990183671
 Transform:
   m_ObjectHideFlags: 0
@@ -6221,6 +6225,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   sceneToLoadFromPhilippineMap: 
 --- !u!4 &995598277
 Transform:
@@ -7277,6 +7283,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   regionName: 
   regionNum: 0
   previousSceneToLoad: 
@@ -9727,6 +9735,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   regionName: 
   regionNum: 0
   previousSceneToLoad: 
@@ -10221,7 +10231,7 @@ MonoBehaviour:
     - Stomach Ache
     - Storm
     - Death
-  - question: He a hero born in Bohol and is a Is a barangay  captain before the
+  - question: He is a hero born in Bohol and is a Is a barangay  captain before the
       longest revolt
     correctAnswer: Francisco Dagohoy
     choices:
@@ -10269,7 +10279,7 @@ MonoBehaviour:
     - Ati-atihan
     - Ibon-Ibon
     - Tabako
-  - question: ' This Festival is nicknamed as "The grandest festival  in the Philippines".'
+  - question: ' This festival is nicknamed as "The grandest festival  in the Philippines".'
     correctAnswer: Sinulog
     choices:
     - Sinulog
@@ -12280,6 +12290,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   slots:
     ids: []
   confirmButton: {fileID: 0}
@@ -12929,6 +12941,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
   regionName: 
   regionNum: 0
   previousSceneToLoad: 

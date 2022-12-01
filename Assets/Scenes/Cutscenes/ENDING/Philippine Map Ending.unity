@@ -1264,8 +1264,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: But there's one thing that cannot be changed, and that's for being a Filipino
-    wherein a Filipino who loves his country.
+  m_text: 'But there''s one thing that is hard to keep, and that is being grateful
+    for being born a Filipino and being a Filipino who loves his country.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 08fd9260dd1cd53499db25ce2c907550, type: 2}
   m_sharedMaterial: {fileID: -2362832969018487898, guid: 08fd9260dd1cd53499db25ce2c907550, type: 2}
@@ -1630,8 +1632,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Despite of many issues in our society, we should remember that there are
-    still good into it.
+  m_text: Despite of having many issues in our society, we should remember that there
+    are still good into it.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 08fd9260dd1cd53499db25ce2c907550, type: 2}
   m_sharedMaterial: {fileID: -2362832969018487898, guid: 08fd9260dd1cd53499db25ce2c907550, type: 2}
@@ -1852,8 +1854,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Culture has a huge impact for every individual. It may be affect someone's
-    belief and perspective in life.
+  m_text: Culture and heritage have an impact on every individual. It may affect
+    someone's beliefs and perspective in life.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 08fd9260dd1cd53499db25ce2c907550, type: 2}
   m_sharedMaterial: {fileID: -2362832969018487898, guid: 08fd9260dd1cd53499db25ce2c907550, type: 2}
@@ -2250,7 +2252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Philippines has a great culture and history.
+  m_text: The Philippines has a great culture and history.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 08fd9260dd1cd53499db25ce2c907550, type: 2}
   m_sharedMaterial: {fileID: -2362832969018487898, guid: 08fd9260dd1cd53499db25ce2c907550, type: 2}
@@ -2741,8 +2743,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Because Filipinos and our country is full of love and happiness. That's
-    why we need to embrace our...
+  m_text: Because the Filipinos and our country is full of love and happiness everywhere.
+    That is why we need to embrace our...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 08fd9260dd1cd53499db25ce2c907550, type: 2}
   m_sharedMaterial: {fileID: -2362832969018487898, guid: 08fd9260dd1cd53499db25ce2c907550, type: 2}
