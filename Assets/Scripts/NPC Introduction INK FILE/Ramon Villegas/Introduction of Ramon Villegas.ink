@@ -2,8 +2,11 @@
 
 == main ==
 Hi! I'm Ramon Villegas and I'm a retired professional caretaker of shrines and sanctuaries. 
-    + [Oh! That's interesting, I see!]
+    + [Next]
+    Oh! That's interesting, I see! # You
+    + + [Next]
     If you have a question about sanctuaries or shrines, ask me anytime.
-    + + [Okay! I got it]
-    -> DONE
+    + + + [Next]
+    Okay. I got it. I will take note with that. # You
+    + + + + [Exit]
 -> END

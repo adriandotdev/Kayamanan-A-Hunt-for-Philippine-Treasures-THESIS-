@@ -185,11 +185,12 @@ public class SceneTransitionManager : MonoBehaviour
     {
         if (sceneName == "Museum")
         {
-            player.transform.GetChild(0).transform.localScale = new Vector2(2.786297f, 2.786297f);
+            // 2.786297f
+            player.transform.GetChild(0).transform.localScale = new Vector2(8.57f, 8.57f);
         }
-        else if (sceneName == "Outside")
+        else if (sceneName == "Outside" || sceneName == "School")
         {
-            player.transform.GetChild(0).transform.localScale = new Vector2(6.9839f, 6.9839f);
+            player.transform.GetChild(0).transform.localScale = new Vector2(12.53959f, 12.53959f);
         }
     }
     public void LoadHouseScene()

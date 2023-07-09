@@ -127,8 +127,8 @@ public class PlayerData
 
         // PRE-QUEST
         this.PreQuest();
-        ////// Regions Quest
 
+        ////// Regions Quest
         this.QuestForIlocosRegion();
         this.QuestForCagayanValley();
         this.QuestForCAR();
@@ -146,10 +146,6 @@ public class PlayerData
         this.QuestForSOCCSKSARGEN();
         this.QuestForCARAGARegion();
         this.QuestForBARMM();
-
-        // string title, string note, string description, string hint, int dunongPointsRewards, string region, int regionNum, SearchGoal searchGoal
-        //this.quests.Add(new Quest("A Lost Bone", "", "Find a bone around museum.", "It is located behind it",
-        //    35, ILOCOS_REGION, 1, new SearchGoal("Ivan Henares", "Outside", "SP 1", "clue", new Item("Mango", 1, false, "", "", ""))));
 
         this.AddNPCsInfo();
         this.InitializeRequiredDunongPointsToPlay(1);
@@ -362,9 +358,6 @@ public class PlayerData
         this.quests.Add(new Quest("Black Nazarene", "Black Nazarene is located at Church.", "Go to Church to know about Black Nazarene.",
            15, NCR, 5, new TalkGoal("Black Nazarene")));
 
-        //this.quests.Add(new Quest("Father of Katipunan", "You can find the bonifacio monument at the front of school building.", "I can gain the info of Bonifacio at the Bonifacio monument at school..", "Find the Bonifacio Monument.",
-        //   15, NCR, 5, new TalkGoal("Bonifacio Monument")));
-
         this.quests.Add(new Quest("Facing a New Chapter", "Find a statue of a dragon.", "I can go to school to know the info about Chinese New Year.", "Find and know the info of Chinese New Year.",
            15, NCR, 5, new TalkGoal("Chinese New Year")));
 
@@ -510,7 +503,6 @@ public class PlayerData
     }
 
     // VISAYAS REGION
-
     // Region 6
     public void QuestForWesternVisayas()
     {
@@ -1064,7 +1056,6 @@ public class PlayerData
 
         playerData.regionsData = new List<RegionData>();
 
-        // testing lang to
         playerData.notebook = this.notebook;
         playerData.quests = new List<Quest>();
         playerData.currentQuests = new List<Quest>();
@@ -1077,20 +1068,10 @@ public class PlayerData
         int currentOpenRegion = CurrentOpenRegion();
         string currentRegionName = CurrentOpenRegionName();
 
-        // SINCE THE RULES AY BABAWASAN LANG NG DAY ANG CURRENT DAY EVENT AND RESTART NG CURRENT REGION.
         foreach(RegionData rd in this.regionsData)
         {
             playerData.regionsData.Add(rd.Copy());
         }
-        
-        //foreach (Collectible collectible in this.notebook.collectibles)
-        //{
-        //    playerData.notebook.collectibles.Add(collectible.Copy());
-        //}
-        
-        //playerData.QuestForIlocosRegion();
-        //playerData.QuestForCagayanValley();
-        //playerData.QuestForCentralLuzon();
 
         ResetAllQuests(this.currentQuests, currentRegionName);
         ResetAllQuests(this.completedQuests, currentRegionName);

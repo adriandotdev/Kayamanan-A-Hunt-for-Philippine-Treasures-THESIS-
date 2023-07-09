@@ -94,6 +94,8 @@ public class RequestGiver : MonoBehaviour
 
         this.giveItemToPlayerBtn.gameObject.SetActive(false);
 
+        SoundManager.instance?.PlaySound("Item Received");
+
         // We set to false since the request is not yet accepted.
         QuestManager.instance?.SetRequestAccepted(this.requestQuest.questID, false);
         QuestManager.instance?.OpenPlainAlertBox("You've received an items!");

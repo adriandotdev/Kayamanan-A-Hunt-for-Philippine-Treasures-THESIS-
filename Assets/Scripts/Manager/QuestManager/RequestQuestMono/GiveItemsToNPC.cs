@@ -49,8 +49,11 @@ public class GiveItemsToNPC : MonoBehaviour
 
                         if (requestQuest.region.ToUpper() != "PRE-QUEST")
                         {
-                            AlbumManager.Instance.isFirstAlbum = true;
-                            SceneManager.LoadScene("Delivery Info Scene", LoadSceneMode.Additive);
+                            //AlbumManager.Instance.isFirstAlbum = true;
+                            //SceneManager.LoadScene("Delivery Info Scene", LoadSceneMode.Additive);
+                            showInfoOfItemsButton.interactable = false;
+                            requestQuest.requestGoal.isItemReceivedOfNpc = true;
+                            StartCoroutine(ShowNotifFirst());
                         }
                     });
                 }
@@ -68,4 +71,13 @@ public class GiveItemsToNPC : MonoBehaviour
                 }
             }
         }
+
+    IEnumerator ShowNotifFirst()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        showInfoOfItemsButton.interactable = true;
+        AlbumManager.Instance.isFirstAlbum = true;
+        SceneManager.LoadScene("Delivery Info Scene", LoadSceneMode.Additive);
+    }
 }

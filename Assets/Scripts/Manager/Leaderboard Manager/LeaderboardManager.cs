@@ -17,7 +17,7 @@ public class LeaderboardManager : MonoBehaviour
     [SerializeField] private Transform leaderboardItemPrefab;
 
     private Slots slots;
-    private List<LeaderboardData> leaderboardData;
+    public List<LeaderboardData> leaderboardData;
 
     /** <summary>
      *  The leaderboard item consists of
@@ -31,7 +31,8 @@ public class LeaderboardManager : MonoBehaviour
      *  General Knowledge (int)
      *  Total (int)
      * </summary>*/
-    class LeaderboardData : IComparable<LeaderboardData>
+    [System.Serializable]
+    public class LeaderboardData : IComparable<LeaderboardData>
     {
         public PlayerData PlayerData { get; private set; }
 
@@ -58,7 +59,43 @@ public class LeaderboardManager : MonoBehaviour
 
         public int CompareTo(LeaderboardData other)
         {
-            return Total > other.Total ? 1 : 0;
+            //if (this.PlayerData.TotalOfCollectibles() > other.PlayerData.TotalOfCollectibles()) return 1;
+            //else if (this.PlayerData.TotalOfCollectibles() < other.PlayerData.TotalOfCollectibles())
+            //return -1;
+
+            //return 0;
+
+            if (this.PlayerData.TotalOfCollectibles() == other.PlayerData.TotalOfCollectibles())
+            {
+                print(this.PlayerData.name + " and " + other.PlayerData.name + " is comparing");
+                if (this.PlayerData.playerTime.m_GameTimeHour != other.PlayerData.playerTime.m_GameTimeHour)
+                {
+                    if (this.PlayerData.playerTime.m_GameTimeHour > other.PlayerData.playerTime.m_GameTimeHour) return 1;
+                    else if (this.PlayerData.playerTime.m_GameTimeHour < other.PlayerData.playerTime.m_GameTimeHour) return -1;
+                    else return 0;
+                }
+                else if (this.PlayerData.playerTime.m_GameTimeMinute != other.PlayerData.playerTime.m_GameTimeMinute)
+                {
+                    if (this.PlayerData.playerTime.m_GameTimeMinute > other.PlayerData.playerTime.m_GameTimeMinute) return 1;
+                    else if (this.PlayerData.playerTime.m_GameTimeMinute < other.PlayerData.playerTime.m_GameTimeMinute) return -1;
+                    else return 0;
+                }
+                else if (this.PlayerData.playerTime.m_GameTimeSeconds != other.PlayerData.playerTime.m_GameTimeSeconds)
+                {
+                    if (this.PlayerData.playerTime.m_GameTimeSeconds > other.PlayerData.playerTime.m_GameTimeSeconds) return 1;
+                    else if (this.PlayerData.playerTime.m_GameTimeSeconds < other.PlayerData.playerTime.m_GameTimeSeconds) return -1;
+                    else return 0;
+                }
+            }
+            else 
+            {
+                print(this.PlayerData.name + " and " + other.PlayerData.name + " is comparing 2");
+
+                if (this.PlayerData.TotalOfCollectibles() < other.PlayerData.TotalOfCollectibles()) return 1;
+                else if (this.PlayerData.TotalOfCollectibles() > other.PlayerData.TotalOfCollectibles()) return -1;
+                else return 0;
+            }
+            return 0;
         }
     }
 
@@ -86,11 +123,12 @@ public class LeaderboardManager : MonoBehaviour
         this.closeButton.onClick.AddListener(CloseLeaderboardScene);
     }
 
+
     void DisplayLeaderboards()
     {
         /**Sort the data based on the total number of collectibles collected.*/
         this.leaderboardData.Sort();
-        this.leaderboardData.Reverse();
+        //this.leaderboardData.Reverse();
 
         int rank = 1;
 
@@ -98,16 +136,51 @@ public class LeaderboardManager : MonoBehaviour
         {
             Transform leaderboardItem = Instantiate(this.leaderboardItemPrefab.gameObject, this.leaderboardItemContainer).transform;
 
+            string time = ld.PlayerData.playerTime.m_GameTimeHour + ":" + ld.PlayerData.playerTime.m_GameTimeMinute + ":" + ((int)ld.PlayerData.playerTime.m_GameTimeSeconds);
+
             leaderboardItem.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = rank.ToString();
             leaderboardItem.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = ld.PlayerData.name;
-            leaderboardItem.GetChild(2).GetComponent<TMPro.TextMeshProUGUI>().text = ld.Region.ToString(); // Number of regions.
-            leaderboardItem.GetChild(3).GetComponent<TMPro.TextMeshProUGUI>().text = ld.Heroes.ToString(); // Number of Heroes Collectibles
-            leaderboardItem.GetChild(4).GetComponent<TMPro.TextMeshProUGUI>().text = ld.Festivals.ToString(); // Number of Festivals Collectibles
-            leaderboardItem.GetChild(5).GetComponent<TMPro.TextMeshProUGUI>().text = ld.TouristAtt.ToString(); // Number of Tourist Attractions
-            leaderboardItem.GetChild(6).GetComponent<TMPro.TextMeshProUGUI>().text = ld.GeneralKnowledge.ToString(); // Number of General Knowledge
-            leaderboardItem.GetChild(7).GetComponent<TMPro.TextMeshProUGUI>().text = ld.Total.ToString(); // Total Colectibles
+            leaderboardItem.GetChild(2).GetComponent<TMPro.TextMeshProUGUI>().text = time;
+            leaderboardItem.GetChild(3).GetComponent<TMPro.TextMeshProUGUI>().text = ld.Region.ToString(); // Number of regions.
+            leaderboardItem.GetChild(4).GetComponent<TMPro.TextMeshProUGUI>().text = ld.Heroes.ToString(); // Number of Heroes Collectibles
+            leaderboardItem.GetChild(5).GetComponent<TMPro.TextMeshProUGUI>().text = ld.Festivals.ToString(); // Number of Festivals Collectibles
+            leaderboardItem.GetChild(6).GetComponent<TMPro.TextMeshProUGUI>().text = ld.TouristAtt.ToString(); // Number of Tourist Attractions
+            leaderboardItem.GetChild(7).GetComponent<TMPro.TextMeshProUGUI>().text = ld.GeneralKnowledge.ToString(); // Number of General Knowledge
+            leaderboardItem.GetChild(8).GetComponent<TMPro.TextMeshProUGUI>().text = ld.Total.ToString(); // Total Colectibles
             rank++;
         }
+    }
+
+    private int CompareLeaderboard2(LeaderboardData px, LeaderboardData py)
+    {
+        if (px.PlayerData.TotalOfCollectibles() == py.PlayerData.TotalOfCollectibles())
+        {
+            if (px.PlayerData.playerTime.m_GameTimeHour != py.PlayerData.playerTime.m_GameTimeHour)
+            {
+                if (px.PlayerData.playerTime.m_GameTimeHour > py.PlayerData.playerTime.m_GameTimeHour) return 1;
+                else if (px.PlayerData.playerTime.m_GameTimeHour < py.PlayerData.playerTime.m_GameTimeHour) return -1;
+                else return 0;
+            }
+            else if (px.PlayerData.playerTime.m_GameTimeMinute != py.PlayerData.playerTime.m_GameTimeMinute)
+            {
+                if (px.PlayerData.playerTime.m_GameTimeMinute > py.PlayerData.playerTime.m_GameTimeMinute) return 1;
+                else if (px.PlayerData.playerTime.m_GameTimeMinute < py.PlayerData.playerTime.m_GameTimeMinute) return -1;
+                else return 0;
+            }
+            else if (px.PlayerData.playerTime.m_GameTimeSeconds != py.PlayerData.playerTime.m_GameTimeSeconds)
+            {
+                if (px.PlayerData.playerTime.m_GameTimeSeconds > py.PlayerData.playerTime.m_GameTimeSeconds) return 1;
+                else if (px.PlayerData.playerTime.m_GameTimeSeconds < py.PlayerData.playerTime.m_GameTimeSeconds) return -1;
+                else return 0;
+            }
+        }
+        else
+        {
+            if (px.PlayerData.TotalOfCollectibles() > py.PlayerData.TotalOfCollectibles()) return 1;
+            else if (px.PlayerData.TotalOfCollectibles() < py.PlayerData.TotalOfCollectibles()) return -1;
+            else return 0;
+        }
+        return 0;
     }
 
     /** <summary>
@@ -120,17 +193,22 @@ public class LeaderboardManager : MonoBehaviour
             LeaderboardData px = x as LeaderboardData;
             LeaderboardData py = y as LeaderboardData;
 
-            print(px.Profile + " : " + py.Profile);
+            print(px.PlayerData.TotalOfCollectibles() + " : " + py.PlayerData.TotalOfCollectibles());
 
             if (px.PlayerData.TotalOfCollectibles() > py.PlayerData.TotalOfCollectibles())
                 return -1;
+            else if ((px.PlayerData.playerTime.m_GameTimeHour < py.PlayerData.playerTime.m_GameTimeHour)
+                && (px.PlayerData.playerTime.m_GameTimeMinute < py.PlayerData.playerTime.m_GameTimeMinute)
+                && (px.PlayerData.playerTime.m_GameTimeSeconds < py.PlayerData.playerTime.m_GameTimeSeconds))
+                return 0;
+
             return 0;
         }
     } 
 
     public static IComparer ComparePlayerData()
     {
-        return new CompareLeaderboard();
+        return new  CompareLeaderboard();
     }
 
     private void CloseLeaderboardScene()

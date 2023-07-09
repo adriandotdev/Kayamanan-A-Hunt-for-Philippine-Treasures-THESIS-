@@ -80,6 +80,8 @@ public class RequestRequester : MonoBehaviour
         // Accept the request
         this.requestBtn.gameObject.SetActive(false);
 
+        SoundManager.instance?.PlaySound("Request Received");
+
         print(this.requestQuest.questID); // For Debugging Only
 
         // so the main problem is 'this.request.questID' is not CHANGING whenever we set again the EventListener. SO WHY? HAHA.

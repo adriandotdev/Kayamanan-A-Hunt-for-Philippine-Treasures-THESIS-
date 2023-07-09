@@ -129,6 +129,8 @@ MonoBehaviour:
   virtualCam: {fileID: 0}
   up: {fileID: 0}
   down: {fileID: 0}
+  movement: {x: 0, y: 0, z: 0}
+  isMoving: 0
   playerData:
     id: 
     isGameCompleted: 0
@@ -266,6 +268,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -320,6 +323,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -374,6 +378,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -428,6 +433,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -482,6 +488,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -536,6 +543,7 @@ MonoBehaviour:
           itemName: 
           quantity: 0
           stackable: 0
+          originalQuantity: 0
           titleOfInformation: 
           informationLink: 
           imageLink: 
@@ -594,6 +602,8 @@ MonoBehaviour:
       m_GameTimeHour: 0
       m_GameTimeMinute: 0
       m_GameTimeSeconds: 0
+    memoryGameData:
+      memoryGameProgress: 0100000000000000000000000000000000
 --- !u!70 &1823698290030706105
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -696,7 +706,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -716,9 +726,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0.11066723, b: 1, a: 1}
+  m_SortingOrder: 9359
+  m_Sprite: {fileID: 738561088, guid: d6a84dd086e039841a47e7294517c73c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

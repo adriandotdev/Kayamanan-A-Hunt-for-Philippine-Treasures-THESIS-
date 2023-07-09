@@ -122,20 +122,6 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    //IEnumerator DisplayLine(string line)
-    //{
-    //    this.HideChoices();
-
-    //    this.dialogueField.text = "";
-
-    //    foreach (char c in line.ToCharArray())
-    //    {
-    //        this.dialogueField.text += c;
-    //        yield return new WaitForSeconds(this.typingSpeed);
-    //    }
-    //    ShowChoices();
-    //}
-
     IEnumerator DisplayLine(string line)
     {
         this.dialogueField.text = line;
@@ -143,14 +129,26 @@ public class DialogueManager : MonoBehaviour
 
         this.HideChoices();
 
+        if (currentStory.currentTags.Count > 0 && currentStory.currentTags[0].Contains(":") == false)
+        {
+            actorField.text = currentStory.currentTags[0];
+        }
+        else
+        {
+            actorField.text = this.npcName;
+        }
+
         foreach (char c in line.ToCharArray())
         {
             this.dialogueField.maxVisibleCharacters++;
             yield return new WaitForSeconds(this.typingSpeed);
         }
+
         ShowChoices();
-        if (currentStory.currentTags.Count > 0)
+        if (currentStory.currentTags.Count > 0 && currentStory.currentTags[0].Contains(":"))
+        {
             isNotWantToRecap = true;
+        }
     }
 
     public void HideChoices()
@@ -169,7 +167,6 @@ public class DialogueManager : MonoBehaviour
 
             if (text == "")
             {
-                print("IT IS EMPTY");
                 OnDialogueRunning?.Invoke(false);
                 panel.gameObject.SetActive(false);
                 this.houseGroup.interactable = true;
@@ -182,7 +179,6 @@ public class DialogueManager : MonoBehaviour
                 // the requested by player.
                 if (this.showAlbumGoal != null && this.showAlbumGoal.giverOfInfo.Length > 0 && this.showAlbumGoal.giverOfInfo.Length > 0)
                 {
-                    print("IT IS SHOWING ALBUM");
                     AlbumManager.Instance.isFirstAlbum = false;
                     AlbumManager.Instance.items = this.showAlbumGoal.items;
                     SceneManager.LoadScene("Showing Album", LoadSceneMode.Additive);
@@ -190,8 +186,6 @@ public class DialogueManager : MonoBehaviour
                 }
                 else if (this.deliveryGoal != null && this.deliveryGoal.wayOfInfo.ToLower() == "not text" && this.deliveryGoal.giverName.Length > 0)
                 {
-                    print("IT IS DELIVERY GOAL ONLY");
-
                     if (isNotWantToRecap == false)
                     {
 

@@ -80,8 +80,6 @@ public class WordManager : MainGame, IDataPersistence
                     star.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Empty Star");
                 }
 
-                //Array.Copy(FisherYates.shuffle(this.words), this.words, this.words.Length);
-
                 this.shuffled = FisherYates.Shuffle(this.words);
 
                 // Initialize
@@ -89,7 +87,6 @@ public class WordManager : MainGame, IDataPersistence
             }
             catch (System.Exception e)
             {
-                //Debug.Log(e.StackTrace);
             }
         }
     }
@@ -153,11 +150,6 @@ public class WordManager : MainGame, IDataPersistence
             this.layout.gameObject.SetActive(false); 
             this.scoreLabel.text = noOfCorrectAns + "/" + NUMBER_OF_QUESTIONS;
 
-            //this.SetRegionHighestScore(noOfCorrectAns);
-            //this.ShowStars(noOfCorrectAns);
-            //this.ShowScorePanel(this.CountNoOfStarsToShow(noOfCorrectAns));
-            //this.CheckIfNextRegionIsReadyToOpen();
-            //this.CollectAllRewards();
             this.SetRegionHighestScore(noOfCorrectAns);
 
             this.ShowStars(noOfCorrectAns);

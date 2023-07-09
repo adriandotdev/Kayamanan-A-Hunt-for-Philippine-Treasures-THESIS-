@@ -601,19 +601,6 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     /** Setups all the gameobject who handles DeliveryGoalGiver and DeliveryGoalReceiver Quest. */
     public void SetupScriptsForDeliveryQuestToNPCs()
     {
-        //DeliveryGoalGiver[] dgg = GameObject.FindObjectsOfType<DeliveryGoalGiver>();
-        //DeliveryGoalReceiver[] dgr = GameObject.FindObjectsOfType<DeliveryGoalReceiver>();
-
-        //foreach (DeliveryGoalGiver dg in dgg)
-        //{
-        //    dg.quest = null;
-        //}
-
-        //foreach (DeliveryGoalReceiver dr in dgr)
-        //{
-        //    dr.quest = null;
-        //}
-
         foreach (Quest quest in this.playerData.currentQuests)
         {
             if (quest.deliveryGoal != null)
@@ -664,8 +651,6 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
     public void FindTalkWithShowPhotoAlbum(string questID)
     {
-        print("IT IS GOING HERE IN SHOW PHOTO ALBUM");
-
         foreach (Quest quest in this.playerData.currentQuests)
         {
             if (quest.questID == questID)
@@ -766,7 +751,6 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                     this.GetListOfQuests();
                     this.SetupScriptsForRequestQuest();
                 }
-                //this.GetListOfQuests();
 
                 if (this.playerData.currentQuests.Count < 1)
                 {

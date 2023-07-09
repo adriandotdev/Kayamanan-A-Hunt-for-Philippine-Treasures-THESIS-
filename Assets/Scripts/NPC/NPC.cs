@@ -83,34 +83,6 @@ public class NPC : MonoBehaviour
 
     // Use this for initialization
 
-    private void OnEnable()
-    {
-        //// Set position of Enemy as position of the first waypoint
-        ////transform.position = waypoints[waypointIndex].transform.position;
-        //animator = GetComponent<Animator>();
-        //spriteRenderer = GetComponent<SpriteRenderer>();
-        //agent = GetComponent<NavMeshAgent>();
-
-        //if (agent != null)
-        //{
-        //    agent.updateRotation = false;
-        //    agent.updateUpAxis = false;
-        //}
-
-        //this.SetWaypoints();
-
-        //if (this.npcBehavior == NPC_BEHAVIOR.STATIONARY && this.startPosition != null)
-        //{
-        //    GetComponent<NavMeshAgent>().enabled = false;
-        //    transform.position = new Vector2(this.startPosition.position.x, this.startPosition.position.y);
-        //    StartCoroutine(EnableNavMeshAgent());
-        //}
-        //else
-        //{
-        //    this.SetPosition();
-        //}
-    }
-
     private void Start()
     {
         // Set position of Enemy as position of the first waypoint

@@ -10587,7 +10587,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 2
-      isOpen: 0
+      isOpen: 1
       regionName: Cagayan Valley
       information: 'Cagayan Valley, designated as Region II, is an administrative
         region in the Philippines, located in the northeastern section of Luzon Island.
@@ -10601,7 +10601,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 3
-      isOpen: 0
+      isOpen: 1
       regionName: Cordillera Administrative Region
       information: The Cordillera Administrative Region, also known as the Cordillera
         Region, or simply, Cordillera, is an administrative region in the Philippines,
@@ -10620,7 +10620,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 4
-      isOpen: 0
+      isOpen: 1
       regionName: Central Luzon
       information: Central Luzon, designated as Region III, is an administrative
         region in the Philippines, primarily serving to organize the 7 provinces
@@ -10636,7 +10636,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 5
-      isOpen: 1
+      isOpen: 0
       regionName: National Capital Region
       information: Metropolitan Manila, officially the National Capital Region, is
         the seat of government and one of three defined metropolitan areas in the
@@ -12696,7 +12696,7 @@ MonoBehaviour:
         highestScore: 0
         noOfStars: 0
     - regionNumber: 2
-      isOpen: 0
+      isOpen: 1
       regionName: Cagayan Valley
       information: 'Cagayan Valley, designated as Region II, is an administrative
         region in the Philippines, located in the northeastern section of Luzon Island.
