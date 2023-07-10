@@ -51,6 +51,10 @@ Before taking an assessment, player must complete all of the pending quests. By 
 ![Quest 2](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/8fb04d65-6769-4afa-af76-abfe4d5c6cb9)
 ![Completing a Quest 3](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/2def3531-77d0-4892-b1cd-a3a47447544e)
 
+## Viewing Quests
+
+![Viewing Quests](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/9e3c703f-c684-4450-9340-9c9722b69be1)
+
 # Assessments
 
 Our game consists of two assessments: Multiple Choice and Word Shuffles
