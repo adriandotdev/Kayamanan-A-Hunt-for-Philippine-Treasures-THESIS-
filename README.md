@@ -1,6 +1,12 @@
 # Kayamanan: The Hunt for Philippine Treasures
 
-Our thesis software for a requirement in Bachelor of Science in Computer Science at Pamantasan ng Cabuyao.
+Our thesis software for a requirement in Bachelor of Science in Computer Science at Pamantasan ng Cabuyao. In the features of our developed game, players can access different game categories and lessons about **National Heroes**, **Philippine Festivals**, **National Games**, and **General Knowledge** including Philippine mythology. We utilized **C# programming language**, and **Unity Game Engine** to developed the game. For creating assets, we used **Aseprite**, and **Adobe Illustrator**. 
+
+# Story
+
+
+
+
 
 # Main Menu
 
