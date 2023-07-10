@@ -6,7 +6,7 @@
 
 <h4 align="center">Our group consist of four(4) members: Eric B. Sarmiento, RC Khaye B. Suelo, Adrian Nads L. Marcelo, and Lenard G. Opo. (From left to right)</h4>
 
-<div align="center">
+<div align="center" style="border-radius: 12px;">
   <img  src="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/a11a737e-bf19-4b2a-ad23-51f2da588055" alt="Image" style="width:75%;">
 </div>
 
