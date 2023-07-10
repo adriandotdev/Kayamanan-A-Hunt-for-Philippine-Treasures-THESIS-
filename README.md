@@ -42,6 +42,7 @@ We also implemented the day and night system for our game using Observer Pattern
 
 ![Night Time 1](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/3d7329f7-91ea-48b7-a574-012e95cb0e0f)
 ![Night Time 2](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/167eb11a-849d-4015-a535-c3f1c54b9f8e)
+![Time to Sleep](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/097de412-4441-471a-87e3-36e384e8ae7d)
 
 # Quests
 Before taking an assessment, player must complete all of the pending quests. By completing each quest, he/she will get a valuable information that can help to ace his/her assessment.
