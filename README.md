@@ -11,7 +11,7 @@ Our thesis software for a requirement in Bachelor of Science in Computer Science
 ![Loading Profile](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/10843ce4-5a04-45f1-bc54-cee80339721f)
 
 # Scenes In Our Created Game
-In our created game, we have four(5) main scenes: House, Kayamanan Village, Museum, Church, and School. The player can gain information from those places that can help him to passed the assessment.
+In our created game, we have four(5) main scenes: House, Kayamanan Village, Museum, Church, and School. The player can gather information from these places that can help him/her to passed the assessment.
 
 ## House
 
