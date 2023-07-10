@@ -1,7 +1,6 @@
 # Kayamanan: The Hunt for Philippine Treasures
 
-Our thesis software for a requirement in Bachelor of Science in Computer Science at Pamantasan ng Cabuyao. In the features of our developed game, players can access different game categories and lessons about **National Heroes**, **Philippine Festivals**, **Tourist Attractions**, and **General Knowledge** including Philippine mythology. We utilized **C# programming language**, and **Unity Game Engine** to developed the game. For creating assets, we used **Aseprite**, and **Adobe Illustrator**. 
-
+Our thesis software for a requirement in Bachelor of Science in Computer Science at Pamantasan ng Cabuyao. In one of the features of our developed game, players can access different game categories and lessons about **National Heroes**, **Philippine Festivals**, **Tourist Attractions**, and **General Knowledge** including Philippine mythology. We utilized **C# programming language**, and **Unity Game Engine** to developed the game. For creating assets, we used **Aseprite**, and **Adobe Illustrator**. 
 
 # Main Menu
 
@@ -85,3 +84,14 @@ We also implemented a Dialogue System with the help of Ink Library. This also he
 These are the badges that the player can get when he/she ace the assessment per region.
 
 ![Achievements UI](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/fa286197-2b44-4862-bcc8-f37c0811d4f2)
+
+# What We Learned?
+
+- Research is one of the crucial part in student's academic years, and having a committed group members can easily achieve group's end goals. During our development phase, we realized that having a background in Object-Oriented Programming is really beneficial to develop a game. 
+- We learned how to utilize Design Patterns such as Observer, and Singleton pattern. We also learned how to utilize Saving System using JSON, that can be parsed back into actual object instance or vice-versa.
+- Our group also gain knowledge how to use different software for creating assets such as Aseprite and Adobe Illustrator.
+- Our group acquire a knowledge in using simulator to easily test the game in different screen sizes.
+- We learned how to utilize Ink Library to easily create dialogues, branching options, story lines, and even quests information to our game.
+- We learned how to efficiently test our game using Unity's built-in profiler, and testing per module so that we know that each functions are working properly.
+- Our group learned how to extensively use the Object-Oriented Paradigm to implement Quest System, Day/Night Cycle, Saving Systems, Dialogue System, Profile Creation, etc.
+- Our group acquired a knowledge on how to animate an UI in an efficient manner using LeanTween animation library.
