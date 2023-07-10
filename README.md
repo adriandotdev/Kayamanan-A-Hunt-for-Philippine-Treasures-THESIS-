@@ -1,6 +1,6 @@
 # Kayamanan: The Hunt for Philippine Treasures
 
-Our thesis software for a requirement in Bachelor of Science in Computer Science at Pamantasan ng Cabuyao. In the features of our developed game, players can access different game categories and lessons about **National Heroes**, **Philippine Festivals**, **National Games**, and **General Knowledge** including Philippine mythology. We utilized **C# programming language**, and **Unity Game Engine** to developed the game. For creating assets, we used **Aseprite**, and **Adobe Illustrator**. 
+Our thesis software for a requirement in Bachelor of Science in Computer Science at Pamantasan ng Cabuyao. In the features of our developed game, players can access different game categories and lessons about **National Heroes**, **Philippine Festivals**, **Tourist Attractions**, and **General Knowledge** including Philippine mythology. We utilized **C# programming language**, and **Unity Game Engine** to developed the game. For creating assets, we used **Aseprite**, and **Adobe Illustrator**. 
 
 
 # Main Menu
@@ -43,6 +43,12 @@ We also implemented the day and night system for our game using Observer Pattern
 ![Night Time 1](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/3d7329f7-91ea-48b7-a574-012e95cb0e0f)
 ![Night Time 2](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/167eb11a-849d-4015-a535-c3f1c54b9f8e)
 
+# Quests
+Before taking an assessment, player must complete all of the pending quests. By completing each quest, he/she will get a valuable information that can help to ace his/her assessment.
+
+![Quest 1](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/36d7ab24-10ba-4e3b-9de9-066191606d53)
+![Quest 2](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/8fb04d65-6769-4afa-af76-abfe4d5c6cb9)
+![Completing a Quest 3](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/2def3531-77d0-4892-b1cd-a3a47447544e)
 
 # Assessments
 
