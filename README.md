@@ -21,6 +21,14 @@
   <img  src="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/825ca63f-495a-4f4b-9e27-5eb8ae0be190" alt="Image" style="width:25%;">
 </div>
 
+<h1 align="center">Our Game</h1>
+
+<div align="center">
+  <img  src="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/365b7a97-69a0-4d98-9d0f-5bd3899f73f1" alt="Image" style="width:75%;">
+</div>
+
+<h1 align="center">Game Scenes</h1>
+
 # Main Menu
 
 ![Main Menu](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/d183ba92-22cd-4c47-baf2-94a0f95bc458)
@@ -30,7 +38,7 @@
 ![Loading Profile](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/10843ce4-5a04-45f1-bc54-cee80339721f)
 
 # Scenes In Our Created Game
-In our created game, we have four(5) main scenes: House, Kayamanan Village, Museum, Church, and School. The player can gather information from these places that can help him/her to passed the assessment.
+In our created game, we have five (5) main scenes: House, Kayamanan Village, Museum, Church, and School. The player can gather information from these places that can help him/her to passed the assessment.
 
 ## House
 
