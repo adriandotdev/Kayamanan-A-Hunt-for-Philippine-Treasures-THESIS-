@@ -51,6 +51,12 @@ Our game consists of two assessments: Multiple Choice and Word Shuffles
 ![Multiple Choice](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/b769df30-7b30-454d-95d7-539d2a8eecd0)
 ![Word Shuffle](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/275f1e28-2b56-458d-a5e7-4c8dafec8d79)
 
+## Taking Assessment
+
+![Taking Assessment 1](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/45bd6283-f47a-4f8e-b996-f7f53fdb0b14)
+![Taking Assessment 2](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/f18e1579-bfed-448b-8205-0f5b3d9a3327)
+![Taking Assessment 3](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/4b748ff2-089e-45c6-b90f-ff139a76bea5)
+
 ## Rewards
 
 When the user got the perfect score in the assessment, he/she will received badges that he needs to complete the game.
