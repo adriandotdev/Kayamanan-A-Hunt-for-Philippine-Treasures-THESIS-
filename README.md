@@ -34,3 +34,6 @@ In our created game, we have four(5) main scenes: House, Kayamanan Village, Muse
 ## School
 
 ![At School 1](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/938ebeb5-a6b2-40e1-956d-39ab42c29ffb)
+
+![At School 2](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/1496b62e-0e6d-4a23-9baa-e593db171a38)
+
