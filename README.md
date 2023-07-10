@@ -88,11 +88,12 @@ These are the badges that the player can get when he/she ace the assessment per 
 # What We Learned?
 
 - Research is one of the crucial part in student's academic years, and having a committed group members can easily achieve group's end goals. During our development phase, we realized that having a background in Object-Oriented Programming is really beneficial to develop a game. 
-- We learned how to utilize Design Patterns such as Observer, and Singleton pattern. We also learned how to utilize Saving System using JSON, that can be parsed back into actual object instance or vice-versa.
-- Our group also gain knowledge how to use different software for creating assets such as Aseprite and Adobe Illustrator.
-- Our group acquire a knowledge in using simulator to easily test the game in different screen sizes.
+- We learned how to utilize Design Patterns such as Observer, and Singleton pattern.
+- We also learned how to utilize Saving System using JSON, that can be parsed into actual object instance or vice-versa.
+- Our group also acquired knowledge how to use different software for creating assets such as Aseprite and Adobe Illustrator.
+- Our group acquired a knowledge in using simulator to easily test the game in different screen sizes.
 - We learned how to utilize Ink Library to easily create dialogues, branching options, story lines, and even quests information to our game.
 - We learned how to efficiently test our game using Unity's built-in profiler, and testing per module so that we know that each functions are working properly.
 - Our group learned how to extensively use the Object-Oriented Paradigm to implement Quest System, Day/Night Cycle, Saving Systems, Dialogue System, Profile Creation, and NPCs.
-- Our group acquired a knowledge on how to animate an UI in an efficient manner using LeanTween animation library.
-- Our group also learned how to utilize NavMesh for the path of our NPCs to also have a feel of movements in our game.
+- Our group acquired a knowledge on how to animate a UI in an efficient manner using LeanTween animation library.
+- Our group also learned how to utilize NavMesh for the path of our NPCs to also have a feel of movements in the game.
