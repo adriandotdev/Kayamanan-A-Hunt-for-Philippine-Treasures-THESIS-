@@ -38,3 +38,11 @@ In our created game, we have four(5) main scenes: House, Kayamanan Village, Muse
 
 ![At School 2](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/1496b62e-0e6d-4a23-9baa-e593db171a38)
 
+# Assessments
+
+Our game consists of two assessments: Multiple Choice and Word Shuffles
+
+![Multiple Choice](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/b769df30-7b30-454d-95d7-539d2a8eecd0)
+
+![Word Shuffle](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/275f1e28-2b56-458d-a5e7-4c8dafec8d79)
+
