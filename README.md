@@ -38,6 +38,14 @@ In our created game, we have four(5) main scenes: House, Kayamanan Village, Muse
 
 ![At School 2](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/1496b62e-0e6d-4a23-9baa-e593db171a38)
 
+## Night Time
+
+We also implemented the day and night system for our game using Observer Pattern, and Global light that is provided by the Unity Game Engine.
+
+![Night Time 1](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/3d7329f7-91ea-48b7-a574-012e95cb0e0f)
+![Night Time 2](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/167eb11a-849d-4015-a535-c3f1c54b9f8e)
+
+
 # Assessments
 
 Our game consists of two assessments: Multiple Choice and Word Shuffles
