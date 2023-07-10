@@ -29,13 +29,11 @@ In our created game, we have four(5) main scenes: House, Kayamanan Village, Muse
 ## Kayamanan Village
 
 ![Kayamanan Village 1](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/82522e78-4566-4411-8cc6-5f21be9391e2)
-
 ![Kayamanan Village 2](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/3d9aa88f-2b48-41d3-b274-4f212af66f80)
 
 ## School
 
 ![At School 1](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/938ebeb5-a6b2-40e1-956d-39ab42c29ffb)
-
 ![At School 2](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/1496b62e-0e6d-4a23-9baa-e593db171a38)
 
 ## Night Time
@@ -51,7 +49,6 @@ We also implemented the day and night system for our game using Observer Pattern
 Our game consists of two assessments: Multiple Choice and Word Shuffles
 
 ![Multiple Choice](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/b769df30-7b30-454d-95d7-539d2a8eecd0)
-
 ![Word Shuffle](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/275f1e28-2b56-458d-a5e7-4c8dafec8d79)
 
 ## Rewards
