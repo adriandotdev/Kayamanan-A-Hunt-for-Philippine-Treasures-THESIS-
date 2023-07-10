@@ -93,5 +93,6 @@ These are the badges that the player can get when he/she ace the assessment per 
 - Our group acquire a knowledge in using simulator to easily test the game in different screen sizes.
 - We learned how to utilize Ink Library to easily create dialogues, branching options, story lines, and even quests information to our game.
 - We learned how to efficiently test our game using Unity's built-in profiler, and testing per module so that we know that each functions are working properly.
-- Our group learned how to extensively use the Object-Oriented Paradigm to implement Quest System, Day/Night Cycle, Saving Systems, Dialogue System, Profile Creation, etc.
+- Our group learned how to extensively use the Object-Oriented Paradigm to implement Quest System, Day/Night Cycle, Saving Systems, Dialogue System, Profile Creation, and NPCs.
 - Our group acquired a knowledge on how to animate an UI in an efficient manner using LeanTween animation library.
+- Our group also learned how to utilize NavMesh for the path of our NPCs to also have a feel of movements in our game.
