@@ -1,6 +1,6 @@
 ![Title](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/ffdd73bb-8946-4481-9247-667341026e7e)
 
-<p align="center">Our thesis software for a requirement in Bachelor of Science in Computer Science at Pamantasan ng Cabuyao. In one of the features of our developed game, players can access different game categories and lessons about <b>National Heroes</b>, <b>Philippine Festivals</b>, <b>Tourist Attractions</b>, and <b>General Knowledge</b> including Philippine mythology. We utilized <b>C# programming language</b>, and <b>Unity Game Engine</b> to developed the game. For creating assets, we used <b>Aseprite</b>, and <b>Adobe Illustrator</b>. </p>
+<p align="center">Our thesis software for a requirement in Bachelor of Science in Computer Science at Pamantasan ng Cabuyao. In one of the features of our developed game, players can access different game categories and lessons about <b>National Heroes</b>, <b>Philippine Festivals</b>, <b>Tourist Attractions</b>, and <b>General Knowledge</b> including Philippine mythology. We utilized <b>C# programming language</b>, and <b>Unity Game Engine</b> to develop the game. For creating assets, we used <b>Aseprite</b>, and <b>Adobe Illustrator</b>. </p>
 
 <h1 align="center">Our Group</h1>
 
@@ -83,7 +83,7 @@ Before taking an assessment, player must complete all of the pending quests. By 
 
 # Assessments
 
-Our game consists of two assessments: Multiple Choice and Word Shuffles
+Our game consists of two types of assessment: Multiple Choice and Word Shuffles
 
 ![Multiple Choice](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/b769df30-7b30-454d-95d7-539d2a8eecd0)
 ![Word Shuffle](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/275f1e28-2b56-458d-a5e7-4c8dafec8d79)
