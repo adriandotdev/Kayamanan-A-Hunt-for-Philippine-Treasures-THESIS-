@@ -69,5 +69,11 @@ When the user got the perfect score in the assessment, he/she will received badg
 
 ![Perfect Score](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/98281027-a53e-440e-9258-7d58d3d47a34)
 
+# Dialogue System
+
+We also implemented a Dialogue System with the help of Ink Library. This also help our group to implement branching options that can be parsed using C#. (E.g. Yes or No) 
+
+![Branching Conversation](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/61a11f27-b0cd-462c-9dc1-560cd78bbefd)
+
 
 
