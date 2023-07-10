@@ -80,5 +80,8 @@ We also implemented a Dialogue System with the help of Ink Library. This also he
 
 ![Branching Conversation](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/61a11f27-b0cd-462c-9dc1-560cd78bbefd)
 
+# Achievements
 
+These are the badges that the player can get when he/she ace the assessment per region.
 
+![Achievements UI](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/fa286197-2b44-4862-bcc8-f37c0811d4f2)
