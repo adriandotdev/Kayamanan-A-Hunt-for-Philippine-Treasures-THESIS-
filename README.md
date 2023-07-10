@@ -4,6 +4,23 @@
 
 <h1 align="center">Our Group</h1>
 
+<h4 align="center">Our group consist of four(4) members: Eric B. Sarmiento, RC Khaye B. Suelo, Adrian Nads L. Marcelo, and Lenard G. Opo. (From left to right)</h4>
+
+<div align="center">
+  <img  src="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/a11a737e-bf19-4b2a-ad23-51f2da588055" alt="Image" style="width:75%;">
+</div>
+
+<h1 align="center">Contributors</h1>
+
+<h4 align="center">Other contributors on our research are Ronaldo Marcelo, and Mhiko Verceles. (From left to right)</h4>
+
+<div align="center">
+  
+  <img src="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/8c7d31d3-edc5-43aa-8d65-b5fb18200724" alt="Image" style="width:25%;">
+  
+  <img  src="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/825ca63f-495a-4f4b-9e27-5eb8ae0be190" alt="Image" style="width:25%;">
+</div>
+
 # Main Menu
 
 ![Main Menu](https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-/assets/63532775/d183ba92-22cd-4c47-baf2-94a0f95bc458)
